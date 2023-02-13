@@ -1,0 +1,39 @@
+2022-11-06 10:04:32 INFO::Writing function arguments to log file
+2022-11-06 10:04:32 DEBUG::Function arguments
+2022-11-06 10:04:32 DEBUG::Output folder: Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID
+2022-11-06 10:04:32 DEBUG::Min Abundance: 0.000000
+2022-11-06 10:04:32 DEBUG::Min Prevalence: 0.100000
+2022-11-06 10:04:32 DEBUG::Normalization: CLR
+2022-11-06 10:04:32 DEBUG::Transform: NONE
+2022-11-06 10:04:32 DEBUG::Analysis method: LM
+2022-11-06 10:04:32 DEBUG::Max significance: 0.250000
+2022-11-06 10:04:32 DEBUG::Random effects: MouseID
+2022-11-06 10:04:32 DEBUG::Fixed effects: Sequencing_Run,Sex,Site
+2022-11-06 10:04:32 DEBUG::Correction method: BH
+2022-11-06 10:04:32 DEBUG::Standardize: TRUE
+2022-11-06 10:04:32 DEBUG::Cores: 1
+2022-11-06 10:04:32 INFO::Verifying options selected are valid
+2022-11-06 10:04:32 INFO::Determining format of input files
+2022-11-06 10:04:32 INFO::Input format is data samples as columns and metadata samples as rows
+2022-11-06 10:04:32 DEBUG::Transformed data so samples are rows
+2022-11-06 10:04:32 DEBUG::A total of 48 samples were found in both the data and metadata
+2022-11-06 10:04:32 DEBUG::Reordering data/metadata to use same sample ordering
+2022-11-06 10:04:32 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2022-11-06 10:04:32 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site
+2022-11-06 10:04:32 INFO::Running selected normalization method: CLR
+2022-11-06 10:04:32 INFO::Filter data based on min abundance and min prevalence
+2022-11-06 10:04:32 INFO::Total samples in data: 48
+2022-11-06 10:04:32 INFO::Min samples required with min abundance for a feature not to be filtered: 4.800000
+2022-11-06 10:04:32 INFO::Total filtered features: 3
+2022-11-06 10:04:32 INFO::Filtered feature names: k__Bacteria.p__Actinobacteria, k__Bacteria.p__Cyanobacteria, k__Bacteria.p__Verrucomicrobia
+2022-11-06 10:04:32 INFO::Applying z-score to standardize continuous metadata
+2022-11-06 10:04:32 INFO::Running selected transform method: NONE
+2022-11-06 10:04:32 INFO::Running selected analysis method: LM
+2022-11-06 10:04:32 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidetes
+2022-11-06 10:04:32 INFO::Fitting model to feature number 2, k__Bacteria.p__Deferribacteres
+2022-11-06 10:04:32 INFO::Fitting model to feature number 3, k__Bacteria.p__Firmicutes
+2022-11-06 10:04:32 INFO::Fitting model to feature number 4, k__Bacteria.p__Proteobacteria
+2022-11-06 10:04:33 INFO::Counting total values for each feature
+2022-11-06 10:04:33 INFO::Writing residuals to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/residuals.rds
+2022-11-06 10:04:33 INFO::Writing all results to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv
+2022-11-06 10:04:33 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv
