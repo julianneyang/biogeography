@@ -1,0 +1,110 @@
+###########Starting with demultiplexed FastQ files and forward and reverse reads which have not been joined yet, this is the workflow#############
+#used for the regional biogeography project 
+
+####First, generate a FastQ Manifest.txt file
+
+cd Dir #to get to the directory with all the FastQFiles 
+
+for file in *; do mv "$file" `echo $file | tr '_' '-'` ; done #makes sure all the files have - instead of _ in the filename
+
+
+ls -d "$PWD"/* > listOfFiles.list #Generates a file in your directory with all the filepaths in the directory. You can then paste these filepaths into an Excel file
+
+#In Excel, match these filepaths with their respective sample-IDs (should be 2 filepaths per sample ID). Header: sample-id, absolute-filepath, direction. Download manifest file as .csv. 
+# https://docs.qiime2.org/2017.9/tutorials/importing/#fastq-manifest-formats to see more about the FASTQ manifest file generation
+
+####Second, import your forward and reverse FASTQ files into QIIME2 using the following commands:
+time qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path SLCDSS-2020-fastq-manifest.csv \
+  --input-format PairedEndFastqManifestPhred33 \
+  --output-path SLCDSS-2020-demux-paired-end.qza
+
+####Visualize the quality of your forward and reverse reads to inform your join-pairs truncation parameters:
+time qiime demux summarize --i-data 532Itgdel-allSLC-CRE-paired-end.qza --o-visualization reports/532Itgdel-allSLC-Cre-paired-end-summary.qzv
+Saved Visualization to: reports/532Itgdel-allSLC-Cre-paired-end-summary.qzv
+
+
+####Then, join your forward and reverse reads in QIIME2. From here on out, I'm following this tutorial:https://docs.qiime2.org/2020.11/tutorials/read-joining/. This is also a good read: https://www.nicholas-ollberding.com/post/denoising-amplicon-sequence-variants-using-dada2-deblur-and-unoise3-with-qiime2/
+time qiime vsearch join-pairs \
+  --i-demultiplexed-seqs demux.qza \
+  --o-joined-sequences demux-joined.qza
+  --p-truncqual INTEGER #Truncate sequences at the first base with INTEGER quality or lower (I used 10) 
+  --p-minlen INTEGER #Discard sequences of this length or lower after truncation (I used 140)
+  --p-minmergelen INTEGER #240 is a good number (I used 240)
+    Range(0, None)       Minimum length of the joined read to be retained.
+                                                                    [optional]
+  --p-maxmergelen INTEGER #270 is a good number (I used 270)
+    Range(0, None)       Maximum length of the joined read to be retained.
+                                                                    [optional]
+  --p-threads 8 #max number of CPUs
+
+####Next, visualize the length and quality of your joined reads. 
+time qiime demux summarize \
+  --i-data demux-joined.qza \
+  --o-visualization demux-joined.qzv
+
+####quality control the sequences 
+time qiime quality-filter q-score \
+  --i-demux demux-joined.qza \
+  --o-filtered-sequences demux-joined-filtered.qza \
+  --o-filter-stats demux-joined-filter-stats.qza #don't use the filtering below, unless you are wanting to further remove MERGED reads. 
+  --p-min-quality INTEGER #can select a minimum acceptable Phred score.  PHRED scores less that this value are considered to be low PHRED scores. [default: 4]
+  --p-quality-window INTEGER      #The maximum number of low PHRED scores that can be observed in direct succession beforetruncating a sequence read.  [default: 3]
+  --p-min-length-fraction FLOAT   #The minimum length that a sequence read can be following truncation and still be retained. This length should be provided as a fraction of the input sequence length. [default: 0.75]
+  --p-max-ambiguous INTEGER       #The maximum number of ambiguous (i.e., N) base calls. This is applied after trimming sequences based on `min_length_fraction`. [default: 0]
+	
+####use deblur to keep only sequences which align to 16S reference 
+time qiime deblur denoise-16S \ 
+  --i-demultiplexed-seqs demux-joined-filtered.qza \
+  --p-trim-length 251 \ 
+  --p-sample-stats \ 
+  --o-representative-sequences rep-seqs.qza \ 
+  --o-table table.qza \ #denoised feature table
+  --p-jobs-to-start 10 \
+  --o-stats deblur-stats.qza
+  --verbose to show that it's working
+
+####then, export your rep-seqs.qza file so you can assign taxonomy in R 
+qiime tools export --input-path '/media/sf_Shared_Folder/Julianne_SLCCre/All SLC Cre Biogeography FastQ Files/532Itgdel-allSLCCre-rep-seqs.qza' --output-path extracted-rep-seqs-2
+Exported /media/sf_Shared_Folder/Julianne_SLCCre/All SLC Cre Biogeography FastQ Files/532Itgdel-allSLCCre-rep-seqs.qza as DNASequencesDirectoryFormat to directory extracted-rep-seqs-2
+
+####Taxonomy Assignment in R 
+library(dada2)
+
+setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography/All SLC Cre Biogeography FastQ Files/532Itgdel-allSLCCre-table-export")
+setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography/All SLC Cre Biogeography FastQ Files/extracted-rep-seqs-2/")
+set.seed(100) # Initialize random number generator for reproducibility
+#export your rep-seqs.fna file output from deblur denoise-16S
+taxa <- assignTaxonomy("dna-sequences.fasta", "C:/Users/Jacobs Laboratory/Desktop/silva_nr_v132_train_set.fa.gz", multithread=TRUE)  # update directory with the deblur all.seqs.fa output file and with the most recent Silva 99% OTU database  
+taxa <- addSpecies(taxa, "C:/Users/Jacobs Laboratory/Desktop/silva_species_assignment_v132.fa.gz")
+taxa[is.na(taxa)] <- ""
+taxonomy<-paste("k__",taxa[,1],"; ","p__",taxa[,2],"; ","c__",taxa[,3],"; ","o__",taxa[,4],"; ","f__",taxa[,5],"; ","g__",taxa[,6],"; ","s__",taxa[,7],sep="")
+taxonomy <- as.data.frame(taxonomy)
+output<-cbind(taxa, taxonomy)
+write.csv(output, "SLC_Deblur_all_Silva_taxonomy_assignments.csv")
+
+library(dplyr)
+library(tidyr)
+fasta<- read.table("dna-sequences-fasta.txt")
+fasta2<-fasta %>% separate(V1, c("ASV","QIIME_sequence"), sep = "([>])")
+fasta2[fasta2==""]<-NA
+
+ASV <- fasta2$ASV
+fasta3 <- data.frame(ASV)
+fasta3 <-as.data.frame(fasta3[-1,])
+QIIME_seqs <- data.frame(fasta2$QIIME_sequence)
+QIIME_seqs <- data.frame(QIIME_seqs[-5792,])
+fasta3$QIIME_seqs<- QIIME_seqs$QIIME_seqs..5792...
+finalfasta<-na.omit(fasta3)
+write.csv(finalfasta, "SLC_CRE_aligned_dna_sequences.csv")
+
+####Tree generation in QIIME2: Can be done with SILVA database if you follow these instructions: https://rachaellappan.github.io/VL-QIIME2-analysis/pre-processing-of-sequence-reads.html
+wget http://kronos.pharmacology.dal.ca/public_files/tutorial_datasets/picrust2_tutorial_files/picrust2_default_sepp_ref.qza
+
+time qiime fragment-insertion sepp --i-representative-sequences '/media/sf_Shared_Folder/Julianne_SLCCre/All SLC Cre Biogeography FastQ Files/532Itgdel-allSLCCre-rep-seqs.qza' --p-threads 10 --i-reference-database picrust2_default_sepp_ref.qza --output-dir treeoutput
+Saved Phylogeny[Rooted] to: treeoutput/tree.qza
+Saved Placements to: treeoutput/placements.qza
+
+
+####troubleshooting: if you have a fatal error during join-pairs, search for the problematic FASTQ file and remove them from the directory and manifest. Then, you have to reimport as a .qza, and try to rerun join pairs.
