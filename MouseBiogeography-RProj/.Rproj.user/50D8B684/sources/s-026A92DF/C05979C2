@@ -1,0 +1,32 @@
+{
+    "id": "C05979C2",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1670968884023.0,
+    "source_on_save": false,
+    "relative_order": 38,
+    "properties": {
+        "expression": "duojejilececpcdc",
+        "caption": "duojejilececpcdc",
+        "totalObservations": 6,
+        "displayedObservations": 6,
+        "variables": 10,
+        "cacheKey": "DB011D15",
+        "object": "duojejilececpcdc",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=duojejilececpcdc&cache_key=DB011D15&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7954801838394598244,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1670968884023,
+    "read_only": false,
+    "read_only_alternatives": []
+}

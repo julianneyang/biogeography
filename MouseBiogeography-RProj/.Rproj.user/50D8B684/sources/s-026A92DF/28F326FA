@@ -1,0 +1,25 @@
+{
+    "id": "28F326FA",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1670890394506.0,
+    "source_on_save": false,
+    "relative_order": 33,
+    "properties": {
+        "id": "9fa8875094c9451a9d98c834d50faec2",
+        "name": "matrix.data",
+        "title": "matrix.data"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 15762890756522099,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1670890394506,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,32 @@
+{
+    "id": "B60E7947",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1670967167728.0,
+    "source_on_save": false,
+    "relative_order": 35,
+    "properties": {
+        "expression": "gmm_heatmap",
+        "caption": "gmm_heatmap",
+        "totalObservations": "6",
+        "displayedObservations": "6",
+        "variables": "11",
+        "cacheKey": "9A28B05E",
+        "object": "gmm_heatmap",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=gmm_heatmap&cache_key=9A28B05E&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2587778803688,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1670967167728,
+    "read_only": false,
+    "read_only_alternatives": []
+}
