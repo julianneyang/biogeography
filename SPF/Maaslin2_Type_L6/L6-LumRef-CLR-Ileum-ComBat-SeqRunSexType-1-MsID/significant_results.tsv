@@ -1,0 +1,7 @@
+metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus	2014_Sept	-4.39524377698185	0.486609757158124	15	5	0.0000198444263528801	0.00515955085174882
+Type	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus	Mucosal	4.06393343626135	0.353610194783387	15	5	0.000122321874681746	0.015901843708627
+Sequencing_Run	k__Bacteria.p__Actinobacteria.c__Actinobacteria.o__Bifidobacteriales.f__Bifidobacteriaceae.g__Bifidobacterium	2014_Sept	-3.32125583736713	0.447146560373265	15	10	0.000674321191571117	0.0584411699361635
+Type	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides	Mucosal	-2.79858962937987	0.516806165389729	15	15	0.00241762402848277	0.125716449481104
+Type	k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Enterobacteriales.f__Enterobacteriaceae.g__Klebsiella	Mucosal	3.67749951265606	0.897513924226248	15	3	0.00215341978050241	0.125716449481104
+Type	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__Alistipes	Mucosal	-2.38479636144933	0.573470551707946	15	15	0.00547656841316757	0.237317964570595
