@@ -1,0 +1,29 @@
+# Constructed from biom file
+#OTU ID	TL1a_DTT_173_Repeat	TL1a_FP_65	TL1a_FP_209	TL1a_FP_77	TL1a_FP_245	TL1a_FP_173	TL1a_DTT_245_Repeat	TL1a_FP_143	TL1a_FP_101	TL1a_DTT_209	TL1a_DTT_65	TL1a_DTT_77	TL1A_FP_641	TL1A_FP_689	TL1A_DTT_641	TL1A_DTT_689	taxonomy
+k__Bacteria;p__Actinobacteria;c__Actinobacteria;o__Bifidobacteriales;f__Bifidobacteriaceae	0.0	0.0	0.0	0.0	106.0	29.0	0.0	3.0	0.0	0.0	0.0	0.0	6.0	0.0	0.0	0.0
+k__Bacteria;p__Actinobacteria;c__Coriobacteriia;o__Coriobacteriales;f__Eggerthellaceae	0.0	0.0	1.0	0.0	8.0	17.0	0.0	3.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae	2876.0	79396.0	314.0	10889.0	10512.0	9243.0	5052.0	48059.0	4735.0	1869.0	4069.0	7595.0	711.0	306.0	4346.0	1623.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Marinifilaceae	22.0	151.0	2.0	38.0	99.0	155.0	0.0	239.0	462.0	0.0	14.0	12.0	19.0	12.0	57.0	16.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Muribaculaceae	40.0	6.0	679.0	808.0	18382.0	14603.0	567.0	5677.0	17470.0	5.0	6.0	11.0	1362.0	347.0	2176.0	543.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae	380.0	1807.0	70.0	1861.0	3861.0	4373.0	0.0	6657.0	8618.0	0.0	549.0	1687.0	127.0	47.0	1111.0	260.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae	11.0	297.0	34.0	253.0	7006.0	5408.0	189.0	2540.0	4070.0	11.0	233.0	530.0	156.0	137.0	289.0	40.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae	48.0	1358.0	1.0	392.0	105.0	113.0	0.0	927.0	119.0	0.0	149.0	274.0	245.0	1710.0	703.0	248.0
+k__Bacteria;p__Firmicutes;c__Bacilli;o__Bacillales;f__Alicyclobacillaceae	0.0	0.0	0.0	80.0	0.0	13.0	0.0	9.0	1.0	0.0	0.0	0.0	6.0	0.0	4.0	22.0
+k__Bacteria;p__Firmicutes;c__Bacilli;o__Lactobacillales;f__Lactobacillaceae	18.0	2.0	13.0	7.0	657.0	1563.0	41.0	160.0	22.0	0.0	0.0	0.0	69.0	0.0	6.0	0.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__	0.0	0.0	0.0	0.0	28.0	50.0	0.0	47.0	13.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Christensenellaceae	0.0	29.0	0.0	6.0	3.0	2.0	0.0	39.0	46.0	5.0	19.0	16.0	0.0	7.0	7.0	4.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Clostridiaceae_1	781.0	3.0	2.0	24.0	290.0	55.0	694.0	20.0	5.0	3.0	0.0	6.0	0.0	1.0	6.0	14.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Clostridiales_vadinBB60_group	0.0	0.0	4.0	52.0	444.0	161.0	38.0	219.0	2316.0	0.0	0.0	0.0	7.0	0.0	2.0	3.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Eubacteriaceae	0.0	32.0	103.0	45.0	0.0	15.0	0.0	3.0	0.0	5.0	4.0	12.0	75.0	81.0	3.0	16.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Family_XIII	0.0	78.0	0.0	22.0	118.0	81.0	7.0	47.0	5.0	4.0	12.0	9.0	16.0	10.0	13.0	2.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae	1569.0	4115.0	3579.0	5194.0	10517.0	4813.0	3488.0	9188.0	66372.0	14519.0	7121.0	4679.0	1980.0	1664.0	1885.0	2095.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Peptococcaceae	0.0	0.0	2.0	11.0	12.0	30.0	0.0	60.0	46.0	0.0	0.0	0.0	5.0	0.0	3.0	0.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Peptostreptococcaceae	136.0	0.0	7.0	4.0	7.0	0.0	94.0	18.0	0.0	23.0	0.0	0.0	5.0	55.0	8.0	4.0
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Ruminococcaceae	237.0	523.0	120.0	456.0	2616.0	1372.0	311.0	3506.0	4630.0	208.0	283.0	307.0	117.0	252.0	202.0	64.0
+k__Bacteria;p__Firmicutes;c__Erysipelotrichia;o__Erysipelotrichales;f__Erysipelotrichaceae	463.0	394.0	8930.0	689.0	1625.0	338.0	4166.0	380.0	12.0	3800.0	1213.0	478.0	92.0	129.0	32.0	34.0
+k__Bacteria;p__Firmicutes;c__Negativicutes;o__Selenomonadales;f__Acidaminococcaceae	0.0	1579.0	0.0	452.0	0.0	17.0	0.0	162.0	1.0	0.0	653.0	716.0	29.0	52.0	57.0	39.0
+k__Bacteria;p__Proteobacteria;c__Deltaproteobacteria;o__Desulfovibrionales;f__Desulfovibrionaceae	303.0	1418.0	1.0	588.0	176.0	279.0	25.0	932.0	8.0	0.0	1122.0	853.0	31.0	23.0	86.0	129.0
+k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Betaproteobacteriales;f__Burkholderiaceae	4354.0	9443.0	0.0	39125.0	656.0	301.0	0.0	914.0	3.0	0.0	11014.0	10133.0	3752.0	5349.0	148.0	2085.0
+k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacteriales;f__Enterobacteriaceae	45.0	191.0	3303.0	10.0	47.0	13.0	47.0	51.0	673.0	1555.0	58.0	86.0	3.0	41.0	3.0	20.0
+k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Pseudomonadales;f__Moraxellaceae	10.0	0.0	0.0	21.0	4.0	0.0	4.0	44.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+k__Bacteria;p__Verrucomicrobia;c__Verrucomicrobiae;o__Verrucomicrobiales;f__Akkermansiaceae	4017.0	90053.0	191965.0	23418.0	118015.0	46059.0	15806.0	2863.0	1082.0	32490.0	45217.0	38937.0	14918.0	23003.0	818.0	2864.0

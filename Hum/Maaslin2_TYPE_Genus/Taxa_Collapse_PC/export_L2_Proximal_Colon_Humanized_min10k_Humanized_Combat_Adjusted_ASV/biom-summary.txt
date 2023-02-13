@@ -1,0 +1,32 @@
+Num samples: 17
+Num observations: 4
+Total count: 1160842
+Table density (fraction of non-zero values): 1.000
+
+Counts/sample summary:
+ Min: 13923.000
+ Max: 190451.000
+ Median: 68404.000
+ Mean: 68284.824
+ Std. dev.: 37853.159
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+TL1A_FP_638: 13923.000
+TL1A_DTT_638: 17819.000
+TL1A_FP_686: 33976.000
+TL1a_DTT_206: 50007.000
+TL1a_DTT_74: 57093.000
+TL1a_DTT_98: 58615.000
+TL1a_DTT_170: 59302.000
+TL1a_DTT_140: 60685.000
+TL1a_DTT_242: 68404.000
+TL1a_FP_170: 68721.000
+TL1a_FP_242: 68758.000
+TL1a_FP_74: 69149.000
+TL1a_FP_206: 73328.000
+TL1a_FP_98: 73679.000
+TL1a_FP_62: 88818.000
+TL1a_DTT_62: 108114.000
+TL1a_FP_140: 190451.000

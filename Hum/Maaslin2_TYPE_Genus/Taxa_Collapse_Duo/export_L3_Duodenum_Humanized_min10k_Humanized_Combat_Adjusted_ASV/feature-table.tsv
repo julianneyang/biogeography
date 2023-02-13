@@ -1,0 +1,12 @@
+# Constructed from biom file
+#OTU ID	TL1a_FP_102	TL1a_FP_174	TL1a_FP_144	TL1a_FP_66	TL1a_FP_246	TL1a_FP_78	TL1a_FP_210	TL1a_DTT_78	TL1a_DTT_210	TL1a_DTT_246	TL1a_DTT_66	TL1A_DTT_642	taxonomy
+k__Bacteria;p__Actinobacteria;c__Actinobacteria	0.0	4.0	3.0	0.0	26.0	0.0	9.0	0.0	0.0	0.0	0.0	0.0
+k__Bacteria;p__Actinobacteria;c__Coriobacteriia	0.0	10.0	0.0	0.0	0.0	0.0	13.0	0.0	0.0	5.0	0.0	0.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia	58645.0	51557.0	73049.0	47205.0	29016.0	57102.0	54050.0	7074.0	7375.0	24878.0	3440.0	12098.0
+k__Bacteria;p__Firmicutes;c__Bacilli	75.0	3123.0	12.0	5.0	314.0	41.0	1167.0	0.0	43.0	78.0	7.0	73.0
+k__Bacteria;p__Firmicutes;c__Clostridia	35798.0	7373.0	7726.0	13862.0	7722.0	6978.0	6019.0	4421.0	66935.0	9932.0	8308.0	3194.0
+k__Bacteria;p__Firmicutes;c__Erysipelotrichia	188.0	323.0	397.0	303.0	2470.0	965.0	165.0	526.0	20792.0	3849.0	1620.0	30.0
+k__Bacteria;p__Firmicutes;c__Negativicutes	459.0	70.0	22.0	368.0	0.0	2913.0	0.0	600.0	0.0	0.0	589.0	55.0
+k__Bacteria;p__Proteobacteria;c__Deltaproteobacteria	600.0	257.0	1628.0	1253.0	90.0	2433.0	0.0	893.0	0.0	52.0	1197.0	96.0
+k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria	483.0	2224.0	1873.0	19129.0	150.0	3515.0	96.0	10175.0	8484.0	19.0	22437.0	276.0
+k__Bacteria;p__Verrucomicrobia;c__Verrucomicrobiae	3092.0	27491.0	5045.0	73787.0	128910.0	47416.0	13013.0	38839.0	10147.0	36928.0	31083.0	700.0

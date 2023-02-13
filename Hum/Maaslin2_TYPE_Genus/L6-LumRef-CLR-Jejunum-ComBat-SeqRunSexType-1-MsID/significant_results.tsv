@@ -1,0 +1,14 @@
+metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
+Sequencing_Run	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides	2015_Sept	-2.49001976929908	0.686886263972964	16	16	0.00399081875408166	0.178256571015648
+Type	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Prevotellaceae.g__Paraprevotella	Mucosal	2.26090076229435	0.379926067999431	16	12	0.00187112729873302	0.178256571015648
+Type	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Clostridiaceae_1.g__Candidatus_Arthromitus	Mucosal	3.2657817152782	0.842741460161674	16	4	0.00258471085260819	0.178256571015648
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__	2015_Sept	-2.26213924767113	0.419762207879912	16	16	0.000891330972759549	0.178256571015648
+Sex	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Eisenbergiella	Male	-3.49182725131596	0.941115311341409	16	9	0.00343931213082875	0.178256571015648
+Type	k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Bilophila	Mucosal	1.97763357876457	0.370148272999194	16	11	0.00309503556289326	0.178256571015648
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Lachnoclostridium	2015_Sept	-1.46184263867804	0.423661986003636	16	16	0.00542333330156306	0.181681665602363
+Sex	k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Enterobacteriales.f__Enterobacteriaceae.g__Klebsiella	Male	3.76258166072087	1.09015034081829	16	6	0.0054143396149882	0.181681665602363
+Sex	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Tannerellaceae.g__Parabacteroides	Male	3.4108176133988	0.89647481170034	16	13	0.00726574111756195	0.19472186195066
+Sex	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Christensenellaceae.g__	Male	2.32961448203108	0.584326807047325	16	5	0.00660924827216143	0.19472186195066
+Sex	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides	Male	1.85180994482078	0.573445012333061	16	16	0.00802560953321376	0.195533032263753
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Clostridiaceae_1.g__Candidatus_Arthromitus	2014_Sept	-3.50499503940082	1.12095093145662	16	4	0.00963237739818368	0.213433504848894
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__GCA.900066575	2015_Sept	-2.22814433852098	0.616164656618284	16	12	0.010353117772521	0.213433504848894

@@ -1,0 +1,12 @@
+# Constructed from biom file
+#OTU ID	TL1a_DTT_76_Repeat	TL1a_FP_64	TL1a_DTT_172_Re_extracted	TL1a_FP_76	TL1a_FP_142	TL1a_FP_172	TL1a_FP_100	TL1a_FP_208	TL1a_DTT_244_Repeat	TL1a_FP_244	TL1a_DTT_142_Repeat	TL1a_DTT_64	TL1a_DTT_208	TL1A_FP_640	TL1A_DTT_640	TL1A_FP_688	taxonomy
+k__Bacteria;p__Actinobacteria;c__Actinobacteria	0.0	0.0	36.0	0.0	4.0	0.0	0.0	0.0	0.0	3.0	0.0	0.0	10.0	0.0	0.0	6.0
+k__Bacteria;p__Actinobacteria;c__Coriobacteriia	0.0	0.0	0.0	0.0	4.0	4.0	0.0	0.0	5.0	0.0	5.0	0.0	0.0	0.0	0.0	0.0
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia	7166.0	51962.0	38461.0	12575.0	47710.0	27074.0	48869.0	2393.0	9094.0	57499.0	4552.0	3578.0	7521.0	704.0	10697.0	2774.0
+k__Bacteria;p__Firmicutes;c__Bacilli	106.0	0.0	646.0	301.0	175.0	1077.0	1245.0	113.0	94.0	146.0	379.0	2.0	2012.0	16.0	34.0	26.0
+k__Bacteria;p__Firmicutes;c__Clostridia	6915.0	1367.0	4002.0	8277.0	12259.0	3204.0	15358.0	4037.0	3669.0	6128.0	14772.0	11865.0	2870.0	1483.0	3366.0	2488.0
+k__Bacteria;p__Firmicutes;c__Erysipelotrichia	555.0	92.0	314.0	851.0	156.0	121.0	462.0	11208.0	13654.0	1136.0	170.0	3756.0	15669.0	92.0	25.0	60.0
+k__Bacteria;p__Firmicutes;c__Negativicutes	242.0	365.0	19.0	711.0	34.0	0.0	658.0	0.0	0.0	0.0	10.0	1699.0	0.0	30.0	65.0	14.0
+k__Bacteria;p__Proteobacteria;c__Deltaproteobacteria	46.0	286.0	82.0	495.0	368.0	71.0	653.0	0.0	31.0	68.0	6.0	1099.0	12.0	34.0	149.0	14.0
+k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria	4106.0	2193.0	328.0	22882.0	402.0	30.0	6383.0	1535.0	51.0	67.0	343.0	21408.0	6461.0	1533.0	311.0	2206.0
+k__Bacteria;p__Verrucomicrobia;c__Verrucomicrobiae	2425.0	11765.0	1237.0	22516.0	1053.0	232.0	4638.0	177843.0	15941.0	97108.0	137.0	50779.0	26981.0	21881.0	1523.0	13179.0
