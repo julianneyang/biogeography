@@ -1,0 +1,2 @@
+ID	Name	
+PWY-6386	UDP-<i>N</i>-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing)	
