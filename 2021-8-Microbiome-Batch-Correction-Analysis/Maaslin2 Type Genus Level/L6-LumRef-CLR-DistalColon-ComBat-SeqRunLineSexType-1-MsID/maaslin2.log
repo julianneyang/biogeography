@@ -1,0 +1,85 @@
+2022-06-20 12:07:18 INFO::Writing function arguments to log file
+2022-06-20 12:07:18 DEBUG::Function arguments
+2022-06-20 12:07:18 DEBUG::Output folder: L6-LumRef-CLR-DistalColon-ComBat-SeqRunLineSexType-1-MsID
+2022-06-20 12:07:18 DEBUG::Min Abundance: 0.000000
+2022-06-20 12:07:18 DEBUG::Min Prevalence: 0.100000
+2022-06-20 12:07:18 DEBUG::Normalization: CLR
+2022-06-20 12:07:18 DEBUG::Transform: NONE
+2022-06-20 12:07:18 DEBUG::Analysis method: LM
+2022-06-20 12:07:18 DEBUG::Max significance: 0.250000
+2022-06-20 12:07:18 DEBUG::Random effects: MouseID_Line
+2022-06-20 12:07:18 DEBUG::Fixed effects: Sequencing_Run,Line,Sex,Type
+2022-06-20 12:07:18 DEBUG::Correction method: BH
+2022-06-20 12:07:18 DEBUG::Standardize: TRUE
+2022-06-20 12:07:18 DEBUG::Cores: 1
+2022-06-20 12:07:18 INFO::Verifying options selected are valid
+2022-06-20 12:07:18 INFO::Determining format of input files
+2022-06-20 12:07:18 INFO::Input format is data samples as columns and metadata samples as rows
+2022-06-20 12:07:18 DEBUG::Transformed data so samples are rows
+2022-06-20 12:07:18 DEBUG::A total of 89 samples were found in both the data and metadata
+2022-06-20 12:07:18 DEBUG::Reordering data/metadata to use same sample ordering
+2022-06-20 12:07:18 INFO::Formula for random effects: expr ~ (1 | MouseID_Line)
+2022-06-20 12:07:18 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Line + Sex + Type
+2022-06-20 12:07:18 INFO::Running selected normalization method: CLR
+2022-06-20 12:07:18 INFO::Filter data based on min abundance and min prevalence
+2022-06-20 12:07:18 INFO::Total samples in data: 89
+2022-06-20 12:07:18 INFO::Min samples required with min abundance for a feature not to be filtered: 8.900000
+2022-06-20 12:07:18 INFO::Total filtered features: 14
+2022-06-20 12:07:18 INFO::Filtered feature names: a30dd65fa0f17c9ffe88b70cc66d024b, e5450be8d98da604aa4a1fa0ed722fe1, X18285598fe8215895e323b758326f2e2, X8fde870b4c3464dbd28fb743c07f36f1, X3311c81da0640c29e6d9ed4f0529d3d5, X4aa01b032f6f21994f27fd7c9ef08933, b08002696e45f7e121334d154e2f5d4a, X8f2b821cd45696bb55b164853a1917c3, X5167710b7280856d9e512a4f58068687, X07a0081d4bc5233563d0269fc2c734d0, f6fdab15a19dca0441b10f8c0969cb4d, X720832273d925b4115ed01c6d3df48eb, X96c7cedbae877361d087a8b39206d408, b472d29ebb2e4b918cf5f7e0d7b46ce9
+2022-06-20 12:07:18 INFO::Applying z-score to standardize continuous metadata
+2022-06-20 12:07:18 INFO::Running selected transform method: NONE
+2022-06-20 12:07:18 INFO::Running selected analysis method: LM
+2022-06-20 12:07:18 INFO::Fitting model to feature number 1, X2f65298490e0fe48b880145471ec54eb
+2022-06-20 12:07:18 INFO::Fitting model to feature number 2, c42634f8d1aad4956aa9638465e86565
+2022-06-20 12:07:18 INFO::Fitting model to feature number 3, X5ae5ad642b9c2cc68c4fc59e4902ff63
+2022-06-20 12:07:18 INFO::Fitting model to feature number 4, f5fb42e8863737981eb6e04a3de22e29
+2022-06-20 12:07:18 INFO::Fitting model to feature number 5, X3bffd5a2b1cf48b46d1e51628c3551fc
+2022-06-20 12:07:18 INFO::Fitting model to feature number 6, X6d5171bbc6ef97262119e6d152d82164
+2022-06-20 12:07:18 INFO::Fitting model to feature number 7, X235c319ab46f87d377a28a34ba10bfa1
+2022-06-20 12:07:18 INFO::Fitting model to feature number 8, X89c209abd89a5232343a4c87c93cb4ea
+2022-06-20 12:07:19 INFO::Fitting model to feature number 9, f745d265f36ea7eac26d97280e690796
+2022-06-20 12:07:19 INFO::Fitting model to feature number 10, X48082d1ff66a9207ede6bf05e9846d6e
+2022-06-20 12:07:19 INFO::Fitting model to feature number 11, b3111baca54677926264de26b4a9bf7a
+2022-06-20 12:07:19 INFO::Fitting model to feature number 12, X87c1f25ee57f851893eda4c10a460604
+2022-06-20 12:07:19 INFO::Fitting model to feature number 13, e8ed0e081283c5963ce9860944f651c6
+2022-06-20 12:07:19 INFO::Fitting model to feature number 14, b3ef12a80d40902556c2fd4de5924438
+2022-06-20 12:07:19 INFO::Fitting model to feature number 15, X4c8288bfbd76958c0c094d87b97650f8
+2022-06-20 12:07:19 INFO::Fitting model to feature number 16, fbbeae3dceada6928b2cdc472f5d9901
+2022-06-20 12:07:19 INFO::Fitting model to feature number 17, f9130f059b9380b9961aef118b3a529e
+2022-06-20 12:07:19 INFO::Fitting model to feature number 18, f0deb5bac19f248fce27d93d918d3464
+2022-06-20 12:07:19 INFO::Fitting model to feature number 19, ad4e760fa406db6470c29766422a47d2
+2022-06-20 12:07:19 INFO::Fitting model to feature number 20, X292a57429f3bed0adc53c07dc4c62c9f
+2022-06-20 12:07:19 INFO::Fitting model to feature number 21, X49e9cee41713f4c00f8b171ecaff09b5
+2022-06-20 12:07:19 INFO::Fitting model to feature number 22, f5bf4e20e8a4c371b702c2cf491f56e8
+2022-06-20 12:07:19 INFO::Fitting model to feature number 23, X9ff8565480eb4d1ae1feec02a0dfce35
+2022-06-20 12:07:19 INFO::Fitting model to feature number 24, X028e2c1b650e2e2b5847154a153e0166
+2022-06-20 12:07:19 INFO::Fitting model to feature number 25, cb48af0355580e3a4cfe6d22f05b6b14
+2022-06-20 12:07:19 INFO::Fitting model to feature number 26, X204736c3bd4a4c1f840e9fc99a5155d2
+2022-06-20 12:07:19 INFO::Fitting model to feature number 27, bbf6f74f140636ff3f33ef2bc3d892a3
+2022-06-20 12:07:19 INFO::Fitting model to feature number 28, X1e65ef9ba16ebcd3b8413c31e58cada1
+2022-06-20 12:07:19 INFO::Fitting model to feature number 29, X6f06d4c3412c12274598b1a4bc468d3a
+2022-06-20 12:07:20 INFO::Fitting model to feature number 30, c8433912bf1d2d7d9dd177739211ae41
+2022-06-20 12:07:20 INFO::Fitting model to feature number 31, X8a8c39a3e855256f236f71f39bf300aa
+2022-06-20 12:07:20 INFO::Fitting model to feature number 32, a172874a13d3e6df1391f0797d95d6bc
+2022-06-20 12:07:20 INFO::Fitting model to feature number 33, X762fd96b2d1336974fba68fedd33fefa
+2022-06-20 12:07:20 INFO::Fitting model to feature number 34, X76d6be90e19a660c9a84b35fa31d801c
+2022-06-20 12:07:20 INFO::Fitting model to feature number 35, X64864a4b76fc5cccc00f4e44f8dbcff4
+2022-06-20 12:07:20 INFO::Fitting model to feature number 36, X7186c67c129c329bce7d6c988267b231
+2022-06-20 12:07:20 INFO::Fitting model to feature number 37, X46864a6aa122ecb439eb59a3c0542ee6
+2022-06-20 12:07:20 INFO::Fitting model to feature number 38, X2e11ee45d4ccab0775222da825d3bd42
+2022-06-20 12:07:20 INFO::Fitting model to feature number 39, b92f84c206887ecd667f142dd3606ac3
+2022-06-20 12:07:20 INFO::Fitting model to feature number 40, a5641950b2a3a47827849d91242f0ead
+2022-06-20 12:07:20 INFO::Fitting model to feature number 41, X37e0f2e7c7ab2a2f738b92a61085aec0
+2022-06-20 12:07:20 INFO::Fitting model to feature number 42, X6f0b4058c92e83c77533a218739a0e38
+2022-06-20 12:07:20 INFO::Fitting model to feature number 43, X87ab9c664033e00f6b64f2afc71a6d90
+2022-06-20 12:07:20 INFO::Fitting model to feature number 44, X772ad2feb9f19ddeace71e8e2e707858
+2022-06-20 12:07:20 INFO::Fitting model to feature number 45, X178d4eb06bd14fca2d3c300f9f05e384
+2022-06-20 12:07:20 INFO::Fitting model to feature number 46, X5b74065cc4963be8f6447b2c9ffcbc87
+2022-06-20 12:07:20 INFO::Fitting model to feature number 47, eee9bab26577ab7978a3c7bb4a082922
+2022-06-20 12:07:20 INFO::Fitting model to feature number 48, f7040b791e2687141adc7be4ad81afd4
+2022-06-20 12:07:20 INFO::Fitting model to feature number 49, X5adc2daa2981bc07e21b14d53496ff67
+2022-06-20 12:07:20 INFO::Fitting model to feature number 50, X4fdd9f8b9aac094acd93155a17435a7f
+2022-06-20 12:07:21 INFO::Counting total values for each feature
+2022-06-20 12:07:21 INFO::Writing residuals to file L6-LumRef-CLR-DistalColon-ComBat-SeqRunLineSexType-1-MsID/residuals.rds
+2022-06-20 12:07:21 INFO::Writing all results to file (ordered by increasing q-values): L6-LumRef-CLR-DistalColon-ComBat-SeqRunLineSexType-1-MsID/all_results.tsv
+2022-06-20 12:07:21 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): L6-LumRef-CLR-DistalColon-ComBat-SeqRunLineSexType-1-MsID/significant_results.tsv

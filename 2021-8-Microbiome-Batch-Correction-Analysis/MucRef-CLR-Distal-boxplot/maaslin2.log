@@ -1,0 +1,882 @@
+2022-04-21 15:33:20 INFO::Writing function arguments to log file
+2022-04-21 15:33:20 DEBUG::Function arguments
+2022-04-21 15:33:20 DEBUG::Output folder: MucRef-CLR-Distal-boxplot
+2022-04-21 15:33:20 DEBUG::Min Abundance: 0.000000
+2022-04-21 15:33:20 DEBUG::Min Prevalence: 0.100000
+2022-04-21 15:33:20 DEBUG::Normalization: CLR
+2022-04-21 15:33:20 DEBUG::Transform: NONE
+2022-04-21 15:33:20 DEBUG::Analysis method: LM
+2022-04-21 15:33:20 DEBUG::Max significance: 0.250000
+2022-04-21 15:33:20 DEBUG::Random effects: MouseID_Line
+2022-04-21 15:33:20 DEBUG::Fixed effects: Sequencing_Run,Line,Sex,Type
+2022-04-21 15:33:20 DEBUG::Correction method: BH
+2022-04-21 15:33:20 DEBUG::Standardize: TRUE
+2022-04-21 15:33:20 DEBUG::Cores: 1
+2022-04-21 15:33:20 INFO::Verifying options selected are valid
+2022-04-21 15:33:20 INFO::Determining format of input files
+2022-04-21 15:33:20 INFO::Input format is data samples as columns and metadata samples as rows
+2022-04-21 15:33:20 DEBUG::Transformed data so samples are rows
+2022-04-21 15:33:20 DEBUG::A total of 89 samples were found in both the data and metadata
+2022-04-21 15:33:20 DEBUG::Reordering data/metadata to use same sample ordering
+2022-04-21 15:33:20 INFO::Formula for random effects: expr ~ (1 | MouseID_Line)
+2022-04-21 15:33:20 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Line + Sex + Type
+2022-04-21 15:33:20 INFO::Running selected normalization method: CLR
+2022-04-21 15:33:20 INFO::Filter data based on min abundance and min prevalence
+2022-04-21 15:33:20 INFO::Total samples in data: 89
+2022-04-21 15:33:20 INFO::Min samples required with min abundance for a feature not to be filtered: 8.900000
+2022-04-21 15:33:20 INFO::Total filtered features: 51
+2022-04-21 15:33:20 INFO::Filtered feature names: X42_DNF00809., X59_Ruminiclostridium_5., X63_Mitochondria..f., X74_Lachnospiraceae_FCS020_group., X77_Lachnospiraceae..f., X78_Enterorhabdus., X90_Parvibacter.caecicola, X91_Eggerthellaceae..f., X110_DNF00809., X112_Muribaculaceae..f., X121_Gastranaerophilales..o., X136_GCA.900066575., X139_Lachnospiraceae_UCG.010., X148_Lachnospiraceae_UCG.006., X196_Lachnospiraceae..f., X203_Rikenella., X214_Anaerotruncus., X215_Lachnospiraceae_UCG.006., X222_Ruminococcaceae_NK4A214_group., X225_Muribaculaceae..f., X231_Ruminiclostridium., X232_Ruminiclostridium_9., X246_Ruminiclostridium_9., X256_Gastranaerophilales..o., X262_Flavonifractor., X263_Roseburia., X264_Tyzzerella., X273_Enterorhabdus., X275_Lachnospiraceae..f., X282_Muribaculaceae..f., X283_Acetatifactor., X290_Clostridiales_vadinBB60_group..f., X295_Peptococcaceae..f., X302_Roseburia., X304_Lachnospiraceae_NK4A136_group., X305_Lachnospiraceae_NK4A136_group., X307_Acetatifactor., X308_Oscillibacter., X309_GCA.900066575., X310_Family_XIII_AD3011_group., X311_GCA.900066575., X312_Lachnospiraceae..f., X313_Ruminiclostridium., X314_Ruminiclostridium., X315_Oscillibacter., X317_Clostridiales_vadinBB60_group..f., X318_Clostridiales_vadinBB60_group..f., X319_Ruminococcaceae..f., X320_Ruminiclostridium_9., X321_Oscillibacter., X322_Oscillibacter.
+2022-04-21 15:33:20 INFO::Applying z-score to standardize continuous metadata
+2022-04-21 15:33:21 INFO::Running selected transform method: NONE
+2022-04-21 15:33:21 INFO::Running selected analysis method: LM
+2022-04-21 15:33:21 INFO::Fitting model to feature number 1, X0_Lactobacillus.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 2, X1_Faecalibaculum.rodentium
+2022-04-21 15:33:22 INFO::Fitting model to feature number 3, X2_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 4, X3_Desulfovibrio.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 5, X4_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 6, X5_Lachnoclostridium.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 7, X6_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 8, X7_Lachnospiraceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 9, X8_Lachnospiraceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 10, X9_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 11, X10_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 12, X11_Marvinbryantia.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 13, X12_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 14, X13_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 15, X14_Lachnoclostridium.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 16, X15_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 17, X16_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 18, X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 19, X18_Lachnoclostridium.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 20, X19_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 21, X20_Lachnospiraceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 22, X21_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 23, X22_Muribaculaceae..f.
+2022-04-21 15:33:22 INFO::Fitting model to feature number 24, X23_DNF00809.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 25, X24_Lactobacillus.intestinalis
+2022-04-21 15:33:23 INFO::Fitting model to feature number 26, X25_Candidatus_Arthromitus.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 27, X26_Parasutterella.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 28, X27_Streptococcus.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 29, X28_Staphylococcus.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 30, X29_Marvinbryantia.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 31, X30_Muribaculum.intestinale
+2022-04-21 15:33:23 INFO::Fitting model to feature number 32, X31_Lachnospiraceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 33, X32_Muribaculaceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 34, X33_Lachnospiraceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 35, X34_A2.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 36, X35_Muribaculaceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 37, X36_Family_XIII..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 38, X37_Lachnospiraceae_UCG.001.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 39, X38_Lactobacillus.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 40, X39_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 41, X40_Lachnospiraceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 42, X41_Lactobacillus.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 43, X43_Lachnoclostridium.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 44, X44_Lachnospiraceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 45, X45_Muribaculaceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 46, X46_Acetatifactor.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 47, X47_Muribaculaceae..f.
+2022-04-21 15:33:23 INFO::Fitting model to feature number 48, X48_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 49, X49_Lachnospiraceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 50, X50_Lachnospiraceae_UCG.001.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 51, X51_Parasutterella.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 52, X52_Enterorhabdus.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 53, X53_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 54, X54_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 55, X55_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 56, X56_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 57, X57_Lachnospiraceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 58, X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 59, X60_Lachnospiraceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 60, X61_Lachnospiraceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 61, X62_Muribaculaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 62, X64_Intestinimonas.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 63, X65_Lachnospiraceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 64, X66_Butyricicoccus.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 65, X67_Ruminococcaceae..f.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 66, X68_Butyricicoccus.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 67, X69_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 68, X70_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 69, X71_Anaerofustis.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 70, X72_Escherichia.Shigella.
+2022-04-21 15:33:24 INFO::Fitting model to feature number 71, X73_Akkermansia.muciniphila
+2022-04-21 15:33:25 INFO::Fitting model to feature number 72, X75_Christensenellaceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 73, X76_Roseburia.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 74, X79_Staphylococcus.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 75, X80_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 76, X81_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 77, X82_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 78, X83_Ruminiclostridium_9.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 79, X84_Intestinimonas.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 80, X85_Muribaculaceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 81, X86_Candidatus_Stoquefichus.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 82, X87_Alistipes.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 83, X88_Anaerotruncus.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 84, X89_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 85, X92_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 86, X93_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 87, X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:33:25 INFO::Fitting model to feature number 88, X95_Muribaculaceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 89, X96_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 90, X97_GCA.900066575.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 91, X98_ASF356.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 92, X99_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 93, X100_Lachnospiraceae..f.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 94, X101_Acetatifactor.
+2022-04-21 15:33:25 INFO::Fitting model to feature number 95, X102_Anaerotruncus.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 96, X103_Lachnoclostridium.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 97, X104_Muribaculaceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 98, X105_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 99, X106_GCA.900066225.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 100, X107_Lachnospiraceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 101, X108_Lachnospiraceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 102, X109_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 103, X111_Streptococcus.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 104, X113_Muribaculaceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 105, X114_Lachnospiraceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 106, X115_Ruminiclostridium_5.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 107, X116_Ruminiclostridium_9.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 108, X117_Ruminiclostridium_5.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 109, X118_Lachnospiraceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 110, X119_Turicibacter.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 111, X120_Lachnoclostridium.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 112, X122_Parabacteroides.goldsteinii
+2022-04-21 15:33:26 INFO::Fitting model to feature number 113, X123_Enterococcus.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 114, X124_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 115, X125_Ruminiclostridium_5.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 116, X126_Oscillibacter.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 117, X127_Ruminococcaceae..f.
+2022-04-21 15:33:26 INFO::Fitting model to feature number 118, X128_GCA.900066575.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 119, X129_Intestinimonas.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 120, X130_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 121, X131_Lachnospiraceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 122, X132_Ruminiclostridium_9.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 123, X133_Lachnospiraceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 124, X134_Ruminococcaceae_UCG.010.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 125, X135_Oscillibacter.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 126, X137_Defluviitaleaceae_UCG.011.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 127, X138_Lachnospiraceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 128, X140_Lachnoclostridium.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 129, X141_Muribaculaceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 130, X142_Lachnospiraceae_UCG.004.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 131, X143_Bilophila.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 132, X144_Gastranaerophilales..o.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 133, X145_Muribaculaceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 134, X146_Lachnospiraceae..f.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 135, X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 136, X149_Bacteroides.acidifaciens
+2022-04-21 15:33:27 INFO::Fitting model to feature number 137, X150_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 138, X151_Butyricicoccus.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 139, X152_Mucispirillum.schaedleri
+2022-04-21 15:33:27 INFO::Fitting model to feature number 140, X153_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:27 INFO::Fitting model to feature number 141, X154_Odoribacter.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 142, X155_Lachnospiraceae..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 143, X156_Bacteroides.acidifaciens
+2022-04-21 15:33:28 INFO::Fitting model to feature number 144, X157_Rhodospirillales..o.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 145, X158_Ruminiclostridium_6.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 146, X159_Rikenella.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 147, X160_Ruminococcaceae..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 148, X161_Parabacteroides.distasonis
+2022-04-21 15:33:28 INFO::Fitting model to feature number 149, X162_Ruminiclostridium_9.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 150, X163_Bacteroides.vulgatus
+2022-04-21 15:33:28 INFO::Fitting model to feature number 151, X164_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 152, X165_Ruminiclostridium_9.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 153, X166_Intestinimonas.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 154, X167_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 155, X168_Eggerthellaceae..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 156, X169_Muribaculaceae..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 157, X170_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 158, X171_Oscillibacter.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 159, X172_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 160, X173_Odoribacter.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 161, X174_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 162, X175_Ruminiclostridium.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 163, X176_Lachnoclostridium.
+2022-04-21 15:33:28 INFO::Fitting model to feature number 164, X177_Family_XIII_UCG.001.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 165, X178_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 166, X179_Bacteroides.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 167, X180_Alistipes.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 168, X181_Ruminiclostridium.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 169, X182_Lachnospiraceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 170, X183_ASF356.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 171, X184_Ruminococcaceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 172, X185_Gastranaerophilales..o.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 173, X186_Lachnospiraceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 174, X187_Ruminiclostridium_5.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 175, X188_Parabacteroides.distasonis
+2022-04-21 15:33:29 INFO::Fitting model to feature number 176, X189_Erysipelotrichaceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 177, X190_Bacteroides.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 178, X191_Lachnospiraceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 179, X192_Christensenellaceae_R.7_group.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 180, X193_Ruminococcaceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 181, X194_Muribaculaceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 182, X195_Roseburia.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 183, X197_Lachnospiraceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 184, X198_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 185, X199_Lachnospiraceae..f.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 186, X200_Alistipes.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 187, X201_Oscillibacter.
+2022-04-21 15:33:29 INFO::Fitting model to feature number 188, X202_Ruminiclostridium.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 189, X204_Ruminiclostridium.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 190, X205_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 191, X206_Ruminiclostridium.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 192, X207_Lachnospiraceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 193, X208_Oscillibacter.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 194, X209_Lachnospiraceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 195, X210_Clostridiales..o.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 196, X211_Lachnospiraceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 197, X212_Lachnospiraceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 198, X213_Acetatifactor.muris
+2022-04-21 15:33:30 INFO::Fitting model to feature number 199, X216_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 200, X217_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 201, X218_Lachnospiraceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 202, X219_Blautia.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 203, X220_Gastranaerophilales..o.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 204, X221_Ruminococcaceae_NK4A214_group.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 205, X223_Muribaculaceae..f.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 206, X224_Roseburia.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 207, X226_Oscillibacter.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 208, X227_Ruminococcaceae_UCG.003.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 209, X228_Intestinimonas.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 210, X229_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:30 INFO::Fitting model to feature number 211, X230_Ruminococcaceae..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 212, X233_Muribaculaceae..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 213, X234_Lachnospiraceae_UCG.006.bacterium
+2022-04-21 15:33:31 INFO::Fitting model to feature number 214, X235_Lachnospiraceae..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 215, X236_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 216, X237_Marvinbryantia.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 217, X238_Lachnoclostridium.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 218, X239_Anaeroplasma.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 219, X240_Bifidobacterium.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 220, X241_Peptococcaceae..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 221, X242_Alistipes.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 222, X243_Lachnoclostridium.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 223, X244_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 224, X245_Lachnoclostridium.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 225, X247_ASF356.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 226, X248_Ruminococcaceae_UCG.009.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 227, X249_Ruminiclostridium_9.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 228, X250_Ruminococcaceae..f.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 229, X251_Shuttleworthia.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 230, X252_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 231, X253_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 232, X254_Ruminiclostridium_5.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 233, X255_Acetatifactor.
+2022-04-21 15:33:31 INFO::Fitting model to feature number 234, X257_Family_XIII..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 235, X258_Muribaculaceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 236, X259_Lachnoclostridium.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 237, X260_Listeria.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 238, X261_Lachnospiraceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 239, X265_Lachnospiraceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 240, X266_Muribaculaceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 241, X267_Lachnospiraceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 242, X268_Ruminococcaceae_UCG.003.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 243, X269_Lachnospiraceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 244, X270_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 245, X271_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 246, X272_GCA.900066575.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 247, X274_Enterorhabdus.muris
+2022-04-21 15:33:32 INFO::Fitting model to feature number 248, X276_Faecalibacterium.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 249, X277_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 250, X278_Lachnospiraceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 251, X279_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 252, X280_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 253, X281_Ruminiclostridium.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 254, X284_Intestinimonas.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 255, X285_Erysipelotrichaceae..f.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 256, X286_Ruminiclostridium_5.
+2022-04-21 15:33:32 INFO::Fitting model to feature number 257, X287_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 258, X288_Acetatifactor.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 259, X289_Alistipes.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 260, X291_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 261, X292_A2.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 262, X293_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 263, X294_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 264, X296_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 265, X297_Ruminococcaceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 266, X298_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 267, X299_Ruminiclostridium.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 268, X300_Ruminococcaceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 269, X301_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 270, X303_Ruminococcaceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 271, X306_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Fitting model to feature number 272, X316_Lachnospiraceae..f.
+2022-04-21 15:33:33 INFO::Counting total values for each feature
+2022-04-21 15:33:33 INFO::Writing residuals to file MucRef-CLR-Distal-boxplot/residuals.rds
+2022-04-21 15:33:33 INFO::Writing all results to file (ordered by increasing q-values): MucRef-CLR-Distal-boxplot/all_results.tsv
+2022-04-21 15:33:33 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): MucRef-CLR-Distal-boxplot/significant_results.tsv
+2022-04-21 15:33:33 INFO::Writing heatmap of significant results to file: MucRef-CLR-Distal-boxplot/heatmap.pdf
+2022-04-21 15:33:33 INFO::Writing association plots (one for each significant association) to output folder: MucRef-CLR-Distal-boxplot
+2022-04-21 15:33:34 INFO::Plotting associations from most to least significant, grouped by metadata
+2022-04-21 15:33:34 INFO::Plotting data for metadata number 1, Type
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X72_Escherichia.Shigella.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X47_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X48_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X45_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X95_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X85_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X15_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X54_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X21_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X141_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X55_Muribaculaceae..f.
+2022-04-21 15:33:34 INFO::Creating boxplot for categorical data, Type vs X113_Muribaculaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X67_Ruminococcaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X221_Ruminococcaceae_NK4A214_group.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X166_Intestinimonas.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X162_Ruminiclostridium_9.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X32_Muribaculaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X145_Muribaculaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X257_Family_XIII..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X9_Muribaculaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X10_Muribaculaceae..f.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X123_Enterococcus.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X180_Alistipes.
+2022-04-21 15:33:35 INFO::Creating boxplot for categorical data, Type vs X30_Muribaculum.intestinale
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X200_Alistipes.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X13_Muribaculaceae..f.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X101_Acetatifactor.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X71_Anaerofustis.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X52_Enterorhabdus.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X53_Muribaculaceae..f.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X189_Erysipelotrichaceae..f.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X191_Lachnospiraceae..f.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X35_Muribaculaceae..f.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X79_Staphylococcus.
+2022-04-21 15:33:36 INFO::Creating boxplot for categorical data, Type vs X229_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X6_Muribaculaceae..f.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X62_Muribaculaceae..f.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X22_Muribaculaceae..f.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X276_Faecalibacterium.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X104_Muribaculaceae..f.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X23_DNF00809.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X219_Blautia.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X140_Lachnoclostridium.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X159_Rikenella.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X16_Muribaculaceae..f.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X260_Listeria.
+2022-04-21 15:33:37 INFO::Creating boxplot for categorical data, Type vs X4_Muribaculaceae..f.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X12_Muribaculaceae..f.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X93_Lachnospiraceae..f.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X270_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X226_Oscillibacter.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X175_Ruminiclostridium.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X213_Acetatifactor.muris
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X316_Lachnospiraceae..f.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X289_Alistipes.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X242_Alistipes.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X173_Odoribacter.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X236_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:38 INFO::Creating boxplot for categorical data, Type vs X87_Alistipes.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X56_Muribaculaceae..f.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X223_Muribaculaceae..f.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X228_Intestinimonas.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X265_Lachnospiraceae..f.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X134_Ruminococcaceae_UCG.010.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X255_Acetatifactor.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X269_Lachnospiraceae..f.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X163_Bacteroides.vulgatus
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X19_Muribaculaceae..f.
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X149_Bacteroides.acidifaciens
+2022-04-21 15:33:39 INFO::Creating boxplot for categorical data, Type vs X86_Candidatus_Stoquefichus.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X50_Lachnospiraceae_UCG.001.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X198_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X66_Butyricicoccus.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X208_Oscillibacter.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X266_Muribaculaceae..f.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X129_Intestinimonas.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X174_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X172_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X99_Lachnospiraceae..f.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X239_Anaeroplasma.
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X73_Akkermansia.muciniphila
+2022-04-21 15:33:40 INFO::Creating boxplot for categorical data, Type vs X37_Lachnospiraceae_UCG.001.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X61_Lachnospiraceae..f.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X274_Enterorhabdus.muris
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X128_GCA.900066575.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X24_Lactobacillus.intestinalis
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X152_Mucispirillum.schaedleri
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X28_Staphylococcus.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X202_Ruminiclostridium.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X25_Candidatus_Arthromitus.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X169_Muribaculaceae..f.
+2022-04-21 15:33:41 INFO::Creating boxplot for categorical data, Type vs X299_Ruminiclostridium.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X126_Oscillibacter.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X84_Intestinimonas.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X158_Ruminiclostridium_6.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X75_Christensenellaceae..f.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X212_Lachnospiraceae..f.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X111_Streptococcus.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X164_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X195_Roseburia.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X8_Lachnospiraceae..f.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X204_Ruminiclostridium.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X192_Christensenellaceae_R.7_group.
+2022-04-21 15:33:42 INFO::Creating boxplot for categorical data, Type vs X187_Ruminiclostridium_5.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X177_Family_XIII_UCG.001.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X281_Ruminiclostridium.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X218_Lachnospiraceae..f.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X258_Muribaculaceae..f.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X26_Parasutterella.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X122_Parabacteroides.goldsteinii
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X106_GCA.900066225.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X18_Lachnoclostridium.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X117_Ruminiclostridium_5.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X64_Intestinimonas.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X205_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:43 INFO::Creating boxplot for categorical data, Type vs X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X51_Parasutterella.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X220_Gastranaerophilales..o.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X259_Lachnoclostridium.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X301_Lachnospiraceae..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X190_Bacteroides.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X244_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X57_Lachnospiraceae..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X124_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X277_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X36_Family_XIII..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X49_Lachnospiraceae..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X296_Lachnospiraceae..f.
+2022-04-21 15:33:44 INFO::Creating boxplot for categorical data, Type vs X127_Ruminococcaceae..f.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X206_Ruminiclostridium.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X286_Ruminiclostridium_5.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X167_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X143_Bilophila.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X291_Lachnospiraceae..f.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X81_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X201_Oscillibacter.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X297_Ruminococcaceae..f.
+2022-04-21 15:33:45 INFO::Creating boxplot for categorical data, Type vs X197_Lachnospiraceae..f.
+2022-04-21 15:33:46 INFO::Plotting data for metadata number 2, Line
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X87_Alistipes.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X259_Lachnoclostridium.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X163_Bacteroides.vulgatus
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X169_Muribaculaceae..f.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X243_Lachnoclostridium.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X204_Ruminiclostridium.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X73_Akkermansia.muciniphila
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X72_Escherichia.Shigella.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X184_Ruminococcaceae..f.
+2022-04-21 15:33:46 INFO::Creating boxplot for categorical data, Line vs X154_Odoribacter.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X155_Lachnospiraceae..f.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X52_Enterorhabdus.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X83_Ruminiclostridium_9.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X61_Lachnospiraceae..f.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X291_Lachnospiraceae..f.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X279_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X56_Muribaculaceae..f.
+2022-04-21 15:33:47 INFO::Creating boxplot for categorical data, Line vs X108_Lachnospiraceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X127_Ruminococcaceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X137_Defluviitaleaceae_UCG.011.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X34_A2.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X40_Lachnospiraceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X156_Bacteroides.acidifaciens
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X209_Lachnospiraceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X169_Muribaculaceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X303_Ruminococcaceae..f.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:48 INFO::Creating boxplot for categorical data, Line vs X238_Lachnoclostridium.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X241_Peptococcaceae..f.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X242_Alistipes.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X60_Lachnospiraceae..f.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X20_Lachnospiraceae..f.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X258_Muribaculaceae..f.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X228_Intestinimonas.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X259_Lachnoclostridium.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X300_Ruminococcaceae..f.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X97_GCA.900066575.
+2022-04-21 15:33:49 INFO::Creating boxplot for categorical data, Line vs X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X292_A2.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X19_Muribaculaceae..f.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X88_Anaerotruncus.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X22_Muribaculaceae..f.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X250_Ruminococcaceae..f.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X176_Lachnoclostridium.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X270_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X24_Lactobacillus.intestinalis
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X226_Oscillibacter.
+2022-04-21 15:33:50 INFO::Creating boxplot for categorical data, Line vs X93_Lachnospiraceae..f.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X191_Lachnospiraceae..f.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X240_Bifidobacterium.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X20_Lachnospiraceae..f.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X182_Lachnospiraceae..f.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X70_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X116_Ruminiclostridium_9.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X123_Enterococcus.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X109_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X31_Lachnospiraceae..f.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X195_Roseburia.
+2022-04-21 15:33:51 INFO::Creating boxplot for categorical data, Line vs X129_Intestinimonas.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X234_Lachnospiraceae_UCG.006.bacterium
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X84_Intestinimonas.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X294_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X114_Lachnospiraceae..f.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X12_Muribaculaceae..f.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X245_Lachnoclostridium.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X52_Enterorhabdus.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X126_Oscillibacter.
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X274_Enterorhabdus.muris
+2022-04-21 15:33:52 INFO::Creating boxplot for categorical data, Line vs X44_Lachnospiraceae..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X169_Muribaculaceae..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X70_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X49_Lachnospiraceae..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X160_Ruminococcaceae..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X167_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X82_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X132_Ruminiclostridium_9.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X4_Muribaculaceae..f.
+2022-04-21 15:33:53 INFO::Creating boxplot for categorical data, Line vs X266_Muribaculaceae..f.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X61_Lachnospiraceae..f.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X284_Intestinimonas.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X14_Lachnoclostridium.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X201_Oscillibacter.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X206_Ruminiclostridium.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X265_Lachnospiraceae..f.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X118_Lachnospiraceae..f.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X286_Ruminiclostridium_5.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X219_Blautia.
+2022-04-21 15:33:54 INFO::Creating boxplot for categorical data, Line vs X244_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X104_Muribaculaceae..f.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X233_Muribaculaceae..f.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X205_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X185_Gastranaerophilales..o.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X252_Lachnospiraceae_FCS020_group.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X111_Streptococcus.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X269_Lachnospiraceae..f.
+2022-04-21 15:33:55 INFO::Creating boxplot for categorical data, Line vs X96_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X84_Intestinimonas.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X5_Lachnoclostridium.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X100_Lachnospiraceae..f.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X155_Lachnospiraceae..f.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X303_Ruminococcaceae..f.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X235_Lachnospiraceae..f.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X238_Lachnoclostridium.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X297_Ruminococcaceae..f.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X27_Streptococcus.
+2022-04-21 15:33:56 INFO::Creating boxplot for categorical data, Line vs X233_Muribaculaceae..f.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X6_Muribaculaceae..f.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X12_Muribaculaceae..f.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X161_Parabacteroides.distasonis
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X65_Lachnospiraceae..f.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X216_Ruminococcaceae_UCG.014.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X153_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X179_Bacteroides.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X151_Butyricicoccus.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X236_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:57 INFO::Creating boxplot for categorical data, Line vs X287_Lachnospiraceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X276_Faecalibacterium.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X100_Lachnospiraceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X61_Lachnospiraceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X137_Defluviitaleaceae_UCG.011.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X23_DNF00809.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X267_Lachnospiraceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X113_Muribaculaceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X22_Muribaculaceae..f.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X236_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:33:58 INFO::Creating boxplot for categorical data, Line vs X190_Bacteroides.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X99_Lachnospiraceae..f.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X284_Intestinimonas.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X296_Lachnospiraceae..f.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X279_Lachnospiraceae_UCG.006.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X103_Lachnoclostridium.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X67_Ruminococcaceae..f.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X239_Anaeroplasma.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X4_Muribaculaceae..f.
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X213_Acetatifactor.muris
+2022-04-21 15:33:59 INFO::Creating boxplot for categorical data, Line vs X40_Lachnospiraceae..f.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X82_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X53_Muribaculaceae..f.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X208_Oscillibacter.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X65_Lachnospiraceae..f.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X109_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X142_Lachnospiraceae_UCG.004.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X142_Lachnospiraceae_UCG.004.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X93_Lachnospiraceae..f.
+2022-04-21 15:34:00 INFO::Creating boxplot for categorical data, Line vs X212_Lachnospiraceae..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X71_Anaerofustis.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X44_Lachnospiraceae..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X118_Lachnospiraceae..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X101_Acetatifactor.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X99_Lachnospiraceae..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X178_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X182_Lachnospiraceae..f.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X190_Bacteroides.
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X274_Enterorhabdus.muris
+2022-04-21 15:34:01 INFO::Creating boxplot for categorical data, Line vs X39_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X47_Muribaculaceae..f.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X87_Alistipes.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X150_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X20_Lachnospiraceae..f.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X194_Muribaculaceae..f.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X70_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X300_Ruminococcaceae..f.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X117_Ruminiclostridium_5.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X18_Lachnoclostridium.
+2022-04-21 15:34:02 INFO::Creating boxplot for categorical data, Line vs X224_Roseburia.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X115_Ruminiclostridium_5.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X171_Oscillibacter.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X258_Muribaculaceae..f.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X81_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X68_Butyricicoccus.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X188_Parabacteroides.distasonis
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X9_Muribaculaceae..f.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X299_Ruminiclostridium.
+2022-04-21 15:34:03 INFO::Creating boxplot for categorical data, Line vs X15_Muribaculaceae..f.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X201_Oscillibacter.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X224_Roseburia.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X261_Lachnospiraceae..f.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X284_Intestinimonas.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X33_Lachnospiraceae..f.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X162_Ruminiclostridium_9.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X46_Acetatifactor.
+2022-04-21 15:34:04 INFO::Creating boxplot for categorical data, Line vs X5_Lachnoclostridium.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X102_Anaerotruncus.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X249_Ruminiclostridium_9.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X64_Intestinimonas.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X97_GCA.900066575.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X168_Eggerthellaceae..f.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X200_Alistipes.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X229_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:05 INFO::Creating boxplot for categorical data, Line vs X31_Lachnospiraceae..f.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X9_Muribaculaceae..f.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X38_Lactobacillus.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X154_Odoribacter.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X30_Muribaculum.intestinale
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X204_Ruminiclostridium.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X142_Lachnospiraceae_UCG.004.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X2_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X238_Lachnoclostridium.
+2022-04-21 15:34:06 INFO::Creating boxplot for categorical data, Line vs X297_Ruminococcaceae..f.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X103_Lachnoclostridium.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X39_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X116_Ruminiclostridium_9.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X218_Lachnospiraceae..f.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X291_Lachnospiraceae..f.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X109_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X12_Muribaculaceae..f.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X116_Ruminiclostridium_9.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X245_Lachnoclostridium.
+2022-04-21 15:34:07 INFO::Creating boxplot for categorical data, Line vs X149_Bacteroides.acidifaciens
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X166_Intestinimonas.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X25_Candidatus_Arthromitus.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X125_Ruminiclostridium_5.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X69_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X133_Lachnospiraceae..f.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X179_Bacteroides.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X180_Alistipes.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X252_Lachnospiraceae_FCS020_group.
+2022-04-21 15:34:08 INFO::Creating boxplot for categorical data, Line vs X296_Lachnospiraceae..f.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X181_Ruminiclostridium.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X127_Ruminococcaceae..f.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X123_Enterococcus.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X254_Ruminiclostridium_5.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X255_Acetatifactor.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X192_Christensenellaceae_R.7_group.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X72_Escherichia.Shigella.
+2022-04-21 15:34:09 INFO::Creating boxplot for categorical data, Line vs X150_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X220_Gastranaerophilales..o.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X197_Lachnospiraceae..f.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X128_GCA.900066575.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X220_Gastranaerophilales..o.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X1_Faecalibaculum.rodentium
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X108_Lachnospiraceae..f.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X223_Muribaculaceae..f.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X138_Lachnospiraceae..f.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X234_Lachnospiraceae_UCG.006.bacterium
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X252_Lachnospiraceae_FCS020_group.
+2022-04-21 15:34:10 INFO::Creating boxplot for categorical data, Line vs X49_Lachnospiraceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X16_Muribaculaceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X253_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X18_Lachnoclostridium.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X197_Lachnospiraceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X68_Butyricicoccus.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X129_Intestinimonas.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X117_Ruminiclostridium_5.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X300_Ruminococcaceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X182_Lachnospiraceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X235_Lachnospiraceae..f.
+2022-04-21 15:34:11 INFO::Creating boxplot for categorical data, Line vs X130_Lachnospiraceae_FCS020_group.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X36_Family_XIII..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X237_Marvinbryantia.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X197_Lachnospiraceae..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X191_Lachnospiraceae..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X36_Family_XIII..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X140_Lachnoclostridium.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X108_Lachnospiraceae..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X269_Lachnospiraceae..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X32_Muribaculaceae..f.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X79_Staphylococcus.
+2022-04-21 15:34:12 INFO::Creating boxplot for categorical data, Line vs X60_Lachnospiraceae..f.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X138_Lachnospiraceae..f.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X219_Blautia.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X297_Ruminococcaceae..f.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X22_Muribaculaceae..f.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X187_Ruminiclostridium_5.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X135_Oscillibacter.
+2022-04-21 15:34:13 INFO::Creating boxplot for categorical data, Line vs X76_Roseburia.
+2022-04-21 15:34:14 INFO::Plotting data for metadata number 3, Sequencing_Run
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X163_Bacteroides.vulgatus
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X291_Lachnospiraceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X87_Alistipes.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X191_Lachnospiraceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X184_Ruminococcaceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X108_Lachnospiraceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X88_Anaerotruncus.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X191_Lachnospiraceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X204_Ruminiclostridium.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X184_Ruminococcaceae..f.
+2022-04-21 15:34:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs X108_Lachnospiraceae..f.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X169_Muribaculaceae..f.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X156_Bacteroides.acidifaciens
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X163_Bacteroides.vulgatus
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X238_Lachnoclostridium.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X36_Family_XIII..f.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X182_Lachnospiraceae..f.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X72_Escherichia.Shigella.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X291_Lachnospiraceae..f.
+2022-04-21 15:34:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs X97_GCA.900066575.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X147_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X68_Butyricicoccus.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X233_Muribaculaceae..f.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X61_Lachnospiraceae..f.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X97_GCA.900066575.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X244_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X287_Lachnospiraceae..f.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X25_Candidatus_Arthromitus.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X190_Bacteroides.
+2022-04-21 15:34:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs X250_Ruminococcaceae..f.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X33_Lachnospiraceae..f.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X111_Streptococcus.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X276_Faecalibacterium.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X154_Odoribacter.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X258_Muribaculaceae..f.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X18_Lachnoclostridium.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X287_Lachnospiraceae..f.
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X94_Lachnospiraceae_NK4A136_group.bacterium
+2022-04-21 15:34:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs X126_Oscillibacter.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X18_Lachnoclostridium.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X190_Bacteroides.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X219_Blautia.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X233_Muribaculaceae..f.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X286_Ruminiclostridium_5.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X261_Lachnospiraceae..f.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X22_Muribaculaceae..f.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X258_Muribaculaceae..f.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X270_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X212_Lachnospiraceae..f.
+2022-04-21 15:34:18 INFO::Creating boxplot for categorical data, Sequencing_Run vs X88_Anaerotruncus.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X279_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X160_Ruminococcaceae..f.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X244_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X193_Ruminococcaceae..f.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X128_GCA.900066575.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X297_Ruminococcaceae..f.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X39_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X58_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X208_Oscillibacter.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X194_Muribaculaceae..f.
+2022-04-21 15:34:19 INFO::Creating boxplot for categorical data, Sequencing_Run vs X269_Lachnospiraceae..f.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X87_Alistipes.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X23_DNF00809.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X300_Ruminococcaceae..f.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X247_ASF356.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X65_Lachnospiraceae..f.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X20_Lachnospiraceae..f.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X155_Lachnospiraceae..f.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X243_Lachnoclostridium.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X180_Alistipes.
+2022-04-21 15:34:20 INFO::Creating boxplot for categorical data, Sequencing_Run vs X104_Muribaculaceae..f.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X216_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X294_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X93_Lachnospiraceae..f.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X103_Lachnoclostridium.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X15_Muribaculaceae..f.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X64_Intestinimonas.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X240_Bifidobacterium.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X151_Butyricicoccus.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X182_Lachnospiraceae..f.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X208_Oscillibacter.
+2022-04-21 15:34:21 INFO::Creating boxplot for categorical data, Sequencing_Run vs X23_DNF00809.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X243_Lachnoclostridium.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X167_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X47_Muribaculaceae..f.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X238_Lachnoclostridium.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X47_Muribaculaceae..f.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X167_Clostridiales_vadinBB60_group..f.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X187_Ruminiclostridium_5.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X54_Muribaculaceae..f.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X239_Anaeroplasma.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X68_Butyricicoccus.
+2022-04-21 15:34:22 INFO::Creating boxplot for categorical data, Sequencing_Run vs X104_Muribaculaceae..f.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X84_Intestinimonas.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X194_Muribaculaceae..f.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X142_Lachnospiraceae_UCG.004.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X206_Ruminiclostridium.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X111_Streptococcus.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X39_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X137_Defluviitaleaceae_UCG.011.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X276_Faecalibacterium.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X212_Lachnospiraceae..f.
+2022-04-21 15:34:23 INFO::Creating boxplot for categorical data, Sequencing_Run vs X61_Lachnospiraceae..f.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X259_Lachnoclostridium.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X269_Lachnospiraceae..f.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X9_Muribaculaceae..f.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X116_Ruminiclostridium_9.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X150_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X270_Rikenellaceae_RC9_gut_group.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X44_Lachnospiraceae..f.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X124_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X100_Lachnospiraceae..f.
+2022-04-21 15:34:24 INFO::Creating boxplot for categorical data, Sequencing_Run vs X120_Lachnoclostridium.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X261_Lachnospiraceae..f.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X33_Lachnospiraceae..f.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X2_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X93_Lachnospiraceae..f.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X154_Odoribacter.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X53_Muribaculaceae..f.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X180_Alistipes.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X102_Anaerotruncus.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X220_Gastranaerophilales..o.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X54_Muribaculaceae..f.
+2022-04-21 15:34:25 INFO::Creating boxplot for categorical data, Sequencing_Run vs X9_Muribaculaceae..f.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X84_Intestinimonas.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X192_Christensenellaceae_R.7_group.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X62_Muribaculaceae..f.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X134_Ruminococcaceae_UCG.010.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X156_Bacteroides.acidifaciens
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X64_Intestinimonas.
+2022-04-21 15:34:26 INFO::Creating boxplot for categorical data, Sequencing_Run vs X69_Ruminococcaceae_UCG.014.
+2022-04-21 15:34:27 INFO::Plotting data for metadata number 4, Sex
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X8_Lachnospiraceae..f.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X280_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X41_Lactobacillus.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X101_Acetatifactor.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X46_Acetatifactor.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X240_Bifidobacterium.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X184_Ruminococcaceae..f.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X297_Ruminococcaceae..f.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X298_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:27 INFO::Creating boxplot for categorical data, Sex vs X37_Lachnospiraceae_UCG.001.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X50_Lachnospiraceae_UCG.001.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X17_Lachnospiraceae_UCG.006.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X109_Lachnospiraceae_NK4A136_group.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X168_Eggerthellaceae..f.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X206_Ruminiclostridium.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X152_Mucispirillum.schaedleri
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X258_Muribaculaceae..f.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X242_Alistipes.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X18_Lachnoclostridium.
+2022-04-21 15:34:28 INFO::Creating boxplot for categorical data, Sex vs X159_Rikenella.

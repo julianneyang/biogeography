@@ -1,0 +1,82 @@
+2021-08-13 05:10:28 INFO::Writing function arguments to log file
+2021-08-13 05:10:28 DEBUG::Function arguments
+2021-08-13 05:10:28 DEBUG::Output folder: LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID
+2021-08-13 05:10:28 DEBUG::Min Abundance: 0.000000
+2021-08-13 05:10:28 DEBUG::Min Prevalence: 0.100000
+2021-08-13 05:10:28 DEBUG::Normalization: CLR
+2021-08-13 05:10:28 DEBUG::Transform: LOG
+2021-08-13 05:10:28 DEBUG::Analysis method: LM
+2021-08-13 05:10:28 DEBUG::Max significance: 0.250000
+2021-08-13 05:10:28 DEBUG::Random effects: Line,MouseID_Line
+2021-08-13 05:10:28 DEBUG::Fixed effects: Sequencing_Run,Sex,Site
+2021-08-13 05:10:28 DEBUG::Correction method: BH
+2021-08-13 05:10:28 DEBUG::Standardize: TRUE
+2021-08-13 05:10:28 DEBUG::Cores: 8
+2021-08-13 05:10:28 INFO::Verifying options selected are valid
+2021-08-13 05:10:28 INFO::Determining format of input files
+2021-08-13 05:10:28 INFO::Input format is data samples as columns and metadata samples as rows
+2021-08-13 05:10:28 DEBUG::Transformed data so samples are rows
+2021-08-13 05:10:28 DEBUG::A total of 132 samples were found in both the data and metadata
+2021-08-13 05:10:28 DEBUG::Reordering data/metadata to use same sample ordering
+2021-08-13 05:10:28 INFO::Formula for random effects: expr ~ (1 | Line) + (1 | MouseID_Line)
+2021-08-13 05:10:28 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site
+2021-08-13 05:10:28 INFO::Running selected normalization method: CLR
+2021-08-13 05:10:28 INFO::Filter data based on min abundance and min prevalence
+2021-08-13 05:10:28 INFO::Total samples in data: 132
+2021-08-13 05:10:28 INFO::Min samples required with min abundance for a feature not to be filtered: 13.200000
+2021-08-13 05:10:28 INFO::Total filtered features: 84
+2021-08-13 05:10:28 INFO::Filtered feature names: e9caa943f6467ffd09889cd0df61cb45, c0d5395792eadbf5f62e8ffb14fa0262, de2cd296cfdcbb16ecb870a7721433d3, a30dd65fa0f17c9ffe88b70cc66d024b, X832fb872172e67da702355444f34bc1c, e5450be8d98da604aa4a1fa0ed722fe1, X5287908182825be751d21ae4e6f44c79, X1ab3b71e73441e341b02e15407e5b9e5, X5df1f0b75fac3063662bc77afb6c4bf8, cfb5eb8b6cd871de2ff7085767ca3152, b45093ff0a5e7aac10c4f9f4513e7613, cc0efa1a2c7dca25dd6dc2dc55fe6697, X9dcb1f589151a8b84cb5fc7c490e22d8, X8fde870b4c3464dbd28fb743c07f36f1, e3bd74e4f8e965abfb6ca86d51d2b55b, e4cb1b90e54f9ffc8f098a80d459512e, X4aa01b032f6f21994f27fd7c9ef08933, a355ffad67ad78b1bdbd4ad765a6f5cf, X8f2b821cd45696bb55b164853a1917c3, d5971448f3dce06f45cfd35f968de816, c3bdd500bfba25ea4c753e8d815ef903, X55fa67427af49d0e149b71f3e492fc2f, b5c61551098444f976845a271dd33f4f, bf5b6d2bedc4f3f44c7d707821b0f12b, X99417dd633fa8ea2fc2d6f5bfe6b3582, ca36cc60802278a626b2d36b8da83ae6, X263274421870217476d2449c7184e666, X2f7c13322a20964e09b36ed3971078af, X0d1b4cdc41a51d019759c85b5795aad3, c739108a8fb66e778057d21c15128eaf, X30f0b16d39680d27d771da5b475ce546, X3e514d4fe509d063c262ab3e3b224da1, X3d54a53e5412fd82769620a4792a9b31, dae1fbaad10a121a9e71c35d8c230bc2, dbec9c5165f7fd71fcfcee0766f056e9, X07a0081d4bc5233563d0269fc2c734d0, d5bac6e328e0b91ff267e366898fb100, X07f9cf5cd15f1e6c3b5f4c0b6b8addc4, X7c1aa4cebecf5121ff208d31b341894b, f6fdab15a19dca0441b10f8c0969cb4d, X89b301340cb57d9edee53eff531d744b, X720832273d925b4115ed01c6d3df48eb, X4fdd9f8b9aac094acd93155a17435a7f, X919326ee64b1e34344dadd7dce92b3ed, d727291c9abb47ba09d6fba2de9836d0, X6a0efe866edcb457cbf296d6f70a0e86, b9ee83053b2dd45e29dcd5e4eec2fda3, X620f90511245f0f7e17e85f14064d5d5, X10527898419f8ba7992583f086ac3411, X7c7bb1ff540acdb32e9310a6f5147b66, X078adee61a27c0b09155d2f8a79114e3, X5bf70f0844b19e3a69602610e2e8fc95, X9768b4a338c3f371f79928060e0faf51, X9682035e00a33066c8a20a5728864160, X548b9f02eb5f8d9c273fea608c89123c, ab7dca7c56ab62bab49107c13b7e1bc8, X0758746de870fac931a39b11205ea4f6, X2dca81caa7e1886c0bd386ff62108db9, a92e897782ca8cc6b9da539cb6a4176f, X84b12c5f4618dbf894915076b08799fa, X45a75b7a373e7061619148bdc0cd48fa, X4e34142d35033306c8677c05d3183f1d, X44585e66f2af08e85803b2e5689b1eeb, d9099e07d6529ebc6f96ed500c2d245c, X9de76593a352f0485ab552209ea38a3b, ce4ac6a458d20598f8330e3ffe655960, bc9b892d9d458357ca91a3d6489d621c, X2363ef7459a5696a81b2a97fc71cfd10, X9c84f3a63bb2ae197d33f6cf57d34377, X5b239ea4225a1366ac283394a91ec211, X05e5fd65c9186b5d17260e49ce648e3a, b472d29ebb2e4b918cf5f7e0d7b46ce9, b04d2480bda44de606e972a8991e5846, a131ed51b0ab64ebb4a6435412609f28, adbdc5f804f4d01e74c42c674dcba9b6, a8f7a4c4fa926673d7a1b6e3bd4c8925, X52ea162f982093e6b9b3bcdc2fc0b119, eba615b37940822dff96a8631dcb972f, X793c5551e5eee756319c35a9a48a7edf, cccad67fb5ce1b4f76ed38e69a6c2556, X26fdedbab1c7064845c123af942ae31e, e6d53e67eb96231b465269ad8c15fe3c, X07680e846679f3a15354d617a37f5aea, X44be4a73cb6fbe694ec6cbbdba4bd3b3
+2021-08-13 05:10:28 INFO::Applying z-score to standardize continuous metadata
+2021-08-13 05:10:28 INFO::Running selected transform method: LOG
+2021-08-13 05:10:28 INFO::Running selected analysis method: LM
+2021-08-13 05:10:28 INFO::Creating cluster of 8 R processes
+2021-08-13 05:11:27 INFO::Counting total values for each feature
+2021-08-13 05:11:27 INFO::Writing residuals to file LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID/residuals.rds
+2021-08-13 05:11:27 INFO::Writing all results to file (ordered by increasing q-values): LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID/all_results.tsv
+2021-08-13 05:11:27 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID/significant_results.tsv
+2021-08-13 05:11:27 INFO::Writing heatmap of significant results to file: LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID/heatmap.pdf
+2021-08-13 05:11:27 INFO::Writing association plots (one for each significant association) to output folder: LogCLR-MucosalSI-Maaslin-SeqRunSexSite_General-1-Line-MsID
+2021-08-13 05:11:27 INFO::Plotting associations from most to least significant, grouped by metadata
+2021-08-13 05:11:27 INFO::Plotting data for metadata number 1, Site
+2021-08-13 05:11:27 INFO::Creating boxplot for categorical data, Site vs fd127481a7a3b20d6d476f8d15c8b746
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X6d5171bbc6ef97262119e6d152d82164
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X7af0894d365728994d20f8f22143f8e3
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X7af0894d365728994d20f8f22143f8e3
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs f3ccb3a030fc4f716980bcc0465dff41
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X4c8288bfbd76958c0c094d87b97650f8
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X3a81cd34e3edb8ef3e0c1fb4bc81e7b7
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs b3703a2157a018a94473b0861589dde0
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X89c209abd89a5232343a4c87c93cb4ea
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X150d478c05efdb9ff36e5260c80c6f20
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs X78efb9db740a56e0b2bc4d4778d4d3fc
+2021-08-13 05:11:28 INFO::Creating boxplot for categorical data, Site vs cdb4be857f1f698f7613343f1a9761a3
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs b102928f03449973e2bd7c11a39817ba
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs X8f139f903db65b737165fab17b843584
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs f745d265f36ea7eac26d97280e690796
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs b66b0ebe9c94cc5c0ee68a7c8cb966af
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs X4c8288bfbd76958c0c094d87b97650f8
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs X0c1914abfb8acde52c282afa8e27a1fd
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs ce374e4ecf9d37933b614c569ea2250e
+2021-08-13 05:11:29 INFO::Creating boxplot for categorical data, Site vs X0d193515752095f48f18055431a650f0
+2021-08-13 05:11:30 INFO::Plotting data for metadata number 2, Sequencing_Run
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs fbbeae3dceada6928b2cdc472f5d9901
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X76d6be90e19a660c9a84b35fa31d801c
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X0c1914abfb8acde52c282afa8e27a1fd
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs c8433912bf1d2d7d9dd177739211ae41
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X94adac1e5690b5aef26d6014e471f458
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X89c209abd89a5232343a4c87c93cb4ea
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs f9130f059b9380b9961aef118b3a529e
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X6f0b4058c92e83c77533a218739a0e38
+2021-08-13 05:11:30 INFO::Creating boxplot for categorical data, Sequencing_Run vs X0da7333e379b780a39d305d935692a95
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sequencing_Run vs df4ca25fd346713ef43d2c727b2ef78e
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sequencing_Run vs X204736c3bd4a4c1f840e9fc99a5155d2
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sequencing_Run vs a8bb13e9e2b548216ed9a9619c1767a0
+2021-08-13 05:11:31 INFO::Plotting data for metadata number 3, Sex
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sex vs c003202be6a53b07fbb26ecd2161fe2c
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sex vs X0da7333e379b780a39d305d935692a95
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sex vs X1b23073ca2a2884ac2bd7895dda760bc
+2021-08-13 05:11:31 INFO::Creating boxplot for categorical data, Sex vs X3a863e8d613146295f1169d6d3e462e8
+2021-08-13 05:11:32 INFO::Creating boxplot for categorical data, Sex vs X397aa1ad0378774f826b9825c958427e
+2021-08-13 05:11:32 INFO::Creating boxplot for categorical data, Sex vs X0c1914abfb8acde52c282afa8e27a1fd
+2021-08-13 05:11:32 INFO::Creating boxplot for categorical data, Sex vs fd7e1ff108a3eaf3f64eaaa5faf590af
+2021-08-13 05:11:32 INFO::Creating boxplot for categorical data, Sex vs X8f07f09a7a5b69d79afd30ba3be7ae26
