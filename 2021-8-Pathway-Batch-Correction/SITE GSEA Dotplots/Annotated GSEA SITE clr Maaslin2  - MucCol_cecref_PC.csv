@@ -1,0 +1,85 @@
+feature,coef,annotation
+K12452,0.8772887057,Amino sugar and nucleotide sugar metabolism
+K13010,0.8107479644,Amino sugar and nucleotide sugar metabolism
+K01709,0.6120768904,Amino sugar and nucleotide sugar metabolism
+K00983,0.6086929705,Amino sugar and nucleotide sugar metabolism
+K10012,0.4735975561,Amino sugar and nucleotide sugar metabolism
+K10011,0.4478485634,Amino sugar and nucleotide sugar metabolism
+K02473,0.5173462782,Amino sugar and nucleotide sugar metabolism
+K01654,0.4463299682,Amino sugar and nucleotide sugar metabolism
+K02804,0.396411967,Amino sugar and nucleotide sugar metabolism
+K04042,-0.2724943564,Amino sugar and nucleotide sugar metabolism
+K02765,-0.3874545753,Amino sugar and nucleotide sugar metabolism
+K00024,-0.410383585,Citrate cycle (TCA cycle)
+K00241,-0.4360849585,Citrate cycle (TCA cycle)
+K00240,-0.3618998891,Citrate cycle (TCA cycle)
+K01676,-0.448346197,Citrate cycle (TCA cycle)
+K01960,-0.2844888221,Citrate cycle (TCA cycle)
+K01679,-0.284400803,Citrate cycle (TCA cycle)
+K03336,0.5709916175,Inositol phosphate metabolism
+K06606,0.3626687077,Inositol phosphate metabolism
+K07031,0.8431644276,Lipopolysaccharide biosynthesis
+K00677,-0.3746829034,Lipopolysaccharide biosynthesis
+K02517,-0.367737112,Lipopolysaccharide biosynthesis
+K00748,-0.3509198218,Lipopolysaccharide biosynthesis
+K00912,-0.3509198218,Lipopolysaccharide biosynthesis
+K01627,-0.3509198218,Lipopolysaccharide biosynthesis
+K02527,-0.3509198218,Lipopolysaccharide biosynthesis
+K03271,0.3665594144,Lipopolysaccharide biosynthesis
+K02536,-0.3212888014,Lipopolysaccharide biosynthesis
+K03270,-0.3149187603,Lipopolysaccharide biosynthesis
+K00979,-0.2892718709,Lipopolysaccharide biosynthesis
+K03269,-0.2412848465,Lipopolysaccharide biosynthesis
+K03518,0.5227862809,Nitrotoluene degradation
+K06281,-0.4700650569,Nitrotoluene degradation
+K06282,-0.4700650569,Nitrotoluene degradation
+K10678,0.4336898693,Nitrotoluene degradation
+K02123,0.4137633523,Oxidative phosphorylation
+K02124,0.4137633523,Oxidative phosphorylation
+K02117,0.4138046387,Oxidative phosphorylation
+K02118,0.4138046387,Oxidative phosphorylation
+K02120,0.4138046387,Oxidative phosphorylation
+K02119,0.4394941389,Oxidative phosphorylation
+K02122,0.424957482,Oxidative phosphorylation
+K03885,-0.4190542795,Oxidative phosphorylation
+K00425,-0.398047862,Oxidative phosphorylation
+K00426,-0.398047862,Oxidative phosphorylation
+K00341,-0.3539872578,Oxidative phosphorylation
+K00331,-0.3541287987,Oxidative phosphorylation
+K00343,-0.3541287987,Oxidative phosphorylation
+K00340,-0.353096952,Oxidative phosphorylation
+K00339,-0.3375446769,Oxidative phosphorylation
+K00342,-0.3375446769,Oxidative phosphorylation
+K00330,-0.336578122,Oxidative phosphorylation
+K00338,-0.3361844705,Oxidative phosphorylation
+K00337,-0.3337292398,Oxidative phosphorylation
+K02121,0.2865043765,Oxidative phosphorylation
+K13378,-0.2508232722,Oxidative phosphorylation
+K00040,0.5574883161,Pentose and glucuronate interconversions
+K00041,0.3901360093,Pentose and glucuronate interconversions
+K00065,0.4901376089,Pentose and glucuronate interconversions
+K01685,0.3966418355,Pentose and glucuronate interconversions
+K00008,0.3942140941,Pentose and glucuronate interconversions
+K00854,0.3505355626,Pentose and glucuronate interconversions
+K01815,0.3103307003,Pentose and glucuronate interconversions
+K00848,0.3119102019,Pentose and glucuronate interconversions
+K08092,0.4665209891,Pentose and glucuronate interconversions
+K00963,-0.3384079197,Pentose and glucuronate interconversions
+K01730,0.4913725092,Pentose and glucuronate interconversions
+K00853,-0.3077744061,Pentose and glucuronate interconversions
+K00880,0.2632860716,Pentose and glucuronate interconversions
+K03814,-0.3157149917,Peptidoglycan biosynthesis
+K03587,-0.3518935545,Peptidoglycan biosynthesis
+K07259,-0.2873222865,Peptidoglycan biosynthesis
+K00887,-0.3880861557,Peptidoglycan biosynthesis
+K12553,-0.3750613323,Peptidoglycan biosynthesis
+K07260,0.3404949351,Peptidoglycan biosynthesis
+K05363,-0.3231109011,Peptidoglycan biosynthesis
+K13542,0.3623686669,Porphyrin and chlorophyll metabolism
+K01719,-0.4483597774,Porphyrin and chlorophyll metabolism
+K01772,-0.4575021478,Porphyrin and chlorophyll metabolism
+K00595,0.3565123017,Porphyrin and chlorophyll metabolism
+K02302,0.3741597857,Porphyrin and chlorophyll metabolism
+K02304,0.3031888048,Porphyrin and chlorophyll metabolism
+K02919,-0.2898650538,Ribosome
+K14205,-0.3707572459,Staphylococcus aureus infection

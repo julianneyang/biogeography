@@ -1,0 +1,23 @@
+producer_class	xtools.gsea.GseaPreranked
+producer_timestamp	1653505428247
+param	rpt_label	Ileum_analysis
+param	rnd_seed	timestamp
+param	set_min	5
+param	zip_report	false
+param	create_svgs	false
+param	scoring_scheme	classic
+param	rnk	C:\Users\Jacobs Laboratory\Desktop\Mouse_Biogeography_Julianne\Regional-Mouse-Biogeography-Analysis\2021-8-Pathway-Batch-Correction\GSEA RNK clr Maaslin2 MucosalvsLuminal KO - Ileum.rnk.tsv
+param	norm	meandiv
+param	out	C:\Users\Jacobs Laboratory\gsea_home\output\may25
+param	mode	Abs_max_of_probes
+param	include_only_symbols	true
+param	help	false
+param	set_max	500
+param	gmx	C:\Users\Jacobs Laboratory\Desktop\Mouse_Biogeography_Julianne\Regional-Mouse-Biogeography-Analysis\2021-8-Pathway-Batch-Correction\KEGG pathways separated into columns.gmx
+param	make_sets	true
+param	plot_top_x	20
+param	gui	false
+param	nperm	1000
+param	collapse	No_Collapse
+
+file	C:\Users\Jacobs Laboratory\gsea_home\output\may25\Ileum_analysis.GseaPreranked.1653505428247\index.html

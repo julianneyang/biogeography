@@ -1,0 +1,178 @@
+feature,coef,annotation
+K02557,0.2916082841,Bacterial chemotaxis
+K02416,0.3286167374,Bacterial chemotaxis
+K02410,0.3226727307,Bacterial chemotaxis
+K02417,0.3300395179,Bacterial chemotaxis
+K03409,0.3433810478,Bacterial chemotaxis
+K03411,0.3333643,Bacterial chemotaxis
+K03414,0.3414889588,Bacterial chemotaxis
+K03410,0.3165808319,Bacterial chemotaxis
+K00241,-0.2519654277,Citrate cycle (TCA cycle)
+K00240,-0.1935952233,Citrate cycle (TCA cycle)
+K00031,0.2633351861,Citrate cycle (TCA cycle)
+K01960,-0.2579670426,Citrate cycle (TCA cycle)
+K00024,-0.2412699192,Citrate cycle (TCA cycle)
+K01903,-0.2079985411,Citrate cycle (TCA cycle)
+K00239,-0.1921656399,Citrate cycle (TCA cycle)
+K01676,-0.2282449014,Citrate cycle (TCA cycle)
+K00245,0.1954847123,Citrate cycle (TCA cycle)
+K00246,0.1954603903,Citrate cycle (TCA cycle)
+K01647,0.180512775,Citrate cycle (TCA cycle)
+K00175,-0.1250222137,Citrate cycle (TCA cycle)
+K00174,-0.1233999123,Citrate cycle (TCA cycle)
+K00658,-0.1555896964,Citrate cycle (TCA cycle)
+K04562,0.439055611,Flagellar assembly
+K02414,0.4240806594,Flagellar assembly
+K02418,0.4113271942,Flagellar assembly
+K02397,0.357495017,Flagellar assembly
+K02413,0.4126831381,Flagellar assembly
+K02409,0.3621575699,Flagellar assembly
+K02389,0.3810644731,Flagellar assembly
+K02411,0.3561273492,Flagellar assembly
+K02398,0.387385976,Flagellar assembly
+K02396,0.3659555109,Flagellar assembly
+K02388,0.3293230756,Flagellar assembly
+K02408,0.3394942457,Flagellar assembly
+K02400,0.3291463428,Flagellar assembly
+K02407,0.3775529332,Flagellar assembly
+K02412,0.3261385246,Flagellar assembly
+K02419,0.3261385246,Flagellar assembly
+K02421,0.3263355628,Flagellar assembly
+K02420,0.3249519526,Flagellar assembly
+K02401,0.325938452,Flagellar assembly
+K02387,0.3209501361,Flagellar assembly
+K02392,0.3246947235,Flagellar assembly
+K02422,0.3466599106,Flagellar assembly
+K02390,0.2966049277,Flagellar assembly
+K02386,0.3932753895,Flagellar assembly
+K02393,0.3932753895,Flagellar assembly
+K02394,0.3657360519,Flagellar assembly
+K08302,0.2839841246,Galactose metabolism
+K00917,0.2930210247,Galactose metabolism
+K02744,-0.2781198357,Galactose metabolism
+K12111,-0.3062544037,Galactose metabolism
+K01819,-0.267966933,Galactose metabolism
+K01635,-0.2643532371,Galactose metabolism
+K02745,-0.2552829242,Galactose metabolism
+K02786,-0.2501682907,Galactose metabolism
+K01220,-0.2500191164,Galactose metabolism
+K02788,-0.2500191164,Galactose metabolism
+K02747,-0.2501891795,Galactose metabolism
+K01190,-0.1130665773,Galactose metabolism
+K03271,0.2765537555,Lipopolysaccharide biosynthesis
+K02517,-0.1977871642,Lipopolysaccharide biosynthesis
+K00677,-0.2178179806,Lipopolysaccharide biosynthesis
+K00748,-0.1913499442,Lipopolysaccharide biosynthesis
+K00912,-0.1913499442,Lipopolysaccharide biosynthesis
+K01627,-0.1913499442,Lipopolysaccharide biosynthesis
+K02527,-0.1913499442,Lipopolysaccharide biosynthesis
+K03273,0.2173980487,Lipopolysaccharide biosynthesis
+K02536,-0.1860498022,Lipopolysaccharide biosynthesis
+K00979,-0.1804603039,Lipopolysaccharide biosynthesis
+K03272,0.2937886771,Lipopolysaccharide biosynthesis
+K03270,-0.1708317628,Lipopolysaccharide biosynthesis
+K03269,-0.2154316192,Lipopolysaccharide biosynthesis
+K02535,0.1804439914,Lipopolysaccharide biosynthesis
+K11180,0.4893097665,Nitrotoluene degradation
+K11181,0.4893097665,Nitrotoluene degradation
+K06281,-0.2232094252,Nitrotoluene degradation
+K06282,-0.2232094252,Nitrotoluene degradation
+K03518,0.2756161211,Nitrotoluene degradation
+K00196,0.2908684795,Nitrotoluene degradation
+K00198,0.2869707727,Nitrotoluene degradation
+K12373,-0.2664027132,Other glycan degradation
+K01186,-0.2703021728,Other glycan degradation
+K01201,-0.2550595766,Other glycan degradation
+K01206,-0.1994893944,Other glycan degradation
+K01444,-0.2818613763,Other glycan degradation
+K01191,0.2037856957,Other glycan degradation
+K00340,-0.2093978405,Oxidative phosphorylation
+K00331,-0.2094731013,Oxidative phosphorylation
+K00341,-0.2094322872,Oxidative phosphorylation
+K00343,-0.2094731013,Oxidative phosphorylation
+K00330,-0.2051580836,Oxidative phosphorylation
+K00339,-0.2052188124,Oxidative phosphorylation
+K00342,-0.2052188124,Oxidative phosphorylation
+K00337,-0.2017743116,Oxidative phosphorylation
+K00338,-0.1972838879,Oxidative phosphorylation
+K13378,-0.2398548815,Oxidative phosphorylation
+K02122,0.2307183641,Oxidative phosphorylation
+K02117,0.2040202221,Oxidative phosphorylation
+K02118,0.2040202221,Oxidative phosphorylation
+K02120,0.2040202221,Oxidative phosphorylation
+K02123,0.2038680437,Oxidative phosphorylation
+K02124,0.2038680437,Oxidative phosphorylation
+K02119,0.2257590587,Oxidative phosphorylation
+K03885,-0.2216758014,Oxidative phosphorylation
+K00425,-0.2097698692,Oxidative phosphorylation
+K00426,-0.2097698692,Oxidative phosphorylation
+K02759,-0.2446653756,Phosphotransferase system (PTS)
+K02760,-0.2402474219,Phosphotransferase system (PTS)
+K02496,0.534314602,Porphyrin and chlorophyll metabolism
+K05936,0.2837422485,Porphyrin and chlorophyll metabolism
+K05934,0.2849114421,Porphyrin and chlorophyll metabolism
+K06042,0.2726930958,Porphyrin and chlorophyll metabolism
+K02189,0.2717391585,Porphyrin and chlorophyll metabolism
+K02188,0.2573783584,Porphyrin and chlorophyll metabolism
+K02224,0.2514178389,Porphyrin and chlorophyll metabolism
+K02232,0.2354673112,Porphyrin and chlorophyll metabolism
+K00595,0.3171270211,Porphyrin and chlorophyll metabolism
+K01845,0.2405478594,Porphyrin and chlorophyll metabolism
+K02233,0.2338671638,Porphyrin and chlorophyll metabolism
+K02227,0.2340364223,Porphyrin and chlorophyll metabolism
+K02304,0.2593446316,Porphyrin and chlorophyll metabolism
+K00768,0.2378422654,Porphyrin and chlorophyll metabolism
+K01698,0.2308847241,Porphyrin and chlorophyll metabolism
+K02226,0.22046118,Porphyrin and chlorophyll metabolism
+K02231,0.2265631438,Porphyrin and chlorophyll metabolism
+K02492,0.2251099407,Porphyrin and chlorophyll metabolism
+K01599,0.216138443,Porphyrin and chlorophyll metabolism
+K02190,0.2248879341,Porphyrin and chlorophyll metabolism
+K01749,0.2181792538,Porphyrin and chlorophyll metabolism
+K04720,0.1974418996,Porphyrin and chlorophyll metabolism
+K00798,-0.1732490849,Porphyrin and chlorophyll metabolism
+K03394,0.19487714,Porphyrin and chlorophyll metabolism
+K01719,-0.2221411746,Porphyrin and chlorophyll metabolism
+K09882,0.1844834115,Porphyrin and chlorophyll metabolism
+K01772,-0.2333495648,Porphyrin and chlorophyll metabolism
+K03412,0.4098992201,Two-component system
+K03408,0.3833260254,Two-component system
+K03413,0.3727925327,Two-component system
+K03415,0.3685798207,Two-component system
+K02556,0.3344832678,Two-component system
+K03407,0.3486923708,Two-component system
+K00575,0.3525252727,Two-component system
+K02406,0.3644061276,Two-component system
+K07709,0.4874405705,Two-component system
+K03406,0.3480645708,Two-component system
+K07775,0.3462219495,Two-component system
+K02405,0.3265911827,Two-component system
+K07803,0.4719562345,Two-component system
+K02667,0.5059101035,Two-component system
+K03563,0.3231303633,Two-component system
+K07813,0.3851520604,Two-component system
+K07799,0.4837926325,Two-component system
+K07713,-0.2067037283,Two-component system
+K07720,0.3067272857,Two-component system
+K07794,0.3877982664,Two-component system
+K07718,0.30882096,Two-component system
+K02584,0.3727668649,Two-component system
+K01547,-0.16468115,Two-component system
+K01548,-0.16468115,Two-component system
+K07787,-0.2484776069,Two-component system
+K01546,-0.1633233825,Two-component system
+K07714,0.308962062,Two-component system
+K07777,0.4225273448,Two-component system
+K07712,0.2144298821,Two-component system
+K13924,0.4094473668,Two-component system
+K03092,-0.2010751102,Two-component system
+K07710,0.275800421,Two-component system
+K07693,-0.3048614203,Two-component system
+K07793,0.2090073,Two-component system
+K07778,-0.2990655459,Two-component system
+K05966,-0.371198631,Two-component system
+K05964,-0.3408390129,Two-component system
+K02650,0.2722859617,Two-component system
+K07798,-0.2528222371,Two-component system
+K12292,-0.2535009689,Two-component system
+K04751,0.1450408643,Two-component system

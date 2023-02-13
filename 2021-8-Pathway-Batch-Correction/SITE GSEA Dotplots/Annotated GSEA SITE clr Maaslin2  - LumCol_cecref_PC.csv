@@ -1,0 +1,74 @@
+feature,coef,annotation
+K03414,-0.3270828361,Bacterial chemotaxis
+K02386,-0.3578652661,Flagellar assembly
+K02393,-0.3578652661,Flagellar assembly
+K02394,-0.3309774248,Flagellar assembly
+K02397,-0.1995045037,Flagellar assembly
+K02414,-0.2291811189,Flagellar assembly
+K02390,-0.2009084552,Flagellar assembly
+K02517,0.1551373175,Lipopolysaccharide biosynthesis
+K02840,0.3065773659,Lipopolysaccharide biosynthesis
+K00677,0.1706266618,Lipopolysaccharide biosynthesis
+K00748,0.1347307343,Lipopolysaccharide biosynthesis
+K00912,0.1347307343,Lipopolysaccharide biosynthesis
+K01627,0.1347307343,Lipopolysaccharide biosynthesis
+K02527,0.1347307343,Lipopolysaccharide biosynthesis
+K02536,0.1315440356,Lipopolysaccharide biosynthesis
+K02535,-0.171717915,Lipopolysaccharide biosynthesis
+K10678,-0.3945928171,Nitrotoluene degradation
+K11180,-0.4184950967,Nitrotoluene degradation
+K11181,-0.4184950967,Nitrotoluene degradation
+K06281,0.2204301135,Nitrotoluene degradation
+K06282,0.2204301135,Nitrotoluene degradation
+K10679,0.2157107479,Nitrotoluene degradation
+K00198,-0.3050769113,Nitrotoluene degradation
+K00196,-0.3011310829,Nitrotoluene degradation
+K02119,-0.2658619467,Oxidative phosphorylation
+K02122,-0.2373056172,Oxidative phosphorylation
+K00425,0.2233536076,Oxidative phosphorylation
+K00426,0.2233536076,Oxidative phosphorylation
+K02121,-0.1837791217,Oxidative phosphorylation
+K00330,0.1464532193,Oxidative phosphorylation
+K00339,0.1463686409,Oxidative phosphorylation
+K00342,0.1463686409,Oxidative phosphorylation
+K00337,0.1433348183,Oxidative phosphorylation
+K00340,0.1436768095,Oxidative phosphorylation
+K00331,0.1435881529,Oxidative phosphorylation
+K00343,0.1435881529,Oxidative phosphorylation
+K00338,0.1423037848,Oxidative phosphorylation
+K00341,0.1415073093,Oxidative phosphorylation
+K03885,0.2064299083,Oxidative phosphorylation
+K13378,0.2012285282,Oxidative phosphorylation
+K02117,-0.1736088772,Oxidative phosphorylation
+K02118,-0.1736088772,Oxidative phosphorylation
+K02120,-0.1736088772,Oxidative phosphorylation
+K02123,-0.1734139537,Oxidative phosphorylation
+K02124,-0.1734139537,Oxidative phosphorylation
+K02761,0.2579170704,Phosphotransferase system (PTS)
+K02760,0.2462181406,Phosphotransferase system (PTS)
+K02759,0.2476425494,Phosphotransferase system (PTS)
+K01599,-0.2212039497,Porphyrin and chlorophyll metabolism
+K02302,-0.3461873574,Porphyrin and chlorophyll metabolism
+K09882,-0.2404215469,Porphyrin and chlorophyll metabolism
+K01772,0.2921577702,Porphyrin and chlorophyll metabolism
+K03394,-0.186499602,Porphyrin and chlorophyll metabolism
+K02304,-0.1921225328,Porphyrin and chlorophyll metabolism
+K02190,-0.1762502382,Porphyrin and chlorophyll metabolism
+K04720,-0.1638199852,Porphyrin and chlorophyll metabolism
+K01749,-0.1589828708,Porphyrin and chlorophyll metabolism
+K05895,-0.1851074014,Porphyrin and chlorophyll metabolism
+K01719,0.1838875015,Porphyrin and chlorophyll metabolism
+K11041,-0.286519861,Staphylococcus aureus infection
+K14205,0.2892637803,Staphylococcus aureus infection
+K03739,0.2734979264,Staphylococcus aureus infection
+K03740,0.2734979264,Staphylococcus aureus infection
+K02551,0.2488649653,Ubiquinone and other terpenoid-quinone biosynthesis
+K02548,0.2696027273,Ubiquinone and other terpenoid-quinone biosynthesis
+K11783,-0.3104544475,Ubiquinone and other terpenoid-quinone biosynthesis
+K01661,0.2059187052,Ubiquinone and other terpenoid-quinone biosynthesis
+K11782,-0.2692242959,Ubiquinone and other terpenoid-quinone biosynthesis
+K01911,0.2029922444,Ubiquinone and other terpenoid-quinone biosynthesis
+K11785,-0.2514868024,Ubiquinone and other terpenoid-quinone biosynthesis
+K02361,0.2249020225,Ubiquinone and other terpenoid-quinone biosynthesis
+K03183,0.1633441339,Ubiquinone and other terpenoid-quinone biosynthesis
+K11784,-0.2077545585,Ubiquinone and other terpenoid-quinone biosynthesis

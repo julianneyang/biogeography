@@ -1,0 +1,150 @@
+Pathway,Small Intestine
+"(S)-propane-1,2-diol degradation",0.2918561787
+4-aminobutanoate degradation V,0.2263582125
+4-deoxy-L-threo-hex-4-enopyranuronate degradation,-0.1386241041
+5-aminoimidazole ribonucleotide biosynthesis I,0.04627715793
+5-aminoimidazole ribonucleotide biosynthesis II,0.04728600186
+acetylene degradation (anaerobic),0.09355469824
+adenine and adenosine salvage III,0.05321511071
+adenosine deoxyribonucleotides de novo biosynthesis II,0.07410959489
+adenosine nucleotides degradation II,-0.1852234774
+adenosine ribonucleotides de novo biosynthesis,0.0575351255
+ADP-L-glycero-beta-D-manno-heptose biosynthesis,0.26111117
+aerobic respiration I (cytochrome c),0.2794558292
+anhydromuropeptides recycling I,-0.1232013006
+assimilatory sulfate reduction I,0.3556357785
+Bifidobacterium shunt,0.09099216812
+CDP-diacylglycerol biosynthesis I,0.0584665573
+CDP-diacylglycerol biosynthesis II,0.0584665573
+chorismate biosynthesis from 3-dehydroquinate,-0.04064629475
+chorismate biosynthesis I,-0.0418173724
+cis-vaccenate biosynthesis,0.04536461155
+"cob(II)yrinate a,c-diamide biosynthesis I (early cobalt insertion)",0.3618471762
+coenzyme A biosynthesis I (prokaryotic),0.06689096153
+colanic acid building blocks biosynthesis,-0.06777903407
+D-fructuronate degradation,-0.105804545
+D-galactose degradation I (Leloir pathway),0.06410050376
+D-galacturonate degradation I,-0.1513949615
+dTDP-beta-L-rhamnose biosynthesis,0.04437979573
+dTDP-N-acetylthomosamine biosynthesis,-0.2305644167
+fatty acid elongation -- saturated,0.06418228735
+formaldehyde assimilation II (assimilatory RuMP Cycle),0.05477816695
+formaldehyde oxidation I,0.1099518615
+GDP-mannose biosynthesis,-0.08538956004
+gluconeogenesis I,0.05044185967
+glycerol degradation to butanol,-0.2633230624
+glycogen biosynthesis I (from ADP-D-Glucose),0.04959713952
+glycolysis I (from glucose 6-phosphate),0.04515158456
+glycolysis II (from fructose 6-phosphate),0.04923695266
+glycolysis III (from glucose),0.05804864924
+glycolysis V (Pyrococcus),0.256773617
+glyoxylate cycle,0.5279957636
+gondoate biosynthesis (anaerobic),0.04896396525
+guanosine deoxyribonucleotides de novo biosynthesis II,0.07410959489
+guanosine nucleotides degradation III,-0.1503990835
+guanosine ribonucleotides de novo biosynthesis,0.0637650153
+heme b biosynthesis II (oxygen-independent),0.07030319487
+heterolactic fermentation,0.1020138743
+"hexitol fermentation to lactate, formate, ethanol and acetate",0.158186845
+homolactic fermentation,0.04657290117
+incomplete reductive TCA cycle,-0.07655137939
+inosine 5'-phosphate degradation,0.04228990475
+inosine-5'-phosphate biosynthesis I,0.05299099439
+inosine-5'-phosphate biosynthesis III,0.07904920756
+L-arginine biosynthesis III (via N-acetyl-L-citrulline),-0.1697880835
+L-glutamate and L-glutamine biosynthesis,-0.06826420332
+L-histidine biosynthesis,-0.05853504921
+L-isoleucine biosynthesis II,-0.02187815128
+L-isoleucine biosynthesis III,-0.02977874321
+L-isoleucine biosynthesis IV,-0.0283402224
+L-lysine biosynthesis I,0.03933335311
+L-lysine biosynthesis II,0.09130494639
+L-lysine biosynthesis III,0.05512309824
+L-lysine biosynthesis VI,0.05499861771
+L-ornithine biosynthesis I,-0.0607996074
+L-tryptophan biosynthesis,-0.08720814308
+lactose and galactose degradation I,0.1673002669
+mevalonate pathway I (eukaryotes and bacteria),0.1670960449
+myo-inositol degradation I,0.3501879777
+NAD salvage pathway I (PNC VI cycle),-0.1429622892
+nitrate reduction VI (assimilatory),0.1791494599
+O-antigen building blocks biosynthesis (E. coli),0.06481143863
+partial TCA cycle (obligate autotrophs),0.07189841508
+pentose phosphate pathway,-0.02822173938
+pentose phosphate pathway (non-oxidative branch) I,0.02437837951
+peptidoglycan biosynthesis I (meso-diaminopimelate containing),0.06236398152
+peptidoglycan biosynthesis II (staphylococci),0.3618566936
+peptidoglycan biosynthesis III (mycobacteria),0.06150447056
+peptidoglycan biosynthesis IV (Enterococcus faecium),0.07886281341
+peptidoglycan maturation (meso-diaminopimelate containing),0.06164397835
+phosphatidylglycerol biosynthesis I (plastidic),0.06386202303
+phosphatidylglycerol biosynthesis II (non-plastidic),0.06386202303
+phosphopantothenate biosynthesis I,-0.0669863691
+poly(glycerol phosphate) wall teichoic acid biosynthesis,0.1925261731
+polyisoprenoid biosynthesis (E. coli),0.08905255605
+preQ0 biosynthesis,-0.09585835632
+purine nucleotides degradation II (aerobic),-0.1586487831
+purine ribonucleosides degradation,0.05860870204
+pyrimidine deoxyribonucleosides salvage,-0.04746248574
+pyrimidine deoxyribonucleotide phosphorylation,0.1228604266
+pyrimidine deoxyribonucleotides de novo biosynthesis I,0.1187574912
+pyrimidine deoxyribonucleotides de novo biosynthesis II,0.09715014358
+pyrimidine deoxyribonucleotides de novo biosynthesis III,0.1567208846
+pyruvate fermentation to acetate and lactate II,0.06393442047
+pyruvate fermentation to propanoate I,-0.1356052463
+queuosine biosynthesis I (de novo),-0.04894953476
+S-adenosyl-L-methionine salvage I,0.06723206493
+sucrose degradation III (sucrose invertase),0.05871766442
+sucrose degradation IV (sucrose phosphorylase),0.2861946699
+superpathway of 5-aminoimidazole ribonucleotide biosynthesis,0.04728600186
+superpathway of adenosine nucleotides de novo biosynthesis I,0.06220295979
+superpathway of adenosine nucleotides de novo biosynthesis II,0.06283998728
+superpathway of arginine and polyamine biosynthesis,-0.4389480363
+superpathway of aromatic amino acid biosynthesis,-0.03731084559
+superpathway of beta-D-glucuronosides degradation,-0.09982310696
+superpathway of branched chain amino acid biosynthesis,-0.02075134666
+superpathway of coenzyme A biosynthesis I (bacteria),-0.04343204894
+superpathway of GDP-mannose-derived O-antigen building blocks biosynthesis,-0.08991527204
+superpathway of geranylgeranyldiphosphate biosynthesis I (via mevalonate),0.1564967788
+superpathway of glucose and xylose degradation,-0.2824644734
+"superpathway of glycerol degradation to 1,3-propanediol",0.4931287851
+superpathway of glycolysis and the Entner-Doudoroff pathway,0.09086522354
+superpathway of guanosine nucleotides de novo biosynthesis I,0.1040082825
+superpathway of guanosine nucleotides de novo biosynthesis II,0.09885820025
+superpathway of hexitol degradation (bacteria),0.1611325004
+superpathway of hexuronide and hexuronate degradation,-0.1242344236
+"superpathway of histidine, purine, and pyrimidine biosynthesis",-0.171417973
+"superpathway of L-lysine, L-threonine and L-methionine biosynthesis I",-0.04326664918
+superpathway of L-methionine biosynthesis (transsulfuration),-0.09797861813
+superpathway of L-phenylalanine biosynthesis,0.06277747004
+superpathway of L-threonine biosynthesis,0.053489847
+superpathway of L-tyrosine biosynthesis,0.0622267197
+superpathway of menaquinol-8 biosynthesis II,0.2630746856
+"superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",0.06207910391
+superpathway of N-acetylneuraminate degradation,0.06992457015
+superpathway of phospholipid biosynthesis I (bacteria),0.0623196554
+superpathway of purine deoxyribonucleosides degradation,0.07891170235
+superpathway of purine nucleotides de novo biosynthesis I,0.08104960832
+superpathway of purine nucleotides de novo biosynthesis II,0.0783369314
+superpathway of pyrimidine deoxyribonucleoside salvage,0.05530000387
+superpathway of pyrimidine deoxyribonucleosides degradation,0.06870740267
+superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis,-0.2108765234
+superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli),0.09880069529
+superpathway of pyrimidine nucleobases salvage,0.0612946361
+superpathway of pyrimidine ribonucleosides salvage,0.06960867781
+superpathway of pyrimidine ribonucleotides de novo biosynthesis,0.08688976708
+superpathway of S-adenosyl-L-methionine biosynthesis,-0.1527896744
+superpathway of sulfate assimilation and cysteine biosynthesis,0.09918870678
+superpathway of sulfur oxidation (Acidianus ambivalens),0.2740057923
+superpathway of tetrahydrofolate biosynthesis and salvage,0.0235471074
+superpathway of thiamine diphosphate biosynthesis I,-0.07690632735
+TCA cycle I (prokaryotic),-0.1039190732
+TCA cycle V (2-oxoglutarate synthase),-0.1092374042
+thiamine diphosphate salvage II,-0.07643035499
+thiazole component of thiamine diphosphate biosynthesis I,-0.09618606693
+tRNA charging,0.0352443783
+UDP-N-acetyl-D-glucosamine biosynthesis I,0.08241345509
+UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing),0.06232314934
+UDP-N-acetylmuramoyl-pentapeptide biosynthesis II (lysine-containing),0.06092638675
+UMP biosynthesis I,0.05824653364
+urea cycle,0.1787484247

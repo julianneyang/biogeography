@@ -1,0 +1,262 @@
+feature,coef,annotation
+K03410,1.646279648,Bacterial chemotaxis
+K03411,1.630834559,Bacterial chemotaxis
+K02416,1.042067978,Bacterial chemotaxis
+K02410,0.9889010094,Bacterial chemotaxis
+K02557,0.8605954336,Bacterial chemotaxis
+K02417,0.9614796506,Bacterial chemotaxis
+K03409,1.247708673,Bacterial chemotaxis
+K04784,-1.715343733,Biosynthesis of siderophore group nonribosomal peptides
+K00216,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K01252,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K02363,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K02364,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K04781,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K04783,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K04785,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K04786,-1.289526995,Biosynthesis of siderophore group nonribosomal peptides
+K02392,1.071275407,Flagellar assembly
+K04562,1.590652826,Flagellar assembly
+K02418,1.114164734,Flagellar assembly
+K02422,1.054734066,Flagellar assembly
+K02388,0.9873412508,Flagellar assembly
+K02412,0.9938386013,Flagellar assembly
+K02419,0.9938386013,Flagellar assembly
+K02421,0.995242475,Flagellar assembly
+K02401,0.9933561675,Flagellar assembly
+K02387,0.9860728696,Flagellar assembly
+K02399,-1.289526995,Flagellar assembly
+K02420,0.9906521798,Flagellar assembly
+K02423,-1.289526995,Flagellar assembly
+K02408,0.9870063348,Flagellar assembly
+K02407,1.054270668,Flagellar assembly
+K02397,1.034234397,Flagellar assembly
+K02413,1.066812304,Flagellar assembly
+K02396,1.022120224,Flagellar assembly
+K02409,1.002978755,Flagellar assembly
+K02400,0.9272585286,Flagellar assembly
+K02389,0.9950277616,Flagellar assembly
+K02411,0.9568804557,Flagellar assembly
+K02391,-1.069339859,Flagellar assembly
+K02390,0.8660020523,Flagellar assembly
+K02398,0.9011125205,Flagellar assembly
+K02414,0.7249087003,Flagellar assembly
+K02502,1.242443466,Histidine metabolism
+K01693,1.191897212,Histidine metabolism
+K04486,0.8362657102,Histidine metabolism
+K07008,-1.289526995,Histidine metabolism
+K00817,0.7479956465,Histidine metabolism
+K00013,0.745305092,Histidine metabolism
+K02500,0.7444161649,Histidine metabolism
+K02501,0.7442937371,Histidine metabolism
+K01814,0.746503785,Histidine metabolism
+K00765,0.736524977,Histidine metabolism
+K13990,0.8428915557,Histidine metabolism
+K01468,0.7924954525,Histidine metabolism
+K01712,0.7879092637,Histidine metabolism
+K11755,0.7622862134,Histidine metabolism
+K00603,0.761390315,Histidine metabolism
+K01745,0.7422056887,Histidine metabolism
+K01496,0.4857593908,Histidine metabolism
+K00146,-1.289526995,Phenylalanine metabolism
+K02554,-1.289526995,Phenylalanine metabolism
+K02609,-1.289526995,Phenylalanine metabolism
+K02610,-1.289526995,Phenylalanine metabolism
+K02611,-1.289526995,Phenylalanine metabolism
+K02612,-1.289526995,Phenylalanine metabolism
+K02613,-1.289526995,Phenylalanine metabolism
+K02615,-1.289526995,Phenylalanine metabolism
+K02618,-1.289526995,Phenylalanine metabolism
+K04073,-1.289526995,Phenylalanine metabolism
+K05708,-1.289526995,Phenylalanine metabolism
+K05709,-1.289526995,Phenylalanine metabolism
+K05710,-1.289526995,Phenylalanine metabolism
+K05711,-1.289526995,Phenylalanine metabolism
+K05712,-1.289526995,Phenylalanine metabolism
+K05713,-1.289526995,Phenylalanine metabolism
+K05714,-1.289526995,Phenylalanine metabolism
+K10797,1.433328311,Phenylalanine metabolism
+K00285,-1.099412565,Phenylalanine metabolism
+K00074,0.8158289262,Phenylalanine metabolism
+K01666,0.7100342935,Phenylalanine metabolism
+K02614,0.5859138252,Phenylalanine metabolism
+K01912,0.725891939,Phenylalanine metabolism
+K06209,1.327882427,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K04517,1.047202764,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01609,1.050811339,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00766,1.049193018,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K11646,1.362015154,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01658,0.9858560033,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K06208,1.32438049,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00014,0.7562096549,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00891,0.821717741,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K05887,-1.289526995,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K14187,-1.289526995,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03786,0.983510622,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03856,0.9040491744,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K14170,0.8075710486,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00800,0.6751528517,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01736,0.6751733835,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01735,0.6712633448,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K13498,-1.305880879,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01626,0.8238185356,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01817,0.6572206658,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01657,0.6950123443,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03785,0.4996386628,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K13853,-0.46385358,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00595,1.437483927,Porphyrin and chlorophyll metabolism
+K04720,1.232681718,Porphyrin and chlorophyll metabolism
+K02304,1.202224848,Porphyrin and chlorophyll metabolism
+K06042,1.284036982,Porphyrin and chlorophyll metabolism
+K13542,1.038550829,Porphyrin and chlorophyll metabolism
+K02189,1.283737021,Porphyrin and chlorophyll metabolism
+K02188,1.223812364,Porphyrin and chlorophyll metabolism
+K05934,1.459733157,Porphyrin and chlorophyll metabolism
+K05936,1.457365615,Porphyrin and chlorophyll metabolism
+K02227,1.173273607,Porphyrin and chlorophyll metabolism
+K02232,1.213128361,Porphyrin and chlorophyll metabolism
+K03394,1.14000782,Porphyrin and chlorophyll metabolism
+K02224,1.328461627,Porphyrin and chlorophyll metabolism
+K02190,1.070742472,Porphyrin and chlorophyll metabolism
+K01885,0.841111345,Porphyrin and chlorophyll metabolism
+K02226,0.892969896,Porphyrin and chlorophyll metabolism
+K00228,-1.28992733,Porphyrin and chlorophyll metabolism
+K09882,1.129247428,Porphyrin and chlorophyll metabolism
+K02495,0.741110748,Porphyrin and chlorophyll metabolism
+K00768,0.8909644028,Porphyrin and chlorophyll metabolism
+K02233,0.8515658666,Porphyrin and chlorophyll metabolism
+K02231,0.816598479,Porphyrin and chlorophyll metabolism
+K01749,0.7350594808,Porphyrin and chlorophyll metabolism
+K01698,0.7454047237,Porphyrin and chlorophyll metabolism
+K01599,0.7630557878,Porphyrin and chlorophyll metabolism
+K05895,1.021273374,Porphyrin and chlorophyll metabolism
+K01845,0.6708005198,Porphyrin and chlorophyll metabolism
+K02492,0.661737471,Porphyrin and chlorophyll metabolism
+K03594,0.434248971,Porphyrin and chlorophyll metabolism
+K02302,0.5078739271,Porphyrin and chlorophyll metabolism
+K02496,0.47161322,Porphyrin and chlorophyll metabolism
+K04032,-0.4801446499,Porphyrin and chlorophyll metabolism
+K00798,0.2243129579,Porphyrin and chlorophyll metabolism
+K11689,1.453331018,Two-component system
+K07699,1.162490301,Two-component system
+K07718,1.379613741,Two-component system
+K07720,1.348733348,Two-component system
+K07794,1.475974552,Two-component system
+K07813,1.441898587,Two-component system
+K03415,1.631555217,Two-component system
+K07777,1.592649768,Two-component system
+K11615,1.491642566,Two-component system
+K03406,1.608992741,Two-component system
+K02406,1.122536147,Two-component system
+K07793,1.198642398,Two-component system
+K03563,1.055686246,Two-component system
+K02405,1.043365439,Two-component system
+K02556,0.9728527401,Two-component system
+K07658,0.7399260676,Two-component system
+K03408,1.050776196,Two-component system
+K07667,0.8080613236,Two-component system
+K02402,-1.289526995,Two-component system
+K02403,-1.289526995,Two-component system
+K03532,-1.289526995,Two-component system
+K05874,-1.289526995,Two-component system
+K05875,-1.289526995,Two-component system
+K05876,-1.289526995,Two-component system
+K05877,-1.289526995,Two-component system
+K06080,-1.289526995,Two-component system
+K07637,-1.289526995,Two-component system
+K07639,-1.289526995,Two-component system
+K07640,-1.289526995,Two-component system
+K07641,-1.289526995,Two-component system
+K07642,-1.289526995,Two-component system
+K07643,-1.289526995,Two-component system
+K07644,-1.289526995,Two-component system
+K07645,-1.289526995,Two-component system
+K07647,-1.289526995,Two-component system
+K07648,-1.289526995,Two-component system
+K07660,-1.289526995,Two-component system
+K07661,-1.289526995,Two-component system
+K07662,-1.289526995,Two-component system
+K07663,-1.289526995,Two-component system
+K07664,-1.289526995,Two-component system
+K07665,-1.289526995,Two-component system
+K07675,-1.289526995,Two-component system
+K07676,-1.289526995,Two-component system
+K07677,-1.289526995,Two-component system
+K07678,-1.289526995,Two-component system
+K07679,-1.289526995,Two-component system
+K07685,-1.289526995,Two-component system
+K07686,-1.289526995,Two-component system
+K07687,-1.289526995,Two-component system
+K07688,-1.289526995,Two-component system
+K07689,-1.289526995,Two-component system
+K07690,-1.289526995,Two-component system
+K07700,-1.289526995,Two-component system
+K07701,-1.289526995,Two-component system
+K07702,-1.289526995,Two-component system
+K07711,-1.289526995,Two-component system
+K07715,-1.289526995,Two-component system
+K07771,-1.289526995,Two-component system
+K07772,-1.289526995,Two-component system
+K07773,-1.289526995,Two-component system
+K07781,-1.289526995,Two-component system
+K07782,-1.289526995,Two-component system
+K07786,-1.289526995,Two-component system
+K07788,-1.289526995,Two-component system
+K07789,-1.289526995,Two-component system
+K07796,-1.289526995,Two-component system
+K07797,-1.289526995,Two-component system
+K07810,-1.289526995,Two-component system
+K07811,-1.289526995,Two-component system
+K08349,-1.289526995,Two-component system
+K08350,-1.289526995,Two-component system
+K09477,-1.289526995,Two-component system
+K03533,-1.286976143,Two-component system
+K07646,0.7283953519,Two-component system
+K03412,1.054303171,Two-component system
+K08348,-1.431566494,Two-component system
+K11614,1.183489,Two-component system
+K07717,1.165560018,Two-component system
+K03413,0.9995531245,Two-component system
+K07674,-1.21287354,Two-component system
+K03407,0.9631910448,Two-component system
+K02667,1.240219372,Two-component system
+K00575,0.9667243451,Two-component system
+K07784,-1.320100754,Two-component system
+K13927,0.9203355145,Two-component system
+K11690,0.8938953191,Two-component system
+K04771,0.5429145249,Two-component system
+K02106,-0.8269974878,Two-component system
+K07636,0.4816553803,Two-component system
+K03776,-0.6913431058,Two-component system
+K07798,-0.5485702295,Two-component system
+K13924,0.9045547274,Two-component system
+K02584,0.8585483739,Two-component system
+K02313,0.4348065338,Two-component system
+K05964,-0.5284522267,Two-component system
+K07710,0.5331834293,Two-component system
+K05966,-0.5357703968,Two-component system
+K11712,0.6343405128,Two-component system
+K13041,0.6611240368,Two-component system
+K07787,-0.4079561441,Two-component system
+K13040,0.7378772485,Two-component system
+K04751,0.5262829208,Two-component system
+K07703,-0.7460891338,Two-component system
+K02490,1.163875932,Two-component system
+K07638,-0.2498696097,Two-component system
+K07659,-0.2498696097,Two-component system
+K07708,-0.2498696097,Two-component system
+K07803,0.4009503893,Two-component system
+K07666,-0.2431934441,Two-component system
+K07673,-0.2431934441,Two-component system
+K07684,-0.2431934441,Two-component system
+K11103,-0.2431934441,Two-component system
+K07705,0.5895201094,Two-component system
+K01546,0.2691113519,Two-component system
+K07704,0.3874137684,Two-component system
+K01547,0.2649124605,Two-component system
+K01548,0.2649124605,Two-component system
+K07799,0.3589725086,Two-component system
+K01644,0.2726796052,Two-component system
+K01643,0.2743567136,Two-component system
+K01646,0.2728107965,Two-component system
+K01910,0.2718071071,Two-component system

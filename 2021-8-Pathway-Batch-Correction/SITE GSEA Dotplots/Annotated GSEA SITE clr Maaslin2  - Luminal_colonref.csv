@@ -1,0 +1,272 @@
+feature,coef,annotation
+K01878,0.9101124102,Aminoacyl-tRNA biosynthesis
+K01879,0.9101124102,Aminoacyl-tRNA biosynthesis
+K09698,0.8834120898,Aminoacyl-tRNA biosynthesis
+K02433,0.6029874608,Aminoacyl-tRNA biosynthesis
+K02435,0.6024330522,Aminoacyl-tRNA biosynthesis
+K02434,0.6018807523,Aminoacyl-tRNA biosynthesis
+K01893,0.5051489079,Aminoacyl-tRNA biosynthesis
+K04567,0.4824971271,Aminoacyl-tRNA biosynthesis
+K01869,0.4836231797,Aminoacyl-tRNA biosynthesis
+K01875,0.4836300051,Aminoacyl-tRNA biosynthesis
+K01883,0.4836231797,Aminoacyl-tRNA biosynthesis
+K01889,0.4836231797,Aminoacyl-tRNA biosynthesis
+K01890,0.4836231797,Aminoacyl-tRNA biosynthesis
+K01892,0.4833992933,Aminoacyl-tRNA biosynthesis
+K01867,0.4836035642,Aminoacyl-tRNA biosynthesis
+K01868,0.4811325208,Aminoacyl-tRNA biosynthesis
+K01870,0.4835143739,Aminoacyl-tRNA biosynthesis
+K01866,0.4818795437,Aminoacyl-tRNA biosynthesis
+K01881,0.4829279716,Aminoacyl-tRNA biosynthesis
+K01873,0.4819244019,Aminoacyl-tRNA biosynthesis
+K01887,0.4808603852,Aminoacyl-tRNA biosynthesis
+K01872,0.4205522354,Aminoacyl-tRNA biosynthesis
+K01876,0.4165136265,Aminoacyl-tRNA biosynthesis
+K01886,-0.3696097211,Aminoacyl-tRNA biosynthesis
+K01880,-0.2385924317,Aminoacyl-tRNA biosynthesis
+K09759,-0.3443643812,Aminoacyl-tRNA biosynthesis
+K02314,0.472484001,DNA replication
+K02316,0.4846914916,DNA replication
+K03469,0.5471079051,DNA replication
+K03470,0.4867471664,DNA replication
+K01972,0.4808405197,DNA replication
+K03111,0.4695995587,DNA replication
+K03471,0.5144721881,DNA replication
+K02774,0.7355689136,Galactose metabolism
+K02775,0.902200403,Galactose metabolism
+K02773,0.9129287275,Galactose metabolism
+K02744,0.7920069166,Galactose metabolism
+K01784,0.5826322846,Galactose metabolism
+K02786,0.8378644532,Galactose metabolism
+K01220,0.8431051911,Galactose metabolism
+K02788,0.8431051911,Galactose metabolism
+K10984,0.8906279888,Galactose metabolism
+K10985,0.9267072438,Galactose metabolism
+K10986,0.9267072438,Galactose metabolism
+K00965,0.5905996109,Galactose metabolism
+K00849,0.5026084287,Galactose metabolism
+K01635,0.8173243296,Galactose metabolism
+K01819,0.809272155,Galactose metabolism
+K01854,0.5440269881,Galactose metabolism
+K02746,0.6996040422,Galactose metabolism
+K01193,0.5090343683,Galactose metabolism
+K02747,0.6465794387,Galactose metabolism
+K07406,-0.6942895838,Galactose metabolism
+K12111,0.6706819496,Galactose metabolism
+K01187,0.3683044568,Galactose metabolism
+K02745,0.5909135832,Galactose metabolism
+K07407,0.305295076,Galactose metabolism
+K01190,0.2446018254,Galactose metabolism
+K12308,0.3082529305,Galactose metabolism
+K08302,-0.2966185298,Galactose metabolism
+K01182,0.1782976291,Galactose metabolism
+K03581,0.5896552583,Homologous recombination
+K03584,0.4850636095,Homologous recombination
+K03550,0.4836231797,Homologous recombination
+K03551,0.4836231797,Homologous recombination
+K04066,0.4836231797,Homologous recombination
+K06187,0.4836231797,Homologous recombination
+K03553,0.4829015323,Homologous recombination
+K03629,0.4746423753,Homologous recombination
+K03655,0.2746016752,Homologous recombination
+K01159,-0.3827357494,Homologous recombination
+K02686,-0.4835909889,Homologous recombination
+K07456,0.4904528438,Mismatch repair
+K03555,0.484642583,Mismatch repair
+K03572,0.484642583,Mismatch repair
+K03601,0.4877970293,Mismatch repair
+K03602,0.4838350015,Mismatch repair
+K06223,-0.9790012679,Mismatch repair
+K01141,-0.4835909889,Mismatch repair
+K03701,0.573927083,Nucleotide excision repair
+K03702,0.4801257533,Nucleotide excision repair
+K03703,0.4836035642,Nucleotide excision repair
+K03723,0.4826719122,Nucleotide excision repair
+K03657,0.4376780721,Nucleotide excision repair
+K12556,1.756067624,Peptidoglycan biosynthesis
+K00687,1.731881433,Peptidoglycan biosynthesis
+K05362,1.616964426,Peptidoglycan biosynthesis
+K03693,1.109614867,Peptidoglycan biosynthesis
+K08724,0.8914497379,Peptidoglycan biosynthesis
+K12555,0.9566980782,Peptidoglycan biosynthesis
+K05367,-0.8868676893,Peptidoglycan biosynthesis
+K00887,0.8396329974,Peptidoglycan biosynthesis
+K05363,0.809151273,Peptidoglycan biosynthesis
+K02563,0.4836231797,Peptidoglycan biosynthesis
+K05366,0.4766189563,Peptidoglycan biosynthesis
+K12554,1.347098933,Peptidoglycan biosynthesis
+K01000,0.4819244019,Peptidoglycan biosynthesis
+K05364,-0.7986701481,Peptidoglycan biosynthesis
+K11694,0.7996423501,Peptidoglycan biosynthesis
+K11695,0.8168916164,Peptidoglycan biosynthesis
+K12553,0.7219221564,Peptidoglycan biosynthesis
+K06153,0.3711089502,Peptidoglycan biosynthesis
+K05515,-0.4738949931,Peptidoglycan biosynthesis
+K07258,0.310394776,Peptidoglycan biosynthesis
+K07259,-0.4266868152,Peptidoglycan biosynthesis
+K03814,-0.3772975608,Peptidoglycan biosynthesis
+K03587,-0.1890027492,Peptidoglycan biosynthesis
+K03980,0.1482619106,Peptidoglycan biosynthesis
+K02761,0.941272984,Phosphotransferase system (PTS)
+K02760,0.866103312,Phosphotransferase system (PTS)
+K02759,0.8504746246,Phosphotransferase system (PTS)
+K08483,0.5873992217,Phosphotransferase system (PTS)
+K02757,0.5823447622,Phosphotransferase system (PTS)
+K02806,0.4939886326,Phosphotransferase system (PTS)
+K00956,-1.601675187,Purine metabolism
+K00957,-1.369534712,Purine metabolism
+K01492,-1.970706743,Purine metabolism
+K00526,0.863251871,Purine metabolism
+K03048,0.8962905678,Purine metabolism
+K00525,0.6721501404,Purine metabolism
+K01488,0.7959321598,Purine metabolism
+K00760,0.592433136,Purine metabolism
+K00940,0.7319267781,Purine metabolism
+K00364,0.9244065284,Purine metabolism
+K00942,0.6295831463,Purine metabolism
+K05873,0.8874870982,Purine metabolism
+K01239,0.783793551,Purine metabolism
+K00527,0.5133764351,Purine metabolism
+K00769,-1.239333434,Purine metabolism
+K02342,0.6000742604,Purine metabolism
+K03816,0.5557048093,Purine metabolism
+K01589,0.7664226837,Purine metabolism
+K01952,0.5434556575,Purine metabolism
+K03040,0.4971539712,Purine metabolism
+K01951,0.4666215931,Purine metabolism
+K01768,0.6323024742,Purine metabolism
+K00759,0.5236912314,Purine metabolism
+K02341,0.4942061882,Purine metabolism
+K02343,0.4844341962,Purine metabolism
+K02338,0.4840159794,Purine metabolism
+K00088,0.479234562,Purine metabolism
+K00958,0.8740701689,Purine metabolism
+K02340,0.4852640769,Purine metabolism
+K01756,0.4836558586,Purine metabolism
+K03043,0.4825632791,Purine metabolism
+K00939,0.482600434,Purine metabolism
+K02335,0.4809926841,Purine metabolism
+K03060,0.5404773259,Purine metabolism
+K03046,0.4821893931,Purine metabolism
+K02337,0.4763960708,Purine metabolism
+K02428,0.4604516002,Purine metabolism
+K00087,-0.9165762368,Purine metabolism
+K01939,0.4707963652,Purine metabolism
+K01524,0.6112996498,Purine metabolism
+K03784,0.4872938406,Purine metabolism
+K01515,0.4755361915,Purine metabolism
+K01483,-0.707920689,Purine metabolism
+K00951,0.4223258143,Purine metabolism
+K10353,1.118745811,Purine metabolism
+K00856,0.7582771114,Purine metabolism
+K03763,0.441944987,Purine metabolism
+K00602,0.3603546627,Purine metabolism
+K01486,0.4165429061,Purine metabolism
+K01428,0.691865044,Purine metabolism
+K01933,0.3457697625,Purine metabolism
+K01429,0.6848035041,Purine metabolism
+K01430,0.6825287918,Purine metabolism
+K11175,0.34463964,Purine metabolism
+K01588,0.3437288739,Purine metabolism
+K01945,0.3437288739,Purine metabolism
+K01923,0.3396137067,Purine metabolism
+K07816,0.3990580312,Purine metabolism
+K01119,0.6521875692,Purine metabolism
+K01525,-0.7399598739,Purine metabolism
+K01129,-0.4791983837,Purine metabolism
+K00764,0.2591642558,Purine metabolism
+K01081,0.4632476118,Purine metabolism
+K13479,-0.6001578084,Purine metabolism
+K01241,-0.4481508607,Purine metabolism
+K03783,-0.2568833704,Purine metabolism
+K01487,-0.3955020735,Purine metabolism
+K02339,-0.3815442578,Purine metabolism
+K00860,0.2280434386,Purine metabolism
+K00962,-0.1506352867,Purine metabolism
+K02825,0.9272153319,Pyrimidine metabolism
+K01485,1.192940763,Pyrimidine metabolism
+K00943,0.7299413512,Pyrimidine metabolism
+K01956,0.5904918176,Pyrimidine metabolism
+K00384,0.5700641418,Pyrimidine metabolism
+K00857,0.6503743275,Pyrimidine metabolism
+K00226,0.7833190709,Pyrimidine metabolism
+K08728,0.888710669,Pyrimidine metabolism
+K00560,0.5315669211,Pyrimidine metabolism
+K01464,-0.9144000434,Pyrimidine metabolism
+K01520,0.4949126735,Pyrimidine metabolism
+K00609,0.5272457231,Pyrimidine metabolism
+K00761,0.4871516391,Pyrimidine metabolism
+K01493,0.4837613732,Pyrimidine metabolism
+K01937,0.4840716582,Pyrimidine metabolism
+K09903,0.4836231797,Pyrimidine metabolism
+K01591,0.4815927704,Pyrimidine metabolism
+K00254,-0.6457998432,Pyrimidine metabolism
+K01465,0.4602210839,Pyrimidine metabolism
+K00756,0.5769696107,Pyrimidine metabolism
+K01955,0.4155326653,Pyrimidine metabolism
+K00945,0.3865244346,Pyrimidine metabolism
+K00762,0.4007368418,Pyrimidine metabolism
+K00876,0.3575155903,Pyrimidine metabolism
+K00610,-0.5569039062,Pyrimidine metabolism
+K01489,-0.4574136493,Pyrimidine metabolism
+K00757,-0.227682311,Pyrimidine metabolism
+K03465,0.2336355247,Pyrimidine metabolism
+K02823,-0.1468849854,Pyrimidine metabolism
+K07590,-1.816157162,Ribosome
+K02913,0.5795026424,Ribosome
+K02919,0.62322708,Ribosome
+K02902,0.4898755109,Ribosome
+K02970,0.4873379316,Ribosome
+K02959,0.4850636095,Ribosome
+K02990,0.4850636095,Ribosome
+K02863,0.4836231797,Ribosome
+K02864,0.4836231797,Ribosome
+K02867,0.4836231797,Ribosome
+K02871,0.4836231797,Ribosome
+K02874,0.4836231797,Ribosome
+K02876,0.4836231797,Ribosome
+K02878,0.4836231797,Ribosome
+K02879,0.4836231797,Ribosome
+K02881,0.4836231797,Ribosome
+K02884,0.4836231797,Ribosome
+K02886,0.4836231797,Ribosome
+K02887,0.4836231797,Ribosome
+K02888,0.4836231797,Ribosome
+K02890,0.4836231797,Ribosome
+K02892,0.4836231797,Ribosome
+K02895,0.4836231797,Ribosome
+K02899,0.4836231797,Ribosome
+K02906,0.4836231797,Ribosome
+K02909,0.4836150088,Ribosome
+K02926,0.4836231797,Ribosome
+K02931,0.4836231797,Ribosome
+K02933,0.4836231797,Ribosome
+K02935,0.4836231797,Ribosome
+K02939,0.4836231797,Ribosome
+K02946,0.4836231797,Ribosome
+K02948,0.4836231797,Ribosome
+K02950,0.4836231797,Ribosome
+K02952,0.4836231797,Ribosome
+K02956,0.4836231797,Ribosome
+K02961,0.4836231797,Ribosome
+K02963,0.4836231797,Ribosome
+K02965,0.4836231797,Ribosome
+K02967,0.4836231797,Ribosome
+K02968,0.4836231797,Ribosome
+K02982,0.4836231797,Ribosome
+K02986,0.4836231797,Ribosome
+K02988,0.4836231797,Ribosome
+K02992,0.4836231797,Ribosome
+K02994,0.4836231797,Ribosome
+K02996,0.4836231797,Ribosome
+K02904,0.484603695,Ribosome
+K02916,0.4824821795,Ribosome
+K02911,0.483563824,Ribosome
+K02907,0.4603946938,Ribosome
+K02945,0.4156259647,Ribosome
+K02954,0.4152936284,Ribosome
+K02914,0.3251831845,Ribosome
+K02897,-0.2693356745,Ribosome
+K03739,0.9548675722,Staphylococcus aureus infection
+K03740,0.9548675722,Staphylococcus aureus infection
+K14205,0.8300223776,Staphylococcus aureus infection

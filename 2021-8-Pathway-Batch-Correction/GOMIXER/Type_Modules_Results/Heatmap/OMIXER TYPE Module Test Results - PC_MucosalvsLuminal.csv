@@ -1,0 +1,123 @@
+Taxon,Feature,Difference,P-value,FDR,Change
+NA,MF0133: menaquinone production,-10133.32822,0,0,-1
+NA,MF0132: superoxide reductase,5138.9536,0.0039,0.0076,1
+NA,MF0131: superoxide dismutase,580.2083712,0.3043,0.347,0
+NA,MF0130: peroxidase,-7354.367604,0,0,-1
+NA,MF0129: catalase,311.5955567,0.0869,0.1233,0
+NA,MF0127: Succinate production,-311.1951328,0.6075,0.6502,0
+NA,MF0126: propionate production via transferase,-1405.699738,0.001,0.0021,-1
+NA,MF0124: Fucose degradation,4308.23316,0,0,1
+NA,MF0123: propionate production (propanediol pathway),-201.9643895,0.6659,0.7004,0
+NA,MF0122: propionate production (succinate pathway),-2433.647889,0.0013,0.0027,-1
+NA,MF0121: propionate production (acrylate pathway),-747.5569484,2.00E-04,6.00E-04,-1
+NA,MF0120: lactate consumption,502.2916197,7.00E-04,0.0016,1
+NA,MF0119: lactate production,-17904.60573,0,0,-1
+NA,MF0118: formate conversion,428.2477559,0.0165,0.0265,1
+NA,MF0117: butyrate production via kinase,1910.937356,0.0107,0.0181,1
+NA,MF0116: butyrate production via transferase,2270.968798,0,0,1
+NA,MF0114: acetyl-CoA to crotonyl-CoA,1747.921097,0.1308,0.1813,0
+NA,MF0113: acetyl-CoA to acetate,-8879.949756,0,0,-1
+NA,MF0112: acetate to acetyl-CoA,-1256.506852,0.1487,0.1994,0
+NA,MF0110: glyoxylate bypass,6891.673121,0,0,1
+NA,MF0109: glycerol degradation (glycerol kinase pathway),-3058.522392,0,0,-1
+NA,MF0108: glycerol degradation (dihydroxyacetone pathway),2155.146019,0.0058,0.0106,1
+NA,MF0107: glycerol degradation (propanediol pathway),-221.2169022,0.009,0.0154,-1
+NA,MF0104: nitrate reduction (dissimilatory),21.76908949,0.4841,0.5369,0
+NA,MF0103: nitrate reduction (assimilatory),-1649.081118,0.1346,0.1845,0
+NA,MF0102: mucin degradation,-6781.663621,0,0,-1
+NA,MF0101: Sulfate reduction (assimilatory),737.450216,9.00E-04,0.002,1
+NA,MF0100: Sulfate reduction (dissimilatory),199.5769722,0.0365,0.0556,0
+NA,MF0099: methanol conversion,52.92286471,0.1827,0.2275,0
+NA,MF0094: hydrogen metabolism,691.685381,2.00E-04,6.00E-04,1
+NA,MF0093: homoacetogenesis,3672.487217,2.00E-04,6.00E-04,1
+NA,MF0092: kdo2-lipid A synthesis,-2349.089864,0.0037,0.0074,-1
+NA,MF0091: beta-D-glucuronide and D-glucuronate degradation,2693.994407,0,0,1
+NA,MF0090: pentose phosphate pathway (non-oxidative branch),896.4823562,0.2456,0.2881,0
+NA,MF0088: TCA cycle (Helicobacter pathway),7985.845342,0,0,1
+NA,MF0087: TCA cycle (Mycobacterium pathway),-2998.433341,0.0503,0.073,0
+NA,MF0086: TCA cycle,2639.018412,0,1.00E-04,1
+NA,MF0085: pyruvate:formate lyase,9537.593078,0,0,1
+NA,MF0084: pyruvate:ferredoxin oxidoreductase,1059.722879,0.0049,0.0093,1
+NA,MF0083: pyruvate dehydrogenase complex,-1147.4927,0.0407,0.0612,0
+NA,MF0082: pentose phosphate pathway (oxidative branch),-9732.202328,0,0,-1
+NA,MF0081: Glycolysis (pay-off phase),-2562.19819,0,0,-1
+NA,MF0080: Glycolysis (preparatory phase),-5066.412802,0,0,-1
+NA,MF0079: bifidobacterium shunt,3274.570359,0.3043,0.347,0
+NA,MF0077: galactitol degradation,535.5778106,0.9762,0.9843,0
+NA,MF0075: sorbitol degradation (phosphotransferase)/sorbose degradation,286.6013092,0,0,1
+NA,MF0074: mannitol degradation,-3954.759262,0.0043,0.0082,-1
+NA,MF0073: sorbitol degradation (dehydrogenase),12654.50003,0,0,1
+NA,MF0071: D-galacturonate degradation,2718.350719,0,0,1
+NA,MF0070: galactonate degradation,238.314474,0,0,1
+NA,MF0069: galactarate degradation,615.8181938,0,0,1
+NA,MF0068: glucarate degradation,622.4765432,0,0,1
+NA,MF0066: glycogen metabolism,593.2108701,0.4003,0.4522,0
+NA,MF0065: pectin degradation - 5-dehydro-4-deoxy-D-glucuronate degradation,484.0753075,0.4657,0.5213,0
+NA,MF0063: fructan degradation,-6.273365759,0.7153,0.7459,0
+NA,MF0062: starch degradation,-7669.17202,0,0,-1
+NA,MF0061: mannose degradation,-14900.04168,0,0,-1
+NA,MF0060: ribose degradation,-8239.551755,0.0013,0.0027,-1
+NA,MF0059: rhamnose degradation,1880.690408,0,1.00E-04,1
+NA,MF0058: fructose degradation,-2237.706891,0.153,0.2006,0
+NA,MF0056: galactose degradation (Leloir pathway),-4144.201666,0,0,-1
+NA,MF0055: xylose degradation,5757.701473,0,0,1
+NA,MF0054: arabinose degradation,1090.891216,0.1425,0.1932,0
+NA,MF0052: chondroitin sulfate and dermatan sulfate degradation,-253.0885561,0,0,-1
+NA,MF0051: sucrose degradation (Actinobacteria),-1665.566482,0,0,-1
+NA,MF0050: melibiose degradation,-680.1837437,0.1639,0.2083,0
+NA,MF0049: maltose degradation,-7515.962918,0,0,-1
+NA,MF0048: lactose degradation,-4778.76231,0.0445,0.0653,0
+NA,MF0047: lactose and galactose degradation (PTS),-4358.651172,6.00E-04,0.0014,-1
+NA,MF0046: sucrose degradation,-1243.750664,0.1617,0.2076,0
+NA,MF0045: trehalose degradation,1270.840688,5.00E-04,0.0011,1
+NA,MF0044: glycocholate degradation,-8266.711817,0,0,-1
+NA,MF0043: arginine degradation (agmatinase pathway),-413.4373861,0.6232,0.6612,0
+NA,MF0042: 4-aminobutyrate degradation,-2561.3979,0.0051,0.0096,-1
+NA,MF0041: histidine degradation,-376.5896975,0.153,0.2006,0
+NA,MF0040: lysine degradation (cadaverine pathway),389.3303338,0,0,1
+NA,"MF0039: lysine fermentation to acetate and butyrate (3,6-diaminohexanoate pathway)",-734.3470509,0.0183,0.0286,-1
+NA,MF0036: arginine degradation (ornithine decarboxylase pathway),-4228.423993,1.00E-04,2.00E-04,-1
+NA,MF0035: arginine degradation (agmatine deiminase pathway),-1866.451299,0,1.00E-04,-1
+NA,MF0034: glutamine degradation (oxoglutarate pathway),1778.958967,0.1852,0.2282,0
+NA,MF0033: cysteine degradation (mercaptopyruvate pathway),3406.354126,0,0,1
+NA,MF0032: glutamine degradation (ammonia pathway),-5143.381852,0,1.00E-04,-1
+NA,MF0031: asparagine degradation,-5318.177462,0,0,-1
+NA,MF0030: threonine degradation (formate pathway),9363.374775,0,0,1
+NA,MF0029: threonine degradation (glycine pathway),141.5835545,0.9525,0.9684,0
+NA,MF0028: serine degradation,2975.41427,0.2031,0.2477,0
+NA,MF0027: cysteine degradation,-2707.800511,0.006,0.0108,-1
+NA,MF0026: cysteine biosynthesis/homocysteine degradation,-63.97806276,0.2279,0.2725,0
+NA,MF0024: methionine degradation (mercaptan pathway),76.27428248,0.0414,0.0616,0
+NA,MF0023: methionine degradation (cysteine pathway),-232.5508393,0.8117,0.8381,0
+NA,MF0022: isoleucine degradation,372.1183478,0.1573,0.2041,0
+NA,MF0021: leucine degradation,-47.46781761,0.0011,0.0024,-1
+NA,MF0020: valine degradation,611.086088,0.0292,0.0451,1
+NA,MF0019: proline degradation (aminopentanoate pathway),502.6187218,0.011,0.0184,1
+NA,MF0018: proline degradation (glutamate pathway),125.8536097,0.0765,0.1097,0
+NA,MF0017: alanine degradation (racemase pathway),-1631.50798,2.00E-04,6.00E-04,-1
+NA,MF0016: glycine degradation,-1236.03467,0.1079,0.1513,0
+NA,MF0014: glutamate degradation (4-aminobutanoate pathway),-2392.094623,3.00E-04,7.00E-04,-1
+NA,MF0013: glutamate degradation (crotonyl-CoA pathway),428.2252706,0.0151,0.0245,1
+NA,MF0012: aspartate degradation (fumarate pathway),-386.7601115,0.5767,0.6281,0
+NA,MF0011: aspartate degradation (oxaloacetate pathway),5618.148468,6.00E-04,0.0015,1
+NA,MF0010: tyrosine degradation (phenol pathway),-65.31151819,0,0,-1
+NA,MF0009: tryptophan degradation,-291.3837474,0.4888,0.5372,0
+NA,MF0008: tyrosine degradation (hydroxyphenylacetaldehyde pathway),1358.179684,0.6049,0.6502,0
+NA,MF0006: urea degradation,-2623.493753,0.009,0.0154,-1
+NA,MF0005: acetylneuraminate and acetylmannosamine degradation,-2853.714816,3.00E-04,7.00E-04,-1
+NA,MF0004: putrescine degradation,171.9673569,0,0,1
+NA,MF0003: acetylglucosamine degradation,-3723.856073,0.0132,0.0217,-1
+NA,MF0001: ethanol production (formate pathway),-9872.471574,0,0,-1
+NA,MF0128: Propionate conversion to succinate,22.09001418,6.00E-04,0.0013,1
+NA,MF0125: propionate production via kinase,99.80205944,0.1755,0.2207,0
+NA,MF0106: anaerobic fatty acid beta-oxidation,16.21811458,0.009,0.0154,1
+NA,MF0095: NADH:ferredoxin oxidoreductase,19.65887497,9.00E-04,0.0019,1
+NA,MF0089: Entner-Doudoroff pathway I,1262.307668,0.2222,0.2684,0
+NA,MF0057: alpha-D-glucose and alpha-D-glucose 1-phosphate degradation,20.20157911,0.0176,0.0278,1
+NA,MF0053: allose degradation,3011.136234,0.2739,0.3182,0
+NA,MF0037: arginine degradation (AST/succinyltransferase pathway),19.95992246,1.00E-04,3.00E-04,1
+NA,MF0015: glutamate degradation (methylaspartate pathway),19.95992246,1.00E-04,3.00E-04,1
+NA,MF0007: phenylalanine degradation,4474.2367,0.006,0.0108,1
+NA,MF0105: nitrate reduction (denitrification),0.5374098729,0.9881,0.9881,0
+NA,MF0067: PHB production,-5.344005857,0.2456,0.2881,0
+NA,MF0078: xylitol degradation,0,0.8175,0.8381,0

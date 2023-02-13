@@ -1,0 +1,49 @@
+Taxon	Feature	Difference	P-value	FDR	Change
+NA	MF0133: menaquinone production	-2716.7950651895626	0.0043	0.0095	-1
+NA	MF0130: peroxidase	-4109.704222268629	0.0056	0.0111	-1
+NA	MF0124: Fucose degradation	2896.0958752620954	0.0057	0.0112	1
+NA	MF0120: lactate consumption	711.8355100746212	0.0052	0.0106	1
+NA	MF0118: formate conversion	289.6225884391406	0.025	0.0364	1
+NA	MF0117: butyrate production via kinase	1010.8243302654137	0.2478	0.2504	0
+NA	MF0113: acetyl-CoA to acetate	-4482.222140272519	0.0371	0.0508	-1
+NA	MF0110: glyoxylate bypass	3155.5226819910968	0.1043	0.1192	0
+NA	MF0102: mucin degradation	-3058.616739037194	0.3213	0.3213	0
+NA	MF0101: Sulfate reduction (assimilatory)	386.4010346820032	0.2031	0.2074	0
+NA	MF0100: Sulfate reduction (dissimilatory)	356.70044808046623	0.0047	0.01	1
+NA	MF0099: methanol conversion	126.52469602558176	0.1043	0.1192	0
+NA	MF0094: hydrogen metabolism	434.86743967630764	0.0058	0.0112	1
+NA	MF0093: homoacetogenesis	1526.3870356081861	0.0324	0.0451	1
+NA	MF0092: kdo2-lipid A synthesis	-673.6868871052866	0.1976	0.2062	0
+NA	MF0088: TCA cycle (Helicobacter pathway)	2973.4785822049453	0.0231	0.0346	1
+NA	MF0084: pyruvate:ferredoxin oxidoreductase	481.87844290991507	0.0737	0.0931	0
+NA	MF0082: pentose phosphate pathway (oxidative branch)	-4270.922283724947	0.0125	0.0196	-1
+NA	MF0081: Glycolysis (pay-off phase)	-1168.1190546508878	0.0266	0.0381	-1
+NA	MF0073: sorbitol degradation (dehydrogenase)	8859.550487113713	0.0014	0.0041	1
+NA	MF0070: galactonate degradation	-35.418463589951415	0.2031	0.2074	0
+NA	MF0069: galactarate degradation	313.89347968002096	9.0E-4	0.0029	1
+NA	MF0068: glucarate degradation	334.763987749272	8.0E-4	0.0027	1
+NA	MF0067: PHB production	-7.299712920721838	0.1068	0.1207	0
+NA	MF0062: starch degradation	-2910.3153415795023	0.0235	0.0348	-1
+NA	MF0061: mannose degradation	-5515.774418774738	0.0187	0.0286	-1
+NA	MF0056: galactose degradation (Leloir pathway)	-2015.3229758451635	0.0024	0.006	-1
+NA	MF0055: xylose degradation	3287.533401444538	0.0022	0.0059	1
+NA	MF0052: chondroitin sulfate and dermatan sulfate degradation	-227.42387202624525	0.0282	0.0398	-1
+NA	MF0046: sucrose degradation	-1460.5212181018069	0.0844	0.1025	0
+NA	MF0044: glycocholate degradation	-1697.316941000201	0.0844	0.1025	0
+NA	MF0040: lysine degradation (cadaverine pathway)	69.06939402588552	0.1183	0.1306	0
+NA	MF0036: arginine degradation (ornithine decarboxylase pathway)	-1438.422475702444	0.0538	0.0717	0
+NA	MF0035: arginine degradation (agmatine deiminase pathway)	-669.1387418448403	0.0588	0.0763	0
+NA	MF0032: glutamine degradation (ammonia pathway)	-1773.3317542981167	0.101	0.1183	0
+NA	MF0031: asparagine degradation	-2018.2972870739395	0.0087	0.0146	-1
+NA	MF0030: threonine degradation (formate pathway)	3847.5256426147607	0.0578	0.0759	0
+NA	MF0027: cysteine degradation	-3363.5580748431094	0.0803	0.1001	0
+NA	MF0023: methionine degradation (cysteine pathway)	604.3765420912314	0.1183	0.1306	0
+NA	MF0019: proline degradation (aminopentanoate pathway)	500.74309188225743	0.0184	0.0284	1
+NA	MF0017: alanine degradation (racemase pathway)	-1513.4526189347962	0.046	0.0622	-1
+NA	MF0014: glutamate degradation (4-aminobutanoate pathway)	-869.0177651289468	0.101	0.1183	0
+NA	MF0013: glutamate degradation (crotonyl-CoA pathway)	309.33666400286097	0.1278	0.1394	0
+NA	MF0010: tyrosine degradation (phenol pathway)	-33.80236802843028	0.07	0.0896	0
+NA	MF0006: urea degradation	-2285.100143837444	0.153	0.1632	0
+NA	MF0005: acetylneuraminate and acetylmannosamine degradation	-1579.2552331924162	0.1298	0.14	0
+NA	MF0004: putrescine degradation	72.6696839761284	0.006	0.0113	1
+NA	MF0105: nitrate reduction (denitrification)	-4.333302931396455	0.1587	0.1674	0

@@ -1,0 +1,269 @@
+feature,coef,annotation
+K03411,1.320464789,Bacterial chemotaxis
+K03410,1.32380129,Bacterial chemotaxis
+K02416,0.8911817817,Bacterial chemotaxis
+K02410,0.8372606582,Bacterial chemotaxis
+K02557,0.767283831,Bacterial chemotaxis
+K02417,0.8015793052,Bacterial chemotaxis
+K03409,1.14283884,Bacterial chemotaxis
+K03414,0.5031001121,Bacterial chemotaxis
+K04784,-1.786392687,Biosynthesis of siderophore group nonribosomal peptides
+K00216,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K01252,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K02363,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K02364,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K04781,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K04783,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K04785,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K04786,-1.342279047,Biosynthesis of siderophore group nonribosomal peptides
+K02399,-1.342279047,Flagellar assembly
+K02423,-1.342279047,Flagellar assembly
+K04562,1.479419988,Flagellar assembly
+K02392,0.9124683067,Flagellar assembly
+K02422,0.8857435149,Flagellar assembly
+K02388,0.8478058614,Flagellar assembly
+K02412,0.843263936,Flagellar assembly
+K02419,0.843263936,Flagellar assembly
+K02421,0.8413631552,Flagellar assembly
+K02401,0.8390139197,Flagellar assembly
+K02420,0.8365586448,Flagellar assembly
+K02413,0.9185229354,Flagellar assembly
+K02387,0.8346215783,Flagellar assembly
+K02408,0.8348955773,Flagellar assembly
+K02409,0.8712211811,Flagellar assembly
+K02418,0.8830878432,Flagellar assembly
+K02407,0.8827250677,Flagellar assembly
+K02396,0.8567864955,Flagellar assembly
+K02397,0.8556179142,Flagellar assembly
+K02389,0.8580542102,Flagellar assembly
+K02411,0.8434792005,Flagellar assembly
+K02400,0.7819622618,Flagellar assembly
+K02390,0.8074246944,Flagellar assembly
+K02391,-0.9232921501,Flagellar assembly
+K02398,0.789917934,Flagellar assembly
+K02414,0.9017102341,Flagellar assembly
+K02394,0.4924231588,Flagellar assembly
+K02386,0.4983339601,Flagellar assembly
+K02393,0.4983339601,Flagellar assembly
+K00146,-1.342279047,Phenylalanine metabolism
+K02554,-1.342279047,Phenylalanine metabolism
+K02609,-1.342279047,Phenylalanine metabolism
+K02610,-1.342279047,Phenylalanine metabolism
+K02611,-1.342279047,Phenylalanine metabolism
+K02612,-1.342279047,Phenylalanine metabolism
+K02613,-1.342279047,Phenylalanine metabolism
+K02615,-1.342279047,Phenylalanine metabolism
+K02618,-1.342279047,Phenylalanine metabolism
+K04073,-1.342279047,Phenylalanine metabolism
+K05708,-1.342279047,Phenylalanine metabolism
+K05709,-1.342279047,Phenylalanine metabolism
+K05710,-1.342279047,Phenylalanine metabolism
+K05711,-1.342279047,Phenylalanine metabolism
+K05712,-1.342279047,Phenylalanine metabolism
+K05713,-1.342279047,Phenylalanine metabolism
+K05714,-1.342279047,Phenylalanine metabolism
+K00285,-1.078972876,Phenylalanine metabolism
+K00074,0.6537092465,Phenylalanine metabolism
+K01912,0.6526004588,Phenylalanine metabolism
+K10797,0.9090683266,Phenylalanine metabolism
+K02614,0.3277802368,Phenylalanine metabolism
+K01451,0.2669971579,Phenylalanine metabolism
+K04517,0.9230479819,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01609,0.9363738213,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K11646,1.325002208,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K06209,1.041888728,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00766,0.9626029366,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K05887,-1.342279047,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K13498,-1.527093149,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K14187,-1.342279047,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01658,0.8946972907,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01817,0.7171944246,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00891,0.7306782607,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00014,0.6283047284,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K00800,0.6523654791,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01736,0.6523650319,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01735,0.6471485121,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K14170,0.7267219834,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03856,0.7801578757,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K06208,0.9851297033,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03786,0.8290744034,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01657,0.6580189752,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K01626,0.6060491723,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K03785,0.5123877987,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K04516,0.5589792268,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K04518,0.4522764232,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K13497,-0.3156324686,"Phenylalanine, tyrosine and tryptophan biosynthesis"
+K07590,1.160031761,Ribosome
+K02945,0.5678416912,Ribosome
+K02914,0.5749075826,Ribosome
+K02954,0.5348001854,Ribosome
+K02970,0.5445895174,Ribosome
+K02904,0.5202349762,Ribosome
+K02863,0.5195079453,Ribosome
+K02864,0.5195079453,Ribosome
+K02867,0.5195079453,Ribosome
+K02871,0.5195079453,Ribosome
+K02874,0.5195079453,Ribosome
+K02876,0.5195079453,Ribosome
+K02878,0.5195079453,Ribosome
+K02879,0.5195079453,Ribosome
+K02881,0.5195079453,Ribosome
+K02884,0.5195079453,Ribosome
+K02886,0.5195079453,Ribosome
+K02887,0.5195079453,Ribosome
+K02888,0.5195079453,Ribosome
+K02890,0.5195079453,Ribosome
+K02892,0.5195079453,Ribosome
+K02895,0.5195079453,Ribosome
+K02899,0.5195079453,Ribosome
+K02906,0.5195079453,Ribosome
+K02926,0.5195079453,Ribosome
+K02931,0.5195079453,Ribosome
+K02933,0.5195079453,Ribosome
+K02935,0.5195079453,Ribosome
+K02939,0.5195079453,Ribosome
+K02946,0.5195079453,Ribosome
+K02948,0.5195079453,Ribosome
+K02950,0.5195079453,Ribosome
+K02952,0.5195079453,Ribosome
+K02956,0.5195079453,Ribosome
+K02961,0.5195079453,Ribosome
+K02963,0.5195079453,Ribosome
+K02965,0.5195079453,Ribosome
+K02967,0.5195079453,Ribosome
+K02968,0.5195079453,Ribosome
+K02982,0.5195079453,Ribosome
+K02986,0.5195079453,Ribosome
+K02988,0.5195079453,Ribosome
+K02992,0.5195079453,Ribosome
+K02994,0.5195079453,Ribosome
+K02996,0.5195079453,Ribosome
+K02916,0.5191669362,Ribosome
+K02959,0.5176964844,Ribosome
+K02990,0.5176964844,Ribosome
+K02902,0.5174650341,Ribosome
+K02911,0.5090578029,Ribosome
+K02909,0.4891996423,Ribosome
+K02907,0.4805209524,Ribosome
+K02913,0.4581692914,Ribosome
+K02897,0.2969354862,Ribosome
+K02919,0.2984803812,Ribosome
+K11689,1.038384375,Two-component system
+K03415,1.45739301,Two-component system
+K02402,-1.342279047,Two-component system
+K02403,-1.342279047,Two-component system
+K03532,-1.342279047,Two-component system
+K03533,-1.344443364,Two-component system
+K05874,-1.342279047,Two-component system
+K05875,-1.342279047,Two-component system
+K05876,-1.342279047,Two-component system
+K05877,-1.342279047,Two-component system
+K06080,-1.342279047,Two-component system
+K07637,-1.342279047,Two-component system
+K07639,-1.342279047,Two-component system
+K07640,-1.342279047,Two-component system
+K07641,-1.342279047,Two-component system
+K07642,-1.342279047,Two-component system
+K07643,-1.342279047,Two-component system
+K07644,-1.342279047,Two-component system
+K07645,-1.342279047,Two-component system
+K07647,-1.342279047,Two-component system
+K07648,-1.342279047,Two-component system
+K07658,0.7316123803,Two-component system
+K07660,-1.342279047,Two-component system
+K07661,-1.342279047,Two-component system
+K07662,-1.342279047,Two-component system
+K07663,-1.342279047,Two-component system
+K07664,-1.342279047,Two-component system
+K07665,-1.342279047,Two-component system
+K07675,-1.342279047,Two-component system
+K07676,-1.342279047,Two-component system
+K07677,-1.342279047,Two-component system
+K07678,-1.342279047,Two-component system
+K07679,-1.342279047,Two-component system
+K07685,-1.342279047,Two-component system
+K07686,-1.342279047,Two-component system
+K07687,-1.342279047,Two-component system
+K07688,-1.342279047,Two-component system
+K07689,-1.342279047,Two-component system
+K07690,-1.342279047,Two-component system
+K07700,-1.342279047,Two-component system
+K07701,-1.342279047,Two-component system
+K07702,-1.342279047,Two-component system
+K07711,-1.342279047,Two-component system
+K07715,-1.342279047,Two-component system
+K07771,-1.342279047,Two-component system
+K07772,-1.342279047,Two-component system
+K07773,-1.342279047,Two-component system
+K07781,-1.342279047,Two-component system
+K07782,-1.342279047,Two-component system
+K07784,-1.542512676,Two-component system
+K07786,-1.342279047,Two-component system
+K07788,-1.342279047,Two-component system
+K07789,-1.342279047,Two-component system
+K07796,-1.342279047,Two-component system
+K07797,-1.342279047,Two-component system
+K07810,-1.342279047,Two-component system
+K07811,-1.342279047,Two-component system
+K08349,-1.342279047,Two-component system
+K08350,-1.342279047,Two-component system
+K09477,-1.342279047,Two-component system
+K07718,1.008077127,Two-component system
+K07720,0.9871316263,Two-component system
+K08348,-1.471858146,Two-component system
+K03406,1.394734133,Two-component system
+K07674,-1.269920727,Two-component system
+K02406,0.9680305743,Two-component system
+K07794,1.028664481,Two-component system
+K03776,-0.9003700092,Two-component system
+K07699,0.7291499589,Two-component system
+K02106,-0.9799635259,Two-component system
+K02556,0.8528365273,Two-component system
+K03408,0.9170574263,Two-component system
+K03563,0.8903498768,Two-component system
+K02405,0.8917240945,Two-component system
+K02667,1.219156936,Two-component system
+K03412,0.9128001139,Two-component system
+K07793,0.9357643316,Two-component system
+K03413,0.8716849844,Two-component system
+K07636,0.5496291528,Two-component system
+K04771,0.5510348682,Two-component system
+K03407,0.8344977595,Two-component system
+K02313,0.530040342,Two-component system
+K02584,1.036715363,Two-component system
+K00575,0.8233267243,Two-component system
+K11614,0.9221200839,Two-component system
+K11615,0.941204745,Two-component system
+K07777,0.9562955213,Two-component system
+K07813,0.7759163365,Two-component system
+K11712,0.7396035503,Two-component system
+K13041,0.7609613434,Two-component system
+K13040,0.8217858432,Two-component system
+K13924,0.8184199237,Two-component system
+K07667,0.4579708898,Two-component system
+K07646,0.4263620975,Two-component system
+K02490,1.374851565,Two-component system
+K07717,0.6618906233,Two-component system
+K07703,-0.7888287113,Two-component system
+K11690,0.545869046,Two-component system
+K05966,-0.441054364,Two-component system
+K13927,0.5237398167,Two-component system
+K07704,0.4240257339,Two-component system
+K07657,0.4921143129,Two-component system
+K03092,0.3260482507,Two-component system
+K01546,0.2747321991,Two-component system
+K01547,0.2733530585,Two-component system
+K01548,0.2733530585,Two-component system
+K07668,0.3933321366,Two-component system
+K07803,0.3749228498,Two-component system
+K07652,0.4074339875,Two-component system
+K04751,0.4082562362,Two-component system
+K07706,0.3927206332,Two-component system
+K07707,0.4260348395,Two-component system
+K05964,-0.3204588978,Two-component system
+K07798,-0.2862505906,Two-component system
+K07712,0.5304842634,Two-component system
+K07713,0.307997626,Two-component system
+K07799,0.3116253223,Two-component system
+K00990,0.4331534476,Two-component system
+K07787,-0.2309620314,Two-component system

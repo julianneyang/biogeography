@@ -1,0 +1,206 @@
+feature,coef,annotation
+K02557,0.4536227539,Bacterial chemotaxis
+K03414,0.6685717949,Bacterial chemotaxis
+K02410,0.4694780166,Bacterial chemotaxis
+K02416,0.4632338571,Bacterial chemotaxis
+K03409,0.5016658438,Bacterial chemotaxis
+K02417,0.47291204,Bacterial chemotaxis
+K03411,0.4715142487,Bacterial chemotaxis
+K03410,0.4590527035,Bacterial chemotaxis
+K01903,-0.4557347152,Citrate cycle (TCA cycle)
+K00241,-0.4639809425,Citrate cycle (TCA cycle)
+K00240,-0.3543801364,Citrate cycle (TCA cycle)
+K01960,-0.4819005847,Citrate cycle (TCA cycle)
+K00024,-0.4480397389,Citrate cycle (TCA cycle)
+K01676,-0.4426651683,Citrate cycle (TCA cycle)
+K00246,0.4304564519,Citrate cycle (TCA cycle)
+K00245,0.4302071273,Citrate cycle (TCA cycle)
+K00239,-0.3271134043,Citrate cycle (TCA cycle)
+K00658,-0.3009915622,Citrate cycle (TCA cycle)
+K00031,0.3455311883,Citrate cycle (TCA cycle)
+K00164,-0.2772878148,Citrate cycle (TCA cycle)
+K01677,0.3494095807,Citrate cycle (TCA cycle)
+K01678,0.3494095807,Citrate cycle (TCA cycle)
+K00175,-0.1904863105,Citrate cycle (TCA cycle)
+K00244,-0.2999302166,Citrate cycle (TCA cycle)
+K00174,-0.1870524238,Citrate cycle (TCA cycle)
+K01679,-0.2346171858,Citrate cycle (TCA cycle)
+K01647,0.214949973,Citrate cycle (TCA cycle)
+K01681,0.2015043836,Citrate cycle (TCA cycle)
+K01958,-0.2541419337,Citrate cycle (TCA cycle)
+K00030,-0.2591372009,Citrate cycle (TCA cycle)
+K02414,0.6532617783,Flagellar assembly
+K02397,0.5569995207,Flagellar assembly
+K02418,0.5928907231,Flagellar assembly
+K02386,0.7511406556,Flagellar assembly
+K02393,0.7511406556,Flagellar assembly
+K02389,0.566515521,Flagellar assembly
+K02394,0.6967134767,Flagellar assembly
+K02409,0.5249249618,Flagellar assembly
+K04562,0.5752750429,Flagellar assembly
+K02411,0.5159657609,Flagellar assembly
+K02413,0.5773589764,Flagellar assembly
+K02388,0.4828147727,Flagellar assembly
+K02390,0.4975133829,Flagellar assembly
+K02407,0.5605636935,Flagellar assembly
+K02408,0.487113181,Flagellar assembly
+K02400,0.468508981,Flagellar assembly
+K02396,0.5016433637,Flagellar assembly
+K02412,0.4630708159,Flagellar assembly
+K02419,0.4630708159,Flagellar assembly
+K02387,0.4642938451,Flagellar assembly
+K02420,0.4657822056,Flagellar assembly
+K02421,0.4628121023,Flagellar assembly
+K02401,0.4673656857,Flagellar assembly
+K02392,0.4617458062,Flagellar assembly
+K02422,0.4756661614,Flagellar assembly
+K02398,0.4885629673,Flagellar assembly
+K00917,0.6670001647,Galactose metabolism
+K08302,0.5745903915,Galactose metabolism
+K01220,-0.5635114675,Galactose metabolism
+K02788,-0.5635114675,Galactose metabolism
+K12111,-0.5863079105,Galactose metabolism
+K02786,-0.5549374912,Galactose metabolism
+K01819,-0.5797527086,Galactose metabolism
+K01635,-0.5717706114,Galactose metabolism
+K01182,0.3451576805,Galactose metabolism
+K02744,-0.4435786355,Galactose metabolism
+K02746,-0.490461075,Galactose metabolism
+K02775,-0.3521927828,Galactose metabolism
+K02747,-0.4582618875,Galactose metabolism
+K02745,-0.4474550317,Galactose metabolism
+K10984,-0.3842719667,Galactose metabolism
+K02773,-0.2610892789,Galactose metabolism
+K01684,0.3232082061,Galactose metabolism
+K01187,-0.189838975,Galactose metabolism
+K10985,-0.3566694877,Galactose metabolism
+K10986,-0.3566694877,Galactose metabolism
+K01190,-0.1610325839,Galactose metabolism
+K00849,-0.2007157016,Galactose metabolism
+K07406,0.3562437415,Galactose metabolism
+K01784,-0.1894710335,Galactose metabolism
+K07407,-0.1587007593,Galactose metabolism
+K02774,-0.2082524616,Galactose metabolism
+K12308,0.1555334993,Galactose metabolism
+K02517,-0.3529244817,Lipopolysaccharide biosynthesis
+K00677,-0.3884446424,Lipopolysaccharide biosynthesis
+K00748,-0.3260806785,Lipopolysaccharide biosynthesis
+K00912,-0.3260806785,Lipopolysaccharide biosynthesis
+K01627,-0.3260806785,Lipopolysaccharide biosynthesis
+K02527,-0.3260806785,Lipopolysaccharide biosynthesis
+K02536,-0.3175938378,Lipopolysaccharide biosynthesis
+K00979,-0.2971645562,Lipopolysaccharide biosynthesis
+K03273,0.3284566617,Lipopolysaccharide biosynthesis
+K02840,-0.5588443617,Lipopolysaccharide biosynthesis
+K03271,0.3553285648,Lipopolysaccharide biosynthesis
+K03272,0.5328002842,Lipopolysaccharide biosynthesis
+K02535,0.3521619064,Lipopolysaccharide biosynthesis
+K03269,-0.3981699667,Lipopolysaccharide biosynthesis
+K03270,-0.298816136,Lipopolysaccharide biosynthesis
+K03274,0.3037395289,Lipopolysaccharide biosynthesis
+K07031,0.2953010835,Lipopolysaccharide biosynthesis
+K02843,-0.2141233157,Lipopolysaccharide biosynthesis
+K11180,0.9078048632,Nitrotoluene degradation
+K11181,0.9078048632,Nitrotoluene degradation
+K06281,-0.4436395387,Nitrotoluene degradation
+K06282,-0.4436395387,Nitrotoluene degradation
+K10678,0.6354753496,Nitrotoluene degradation
+K00198,0.592047684,Nitrotoluene degradation
+K00196,0.5919995624,Nitrotoluene degradation
+K10679,-0.3568548364,Nitrotoluene degradation
+K03518,0.4559599069,Nitrotoluene degradation
+K00340,-0.3530746499,Oxidative phosphorylation
+K00330,-0.3516113029,Oxidative phosphorylation
+K00331,-0.3530612543,Oxidative phosphorylation
+K00343,-0.3530612543,Oxidative phosphorylation
+K00339,-0.3515874532,Oxidative phosphorylation
+K00342,-0.3515874532,Oxidative phosphorylation
+K00341,-0.3509395965,Oxidative phosphorylation
+K00337,-0.3451091298,Oxidative phosphorylation
+K00338,-0.3395876726,Oxidative phosphorylation
+K02119,0.4916210054,Oxidative phosphorylation
+K02122,0.4680239813,Oxidative phosphorylation
+K00425,-0.4331234768,Oxidative phosphorylation
+K00426,-0.4331234768,Oxidative phosphorylation
+K13378,-0.4410834097,Oxidative phosphorylation
+K03885,-0.4281057098,Oxidative phosphorylation
+K02117,0.3776290993,Oxidative phosphorylation
+K02118,0.3776290993,Oxidative phosphorylation
+K02120,0.3776290993,Oxidative phosphorylation
+K02123,0.3772819974,Oxidative phosphorylation
+K02124,0.3772819974,Oxidative phosphorylation
+K02121,0.2813216684,Oxidative phosphorylation
+K00336,0.2581777971,Oxidative phosphorylation
+K00332,0.3210769549,Oxidative phosphorylation
+K00333,0.3210769549,Oxidative phosphorylation
+K02113,-0.2288192337,Oxidative phosphorylation
+K00335,0.2170124115,Oxidative phosphorylation
+K02115,-0.1946417037,Oxidative phosphorylation
+K02110,-0.193979964,Oxidative phosphorylation
+K02112,-0.193979964,Oxidative phosphorylation
+K02114,-0.1940270271,Oxidative phosphorylation
+K02111,-0.1938438773,Oxidative phosphorylation
+K02108,-0.1931989658,Oxidative phosphorylation
+K02109,-0.1768573473,Oxidative phosphorylation
+K01507,-0.1727779513,Oxidative phosphorylation
+K00334,0.1670558505,Oxidative phosphorylation
+K03587,-0.3485451295,Peptidoglycan biosynthesis
+K07259,-0.4801305343,Peptidoglycan biosynthesis
+K00887,-0.5559002279,Peptidoglycan biosynthesis
+K03814,-0.4329820702,Peptidoglycan biosynthesis
+K05364,0.4813486432,Peptidoglycan biosynthesis
+K05367,-0.3745733828,Peptidoglycan biosynthesis
+K11695,-0.5779385968,Peptidoglycan biosynthesis
+K12555,-0.4941328447,Peptidoglycan biosynthesis
+K11694,-0.5646763153,Peptidoglycan biosynthesis
+K08724,-0.4579749611,Peptidoglycan biosynthesis
+K12553,-0.5244332234,Peptidoglycan biosynthesis
+K05363,-0.5033898151,Peptidoglycan biosynthesis
+K03980,0.2712503789,Peptidoglycan biosynthesis
+K03693,-0.2920685316,Peptidoglycan biosynthesis
+K02563,-0.1656139,Peptidoglycan biosynthesis
+K05366,-0.1641093827,Peptidoglycan biosynthesis
+K01000,-0.1650619912,Peptidoglycan biosynthesis
+K06153,-0.1607598195,Peptidoglycan biosynthesis
+K05515,0.1469792634,Peptidoglycan biosynthesis
+K07258,0.143199501,Peptidoglycan biosynthesis
+K12554,-0.5058820169,Peptidoglycan biosynthesis
+K02759,-0.492307925,Phosphotransferase system (PTS)
+K02760,-0.4864655626,Phosphotransferase system (PTS)
+K02761,-0.46715809,Phosphotransferase system (PTS)
+K02806,0.285043012,Phosphotransferase system (PTS)
+K02757,-0.2475388654,Phosphotransferase system (PTS)
+K01599,0.4373423927,Porphyrin and chlorophyll metabolism
+K05936,0.432097497,Porphyrin and chlorophyll metabolism
+K05934,0.433186711,Porphyrin and chlorophyll metabolism
+K02496,0.6215106537,Porphyrin and chlorophyll metabolism
+K02304,0.4514671644,Porphyrin and chlorophyll metabolism
+K02224,0.4014401848,Porphyrin and chlorophyll metabolism
+K06042,0.4206472929,Porphyrin and chlorophyll metabolism
+K02188,0.3971965208,Porphyrin and chlorophyll metabolism
+K02189,0.4187912974,Porphyrin and chlorophyll metabolism
+K02190,0.4011381723,Porphyrin and chlorophyll metabolism
+K01749,0.3771621246,Porphyrin and chlorophyll metabolism
+K09882,0.4249049584,Porphyrin and chlorophyll metabolism
+K01698,0.3641946935,Porphyrin and chlorophyll metabolism
+K04720,0.3612618848,Porphyrin and chlorophyll metabolism
+K02226,0.3461345051,Porphyrin and chlorophyll metabolism
+K02492,0.3572653804,Porphyrin and chlorophyll metabolism
+K02232,0.3486074951,Porphyrin and chlorophyll metabolism
+K03394,0.3813767419,Porphyrin and chlorophyll metabolism
+K01845,0.3638627473,Porphyrin and chlorophyll metabolism
+K00768,0.362524249,Porphyrin and chlorophyll metabolism
+K02233,0.3388923794,Porphyrin and chlorophyll metabolism
+K00595,0.4472317809,Porphyrin and chlorophyll metabolism
+K02227,0.3400408663,Porphyrin and chlorophyll metabolism
+K01772,-0.525507335,Porphyrin and chlorophyll metabolism
+K02231,0.3335049776,Porphyrin and chlorophyll metabolism
+K01719,-0.4060286761,Porphyrin and chlorophyll metabolism
+K02302,0.5177937432,Porphyrin and chlorophyll metabolism
+K00798,-0.2650575826,Porphyrin and chlorophyll metabolism
+K05895,0.3206503469,Porphyrin and chlorophyll metabolism
+K13542,0.2585536187,Porphyrin and chlorophyll metabolism
+K14205,-0.5416634911,Staphylococcus aureus infection
+K03739,-0.4914515171,Staphylococcus aureus infection
+K03740,-0.4914515171,Staphylococcus aureus infection
+K11041,0.4422896632,Staphylococcus aureus infection

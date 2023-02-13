@@ -1,0 +1,15 @@
+Taxon	Feature	Difference	P-value	FDR	Change
+NA	monosaccharide degradation	-20660.848809235846	0.0258	0.0722	-1
+NA	polysaccharide degradation	-7337.44607234803	0.0042	0.0195	-1
+NA	sugar acid degradation	-331.45594626035745	0.7986	0.7986	0
+NA	acetate production	-277.2541835057782	0.6425	0.6663	0
+NA	butyrate production	7308.097884390227	0.0222	0.0689	1
+NA	ammonia production	-32803.92263590614	0.0134	0.0538	-1
+NA	energy storage	2195.5742207846924	0.0741	0.1333	0
+NA	ethanol production	-4683.224099839037	0.1149	0.1693	0
+NA	acetogenesis	2339.4236336862596	0.3216	0.4093	0
+NA	hydrogen metabolism	-3.662068136879725	0.4693	0.5054	0
+NA	methane metabolism	74.37261365516483	0.1269	0.1776	0
+NA	cross-feeding intermediate metabolism	-5131.28251712161	0.0604	0.1333	0
+NA	propionate production	-4952.229805328967	0.0162	0.0566	-1
+NA	lipolytic fermentation	1547.9489207070874	0.2204	0.2939	0
