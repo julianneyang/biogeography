@@ -136,7 +136,7 @@ phyla_cols <- phyla_cols[names(phyla_cols) %in% lummucphyla]
 
 spf_gavage_L2_lum <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/Source RPCA/SPF/barplots/Luminal/level-2.csv", "SPF Gavage", ".*p__", phyla_cols, "Site") +
   theme(legend.position = "none")
-spf_gavage_L2_muc <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/Source RPCA/SPF/barplots/Luminal/level-2.csv", "SPF Gavage", ".*p__", phyla_cols, "Site") +
+spf_gavage_L2_muc <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/Source RPCA/SPF/barplots/Mucosal/level-2.csv", "SPF Gavage", ".*p__", phyla_cols, "Site") +
   theme(legend.position = "none")
 
 
@@ -218,11 +218,11 @@ aggregated_L2_lum <- plot_grid(UCLA_o_L2_lum, cs_L2_lum, spf_gavage_L2_lum, hum_
 dev.new(width=20, height=5)
 aggregated_L2_lum
 
-L2_lum_muc <- cowplot::plot_grid(aggregated_L2_lum,aggregated_L2_muc, ncol=1, nrow=2,labels=c("D",""), rel_widths = c(16,20)) 
+L2_lum_muc <- cowplot::plot_grid(aggregated_L2_lum,aggregated_L2_muc, ncol=1, nrow=2,labels=c("B",""), rel_widths = c(16,20)) 
 dev.new(width=20, height=5)
 L2_lum_muc
 
-L6_lum_muc <- cowplot::plot_grid(aggregated_L6_lum,aggregated_L6_muc, ncol=1, nrow=2,labels=c("C",""), rel_widths = c(16,20)) 
+L6_lum_muc <- cowplot::plot_grid(aggregated_L6_lum,aggregated_L6_muc, ncol=1, nrow=2,labels=c("A",""), rel_widths = c(16,20)) 
 dev.new(width=20, height=5)
 L6_lum_muc
 
