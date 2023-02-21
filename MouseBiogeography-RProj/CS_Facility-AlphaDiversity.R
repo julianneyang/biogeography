@@ -37,8 +37,8 @@ generate_adiv_plots <- function(input_data, X, Y){
 }
 
 #read in files
-metadata<- read.csv("CS-Facility-Analysis/CS_Facility_Metadata.csv")
-metadata$SampleID<-metadata$X.SampleID
+metadata<- read.csv("CS-Facility-Analysis/CS_Facility_Metadata.csv", row.names=1)
+metadata$SampleID<-row.names(metadata)
 intermediate<- (merge(data, metadata, by = 'SampleID'))
 data<- intermediate
 
@@ -188,80 +188,52 @@ data$Sequencing_Run= factor(data$Sequencing_Run)
 data$Type= factor(data$Type, levels=c("Luminal", "Mucosal"))
 data$Site_General = factor(data$Site_General, levels=c("Colon", "SI"))
 data$Site = factor(data$Site, levels= c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
+data$MouseID <- factor(data$MouseID)
 sapply(data,levels)
 
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Microbiota*Site_General, random = ~1|MouseID, data=data)
+luminaldata<-filter(data, Type=="Luminal")
+mucosaldata<-filter(data, Type =="Mucosal")
+colondata<-filter(data, Site_General =="Colon")
+SIdata<-filter(data, Site_General =="SI")
+
+
+# luminal - Site_General
+output=lme(fixed= shannon ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Microbiota*Site_General, random = ~1|MouseID, data=data)
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Microbiota*Site_General, random = ~1|MouseID, data=data)
+output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Microbiota*Site_General, random = ~1|MouseID, data=data)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
 summary(output)
 
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Microbiota*Site, random = ~1|MouseID, data=data)
+# mucosal - Site_General
+output=lme(fixed= shannon ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Microbiota*Site, random = ~1|MouseID, data=data)
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Microbiota*Site, random = ~1|MouseID, data=data)
+output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Microbiota*Site, random = ~1|MouseID, data=data)
-summary(output)
-
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Site + Microbiota*Type, random = ~1|MouseID, data=data)
-summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Site + Microbiota*Type, random = ~1|MouseID, data=data)
-summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site + Microbiota*Type, random = ~1|MouseID, data=data)
-summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site + Microbiota*Type, random = ~1|MouseID, data=data)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=mucosaldata)
 summary(output)
 
-output=lme(fixed= shannon ~ Sequencing_Run + Microbiota+ Sex+ Site + Type, random = ~1|MouseID, data=data)
+# luminal - Site
+output=lme(fixed= shannon ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Microbiota + Sex + Site + Type, random = ~1|MouseID, data=data)
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site + Microbiota + Type, random = ~1|MouseID, data=data)
+output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site + Microbiota + Type, random = ~1|MouseID, data=data)
-summary(output)
-#Linear mixed effects models, SPF Dataset
-spf<-filter(data, Microbiota=="Cedars_SPF")
-
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=spf)
-summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=spf)
-summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=spf)
-summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=spf)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
 summary(output)
 
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=spf)
+# mucosal - Site 
+output=lme(fixed= shannon ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=spf)
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=spf)
+output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=spf)
-summary(output)
-
-#Linear mixed effects models, Humanized Dataset
-humanized<-filter(data, Microbiota =="Humanized")
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=humanized)
-summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, humanized)
-summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=humanized)
-summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Site_General, random = ~1|MouseID, data=humanized)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
 summary(output)
 
-output=lme(fixed= shannon ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=humanized)
-summary(output)
-output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=humanized)
-summary(output)
-output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=humanized)
-summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type + Site, random = ~1|MouseID, data=humanized)
-summary(output)
