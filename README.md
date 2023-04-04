@@ -1,5 +1,3 @@
-# Alpha Diversity
-###Using output table of Deblur as input 
-```shell
-bash ../scripts/rarefy_alpha_diversity.sh Regional-ASV-table.qza 11238
-```
+# Mouse Biogeography Scripts 
+
+Raw data associated with this project can be found on NCBI with accession `PRJNA944800`.
