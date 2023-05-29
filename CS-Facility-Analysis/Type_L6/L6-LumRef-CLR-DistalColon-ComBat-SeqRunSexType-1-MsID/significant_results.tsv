@@ -1,4 +1,0 @@
-metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
-Type	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__	Mucosal	4.08511265881848	0.49595237568443	18	4	9.73426985006727e-07	0.00015477489061607
-Type	k__Bacteria.p__Verrucomicrobia.c__Verrucomicrobiae.o__Verrucomicrobiales.f__Akkermansiaceae.g__Akkermansia	Mucosal	3.03778826448755	0.620598015284336	18	6	0.000962947934231669	0.0765543607714177
-Type	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Ruminococcaceae.g__Ruminiclostridium_9	Mucosal	-0.489227242873678	0.123299913687343	18	18	0.0046129488184404	0.244486287377341

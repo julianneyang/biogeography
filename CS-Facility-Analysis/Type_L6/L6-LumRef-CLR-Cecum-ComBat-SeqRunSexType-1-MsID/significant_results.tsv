@@ -1,9 +1,0 @@
-metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
-Type	k__Bacteria.p__Deferribacteres.c__Deferribacteres.o__Deferribacterales.f__Deferribacteraceae.g__Mucispirillum	Mucosal	3.71415525079931	0.328504968349805	18	18	2.3169501917309e-06	0.000375345931060406
-Type	k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__DNF00809	Mucosal	-3.40495009929085	0.468097213763567	18	8	5.56125935093063e-05	0.00450462007425381
-Type	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__	Mucosal	3.11317531825094	0.742099493041599	18	3	0.000899082588378732	0.0485504597724515
-Type	k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__Enterorhabdus	Mucosal	-2.0345728037716	0.548814663553171	18	2	0.00234361486480373	0.0823283470745519
-Type	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Lachnoclostridium	Mucosal	-0.970297764134113	0.19986438419344	18	18	0.00254099836649852	0.0823283470745519
-Type	k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Desulfovibrio	Mucosal	-1.03423625276596	0.321132138239517	18	16	0.00616286716845385	0.166397413548254
-Type	k__Bacteria.p__Cyanobacteria.c__Melainabacteria.o__Gastranaerophilales.f__.g__	Mucosal	1.4657380204525	0.422088012251814	18	4	0.00938717898133804	0.217246142139538
-Sex	k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Marinifilaceae.g__Odoribacter	M	-2.82806459584213	0.827173248232093	18	6	0.0118406937563189	0.239774048565458
