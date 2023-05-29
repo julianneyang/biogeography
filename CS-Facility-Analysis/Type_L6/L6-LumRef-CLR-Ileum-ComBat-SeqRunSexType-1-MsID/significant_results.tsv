@@ -1,0 +1,9 @@
+metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
+Type	k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__DNF00809	Mucosal	-3.06164711528081	0.570615105792166	18	13	9.96199685175502e-05	0.0149429952776325
+Type	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__	Mucosal	3.30181919907546	0.590444785348987	18	6	0.000322080577911589	0.0241560433433692
+Type	k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Desulfovibrio	Mucosal	-1.033263840121	0.214900273828357	18	18	0.00187264233811048	0.0936321169055239
+Type	k__Bacteria.p__Deferribacteres.c__Deferribacteres.o__Deferribacterales.f__Deferribacteraceae.g__Mucispirillum	Mucosal	2.17434516462952	0.599524239160482	18	14	0.00274850109601601	0.1030687911006
+Type	k__Bacteria.p__Proteobacteria.c__Alphaproteobacteria.o__Rickettsiales.f__Mitochondria.g__	Mucosal	-3.24803444350178	0.801900521567896	18	10	0.00371414845422774	0.111424453626832
+Type	k__Bacteria.p__Cyanobacteria.c__Oxyphotobacteria.o__Chloroplast.f__.g__	Mucosal	-2.58443491893709	0.692739586579214	18	10	0.00629084282246791	0.157271070561698
+Sex	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__Lachnospiraceae_FCS020_group	M	-1.47419279574669	0.421913111375366	18	4	0.00998543883955561	0.187226978241668
+Sex	k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Betaproteobacteriales.f__Burkholderiaceae.g__Parasutterella	M	1.23993363327068	0.358682637847153	18	18	0.00939888834490738	0.187226978241668

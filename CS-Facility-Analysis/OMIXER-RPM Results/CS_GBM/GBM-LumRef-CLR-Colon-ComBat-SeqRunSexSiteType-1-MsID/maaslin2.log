@@ -1,0 +1,59 @@
+2022-10-31 15:05:06 INFO::Writing function arguments to log file
+2022-10-31 15:05:06 DEBUG::Function arguments
+2022-10-31 15:05:06 DEBUG::Output folder: CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID
+2022-10-31 15:05:06 DEBUG::Min Abundance: 0.000000
+2022-10-31 15:05:06 DEBUG::Min Prevalence: 0.100000
+2022-10-31 15:05:06 DEBUG::Normalization: CLR
+2022-10-31 15:05:06 DEBUG::Transform: NONE
+2022-10-31 15:05:06 DEBUG::Analysis method: LM
+2022-10-31 15:05:06 DEBUG::Max significance: 0.250000
+2022-10-31 15:05:06 DEBUG::Random effects: MouseID
+2022-10-31 15:05:06 DEBUG::Fixed effects: Sequencing_Run,Sex,Site,Type
+2022-10-31 15:05:06 DEBUG::Correction method: BH
+2022-10-31 15:05:06 DEBUG::Standardize: TRUE
+2022-10-31 15:05:06 DEBUG::Cores: 1
+2022-10-31 15:05:06 INFO::Verifying options selected are valid
+2022-10-31 15:05:06 INFO::Determining format of input files
+2022-10-31 15:05:06 INFO::Input format is data samples as columns and metadata samples as rows
+2022-10-31 15:05:06 DEBUG::Transformed data so samples are rows
+2022-10-31 15:05:06 DEBUG::The following samples were found to have features but no metadata. They will be removed. Mouse9A.FP102,Mouse6A.FP35,Mouse6A.FP36,Mouse8A.DTT88,Mouse6A.FP34,Mouse8A.DTT89,Mouse10A.DTT112,Mouse9A.FP101,Mouse9A.FP100,Mouse4A.FP23,Mouse4A.FP22,Mouse8A.DTT90,Mouse4A.FP24,Mouse1A.FP04,Mouse8A.FP88,Mouse8A.FP89,Mouse1A.FP06,Mouse1A.FP05,Mouse9A.DTT101,Mouse9A.DTT100,Mouse9A.DTT102,Mouse4A.DTT23,Mouse4A.DTT22,Mouse4A.DTT24,Mouse5A.FP30,Mouse6A.DTT35,Mouse6A.DTT36,Mouse10A.FP112,Mouse10A.FP114,Mouse10A.FP113,Mouse6A.DTT34,Mouse5A.DTT30,Mouse5A.FP28,Mouse5A.FP29,Mouse5A.DTT29,Mouse5A.DTT28,Mouse8A.FP90,Mouse1B.DTT16,Mouse1B.DTT17,Mouse1B.DTT18,Mouse2A.FP10,Mouse2A.FP12,Mouse2A.FP11,Mouse10A.DTT114,Mouse10A.DTT113,Mouse3A.FP18,Mouse3A.FP17,Mouse3A.FP16,Mouse7A.DTT40,Mouse7A.FP40,Mouse7A.DTT42,Mouse7A.FP41,Mouse7A.DTT41,Mouse7A.FP42
+2022-10-31 15:05:06 DEBUG::A total of 54 samples were found in both the data and metadata
+2022-10-31 15:05:06 DEBUG::Reordering data/metadata to use same sample ordering
+2022-10-31 15:05:06 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2022-10-31 15:05:06 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site + Type
+2022-10-31 15:05:06 INFO::Running selected normalization method: CLR
+2022-10-31 15:05:06 INFO::Filter data based on min abundance and min prevalence
+2022-10-31 15:05:06 INFO::Total samples in data: 54
+2022-10-31 15:05:06 INFO::Min samples required with min abundance for a feature not to be filtered: 5.400000
+2022-10-31 15:05:06 INFO::Total filtered features: 11
+2022-10-31 15:05:06 INFO::Filtered feature names: MGB038, MGB039, MGB056, MGB010, MGB050, MGB019, MGB027, MGB023, MGB025, MGB020, MGB021
+2022-10-31 15:05:06 INFO::Applying z-score to standardize continuous metadata
+2022-10-31 15:05:06 INFO::Running selected transform method: NONE
+2022-10-31 15:05:06 INFO::Running selected analysis method: LM
+2022-10-31 15:05:06 INFO::Fitting model to feature number 1, MGB015
+2022-10-31 15:05:06 INFO::Fitting model to feature number 2, MGB037
+2022-10-31 15:05:07 INFO::Fitting model to feature number 3, MGB033
+2022-10-31 15:05:07 INFO::Fitting model to feature number 4, MGB055
+2022-10-31 15:05:07 INFO::Fitting model to feature number 5, MGB034
+2022-10-31 15:05:07 INFO::Fitting model to feature number 6, MGB035
+2022-10-31 15:05:07 INFO::Fitting model to feature number 7, MGB036
+2022-10-31 15:05:07 INFO::Fitting model to feature number 8, MGB052
+2022-10-31 15:05:07 INFO::Fitting model to feature number 9, MGB031
+2022-10-31 15:05:07 INFO::Fitting model to feature number 10, MGB053
+2022-10-31 15:05:07 INFO::Fitting model to feature number 11, MGB032
+2022-10-31 15:05:07 INFO::Fitting model to feature number 12, MGB054
+2022-10-31 15:05:07 INFO::Fitting model to feature number 13, MGB005
+2022-10-31 15:05:07 INFO::Fitting model to feature number 14, MGB049
+2022-10-31 15:05:07 INFO::Fitting model to feature number 15, MGB006
+2022-10-31 15:05:07 INFO::Fitting model to feature number 16, MGB007
+2022-10-31 15:05:07 INFO::Fitting model to feature number 17, MGB029
+2022-10-31 15:05:07 INFO::Fitting model to feature number 18, MGB022
+2022-10-31 15:05:07 INFO::Fitting model to feature number 19, MGB024
+2022-10-31 15:05:07 INFO::Fitting model to feature number 20, MGB047
+2022-10-31 15:05:07 INFO::Fitting model to feature number 21, MGB040
+2022-10-31 15:05:07 INFO::Fitting model to feature number 22, MGB041
+2022-10-31 15:05:07 INFO::Fitting model to feature number 23, MGB043
+2022-10-31 15:05:07 INFO::Counting total values for each feature
+2022-10-31 15:05:07 INFO::Writing residuals to file CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/residuals.rds
+2022-10-31 15:05:07 INFO::Writing all results to file (ordered by increasing q-values): CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/all_results.tsv
+2022-10-31 15:05:07 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv

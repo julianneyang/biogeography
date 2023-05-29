@@ -1,0 +1,4 @@
+metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
+Type	k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__	Mucosal	3.92276755173228	0.634389840020047	18	7	2.3795616079508e-05	0.00349795556368768
+Type	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Lachnospiraceae.g__A2	Mucosal	1.90912146178341	0.343384570485606	18	9	0.000479527529446522	0.0352452734143194
+Type	k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__DNF00809	Mucosal	-3.09448793312195	0.731059271853572	18	13	0.000835435911592053	0.0409363596680106
