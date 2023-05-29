@@ -1,0 +1,59 @@
+2022-10-31 16:36:59 INFO::Writing function arguments to log file
+2022-10-31 16:36:59 DEBUG::Function arguments
+2022-10-31 16:36:59 DEBUG::Output folder: Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID
+2022-10-31 16:36:59 DEBUG::Min Abundance: 0.000000
+2022-10-31 16:36:59 DEBUG::Min Prevalence: 0.100000
+2022-10-31 16:36:59 DEBUG::Normalization: CLR
+2022-10-31 16:36:59 DEBUG::Transform: NONE
+2022-10-31 16:36:59 DEBUG::Analysis method: LM
+2022-10-31 16:36:59 DEBUG::Max significance: 0.250000
+2022-10-31 16:36:59 DEBUG::Random effects: MouseID
+2022-10-31 16:36:59 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
+2022-10-31 16:36:59 DEBUG::Correction method: BH
+2022-10-31 16:36:59 DEBUG::Standardize: TRUE
+2022-10-31 16:36:59 DEBUG::Cores: 1
+2022-10-31 16:36:59 INFO::Verifying options selected are valid
+2022-10-31 16:36:59 INFO::Determining format of input files
+2022-10-31 16:36:59 INFO::Input format is data samples as columns and metadata samples as rows
+2022-10-31 16:36:59 DEBUG::Transformed data so samples are rows
+2022-10-31 16:36:59 DEBUG::The following samples were found to have features but no metadata. They will be removed. TL1a_FP_139,TL1a_DTT_245_Repeat,TL1a_DTT_244_Repeat,TL1A_FP_637,TL1a_FP_174,TL1a_FP_210,TL1a_DTT_73,TL1A_FP_639,TL1a_FP_171,TL1a_DTT_75,TL1a_FP_173,TL1a_DTT_77,TL1a_FP_172,TL1a_DTT_78,TL1a_FP_205,TL1a_FP_97,TL1A_FP_640,TL1A_FP_641,TL1A_FP_685,TL1a_FP_207,TL1a_FP_99,TL1a_DTT_173_Repeat,TL1A_FP_687,TL1a_FP_209,TL1a_FP_208,TL1a_FP_241,TL1a_FP_243,TL1a_FP_245,TL1A_FP_688,TL1a_FP_244,TL1A_FP_689,TL1a_FP_246,TL1a_FP_169,TL1a_DTT_142_Repeat,TL1a_DTT_243,TL1a_DTT_241,TL1a_FP_64,TL1a_FP_65,TL1a_DTT_207,TL1a_FP_66,TL1a_DTT_205,TL1a_DTT_246,TL1a_FP_61,TL1a_FP_63,TL1a_DTT_76_Repeat,TL1a_DTT_208,TL1a_DTT_209,TL1a_DTT_97,TL1a_DTT_99,TL1A_DTT_640,TL1a_DTT_210,TL1A_DTT_641,TL1A_DTT_642,TL1A_DTT_687,TL1A_DTT_689,TL1a_DTT_169_Re_extracted,TL1a_DTT_171,TL1a_DTT_172_Re_extracted,TL1a_FP_75,TL1a_FP_76,TL1a_FP_77,TL1a_FP_78,TL1a_DTT_139,TL1a_FP_73,TL1a_FP_142,TL1a_FP_141,TL1a_FP_144,TL1a_FP_100,TL1a_FP_143,TL1a_DTT_63,TL1a_FP_102,TL1a_FP_101,TL1A_DTT_639,TL1a_DTT_64,TL1a_DTT_65,TL1a_DTT_66,TL1a_DTT_141
+2022-10-31 16:36:59 DEBUG::A total of 17 samples were found in both the data and metadata
+2022-10-31 16:36:59 DEBUG::Reordering data/metadata to use same sample ordering
+2022-10-31 16:36:59 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2022-10-31 16:36:59 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
+2022-10-31 16:36:59 INFO::Running selected normalization method: CLR
+2022-10-31 16:36:59 INFO::Filter data based on min abundance and min prevalence
+2022-10-31 16:36:59 INFO::Total samples in data: 17
+2022-10-31 16:36:59 INFO::Min samples required with min abundance for a feature not to be filtered: 1.700000
+2022-10-31 16:36:59 INFO::Total filtered features: 15
+2022-10-31 16:36:59 INFO::Filtered feature names: MGB016, MGB039, MGB056, MGB051, MGB054, MGB010, MGB050, MGB019, MGB027, MGB023, MGB024, MGB041, MGB020, MGB021, MGB009
+2022-10-31 16:36:59 INFO::Applying z-score to standardize continuous metadata
+2022-10-31 16:36:59 INFO::Running selected transform method: NONE
+2022-10-31 16:36:59 INFO::Running selected analysis method: LM
+2022-10-31 16:36:59 INFO::Fitting model to feature number 1, MGB015
+2022-10-31 16:36:59 INFO::Fitting model to feature number 2, MGB037
+2022-10-31 16:36:59 INFO::Fitting model to feature number 3, MGB038
+2022-10-31 16:36:59 INFO::Fitting model to feature number 4, MGB033
+2022-10-31 16:36:59 INFO::Fitting model to feature number 5, MGB055
+2022-10-31 16:36:59 INFO::Fitting model to feature number 6, MGB034
+2022-10-31 16:36:59 INFO::Fitting model to feature number 7, MGB035
+2022-10-31 16:36:59 INFO::Fitting model to feature number 8, MGB036
+2022-10-31 16:36:59 INFO::Fitting model to feature number 9, MGB052
+2022-10-31 16:36:59 INFO::Fitting model to feature number 10, MGB031
+2022-10-31 16:36:59 INFO::Fitting model to feature number 11, MGB053
+2022-10-31 16:37:00 INFO::Fitting model to feature number 12, MGB032
+2022-10-31 16:37:00 INFO::Fitting model to feature number 13, MGB005
+2022-10-31 16:37:00 INFO::Fitting model to feature number 14, MGB049
+2022-10-31 16:37:00 INFO::Fitting model to feature number 15, MGB006
+2022-10-31 16:37:00 INFO::Fitting model to feature number 16, MGB007
+2022-10-31 16:37:00 INFO::Fitting model to feature number 17, MGB029
+2022-10-31 16:37:00 INFO::Fitting model to feature number 18, MGB022
+2022-10-31 16:37:00 INFO::Fitting model to feature number 19, MGB044
+2022-10-31 16:37:00 INFO::Fitting model to feature number 20, MGB045
+2022-10-31 16:37:00 INFO::Fitting model to feature number 21, MGB047
+2022-10-31 16:37:00 INFO::Fitting model to feature number 22, MGB040
+2022-10-31 16:37:00 INFO::Fitting model to feature number 23, MGB043
+2022-10-31 16:37:00 INFO::Counting total values for each feature
+2022-10-31 16:37:00 INFO::Writing residuals to file Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID/residuals.rds
+2022-10-31 16:37:00 INFO::Writing all results to file (ordered by increasing q-values): Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID/all_results.tsv
+2022-10-31 16:37:00 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID/significant_results.tsv

@@ -1,0 +1,7 @@
+,metadata,feature,value,coef,stderr,N,N.not.0,pval,qval,Site
+69,Type,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,Mucosal,-0.078969674,1.08773255,14,5,0.944746008,0.987170358,Duodenum
+58,Type,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,Mucosal,0.472624426,1.353349096,14,7,0.734951445,0.999393367,Jejunum
+1,Type,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,Mucosal,4.063933436,0.353610195,15,5,0.000122322,0.015901844,Ileum
+NA,NA,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,NA,0,NA,NA,NA,NA,100,Cecum
+NA1,NA,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,NA,0,NA,NA,NA,NA,100,Proximal_Colon
+6,Type,k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Alicyclobacillaceae.g__Tumebacillus,Mucosal,1.891834532,0.604378292,17,5,0.008688373,0.179271686,Distal_Colon

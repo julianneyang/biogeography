@@ -1,0 +1,5 @@
+metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Erysipelotrichia.o__Erysipelotrichales.f__Erysipelotrichaceae.g__Candidatus_Stoquefichus	2015_Sept	-4.4869670953813	0.623381043841427	17	14	0.0000109001410280842	0.00132827826768063
+Sex	k__Bacteria.p__Firmicutes.c__Negativicutes.o__Selenomonadales.f__Acidaminococcaceae.g__Phascolarctobacterium	Male	6.84272745763584	0.468119709900296	17	11	0.0000114506747213847	0.00132827826768063
+Sequencing_Run	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Ruminococcaceae.g__Anaerotruncus	2015_Sept	3.67052163041324	0.764309449409572	17	8	0.00107017362941802	0.0827600940083272
+Sex	k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridiales.f__Ruminococcaceae.g__Anaerotruncus	Male	-2.88319696581713	0.601538567303804	17	8	0.0031454467152961	0.182435909487174
