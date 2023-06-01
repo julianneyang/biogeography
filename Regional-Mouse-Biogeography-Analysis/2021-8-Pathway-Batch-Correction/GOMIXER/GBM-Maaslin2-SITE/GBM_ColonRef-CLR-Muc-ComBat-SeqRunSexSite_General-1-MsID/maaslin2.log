@@ -1,0 +1,71 @@
+2022-10-31 15:46:54 INFO::Writing function arguments to log file
+2022-10-31 15:46:54 DEBUG::Function arguments
+2022-10-31 15:46:54 DEBUG::Output folder: Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID
+2022-10-31 15:46:54 DEBUG::Min Abundance: 0.000000
+2022-10-31 15:46:54 DEBUG::Min Prevalence: 0.100000
+2022-10-31 15:46:54 DEBUG::Normalization: CLR
+2022-10-31 15:46:54 DEBUG::Transform: NONE
+2022-10-31 15:46:54 DEBUG::Analysis method: LM
+2022-10-31 15:46:54 DEBUG::Max significance: 0.250000
+2022-10-31 15:46:54 DEBUG::Random effects: MouseID
+2022-10-31 15:46:54 DEBUG::Fixed effects: Sequencing_Run,Sex,Site_General
+2022-10-31 15:46:54 DEBUG::Correction method: BH
+2022-10-31 15:46:54 DEBUG::Standardize: TRUE
+2022-10-31 15:46:54 DEBUG::Cores: 1
+2022-10-31 15:46:55 INFO::Verifying options selected are valid
+2022-10-31 15:46:55 INFO::Determining format of input files
+2022-10-31 15:46:55 INFO::Input format is data samples as columns and metadata samples as rows
+2022-10-31 15:46:55 DEBUG::Transformed data so samples are rows
+2022-10-31 15:46:55 DEBUG::A total of 270 samples were found in both the data and metadata
+2022-10-31 15:46:55 DEBUG::Reordering data/metadata to use same sample ordering
+2022-10-31 15:46:55 WARNING::Feature name not found in metadata so not applied to formula as random effect: MouseID
+2022-10-31 15:46:55 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site_General
+2022-10-31 15:46:55 INFO::Running selected normalization method: CLR
+2022-10-31 15:46:55 INFO::Filter data based on min abundance and min prevalence
+2022-10-31 15:46:55 INFO::Total samples in data: 270
+2022-10-31 15:46:55 INFO::Min samples required with min abundance for a feature not to be filtered: 27.000000
+2022-10-31 15:46:55 INFO::Total filtered features: 2
+2022-10-31 15:46:55 INFO::Filtered feature names: MGB028, MGB025
+2022-10-31 15:46:55 INFO::Applying z-score to standardize continuous metadata
+2022-10-31 15:46:55 INFO::Running selected transform method: NONE
+2022-10-31 15:46:55 INFO::Running selected analysis method: LM
+2022-10-31 15:46:55 INFO::Fitting model to feature number 1, MGB015
+2022-10-31 15:46:55 INFO::Fitting model to feature number 2, MGB037
+2022-10-31 15:46:55 INFO::Fitting model to feature number 3, MGB038
+2022-10-31 15:46:55 INFO::Fitting model to feature number 4, MGB039
+2022-10-31 15:46:55 INFO::Fitting model to feature number 5, MGB033
+2022-10-31 15:46:55 INFO::Fitting model to feature number 6, MGB055
+2022-10-31 15:46:55 INFO::Fitting model to feature number 7, MGB034
+2022-10-31 15:46:55 INFO::Fitting model to feature number 8, MGB056
+2022-10-31 15:46:55 INFO::Fitting model to feature number 9, MGB035
+2022-10-31 15:46:55 INFO::Fitting model to feature number 10, MGB036
+2022-10-31 15:46:55 INFO::Fitting model to feature number 11, MGB051
+2022-10-31 15:46:55 INFO::Fitting model to feature number 12, MGB052
+2022-10-31 15:46:55 INFO::Fitting model to feature number 13, MGB031
+2022-10-31 15:46:55 INFO::Fitting model to feature number 14, MGB053
+2022-10-31 15:46:55 INFO::Fitting model to feature number 15, MGB010
+2022-10-31 15:46:55 INFO::Fitting model to feature number 16, MGB032
+2022-10-31 15:46:55 INFO::Fitting model to feature number 17, MGB054
+2022-10-31 15:46:55 INFO::Fitting model to feature number 18, MGB050
+2022-10-31 15:46:55 INFO::Fitting model to feature number 19, MGB019
+2022-10-31 15:46:55 INFO::Fitting model to feature number 20, MGB048
+2022-10-31 15:46:55 INFO::Fitting model to feature number 21, MGB005
+2022-10-31 15:46:55 INFO::Fitting model to feature number 22, MGB027
+2022-10-31 15:46:55 INFO::Fitting model to feature number 23, MGB049
+2022-10-31 15:46:55 INFO::Fitting model to feature number 24, MGB006
+2022-10-31 15:46:55 INFO::Fitting model to feature number 25, MGB007
+2022-10-31 15:46:55 INFO::Fitting model to feature number 26, MGB029
+2022-10-31 15:46:55 INFO::Fitting model to feature number 27, MGB022
+2022-10-31 15:46:55 INFO::Fitting model to feature number 28, MGB023
+2022-10-31 15:46:55 INFO::Fitting model to feature number 29, MGB045
+2022-10-31 15:46:55 INFO::Fitting model to feature number 30, MGB024
+2022-10-31 15:46:55 INFO::Fitting model to feature number 31, MGB047
+2022-10-31 15:46:55 INFO::Fitting model to feature number 32, MGB040
+2022-10-31 15:46:55 INFO::Fitting model to feature number 33, MGB041
+2022-10-31 15:46:55 INFO::Fitting model to feature number 34, MGB020
+2022-10-31 15:46:55 INFO::Fitting model to feature number 35, MGB021
+2022-10-31 15:46:55 INFO::Fitting model to feature number 36, MGB043
+2022-10-31 15:46:55 INFO::Counting total values for each feature
+2022-10-31 15:46:55 INFO::Writing residuals to file Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/residuals.rds
+2022-10-31 15:46:55 INFO::Writing all results to file (ordered by increasing q-values): Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv
+2022-10-31 15:46:55 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv
