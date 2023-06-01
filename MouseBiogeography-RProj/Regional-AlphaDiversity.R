@@ -19,7 +19,7 @@ temp2<- merge(pielou,shannon, by="X")
 data<-merge(temp1,temp2,by="X")
 data$SampleID <- data$X
 
-write.csv(data, "alpha_diversity_Regional.csv")
+write.csv(data, "C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/alpha_Regional-ASV-table_d1123/alpha_diversity_Regional.csv")
 
 generate_adiv_plots <- function(input_data, X, Y){
   data<-as.data.frame(input_data)
