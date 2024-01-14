@@ -1,0 +1,125 @@
+Num samples: 110
+Num observations: 764
+Total count: 5,999,982
+Table density (fraction of non-zero values): 0.160
+
+Counts/sample summary:
+ Min: 5,080.000
+ Max: 122,704.000
+ Median: 53,643.000
+ Mean: 54,545.291
+ Std. dev.: 21,500.627
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+GnotobioticExp-DTT-365.fastq: 5,080.000
+GnotobioticExp-DTT-378.fastq: 10,261.000
+GnotobioticExp-DTT-366.fastq: 10,659.000
+GnotobioticExp-DTT-311.fastq: 17,086.000
+GnotobioticExp-DTT-372.fastq: 17,183.000
+GnotobioticExp-DTT-370.fastq: 18,202.000
+GnotobioticExp-DTT-377.fastq: 19,348.000
+GnotobioticExp-DTT-324.fastq: 19,740.000
+GnotobioticExp-DTT-323.fastq: 23,286.000
+GnotobioticExp-DTT-312.fastq: 24,595.000
+GnotobioticExp-DTT-371.fastq: 24,740.000
+GnotobioticExp-DTT-319.fastq: 25,636.000
+GnotobioticExp-DTT-376.fastq: 27,562.000
+GnotobioticExp-DTT-325.fastq: 29,098.000
+GnotobioticExp-FP-324.fastq: 29,267.000
+GnotobioticExp-DTT-373.fastq: 33,255.000
+GnotobioticExp-DTT-367.fastq: 33,778.000
+GnotobioticExp-DTT-307.fastq: 33,801.000
+GnotobioticExp-DTT-318.fastq: 35,115.000
+GnotobioticExp-DTT-379.fastq: 35,617.000
+BSD-4346B.fastq: 35,620.000
+GnotobioticExp-FP-314.fastq: 36,971.000
+GnotobioticExp-FP-394.fastq: 42,005.000
+GnotobioticExp-DTT-383.fastq: 42,407.000
+GnotobioticExp-FP-315.fastq: 42,860.000
+GnotobioticExp-DTT-384.fastq: 43,411.000
+GnotobioticExp-FP-301.fastq: 43,499.000
+GnotobioticExp-DTT-316.fastq: 44,342.000
+GnotobioticExp-FP-361.fastq: 45,014.000
+GnotobioticExp-FP-303.fastq: 45,019.000
+GnotobioticExp-DTT-380.fastq: 45,084.000
+GnotobioticExp-FP-321.fastq: 45,115.000
+GnotobioticExp-FP-313.fastq: 45,347.000
+GnotobioticExp-DTT-305.fastq: 46,020.000
+GnotobioticExp-FP-387.fastq: 47,008.000
+GnotobioticExp-DTT-364.fastq: 47,307.000
+GnotobioticExp-FP-393.fastq: 47,627.000
+GnotobioticExp-FP-319.fastq: 47,815.000
+GnotobioticExp-DTT-368.fastq: 47,824.000
+GnotobioticExp-FP-302.fastq: 47,955.000
+GnotobioticExp-FP-391.fastq: 49,375.000
+GnotobioticExp-DTT-308.fastq: 49,602.000
+GnotobioticExp-FP-307.fastq: 49,754.000
+GnotobioticExp-DTT-382.fastq: 49,910.000
+GnotobioticExp-FP-375.fastq: 50,321.000
+GnotobioticExp-DTT-363.fastq: 50,919.000
+GnotobioticExp-FP-308.fastq: 50,924.000
+GnotobioticExp-FP-309.fastq: 51,073.000
+GnotobioticExp-FP-381.fastq: 51,599.000
+GnotobioticExp-DTT-179.fastq: 51,787.000
+GnotobioticExp-DTT-310.fastq: 52,302.000
+GnotobioticExp-FP-386.fastq: 52,457.000
+GnotobioticExp-FP-365.fastq: 52,894.000
+GnotobioticExp-DTT-317.fastq: 53,369.000
+GnotobioticExp-DTT-313.fastq: 53,638.000
+GnotobioticExp-DTT-320.fastq: 53,648.000
+GnotobioticExp-FP-363.fastq: 54,316.000
+GnotobioticExp-DTT-381.fastq: 54,673.000
+GnotobioticExp-FP-371.fastq: 54,984.000
+GnotobioticExp-DTT-306.fastq: 55,701.000
+GnotobioticExp-FP-369.fastq: 55,845.000
+GnotobioticExp-DTT-369.fastq: 55,949.000
+GnotobioticExp-FP-385.fastq: 56,630.000
+GnotobioticExp-FP-380.fastq: 56,789.000
+GnotobioticExp-FP-373.fastq: 56,866.000
+GnotobioticExp-FP-320.fastq: 56,990.000
+GnotobioticExp-FP-372.fastq: 57,368.000
+GnotobioticExp-FP-392.fastq: 57,682.000
+GnotobioticExp-FP-379.fastq: 58,376.000
+GnotobioticExp-FP-362.fastq: 58,536.000
+GnotobioticExp-FP-367.fastq: 58,780.000
+GnotobioticExp-FP-382.fastq: 59,101.000
+GnotobioticExp-DTT-302.fastq: 59,172.000
+GnotobioticExp-DTT-321.fastq: 60,967.000
+GnotobioticExp-DTT-375.fastq: 61,569.000
+GnotobioticExp-FP-383.fastq: 61,853.000
+GnotobioticExp-DTT-362.fastq: 62,098.000
+BSD-4241B.fastq: 62,099.000
+GnotobioticExp-DTT-309.fastq: 62,219.000
+GnotobioticExp-DTT-314.fastq: 63,383.000
+GnotobioticExp-FP-374.fastq: 63,665.000
+GnotobioticExp-DTT-322.fastq: 64,031.000
+GnotobioticExp-FP-388.fastq: 64,397.000
+GnotobioticExp-FP-368.fastq: 64,674.000
+GnotobioticExp-FP-366.fastq: 64,679.000
+GnotobioticExp-DTT-374.fastq: 65,424.000
+GnotobioticExp-FP-389.fastq: 65,947.000
+GnotobioticExp-FP-384.fastq: 66,105.000
+GnotobioticExp-FP-378.fastq: 66,485.000
+GnotobioticExp-DTT-304.fastq: 66,684.000
+GnotobioticExp-DTT-315.fastq: 69,087.000
+GnotobioticExp-FP-316.fastq: 69,226.000
+GnotobioticExp-DTT-303.fastq: 73,126.000
+GnotobioticExp-FP-390.fastq: 73,150.000
+GnotobioticExp-FP-377.fastq: 76,945.000
+GnotobioticExp-FP-395.fastq: 78,507.000
+GnotobioticExp-FP-396.fastq: 80,516.000
+GnotobioticExp-FP-304.fastq: 84,296.000
+GnotobioticExp-FP-306.fastq: 84,828.000
+GnotobioticExp-FP-310.fastq: 86,832.000
+GnotobioticExp-FP-318.fastq: 87,072.000
+GnotobioticExp-FP-312.fastq: 88,859.000
+GnotobioticExp-FP-311.fastq: 90,717.000
+GnotobioticExp-FP-305.fastq: 93,164.000
+GnotobioticExp-FP-376.fastq: 95,652.000
+GnotobioticExp-FP-322.fastq: 95,779.000
+GnotobioticExp-FP-317.fastq: 96,755.000
+GnotobioticExp-FP-364.fastq: 98,762.000
+GnotobioticExp-FP-370.fastq: 114,837.000
+GnotobioticExp-FP-323.fastq: 122,704.000
