@@ -6,8 +6,7 @@ library(cowplot)
 library(plyr)
 library(here)
 
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-here::i_am("MouseBiogeography-RProj/CS_Facility-Maaslin2-SITE-Genus.R")
+here::i_am("MouseBiogeography-RProj/Shotgun-Maaslin2-SITE-Genus.R")
 
 input_data <- read.csv("CS-Facility-Analysis/Site_L6/Maaslin2_L6 SITE and TYPE - Luminal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file
 input_data <- read.csv("CS-Facility-Analysis/Site_L6/Maaslin2_L6 SITE and TYPE - Mucosal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file

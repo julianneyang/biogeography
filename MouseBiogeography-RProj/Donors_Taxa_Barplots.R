@@ -17,8 +17,6 @@ library(devtools)
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-devtools::install("Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 
