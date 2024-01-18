@@ -1,0 +1,26 @@
+Num samples: 11
+Num observations: 296
+Total count: 106,948,939
+Table density (fraction of non-zero values): 0.373
+
+Counts/sample summary:
+ Min: 414,334.000
+ Max: 18,420,077.000
+ Median: 7,740,354.000
+ Mean: 9,722,630.818
+ Std. dev.: 6,239,275.320
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+BioGeo-TL1a_FP_197-REP1_S10_R1_001.fastq_profiled_metagenome: 414,334.000
+BioGeo-TL1a_FP_131_merged_R1_001.fastq_profiled_metagenome: 852,514.000
+BioGeo-TL1A_FP_677-REP1_S21_R1_001.fastq_profiled_metagenome: 4,093,835.000
+BioGeo-TL1a_FP_233-REP1_S13_R1_001.fastq_profiled_metagenome: 6,765,635.000
+BioGeo-TL1A_FP_629_merged_R1_001.fastq_profiled_metagenome: 7,047,071.000
+BioGeo-TL1A_FP_625-REP1_S16_R1_001.fastq_profiled_metagenome: 7,740,354.000
+BioGeo-TL1a_FP_193-Rep1_S85_R1_001.fastq_profiled_metagenome: 13,787,014.000
+BioGeo-TL1a_FP_85_merged_R1_001.fastq_profiled_metagenome: 14,946,036.000
+BioGeo-TL1a_FP_127_merged_R1_001.fastq_profiled_metagenome: 15,531,938.000
+BioGeo-TL1A_FP_673-REP1_S20_R1_001.fastq_profiled_metagenome: 17,350,131.000
+BioGeo-TL1a_FP_229-REP1_S12_R1_001.fastq_profiled_metagenome: 18,420,077.000

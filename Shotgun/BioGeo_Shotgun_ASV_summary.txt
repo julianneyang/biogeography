@@ -1,0 +1,119 @@
+Num samples: 104
+Num observations: 679
+Total count: 1,698,654,836
+Table density (fraction of non-zero values): 0.187
+
+Counts/sample summary:
+ Min: 2,104.000
+ Max: 106,580,216.000
+ Median: 13,102,079.000
+ Mean: 16,333,219.577
+ Std. dev.: 16,841,568.941
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+BioGeo-SLCFP113_merged_R1_001.fastq_profiled_metagenome: 2,104.000
+BioGeo-SLCFP109_merged_R1_001.fastq_profiled_metagenome: 43,851.000
+BioGeo-TL1a_FP_143_merged_R1_001.fastq_profiled_metagenome: 52,260.000
+BioGeo-TL1a_FP_101-REP1_S6_R1_001.fastq_profiled_metagenome: 109,209.000
+BioGeo-Vil1-06B-FP71_merged_R1_001.fastq_profiled_metagenome: 213,585.000
+BioGeo-Lyz2-04B-FP247-S44_merged_R1_001.fastq_profiled_metagenome: 233,258.000
+BioGeo-TL1a_FP_197-REP1_S10_R1_001.fastq_profiled_metagenome: 414,334.000
+BioGeo-Mouse1A_FP01_merged_R1_001.fastq_profiled_metagenome: 516,479.000
+BioGeo-SLCFP127_merged_R1_001.fastq_profiled_metagenome: 568,236.000
+BioGeo-Mouse6A_FP35-Rep1_S93_R1_001.fastq_profiled_metagenome: 835,298.000
+BioGeo-TL1a_FP_131_merged_R1_001.fastq_profiled_metagenome: 852,514.000
+BioGeo-Mouse3A_FP17_merged_R1_001.fastq_profiled_metagenome: 902,444.000
+BioGeo-TL1A_FP_689-Rep1_S104_R1_001.fastq_profiled_metagenome: 1,455,785.000
+BioGeo-Mouse7A_FP41-REP1_S54_R1_001.fastq_profiled_metagenome: 1,801,264.000
+BioGeo-Vil1-08B-FP94-REP1_S42_R1_001.fastq_profiled_metagenome: 1,990,021.000
+BioGeo-TL1a_FP_77-REP1_S4_R1_001.fastq_profiled_metagenome: 1,998,097.000
+BioGeo-Mouse1A_FP05_merged_R1_001.fastq_profiled_metagenome: 2,645,948.000
+BioGeo-TL1A_FP_677-REP1_S21_R1_001.fastq_profiled_metagenome: 4,093,835.000
+BioGeo-LYZFP351-Rep1_S106_R1_001.fastq_profiled_metagenome: 4,102,541.000
+BioGeo-Mouse9A_FP101_merged_R1_001.fastq_profiled_metagenome: 4,771,283.000
+BioGeo-Lyz2-01B-FP211-S59_merged_R1_001.fastq_profiled_metagenome: 4,920,916.000
+BioGeo-TL1A_FP_641_merged_R1_001.fastq_profiled_metagenome: 5,394,955.000
+BioGeo-Mouse3A_FP13_merged_R1_001.fastq_profiled_metagenome: 5,997,828.000
+BioGeo-Lyz2-08B-FP295-S93_merged_R1_001.fastq_profiled_metagenome: 6,754,173.000
+BioGeo-TL1a_FP_233-REP1_S13_R1_001.fastq_profiled_metagenome: 6,765,635.000
+BioGeo-TL1A_FP_629_merged_R1_001.fastq_profiled_metagenome: 7,047,071.000
+BioGeo-SLCFP071-REP1_S27_R1_001.fastq_profiled_metagenome: 7,485,220.000
+BioGeo-Mouse6A_FP31_merged_R1_001.fastq_profiled_metagenome: 7,731,152.000
+BioGeo-TL1A_FP_625-REP1_S16_R1_001.fastq_profiled_metagenome: 7,740,354.000
+BioGeo-Lyz2-02B-FP223-S71_merged_R1_001.fastq_profiled_metagenome: 8,142,109.000
+BioGeo-Mouse9A_FP97_merged_R1_001.fastq_profiled_metagenome: 8,311,299.000
+BioGeo-LYZFP355_merged_R1_001.fastq_profiled_metagenome: 8,389,181.000
+BioGeo-Mouse10A_FP109_merged_R1_001.fastq_profiled_metagenome: 8,826,845.000
+BioGeo-Vil1-02B-FP19_merged_R1_001.fastq_profiled_metagenome: 8,992,295.000
+BioGeo-Lyz2-04B-FP243-S92_merged_R1_001.fastq_profiled_metagenome: 9,063,817.000
+BioGeo-Lyz2-06B-FP271-S69_merged_R1_001.fastq_profiled_metagenome: 9,335,851.000
+BioGeo-Mouse8A_FP85_merged_R1_001.fastq_profiled_metagenome: 9,353,040.000
+BioGeo-Vil1-01B-FP11_merged_R1_001.fastq_profiled_metagenome: 9,432,213.000
+BioGeo-Lyz2-03B-FP235-S83_merged_R1_001.fastq_profiled_metagenome: 9,618,908.000
+BioGeo-LYZFP339_merged_R1_001.fastq_profiled_metagenome: 9,896,147.000
+BioGeo-Vil1-07B-FP83_merged_R1_001.fastq_profiled_metagenome: 9,906,943.000
+BioGeo-Vil1-02B-FP23_merged_R1_001.fastq_profiled_metagenome: 10,106,304.000
+BioGeo-Lyz2-02B-FP219-S67_merged_R1_001.fastq_profiled_metagenome: 10,273,536.000
+BioGeo-Vil1-03B-FP31_merged_R1_001.fastq_profiled_metagenome: 10,971,725.000
+BioGeo-LYZFP327-Rep1_S105_R1_001.fastq_profiled_metagenome: 11,661,684.000
+BioGeo-LYZFP319_merged_R1_001.fastq_profiled_metagenome: 11,738,348.000
+BioGeo-TL1a_FP_205_merged_R1_001.fastq_profiled_metagenome: 11,751,370.000
+BioGeo-Lyz2-08B-FP291-S89_merged_R1_001.fastq_profiled_metagenome: 12,335,265.000
+BioGeo-TL1a_FP_65_merged_R1_001.fastq_profiled_metagenome: 12,473,517.000
+BioGeo-Vil1-05B-FP59-REP1_S37_R1_001.fastq_profiled_metagenome: 12,873,269.000
+BioGeo-Vil1-07B-FP79_merged_R1_001.fastq_profiled_metagenome: 13,021,818.000
+BioGeo-TL1a_FP_139_merged_R1_001.fastq_profiled_metagenome: 13,030,569.000
+BioGeo-Mouse2A_FP07_merged_R1_001.fastq_profiled_metagenome: 13,173,589.000
+BioGeo-Lyz2-07B-FP279-S77_merged_R1_001.fastq_profiled_metagenome: 13,178,980.000
+BioGeo-Lyz2-01B-FP207-S55_merged_R1_001.fastq_profiled_metagenome: 13,198,292.000
+BioGeo-Vil1-06B-FP67_merged_R1_001.fastq_profiled_metagenome: 13,462,590.000
+BioGeo-TL1a_FP_193-Rep1_S85_R1_001.fastq_profiled_metagenome: 13,787,014.000
+BioGeo-LYZFP303_merged_R1_001.fastq_profiled_metagenome: 14,268,680.000
+BioGeo-Vil1-08B-FP92-REP1_S41_R1_001.fastq_profiled_metagenome: 14,295,212.000
+BioGeo-Lyz2-05B-FP259-S56_merged_R1_001.fastq_profiled_metagenome: 14,395,104.000
+BioGeo-TL1a_FP_85_merged_R1_001.fastq_profiled_metagenome: 14,946,036.000
+BioGeo-Vil1-05B-FP55_merged_R1_001.fastq_profiled_metagenome: 15,080,613.000
+BioGeo-TL1a_FP_127_merged_R1_001.fastq_profiled_metagenome: 15,531,938.000
+BioGeo-Vil1-09B-FP104_merged_R1_001.fastq_profiled_metagenome: 15,693,504.000
+BioGeo-Vil1-14B-FP166_merged_R1_001.fastq_profiled_metagenome: 15,697,592.000
+BioGeo-Lyz2-06B-FP267-S64_merged_R1_001.fastq_profiled_metagenome: 15,927,203.000
+BioGeo-Mouse7A_FP37_merged_R1_001.fastq_profiled_metagenome: 16,053,506.000
+BioGeo-TL1a_FP_209-REP1_S11_R1_001.fastq_profiled_metagenome: 16,215,714.000
+BioGeo-SLCFP095_merged_R1_001.fastq_profiled_metagenome: 16,482,792.000
+BioGeo-Lyz2-05B-FP255-S52_merged_R1_001.fastq_profiled_metagenome: 16,768,718.000
+BioGeo-Vil1-09B-FP106_merged_R1_001.fastq_profiled_metagenome: 16,813,958.000
+BioGeo-Vil1-10B-FP118-REP1_S45_R1_001.fastq_profiled_metagenome: 17,165,253.000
+BioGeo-TL1A_FP_673-REP1_S20_R1_001.fastq_profiled_metagenome: 17,350,131.000
+BioGeo-Vil1-10B-FP116-REP1_S44_R1_001.fastq_profiled_metagenome: 17,365,603.000
+BioGeo-TL1a_FP_229-REP1_S12_R1_001.fastq_profiled_metagenome: 18,420,077.000
+BioGeo-Lyz2-03B-FP231-S79_merged_R1_001.fastq_profiled_metagenome: 18,711,798.000
+BioGeo-Lyz2-07B-FP283-S81_merged_R1_001.fastq_profiled_metagenome: 18,921,817.000
+BioGeo-LYZFP307_merged_R1_001.fastq_profiled_metagenome: 18,965,112.000
+BioGeo-TL1A_FP_637_merged_R1_001.fastq_profiled_metagenome: 19,310,510.000
+BioGeo-LYZFP315_merged_R1_001.fastq_profiled_metagenome: 19,417,399.000
+BioGeo-Mouse10A_FP113_merged_R1_001.fastq_profiled_metagenome: 19,577,049.000
+BioGeo-Vil1-13B-FP152_merged_R1_001.fastq_profiled_metagenome: 19,758,674.000
+BioGeo-Vil1-14B-FP164_merged_R1_001.fastq_profiled_metagenome: 19,883,774.000
+BioGeo-Vil1-04B-FP47_merged_R1_001.fastq_profiled_metagenome: 21,451,778.000
+BioGeo-Mouse5A_FP25_merged_R1_001.fastq_profiled_metagenome: 21,530,936.000
+BioGeo-SLCFP077_merged_R1_001.fastq_profiled_metagenome: 21,855,551.000
+BioGeo-SLCFP131-REP1_S33_R1_001.fastq_profiled_metagenome: 21,996,327.000
+BioGeo-SLCFP091-REP1_S29_R1_001.fastq_profiled_metagenome: 23,731,902.000
+BioGeo-SLCFP001_merged_R1_001.fastq_profiled_metagenome: 25,407,151.000
+BioGeo-Mouse8A_FP89_merged_R1_001.fastq_profiled_metagenome: 27,411,624.000
+BioGeo-TL1a_FP_61_merged_R1_001.fastq_profiled_metagenome: 27,718,577.000
+BioGeo-TL1A_FP_685-REP1_S22_R1_001.fastq_profiled_metagenome: 29,236,071.000
+BioGeo-SLCFP019a_merged_R1_001.fastq_profiled_metagenome: 31,474,446.000
+BioGeo-TL1a_FP_241_merged_R1_001.fastq_profiled_metagenome: 31,772,541.000
+BioGeo-Mouse2A_FP11-REP1_S55_R1_001.fastq_profiled_metagenome: 36,443,947.000
+BioGeo-Vil1-01B-FP07-Rep1_S107_R1_001.fastq_profiled_metagenome: 37,006,053.000
+BioGeo-SLCFP005-REP1_S24_R1_001.fastq_profiled_metagenome: 39,947,866.000
+BioGeo-Vil1-03B-FP35-REP1_S38_R1_001.fastq_profiled_metagenome: 46,705,357.000
+BioGeo-Mouse4A_FP23-Rep1_S92_R1_001.fastq_profiled_metagenome: 49,245,881.000
+BioGeo-Vil1-13B-FP154-REP1_S47_R1_001.fastq_profiled_metagenome: 53,549,416.000
+BioGeo-SLCFP023-REP1_S26_R1_001.fastq_profiled_metagenome: 56,106,938.000
+BioGeo-Vil1-04B-FP43-Rep1_S88_R1_001.fastq_profiled_metagenome: 64,642,225.000
+BioGeo-Mouse5A_FP29-REP1_S53_R1_001.fastq_profiled_metagenome: 88,076,098.000
+BioGeo-TL1a_FP_73-REP1_S3_R1_001.fastq_profiled_metagenome: 106,580,216.000

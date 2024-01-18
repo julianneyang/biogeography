@@ -1,0 +1,34 @@
+Num samples: 19
+Num observations: 272
+Total count: 323,205,510
+Table density (fraction of non-zero values): 0.419
+
+Counts/sample summary:
+ Min: 516,479.000
+ Max: 88,076,098.000
+ Median: 8,826,845.000
+ Mean: 17,010,816.316
+ Std. dev.: 21,035,345.862
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+BioGeo-Mouse1A_FP01_merged_R1_001.fastq_profiled_metagenome: 516,479.000
+BioGeo-Mouse6A_FP35-Rep1_S93_R1_001.fastq_profiled_metagenome: 835,298.000
+BioGeo-Mouse3A_FP17_merged_R1_001.fastq_profiled_metagenome: 902,444.000
+BioGeo-Mouse7A_FP41-REP1_S54_R1_001.fastq_profiled_metagenome: 1,801,264.000
+BioGeo-Mouse1A_FP05_merged_R1_001.fastq_profiled_metagenome: 2,645,948.000
+BioGeo-Mouse9A_FP101_merged_R1_001.fastq_profiled_metagenome: 4,771,283.000
+BioGeo-Mouse3A_FP13_merged_R1_001.fastq_profiled_metagenome: 5,997,828.000
+BioGeo-Mouse6A_FP31_merged_R1_001.fastq_profiled_metagenome: 7,731,152.000
+BioGeo-Mouse9A_FP97_merged_R1_001.fastq_profiled_metagenome: 8,311,299.000
+BioGeo-Mouse10A_FP109_merged_R1_001.fastq_profiled_metagenome: 8,826,845.000
+BioGeo-Mouse8A_FP85_merged_R1_001.fastq_profiled_metagenome: 9,353,040.000
+BioGeo-Mouse2A_FP07_merged_R1_001.fastq_profiled_metagenome: 13,173,589.000
+BioGeo-Mouse7A_FP37_merged_R1_001.fastq_profiled_metagenome: 16,053,506.000
+BioGeo-Mouse10A_FP113_merged_R1_001.fastq_profiled_metagenome: 19,577,049.000
+BioGeo-Mouse5A_FP25_merged_R1_001.fastq_profiled_metagenome: 21,530,936.000
+BioGeo-Mouse8A_FP89_merged_R1_001.fastq_profiled_metagenome: 27,411,624.000
+BioGeo-Mouse2A_FP11-REP1_S55_R1_001.fastq_profiled_metagenome: 36,443,947.000
+BioGeo-Mouse4A_FP23-Rep1_S92_R1_001.fastq_profiled_metagenome: 49,245,881.000
+BioGeo-Mouse5A_FP29-REP1_S53_R1_001.fastq_profiled_metagenome: 88,076,098.000

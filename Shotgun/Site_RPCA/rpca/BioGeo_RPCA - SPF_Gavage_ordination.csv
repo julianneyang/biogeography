@@ -1,0 +1,24 @@
+Eigvals,11,,,,,,,,,,
+11.89647914,11.28524574,3.174371513,0,0,0,0,0,0,0,0,
+,,,,,,,,,,,
+Proportion explained,11,,,,,,,,,,
+0.4513748531,0.4281835054,0.1204416415,0,0,0,0,0,0,0,0,
+,,,,,,,,,,,
+Species,0,0,,,,,,,,,
+,,,,,,,,,,,
+Site,11,11,,,,,,,,,
+BioGeo-TL1a_FP_85_merged_R1_001.fastq_profiled_metagenome,-0.3591303744,1.56437623,-0.1966807662,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_233-REP1_S13_R1_001.fastq_profiled_metagenome,0.233735193,-1.530528145,-0.1348524086,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_229-REP1_S12_R1_001.fastq_profiled_metagenome,-0.5111331704,0.1093681734,-0.713350946,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_197-REP1_S10_R1_001.fastq_profiled_metagenome,-1.187814967,-0.4287042048,0.8141203466,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_193-Rep1_S85_R1_001.fastq_profiled_metagenome,-1.044696544,-1.427059852,-0.6103976137,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_131_merged_R1_001.fastq_profiled_metagenome,-0.9324155316,-0.07056465352,0.3355281866,0,0,0,0,0,0,0,0
+BioGeo-TL1a_FP_127_merged_R1_001.fastq_profiled_metagenome,-1.043208513,1.249247392,-0.1247574854,0,0,0,0,0,0,0,0
+BioGeo-TL1A_FP_677-REP1_S21_R1_001.fastq_profiled_metagenome,0.3902249214,0.7430575171,0.8921759402,0,0,0,0,0,0,0,0
+BioGeo-TL1A_FP_673-REP1_S20_R1_001.fastq_profiled_metagenome,1.644930824,1.118129177,-0.5217669335,0,0,0,0,0,0,0,0
+BioGeo-TL1A_FP_629_merged_R1_001.fastq_profiled_metagenome,1.710446984,-0.7484273298,0.5441760562,0,0,0,0,0,0,0,0
+BioGeo-TL1A_FP_625-REP1_S16_R1_001.fastq_profiled_metagenome,1.099061178,-0.5788943048,-0.2841943761,0,0,0,0,0,0,0,0
+,,,,,,,,,,,
+Biplot,0,0,,,,,,,,,
+,,,,,,,,,,,
+Site constraints,0,0,,,,,,,,,
