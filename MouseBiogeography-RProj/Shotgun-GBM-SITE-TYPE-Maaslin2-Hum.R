@@ -7,7 +7,8 @@ input_data <- read.table("../Shotgun/omixer/Shotgun_GBM_modules.tsv", header=TRU
 df_input_data<-as.data.frame(input_data)
 input_metadata <-read.table("../Shotgun/BioGeo_Shotgun_Metadata.tsv",header=TRUE, row.names=1) #mapping file
 row.names(input_metadata)
-
+names(input_data)
+summary(colSums(input_data))
 target <- colnames(df_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
