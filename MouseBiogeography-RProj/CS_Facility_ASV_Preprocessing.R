@@ -36,6 +36,8 @@ target <- names(ASV)
 metadata <- metadata[match(target, row.names(metadata)),]
 target == row.names(metadata)
 
+readr::write_delim(metadata,here("CS-Facility-Analysis/CS_Facility_Metadata.tsv"),delim="\t")
+
 ## Filter by Sequencing Run ---
 srun1 <- metadata%>% 
   filter(Sequencing_Run=="One", SampleID %in% names(ASV)) %>%pull(SampleID)
@@ -116,7 +118,6 @@ modcombat=model.matrix(~ Type + Sex+ Site,data=metadata)
 input=as.matrix(final_ASV)
 combat_adjusted_counts=ComBat_seq(input,batch=batch,group=NULL,covar_mod=modcombat)  
 combat_adjusted_counts <- as.data.frame(combat_adjusted_counts)
-readr::write_delim(combat_adjusted_counts,here("CS-Facility-Analysis/CS-Facility-ComBat-Adjusted-ASV.tsv"), delim="\t") 
 
 ### Make a taxonomy file for QIIME 2 taxa-barplots and for collapsing ASV ---
 taxonomy <- readr::read_csv(here("CS-Facility-Analysis/CS_Facility_Deblur_outputs/CS_Facility_taxonomy_assignments.csv"))
@@ -128,3 +129,14 @@ taxonomy_for_qza <- taxonomy_for_qza %>% select(c("ASV","taxonomy"))
 taxonomy_for_qza <- rename(taxonomy_for_qza, c("Feature ID" = "ASV"))
 taxonomy_for_qza <- rename(taxonomy_for_qza, c("Taxon" = "taxonomy"))
 readr::write_delim(taxonomy_for_qza,here("CS-Facility-Analysis/CS_taxonomy.tsv"),delim="\t")
+
+### Switch QIIME SEqs for actual ASV sequences --
+combat_adjusted_counts$QIIME_seqs <- rownames(combat_adjusted_counts)
+taxonomy <- aligned %>% select(c("QIIME_seqs","ASV"))
+combat_adjusted_counts_ASV <-merge(combat_adjusted_counts, taxonomy, by="QIIME_seqs")
+combat_adjusted_counts_ASV <- combat_adjusted_counts_ASV %>% select(-c("QIIME_seqs"))
+combat_adjusted_counts_ASV <- combat_adjusted_counts_ASV %>%
+  select(ASV, everything())
+combat_adjusted_counts_ASV <- rename(combat_adjusted_counts_ASV, c("#OTU.ID" = "ASV"))
+
+readr::write_delim(combat_adjusted_counts_ASV,here("CS-Facility-Analysis/CS-Facility-ComBat-Adjusted-ASV.tsv"), delim="\t") 
