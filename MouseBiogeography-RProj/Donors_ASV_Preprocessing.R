@@ -8,8 +8,8 @@ BiocManager::install("sva")
 here::i_am("MouseBiogeography-RProj/Donors_ASV_Preprocessing.R")
 
 ## Combine taxonomy assignments --
-PE_taxonomy <- readr::read_csv(here("Donors-Analysis/Donors_PE_taxonomy_assignments.csv"))
-SE_taxonomy <- readr::read_csv(here("Donors-Analysis/Donors_single_taxonomy_assignments.csv"))
+PE_taxonomy <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_PE_taxonomy_assignments.csv"))
+SE_taxonomy <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_single_taxonomy_assignments.csv"))
 
 Donors_combined_taxonomy <- rbind(PE_taxonomy,SE_taxonomy)
 Donors_combined_taxonomy$ASV <- Donors_combined_taxonomy$...1
