@@ -150,9 +150,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b9df7dce5d2bb893",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2024 UCLA Command Line.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "64a9a736a6534c3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2024 Colonized Command Line.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -202,8 +226,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3f5fb4f26535282e",
@@ -219,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024 CS Facility taxonomy reassignment.md",
+                "file": "2024 Colonized Command Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -245,8 +268,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "aff2a8b091bbac33",
+  "active": "64a9a736a6534c3d",
   "lastOpenFiles": [
+    "2024 Colonized Command Line.md",
+    "2024 UCLA Command Line.md",
     "2024 CS Facility taxonomy reassignment.md",
     "2024 Shotgun Results.md",
     "2023 UCLA V SPF LMEM results.md",
