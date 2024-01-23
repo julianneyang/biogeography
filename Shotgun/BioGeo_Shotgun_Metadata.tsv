@@ -1,105 +1,105 @@
-sampleid,Truncated_SampleID,MouseID,Type,Sex,Site,Site_General,Genotype,Line,DSS_Treatment,DSS_group,Microbiota,Subset,Dataset,humann_sampleid
-BioGeo-TL1a_FP_127_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_127,167,Luminal,Female,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1a_FP_127
-BioGeo-TL1a_FP_131_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_131,167,Luminal,Female,Jejunum,SI,WT,NA,No,None,Cedars_SPF,Luminal_SI,SPF_Gavage,BioGeo.TL1a_FP_131
-BioGeo-TL1a_FP_193-Rep1_S85_R1_001.fastq_profiled_metagenome,TL1a_FP_193,217,Luminal,Female,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1a_FP_193.Rep1_S85
-BioGeo-TL1a_FP_197-REP1_S10_R1_001.fastq_profiled_metagenome,TL1a_FP_197,217,Luminal,Female,Jejunum,SI,WT,NA,No,None,Cedars_SPF,Luminal_SI,SPF_Gavage,BioGeo.TL1a_FP_197.REP1_S10
-BioGeo-TL1a_FP_229-REP1_S12_R1_001.fastq_profiled_metagenome,TL1a_FP_229,223,Luminal,Female,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1a_FP_229.REP1_S12
-BioGeo-TL1a_FP_233-REP1_S13_R1_001.fastq_profiled_metagenome,TL1a_FP_233,223,Luminal,Female,Jejunum,SI,WT,NA,No,None,Cedars_SPF,Luminal_SI,SPF_Gavage,BioGeo.TL1a_FP_233.REP1_S13
-BioGeo-TL1A_FP_625-REP1_S16_R1_001.fastq_profiled_metagenome,TL1A_FP_625,324,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1A_FP_625.REP1_S16
-BioGeo-TL1A_FP_629_merged_R1_001.fastq_profiled_metagenome,TL1A_FP_629,324,Luminal,Male,Jejunum,SI,WT,NA,No,None,Cedars_SPF,Luminal_SI,SPF_Gavage,BioGeo.TL1A_FP_629
-BioGeo-TL1A_FP_673-REP1_S20_R1_001.fastq_profiled_metagenome,TL1A_FP_673,342,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1A_FP_673.REP1_S20
-BioGeo-TL1A_FP_677-REP1_S21_R1_001.fastq_profiled_metagenome,TL1A_FP_677,342,Luminal,Male,Jejunum,SI,WT,NA,No,None,Cedars_SPF,Luminal_SI,SPF_Gavage,BioGeo.TL1A_FP_677.REP1_S21
-BioGeo-TL1a_FP_85_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_85,161,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Cedars_SPF,Luminal_Colon,SPF_Gavage,BioGeo.TL1a_FP_85
-BioGeo-TL1a_FP_101-REP1_S6_R1_001.fastq_profiled_metagenome,TL1a_FP_101,163,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1a_FP_101.REP1_S6
-BioGeo-TL1a_FP_139_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_139,172,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1a_FP_139
-BioGeo-TL1a_FP_143_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_143,172,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1a_FP_143
-BioGeo-TL1a_FP_205_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_205,213,Luminal,Female,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1a_FP_205
-BioGeo-TL1a_FP_209-REP1_S11_R1_001.fastq_profiled_metagenome,TL1a_FP_209,213,Luminal,Female,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1a_FP_209.REP1_S11
-BioGeo-TL1a_FP_241_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_241,226,Luminal,Female,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1a_FP_241
-BioGeo-TL1a_FP_61_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_61,141,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1a_FP_61
-BioGeo-TL1A_FP_637_merged_R1_001.fastq_profiled_metagenome,TL1A_FP_637,322,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1A_FP_637
-BioGeo-TL1A_FP_641_merged_R1_001.fastq_profiled_metagenome,TL1A_FP_641,322,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1A_FP_641
-BioGeo-TL1a_FP_65_merged_R1_001.fastq_profiled_metagenome,TL1a_FP_65,141,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1a_FP_65
-BioGeo-TL1A_FP_685-REP1_S22_R1_001.fastq_profiled_metagenome,TL1A_FP_685,340,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1A_FP_685.REP1_S22
-BioGeo-TL1A_FP_689-Rep1_S104_R1_001.fastq_profiled_metagenome,TL1A_FP_689,340,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1A_FP_689.Rep1_S104
-BioGeo-TL1a_FP_73-REP1_S3_R1_001.fastq_profiled_metagenome,TL1a_FP_73,143,Luminal,Male,Distal_Colon,Colon,WT,NA,No,None,Humanized,Luminal_Colon,HUM_Gavage,BioGeo.TL1a_FP_73.REP1_S3
-BioGeo-TL1a_FP_77-REP1_S4_R1_001.fastq_profiled_metagenome,TL1a_FP_77,143,Luminal,Male,Jejunum,SI,WT,NA,No,None,Humanized,Luminal_SI,HUM_Gavage,BioGeo.TL1a_FP_77.REP1_S4
-BioGeo-Lyz2-01B-FP207-S55_merged_R1_001.fastq_profiled_metagenome,Lyz2-01B-FP207-S55,3B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.01B.FP207.S55
-BioGeo-Lyz2-01B-FP211-S59_merged_R1_001.fastq_profiled_metagenome,Lyz2-01B-FP211-S59,3B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.01B.FP211.S59
-BioGeo-Lyz2-02B-FP219-S67_merged_R1_001.fastq_profiled_metagenome,Lyz2-02B-FP219-S67,4B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.02B.FP219.S67
-BioGeo-Lyz2-02B-FP223-S71_merged_R1_001.fastq_profiled_metagenome,Lyz2-02B-FP223-S71,4B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.02B.FP223.S71
-BioGeo-Lyz2-03B-FP231-S79_merged_R1_001.fastq_profiled_metagenome,Lyz2-03B-FP231-S79,5B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.03B.FP231.S79
-BioGeo-Lyz2-03B-FP235-S83_merged_R1_001.fastq_profiled_metagenome,Lyz2-03B-FP235-S83,5B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.03B.FP235.S83
-BioGeo-Lyz2-04B-FP243-S92_merged_R1_001.fastq_profiled_metagenome,Lyz2-04B-FP243-S92,6B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.04B.FP243.S92
-BioGeo-Lyz2-04B-FP247-S44_merged_R1_001.fastq_profiled_metagenome,Lyz2-04B-FP247-S44,6B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.04B.FP247.S44
-BioGeo-Lyz2-05B-FP255-S52_merged_R1_001.fastq_profiled_metagenome,Lyz2-05B-FP255-S52,7B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.05B.FP255.S52
-BioGeo-Lyz2-05B-FP259-S56_merged_R1_001.fastq_profiled_metagenome,Lyz2-05B-FP259-S56,7B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.05B.FP259.S56
-BioGeo-Lyz2-06B-FP267-S64_merged_R1_001.fastq_profiled_metagenome,Lyz2-06B-FP267-S64,8B_LyzCre,Luminal,Male,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.06B.FP267.S64
-BioGeo-Lyz2-06B-FP271-S69_merged_R1_001.fastq_profiled_metagenome,Lyz2-06B-FP271-S69,8B_LyzCre,Luminal,Male,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.06B.FP271.S69
-BioGeo-Lyz2-07B-FP279-S77_merged_R1_001.fastq_profiled_metagenome,Lyz2-07B-FP279-S77,1B_LyzCre,Luminal,Male,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.07B.FP279.S77
-BioGeo-Lyz2-07B-FP283-S81_merged_R1_001.fastq_profiled_metagenome,Lyz2-07B-FP283-S81,1B_LyzCre,Luminal,Male,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.07B.FP283.S81
-BioGeo-Lyz2-08B-FP291-S89_merged_R1_001.fastq_profiled_metagenome,Lyz2-08B-FP291-S89,2B_LyzCre,Luminal,Male,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Lyz2.08B.FP291.S89
-BioGeo-Lyz2-08B-FP295-S93_merged_R1_001.fastq_profiled_metagenome,Lyz2-08B-FP295-S93,2B_LyzCre,Luminal,Male,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Lyz2.08B.FP295.S93
-BioGeo-LYZFP303_merged_R1_001.fastq_profiled_metagenome,LYZFP303,3B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.LYZFP303
-BioGeo-LYZFP307_merged_R1_001.fastq_profiled_metagenome,LYZFP307,3B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.LYZFP307
-BioGeo-LYZFP315_merged_R1_001.fastq_profiled_metagenome,LYZFP315,4B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.LYZFP315
-BioGeo-LYZFP319_merged_R1_001.fastq_profiled_metagenome,LYZFP319,4B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.LYZFP319
-BioGeo-LYZFP327-Rep1_S105_R1_001.fastq_profiled_metagenome,LYZFP327,5B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.LYZFP327.Rep1_S105
-BioGeo-LYZFP339_merged_R1_001.fastq_profiled_metagenome,LYZFP339,5B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.LYZFP339
-BioGeo-LYZFP351-Rep1_S106_R1_001.fastq_profiled_metagenome,LYZFP351,6B_LyzCre,Luminal,Female,Distal_Colon,Colon,Neg,LyzCre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.LYZFP351.Rep1_S106
-BioGeo-LYZFP355_merged_R1_001.fastq_profiled_metagenome,LYZFP355,6B_LyzCre,Luminal,Female,Jejunum,SI,Neg,LyzCre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.LYZFP355
-BioGeo-Mouse10A_FP109_merged_R1_001.fastq_profiled_metagenome,Mouse10A_FP109,Mouse10A,Luminal,Female,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse10A_FP109
-BioGeo-Mouse10A_FP113_merged_R1_001.fastq_profiled_metagenome,Mouse10A_FP113,Mouse10A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse10A_FP113
-BioGeo-Mouse1A_FP01_merged_R1_001.fastq_profiled_metagenome,Mouse1A_FP01,Mouse1A,Luminal,Female,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse1A_FP01
-BioGeo-Mouse1A_FP05_merged_R1_001.fastq_profiled_metagenome,Mouse1A_FP05,Mouse1A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse1A_FP05
-BioGeo-Mouse2A_FP07_merged_R1_001.fastq_profiled_metagenome,Mouse2A_FP07,Mouse2A,Luminal,Male,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse2A_FP07
-BioGeo-Mouse2A_FP11-REP1_S55_R1_001.fastq_profiled_metagenome,Mouse2A_FP11,Mouse2A,Luminal,Male,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse2A_FP11.REP1_S55
-BioGeo-Mouse3A_FP13_merged_R1_001.fastq_profiled_metagenome,Mouse3A_FP13,Mouse3A,Luminal,Male,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse3A_FP13
-BioGeo-Mouse3A_FP17_merged_R1_001.fastq_profiled_metagenome,Mouse3A_FP17,Mouse3A,Luminal,Male,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse3A_FP17
-BioGeo-Mouse4A_FP23-Rep1_S92_R1_001.fastq_profiled_metagenome,Mouse4A_FP23,Mouse4A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse4A_FP23.Rep1_S92
-BioGeo-Mouse5A_FP25_merged_R1_001.fastq_profiled_metagenome,Mouse5A_FP25,Mouse5A,Luminal,Female,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse5A_FP25
-BioGeo-Mouse5A_FP29-REP1_S53_R1_001.fastq_profiled_metagenome,Mouse5A_FP29,Mouse5A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse5A_FP29.REP1_S53
-BioGeo-Mouse6A_FP31_merged_R1_001.fastq_profiled_metagenome,Mouse6A_FP31,Mouse6A,Luminal,Female,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse6A_FP31
-BioGeo-Mouse6A_FP35-Rep1_S93_R1_001.fastq_profiled_metagenome,Mouse6A_FP35,Mouse6A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse6A_FP35.Rep1_S93
-BioGeo-Mouse7A_FP37_merged_R1_001.fastq_profiled_metagenome,Mouse7A_FP37,Mouse7A,Luminal,Female,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse7A_FP37
-BioGeo-Mouse7A_FP41-REP1_S54_R1_001.fastq_profiled_metagenome,Mouse7A_FP41,Mouse7A,Luminal,Female,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse7A_FP41.REP1_S54
-BioGeo-Mouse8A_FP85_merged_R1_001.fastq_profiled_metagenome,Mouse8A_FP85,Mouse8A,Luminal,Male,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse8A_FP85
-BioGeo-Mouse8A_FP89_merged_R1_001.fastq_profiled_metagenome,Mouse8A_FP89,Mouse8A,Luminal,Male,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse8A_FP89
-BioGeo-Mouse9A_FP101_merged_R1_001.fastq_profiled_metagenome,Mouse9A_FP101,Mouse9A,Luminal,Male,Jejunum,SI,WT,NA,NA,None,NA,Luminal_SI,CS_SPF,BioGeo.Mouse9A_FP101
-BioGeo-Mouse9A_FP97_merged_R1_001.fastq_profiled_metagenome,Mouse9A_FP97,Mouse9A,Luminal,Male,Distal_Colon,Colon,WT,NA,NA,None,NA,Luminal_Colon,CS_SPF,BioGeo.Mouse9A_FP97
-BioGeo-SLCFP001_merged_R1_001.fastq_profiled_metagenome,SLCFP001,318_JJWT,Luminal,Female,Distal_Colon,Colon,WT,JJWT,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.SLCFP001
-BioGeo-SLCFP005-REP1_S24_R1_001.fastq_profiled_metagenome,SLCFP005,318_JJWT,Luminal,Female,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP005.REP1_S24
-BioGeo-SLCFP019a_merged_R1_001.fastq_profiled_metagenome,SLCFP019a,313_JJWT,Luminal,Male,Distal_Colon,Colon,WT,JJWT,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.SLCFP019a
-BioGeo-SLCFP023-REP1_S26_R1_001.fastq_profiled_metagenome,SLCFP023,313_JJWT,Luminal,Male,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP023.REP1_S26
-BioGeo-SLCFP071-REP1_S27_R1_001.fastq_profiled_metagenome,SLCFP071,329_JJWT,Luminal,Female,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP071.REP1_S27
-BioGeo-SLCFP077_merged_R1_001.fastq_profiled_metagenome,SLCFP077,361_JJWT,Luminal,Female,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP077
-BioGeo-SLCFP091-REP1_S29_R1_001.fastq_profiled_metagenome,SLCFP091,801_JJWT,Luminal,Female,Distal_Colon,Colon,WT,JJWT,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.SLCFP091.REP1_S29
-BioGeo-SLCFP095_merged_R1_001.fastq_profiled_metagenome,SLCFP095,801_JJWT,Luminal,Female,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP095
-BioGeo-SLCFP109_merged_R1_001.fastq_profiled_metagenome,SLCFP109,811_JJWT,Luminal,Male,Distal_Colon,Colon,WT,JJWT,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.SLCFP109
-BioGeo-SLCFP113_merged_R1_001.fastq_profiled_metagenome,SLCFP113,811_JJWT,Luminal,Male,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP113
-BioGeo-SLCFP127_merged_R1_001.fastq_profiled_metagenome,SLCFP127,815_JJWT,Luminal,Male,Distal_Colon,Colon,WT,JJWT,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.SLCFP127
-BioGeo-SLCFP131-REP1_S33_R1_001.fastq_profiled_metagenome,SLCFP131,815_JJWT,Luminal,Male,Jejunum,SI,WT,JJWT,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.SLCFP131.REP1_S33
-BioGeo-Vil1-01B-FP07-Rep1_S107_R1_001.fastq_profiled_metagenome,Vil1-01B-FP07,1B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.01B.FP07.Rep1_S107
-BioGeo-Vil1-01B-FP11_merged_R1_001.fastq_profiled_metagenome,Vil1-01B-FP11,1B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.01B.FP11
-BioGeo-Vil1-02B-FP19_merged_R1_001.fastq_profiled_metagenome,Vil1-02B-FP19,2B_Vil1Cre,Luminal,Female,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.02B.FP19
-BioGeo-Vil1-02B-FP23_merged_R1_001.fastq_profiled_metagenome,Vil1-02B-FP23,2B_Vil1Cre,Luminal,Female,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.02B.FP23
-BioGeo-Vil1-03B-FP31_merged_R1_001.fastq_profiled_metagenome,Vil1-03B-FP31,3B_Vil1Cre,Luminal,Female,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.03B.FP31
-BioGeo-Vil1-03B-FP35-REP1_S38_R1_001.fastq_profiled_metagenome,Vil1-03B-FP35,3B_Vil1Cre,Luminal,Female,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.03B.FP35.REP1_S38
-BioGeo-Vil1-04B-FP43-Rep1_S88_R1_001.fastq_profiled_metagenome,Vil1-04B-FP43,4B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.04B.FP43.Rep1_S88
-BioGeo-Vil1-04B-FP47_merged_R1_001.fastq_profiled_metagenome,Vil1-04B-FP47,4B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.04B.FP47
-BioGeo-Vil1-05B-FP55_merged_R1_001.fastq_profiled_metagenome,Vil1-05B-FP55,5B_Vil1Cre,Luminal,Female,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.05B.FP55
-BioGeo-Vil1-05B-FP59-REP1_S37_R1_001.fastq_profiled_metagenome,Vil1-05B-FP59,5B_Vil1Cre,Luminal,Female,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.05B.FP59.REP1_S37
-BioGeo-Vil1-06B-FP67_merged_R1_001.fastq_profiled_metagenome,Vil1-06B-FP67,6B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.06B.FP67
-BioGeo-Vil1-06B-FP71_merged_R1_001.fastq_profiled_metagenome,Vil1-06B-FP71,6B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.06B.FP71
-BioGeo-Vil1-07B-FP79_merged_R1_001.fastq_profiled_metagenome,Vil1-07B-FP79,7B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.07B.FP79
-BioGeo-Vil1-07B-FP83_merged_R1_001.fastq_profiled_metagenome,Vil1-07B-FP83,7B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.07B.FP83
-BioGeo-Vil1-08B-FP92-REP1_S41_R1_001.fastq_profiled_metagenome,Vil1-08B-FP92,8B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.08B.FP92.REP1_S41
-BioGeo-Vil1-08B-FP94-REP1_S42_R1_001.fastq_profiled_metagenome,Vil1-08B-FP94,8B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.08B.FP94.REP1_S42
-BioGeo-Vil1-09B-FP104_merged_R1_001.fastq_profiled_metagenome,Vil1-09B-FP104,9B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.09B.FP104
-BioGeo-Vil1-09B-FP106_merged_R1_001.fastq_profiled_metagenome,Vil1-09B-FP106,9B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.09B.FP106
-BioGeo-Vil1-10B-FP116-REP1_S44_R1_001.fastq_profiled_metagenome,Vil1-10B-FP116,10B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.10B.FP116.REP1_S44
-BioGeo-Vil1-10B-FP118-REP1_S45_R1_001.fastq_profiled_metagenome,Vil1-10B-FP118,10B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.10B.FP118.REP1_S45
-BioGeo-Vil1-13B-FP152_merged_R1_001.fastq_profiled_metagenome,Vil1-13B-FP152,13B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.13B.FP152
-BioGeo-Vil1-13B-FP154-REP1_S47_R1_001.fastq_profiled_metagenome,Vil1-13B-FP154,13B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.13B.FP154.REP1_S47
-BioGeo-Vil1-14B-FP164_merged_R1_001.fastq_profiled_metagenome,Vil1-14B-FP164,14B_Vil1Cre,Luminal,Male,Jejunum,SI,Neg,Vil1Cre,NA,None,NA,Luminal_SI,UCLA_O_SPF,BioGeo.Vil1.14B.FP164
-BioGeo-Vil1-14B-FP166_merged_R1_001.fastq_profiled_metagenome,Vil1-14B-FP166,14B_Vil1Cre,Luminal,Male,Distal_Colon,Colon,Neg,Vil1Cre,NA,None,NA,Luminal_Colon,UCLA_O_SPF,BioGeo.Vil1.14B.FP166
+sampleid	Truncated_SampleID	Sequencing_Run	MouseID	Type	Sex	Site	Site_General	Genotype	Line	DSS_Treatment	DSS_group	Microbiota	Subset	Dataset	humann_sampleid
+BioGeo-TL1a_FP_127_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_127	One	167	Luminal	Female	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1a_FP_127
+BioGeo-TL1a_FP_131_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_131	One	167	Luminal	Female	Jejunum	SI	WT	NA	No	None	Cedars_SPF	Luminal_SI	SPF_Gavage	BioGeo.TL1a_FP_131
+BioGeo-TL1a_FP_193-Rep1_S85_R1_001.fastq_profiled_metagenome	TL1a_FP_193	Two	217	Luminal	Female	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1a_FP_193.Rep1_S85
+BioGeo-TL1a_FP_197-REP1_S10_R1_001.fastq_profiled_metagenome	TL1a_FP_197	Two	217	Luminal	Female	Jejunum	SI	WT	NA	No	None	Cedars_SPF	Luminal_SI	SPF_Gavage	BioGeo.TL1a_FP_197.REP1_S10
+BioGeo-TL1a_FP_229-REP1_S12_R1_001.fastq_profiled_metagenome	TL1a_FP_229	Two	223	Luminal	Female	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1a_FP_229.REP1_S12
+BioGeo-TL1a_FP_233-REP1_S13_R1_001.fastq_profiled_metagenome	TL1a_FP_233	Two	223	Luminal	Female	Jejunum	SI	WT	NA	No	None	Cedars_SPF	Luminal_SI	SPF_Gavage	BioGeo.TL1a_FP_233.REP1_S13
+BioGeo-TL1A_FP_625-REP1_S16_R1_001.fastq_profiled_metagenome	TL1A_FP_625	Two	324	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1A_FP_625.REP1_S16
+BioGeo-TL1A_FP_629_merged_R1_001.fastq_profiled_metagenome	TL1A_FP_629	One	324	Luminal	Male	Jejunum	SI	WT	NA	No	None	Cedars_SPF	Luminal_SI	SPF_Gavage	BioGeo.TL1A_FP_629
+BioGeo-TL1A_FP_673-REP1_S20_R1_001.fastq_profiled_metagenome	TL1A_FP_673	Two	342	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1A_FP_673.REP1_S20
+BioGeo-TL1A_FP_677-REP1_S21_R1_001.fastq_profiled_metagenome	TL1A_FP_677	Two	342	Luminal	Male	Jejunum	SI	WT	NA	No	None	Cedars_SPF	Luminal_SI	SPF_Gavage	BioGeo.TL1A_FP_677.REP1_S21
+BioGeo-TL1a_FP_85_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_85	One	161	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Cedars_SPF	Luminal_Colon	SPF_Gavage	BioGeo.TL1a_FP_85
+BioGeo-TL1a_FP_101-REP1_S6_R1_001.fastq_profiled_metagenome	TL1a_FP_101	Two	163	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1a_FP_101.REP1_S6
+BioGeo-TL1a_FP_139_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_139	One	172	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1a_FP_139
+BioGeo-TL1a_FP_143_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_143	One	172	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1a_FP_143
+BioGeo-TL1a_FP_205_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_205	One	213	Luminal	Female	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1a_FP_205
+BioGeo-TL1a_FP_209-REP1_S11_R1_001.fastq_profiled_metagenome	TL1a_FP_209	Two	213	Luminal	Female	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1a_FP_209.REP1_S11
+BioGeo-TL1a_FP_241_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_241	One	226	Luminal	Female	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1a_FP_241
+BioGeo-TL1a_FP_61_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_61	One	141	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1a_FP_61
+BioGeo-TL1A_FP_637_merged_R1_001.fastq_profiled_metagenome	TL1A_FP_637	One	322	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1A_FP_637
+BioGeo-TL1A_FP_641_merged_R1_001.fastq_profiled_metagenome	TL1A_FP_641	One	322	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1A_FP_641
+BioGeo-TL1a_FP_65_merged_R1_001.fastq_profiled_metagenome	TL1a_FP_65	One	141	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1a_FP_65
+BioGeo-TL1A_FP_685-REP1_S22_R1_001.fastq_profiled_metagenome	TL1A_FP_685	Two	340	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1A_FP_685.REP1_S22
+BioGeo-TL1A_FP_689-Rep1_S104_R1_001.fastq_profiled_metagenome	TL1A_FP_689	Two	340	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1A_FP_689.Rep1_S104
+BioGeo-TL1a_FP_73-REP1_S3_R1_001.fastq_profiled_metagenome	TL1a_FP_73	Two	143	Luminal	Male	Distal_Colon	Colon	WT	NA	No	None	Humanized	Luminal_Colon	HUM_Gavage	BioGeo.TL1a_FP_73.REP1_S3
+BioGeo-TL1a_FP_77-REP1_S4_R1_001.fastq_profiled_metagenome	TL1a_FP_77	Two	143	Luminal	Male	Jejunum	SI	WT	NA	No	None	Humanized	Luminal_SI	HUM_Gavage	BioGeo.TL1a_FP_77.REP1_S4
+BioGeo-Lyz2-01B-FP207-S55_merged_R1_001.fastq_profiled_metagenome	Lyz2-01B-FP207-S55	One	3B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.01B.FP207.S55
+BioGeo-Lyz2-01B-FP211-S59_merged_R1_001.fastq_profiled_metagenome	Lyz2-01B-FP211-S59	One	3B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.01B.FP211.S59
+BioGeo-Lyz2-02B-FP219-S67_merged_R1_001.fastq_profiled_metagenome	Lyz2-02B-FP219-S67	One	4B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.02B.FP219.S67
+BioGeo-Lyz2-02B-FP223-S71_merged_R1_001.fastq_profiled_metagenome	Lyz2-02B-FP223-S71	One	4B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.02B.FP223.S71
+BioGeo-Lyz2-03B-FP231-S79_merged_R1_001.fastq_profiled_metagenome	Lyz2-03B-FP231-S79	One	5B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.03B.FP231.S79
+BioGeo-Lyz2-03B-FP235-S83_merged_R1_001.fastq_profiled_metagenome	Lyz2-03B-FP235-S83	One	5B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.03B.FP235.S83
+BioGeo-Lyz2-04B-FP243-S92_merged_R1_001.fastq_profiled_metagenome	Lyz2-04B-FP243-S92	One	6B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.04B.FP243.S92
+BioGeo-Lyz2-04B-FP247-S44_merged_R1_001.fastq_profiled_metagenome	Lyz2-04B-FP247-S44	One	6B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.04B.FP247.S44
+BioGeo-Lyz2-05B-FP255-S52_merged_R1_001.fastq_profiled_metagenome	Lyz2-05B-FP255-S52	One	7B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.05B.FP255.S52
+BioGeo-Lyz2-05B-FP259-S56_merged_R1_001.fastq_profiled_metagenome	Lyz2-05B-FP259-S56	One	7B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.05B.FP259.S56
+BioGeo-Lyz2-06B-FP267-S64_merged_R1_001.fastq_profiled_metagenome	Lyz2-06B-FP267-S64	One	8B_LyzCre	Luminal	Male	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.06B.FP267.S64
+BioGeo-Lyz2-06B-FP271-S69_merged_R1_001.fastq_profiled_metagenome	Lyz2-06B-FP271-S69	One	8B_LyzCre	Luminal	Male	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.06B.FP271.S69
+BioGeo-Lyz2-07B-FP279-S77_merged_R1_001.fastq_profiled_metagenome	Lyz2-07B-FP279-S77	One	1B_LyzCre	Luminal	Male	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.07B.FP279.S77
+BioGeo-Lyz2-07B-FP283-S81_merged_R1_001.fastq_profiled_metagenome	Lyz2-07B-FP283-S81	One	1B_LyzCre	Luminal	Male	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.07B.FP283.S81
+BioGeo-Lyz2-08B-FP291-S89_merged_R1_001.fastq_profiled_metagenome	Lyz2-08B-FP291-S89	One	2B_LyzCre	Luminal	Male	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Lyz2.08B.FP291.S89
+BioGeo-Lyz2-08B-FP295-S93_merged_R1_001.fastq_profiled_metagenome	Lyz2-08B-FP295-S93	One	2B_LyzCre	Luminal	Male	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Lyz2.08B.FP295.S93
+BioGeo-LYZFP303_merged_R1_001.fastq_profiled_metagenome	LYZFP303	One	3B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.LYZFP303
+BioGeo-LYZFP307_merged_R1_001.fastq_profiled_metagenome	LYZFP307	One	3B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.LYZFP307
+BioGeo-LYZFP315_merged_R1_001.fastq_profiled_metagenome	LYZFP315	One	4B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.LYZFP315
+BioGeo-LYZFP319_merged_R1_001.fastq_profiled_metagenome	LYZFP319	One	4B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.LYZFP319
+BioGeo-LYZFP327-Rep1_S105_R1_001.fastq_profiled_metagenome	LYZFP327	Two	5B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.LYZFP327.Rep1_S105
+BioGeo-LYZFP339_merged_R1_001.fastq_profiled_metagenome	LYZFP339	One	5B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.LYZFP339
+BioGeo-LYZFP351-Rep1_S106_R1_001.fastq_profiled_metagenome	LYZFP351	Two	6B_LyzCre	Luminal	Female	Distal_Colon	Colon	Neg	LyzCre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.LYZFP351.Rep1_S106
+BioGeo-LYZFP355_merged_R1_001.fastq_profiled_metagenome	LYZFP355	One	6B_LyzCre	Luminal	Female	Jejunum	SI	Neg	LyzCre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.LYZFP355
+BioGeo-Mouse10A_FP109_merged_R1_001.fastq_profiled_metagenome	Mouse10A_FP109	One	Mouse10A	Luminal	Female	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse10A_FP109
+BioGeo-Mouse10A_FP113_merged_R1_001.fastq_profiled_metagenome	Mouse10A_FP113	One	Mouse10A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse10A_FP113
+BioGeo-Mouse1A_FP01_merged_R1_001.fastq_profiled_metagenome	Mouse1A_FP01	One	Mouse1A	Luminal	Female	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse1A_FP01
+BioGeo-Mouse1A_FP05_merged_R1_001.fastq_profiled_metagenome	Mouse1A_FP05	One	Mouse1A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse1A_FP05
+BioGeo-Mouse2A_FP07_merged_R1_001.fastq_profiled_metagenome	Mouse2A_FP07	One	Mouse2A	Luminal	Male	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse2A_FP07
+BioGeo-Mouse2A_FP11-REP1_S55_R1_001.fastq_profiled_metagenome	Mouse2A_FP11	Two	Mouse2A	Luminal	Male	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse2A_FP11.REP1_S55
+BioGeo-Mouse3A_FP13_merged_R1_001.fastq_profiled_metagenome	Mouse3A_FP13	One	Mouse3A	Luminal	Male	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse3A_FP13
+BioGeo-Mouse3A_FP17_merged_R1_001.fastq_profiled_metagenome	Mouse3A_FP17	One	Mouse3A	Luminal	Male	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse3A_FP17
+BioGeo-Mouse4A_FP23-Rep1_S92_R1_001.fastq_profiled_metagenome	Mouse4A_FP23	Two	Mouse4A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse4A_FP23.Rep1_S92
+BioGeo-Mouse5A_FP25_merged_R1_001.fastq_profiled_metagenome	Mouse5A_FP25	One	Mouse5A	Luminal	Female	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse5A_FP25
+BioGeo-Mouse5A_FP29-REP1_S53_R1_001.fastq_profiled_metagenome	Mouse5A_FP29	Two	Mouse5A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse5A_FP29.REP1_S53
+BioGeo-Mouse6A_FP31_merged_R1_001.fastq_profiled_metagenome	Mouse6A_FP31	One	Mouse6A	Luminal	Female	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse6A_FP31
+BioGeo-Mouse6A_FP35-Rep1_S93_R1_001.fastq_profiled_metagenome	Mouse6A_FP35	Two	Mouse6A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse6A_FP35.Rep1_S93
+BioGeo-Mouse7A_FP37_merged_R1_001.fastq_profiled_metagenome	Mouse7A_FP37	One	Mouse7A	Luminal	Female	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse7A_FP37
+BioGeo-Mouse7A_FP41-REP1_S54_R1_001.fastq_profiled_metagenome	Mouse7A_FP41	Two	Mouse7A	Luminal	Female	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse7A_FP41.REP1_S54
+BioGeo-Mouse8A_FP85_merged_R1_001.fastq_profiled_metagenome	Mouse8A_FP85	One	Mouse8A	Luminal	Male	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse8A_FP85
+BioGeo-Mouse8A_FP89_merged_R1_001.fastq_profiled_metagenome	Mouse8A_FP89	One	Mouse8A	Luminal	Male	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse8A_FP89
+BioGeo-Mouse9A_FP101_merged_R1_001.fastq_profiled_metagenome	Mouse9A_FP101	One	Mouse9A	Luminal	Male	Jejunum	SI	WT	NA	NA	None	NA	Luminal_SI	CS_SPF	BioGeo.Mouse9A_FP101
+BioGeo-Mouse9A_FP97_merged_R1_001.fastq_profiled_metagenome	Mouse9A_FP97	One	Mouse9A	Luminal	Male	Distal_Colon	Colon	WT	NA	NA	None	NA	Luminal_Colon	CS_SPF	BioGeo.Mouse9A_FP97
+BioGeo-SLCFP001_merged_R1_001.fastq_profiled_metagenome	SLCFP001	One	318_JJWT	Luminal	Female	Distal_Colon	Colon	WT	JJWT	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.SLCFP001
+BioGeo-SLCFP005-REP1_S24_R1_001.fastq_profiled_metagenome	SLCFP005	Two	318_JJWT	Luminal	Female	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP005.REP1_S24
+BioGeo-SLCFP019a_merged_R1_001.fastq_profiled_metagenome	SLCFP019a	One	313_JJWT	Luminal	Male	Distal_Colon	Colon	WT	JJWT	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.SLCFP019a
+BioGeo-SLCFP023-REP1_S26_R1_001.fastq_profiled_metagenome	SLCFP023	Two	313_JJWT	Luminal	Male	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP023.REP1_S26
+BioGeo-SLCFP071-REP1_S27_R1_001.fastq_profiled_metagenome	SLCFP071	Two	329_JJWT	Luminal	Female	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP071.REP1_S27
+BioGeo-SLCFP077_merged_R1_001.fastq_profiled_metagenome	SLCFP077	One	361_JJWT	Luminal	Female	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP077
+BioGeo-SLCFP091-REP1_S29_R1_001.fastq_profiled_metagenome	SLCFP091	Two	801_JJWT	Luminal	Female	Distal_Colon	Colon	WT	JJWT	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.SLCFP091.REP1_S29
+BioGeo-SLCFP095_merged_R1_001.fastq_profiled_metagenome	SLCFP095	One	801_JJWT	Luminal	Female	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP095
+BioGeo-SLCFP109_merged_R1_001.fastq_profiled_metagenome	SLCFP109	One	811_JJWT	Luminal	Male	Distal_Colon	Colon	WT	JJWT	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.SLCFP109
+BioGeo-SLCFP113_merged_R1_001.fastq_profiled_metagenome	SLCFP113	One	811_JJWT	Luminal	Male	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP113
+BioGeo-SLCFP127_merged_R1_001.fastq_profiled_metagenome	SLCFP127	One	815_JJWT	Luminal	Male	Distal_Colon	Colon	WT	JJWT	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.SLCFP127
+BioGeo-SLCFP131-REP1_S33_R1_001.fastq_profiled_metagenome	SLCFP131	Two	815_JJWT	Luminal	Male	Jejunum	SI	WT	JJWT	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.SLCFP131.REP1_S33
+BioGeo-Vil1-01B-FP07-Rep1_S107_R1_001.fastq_profiled_metagenome	Vil1-01B-FP07	Two	1B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.01B.FP07.Rep1_S107
+BioGeo-Vil1-01B-FP11_merged_R1_001.fastq_profiled_metagenome	Vil1-01B-FP11	One	1B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.01B.FP11
+BioGeo-Vil1-02B-FP19_merged_R1_001.fastq_profiled_metagenome	Vil1-02B-FP19	One	2B_Vil1Cre	Luminal	Female	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.02B.FP19
+BioGeo-Vil1-02B-FP23_merged_R1_001.fastq_profiled_metagenome	Vil1-02B-FP23	One	2B_Vil1Cre	Luminal	Female	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.02B.FP23
+BioGeo-Vil1-03B-FP31_merged_R1_001.fastq_profiled_metagenome	Vil1-03B-FP31	One	3B_Vil1Cre	Luminal	Female	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.03B.FP31
+BioGeo-Vil1-03B-FP35-REP1_S38_R1_001.fastq_profiled_metagenome	Vil1-03B-FP35	Two	3B_Vil1Cre	Luminal	Female	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.03B.FP35.REP1_S38
+BioGeo-Vil1-04B-FP43-Rep1_S88_R1_001.fastq_profiled_metagenome	Vil1-04B-FP43	Two	4B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.04B.FP43.Rep1_S88
+BioGeo-Vil1-04B-FP47_merged_R1_001.fastq_profiled_metagenome	Vil1-04B-FP47	One	4B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.04B.FP47
+BioGeo-Vil1-05B-FP55_merged_R1_001.fastq_profiled_metagenome	Vil1-05B-FP55	One	5B_Vil1Cre	Luminal	Female	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.05B.FP55
+BioGeo-Vil1-05B-FP59-REP1_S37_R1_001.fastq_profiled_metagenome	Vil1-05B-FP59	Two	5B_Vil1Cre	Luminal	Female	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.05B.FP59.REP1_S37
+BioGeo-Vil1-06B-FP67_merged_R1_001.fastq_profiled_metagenome	Vil1-06B-FP67	One	6B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.06B.FP67
+BioGeo-Vil1-06B-FP71_merged_R1_001.fastq_profiled_metagenome	Vil1-06B-FP71	One	6B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.06B.FP71
+BioGeo-Vil1-07B-FP79_merged_R1_001.fastq_profiled_metagenome	Vil1-07B-FP79	One	7B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.07B.FP79
+BioGeo-Vil1-07B-FP83_merged_R1_001.fastq_profiled_metagenome	Vil1-07B-FP83	One	7B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.07B.FP83
+BioGeo-Vil1-08B-FP92-REP1_S41_R1_001.fastq_profiled_metagenome	Vil1-08B-FP92	Two	8B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.08B.FP92.REP1_S41
+BioGeo-Vil1-08B-FP94-REP1_S42_R1_001.fastq_profiled_metagenome	Vil1-08B-FP94	Two	8B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.08B.FP94.REP1_S42
+BioGeo-Vil1-09B-FP104_merged_R1_001.fastq_profiled_metagenome	Vil1-09B-FP104	One	9B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.09B.FP104
+BioGeo-Vil1-09B-FP106_merged_R1_001.fastq_profiled_metagenome	Vil1-09B-FP106	One	9B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.09B.FP106
+BioGeo-Vil1-10B-FP116-REP1_S44_R1_001.fastq_profiled_metagenome	Vil1-10B-FP116	Two	10B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.10B.FP116.REP1_S44
+BioGeo-Vil1-10B-FP118-REP1_S45_R1_001.fastq_profiled_metagenome	Vil1-10B-FP118	Two	10B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.10B.FP118.REP1_S45
+BioGeo-Vil1-13B-FP152_merged_R1_001.fastq_profiled_metagenome	Vil1-13B-FP152	One	13B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.13B.FP152
+BioGeo-Vil1-13B-FP154-REP1_S47_R1_001.fastq_profiled_metagenome	Vil1-13B-FP154	Two	13B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.13B.FP154.REP1_S47
+BioGeo-Vil1-14B-FP164_merged_R1_001.fastq_profiled_metagenome	Vil1-14B-FP164	One	14B_Vil1Cre	Luminal	Male	Jejunum	SI	Neg	Vil1Cre	NA	None	NA	Luminal_SI	UCLA_O_SPF	BioGeo.Vil1.14B.FP164
+BioGeo-Vil1-14B-FP166_merged_R1_001.fastq_profiled_metagenome	Vil1-14B-FP166	One	14B_Vil1Cre	Luminal	Male	Distal_Colon	Colon	Neg	Vil1Cre	NA	None	NA	Luminal_Colon	UCLA_O_SPF	BioGeo.Vil1.14B.FP166

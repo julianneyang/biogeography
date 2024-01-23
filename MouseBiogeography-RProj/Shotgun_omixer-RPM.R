@@ -1,9 +1,8 @@
 
-library(devtools)
-#install_github("omixer/omixer-rpmR")
 library(omixerRpm)
 library(here)
 library(dplyr)
+library(stringr)
 
 here::i_am("MouseBiogeography-RProj/omixer-RPM.R")
 #load the database (select between gut-brain and gut-metabolic)
@@ -11,11 +10,24 @@ listDB()
 
 
 # Wrangle the samples so it's only what was used for metaphlan
-shotgun_dat <- read.table("../Shotgun/relab_normalized/merged_humann_genefamilies_relab_normalized_unstratified_ko.tsv", header=T, sep="\t", row.names=1)
+shotgun_dat <- readr::read_delim(here("Shotgun/merged_humann_genefamilies_unstratified_ko_renamed.tsv"), delim="\t")
+shotgun_dat <- shotgun_dat %>%
+  filter(!str_detect(KO, 'UNGROUPED'))
+shotgun_dat <- shotgun_dat %>%
+  filter(!str_detect(KO, 'UNMAPPED'))
+shotgun_dat$KO <- str_extract(shotgun_dat$KO, '(K\\d+):')
+shotgun_dat$KO <- gsub(":","",shotgun_dat$KO)
+shotgun_dat <- shotgun_dat %>% 
+  group_by(KO) %>%
+  summarise(across(starts_with("merged"), sum))
+shotgun_dat <- as.data.frame(shotgun_dat)
+row.names(shotgun_dat) <- shotgun_dat$KO
+shotgun_dat <- shotgun_dat %>% select(-c("KO"))
 shotgun_dat <- shotgun_dat %>% mutate_all(as.numeric)
 names(shotgun_dat) <- gsub("_merged__kneaddata_paired_Abundance.RPKs","",names(shotgun_dat))
 names(shotgun_dat) <- gsub("merged_","",names(shotgun_dat))
 names(shotgun_dat) <- gsub("__kneaddata_paired_Abundance.RPKs","",names(shotgun_dat))
+names(shotgun_dat) <- gsub("-",".",names(shotgun_dat))
 summary(colSums(shotgun_dat))
 
 meta <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
@@ -23,7 +35,8 @@ meta$sampleid
 meta$humann_sampleid <- gsub("_merged_R1_001.fastq_profiled_metagenome","",meta$sampleid)
 meta$humann_sampleid <- gsub("_R1_001.fastq_profiled_metagenome","",meta$humann_sampleid)
 meta$humann_sampleid <- gsub("-",".",meta$humann_sampleid)
-readr::write_csv(meta, here("Shotgun/BioGeo_Shotgun_Metadata.tsv"))
+#readr::write_delim(meta, here("Shotgun/BioGeo_Shotgun_Metadata.tsv"), delim="\t")
+meta <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
 
 samples <- meta %>%
   filter(humann_sampleid %in% names(shotgun_dat)) %>%

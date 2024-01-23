@@ -1,0 +1,66 @@
+2024-01-22 13:35:51 INFO::Writing function arguments to log file
+2024-01-22 13:35:51 DEBUG::Function arguments
+2024-01-22 13:35:51 DEBUG::Output folder: /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID
+2024-01-22 13:35:51 DEBUG::Min Abundance: 0.000000
+2024-01-22 13:35:51 DEBUG::Min Prevalence: 0.150000
+2024-01-22 13:35:51 DEBUG::Normalization: CLR
+2024-01-22 13:35:51 DEBUG::Transform: NONE
+2024-01-22 13:35:51 DEBUG::Analysis method: LM
+2024-01-22 13:35:51 DEBUG::Max significance: 0.250000
+2024-01-22 13:35:51 DEBUG::Random effects: MouseID
+2024-01-22 13:35:51 DEBUG::Fixed effects: Sequencing_Run,Line,Sex,Site
+2024-01-22 13:35:51 DEBUG::Correction method: BH
+2024-01-22 13:35:51 DEBUG::Standardize: TRUE
+2024-01-22 13:35:51 DEBUG::Cores: 1
+2024-01-22 13:35:51 INFO::Verifying options selected are valid
+2024-01-22 13:35:51 INFO::Determining format of input files
+2024-01-22 13:35:51 INFO::Input format is data samples as columns and metadata samples as rows
+2024-01-22 13:35:51 DEBUG::Transformed data so samples are rows
+2024-01-22 13:35:51 DEBUG::A total of 60 samples were found in both the data and metadata
+2024-01-22 13:35:51 DEBUG::Reordering data/metadata to use same sample ordering
+2024-01-22 13:35:51 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-01-22 13:35:51 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Line + Sex + Site
+2024-01-22 13:35:51 INFO::Filter data based on min abundance and min prevalence
+2024-01-22 13:35:51 INFO::Total samples in data: 60
+2024-01-22 13:35:51 INFO::Min samples required with min abundance for a feature not to be filtered: 9.000000
+2024-01-22 13:35:51 INFO::Total filtered features: 13
+2024-01-22 13:35:51 INFO::Filtered feature names from abundance and prevalence filtering: MGB039, MGB056, MGB051, MGB053, MGB010, MGB022, MGB045, MGB023, MGB024, MGB025, MGB020, MGB021, MGB009
+2024-01-22 13:35:51 INFO::Total filtered features with variance filtering: 0
+2024-01-22 13:35:51 INFO::Filtered feature names from variance filtering:
+2024-01-22 13:35:51 INFO::Running selected normalization method: CLR
+2024-01-22 13:35:51 INFO::Applying z-score to standardize continuous metadata
+2024-01-22 13:35:51 INFO::Running selected transform method: NONE
+2024-01-22 13:35:51 INFO::Running selected analysis method: LM
+2024-01-22 13:35:51 INFO::Fitting model to feature number 1, MGB015
+2024-01-22 13:35:51 INFO::Fitting model to feature number 2, MGB037
+2024-01-22 13:35:51 INFO::Fitting model to feature number 3, MGB038
+2024-01-22 13:35:51 INFO::Fitting model to feature number 4, MGB033
+2024-01-22 13:35:51 INFO::Fitting model to feature number 5, MGB055
+2024-01-22 13:35:51 INFO::Fitting model to feature number 6, MGB034
+2024-01-22 13:35:51 INFO::Fitting model to feature number 7, MGB035
+2024-01-22 13:35:51 INFO::Fitting model to feature number 8, MGB036
+2024-01-22 13:35:51 INFO::Fitting model to feature number 9, MGB052
+2024-01-22 13:35:51 INFO::Fitting model to feature number 10, MGB031
+2024-01-22 13:35:51 INFO::Fitting model to feature number 11, MGB032
+2024-01-22 13:35:51 INFO::Fitting model to feature number 12, MGB054
+2024-01-22 13:35:51 INFO::Fitting model to feature number 13, MGB019
+2024-01-22 13:35:51 INFO::Fitting model to feature number 14, MGB005
+2024-01-22 13:35:51 INFO::Fitting model to feature number 15, MGB027
+2024-01-22 13:35:52 INFO::Fitting model to feature number 16, MGB049
+2024-01-22 13:35:52 INFO::Fitting model to feature number 17, MGB006
+2024-01-22 13:35:52 INFO::Fitting model to feature number 18, MGB028
+2024-01-22 13:35:52 INFO::Fitting model to feature number 19, MGB007
+2024-01-22 13:35:52 INFO::Fitting model to feature number 20, MGB029
+2024-01-22 13:35:52 INFO::Fitting model to feature number 21, MGB044
+2024-01-22 13:35:52 INFO::Fitting model to feature number 22, MGB047
+2024-01-22 13:35:52 INFO::Fitting model to feature number 23, MGB040
+2024-01-22 13:35:52 INFO::Fitting model to feature number 24, MGB043
+2024-01-22 13:35:52 INFO::Counting total values for each feature
+2024-01-22 13:35:52 WARNING::Deleting existing residuals file: /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/residuals.rds
+2024-01-22 13:35:52 INFO::Writing residuals to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/residuals.rds
+2024-01-22 13:35:52 WARNING::Deleting existing fitted file: /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/fitted.rds
+2024-01-22 13:35:52 INFO::Writing fitted values to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/fitted.rds
+2024-01-22 13:35:52 WARNING::Deleting existing ranef file: /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/ranef.rds
+2024-01-22 13:35:52 INFO::Writing extracted random effects to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/ranef.rds
+2024-01-22 13:35:52 INFO::Writing all results to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv
+2024-01-22 13:35:52 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/GBM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv
