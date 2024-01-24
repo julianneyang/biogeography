@@ -55,7 +55,8 @@ combat_adjusted_counts <- combat_adjusted_counts %>% select("#OTU.ID", everythin
 readr::write_delim(combat_adjusted_counts,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_ComBat_Adjusted_ASV.tsv"), delim="\t") 
 
 ### Generate a taxonomy key ---
-seqs<- row.names(combat_adjusted_counts)
+sequences<- readr::read_csv(here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_Original_Taxonomy_Key.csv"))
+seqs <- sequences$OTU
 set.seed(100)
 taxa <- assignTaxonomy(seqs, 
                        "../16S_Taxonomy_Classifiers/silva_nr99_v138.1_wSpecies_train_set.fa.gz", multithread=TRUE)  # update directory with the deblur all.seqs.fa output file and with the most recent Silva 99% OTU database  

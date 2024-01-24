@@ -148,7 +148,7 @@ file_path <- "CS-Facility-Analysis/Taxa-Barplots/Luminal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-6.RDS"))
 
-file_path <- "CS-Facility-Analysis/Taxa-Barplots/Luminal_level-6.csv"
+file_path <- "CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-6.RDS"))
 
@@ -180,7 +180,7 @@ labels_muc <- get_genera_from_plot("CS-Facility-Analysis/Taxa-Barplots/Mucosal_l
 labels_all <- union(labels_lum, labels_muc) 
 #Generate that many colors 
 assign_cols <- paletteer_d("ggsci::category20_d3", 20)
-add_cols <- paletteer_d("dutchmasters::milkmaid",1)
+add_cols <- paletteer_d("dutchmasters::milkmaid",3)
 assign_cols <- c(assign_cols,add_cols)
 #Match taxa to colors and then use in scale_fill_manual
 names(assign_cols)=labels_all
