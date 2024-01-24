@@ -11,7 +11,7 @@ target <- original_features$`#OTU.ID`
 target <- gsub('.{1}$', '', target)
 
 
-immdef_ASV<-readr::read_csv(here("ImmDef-Mouse-Biogeography-Analysis/Immune Deficiency ASV - ImmDef-ASV-table.csv"))
+immdef_ASV<-readr::read_csv(here("UCLA_V_SPF_Analysis/Immune Deficiency ASV - ImmDef-ASV-table.csv"))
 immdef_ASV <- as.data.frame(immdef_ASV)
 row.names(immdef_ASV)<-immdef_ASV$feature
 immdef_ASV <- immdef_ASV %>% select(-c("#OTU ID","feature","taxonomy"))
@@ -19,7 +19,7 @@ summary(colSums(immdef_ASV))
 immdef_ASV<- immdef_ASV[colSums(immdef_ASV) >= 10000]
 
 ## Retrieve only WT Mucosal samples 
-metadata<- readr::read_csv(here("ImmDef-Mouse-Biogeography-Analysis/Full-Metadata.csv"))
+metadata<- readr::read_csv(here("UCLA_V_SPF_Analysis/Full-Metadata.csv"))
 metadata$SampleID <- gsub("-",".",metadata$SampleID)
 names(immdef_ASV)<-gsub("-",".",names(immdef_ASV))
 metadata$Sequencing_Run <- factor(metadata$Sequencing_Run)
@@ -27,8 +27,10 @@ metadata %>% filter(Type =="Mucosal" & Genotype =="WT")
 samples <- metadata %>% filter(Type =="Mucosal" & Genotype =="WT", SampleID %in% names(immdef_ASV)) %>% pull(SampleID)
 
 final_immdef_ASV <- immdef_ASV[, samples]
+#final_immdef_ASV$`#OTU.ID` <- row.names(final_immdef_ASV)
+#final_immdef_ASV <- final_immdef_ASV %>% select("#OTU.ID", everything())
 
-write.table(final_immdef_ASV,"WTCohort_ASV_for_alpha_diversity.tsv", sep="\t")
+readr::write_delim(final_immdef_ASV,"UCLA_V_SPF_Analysis/WTCohort_ASV_for_alpha_diversity.tsv", sep="\t")
 
 
 ## Query the target vector against immunodeficiency ASV
@@ -38,7 +40,9 @@ final_immdef_ASV<-final_immdef_ASV[final_immdef_ASV$feature %in% target,]
 final_immdef_ASV<-select(final_immdef_ASV,-feature)
 
 ## Perform CombatSeq2 by Type and Site
-newmeta <- metadata %>% filter(Type =="Mucosal" & Genotype =="WT")
+newmeta <- metadata %>% filter(Type =="Mucosal" & Genotype =="WT", SampleID %in% names(final_immdef_ASV))
+newmeta$SampleID == names(final_immdef_ASV)
+readr::write_delim(newmeta,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_Metadata.tsv"), delim="\t")
 
 batch<- as.character(newmeta$Sequencing_Run)
 modcombat=model.matrix(~ Sex + Site,data=newmeta)
@@ -46,7 +50,9 @@ modcombat=model.matrix(~ Sex + Site,data=newmeta)
 input=as.matrix(final_immdef_ASV)
 combat_adjusted_counts=ComBat_seq(input,batch=batch,group=NULL,covar_mod=modcombat)  
 combat_adjusted_counts <- as.data.frame(combat_adjusted_counts)
-readr::write_delim(combat_adjusted_counts,here("ImmDef-Mouse-Biogeography-Analysis/WTCohort-ImmDef-ComBat-Adjusted-ASV.tsv"), delim="\t") 
+combat_adjusted_counts$`#OTU.ID` <- row.names(combat_adjusted_counts)
+combat_adjusted_counts <- combat_adjusted_counts %>% select("#OTU.ID", everything())
+readr::write_delim(combat_adjusted_counts,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_ComBat_Adjusted_ASV.tsv"), delim="\t") 
 
 ### Generate a taxonomy key ---
 seqs<- row.names(combat_adjusted_counts)
@@ -62,6 +68,6 @@ output$ASV <- row.names(output)
 taxonomy_for_qza <- output %>% select(c("ASV","taxonomy"))
 taxonomy_for_qza <- rename(taxonomy_for_qza, c("Feature ID" = "ASV"))
 taxonomy_for_qza <- rename(taxonomy_for_qza, c("Taxon" = "taxonomy"))
-readr::write_delim(taxonomy_for_qza,here("ImmDef-Mouse-Biogeography-Analysis/starting_files/ucla_v_taxonomy.tsv"),delim="\t")
+readr::write_delim(taxonomy_for_qza,here("UCLA_V_SPF_Analysis/starting_files/ucla_v_taxonomy.tsv"),delim="\t")
 
 #write.table(final_immdef_ASV, "WTCohort-ImmDef-ASV.tsv", sep= "\t")

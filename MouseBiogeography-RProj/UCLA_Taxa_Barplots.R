@@ -33,7 +33,6 @@ print(names(processed_data))
 readr::write_rds(processed_data, here("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-6.RDS"))
 
 ## Generate a color key using paletteer colors --
-test <- readr::read_rds("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-6.RDS")
 labels_lum <- get_genera_from_plot("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-6.RDS")
 labels_muc <- get_genera_from_plot("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-6.RDS")
 
