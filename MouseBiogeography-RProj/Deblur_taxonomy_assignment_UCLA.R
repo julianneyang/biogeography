@@ -15,18 +15,3 @@ output<-cbind(taxa, taxonomy)
 output$ASV <- row.names(output)
 readr::write_csv(output, here("Regional-Mouse-Biogeography-Analysis/UCLA_taxonomy_assignments.csv"))
 
-#################Split rep-seqs FASTA file into two columns (so you have the QIIME gibberish in column A and the ASV sequence in column B)########################
-library(dplyr)
-library(tidyr)
-fasta<- read.table("../Regional-Mouse-Biogeography-Analysis/repseqs-Regional-Combat-ASV.tsv")
-fasta2<-fasta %>% separate(V1, c("ASV","QIIME_sequence"), sep = "([>])")
-fasta2[fasta2==""]<-NA
-
-ASV <- fasta2$ASV
-fasta3 <- data.frame(ASV)
-fasta3 <-as.data.frame(fasta3[-1,])
-QIIME_seqs <- data.frame(fasta2$QIIME_sequence)
-QIIME_seqs <- data.frame(QIIME_seqs[-646,])  #modify the number to be the number of the last row
-fasta3$QIIME_seqs<- QIIME_seqs$QIIME_seqs..646... #modify the number to be the number of the last row
-finalfasta<-na.omit(fasta3)
-write.csv(finalfasta, "../Regional-Mouse-Biogeography-Analysis/UCLA_aligned_dna_sequences.csv")

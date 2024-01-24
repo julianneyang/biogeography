@@ -20,7 +20,6 @@ devtools::document()
 library("Microbiome.Biogeography")
 
 
-
 here::i_am("MouseBiogeography-RProj/Donors_Taxa_Barplots.R")
 phyla_cols <- readRDS("../Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Taxa-Barplots/global_phyla_cols.RDS")
 

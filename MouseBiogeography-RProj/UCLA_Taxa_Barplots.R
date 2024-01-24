@@ -22,11 +22,14 @@ here::i_am("MouseBiogeography-RProj/UCLA_Taxa_Barplots.R")
 
 # change the csv file into RDS 
 file_path <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-6.csv"
+test <- readr::read_csv(here(file_path))
 processed_data <- process_taxonomy_data(file_path)
+print(names(processed_data))
 readr::write_rds(processed_data, here("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-6.RDS"))
 
 file_path <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
+print(names(processed_data))
 readr::write_rds(processed_data, here("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-6.RDS"))
 
 ## Generate a color key using paletteer colors --
@@ -36,6 +39,7 @@ labels_muc <- get_genera_from_plot("Regional-Mouse-Biogeography-Analysis/2021-8-
 
 #Find out how many taxa need to be assigned colors 
 labels_all <- union(labels_lum, labels_muc) 
+print(labels_all)
 #Generate that many colors 
 assign_cols <- paletteer_d("ggsci::category20_d3", 18)
 
