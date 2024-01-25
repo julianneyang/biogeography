@@ -18,3 +18,15 @@ Call bash taxabarplot.sh table taxonomy metadata
 Saved Visualization to: barplot_groupby_Site_UCLA_V_SPF_ComBat_Adjusted_ASV.qza_dir.qzv
 
 ```
+
+```bash
+(qiime2-2022.2) julianne@laptop:~/Documents/biogeography/UCLA_V_SPF_Analysis/starting_files$ bash ../../../fast-16s-analysis/shell_scripts/collapse-taxa.sh UCLA_V_SPF_min10k_ASV.qza taxonomy.qza 
+Saved FeatureTable[Frequency] to: L1_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L2_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L3_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L4_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L5_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L6_UCLA_V_SPF_min10k_ASV.qza
+Saved FeatureTable[Frequency] to: L7_UCLA_V_SPF_min10k_ASV.qza
+
+```

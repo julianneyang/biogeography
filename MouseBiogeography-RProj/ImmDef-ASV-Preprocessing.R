@@ -30,7 +30,7 @@ final_immdef_ASV <- immdef_ASV[, samples]
 #final_immdef_ASV$`#OTU.ID` <- row.names(final_immdef_ASV)
 #final_immdef_ASV <- final_immdef_ASV %>% select("#OTU.ID", everything())
 
-readr::write_delim(final_immdef_ASV,"UCLA_V_SPF_Analysis/WTCohort_ASV_for_alpha_diversity.tsv", sep="\t")
+#readr::write_delim(final_immdef_ASV,here("UCLA_V_SPF_Analysis/WTCohort_ASV_for_alpha_diversity.tsv"), delim="\t")
 
 
 ## Query the target vector against immunodeficiency ASV
@@ -39,22 +39,12 @@ final_immdef_ASV$feature <- row.names(final_immdef_ASV)
 final_immdef_ASV<-final_immdef_ASV[final_immdef_ASV$feature %in% target,]
 final_immdef_ASV<-select(final_immdef_ASV,-feature)
 
-## Perform CombatSeq2 by Type and Site
-newmeta <- metadata %>% filter(Type =="Mucosal" & Genotype =="WT", SampleID %in% names(final_immdef_ASV))
-newmeta$SampleID == names(final_immdef_ASV)
-readr::write_delim(newmeta,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_Metadata.tsv"), delim="\t")
+final_immdef_ASV$`#OTU.ID` <- row.names(final_immdef_ASV)
+final_immdef_ASV <- final_immdef_ASV %>% select("#OTU.ID", everything())
 
-batch<- as.character(newmeta$Sequencing_Run)
-modcombat=model.matrix(~ Sex + Site,data=newmeta)
+readr::write_delim(final_immdef_ASV,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_min10k_ASV.tsv"), delim="\t")
 
-input=as.matrix(final_immdef_ASV)
-combat_adjusted_counts=ComBat_seq(input,batch=batch,group=NULL,covar_mod=modcombat)  
-combat_adjusted_counts <- as.data.frame(combat_adjusted_counts)
-combat_adjusted_counts$`#OTU.ID` <- row.names(combat_adjusted_counts)
-combat_adjusted_counts <- combat_adjusted_counts %>% select("#OTU.ID", everything())
-readr::write_delim(combat_adjusted_counts,here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_ComBat_Adjusted_ASV.tsv"), delim="\t") 
-
-### Generate a taxonomy key ---
+## Generate a taxonomy key ---
 sequences<- readr::read_csv(here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_Original_Taxonomy_Key.csv"))
 seqs <- sequences$OTU
 set.seed(100)

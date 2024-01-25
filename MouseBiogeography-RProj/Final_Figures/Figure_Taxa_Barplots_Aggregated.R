@@ -61,7 +61,7 @@ length(global_genera)
 df<-palettes_d_names # see palette names
 add_cols2 <- paletteer_d("ggthemes::Classic_20",20)	
 add_cols4 <- paletteer_d("ggthemes::calc",12)
-add_cols3 <- paletteer_d("dutchmasters::little_street",9)
+add_cols3 <- paletteer_d("dutchmasters::little_street",10)
 global_genera_cols <- c(add_cols2,add_cols3,add_cols4)
 global_genera_cols <- unique(global_genera_cols)
 names(global_genera_cols) <- global_genera
@@ -249,8 +249,13 @@ grid.newpage()
 grid.draw(legend)
 
 phyla_cols <- readRDS("global_phyla_cols.RDS")
-L2_legend <- generate_L2_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-2.csv", 
-                                    "HUM Gavage", ".*p__", phyla_cols,"Site") +
+dummyplot<- as.data.frame(phyla_cols)
+dummyplot$dummyy <- seq(1,8,1)
+dummyplot$dummyx <- seq(1,16,2)
+dummyplot$Genus <- row.names(dummyplot)
+L2_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values=phyla_cols)+
   theme(legend.position = "top") +
   guides(fill=guide_legend(nrow=2, byrow=TRUE))+
   theme(legend.spacing.y = unit(0.1, 'cm')) +
@@ -258,3 +263,4 @@ L2_legend <- generate_L2_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8
 legend <- cowplot::get_legend(L2_legend)
 grid.newpage()
 grid.draw(legend)
+

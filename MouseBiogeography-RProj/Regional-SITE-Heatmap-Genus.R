@@ -11,14 +11,17 @@ library(gplots)
 library(here)
 library(dplyr)
 library(plyr)
+library(gplots)
 
 here::i_am("MouseBiogeography-RProj/Regional-Site-Heatmap-Genus.R")
 
 ###for SITE:DC vs all data
 #Feed in the significant results and generate a target vector with the union of all features 
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-luminal<-read.table("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/L6-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv", header=TRUE)
-luminal<-read.table("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/L6-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv", header=TRUE)
+filepath <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/"
+luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")), delim="\t")
+luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")), delim="\t")
+
+luminal <- as.data.frame(luminal)
 
 duodenum_significant<-filter(luminal, metadata=="Site" & value=="Duodenum" &qval<0.05)
 a<-duodenum_significant$feature
@@ -45,23 +48,23 @@ regionalgenera<-as.data.frame(regionalgenera)
 regionalgenera$feature <- regionalgenera[,1]
 
 #Lum
-annotation <- read.csv("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/genus_Luminal_taxonomy.csv", header=TRUE)
-#Muc
-annotation <- read.csv("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/genus_Mucosal_taxonomy.csv", header=TRUE)
+annotation <- readr::read_delim(here(paste0(filepath,"Genus_Luminal_taxonomy.csv")))
 
-annotation$feature<-annotation$X
+#Muc
+annotation <- readr::read_delim(here(paste0(filepath,"Genus_Mucosal_taxonomy.csv")))
+
 tempdf<-merge(regionalgenera,annotation, by= "feature")
 regionalgenera<-as.data.frame(tempdf$Genus)
 regionalgenera <- regionalgenera$`tempdf$Genus`
-
+unique(regionalgenera)
 here()
-readr::write_rds(regionalgenera, file=here("regionalluminalgenera.RDS"))
+readr::write_rds(regionalgenera, file=here(paste0(filepath,"regionalluminalgenera.RDS")))
 here()
-readr::write_rds(regionalgenera, file=here("regionalmucosalgenera.RDS"))
+readr::write_rds(regionalgenera, file=here(paste0(filepath,"regionalmucosalgenera.RDS")))
 
 ## Query the target vector against all_results.tsv ---
-luminal<-read.table("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/L6-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
-luminal<-read.table("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/L6-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
+luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")), delim="\t")
+luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")), delim="\t")
 #luminal<-read.table("L6-DuodvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
 #luminal<-read.table("L6-DuodvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
 
@@ -88,14 +91,13 @@ site_heatmap$feature <- gsub("X","",as.character(site_heatmap$feature))
 
 #construct the heatmap using ggplot
 library(viridis)
-annotation <- read.csv("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/genus_Luminal_taxonomy.csv", header=TRUE)
-annotation <- read.csv("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Maasllin2 Site Genus Level/genus_Mucosal_taxonomy.csv", header=TRUE)
+annotation <- readr::read_delim(here(paste0(filepath,"Genus_Luminal_taxonomy.csv")))
+annotation <- readr::read_delim(here(paste0(filepath,"Genus_Mucosal_taxonomy.csv")))
 
-annotation$feature<-annotation$X
+annotation$Phylum <- gsub(".*\\.p__", "", annotation$feature)
+annotation$Phylum <- gsub("\\.c__.*", "", annotation$Phylum)
 data<- (merge(site_heatmap, annotation, by = 'feature'))
-data$Family_Genus<-paste(data$Family,data$Genus,sep=" : ")
-data$Phylum_Genus<-paste(data$Phylum,data$Genus,sep=" : ")
-
+data <- unique(data)
 qval<-data$qval
 asterisk<-c("")
 for (item in qval){
@@ -116,15 +118,17 @@ data$coef_d[data$coef_d < (-2)] <- (-2)
 summary(data$coef_d) 
 y = tapply(data$coef_d, data$Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
+
 data$Genus= factor(as.character(data$Genus), levels = names(y))
 data$value = revalue(data$value, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
 data$value = factor(data$value, levels=c("Duo", "Jej", "Ile", "Cec", "PC", "DC"))
-ggplotdata<-data
+ggplot_data <- unique(data)
+ggplot_data$Phylum_Genus<-paste(ggplot_data$Phylum,ggplot_data$annotation,sep=" : ")
 
 
 #construct heatmap using heatmap2 with dendrogram
 ?pivot_wider
-data_long<-pivot_wider(data, id_cols=Phylum_Genus, names_from = value, values_from =coef_d)
+data_long<-pivot_wider(ggplot_data, id_cols=Phylum_Genus, names_from = value, values_from =coef_d)
 data_long_final<-data_long[,-1]
 data_long_final<-select(data_long_final,Duo,Jej, Ile,Cec,PC,DC)
 row.names(data_long_final)= data_long$Phylum_Genus
@@ -135,7 +139,7 @@ library(dendextend) #Creating a color palette & color breaks
 
 coul=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
-
+matrix.data
 distance= dist(matrix.data, method ="euclidean")  
 hcluster = hclust(distance, method ="ward.D")
 
@@ -156,11 +160,9 @@ col_labels <- col_labels[order(order.dendrogram(dend1))]
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
 nrow(matrix.data)
 
-data_long_qval<-pivot_wider(data, id_cols=feature, names_from = value, values_from =qval)
+data_long_qval<-pivot_wider(ggplot_data, id_cols=annotation, names_from = value, values_from =qval)
 data_long_qval<-data_long_qval[,-1]
 
-data_long_qval<-pivot_wider(data, id_cols=feature, names_from = value, values_from =qval)
-data_long_qval<-data_long_qval[,-1]
 data_long_qval <- select(data_long_qval,c("Duo","Ile", "Jej","Cec","PC","DC"))
 
 for(i in 1:ncol(data_long_qval)){       # for-loop over columns
@@ -174,6 +176,7 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
     }
   }
 }
+
 
 for(i in 1:ncol(data_long_qval)){ 
   v<-data_long_qval %>% pull(i)
@@ -194,7 +197,7 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-row.names(matrix.data) <- c()
+#row.names(matrix.data) <- c()
 dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,

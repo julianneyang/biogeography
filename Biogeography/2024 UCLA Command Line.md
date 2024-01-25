@@ -51,3 +51,22 @@ Call bash taxabarplot.sh table taxonomy metadata
 Saved Visualization to: barplot_groupby_Site_Mucosal_UCLA-ComBat-Adjusted-ASV.qza_dir.qzv
 
 ```
+
+```bash
+(qiime2-2022.2) julianne@laptop:~/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/site_subsets$ for file in *; do bash ../../../../../fast-16s-analysis/shell_scripts/collapse-taxa.sh $file ../../taxonomy.qza; done
+Saved FeatureTable[Frequency] to: L1_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L2_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L3_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L4_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L5_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L6_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L7_Luminal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L1_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L2_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L3_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L4_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L5_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L6_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+Saved FeatureTable[Frequency] to: L7_Mucosal_UCLA-ComBat-Adjusted-ASV.qza
+
+```

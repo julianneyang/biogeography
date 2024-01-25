@@ -28,7 +28,7 @@ readr::write_rds(processed_data, here("UCLA_V_SPF_Analysis/Taxa-Barplots/Mucosal
 labels_muc <- get_genera_from_plot("UCLA_V_SPF_Analysis/Taxa-Barplots/Mucosal_level-6.RDS")
 
 #Find out how many taxa need to be assigned colors 
-assign_cols <- paletteer_d("ggsci::category20_d3", 14)
+assign_cols <- paletteer_d("ggsci::category20_d3", 16)
 
 #Match taxa to colors and then use in scale_fill_manual
 names(assign_cols)=labels_muc
