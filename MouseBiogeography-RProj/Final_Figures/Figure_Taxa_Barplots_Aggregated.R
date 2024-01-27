@@ -33,6 +33,9 @@ compare_vector <- list(c("DC", "PC"),
                        c("DC", "Duo"))
 
 ## L6 level: Generating a global genera key (assign_cols.RDS used to be specific to each dataset)
+hum_v_genera <- readr::read_rds(here("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_assign_cols.RDS"))
+hum_v_genera <- names(hum_v_genera)
+print(hum_v_genera)
 cs_genera <- readr::read_rds(here("CS-Facility-Analysis/Taxa-Barplots/assign_cols.RDS"))
   cs_genera <- names(cs_genera)
   print(cs_genera)
@@ -57,18 +60,23 @@ global_genera <- union(cs_genera, ucla_v_genera)
 global_genera <- union(global_genera, ucla_o_genera)
 global_genera <- union(global_genera, spf_gavage)
 global_genera <- union(global_genera, hum_gavage)
+global_genera <- union(global_genera, hum_v_genera)
 length(global_genera)
 df<-palettes_d_names # see palette names
 add_cols2 <- paletteer_d("ggthemes::Classic_20",20)	
 add_cols4 <- paletteer_d("ggthemes::calc",12)
-add_cols3 <- paletteer_d("dutchmasters::little_street",10)
-global_genera_cols <- c(add_cols2,add_cols3,add_cols4)
+add_cols3 <- paletteer_d("dutchmasters::little_street",11)
+add_cols5 <- paletteer_d("RColorBrewer::Spectral",3)
+global_genera_cols <- c(add_cols2,add_cols3,add_cols4,add_cols5)
 global_genera_cols <- unique(global_genera_cols)
 names(global_genera_cols) <- global_genera
 seecolor::print_color(global_genera_cols)
 readr::write_rds(global_genera_cols, here("global_genera_cols.RDS"))
 
 ## L2 level: Generate a global phyla key 
+hum_v_lum_phyla <- get_phyla_from_plot("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-2.csv")
+hum_v_muc_phyla <- get_phyla_from_plot("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-2.csv")
+
 cs_lum_phyla <- get_phyla_from_plot("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-2.csv")
 cs_muc_phyla <- get_phyla_from_plot("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-2.csv")
 ucla_v_phyla <- get_phyla_from_plot("UCLA_V_SPF_Analysis/Taxa-Barplots/Mucosal_level-2.csv")
@@ -78,7 +86,8 @@ hum_gavage_lum_phyla <- get_phyla_from_plot("Humanized-Biogeography-Analysis/tax
 hum_gavage_muc_phyla <- get_phyla_from_plot("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Mucosal_level-2.csv")
 spf_gavage_lum_phyla <- get_phyla_from_plot("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Luminal_level-2.csv")
 spf_gavage_muc_phyla <- get_phyla_from_plot("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Mucosal_level-2.csv")
-global_phyla <- c(cs_lum_phyla, cs_muc_phyla,
+global_phyla <- c(hum_v_lum_phyla, hum_v_muc_phyla,
+                  cs_lum_phyla, cs_muc_phyla,
                   ucla_v_phyla,
                   ucla_o_lum_phyla,ucla_o_muc_phyla,
                   hum_gavage_lum_phyla,hum_gavage_muc_phyla,
@@ -90,6 +99,36 @@ names(colors) <- global_phyla
 names(colors) <- c("Actinobacteriota","Bacteroidota","Cyanobacteria","Deferribacterota","Desulfobacterota","Firmicutes","Proteobacteria","Verrucomicrobiota")
 readr::write_rds(colors, here("global_phyla_cols.RDS"))
 
+# Donors 
+genera_cols <- readRDS("global_genera_cols.RDS")
+genera_cols <- genera_cols[names(genera_cols) %in% hum_v_genera]
+print(genera_cols)
+
+hum_v_L6_muc <- generate_L6_taxa_plots("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-6.RDS",
+                                        "HUM V. SPF", ".*g__",genera_cols, "Site") +
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
+hum_v_L6_muc
+
+hum_v_L6_lum <- generate_L6_taxa_plots("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.RDS",
+                                       "HUM V. SPF", ".*g__",genera_cols, "Site") +
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
+hum_v_L6_lum
+
+phyla_cols <- readr::read_rds(here("global_phyla_cols.RDS"))
+hum_v_phyla <- unique(c(hum_v_lum_phyla,hum_v_muc_phyla))
+phyla_cols <- phyla_cols[names(phyla_cols) %in% ucla_v_phyla]
+print(phyla_cols)
+
+hum_v_L2_muc <-generate_L2_taxa_plots("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-2.csv", "HUM V. Gavage", ".*p__", phyla_cols, "Site") +
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
+
+hum_v_L2_lum <-generate_L2_taxa_plots("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-2.csv", "HUM V. Gavage", ".*p__", phyla_cols, "Site") +
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
+
 
 # UCLA Original SPF
 genera_cols <- readRDS("global_genera_cols.RDS")
@@ -98,19 +137,23 @@ print(genera_cols)
 
 UCLA_o_L6_muc <- generate_L6_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-6.RDS",
                                                                  "UCLA O. SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  ylab("% Relative Abundance")
 UCLA_o_L6_muc
 
 UCLA_o_L6_lum <-generate_L6_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-6.RDS",
                                                                  "UCLA O. SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  ylab("% Relative Abundance")
 UCLA_o_L6_lum
 
 phyla_cols <- readRDS(here("global_phyla_cols.RDS"))
 UCLA_o_L2_lum <- generate_L2_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Luminal_level-2.csv", "UCLA O. SPF", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  ylab("% Relative Abundance")
 UCLA_o_L2_muc<- generate_L2_taxa_plots("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/taxa_barplots/Mucosal_level-2.csv", "UCLA O. SPF", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  ylab("% Relative Abundance")
 
 # UCLA Validation SPF
 genera_cols <- readRDS("global_genera_cols.RDS")
@@ -119,7 +162,8 @@ print(genera_cols)
 
 UCLA_v_L6_muc <- generate_L6_taxa_plots("UCLA_V_SPF_Analysis/Taxa-Barplots/Mucosal_level-6.RDS",
                                         "UCLA V.SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 UCLA_v_L6_muc
 
 phyla_cols <- readr::read_rds(here("global_phyla_cols.RDS"))
@@ -127,7 +171,8 @@ phyla_cols <- phyla_cols[names(phyla_cols) %in% ucla_v_phyla]
 print(phyla_cols)
 
 UCLA_v_L2_muc <-generate_L2_taxa_plots("UCLA_V_SPF_Analysis/Taxa-Barplots/Mucosal_level-2.csv", "UCLA V. SPF", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 
 UCLA_v_L2_muc
 
@@ -138,12 +183,14 @@ print(genera_cols)
 
 spf_gavage_L6_muc <- generate_L6_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Mucosal_level-6.RDS",
                                         "SPF Gavage", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 spf_gavage_L6_muc
 
 spf_gavage_L6_lum <- generate_L6_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Luminal_level-6.RDS",
                                             "SPF Gavage", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 spf_gavage_L6_lum
 
 
@@ -151,9 +198,11 @@ phyla_cols <- readRDS("global_phyla_cols.RDS")
 phyla_cols <- phyla_cols[names(phyla_cols) %in% spf_gavage_lum_phyla]
 
 spf_gavage_L2_lum <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Luminal_level-2.csv", "SPF Gavage", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 spf_gavage_L2_muc <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Mucosal_level-2.csv", "SPF Gavage", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 
 
 # HUM gavage
@@ -163,12 +212,14 @@ print(genera_cols)
 
 hum_gavage_L6_lum <- generate_L6_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Luminal_level-6.RDS",
                                             "HUM Gavage", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 hum_gavage_L6_muc
 
 hum_gavage_L6_muc <- generate_L6_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Mucosal_level-6.RDS",
                                             "HUM Gavage", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 hum_gavage_L6_lum
 
 phyla_cols <- readRDS("global_phyla_cols.RDS")
@@ -177,10 +228,12 @@ phyla_cols <- phyla_cols[names(phyla_cols) %in% hum_gavage_phyla]
 print(phyla_cols)
 
 hum_gavage_L2_lum <- generate_L2_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Luminal_level-2.csv", "HUM Gavage", ".*p__", phyla_cols,"Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 
 hum_gavage_L2_muc <-generate_L2_taxa_plots("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Mucosal_level-2.csv","HUM Gavage", ".*p__", phyla_cols, "Site")+
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 
 # CS SPF 
 genera_cols <- readRDS("global_genera_cols.RDS")
@@ -189,12 +242,14 @@ print(genera_cols)
 
 cs_L6_muc <- generate_L6_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-6.RDS",
                                             "CS SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  theme(axis.text.y = element_blank())
 cs_L6_muc
 
 cs_L6_lum <- generate_L6_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-6.RDS",
                                     "CS SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 cs_L6_lum
 
 cs_phyla <- unique(c(cs_lum_phyla,cs_muc_phyla))
@@ -203,16 +258,18 @@ phyla_cols <- phyla_cols[names(phyla_cols) %in% cs_phyla]
 print(phyla_cols)
 
 cs_L2_lum <- generate_L2_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-2.csv", "CS SPF", ".*p__", phyla_cols,"Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 cs_L2_muc <-generate_L2_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-2.csv", "CS SPF", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(axis.text.y = element_blank())
 
 # Aggregate L6 Muc and draw legend
-aggregated_L6_muc <- plot_grid(UCLA_o_L6_muc, cs_L6_muc, spf_gavage_L6_muc, hum_gavage_L6_muc, UCLA_v_L6_muc, nrow=1, ncol=5)
+aggregated_L6_muc <- plot_grid(UCLA_o_L6_muc, UCLA_v_L6_muc, cs_L6_muc, spf_gavage_L6_muc, hum_gavage_L6_muc, hum_v_L6_muc,nrow=1, ncol=6)
 dev.new(width=20, height=5)
 aggregated_L6_muc
 
-aggregated_L2_muc <- plot_grid(UCLA_o_L2_muc, cs_L2_muc, spf_gavage_L2_muc, hum_gavage_L2_muc, UCLA_v_L2_muc, nrow=1, ncol=5)
+aggregated_L2_muc <- plot_grid(UCLA_o_L2_muc, UCLA_v_L2_muc,cs_L2_muc, spf_gavage_L2_muc, hum_gavage_L2_muc, hum_v_L2_muc,nrow=1, ncol=6)
 dev.new(width=20, height=5)
 aggregated_L2_muc
 
@@ -222,19 +279,19 @@ fig_mucosal <- plot_grid(alpha_diversity_muc, interregional_muc, interregional_m
 dev.new(width=20, height=5)
 fig_mucosal
 
-aggregated_L6_lum <- plot_grid(UCLA_o_L6_lum, cs_L6_lum, spf_gavage_L6_lum, hum_gavage_L6_lum,NULL, NULL, nrow=1, ncol=5)
+aggregated_L6_lum <- plot_grid(UCLA_o_L6_lum, cs_L6_lum, spf_gavage_L6_lum, hum_gavage_L6_lum, hum_v_L6_lum,NULL, NULL, nrow=1, ncol=6)
 dev.new(width=20, height=5)
 aggregated_L6_lum
 
-aggregated_L2_lum <- plot_grid(UCLA_o_L2_lum, cs_L2_lum, spf_gavage_L2_lum, hum_gavage_L2_lum,NULL, NULL, nrow=1, ncol=5)
+aggregated_L2_lum <- plot_grid(UCLA_o_L2_lum, cs_L2_lum, spf_gavage_L2_lum, hum_gavage_L2_lum, hum_v_L2_lum,NULL, NULL, nrow=1, ncol=5)
 dev.new(width=20, height=5)
 aggregated_L2_lum
 
 
 genera_cols <- readRDS("global_genera_cols.RDS")
 dummyplot<- as.data.frame(genera_cols)
-dummyplot$dummyy <- seq(1,41,1)
-dummyplot$dummyx <- seq(1,82,2)
+dummyplot$dummyy <- seq(1,45,1)
+dummyplot$dummyx <- seq(1,90,2)
 dummyplot$Genus <- row.names(dummyplot)
 L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
@@ -246,6 +303,7 @@ L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(0, 11, 0, 0)) 
 legend <- cowplot::get_legend(L6_legend)
 grid.newpage()
+dev.new(width=20, height=5)
 grid.draw(legend)
 
 phyla_cols <- readRDS("global_phyla_cols.RDS")
@@ -262,5 +320,6 @@ L2_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(0, 11, 0, 1)) 
 legend <- cowplot::get_legend(L2_legend)
 grid.newpage()
+dev.new(width=20, height=5)
 grid.draw(legend)
 

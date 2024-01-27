@@ -18,8 +18,8 @@ Donors_combined_taxonomy <- unique(Donors_combined_taxonomy)
 readr::write_csv(Donors_combined_taxonomy,here("Donors-Analysis/Donors_combined_taxonomy_assignments.csv"))
 
 ## Combine aligned DNA sequences and make a taxonomy file --
-PE_aligned <- readr::read_csv(here("Donors-Analysis/Donors_PE_aligned_DNA_sequences.csv"))
-SE_aligned <- readr::read_csv(here("Donors-Analysis/Donors_single_aligned_DNA_sequences.csv"))
+PE_aligned <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_PE_aligned_DNA_sequences.csv"))
+SE_aligned <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_single_aligned_DNA_sequences.csv"))
 
 Donors_combined_aligned <- rbind(PE_aligned,SE_aligned)
 Donors_combined_aligned <- Donors_combined_aligned[,-1]
@@ -53,8 +53,8 @@ Donors_taxonomy_for_qza <- rbind(filtered_df, result)
 readr::write_delim(Donors_taxonomy_for_qza,here("Donors-Analysis/Donors_taxonomy.tsv"),delim="\t")
 
 ## Combine tables --
-PE_table <- readr::read_delim(here("Donors-Analysis/export_Donors-paired-end-table/feature-table.tsv"),delim="\t")
-SE_table <- readr::read_delim(here("Donors-Analysis/export_Donors-single-filtered-table/feature-table.tsv"),delim="\t")
+PE_table <- readr::read_delim(here("Donors-Analysis/starting_files/export_Donors-paired-end-table/feature-table.tsv"),delim="\t")
+SE_table <- readr::read_delim(here("Donors-Analysis/starting_files/export_Donors-single-filtered-table/feature-table.tsv"),delim="\t")
 
 row.names(PE_table) <- PE_table$OTU.ID
 row.names(SE_table) <- SE_table$OTU.ID
@@ -75,21 +75,32 @@ rejected_samples <- names(total_counts[total_counts < 10000])
 #Use filtered ASV and metadata files to then split the ASV into each sequencing run, 
 #apply 15% prevalence feature filtering threshold, and select only intersecting ASVs
 ASV <- merged_df[,selected_samples]
-metadata <- readr::read_csv(here("Donors-Analysis/Donors_Metadata.csv"))
-readr::write_csv(ASV[1,],here(("Donors-Analysis/Donors_ASV_names.csv")))
+metadata <- readr::read_delim(here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t")
+#readr::write_csv(ASV[1,],here(("Donors-Analysis/Donors_ASV_names.csv")))
 
-metadata$SampleID <- gsub("_","-",metadata$SampleID)
 
 target <- names(ASV)
 metadata <- metadata[match(target, metadata$SampleID),]
 target == metadata$SampleID
 
-metadata <- metadata %>%
+samples<- metadata %>%
   filter(SampleID %in% names(ASV)) %>%
   filter(MouseID!= "U2") %>% 
-  filter(Original_Human_Stool=="N")
-names(ASV)
-metadata$SampleID
+  filter(Original_Human_Stool=="N") %>%
+  pull(SampleID)
+
+mouse_ASV <- ASV[, samples]
+
+mouse_ASV$QIIME_seqs <- rownames(mouse_ASV)
+taxonomy <- Donors_combined_aligned %>% select(c("QIIME_seqs","ASV"))
+
+mouse_ASV <-merge(mouse_ASV, taxonomy, by="QIIME_seqs")
+mouse_ASV <- mouse_ASV %>% select(-c("QIIME_seqs"))
+mouse_ASV <- mouse_ASV %>%
+  select(ASV, everything())
+mouse_ASV <- rename(mouse_ASV, c("#OTU.ID" = "ASV"))
+
+readr::write_delim(mouse_ASV,here("Donors-Analysis/Donors_ASV_min10000.tsv"),delim="\t")
 
 
 #Filter by Sequencing Run 
@@ -178,8 +189,9 @@ for (df in list( srun3, srun4, srun6, srun7)) {
 
 ### REDO WITH PREV FILTERING ON WHOLE DATASET ---
 ### Prevalence filtering on all mouse stool samples (exclude April 2017 and MouseID U2) and do combat seq
-metadata <- readr::read_csv(here("Donors-Analysis/Donors_Metadata.csv"))
-readr::write_delim(metadata, here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t")
+metadata <- readr::read_delim(here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t")
+metadata$SampleID
+
 target <- names(ASV)
 metadata <- metadata[match(target, metadata$SampleID),]
 target == metadata$SampleID
@@ -216,6 +228,7 @@ combat_adjusted_counts <- as.data.frame(combat_adjusted_counts)
 # Replace QIIME sequences with actual ASV sequences 
 combat_adjusted_counts$QIIME_seqs <- rownames(combat_adjusted_counts)
 taxonomy <- Donors_combined_aligned %>% select(c("QIIME_seqs","ASV"))
+
 combat_adjusted_counts_ASV <-merge(combat_adjusted_counts, taxonomy, by="QIIME_seqs")
 combat_adjusted_counts_ASV <- combat_adjusted_counts_ASV %>% select(-c("QIIME_seqs"))
 combat_adjusted_counts_ASV <- combat_adjusted_counts_ASV %>%
@@ -226,7 +239,7 @@ readr::write_delim(combat_adjusted_counts_ASV,here("Donors-Analysis/Donors-Mice-
 
 ### Utilize the same set of ASVs from the mouse stool on the human stool ---
 target <- combat_adjusted_counts_ASV$`#OTU.ID`
-metadata <- readr::read_csv(here("Donors-Analysis/Donors_Metadata.csv"))
+metadata <- readr::read_delim(here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t")
 
 mouse_metadata <- metadata %>%
   filter(SampleID %in% names(ASV)) %>%

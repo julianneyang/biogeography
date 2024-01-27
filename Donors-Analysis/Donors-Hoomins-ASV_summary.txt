@@ -1,7 +1,7 @@
 Num samples: 13
-Num observations: 180
+Num observations: 181
 Total count: 369,241
-Table density (fraction of non-zero values): 0.399
+Table density (fraction of non-zero values): 0.397
 
 Counts/sample summary:
  Min: 16,639.000

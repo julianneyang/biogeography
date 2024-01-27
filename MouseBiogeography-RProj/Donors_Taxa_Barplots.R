@@ -416,120 +416,24 @@ generate_L6_human_feces_taxa_plots(filepath = "Donors-Analysis/taxa_barplots/Hoo
                                    graphby="Site",
                                    fillvector = fecal_cols,
                                    donor_id = "A017")
-## Extract taxa from Luminal ---
-L2_lum<-readr::read_rds(here("Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A017_level-6.RDS"))
-L2_lum <- L2_lum %>%
-  select(-starts_with("NA"))
 
-L2_lum<- as.matrix(L2_lum)
-L2_lum<-make_relative(L2_lum)
-L2_lum<-as.data.frame(t(L2_lum))
-toptaxa<- rowMeans(L2_lum)
-L2_lum$averageRA <-toptaxa/6
-L2_lum <- L2_lum %>% mutate(keeptaxa = ifelse(averageRA >0.001, row.names(L2_lum), "Other"))
-L2_lum <-select(L2_lum,-averageRA)
+### Aggregated taxa barplots ---
+file_path <- "Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.csv"
+processed_data <- process_taxonomy_data(file_path)
+readr::write_rds(processed_data, here("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.RDS"))
 
-taxa<-L2_lum$keeptaxa
-L2_lum <- select(L2_lum,-keeptaxa)
-L2_lum <- as.matrix(sapply(L2_lum,as.numeric))
-L2_lum <- as.data.frame(prop.table(L2_lum,2))
-taxa<-gsub(".*g__","",taxa )
+file_path <- "Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-6.csv"
+processed_data <- process_taxonomy_data(file_path)
+readr::write_rds(processed_data, here("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-6.RDS"))
 
-L2_lum$Taxa <-taxa
-labels_lum <- unique(L2_lum$Taxa)
-fecal_cols <- paletteer_d("ggsci::category20_d3", 14)
-names(fecal_cols) <- labels_lum
+## Generate a color key using paletteer colors --
+labels_lum <- get_genera_from_plot("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.RDS")
+labels_muc <- get_genera_from_plot("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Mucosal_level-6.RDS")
 
-## Extract taxa from Hoomins ---
-L2_lum<-readr::read_rds(here("Donors-Analysis/taxa_barplots/Hoomins_level-6.RDS"))
-
-L2_lum<- as.matrix(L2_lum)
-L2_lum<-make_relative(L2_lum)
-L2_lum<-as.data.frame(t(L2_lum))
-toptaxa<- rowMeans(L2_lum)
-L2_lum$averageRA <-toptaxa/6
-L2_lum <- L2_lum %>% mutate(keeptaxa = ifelse(averageRA >0.001, row.names(L2_lum), "Other"))
-L2_lum <-select(L2_lum,-averageRA)
-
-taxa<-L2_lum$keeptaxa
-L2_lum <- select(L2_lum,-keeptaxa)
-L2_lum <- as.matrix(sapply(L2_lum,as.numeric))
-L2_lum <- as.data.frame(prop.table(L2_lum,2))
-taxa<-gsub(".*g__","",taxa )
-
-L2_lum$Taxa <-taxa
-labels_muc <- unique(L2_lum$Taxa)
-
-## Generate a color key for ---
 #Find out how many taxa need to be assigned colors 
 labels_all <- union(labels_lum, labels_muc) 
-length(labels_all)
 #Generate that many colors 
-assign_cols <- paletteer_d("ggsci::category20_d3", 13)
-add_cols <- paletteer_d("dutchmasters::milkmaid",1)
-assign_cols <- c(assign_cols,add_cols)
+assign_cols <- paletteer_d("ggsci::category20_d3", 14)
 #Match taxa to colors and then use in scale_fill_manual
 names(assign_cols)=labels_all
-write_rds(assign_cols,"CS-Facility-Analysis/Taxa-Barplots/assign_cols.RDS")
-
-dev.new(width=12, height=10)
-plot_grid(L6_lum,L6_muc, align="hv")
-plot_grid(L2_lum,L6_lum,L2_muc,L6_muc, nrow=1, ncols=4,align="hv",labels = c("F","G", "H", "I"))
-L6_col <-generate_L6_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/Colon_level-6.RDS","Colon ( > 0.1% Relative Abundance)", ".*g__",assign_cols)
-L6_SI <- generate_L6_taxa_plots("CS-Facility-Analysis/Taxa-Barplots/SI_level-6.RDS", "SI ( > 0.1% Relative Abundance)", ".*g__",assign_cols)
-dev.new(width=12, height=10)
-plot_grid(L6_col, L6_SI, align="hv")
-plot_grid(L2_SI, L6_SI, L2_col, L6_col, nrow=1, ncols=2,align="hv",labels = c("F","G", "H", "I"))
-
-assign_cols <- readRDS("CS-Facility-Analysis/Taxa-Barplots/assign_cols.RDS")
-print(assign_cols)
-
-## Merge Luminal and Mucosal together to generate Type Barplots ---
-lum <- readRDS("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-6.RDS")
-muc <- readRDS("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-6.RDS")
-
-names(lum)[17]
-names(muc)[17]
-
-lum$Site_Type <- paste0(row.names(lum),"_","L")
-muc$Site_Type <- paste0(row.names(muc),"_","M")
-
-names(lum)==names(muc)
-divergent <- c(setdiff(names(lum), names(muc)), setdiff(names(muc), names(lum)))
-
-lum <- select(lum,-c(divergent))
-muc <- select(muc, -c(divergent))
-
-lummuc <- rbind(lum,muc)
-row.names(lummuc)<-lummuc$Site_Type
-lummuc <- select(lummuc, -Site_Type)
-
-vsi <- c("Duodenum_L","Duodenum_M","Jejunum_L", "Jejunum_M","Ileum_L","Ileum_M")
-vcol <-c("Cecum_L", "Cecum_M", "Proximal_Colon_L", "Proximal_Colon_M", "Distal_Colon_L","Distal_Colon_M")
-
-lummucsi <- lummuc[row.names(lummuc) %in% vsi,]
-lummuccol <- lummuc[row.names(lummuc) %in% vcol,]
-
-readr::write_rds(lummucsi, "CS-Facility-Analysis/Taxa-Barplots/SI_LumMuc_L6.RDS")
-readr::write_rds(lummuccol, "CS-Facility-Analysis/Taxa-Barplots/Col_LumMuc_L6.RDS")
-
-## Repeat at phylum level ---
-lum <- read.csv("CS-Facility-Analysis/Taxa-Barplots/Luminal_level-2.csv", row.names = 1, header = TRUE)
-muc <-read.csv("CS-Facility-Analysis/Taxa-Barplots/Mucosal_level-2.csv", row.names = 1, header = TRUE)
-lum$Site_Type <- paste0(row.names(lum),"_","L")
-muc$Site_Type <- paste0(row.names(muc),"_","M")
-
-names(lum)==names(muc)
-
-lummuc <- rbind(lum,muc)
-row.names(lummuc)<-lummuc$Site_Type
-lummuc <- select(lummuc, -Site_Type)
-
-vsi <- c("Duodenum_L","Duodenum_M","Jejunum_L", "Jejunum_M","Ileum_L","Ileum_M")
-vcol <-c("Cecum_L", "Cecum_M", "Proximal_Colon_L", "Proximal_Colon_M", "Distal_Colon_L","Distal_Colon_M")
-
-lummucsi <- lummuc[row.names(lummuc) %in% vsi,]
-lummuccol <- lummuc[row.names(lummuc) %in% vcol,]
-
-write.csv(lummucsi,"CS-Facility-Analysis/Taxa-Barplots/SI_LumMuc_L2.csv")
-write.csv(lummuccol,"CS-Facility-Analysis/Taxa-Barplots/Col_LumMuc_L2.csv")
+readr::write_rds(assign_cols,here("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_assign_cols.RDS"))

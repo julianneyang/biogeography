@@ -14,11 +14,11 @@ here::i_am("MouseBiogeography-RProj/Hum-TaxaBarplots-SPF.R")
 ### Wrangle Genera Names --- 
 
 # change the csv file into RDS 
-file_path <- "Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Luminal_level-6.csv"
+file_path <- "Humanized-Biogeography-Analysis/taxa_barplots/SPF_Luminal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Luminal_level-6.RDS"))
 
-file_path <- "Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Mucosal_level-6.csv"
+file_path <- "Humanized-Biogeography-Analysis/taxa_barplots/SPF_Mucosal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("Humanized-Biogeography-Analysis/taxa_barplots/SPF_Gavage_Mucosal_level-6.RDS"))
 

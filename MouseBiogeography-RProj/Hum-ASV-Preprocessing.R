@@ -11,12 +11,13 @@ ASV<-readr::read_csv(here("Humanized-Biogeography-Analysis/Humanized ASV and Tax
 ASV <- as.data.frame(ASV)
 row.names(ASV) <- ASV$OTU.ID
 ASV <- ASV %>% select(-c("OTU.ID"))
-summary(colSums(ASV))
-ASV<- ASV[colSums(ASV) >= 10000]
+
+#summary(colSums(ASV))
+#ASV<- ASV[colSums(ASV) >= 10000]
 
 
 ## Remove DSS Samples
-metadata<- readr::read_delim(here("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv"),delim = "\t")
+metadata<- readr::read_delim(here("Humanized-Biogeography-Analysis/Full-Humanized-Metadata.tsv"),delim = "\t")
 metadata$Sequencing_Run <- factor(metadata$Sequencing_Run)
 metadata$DSS_Treatment <- factor(metadata$DSS_Treatment)
 
@@ -27,7 +28,7 @@ metadata<- readr::write_delim(metadata, here("Humanized-Biogeography-Analysis/st
 final_ASV <- ASV[, samples]
 final_ASV <- as.data.frame(final_ASV)
 
-write.table(final_ASV,"Humanized_ASV_for_alpha_diversity.tsv", sep="\t")
+readr::write_delim(final_ASV,here("Humanized-Biogeography-Analysis/starting_files/Humanized_ASV_for_alpha_diversity.tsv"), delim="\t")
 ## Filter by Sequencing Run
 Nov2014 <- metadata%>% filter(DSS_Treatment=="No"&Sequencing_Run=="2014_Nov", SampleID %in% names(ASV)) %>%pull(SampleID)
 Nov2014 <- final_ASV[,Nov2014]

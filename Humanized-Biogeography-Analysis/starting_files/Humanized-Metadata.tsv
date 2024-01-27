@@ -2,8 +2,10 @@ SampleID	Plate	Well	Plate_Well	BarcodeSequence	MouseID	Sex	DSS_Treatment	DSS_gro
 TL1a_DTT_284	2	F8	2F8	CACCTTACCTTA	234	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-284	2014_Sept	7
 TL1A_DTT_642	1	H6	1H6	CTGCTATTCCTC	322	Male	No	None	40512	0	40696	WT	Humanized	Duodenum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-642-1H6	2015-Sept-Eight	9
 TL1a_DTT_173_Repeat	4	F3	4F3	CTCTGCCTAATT	178	Female	No	None	NA	NA	NA	WT	Humanized	Jejunum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-173-Repeat	2014-Nov-one	10
+TL1a_DTT_131	1	E11	100000000000	AGTTGAGGCATT	167	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Jejunum	SI	Mucosal	Mucosal_SI	2014_Sept	TL1a-DTT-131	2014_Sept	13
 TL1A_FP_641	4	E11	400000000000	GCTGTGATTCGA	322	Male	No	None	40512	0	40696	WT	Humanized	Jejunum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-641-4E11	2015-Sept-Eight	15
 TL1A_FP_642	4	E12	4000000000000	CTAGCTATGGAC	322	Male	No	None	40512	0	40696	WT	Humanized	Duodenum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-642-4E12	2015-Sept-Eight	16
+TL1A_DTT_690	2	B6	2B6	TACTCGGGAACT	340	Male	No	None	40539	0	40703	WT	Humanized	Duodenum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-690-2B6	2015-Sept-Eight	18
 TL1A_FP_689	4	C9	4C9	GTACTGAAGATC	340	Male	No	None	40539	0	40703	WT	Humanized	Jejunum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-689-4C9	2015-Sept-Eight	19
 TL1a_FP_162	3	H5	3H5	AACCGCATAAGT	183	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Duodenum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-162	2014-Nov-two	20
 TL1a_DTT_174_Repeat	4	F4	4F4	ATATGACCCAGC	178	Female	No	None	NA	NA	NA	WT	Humanized	Duodenum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-174-Repeat	2014-Nov-one	22
@@ -36,6 +38,7 @@ TL1a_FP_129	3	F11	3F11	ACTGACTTAAGG	167	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Ce
 TL1A_DTT_626	1	G2	1G2	ATGGGTTCCGTC	324	Male	No	None	40512	0	40696	WT	Cedars_SPF	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	2015_Sept	TL1A-DTT-626-1G2	2015-Sept-Eight	74
 TL1a_DTT_171	1	H3	1H3	GTTGTTCTGGGA	178	Female	No	None	NA	NA	NA	WT	Humanized	Cecum	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-171	2014_Sept	75
 TL1a_FP_206	4	B7	4B7	GGCGATTTACGT	213	Female	No	None	NA	NA	NA	WT	Humanized	Proximal_Colon	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-206	2014-Nov-two	79
+TL1a_DTT_143	1	F11	1F11	GATTCCGGCTCA	172	Male	No	None	NA	NA	NA	WT	Humanized	Jejunum	SI	Mucosal	Mucosal_SI	2014_Sept	TL1a-DTT-143	2014_Sept	80
 TL1a_FP_287	4	F7	4F7	TTATGGTACGGA	234	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Jejunum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-287	2014-Nov-two	81
 TL1a_FP_242	4	D3	4D3	TGTTAAGCAGCA	226	Female	No	None	NA	NA	NA	WT	Humanized	Proximal_Colon	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-242	2014-Nov-two	82
 TL1A_DTT_629	1	G5	1G5	ATTCTGCCGAAG	324	Male	No	None	40512	0	40696	WT	Cedars_SPF	Jejunum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-629-1G5	2015-Sept-Eight	83
@@ -54,6 +57,8 @@ TL1a_DTT_169_Re_extracted	4	G6	4G6	GCCAAGGATAGG	178	Female	No	None	NA	NA	NA	WT	H
 TL1a_FP_197	4	A12	4A12	CGCCATTGTGCA	217	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Jejunum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-197	2014-Nov-two	105
 TL1a_DTT_209	2	B5	2B5	GAGAGCAACAGA	213	Female	No	None	NA	NA	NA	WT	Humanized	Jejunum	SI	Mucosal	Mucosal_SI	2014_Sept	TL1a-DTT-209	2014_Sept	108
 TL1a_FP_159	3	H2	3H2	CTGGGTATCTCG	183	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Cecum	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-159	2014-Nov-two	111
+TL1A_DTT_677	2	A5	2A5	GATGTATGTGGT	342	Male	No	None	40539	0	40703	WT	Cedars_SPF	Jejunum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-677-2A5	2015-Sept-Eight	112
+TL1A_DTT_676	2	A4	2A4	GCCTAGCCCAAT	342	Male	No	None	40539	0	40703	WT	Cedars_SPF	Ileum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-676-2A4	2015-Sept-Eight	113
 TL1a_DTT_160	1	G4	1G4	AACTAGTTCAGG	183	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Ileum	SI	Mucosal	Mucosal_SI	2014_Sept	TL1a-DTT-160	2014_Sept	116
 TL1A_FP_677	4	F11	4F11	TTGGTAAAGTGC	342	Male	No	None	40539	0	40703	WT	Cedars_SPF	Jejunum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-677-4F11	2015-Sept-Eight	119
 TL1a_FP_132	3	G2	3G2	ATTAAGCCTGGA	167	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Duodenum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-132	2014-Nov-two	120
@@ -108,6 +113,7 @@ TL1a_DTT_65	1	A5	1A5	TGGTCAACGATA	141	Male	No	None	NA	NA	NA	WT	Humanized	Jejunum
 TL1a_DTT_242	2	D2	2D2	ACCCAAGCGTTA	226	Female	No	None	NA	NA	NA	WT	Humanized	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-242	2014_Sept	216
 TL1a_FP_231	4	C6	4C6	ATGCTAACCACG	223	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Cecum	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-231	2014-Nov-two	218
 TL1a_FP_284	4	F4	4F4	ATATGACCCAGC	234	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Proximal_Colon	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-284	2014-Nov-two	219
+TL1A_DTT_688	2	B4	2B4	AGCTGTCAAGCT	340	Male	No	None	40539	0	40703	WT	Humanized	Ileum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-688-2B4	2015-Sept-Eight	220
 TL1a_DTT_245_Repeat	4	G7	4G7	CGCCACGTGTAT	226	Female	No	None	NA	NA	NA	WT	Humanized	Jejunum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-245-Repeat	2014-Nov-one	221
 TL1a_FP_74	3	C11	3C11	GGAATCCGATTA	143	Male	No	None	NA	NA	NA	WT	Humanized	Proximal_Colon	Colon	Luminal	Luminal_Colon	2014_Nov	TL1a-FP-74	2014-Nov-two	223
 TL1A_FP_630	4	D12	4D12	CTTCGCGGATGT	324	Male	No	None	40512	0	40696	WT	Cedars_SPF	Duodenum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-630-4D12	2015-Sept-Eight	224
@@ -135,7 +141,9 @@ TL1A_FP_637	4	E7	40000000	TATGAACGTCCG	322	Male	No	None	40512	0	40696	WT	Humaniz
 TL1a_DTT_196_Repeat	4	F7	4F7	TTATGGTACGGA	217	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Ileum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-196-Repeat	2014-Nov-one	265
 TL1a_DTT_286	2	F10	2F10	TGCCGTATGCCA	234	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Ileum	SI	Mucosal	Mucosal_SI	2014_Sept	TL1a-DTT-286	2014_Sept	266
 TL1a_DTT_90_Repeat	4	D5	4D5	ACTTTGCTTTGC	161	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Duodenum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-90-Repeat	2014-Nov-one	268
+TL1A_DTT_678	2	A6	2A6	ACTCCTTGTGTT	342	Male	No	None	40539	0	40703	WT	Cedars_SPF	Duodenum	SI	Mucosal	Mucosal_SI	2015_Sept	TL1A-DTT-678-2A6	2015-Sept-Eight	270
 TL1a_FP_143	3	G11	3G11	TAACGCTGTGTG	172	Male	No	None	NA	NA	NA	WT	Humanized	Jejunum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-143	2014-Nov-two	273
+TL1a_DTT_132_Repeat	4	E4	40000	GTTTCCGTGGTG	167	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Duodenum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-132-Repeat	2014-Nov-one	278
 TL1a_DTT_131_Repeat	4	E3	4000	AAGGGCGCTGAA	167	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Jejunum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-131-Repeat	2014-Nov-one	279
 TL1a_DTT_230	2	C2	2C2	GCAATTAGGTAC	223	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-230	2014_Sept	280
 TL1a_DTT_75	1	B3	1B3	ACCAGTGACTCA	143	Male	No	None	NA	NA	NA	WT	Humanized	Cecum	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-75	2014_Sept	282
@@ -183,6 +191,7 @@ TL1a_DTT_197_Repeat	4	F8	4F8	GCTAGTTATGGA	217	Female	No	None	NA	NA	NA	WT	Cedars_
 TL1a_FP_244	4	D5	4D5	ACTTTGCTTTGC	226	Female	No	None	NA	NA	NA	WT	Humanized	Ileum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-244	2014-Nov-two	367
 TL1a_DTT_266	2	E2	200	TGAACCCTATGG	251	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	2014_Sept	TL1a-DTT-266	2014_Sept	369
 TL1a_FP_232	4	C7	4C7	ACCAATCTCGGC	223	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Ileum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-232	2014-Nov-two	371
+TL1A_FP_690	4	C10	4C10	TCGCCGTGTACA	340	Male	No	None	40539	0	40703	WT	Humanized	Duodenum	SI	Luminal	Luminal_SI	2015_Sept	TL1A-FP-690-4C10	2015-Sept-Eight	372
 TL1a_DTT_270_Repeat	4	G11	4G11	ACCTGTCCTTTC	251	Male	No	None	NA	NA	NA	WT	Cedars_SPF	Duodenum	SI	Mucosal	Mucosal_SI	2014_Nov	TL1a-DTT-270-Repeat	2014-Nov-one	373
 TL1a_FP_233	4	C8	4C8	TATCCAAGCGCA	223	Female	No	None	NA	NA	NA	WT	Cedars_SPF	Jejunum	SI	Luminal	Luminal_SI	2014_Nov	TL1a-FP-233	2014-Nov-two	375
 TL1A_DTT_687	2	B3	2B3	TCATGCTCCATT	340	Male	No	None	40539	0	40703	WT	Humanized	Cecum	Colon	Mucosal	Mucosal_Colon	2015_Sept	TL1A-DTT-687-2B3	2015-Sept-Eight	376
