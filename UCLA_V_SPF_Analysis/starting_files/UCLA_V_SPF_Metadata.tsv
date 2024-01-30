@@ -1,4 +1,4 @@
-SampleID	BarcodeSequence	LinkerPrimerSequence	Plate	Well	DOB	Sex	Genotype	MouseID_Original	MouseID_Numerical	MouseID_Categorical	Type	Site	Site_General	Subset	Type_Site	Microbiota	Description	Sequencing_Run	Folder	Experiment	Litter	Cage	ASV_Sample_Order	...25
+SampleID	BarcodeSequence	LinkerPrimerSequence	Plate	Well	DOB	Sex	Genotype	MouseID	MouseID_Numerical	MouseID_Categorical	Type	Site	Site_General	Subset	Type_Site	Microbiota	Description	Sequencing_Run	Folder	Experiment	Litter	Cage	ASV_Sample_Order	...25
 IL17.DTT.115	TACCGCTTCTTC	TTTTTTTT	2	A1	NA	Male	WT	IL17_L10_M_No_3	3	3	Mucosal	Distal_Colon	Colon	Mucosal_Colon	Mucosal_Distal_Colon	UCLA	IL17-DTT-115	2014-November	2014-Nov-Two	IL17	six	NA	329	NA
 IL17.DTT.116	TGTGCGATAACA	TTTTTTTT	2	A2	NA	Male	WT	IL17_L10_M_No_3	3	3	Mucosal	Proximal_Colon	Colon	Mucosal_Colon	Mucosal_Proximal_Colon	UCLA	IL17-DTT-116	2014-November	2014-Nov-Two	IL17	six	NA	246	NA
 IL17.DTT.117	GATTATCGACGA	TTTTTTTT	2	A3	NA	Male	WT	IL17_L10_M_No_3	3	3	Mucosal	Cecum	Colon	Mucosal_Colon	Mucosal_Cecum	UCLA	IL17-DTT-117	2014-November	2014-Nov-Two	IL17	six	NA	313	NA

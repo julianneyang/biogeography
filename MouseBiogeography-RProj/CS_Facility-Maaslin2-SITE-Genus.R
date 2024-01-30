@@ -6,18 +6,21 @@ library(cowplot)
 library(plyr)
 library(here)
 
-here::i_am("MouseBiogeography-RProj/Shotgun-Maaslin2-SITE-Genus.R")
+here::i_am("MouseBiogeography-RProj/CS_Facility-Maaslin2-SITE-Genus.R")
 
-input_data <- read.csv("CS-Facility-Analysis/Site_L6/Maaslin2_L6 SITE and TYPE - Luminal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file
-input_data <- read.csv("CS-Facility-Analysis/Site_L6/Maaslin2_L6 SITE and TYPE - Mucosal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file
+input_data <- readr::read_delim(here("CS-Facility-Analysis/Site_Subsets/export_L6_Luminal_CS-Facility-ComBat-Adjusted-ASV/feature-table.tsv"), delim="\t") # choose filtered non rarefied csv file
+input_data <- readr::read_delim(here("CS-Facility-Analysis/Site_Subsets/export_L6_Mucosal_CS-Facility-ComBat-Adjusted-ASV/feature-table.tsv"), delim="\t") # choose filtered non rarefied csv file
 
-input_data <- input_data[!grepl("Mitochondria", row.names(input_data)),] 
-input_data <- input_data[!grepl("Chloroplast", row.names(input_data)),] 
+input_data <- subset(input_data, !grepl("Mitochondria|Chloroplast", OTU.ID))
 
-df_input_data <- as.data.frame(input_data)
-df_input_data <- select(df_input_data, -c("taxonomy"))
+input_data <- as.data.frame(input_data)
+row.names(input_data)<-input_data$OTU.ID
+df_input_data <- select(input_data, -c("taxonomy","OTU.ID"))
 
-input_metadata <-read.csv("CS-Facility-Analysis/CS_Facility_Metadata.csv",header=TRUE, row.names=1) #mapping file
+input_metadata <-readr::read_delim(here("CS-Facility-Analysis/starting_files/CS_Facility_Metadata.tsv"),delim="\t") #mapping file
+input_metadata <- as.data.frame(input_metadata)
+row.names(input_metadata) <- input_metadata$SampleID
+input_metadata <- input_metadata %>% select(-c("SampleID"))
 
 target <- colnames(df_input_data)
 input_metadata = input_metadata[match(target, row.names(input_metadata)),]
@@ -32,22 +35,40 @@ sapply(df_input_metadata,levels)
 
 #Luminal Site
 df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum","Jejunum","Duodenum"))
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, 
+                    output = here("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site,Distal_Colon'))
+
+fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, 
+                    output = here("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site_General"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Sequencing_Run,Jan_2017','Site_General,Colon'))
 
 #Mucosal Site
 df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum","Jejunum","Duodenum"))
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, 
+                    output = here("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site,Distal_Colon'))
 
-#Luminal Site_General
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site_General"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
-
-#Mucosal Site_General
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site_General"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, 
+                    output = here("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site_General"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Sequencing_Run,Jan_2017','Site_General,Colon'))
 
 ## Heatmap ---
 
-luminal<-read.table("CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
-luminal<-read.table("CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
+luminal<-read.table("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
+luminal<-read.table("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
 
 duodenum_significant<-filter(luminal, metadata=="Site" & value=="Duodenum" &qval<0.05)
 a<-duodenum_significant$feature
@@ -67,30 +88,31 @@ joinef<- union(e,f)
 joinabcd <- union(joinab,joincd)
 target<-union(joinabcd,joinef)
 
-## Grab Genera names --
-annotation <- read.csv("CS-Facility-Analysis/Type_L6/genus_taxonomy.csv", header=TRUE)
-annotation$feature<-gsub("; ",".",annotation$feature)
-annotation$feature<-gsub(".s__.*","",annotation$feature)
-annotation$feature<-gsub("-",".",annotation$feature)
-annotation$feature<-gsub("/",".",annotation$feature)
+df<-target
+df<-as.data.frame(df)
+df$feature <- df[,1]
 
+df$Phylum <- gsub(".*\\.p__", "", df$feature)
+df$Phylum <- gsub("\\.c__.*", "", df$Phylum)
+df$Order <- gsub(".*\\.o__", "", df$feature)
+df$Order <- gsub("\\.f__.*", "", df$Order)
+df$Order <- paste0(df$Order, " (o)")
+df$Family <- gsub(".*\\.f__", "", df$feature)
+df$Family <- gsub("\\.g__.*", "", df$Family)
+df$Family<- paste0(df$Family, " (f)")
+df$Genus <- gsub(".*\\.g__", "", df$feature)
 
-immdefsignificant<-target
-immdefsignificant<-as.data.frame(immdefsignificant)
-immdefsignificant$feature <- immdefsignificant[,1]
-tempdf<- (merge(immdefsignificant, annotation, by = 'feature'))
-tempdf<- tempdf %>% select(-c("Species"))
-immdefgenera<-tempdf$Genus
-immdefgenera<- as.data.frame(unique(immdefgenera))
+df <- df %>%
+  mutate(annotation = ifelse(Genus!="", Genus,
+                             ifelse(Family!=" (f)", Family, Order)))
 
-immdefgenera <- immdefgenera$`unique(immdefgenera)`
-readr::write_rds(immdefgenera, here("CS_Facility_Luminal_Genera.RDS"))
-readr::write_rds(immdefgenera, here("CS_Facility_Mucosal_Genera.RDS"))
+readr::write_csv(df,here("CS-Facility-Analysis/differential_genera_site/Genus_Luminal_taxonomy.csv"))
+readr::write_csv(df, here("CS-Facility-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
 
 ## Query target vector against all results
-luminal<-read.table("CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
+luminal<-read.table("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
 data <- luminal %>% filter(metadata=="Site" & qval<0.05)
-luminal<-read.table("CS-Facility-Analysis/Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
+luminal<-read.table("CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
 data <- luminal %>% filter(metadata=="Site" & qval<0.05)
 
 
@@ -118,18 +140,15 @@ unique(site_heatmap$feature)
 
 #construct the heatmap using ggplot
 library(viridis)
-annotation <- read.csv("CS-Facility-Analysis/Type_L6/genus_taxonomy.csv", header=TRUE)
-annotation$feature<-gsub("; ",".",annotation$feature)
-annotation$feature<-gsub(".s__.*","",annotation$feature)
-annotation$feature<-gsub("-",".",annotation$feature)
-annotation$feature<-gsub("/",".",annotation$feature)
+annotation <- readr::read_csv(here("CS-Facility-Analysis/differential_genera_site/Genus_Luminal_taxonomy.csv"))
+annotation <- readr::read_csv(here("CS-Facility-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
+
 
 data<- (merge(site_heatmap, annotation, by = 'feature'))
-unique(data$feature) #needs to match num features in site_heatmap
-data$Family_Genus<-paste(data$Family,data$Genus,sep=" : ")
-data$Phylum_Genus<-paste(data$Phylum,data$Genus,sep=" : ")
+data$Phylum_Genus<-paste(data$Phylum,data$annotation,sep=" : ")
+data<- data %>% filter(!annotation=="")
 
-data <- select(data, c("feature","value","coef","Genus","Phylum_Genus", "Family_Genus","qval"))
+data <- select(data, c("feature","value","coef","Genus","Phylum_Genus","qval"))
 data <- unique(data)
 
 qval<-data$qval
@@ -150,9 +169,9 @@ data$asterisk<-asterisk
 data <- data %>% mutate(coef_d= ifelse(coef>2, 2, coef))
 data$coef_d[data$coef_d < (-2)] <- (-2)
 summary(data$coef_d) 
-y = tapply(data$coef_d, data$Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
+y = tapply(data$coef_d, data$Phylum_Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
-data$Genus= factor(as.character(data$Genus), levels = names(y))
+data$Phylum_Genus= factor(as.character(data$Phylum_Genus), levels = names(y))
 data$value = revalue(data$value, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
 data$value = factor(data$value, levels=c("Duo", "Jej", "Ile", "Cec", "PC", "DC"))
 ggplotdata<-data
@@ -164,7 +183,7 @@ cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DF
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 dev.new(width=15, height=10)  # can adjust window size of the plot output this way
-ggplot(ggplotdata, aes(x = value, y=Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
+ggplot(ggplotdata, aes(x = value, y=Phylum_Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
   geom_text(aes(label=asterisk)) +
   scale_fill_stepsn(breaks=bk, values = NULL, colors = cols) +
   theme_cowplot(12) +
@@ -177,7 +196,7 @@ ggplot(ggplotdata, aes(x = value, y=Genus)) + geom_tile(aes(fill = coef_d),colou
 
 #construct heatmap using heatmap2 with dendrogram
 ?pivot_wider
-data<-select(data,c("feature", "value","coef", "coef_d", "Phylum_Genus","Family_Genus","Genus", "qval"))
+data<-select(data,c("feature", "value","coef", "coef_d", "Phylum_Genus","Genus", "qval"))
 data<- unique(data)
 unique(data$feature)
 data_long<-pivot_wider(data, id_cols=Phylum_Genus, names_from = value, values_from =coef_d)
@@ -215,9 +234,10 @@ col_labels <- col_labels[order(order.dendrogram(dend1))]
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
 nrow(matrix.data)
 
-data_long_qval<-pivot_wider(data, id_cols=feature, names_from = value, values_from =qval)
+data_long_qval<-pivot_wider(ggplotdata, id_cols=Phylum_Genus, names_from = value, values_from =qval)
 data_long_qval<-data_long_qval[,-1]
 data_long_qval <- select(data_long_qval,c("Duo","Ile", "Jej","Cec","PC","DC"))
+
 for(i in 1:ncol(data_long_qval)){       # for-loop over columns
   v<-data_long_qval %>% pull(i)
   for(ctr in 1:length(v)){
@@ -249,7 +269,6 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-row.names(matrix.data) <-c()
 dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
