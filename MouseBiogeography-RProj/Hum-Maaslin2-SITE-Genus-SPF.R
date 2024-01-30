@@ -7,13 +7,19 @@ library(plyr)
 
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
 here::i_am("MouseBiogeography-RProj/Hum-Maaslin2-SITE-Genus-SPF.R")
-input_data <- read.csv("Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/Luminal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file
-input_data <- read.csv("Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/Mucosal_L6.csv", header=TRUE, row.names=1) # choose filtered non rarefied csv file
+input_data <- readr::read_delim(here("Humanized-Biogeography-Analysis/Site_Subsets/export_L6_Luminal_min10000_Cedars_SPF_Colonized-ComBat-Adjusted-ASV/feature-table.tsv"), delim="\t") # choose filtered non rarefied csv file
+input_data <- readr::read_delim(here("Humanized-Biogeography-Analysis/Site_Subsets/export_L6_Mucosal_min10000_Cedars_SPF_Colonized-ComBat-Adjusted-ASV/feature-table.tsv"), delim="\t") # choose filtered non rarefied csv file
 
-df_input_data <- as.data.frame(input_data)
-df_input_data <- select(df_input_data, -c("taxonomy"))
+input_data <- subset(input_data, !grepl("Mitochondria|Chloroplast", OTU.ID))
 
-input_metadata <-read.csv("Humanized-Biogeography-Analysis/Humanized Metadata - All-Humanized-Metadata (1).csv",header=TRUE, row.names=1) #mapping file
+input_data <- as.data.frame(input_data)
+row.names(input_data)<-input_data$OTU.ID
+df_input_data <- select(input_data, -c("taxonomy","OTU.ID"))
+
+input_metadata <-readr::read_delim(here("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv"),delim="\t") #mapping file
+input_metadata <- as.data.frame(input_metadata)
+row.names(input_metadata) <- input_metadata$SampleID
+input_metadata <- input_metadata %>% select(-c("SampleID"))
 
 target <- colnames(df_input_data)
 input_metadata = input_metadata[match(target, row.names(input_metadata)),]
@@ -27,22 +33,48 @@ sapply(df_input_metadata,levels)
 
 #Luminal Site
 df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum","Jejunum","Duodenum"))
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID", 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site,Distal_Colon'))
+
+#Luminal Site_General
+fit_data = Maaslin2(input_data=df_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID", 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site_General"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site_General,Colon'))
+
 
 #Mucosal Site
 df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum","Jejunum","Duodenum"))
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID", 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site,Distal_Colon'))
 
-#Luminal Site_General
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site_General"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Mucosal Site_General
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site_General"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=df_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID", 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site_General"), 
+                    random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE,
+                    min_prevalence=0.15,
+                    reference=c('Site_General,Colon'))
 
 #Heatmap-----
 
-luminal<-read.table("Humanized-Biogeography-Analysis/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
-luminal<-read.table("Humanized-Biogeography-Analysis/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv", header=TRUE)
+luminal<-readr::read_delim(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv"),delim="\t")
+luminal<-readr::read_delim(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv"),delim="\t")
 
 duodenum_significant<-filter(luminal, metadata=="Site" & value=="Duodenum" &qval<0.05)
 a<-duodenum_significant$feature
@@ -62,27 +94,36 @@ joinef<- union(e,f)
 joinabcd <- union(joinab,joincd)
 target<-union(joinabcd,joinef)
 
-immdefsignificant<-target
-immdefsignificant<-as.data.frame(immdefsignificant)
-immdefsignificant$feature <- immdefsignificant[,1]
+df<-target
+df<-as.data.frame(df)
+df$feature <- df[,1]
 
-annotation <- read.csv("Humanized-Biogeography-Analysis/Genus_Taxonomy.csv", header=TRUE)
-annotation$feature<-annotation$taxonomy
-annotation$feature<-gsub("; ",".",annotation$feature)
-annotation$feature<-gsub(".s__.*","",annotation$feature)
-annotation$feature<-gsub("-",".",annotation$feature)
-annotation$feature<-gsub("/",".",annotation$feature)
+df$Phylum <- gsub(".*\\.p__", "", df$feature)
+df$Phylum <- gsub("\\.c__.*", "", df$Phylum)
+df$Order <- gsub(".*\\.o__", "", df$feature)
+df$Order <- gsub("\\.f__.*", "", df$Order)
+df$Order <- paste0(df$Order, " (o)")
+df$Family <- gsub(".*\\.f__", "", df$feature)
+df$Family <- gsub("\\.g__.*", "", df$Family)
+df$Family<- paste0(df$Family, " (f)")
+df$Genus <- gsub(".*\\.g__", "", df$feature)
 
-tempdf<- (merge(immdefsignificant, annotation, by = 'feature'))
-genera<-unique(tempdf$Genus)
-readr::write_rds(genera, "Hum_SPF_mucosal_genera.RDS")
+df <- df %>%
+  mutate(annotation = ifelse(Genus!="", Genus,
+                             ifelse(Family!=" (f)", Family, Order)))
 
-luminal<-read.table("Humanized-Biogeography-Analysis/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
-luminal<-read.table("Humanized-Biogeography-Analysis/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv", header=TRUE)
-luminal<-read.table("Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv", header=TRUE)
-data <- luminal %>% filter(metadata=="Site_General" & qval<0.05)
-luminal<-read.table("Humanized-Biogeography-Analysis/Source RPCA/SPF/Maaslin2_Site_L6/L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv", header=TRUE)
-data <- luminal %>% filter(metadata=="Site_General" & qval<0.05)
+readr::write_csv(df,here("Humanized-Biogeography-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
+
+
+
+annotation <- readr::read_csv(here("Humanized-Biogeography-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
+
+# Query target vectir against all results 
+luminal<-readr::read_delim(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"))
+data <- luminal %>% filter(metadata=="Site" & qval<0.05)
+
+luminal<-readr::read_delim(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"))
+data <- luminal %>% filter(metadata=="Site" & qval<0.05)
 
 
 luminal_all<-filter(luminal, metadata=="Site")
@@ -107,16 +148,11 @@ site_heatmap$feature <- gsub("X","",as.character(site_heatmap$feature))
 
 #construct the heatmap using ggplot
 library(viridis)
-annotation <- read.csv("Humanized-Biogeography-Analysis/Genus_Taxonomy.csv", header=TRUE)
-annotation$feature<-annotation$taxonomy
-annotation$feature<-gsub("; ",".",annotation$feature)
-annotation$feature<-gsub(".s__.*","",annotation$feature)
-annotation$feature<-gsub("-",".",annotation$feature)
-annotation$feature<-gsub("/",".",annotation$feature)
+annotation <- readr::read_csv(here("Humanized-Biogeography-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
 
 data<- (merge(site_heatmap, annotation, by = 'feature'))
-data$Family_Genus<-paste(data$Family,data$Genus,sep=" : ")
-data$Phylum_Genus<-paste(data$Phylum,data$Genus,sep=" : ")
+data$Phylum_Genus<-paste(data$Phylum,data$annotation,sep=" : ")
+data<- data %>% filter(!annotation=="")
 
 qval<-data$qval
 asterisk<-c("")
@@ -147,9 +183,10 @@ ggplotdata<-data
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+summary(ggplotdata$coef_d)
 
 dev.new(width=15, height=10)  # can adjust window size of the plot output this way
-ggplot(ggplotdata, aes(x = value, y=Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
+ggplot(ggplotdata, aes(x = value, y=Phylum_Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
   geom_text(aes(label=asterisk)) +
   scale_fill_stepsn(breaks=bk, values = NULL, colors = cols) +
   theme_cowplot(12) +

@@ -279,11 +279,13 @@ fig_mucosal <- plot_grid(alpha_diversity_muc, interregional_muc, interregional_m
 dev.new(width=20, height=5)
 fig_mucosal
 
-aggregated_L6_lum <- plot_grid(UCLA_o_L6_lum, cs_L6_lum, spf_gavage_L6_lum, hum_gavage_L6_lum, hum_v_L6_lum,NULL, NULL, nrow=1, ncol=6)
+aggregated_L6_lum <- plot_grid(UCLA_o_L6_lum, cs_L6_lum, spf_gavage_L6_lum, hum_gavage_L6_lum, hum_v_L6_lum,NULL, NULL, nrow=1, ncol=6,
+                               rel_widths = c(1.21,1,1,1,1,1))
 dev.new(width=20, height=5)
 aggregated_L6_lum
 
-aggregated_L2_lum <- plot_grid(UCLA_o_L2_lum, cs_L2_lum, spf_gavage_L2_lum, hum_gavage_L2_lum, hum_v_L2_lum,NULL, NULL, nrow=1, ncol=5)
+aggregated_L2_lum <- plot_grid(UCLA_o_L2_lum, cs_L2_lum, spf_gavage_L2_lum, hum_gavage_L2_lum, hum_v_L2_lum,NULL, NULL, nrow=1, ncol=6,
+                               rel_widths = c(1.21,1,1,1,1,1))
 dev.new(width=20, height=5)
 aggregated_L2_lum
 

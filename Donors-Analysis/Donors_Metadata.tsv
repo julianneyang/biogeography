@@ -1,4 +1,4 @@
-SampleID	Sequencing_Run	Original_Human_Stool	Site	Region	Type	Subset	MouseID	Sex	Stool_ID	Family	Donor_ID	IBD_Status	Enterotype	Metabotype	Donor_Calprotectin	SequenceDepth	Description
+SampleID	Sequencing_Run	Original_Human_Stool	Site	Site_General	Type	Subset	MouseID	Sex	Stool_ID	Family	Donor_ID	IBD_Status	Enterotype	Metabotype	Donor_Calprotectin	SequenceDepth	Description
 806rcbc423-S424	April_2017	N	Duodenum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
 806rcbc426-S427	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
 806rcbc427-S428	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		

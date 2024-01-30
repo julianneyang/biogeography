@@ -4,13 +4,16 @@ library(dplyr)
 library(ggplot2)
 library(cowplot)
 library(plyr)
+library(gplots)
 
 here::i_am("MouseBiogeography-RProj/Donors-Maaslin2-SITE-Genus.R")
 input_data <- readr::read_delim(here("Donors-Analysis/site_subsets/export_L6_Luminal_Donors-Mice-1xPrev0.15-ComBat-ASV/feature-table.tsv"), delim="\t") # choose filtered non rarefied csv file
+input_data <- subset(input_data, !grepl("Mitochondria|Chloroplast", OTU.ID))
 
 input_data <- as.data.frame(input_data)
 row.names(input_data)<-input_data$OTU.ID
 df_input_data <- select(input_data, -c("taxonomy","OTU.ID"))
+
 
 input_metadata <-readr::read_delim(here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t") #mapping file
 input_metadata <- as.data.frame(input_metadata)
@@ -202,7 +205,7 @@ ggplot(ggplot_data, aes(x = value, y=Phylum_Genus)) + geom_tile(aes(fill = coef_
   xlab("")+
   ylab("") +
   guides(fill=guide_colourbar(title="",label=TRUE,barwidth = 15))+
-  ggtitle("HUM V. Gavage Mucosal")
+  ggtitle("HUM V. Gavage Luminal")
 
 ##Make Heatmap with Heatmap2
 #construct heatmap using heatmap2 with dendrogram
@@ -275,6 +278,8 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
+
+
 #row.names(matrix.data) <- c()
 dev.new(width=15, height=10)
 heatmap.2(matrix.data,
