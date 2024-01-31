@@ -93,7 +93,7 @@ df <- df %>%
   mutate(annotation = ifelse(Genus!="", Genus,
                              ifelse(Family!=" (f)", Family, Order)))
 
-readr::write_csv(df,here("UCLA_V_SPF_Analysis/differential_genera_site/Genus_Luminal_taxonomy.csv"))
+readr::write_csv(df,here("UCLA_V_SPF_Analysis/differential_genera_site/Genus_taxonomy.csv"))
 
 ## Heatmap --
 luminal<-readr::read_delim(here("UCLA_V_SPF_Analysis/differential_genera_site/L6-DCvsAll-CLR-Muc-SeqRunSexSite-1-MsID/all_results.tsv"), delim="\t")
@@ -116,11 +116,10 @@ y$qval<-100
 
 site_heatmap<-rbind(data,y)
 
-site_heatmap$feature <- as.character(site_heatmap$feature)
 
 #construct the heatmap using ggplot
 library(viridis)
-annotation <- readr::read_csv(here("UCLA_V_SPF_Analysis/differential_genera_site/Genus_Luminal_taxonomy.csv"))
+annotation <- readr::read_csv(here("UCLA_V_SPF_Analysis/differential_genera_site/Genus_taxonomy.csv"))
 
 data<- (merge(site_heatmap, annotation, by = 'feature'))
 data$Phylum_Genus<-paste(data$Phylum,data$annotation,sep=" : ")
@@ -137,6 +136,7 @@ for (item in qval){
     asterisk<-c(asterisk,"")
   }
 }
+
 asterisk<-asterisk[-1]
 data$asterisk<-asterisk
 
@@ -144,7 +144,7 @@ data$asterisk<-asterisk
 data <- data %>% mutate(coef_d= ifelse(coef>2, 2, coef))
 data$coef_d[data$coef_d < (-2)] <- (-2)
 summary(data$coef_d) 
-y = tapply(data$coef_d, data$Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
+y = tapply(data$coef_d, data$Phylum_Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
 data$Phylum_Genus= factor(as.character(data$Phylum_Genus), levels = names(y))
 data$value = revalue(data$value, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
@@ -155,7 +155,7 @@ cols=viridis(10)
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 dev.new(width=15, height=10)  # can adjust window size of the plot output this way
-ggplot(ggplotdata, aes(x = value, y=Phylum_Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
+ggplot(ggplot_data, aes(x = value, y=Phylum_Genus)) + geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
   geom_text(aes(label=asterisk)) +
   scale_fill_stepsn(breaks=bk, values = NULL, colors = cols) +
   theme_cowplot(12) +
@@ -171,11 +171,6 @@ data_long_final<-data_long[,-1]
 data_long_final<-select(data_long_final,Duo,Jej, Ile,Cec,PC,DC)
 row.names(data_long_final)= data_long$Phylum_Genus
 matrix.data<- as.matrix.data.frame(data_long_final)
-library(RColorBrewer)
-coul = colorRampPalette(brewer.pal(8, "Blues"))(5)#, the number (25) represents the number of shades of the gradient
-dev.new(width=15, height=10)
-heatmap.2(matrix.data, colv= NA, rowv =TRUE, dendrogram ="row", scale="row",density.info="none", trace="none", cexCol = 1, cexRow = 1, margins=c(9,20), col=coul, keysize=1.5, )
-#looks like 6 clusters could work
 
 #construct heatmap using heatmap2 with hierarchical clustering
 library(dendextend) #Creating a color palette & color breaks
@@ -199,10 +194,10 @@ col_labels <- get_leaves_branches_col(dend1)
 col_labels <- col_labels[order(order.dendrogram(dend1))]
 
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
-data_long_qval<-pivot_wider(data, id_cols=feature, names_from = value, values_from =qval)
+data_long_qval<-pivot_wider(data, id_cols=Phylum_Genus, names_from = value, values_from =qval)
 data_long_qval<-data_long_qval[,-1]
 
-data_long_qval<-pivot_wider(data, id_cols=feature, names_from = value, values_from =qval)
+data_long_qval<-pivot_wider(data, id_cols=Phylum_Genus, names_from = value, values_from =qval)
 data_long_qval<-data_long_qval[,-1]
 data_long_qval <- select(data_long_qval,c("Duo","Ile", "Jej","Cec","PC","DC"))
 
@@ -238,7 +233,7 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-row.names(matrix.data) <- c()
+
 dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,

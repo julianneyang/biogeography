@@ -2,8 +2,8 @@
 library(here)
 library(sva)
 library(dplyr)
+library(seqinr)
 
-BiocManager::install("sva")
 
 here::i_am("MouseBiogeography-RProj/Donors_ASV_Preprocessing.R")
 
@@ -17,6 +17,13 @@ Donors_combined_taxonomy <- Donors_combined_taxonomy %>% select(c("ASV","taxonom
 Donors_combined_taxonomy <- unique(Donors_combined_taxonomy)
 readr::write_csv(Donors_combined_taxonomy,here("Donors-Analysis/Donors_combined_taxonomy_assignments.csv"))
 
+## Combine FASTA files 
+fasta<- read.table(here("Donors-Analysis/starting_files/export_Donors-paired-end-rep-seqs/dna-sequences.fasta"))
+fasta2<- read.table(here("Donors-Analysis/starting_files/export_Donors-single-filtered-rep-seqs/dna-sequences.fasta"))
+
+finalfasta <- rbind(fasta,fasta2)
+finalfasta <- unique(finalfasta)
+readr::write_delim(finalfasta,here("Donors-Analysis/starting_files/Donors_rep_seqs.fna"),delim="\t")
 ## Combine aligned DNA sequences and make a taxonomy file --
 PE_aligned <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_PE_aligned_DNA_sequences.csv"))
 SE_aligned <- readr::read_csv(here("Donors-Analysis/starting_files/Donors_single_aligned_DNA_sequences.csv"))
@@ -224,6 +231,9 @@ modcombat=model.matrix(~Type + Site,data=metadata)
 input=as.matrix(mouse_ASV_prev)
 combat_adjusted_counts=sva::ComBat_seq(input,batch=batch,group=NULL,covar_mod=modcombat)  
 combat_adjusted_counts <- as.data.frame(combat_adjusted_counts)
+combat_adjusted_counts$OTU.ID <- row.names(combat_adjusted_counts)
+combat_adjusted_counts <- combat_adjusted_counts %>% select(c("OTU.ID"),everything())
+readr::write_delim(combat_adjusted_counts,here("Donors-Analysis/starting_files/forpicrust_Donors-Mice-1xPrev0.15-ComBat-ASV.tsv"), delim="\t")
 
 # Replace QIIME sequences with actual ASV sequences 
 combat_adjusted_counts$QIIME_seqs <- rownames(combat_adjusted_counts)

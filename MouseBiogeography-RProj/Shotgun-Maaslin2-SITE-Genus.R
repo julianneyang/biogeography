@@ -6,16 +6,15 @@ library(cowplot)
 library(plyr)
 library(here)
 
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Microbiome.Biogeography/")
+setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
-devtools::install("Microbiome.Biogeography")
 library("Microbiome.Biogeography")
-
+setwd("/home/julianne/Documents/biogeography/")
 
 here::i_am("MouseBiogeography-RProj/Shotgun-Maaslin2-SITE-Genus.R")
 
-### Select Luminal UCLA O SPF ---
 
+### Select Luminal UCLA O SPF ---
 input_data <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_ASV.tsv"))
 df_input_data <- as.data.frame(input_data)
 rownames(df_input_data)<-input_data$Species
@@ -58,28 +57,24 @@ fit_data = Maaslin2(input_data=ucla_o_spf_ASV,
                     reference= c('Line,JJWT','Site,Distal_Colon'),
                     plot_heatmap = FALSE,plot_scatter = FALSE)
 ?Maaslin2
-## Heatmap ---
+## Barplot ---
 
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # UCLA O SPF 
-lumtarget <- find_concordant_features_across_sites("../Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv")
+lumtarget <- find_concordant_features_across_sites("Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/significant_results.tsv")
 print(lumtarget)
-modify_names <- gsub(".*\\.f__", "", lumtarget)
 
-modified_results <- readr::read_delim(here("Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/all_results.tsv"))
-modified_results$feature <- gsub(".*\\.f__", "",modified_results$feature)
-readr::write_delim(modified_results, "../Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/modified_all_results.tsv",delim = "\t")
-modified_results$feature
-lumtarget
-ucla_o_shotgun_species_heatmap <- generate_taxa_heat_map_by_site("../Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/modified_all_results.tsv",
-                                                        modify_names,
-                                                        "UCLA O. SPF Luminal",
-                                                        cols,
-                                                        bk)
+cols=c("#440154FF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+
+ucla_o_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
+                                         path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
+                                        titlestring="UCLA O. SPF",
+                                        colorvector = cols)
 dev.new(width=10,height=10)
-ucla_o_shotgun_species_heatmap
+ucla_o_shotgun_species
 
 
 ### Select CS SPF ---
@@ -125,28 +120,18 @@ fit_data = Maaslin2(input_data=CS_SPF_ASV,
                     reference= c('Site,Distal_Colon'),
                     plot_heatmap = FALSE,plot_scatter = FALSE)
 ?Maaslin2
-## Heatmap ---
-
-cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+## Barplots --
 
 # CS SPF 
-lumtarget <- find_concordant_features_across_sites("../Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
+lumtarget <- find_concordant_features_across_sites("Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
 print(lumtarget)
-modify_names <- gsub(".*\\.f__", "", lumtarget)
 
-modified_results <- readr::read_delim(here("Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/all_results.tsv"))
-modified_results$feature <- gsub(".*\\.f__", "",modified_results$feature)
-readr::write_delim(modified_results, "../Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",delim = "\t")
-modified_results$feature
-lumtarget
-cs_shotgun_species_heatmap <- generate_taxa_heat_map_by_site("../Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",
-                                                                 modify_names,
-                                                                 "CS SPF Luminal",
-                                                                 cols,
-                                                                 bk)
+cs_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
+                                                                   path_to_significant_results_tsv = "Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                                   titlestring="CS SPF",
+                                                                   colorvector = cols)
 dev.new(width=10,height=10)
-cs_shotgun_species_heatmap
+cs_shotgun_species
 
 
 ### Select SPF Gavage ---
@@ -198,22 +183,15 @@ cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DF
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # SPF Gavage
-lumtarget <- find_concordant_features_across_sites("../Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
+lumtarget <- find_concordant_features_across_sites("Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
 print(lumtarget)
-modify_names <- gsub(".*\\.f__", "", lumtarget)
 
-modified_results <- readr::read_delim(here("Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/all_results.tsv"))
-modified_results$feature <- gsub(".*\\.f__", "",modified_results$feature)
-readr::write_delim(modified_results, "../Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",delim = "\t")
-modified_results$feature
-lumtarget
-spf_gavage_shotgun_species_heatmap <- generate_taxa_heat_map_by_site("../Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",
-                                                             modify_names,
-                                                             "SPF Gavage Luminal",
-                                                             cols,
-                                                             bk)
+spf_gavage_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
+                                                               path_to_significant_results_tsv = "Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                               titlestring="SPF Gavage",
+                                                               colorvector = cols)
 dev.new(width=10,height=10)
-spf_gavage_shotgun_species_heatmap
+spf_gavage_shotgun_species
 
 ### Select Hum Gavage ---
 
@@ -264,19 +242,12 @@ cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DF
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # HUM Gavage
-lumtarget <- find_concordant_features_across_sites("../Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
+lumtarget <- find_concordant_features_across_sites("Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
 print(lumtarget)
-modify_names <- gsub(".*\\.f__", "", lumtarget)
 
-modified_results <- readr::read_delim(here("Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/all_results.tsv"))
-modified_results$feature <- gsub(".*\\.f__", "",modified_results$feature)
-readr::write_delim(modified_results, "../Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",delim = "\t")
-modified_results$feature
-lumtarget
-HUM_Gavage_shotgun_species_heatmap <- generate_taxa_heat_map_by_site("../Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/modified_all_results.tsv",
-                                                                     modify_names,
-                                                                     "HUM Gavage Luminal",
-                                                                     cols,
-                                                                     bk)
+hum_gavage_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
+                                                                       path_to_significant_results_tsv = "Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                                       titlestring="HUM Gavage",
+                                                                       colorvector = cols)
 dev.new(width=10,height=10)
-HUM_Gavage_shotgun_species_heatmap
+hum_gavage_shotgun_species

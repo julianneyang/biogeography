@@ -1,0 +1,277 @@
+2024-01-30 20:01:37 INFO::Writing function arguments to log file
+2024-01-30 20:01:37 DEBUG::Function arguments
+2024-01-30 20:01:37 DEBUG::Output folder: /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID
+2024-01-30 20:01:37 DEBUG::Min Abundance: 0.000000
+2024-01-30 20:01:37 DEBUG::Min Prevalence: 0.150000
+2024-01-30 20:01:37 DEBUG::Normalization: CLR
+2024-01-30 20:01:37 DEBUG::Transform: NONE
+2024-01-30 20:01:37 DEBUG::Analysis method: LM
+2024-01-30 20:01:37 DEBUG::Max significance: 0.250000
+2024-01-30 20:01:37 DEBUG::Random effects: MouseID
+2024-01-30 20:01:37 DEBUG::Fixed effects: Sequencing_Run,Line,Sex,Site
+2024-01-30 20:01:37 DEBUG::Correction method: BH
+2024-01-30 20:01:37 DEBUG::Standardize: TRUE
+2024-01-30 20:01:37 DEBUG::Cores: 1
+2024-01-30 20:01:37 INFO::Verifying options selected are valid
+2024-01-30 20:01:37 INFO::Determining format of input files
+2024-01-30 20:01:37 INFO::Input format is data samples as columns and metadata samples as rows
+2024-01-30 20:01:37 DEBUG::Transformed data so samples are rows
+2024-01-30 20:01:37 DEBUG::A total of 60 samples were found in both the data and metadata
+2024-01-30 20:01:37 DEBUG::Reordering data/metadata to use same sample ordering
+2024-01-30 20:01:37 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-01-30 20:01:37 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Line + Sex + Site
+2024-01-30 20:01:37 INFO::Filter data based on min abundance and min prevalence
+2024-01-30 20:01:37 INFO::Total samples in data: 60
+2024-01-30 20:01:37 INFO::Min samples required with min abundance for a feature not to be filtered: 9.000000
+2024-01-30 20:01:37 INFO::Total filtered features: 16
+2024-01-30 20:01:37 INFO::Filtered feature names from abundance and prevalence filtering: k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1xD42_87, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB28955.s__GGB28955_SGB41663, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroidaceae_unclassified.s__Bacteroidaceae_bacterium, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides.s__Bacteroides_uniformis, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB27898.s__GGB27898_SGB40333, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculaceae_unclassified.s__Muribaculaceae_bacterium_Isolate_104_HZI, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Prevotellaceae.g__Prevotella.s__Prevotella_sp_PCJ2, k__Bacteria.p__Bacteroidetes.c__CFGB74567.o__OFGB74567.f__FGB74567.g__GGB1515.s__GGB1515_SGB2095, k__Bacteria.p__Bacteroidetes.c__CFGB9382.o__OFGB9382.f__FGB9382.g__GGB27879.s__GGB27879_SGB40313, k__Bacteria.p__Bacteroidetes.c__CFGB9382.o__OFGB9382.f__FGB9382.g__GGB80101.s__GGB80101_SGB21440, k__Bacteria.p__Candidatus_Saccharibacteria.c__CFGB9318.o__OFGB9318.f__FGB9318.g__GGB73364.s__GGB73364_SGB102608, k__Bacteria.p__Firmicutes.c__CFGB76077.o__OFGB76077.f__FGB76077.g__GGB28853.s__GGB28853_SGB41521, k__Bacteria.p__Firmicutes.c__CFGB9827.o__OFGB9827.f__FGB9827.g__GGB29530.s__GGB29530_SGB42316, k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridia_unclassified.f__Clostridia_unclassified.g__GGB28386.s__GGB28386_SGB40966, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28865.s__GGB28865_SGB41537, k__Bacteria.p__Firmicutes.c__Negativicutes.o__Selenomonadales.f__Selenomonadaceae.g__GGB27890.s__GGB27890_SGB40324
+2024-01-30 20:01:37 INFO::Total filtered features with variance filtering: 0
+2024-01-30 20:01:37 INFO::Filtered feature names from variance filtering:
+2024-01-30 20:01:37 INFO::Running selected normalization method: CLR
+2024-01-30 20:01:37 INFO::Applying z-score to standardize continuous metadata
+2024-01-30 20:01:37 INFO::Running selected transform method: NONE
+2024-01-30 20:01:37 INFO::Running selected analysis method: LM
+2024-01-30 20:01:37 INFO::Fitting model to feature number 1, k__Bacteria.p__Actinobacteria.c__Actinomycetia.o__Bifidobacteriales.f__Bifidobacteriaceae.g__Bifidobacterium.s__Bifidobacterium_pseudolongum
+2024-01-30 20:01:37 INFO::Fitting model to feature number 2, k__Bacteria.p__Actinobacteria.c__Actinomycetia.o__Streptomycetales.f__Streptomycetaceae.g__GGB30301.s__GGB30301_SGB43265
+2024-01-30 20:01:37 INFO::Fitting model to feature number 3, k__Bacteria.p__Actinobacteria.c__Actinomycetia.o__Streptomycetales.f__Streptomycetaceae.g__GGB31701.s__GGB31701_SGB45057
+2024-01-30 20:01:37 INFO::Fitting model to feature number 4, k__Bacteria.p__Actinobacteria.c__CFGB73496.o__OFGB73496.f__FGB73496.g__GGB70518.s__GGB70518_SGB94950
+2024-01-30 20:01:37 INFO::Fitting model to feature number 5, k__Bacteria.p__Actinobacteria.c__CFGB73496.o__OFGB73496.f__FGB73496.g__GGB80032.s__GGB80032_SGB42945
+2024-01-30 20:01:37 INFO::Fitting model to feature number 6, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Atopobiaceae.g__Atopobiaceae_unclassified.s__Atopobiaceae_bacterium_FL090493
+2024-01-30 20:01:37 INFO::Fitting model to feature number 7, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Coriobacteriales.f__Coriobacteriaceae.g__Parvibacter.s__Parvibacter_caecicola
+2024-01-30 20:01:38 INFO::Fitting model to feature number 8, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Adlercreutzia.s__Adlercreutzia_caecimuris
+2024-01-30 20:01:38 INFO::Fitting model to feature number 9, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Adlercreutzia.s__Adlercreutzia_equolifaciens
+2024-01-30 20:01:38 INFO::Fitting model to feature number 10, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Adlercreutzia.s__Adlercreutzia_mucosicola
+2024-01-30 20:01:38 INFO::Fitting model to feature number 11, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Adlercreutzia.s__Adlercreutzia_muris
+2024-01-30 20:01:38 INFO::Fitting model to feature number 12, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Eggerthellaceae_unclassified.s__Eggerthellaceae_bacterium
+2024-01-30 20:01:38 INFO::Fitting model to feature number 13, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__Enterorhabdus.s__Enterorhabdus_sp_P55
+2024-01-30 20:01:38 INFO::Fitting model to feature number 14, k__Bacteria.p__Actinobacteria.c__Coriobacteriia.o__Eggerthellales.f__Eggerthellaceae.g__GGB28839.s__GGB28839_SGB41503
+2024-01-30 20:01:38 INFO::Fitting model to feature number 15, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__Bacteria_unclassified_SGB41508
+2024-01-30 20:01:38 INFO::Fitting model to feature number 16, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__Bacteria_unclassified_SGB43539
+2024-01-30 20:01:38 INFO::Fitting model to feature number 17, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__Bacteria_unclassified_SGB43541
+2024-01-30 20:01:39 INFO::Fitting model to feature number 18, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__Bacteria_unclassified_SGB44461
+2024-01-30 20:01:39 INFO::Fitting model to feature number 19, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__Bacteria_unclassified_SGB63107
+2024-01-30 20:01:39 INFO::Fitting model to feature number 20, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_0_1xD8_82
+2024-01-30 20:01:39 INFO::Fitting model to feature number 21, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1XD21_13
+2024-01-30 20:01:39 INFO::Fitting model to feature number 22, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1XD42_1
+2024-01-30 20:01:39 INFO::Fitting model to feature number 23, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1XD42_54
+2024-01-30 20:01:39 INFO::Fitting model to feature number 24, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1XD42_76
+2024-01-30 20:01:39 INFO::Fitting model to feature number 25, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_1xD8_48
+2024-01-30 20:01:39 INFO::Fitting model to feature number 26, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_D16_29
+2024-01-30 20:01:39 INFO::Fitting model to feature number 27, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_D16_63
+2024-01-30 20:01:39 INFO::Fitting model to feature number 28, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__Bacteria_unclassified.s__bacterium_D16_76
+2024-01-30 20:01:40 INFO::Fitting model to feature number 29, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB14001.s__GGB14001_SGB21428
+2024-01-30 20:01:40 INFO::Fitting model to feature number 30, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB28951.s__GGB28951_SGB102295
+2024-01-30 20:01:40 INFO::Fitting model to feature number 31, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB28951.s__GGB28951_SGB41658
+2024-01-30 20:01:40 INFO::Fitting model to feature number 32, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB28963.s__GGB28963_SGB41672
+2024-01-30 20:01:40 INFO::Fitting model to feature number 33, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB42601.s__GGB42601_SGB59797
+2024-01-30 20:01:40 INFO::Fitting model to feature number 34, k__Bacteria.p__Bacteria_unclassified.c__Bacteria_unclassified.o__Bacteria_unclassified.f__Bacteria_unclassified.g__GGB79854.s__GGB79854_SGB41662
+2024-01-30 20:01:40 INFO::Fitting model to feature number 35, k__Bacteria.p__Bacteria_unclassified.c__CFGB49426.o__OFGB49426.f__FGB49426.g__GGB28887.s__GGB28887_SGB41568
+2024-01-30 20:01:40 INFO::Fitting model to feature number 36, k__Bacteria.p__Bacteria_unclassified.c__CFGB49426.o__OFGB49426.f__FGB49426.g__GGB28888.s__GGB28888_SGB41569
+2024-01-30 20:01:40 INFO::Fitting model to feature number 37, k__Bacteria.p__Bacteria_unclassified.c__CFGB73496.o__OFGB73496.f__FGB73496.g__GGB30048.s__GGB30048_SGB42949
+2024-01-30 20:01:40 INFO::Fitting model to feature number 38, k__Bacteria.p__Bacteria_unclassified.c__CFGB76064.o__OFGB76064.f__FGB76064.g__GGB28904.s__GGB28904_SGB41597
+2024-01-30 20:01:40 INFO::Fitting model to feature number 39, k__Bacteria.p__Bacteria_unclassified.c__CFGB76064.o__OFGB76064.f__FGB76064.g__GGB42608.s__GGB42608_SGB59804
+2024-01-30 20:01:40 INFO::Fitting model to feature number 40, k__Bacteria.p__Bacteria_unclassified.c__CFGB76138.o__OFGB76138.f__FGB76138.g__GGB79948.s__GGB79948_SGB41679
+2024-01-30 20:01:40 INFO::Fitting model to feature number 41, k__Bacteria.p__Bacteria_unclassified.c__CFGB76244.o__OFGB76244.f__FGB76244.g__GGB28967.s__GGB28967_SGB41678
+2024-01-30 20:01:40 INFO::Fitting model to feature number 42, k__Bacteria.p__Bacteria_unclassified.c__CFGB76311.o__OFGB76311.f__FGB76311.g__GGB28903.s__GGB28903_SGB41594
+2024-01-30 20:01:40 INFO::Fitting model to feature number 43, k__Bacteria.p__Bacteria_unclassified.c__CFGB76313.o__OFGB76313.f__FGB76313.g__GGB28927.s__GGB28927_SGB41625
+2024-01-30 20:01:40 INFO::Fitting model to feature number 44, k__Bacteria.p__Bacteria_unclassified.c__CFGB8157.o__OFGB8157.f__FGB8157.g__GGB15004.s__GGB15004_SGB41589
+2024-01-30 20:01:40 INFO::Fitting model to feature number 45, k__Bacteria.p__Bacteria_unclassified.c__CFGB8157.o__OFGB8157.f__FGB8157.g__GGB28898.s__GGB28898_SGB41580
+2024-01-30 20:01:41 INFO::Fitting model to feature number 46, k__Bacteria.p__Bacteria_unclassified.c__CFGB8157.o__OFGB8157.f__FGB8157.g__GGB28901.s__GGB28901_SGB41592
+2024-01-30 20:01:41 INFO::Fitting model to feature number 47, k__Bacteria.p__Bacteria_unclassified.c__CFGB9644.o__OFGB9644.f__FGB9644.g__GGB28946.s__GGB28946_SGB41652
+2024-01-30 20:01:41 INFO::Fitting model to feature number 48, k__Bacteria.p__Bacteria_unclassified.c__CFGB9644.o__OFGB9644.f__FGB9644.g__GGB79804.s__GGB79804_SGB41650
+2024-01-30 20:01:41 INFO::Fitting model to feature number 49, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides.s__Bacteroides_acidifaciens
+2024-01-30 20:01:41 INFO::Fitting model to feature number 50, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides.s__Bacteroides_caecimuris
+2024-01-30 20:01:41 INFO::Fitting model to feature number 51, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides.s__Bacteroides_sp_L10_4
+2024-01-30 20:01:41 INFO::Fitting model to feature number 52, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Phocaeicola.s__Phocaeicola_vulgatus
+2024-01-30 20:01:41 INFO::Fitting model to feature number 53, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidales_unclassified.g__Bacteroidales_unclassified.s__Bacteroidales_bacterium
+2024-01-30 20:01:41 INFO::Fitting model to feature number 54, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Bacteroidales_unclassified.g__GGB27849.s__GGB27849_SGB40283
+2024-01-30 20:01:41 INFO::Fitting model to feature number 55, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Barnesiellaceae.g__Barnesiella.s__Barnesiella_sp_CU968
+2024-01-30 20:01:41 INFO::Fitting model to feature number 56, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Duncaniella.s__Duncaniella_dubosii
+2024-01-30 20:01:41 INFO::Fitting model to feature number 57, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Duncaniella.s__Duncaniella_freteri
+2024-01-30 20:01:41 INFO::Fitting model to feature number 58, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Duncaniella.s__Duncaniella_muris
+2024-01-30 20:01:41 INFO::Fitting model to feature number 59, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB24127.s__GGB24127_SGB35930
+2024-01-30 20:01:41 INFO::Fitting model to feature number 60, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB27903.s__GGB27903_SGB40338
+2024-01-30 20:01:41 INFO::Fitting model to feature number 61, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB30621.s__GGB30621_SGB43756
+2024-01-30 20:01:41 INFO::Fitting model to feature number 62, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB3583.s__GGB3583_SGB21441
+2024-01-30 20:01:41 INFO::Fitting model to feature number 63, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__GGB46152.s__GGB46152_SGB63920
+2024-01-30 20:01:41 INFO::Fitting model to feature number 64, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Heminiphilus.s__Heminiphilus_faecis
+2024-01-30 20:01:41 INFO::Fitting model to feature number 65, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculaceae_unclassified.s__Muribaculaceae_bacterium
+2024-01-30 20:01:42 INFO::Fitting model to feature number 66, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculaceae_unclassified.s__Muribaculaceae_bacterium_Isolate_013_NCI
+2024-01-30 20:01:42 INFO::Fitting model to feature number 67, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculaceae_unclassified.s__Muribaculaceae_bacterium_Isolate_110_HZI
+2024-01-30 20:01:42 INFO::Fitting model to feature number 68, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculum.s__Muribaculum_gordoncarteri
+2024-01-30 20:01:42 INFO::Fitting model to feature number 69, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Muribaculum.s__Muribaculum_intestinale
+2024-01-30 20:01:42 INFO::Fitting model to feature number 70, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Muribaculaceae.g__Paramuribaculum.s__Paramuribaculum_intestinale
+2024-01-30 20:01:42 INFO::Fitting model to feature number 71, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Prevotellaceae.g__Prevotella.s__Prevotella_sp_MGM1
+2024-01-30 20:01:42 INFO::Fitting model to feature number 72, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__Alistipes.s__Alistipes_sp
+2024-01-30 20:01:42 INFO::Fitting model to feature number 73, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__Alistipes.s__Alistipes_timonensis
+2024-01-30 20:01:42 INFO::Fitting model to feature number 74, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__GGB24102.s__GGB24102_SGB40205
+2024-01-30 20:01:42 INFO::Fitting model to feature number 75, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__GGB28990.s__GGB28990_SGB41704
+2024-01-30 20:01:42 INFO::Fitting model to feature number 76, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Tannerellaceae.g__Parabacteroides.s__Parabacteroides_distasonis
+2024-01-30 20:01:42 INFO::Fitting model to feature number 77, k__Bacteria.p__Bacteroidetes.c__Bacteroidia.o__Bacteroidales.f__Tannerellaceae.g__Parabacteroides.s__Parabacteroides_goldsteinii
+2024-01-30 20:01:42 INFO::Fitting model to feature number 78, k__Bacteria.p__Bacteroidetes.c__CFGB1791.o__OFGB1791.f__FGB1791.g__GGB27770.s__GGB27770_SGB40184
+2024-01-30 20:01:42 INFO::Fitting model to feature number 79, k__Bacteria.p__Bacteroidetes.c__CFGB2838.o__OFGB2838.f__FGB2838.g__GGB28403.s__GGB28403_SGB40190
+2024-01-30 20:01:42 INFO::Fitting model to feature number 80, k__Bacteria.p__Bacteroidetes.c__CFGB4425.o__OFGB4425.f__FGB4425.g__GGB1503.s__GGB1503_SGB2082
+2024-01-30 20:01:42 INFO::Fitting model to feature number 81, k__Bacteria.p__Bacteroidetes.c__CFGB4875.o__OFGB4875.f__FGB4875.g__GGB24146.s__GGB24146_SGB35950
+2024-01-30 20:01:42 INFO::Fitting model to feature number 82, k__Bacteria.p__Bacteroidetes.c__CFGB632.o__OFGB632.f__FGB632.g__GGB24130.s__GGB24130_SGB35933
+2024-01-30 20:01:42 INFO::Fitting model to feature number 83, k__Bacteria.p__Bacteroidetes.c__CFGB635.o__OFGB635.f__FGB635.g__GGB27872.s__GGB27872_SGB40306
+2024-01-30 20:01:42 INFO::Fitting model to feature number 84, k__Bacteria.p__Bacteroidetes.c__CFGB75970.o__OFGB75970.f__FGB75970.g__GGB24149.s__GGB24149_SGB35953
+2024-01-30 20:01:43 INFO::Fitting model to feature number 85, k__Bacteria.p__Bacteroidetes.c__CFGB76004.o__OFGB76004.f__FGB76004.g__GGB28250.s__GGB28250_SGB40793
+2024-01-30 20:01:43 INFO::Fitting model to feature number 86, k__Bacteria.p__Bacteroidetes.c__CFGB76026.o__OFGB76026.f__FGB76026.g__GGB27914.s__GGB27914_SGB40352
+2024-01-30 20:01:43 INFO::Fitting model to feature number 87, k__Bacteria.p__Bacteroidetes.c__CFGB76111.o__OFGB76111.f__FGB76111.g__GGB79628.s__GGB79628_SGB35895
+2024-01-30 20:01:43 INFO::Fitting model to feature number 88, k__Bacteria.p__Bacteroidetes.c__CFGB76185.o__OFGB76185.f__FGB76185.g__GGB27894.s__GGB27894_SGB40329
+2024-01-30 20:01:43 INFO::Fitting model to feature number 89, k__Bacteria.p__Bacteroidetes.c__CFGB76349.o__OFGB76349.f__FGB76349.g__GGB27861.s__GGB27861_SGB40295
+2024-01-30 20:01:43 INFO::Fitting model to feature number 90, k__Bacteria.p__Bacteroidetes.c__CFGB76719.o__OFGB76719.f__FGB76719.g__GGB23844.s__GGB23844_SGB35575
+2024-01-30 20:01:43 INFO::Fitting model to feature number 91, k__Bacteria.p__Bacteroidetes.c__CFGB76719.o__OFGB76719.f__FGB76719.g__GGB27697.s__GGB27697_SGB40070
+2024-01-30 20:01:43 INFO::Fitting model to feature number 92, k__Bacteria.p__Bacteroidetes.c__CFGB9388.o__OFGB9388.f__FGB9388.g__GGB27866.s__GGB27866_SGB40300
+2024-01-30 20:01:43 INFO::Fitting model to feature number 93, k__Bacteria.p__Bacteroidetes.c__CFGB9397.o__OFGB9397.f__FGB9397.g__GGB27885.s__GGB27885_SGB40319
+2024-01-30 20:01:43 INFO::Fitting model to feature number 94, k__Bacteria.p__Candidatus_Melainabacteria.c__CFGB10197.o__OFGB10197.f__FGB10197.g__GGB31108.s__GGB31108_SGB44379
+2024-01-30 20:01:43 INFO::Fitting model to feature number 95, k__Bacteria.p__Candidatus_Melainabacteria.c__CFGB10197.o__OFGB10197.f__FGB10197.g__GGB31109.s__GGB31109_SGB44380
+2024-01-30 20:01:43 INFO::Fitting model to feature number 96, k__Bacteria.p__Candidatus_Melainabacteria.c__CFGB10197.o__OFGB10197.f__FGB10197.g__GGB75896.s__GGB75896_SGB102365
+2024-01-30 20:01:43 INFO::Fitting model to feature number 97, k__Bacteria.p__Candidatus_Melainabacteria.c__CFGB2107.o__OFGB2107.f__FGB2107.g__GGB31064.s__GGB31064_SGB44328
+2024-01-30 20:01:43 INFO::Fitting model to feature number 98, k__Bacteria.p__Candidatus_Saccharibacteria.c__CFGB75980.o__OFGB75980.f__FGB75980.g__GGB27476.s__GGB27476_SGB39769
+2024-01-30 20:01:43 INFO::Fitting model to feature number 99, k__Bacteria.p__Candidatus_Saccharibacteria.c__CFGB8157.o__OFGB8157.f__FGB8157.g__GGB27485.s__GGB27485_SGB39778
+2024-01-30 20:01:43 INFO::Fitting model to feature number 100, k__Bacteria.p__Candidatus_Saccharibacteria.c__CFGB9318.o__OFGB9318.f__FGB9318.g__GGB27478.s__GGB27478_SGB39772
+2024-01-30 20:01:43 INFO::Fitting model to feature number 101, k__Bacteria.p__Deferribacteres.c__Deferribacteres.o__Deferribacterales.f__Deferribacteraceae.g__Mucispirillum.s__Mucispirillum_schaedleri
+2024-01-30 20:01:43 INFO::Fitting model to feature number 102, k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Staphylococcaceae.g__GGB27929.s__GGB27929_SGB40368
+2024-01-30 20:01:44 INFO::Fitting model to feature number 103, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Aerococcaceae.g__GGB28248.s__GGB28248_SGB40791
+2024-01-30 20:01:44 INFO::Fitting model to feature number 104, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__GGB27481.s__GGB27481_SGB39777
+2024-01-30 20:01:44 INFO::Fitting model to feature number 105, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__GGB30087.s__GGB30087_SGB65084
+2024-01-30 20:01:44 INFO::Fitting model to feature number 106, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__GGB30141.s__GGB30141_SGB43066
+2024-01-30 20:01:44 INFO::Fitting model to feature number 107, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Lactobacillus.s__Lactobacillus_intestinalis
+2024-01-30 20:01:44 INFO::Fitting model to feature number 108, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Lactobacillus.s__Lactobacillus_johnsonii
+2024-01-30 20:01:44 INFO::Fitting model to feature number 109, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Ligilactobacillus.s__Ligilactobacillus_murinus
+2024-01-30 20:01:44 INFO::Fitting model to feature number 110, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Limosilactobacillus.s__Limosilactobacillus_SGB43493
+2024-01-30 20:01:44 INFO::Fitting model to feature number 111, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Limosilactobacillus.s__Limosilactobacillus_reuteri
+2024-01-30 20:01:44 INFO::Fitting model to feature number 112, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Lactococcus.s__Lactococcus_SGB40208
+2024-01-30 20:01:44 INFO::Fitting model to feature number 113, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Streptococcus.s__Streptococcus_SGB45231
+2024-01-30 20:01:44 INFO::Fitting model to feature number 114, k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Streptococcus.s__Streptococcus_danieliae
+2024-01-30 20:01:44 INFO::Fitting model to feature number 115, k__Bacteria.p__Firmicutes.c__CFGB10344.o__OFGB10344.f__FGB10344.g__GGB31822.s__GGB31822_SGB45198
+2024-01-30 20:01:44 INFO::Fitting model to feature number 116, k__Bacteria.p__Firmicutes.c__CFGB10344.o__OFGB10344.f__FGB10344.g__GGB31823.s__GGB31823_SGB45199
+2024-01-30 20:01:44 INFO::Fitting model to feature number 117, k__Bacteria.p__Firmicutes.c__CFGB10667.o__OFGB10667.f__FGB10667.g__GGB28981.s__GGB28981_SGB41693
+2024-01-30 20:01:44 INFO::Fitting model to feature number 118, k__Bacteria.p__Firmicutes.c__CFGB1227.o__OFGB1227.f__FGB1227.g__GGB75036.s__GGB75036_SGB102224
+2024-01-30 20:01:44 INFO::Fitting model to feature number 119, k__Bacteria.p__Firmicutes.c__CFGB1494.o__OFGB1494.f__FGB1494.g__GGB28790.s__GGB28790_SGB41443
+2024-01-30 20:01:44 INFO::Fitting model to feature number 120, k__Bacteria.p__Firmicutes.c__CFGB1670.o__OFGB1670.f__FGB1670.g__GGB28772.s__GGB28772_SGB41425
+2024-01-30 20:01:45 INFO::Fitting model to feature number 121, k__Bacteria.p__Firmicutes.c__CFGB1814.o__OFGB1814.f__FGB1814.g__GGB75900.s__GGB75900_SGB102322
+2024-01-30 20:01:45 INFO::Fitting model to feature number 122, k__Bacteria.p__Firmicutes.c__CFGB2107.o__OFGB2107.f__FGB2107.g__GGB42333.s__GGB42333_SGB59501
+2024-01-30 20:01:45 INFO::Fitting model to feature number 123, k__Bacteria.p__Firmicutes.c__CFGB28439.o__OFGB28439.f__FGB28439.g__GGB28439.s__GGB28439_SGB41022
+2024-01-30 20:01:45 INFO::Fitting model to feature number 124, k__Bacteria.p__Firmicutes.c__CFGB28980.o__OFGB28980.f__FGB28980.g__GGB28980.s__GGB28980_SGB41692
+2024-01-30 20:01:45 INFO::Fitting model to feature number 125, k__Bacteria.p__Firmicutes.c__CFGB30287.o__OFGB30287.f__FGB30287.g__GGB28402.s__GGB28402_SGB40984
+2024-01-30 20:01:45 INFO::Fitting model to feature number 126, k__Bacteria.p__Firmicutes.c__CFGB37314.o__OFGB37314.f__FGB37314.g__GGB45293.s__GGB45293_SGB41002
+2024-01-30 20:01:45 INFO::Fitting model to feature number 127, k__Bacteria.p__Firmicutes.c__CFGB48800.o__OFGB48800.f__FGB48800.g__GGB28384.s__GGB28384_SGB40964
+2024-01-30 20:01:45 INFO::Fitting model to feature number 128, k__Bacteria.p__Firmicutes.c__CFGB6645.o__OFGB6645.f__FGB6645.g__GGB28989.s__GGB28989_SGB41703
+2024-01-30 20:01:45 INFO::Fitting model to feature number 129, k__Bacteria.p__Firmicutes.c__CFGB73217.o__OFGB73217.f__FGB73217.g__GGB28956.s__GGB28956_SGB41665
+2024-01-30 20:01:45 INFO::Fitting model to feature number 130, k__Bacteria.p__Firmicutes.c__CFGB75970.o__OFGB75970.f__FGB75970.g__GGB30408.s__GGB30408_SGB43438
+2024-01-30 20:01:45 INFO::Fitting model to feature number 131, k__Bacteria.p__Firmicutes.c__CFGB75988.o__OFGB75988.f__FGB75988.g__GGB79760.s__GGB79760_SGB63182
+2024-01-30 20:01:45 INFO::Fitting model to feature number 132, k__Bacteria.p__Firmicutes.c__CFGB76071.o__OFGB76071.f__FGB76071.g__GGB28926.s__GGB28926_SGB41623
+2024-01-30 20:01:45 INFO::Fitting model to feature number 133, k__Bacteria.p__Firmicutes.c__CFGB76074.o__OFGB76074.f__FGB76074.g__GGB28948.s__GGB28948_SGB41654
+2024-01-30 20:01:45 INFO::Fitting model to feature number 134, k__Bacteria.p__Firmicutes.c__CFGB76074.o__OFGB76074.f__FGB76074.g__GGB28949.s__GGB28949_SGB41655
+2024-01-30 20:01:46 INFO::Fitting model to feature number 135, k__Bacteria.p__Firmicutes.c__CFGB76077.o__OFGB76077.f__FGB76077.g__GGB28851.s__GGB28851_SGB41518
+2024-01-30 20:01:46 INFO::Fitting model to feature number 136, k__Bacteria.p__Firmicutes.c__CFGB76077.o__OFGB76077.f__FGB76077.g__GGB28853.s__GGB28853_SGB41519
+2024-01-30 20:01:46 INFO::Fitting model to feature number 137, k__Bacteria.p__Firmicutes.c__CFGB76080.o__OFGB76080.f__FGB76080.g__GGB31850.s__GGB31850_SGB45228
+2024-01-30 20:01:46 INFO::Fitting model to feature number 138, k__Bacteria.p__Firmicutes.c__CFGB76144.o__OFGB76144.f__FGB76144.g__GGB79989.s__GGB79989_SGB41645
+2024-01-30 20:01:46 INFO::Fitting model to feature number 139, k__Bacteria.p__Firmicutes.c__CFGB76166.o__OFGB76166.f__FGB76166.g__GGB28831.s__GGB28831_SGB41487
+2024-01-30 20:01:46 INFO::Fitting model to feature number 140, k__Bacteria.p__Firmicutes.c__CFGB76235.o__OFGB76235.f__FGB76235.g__GGB25052.s__GGB25052_SGB36974
+2024-01-30 20:01:46 INFO::Fitting model to feature number 141, k__Bacteria.p__Firmicutes.c__CFGB76244.o__OFGB76244.f__FGB76244.g__GGB28967.s__GGB28967_SGB41417
+2024-01-30 20:01:46 INFO::Fitting model to feature number 142, k__Bacteria.p__Firmicutes.c__CFGB76288.o__OFGB76288.f__FGB76288.g__GGB18827.s__GGB18827_SGB41440
+2024-01-30 20:01:46 INFO::Fitting model to feature number 143, k__Bacteria.p__Firmicutes.c__CFGB76314.o__OFGB76314.f__FGB76314.g__GGB28793.s__GGB28793_SGB41446
+2024-01-30 20:01:47 INFO::Fitting model to feature number 144, k__Bacteria.p__Firmicutes.c__CFGB76322.o__OFGB76322.f__FGB76322.g__GGB28958.s__GGB28958_SGB41667
+2024-01-30 20:01:47 INFO::Fitting model to feature number 145, k__Bacteria.p__Firmicutes.c__CFGB76355.o__OFGB76355.f__FGB76355.g__GGB28416.s__GGB28416_SGB40998
+2024-01-30 20:01:47 INFO::Fitting model to feature number 146, k__Bacteria.p__Firmicutes.c__CFGB76355.o__OFGB76355.f__FGB76355.g__GGB28418.s__GGB28418_SGB41000
+2024-01-30 20:01:47 INFO::Fitting model to feature number 147, k__Bacteria.p__Firmicutes.c__CFGB76355.o__OFGB76355.f__FGB76355.g__GGB28422.s__GGB28422_SGB41005
+2024-01-30 20:01:47 INFO::Fitting model to feature number 148, k__Bacteria.p__Firmicutes.c__CFGB76511.o__OFGB76511.f__FGB76511.g__GGB28387.s__GGB28387_SGB40967
+2024-01-30 20:01:47 INFO::Fitting model to feature number 149, k__Bacteria.p__Firmicutes.c__CFGB76790.o__OFGB76790.f__FGB76790.g__GGB30303.s__GGB30303_SGB43268
+2024-01-30 20:01:47 INFO::Fitting model to feature number 150, k__Bacteria.p__Firmicutes.c__CFGB8118.o__OFGB8118.f__FGB8118.g__GGB29005.s__GGB29005_SGB41723
+2024-01-30 20:01:47 INFO::Fitting model to feature number 151, k__Bacteria.p__Firmicutes.c__CFGB8152.o__OFGB8152.f__FGB8152.g__GGB28870.s__GGB28870_SGB41548
+2024-01-30 20:01:47 INFO::Fitting model to feature number 152, k__Bacteria.p__Firmicutes.c__CFGB9479.o__OFGB9479.f__FGB9479.g__GGB28330.s__GGB28330_SGB40904
+2024-01-30 20:01:47 INFO::Fitting model to feature number 153, k__Bacteria.p__Firmicutes.c__CFGB9511.o__OFGB9511.f__FGB9511.g__GGB28388.s__GGB28388_SGB40968
+2024-01-30 20:01:48 INFO::Fitting model to feature number 154, k__Bacteria.p__Firmicutes.c__CFGB9629.o__OFGB9629.f__FGB9629.g__GGB28840.s__GGB28840_SGB102297
+2024-01-30 20:01:48 INFO::Fitting model to feature number 155, k__Bacteria.p__Firmicutes.c__CFGB9644.o__OFGB9644.f__FGB9644.g__GGB28908.s__GGB28908_SGB41656
+2024-01-30 20:01:48 INFO::Fitting model to feature number 156, k__Bacteria.p__Firmicutes.c__CFGB9658.o__OFGB9658.f__FGB9658.g__GGB29002.s__GGB29002_SGB41718
+2024-01-30 20:01:48 INFO::Fitting model to feature number 157, k__Bacteria.p__Firmicutes.c__CFGB9659.o__OFGB9659.f__FGB9659.g__GGB29003.s__GGB29003_SGB41719
+2024-01-30 20:01:48 INFO::Fitting model to feature number 158, k__Bacteria.p__Firmicutes.c__CFGB9660.o__OFGB9660.f__FGB9660.g__GGB29004.s__GGB29004_SGB41721
+2024-01-30 20:01:48 INFO::Fitting model to feature number 159, k__Bacteria.p__Firmicutes.c__CFGB9827.o__OFGB9827.f__FGB9827.g__GGB29531.s__GGB29531_SGB42317
+2024-01-30 20:01:48 INFO::Fitting model to feature number 160, k__Bacteria.p__Firmicutes.c__CFGB9960.o__OFGB9960.f__FGB9960.g__GGB30142.s__GGB30142_SGB43067
+2024-01-30 20:01:48 INFO::Fitting model to feature number 161, k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridia_unclassified.f__Clostridia_unclassified.g__Candidatus_Metalachnospira.s__Candidatus_Metalachnospira_SGB63370
+2024-01-30 20:01:48 INFO::Fitting model to feature number 162, k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridia_unclassified.f__Clostridia_unclassified.g__GGB28934.s__GGB28934_SGB41635
+2024-01-30 20:01:48 INFO::Fitting model to feature number 163, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Christensenellaceae.g__GGB30455.s__GGB30455_SGB43519
+2024-01-30 20:01:48 INFO::Fitting model to feature number 164, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__Candidatus_Arthromitus.s__Candidatus_Arthromitus_sp_SFB_mouse
+2024-01-30 20:01:48 INFO::Fitting model to feature number 165, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__Clostridiaceae_unclassified.s__Clostridiaceae_bacterium
+2024-01-30 20:01:48 INFO::Fitting model to feature number 166, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__Clostridium.s__Clostridium_SGB40327
+2024-01-30 20:01:48 INFO::Fitting model to feature number 167, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__GGB28845.s__GGB28845_SGB41512
+2024-01-30 20:01:49 INFO::Fitting model to feature number 168, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__GGB28846.s__GGB28846_SGB41513
+2024-01-30 20:01:49 INFO::Fitting model to feature number 169, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__GGB30145.s__GGB30145_SGB43072
+2024-01-30 20:01:49 INFO::Fitting model to feature number 170, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Clostridiaceae.g__GGB30147.s__GGB30147_SGB43074
+2024-01-30 20:01:49 INFO::Fitting model to feature number 171, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriaceae.g__GGB24132.s__GGB24132_SGB35935
+2024-01-30 20:01:49 INFO::Fitting model to feature number 172, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriaceae.g__GGB28791.s__GGB28791_SGB41444
+2024-01-30 20:01:49 INFO::Fitting model to feature number 173, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriales_Family_XIII_Incertae_Sedis.g__Emergencia.s__Emergencia_sp_1XD21_10
+2024-01-30 20:01:49 INFO::Fitting model to feature number 174, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriales_Family_XIII_Incertae_Sedis.g__GGB27480.s__GGB27480_SGB39776
+2024-01-30 20:01:49 INFO::Fitting model to feature number 175, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriales_Family_XIII_Incertae_Sedis.g__GGB73359.s__GGB73359_SGB46611
+2024-01-30 20:01:49 INFO::Fitting model to feature number 176, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Eubacteriales_unclassified.g__Eubacteriales_unclassified.s__Clostridiales_bacterium
+2024-01-30 20:01:49 INFO::Fitting model to feature number 177, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Dorea.s__Dorea_sp_5_2
+2024-01-30 20:01:49 INFO::Fitting model to feature number 178, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB27873.s__GGB27873_SGB41457
+2024-01-30 20:01:49 INFO::Fitting model to feature number 179, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB27876.s__GGB27876_SGB40310
+2024-01-30 20:01:49 INFO::Fitting model to feature number 180, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28765.s__GGB28765_SGB41415
+2024-01-30 20:01:49 INFO::Fitting model to feature number 181, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28766.s__GGB28766_SGB41418
+2024-01-30 20:01:49 INFO::Fitting model to feature number 182, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28769.s__GGB28769_SGB41421
+2024-01-30 20:01:49 INFO::Fitting model to feature number 183, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28828.s__GGB28828_SGB41484
+2024-01-30 20:01:50 INFO::Fitting model to feature number 184, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28836.s__GGB28836_SGB41496
+2024-01-30 20:01:50 INFO::Fitting model to feature number 185, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28957.s__GGB28957_SGB41666
+2024-01-30 20:01:50 INFO::Fitting model to feature number 186, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB28988.s__GGB28988_SGB41701
+2024-01-30 20:01:50 INFO::Fitting model to feature number 187, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB30861.s__GGB30861_SGB44083
+2024-01-30 20:01:50 INFO::Fitting model to feature number 188, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB3793.s__GGB3793_SGB41498
+2024-01-30 20:01:50 INFO::Fitting model to feature number 189, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB42598.s__GGB42598_SGB59794
+2024-01-30 20:01:50 INFO::Fitting model to feature number 190, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB42644.s__GGB42644_SGB59842
+2024-01-30 20:01:50 INFO::Fitting model to feature number 191, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB75109.s__GGB75109_SGB102238
+2024-01-30 20:01:50 INFO::Fitting model to feature number 192, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__GGB79838.s__GGB79838_SGB59846
+2024-01-30 20:01:50 INFO::Fitting model to feature number 193, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Lachnospiraceae_unclassified.s__Lachnospiraceae_bacterium
+2024-01-30 20:01:50 INFO::Fitting model to feature number 194, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Lachnospiraceae_unclassified.s__Lachnospiraceae_bacterium_A2
+2024-01-30 20:01:50 INFO::Fitting model to feature number 195, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Lachnospiraceae_unclassified.s__Lachnospiraceae_bacterium_MD308
+2024-01-30 20:01:50 INFO::Fitting model to feature number 196, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Lachnospiraceae_unclassified.s__Lachnospiraceae_unclassified_SGB41402
+2024-01-30 20:01:50 INFO::Fitting model to feature number 197, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Schaedlerella.s__Schaedlerella_arabinosiphila
+2024-01-30 20:01:50 INFO::Fitting model to feature number 198, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Lachnospiraceae.g__Sporofaciens.s__Sporofaciens_musculi
+2024-01-30 20:01:50 INFO::Fitting model to feature number 199, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__Anaerotruncus.s__Anaerotruncus_sp_1XD42_93
+2024-01-30 20:01:50 INFO::Fitting model to feature number 200, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB28433.s__GGB28433_SGB41016
+2024-01-30 20:01:51 INFO::Fitting model to feature number 201, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB28849.s__GGB28849_SGB41516
+2024-01-30 20:01:51 INFO::Fitting model to feature number 202, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB28879.s__GGB28879_SGB43526
+2024-01-30 20:01:51 INFO::Fitting model to feature number 203, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30450.s__GGB30450_SGB43507
+2024-01-30 20:01:51 INFO::Fitting model to feature number 204, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30451.s__GGB30451_SGB43508
+2024-01-30 20:01:51 INFO::Fitting model to feature number 205, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30454.s__GGB30454_SGB100837
+2024-01-30 20:01:51 INFO::Fitting model to feature number 206, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30454.s__GGB30454_SGB43514
+2024-01-30 20:01:51 INFO::Fitting model to feature number 207, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30457.s__GGB30457_SGB63218
+2024-01-30 20:01:51 INFO::Fitting model to feature number 208, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30461.s__GGB30461_SGB43530
+2024-01-30 20:01:51 INFO::Fitting model to feature number 209, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30461.s__GGB30461_SGB63209
+2024-01-30 20:01:51 INFO::Fitting model to feature number 210, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30462.s__GGB30462_SGB43535
+2024-01-30 20:01:51 INFO::Fitting model to feature number 211, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30463.s__GGB30463_SGB43537
+2024-01-30 20:01:51 INFO::Fitting model to feature number 212, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30466.s__GGB30466_SGB43544
+2024-01-30 20:01:51 INFO::Fitting model to feature number 213, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30466.s__GGB30466_SGB63211
+2024-01-30 20:01:51 INFO::Fitting model to feature number 214, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30468.s__GGB30468_SGB43552
+2024-01-30 20:01:51 INFO::Fitting model to feature number 215, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB30473.s__GGB30473_SGB43557
+2024-01-30 20:01:51 INFO::Fitting model to feature number 216, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB45514.s__GGB45514_SGB63186
+2024-01-30 20:01:51 INFO::Fitting model to feature number 217, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB45650.s__GGB45650_SGB63364
+2024-01-30 20:01:52 INFO::Fitting model to feature number 218, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB74395.s__GGB74395_SGB43523
+2024-01-30 20:01:52 INFO::Fitting model to feature number 219, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB74408.s__GGB74408_SGB43542
+2024-01-30 20:01:52 INFO::Fitting model to feature number 220, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB75053.s__GGB75053_SGB43494
+2024-01-30 20:01:52 INFO::Fitting model to feature number 221, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__GGB75064.s__GGB75064_SGB102200
+2024-01-30 20:01:52 INFO::Fitting model to feature number 222, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__Neglectibacter.s__Neglectibacter_sp_X4
+2024-01-30 20:01:52 INFO::Fitting model to feature number 223, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__Oscillibacter.s__Oscillibacter_SGB43502
+2024-01-30 20:01:52 INFO::Fitting model to feature number 224, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__Oscillibacter.s__Oscillibacter_sp_CU971
+2024-01-30 20:01:52 INFO::Fitting model to feature number 225, k__Bacteria.p__Firmicutes.c__Clostridia.o__Eubacteriales.f__Oscillospiraceae.g__Oscillospiraceae_unclassified.s__Hungateiclostridiaceae_bacterium_KB18
+2024-01-30 20:01:52 INFO::Fitting model to feature number 226, k__Bacteria.p__Firmicutes.c__Erysipelotrichia.o__Erysipelotrichales.f__Erysipelotrichaceae.g__Faecalibaculum.s__Faecalibaculum_rodentium
+2024-01-30 20:01:52 INFO::Fitting model to feature number 227, k__Bacteria.p__Firmicutes.c__Erysipelotrichia.o__Erysipelotrichales.f__Erysipelotrichaceae.g__GGB31184.s__GGB31184_SGB44478
+2024-01-30 20:01:52 INFO::Fitting model to feature number 228, k__Bacteria.p__Firmicutes.c__Erysipelotrichia.o__Erysipelotrichales.f__Turicibacteraceae.g__Turicibacter.s__Turicibacter_sp_TS3
+2024-01-30 20:01:52 INFO::Fitting model to feature number 229, k__Bacteria.p__Firmicutes.c__Negativicutes.o__Selenomonadales.f__Selenomonadaceae.g__GGB27892.s__GGB27892_SGB40326
+2024-01-30 20:01:52 INFO::Fitting model to feature number 230, k__Bacteria.p__Firmicutes.c__Negativicutes.o__Veillonellales.f__Veillonellaceae.g__GGB24148.s__GGB24148_SGB35952
+2024-01-30 20:01:52 INFO::Fitting model to feature number 231, k__Bacteria.p__Firmicutes.c__Tissierellia.o__Tissierellales.f__Peptoniphilaceae.g__Peptoniphilus.s__Peptoniphilus_SGB48104
+2024-01-30 20:01:52 INFO::Fitting model to feature number 232, k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Burkholderiales.f__Sutterellaceae.g__Parasutterella.s__Parasutterella_sp_NM82_D38
+2024-01-30 20:01:52 INFO::Fitting model to feature number 233, k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Burkholderiales.f__Sutterellaceae.g__Turicimonas.s__Turicimonas_muris
+2024-01-30 20:01:53 INFO::Fitting model to feature number 234, k__Bacteria.p__Proteobacteria.c__Betaproteobacteria.o__Rhodocyclales.f__Zoogloeaceae.g__Zoogloea.s__Zoogloea_SGB41465
+2024-01-30 20:01:53 INFO::Fitting model to feature number 235, k__Bacteria.p__Proteobacteria.c__CFGB28310.o__OFGB28310.f__FGB28310.g__GGB28310.s__GGB28310_SGB40880
+2024-01-30 20:01:53 INFO::Fitting model to feature number 236, k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Desulfovibrio.s__Desulfovibrio_SGB40192
+2024-01-30 20:01:53 INFO::Fitting model to feature number 237, k__Bacteria.p__Proteobacteria.c__Deltaproteobacteria.o__Desulfovibrionales.f__Desulfovibrionaceae.g__GGB28317.s__GGB28317_SGB40889
+2024-01-30 20:01:53 INFO::Fitting model to feature number 238, k__Bacteria.p__Verrucomicrobia.c__Verrucomicrobiae.o__Verrucomicrobiales.f__Akkermansiaceae.g__Akkermansia.s__Akkermansia_muciniphila
+2024-01-30 20:01:53 INFO::Counting total values for each feature
+2024-01-30 20:01:53 INFO::Writing residuals to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/residuals.rds
+2024-01-30 20:01:53 INFO::Writing fitted values to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/fitted.rds
+2024-01-30 20:01:53 INFO::Writing extracted random effects to file /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/ranef.rds
+2024-01-30 20:01:53 INFO::Writing all results to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/all_results.tsv
+2024-01-30 20:01:53 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/significant_results.tsv
