@@ -16,6 +16,54 @@ library(gridExtra)
 
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
 
+### HUM V Gavage ---
+donors_filepath <- "Donors-Analysis/differential_GMM_site/"
+lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
+
+muctarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
+
+cols=c("#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
+bk =c(-1.5, -1, -0.5, 0, 0.5, 1)
+hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
+                                                lumtarget,
+                                                "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
+                                                Y=Map,
+                                                "Map",
+                                                "Luminal",
+                                                cols,
+                                                bk) +
+  theme_cowplot(20) +
+  ggtitle("HUM V. Gavage Luminal") + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(legend.position = "none")
+
+hum_v_map_muc <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
+                                               muctarget,
+                                               "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
+                                               Y=Map,
+                                               "Map",
+                                               "Mucosal",
+                                               cols,
+                                               bk) +
+  theme_cowplot(20) +
+  ggtitle("HUM V. Gavage Mucosal") + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(legend.position = "none")
+
+lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv"))
+hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"),
+                                               lumtarget,
+                                               "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
+                                               Y=Map,
+                                               "Map",
+                                               "Luminal",
+                                               cols,
+                                               bk) +
+  theme_cowplot(20) +
+  ggtitle("HUM V. Gavage Luminal") + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(legend.position = "none")
+
 ### UCLA. O. SPF ---
 lumtarget <- find_concordant_features_across_sites("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")
 

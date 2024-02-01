@@ -15,7 +15,7 @@ row.names(input_data)<-input_data$OTU.ID
 df_input_data <- select(input_data, -c("taxonomy","OTU.ID"))
 
 
-input_metadata <-readr::read_delim(here("Donors-Analysis/Donors_Metadata.tsv"),delim="\t") #mapping file
+input_metadata <-readr::read_delim(here("Donors-Analysis/starting_files/Donors_Metadata.tsv"),delim="\t") #mapping file
 input_metadata <- as.data.frame(input_metadata)
 row.names(input_metadata) <- input_metadata$SampleID
 input_metadata <- input_metadata %>% select(-c("SampleID"))

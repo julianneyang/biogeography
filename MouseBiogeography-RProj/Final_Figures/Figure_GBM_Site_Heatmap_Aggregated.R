@@ -12,9 +12,43 @@ library(ggpubr)
 library(tidyr)
 library(dplyr)
 library(gridExtra)
-library(Microbiome.Biogeography)
+
+setwd("/home/julianne/Documents/microbiome.biogeography/")
+devtools::document()
+library("Microbiome.Biogeography")
+setwd("/home/julianne/Documents/biogeography/")
+
 
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
+
+### HUM V Gavage ---
+donors_filepath <- "Donors-Analysis/differential_GBM_site/"
+lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
+
+muctarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
+
+cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
+bk =c( -1, -0.5, 0, 0.5, 1)
+
+
+hum_v_muc_GBM_map <- generate_GBM_heat_map_by_site(paste0(donors_filepath,"GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
+                                                    targetvector = muctarget, 
+                                                    path_to_Module_Key = "GBM_Module_Key.csv",
+                                                    "HUM V Gavage Mucosal",
+                                                    cols,
+                                                    bk)
+
+
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+hum_v_lum_GBM_map <- generate_GBM_heat_map_by_site(paste0(donors_filepath,"GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
+                                                   targetvector = lumtarget, 
+                                                   path_to_Module_Key = "GBM_Module_Key.csv",
+                                                   "HUM V Gavage Luminal",
+                                                   cols,
+                                                   bk)
+
+
 
 ### UCLA O SPF ---
 # Luminal - 20 concordant features 
