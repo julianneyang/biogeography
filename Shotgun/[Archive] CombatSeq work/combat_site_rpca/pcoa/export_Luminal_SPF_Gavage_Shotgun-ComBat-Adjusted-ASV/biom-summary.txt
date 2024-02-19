@@ -1,0 +1,15 @@
+Num samples: 0
+Num observations: 0
+Total count: 0
+Table density (fraction of non-zero values): 0.000
+
+Counts/sample summary:
+ Min: 0.000
+ Max: 0.000
+ Median: 0.000
+ Mean: 0.000
+ Std. dev.: nan
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:

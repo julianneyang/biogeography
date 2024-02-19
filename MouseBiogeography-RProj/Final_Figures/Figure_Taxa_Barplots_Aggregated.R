@@ -66,7 +66,7 @@ df<-palettes_d_names # see palette names
 add_cols2 <- paletteer_d("ggthemes::Classic_20",20)	
 add_cols4 <- paletteer_d("ggthemes::calc",12)
 add_cols3 <- paletteer_d("dutchmasters::little_street",11)
-add_cols5 <- paletteer_d("RColorBrewer::Spectral",3)
+add_cols5 <- paletteer_d("RColorBrewer::Spectral",2)
 global_genera_cols <- c(add_cols2,add_cols3,add_cols4,add_cols5)
 global_genera_cols <- unique(global_genera_cols)
 names(global_genera_cols) <- global_genera
@@ -101,6 +101,7 @@ readr::write_rds(colors, here("global_phyla_cols.RDS"))
 
 # Donors 
 genera_cols <- readRDS("global_genera_cols.RDS")
+print(genera_cols)
 genera_cols <- genera_cols[names(genera_cols) %in% hum_v_genera]
 print(genera_cols)
 
@@ -112,7 +113,7 @@ hum_v_L6_muc
 
 hum_v_L6_lum <- generate_L6_taxa_plots("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.RDS",
                                        "HUM V. SPF", ".*g__",genera_cols, "Site") +
-  theme(legend.position = "none")+
+  theme(legend.position = "right")+
   theme(axis.text.y = element_blank())
 hum_v_L6_lum
 
@@ -297,12 +298,12 @@ dummyplot$dummyx <- seq(1,90,2)
 dummyplot$Genus <- row.names(dummyplot)
 L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
-  scale_fill_manual(values=genera_cols)+
+  scale_fill_manual(values=genera_cols,name="Genus Legend")+
   theme(legend.position = "right") +
-  guides(fill=guide_legend(nrow=20, byrow=TRUE))+
+  guides(fill=guide_legend(ncol=6, byrow=TRUE))+
   theme_cowplot(12)+
   theme(legend.spacing.y = unit(0.01, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(0, 11, 0, 0)) 
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(2, 11, 0, 0)) 
 legend <- cowplot::get_legend(L6_legend)
 grid.newpage()
 dev.new(width=20, height=5)
@@ -315,11 +316,12 @@ dummyplot$dummyx <- seq(1,16,2)
 dummyplot$Genus <- row.names(dummyplot)
 L2_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
-  scale_fill_manual(values=phyla_cols)+
-  theme(legend.position = "top") +
-  guides(fill=guide_legend(nrow=2, byrow=TRUE))+
-  theme(legend.spacing.y = unit(0.1, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(0, 11, 0, 1)) 
+  scale_fill_manual(values=phyla_cols,name="Phylum Legend")+
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(nrow=8, byrow=TRUE))+
+  theme_cowplot(16)+
+  theme(legend.spacing.y = unit(1, 'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=3, linetype="solid"), legend.margin = margin(10, 10, 100, 1)) 
 legend <- cowplot::get_legend(L2_legend)
 grid.newpage()
 dev.new(width=20, height=5)

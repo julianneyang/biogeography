@@ -8,29 +8,18 @@ library(dada2)
 
 here::i_am("MouseBiogeography-RProj/Hum-ASV-Preprocessing.R")
 
-counts <- read.delim(here("Shotgun/starting_files/BioGeo_Shotgun_ASV.tsv"),row.names=1)
-phylum_counts <- read.delim(here("Shotgun/starting_files/BioGeo_Shotgun_L2.tsv"), row.names=1)
-genus_counts <- read.delim(here("Shotgun/starting_files/BioGeo_Shotgun_L6.tsv"), row.names=1)
 
-phylum_counts <- phylum_counts[,names(counts)]
-phylum_counts$Phylum <- row.names(phylum_counts)
-phylum_counts <- phylum_counts %>% select(c("Phylum"), everything())
-readr::write_delim(phylum_counts, here("Shotgun/starting_files/BioGeo_Shotgun_L2.tsv"),delim="\t")
-
-genus_counts <- genus_counts[,names(counts)]
-genus_counts$Genus <- row.names(genus_counts)
-genus_counts <- genus_counts %>% select(c("Genus"), everything())
-readr::write_delim(genus_counts, here("Shotgun/starting_files/BioGeo_Shotgun_L6.tsv"),delim="\t")
+counts <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_ASV.tsv"))
+df_input_data <- as.data.frame(counts)
+row.names(df_input_data)<-df_input_data$Species
+final_ASV <- df_input_data %>% select(-c("Species"))
 
 #summary(colSums(ASV))
 #ASV<- ASV[colSums(ASV) >= 10000]
 
 
 ## Remove DSS Samples
-metadata<- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim = "\t")
-metadata$sampleid <- gsub("-",".",metadata$sampleid)
-readr::write_delim(metadata,here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim = "\t")
-
+metadata<- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim = "\t")
 metadata$Sequencing_Run <- factor(metadata$Sequencing_Run)
 
 

@@ -198,9 +198,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9a395644ca672166",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Donors Beta Diversity.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "25711867615e1717",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2.1.24 Important next things.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 15
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
@@ -266,7 +290,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Donors Alpha Diversity LMEM Stats.md",
+                "file": "2.1.24 Important next things.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -292,12 +316,18 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "da068fdefbc815dd",
+  "active": "25711867615e1717",
   "lastOpenFiles": [
+    "Donors Beta Diversity.md",
+    "2.1.24 Important next things.md",
     "Donors Alpha Diversity LMEM Stats.md",
+    "2024 UCLA V SPF.md",
+    "Humanized AlphaDiv LMEM stats.md",
+    "Regional BetaDiv Adonis Stats.md",
+    "Humanized Betadiv Adonis Stats.md",
+    "CS_Facility Betadiv Adonis Stats.md",
     "Analysis of Donors file.md",
     "2024 UCLA Command Line.md",
-    "2024 UCLA V SPF.md",
     "2024 Colonized Command Line.md",
     "2024 CS Facility taxonomy reassignment.md",
     "2024 Shotgun Results.md",
