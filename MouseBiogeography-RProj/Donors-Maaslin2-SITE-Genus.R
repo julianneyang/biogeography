@@ -132,7 +132,7 @@ df <- df %>%
                              ifelse(Family!=" (f)", Family, Order)))
 
 readr::write_csv(df,here("Donors-Analysis/differential_genera_site/Genus_Luminal_taxonomy.csv"))
-readr::write_rds(df, here("Donors-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.RDS"))
+readr::write_csv(df, here("Donors-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
 
 luminal<-readr::read_delim(here("Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"), delim="\t")
 luminal<-readr::read_delim(here("Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"), delim="\t")

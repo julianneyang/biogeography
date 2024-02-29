@@ -12,14 +12,17 @@ library(here)
 library(dplyr)
 library(plyr)
 library(gplots)
+library(dendextend) 
 
 here::i_am("MouseBiogeography-RProj/Regional-Site-Heatmap-Genus.R")
 
-###for SITE:DC vs all data
-#Feed in the significant results and generate a target vector with the union of all features 
-filepath <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/"
-luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")), delim="\t")
-luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")), delim="\t")
+## Function to clean up the script --
+generate_matrix_for_heatmap_clustering <- function(path_to_significant_results,
+                                                   path_to_annotation_file,
+                                                   path_to_all_results){
+  
+## First, find all the features that are significant in at least one comparison --
+luminal<-readr::read_delim(here({{path_to_significant_results}}), delim="\t")
 
 luminal <- as.data.frame(luminal)
 
@@ -40,37 +43,34 @@ joincd<- union(c,d)
 joinef<- union(e,f)
 joinabcd <- union(joinab,joincd)
 target<-union(joinabcd,joinef)
+print(unique(target))
 
-## Grab the Genera names for the venn diagram ---
-regionalgenera<-target
-regionalgenera <- gsub("X", "", regionalgenera)
-regionalgenera<-as.data.frame(regionalgenera)
-regionalgenera$feature <- regionalgenera[,1]
+## Second, Match target taxa to cleaned names in annotation file ---
+
 
 #Lum
-annotation <- readr::read_delim(here(paste0(filepath,"Genus_Luminal_taxonomy.csv")))
+annotation <- readr::read_delim(here(path_to_annotation_file))
 
-#Muc
-annotation <- readr::read_delim(here(paste0(filepath,"Genus_Mucosal_taxonomy.csv")))
-
+regionalgenera<-target
+#regionalgenera <- gsub("X", "", regionalgenera)
+regionalgenera<-as.data.frame(regionalgenera)
+regionalgenera$feature <- regionalgenera[,1]
 tempdf<-merge(regionalgenera,annotation, by= "feature")
-regionalgenera<-as.data.frame(tempdf$Genus)
-regionalgenera <- regionalgenera$`tempdf$Genus`
-unique(regionalgenera)
+regionalgenera<-as.data.frame(tempdf$annotation)
+regionalgenera <- regionalgenera$`tempdf$annotation`
+print(unique(regionalgenera))
 here()
-readr::write_rds(regionalgenera, file=here(paste0(filepath,"regionalluminalgenera.RDS")))
-here()
-readr::write_rds(regionalgenera, file=here(paste0(filepath,"regionalmucosalgenera.RDS")))
+#readr::write_rds(regionalgenera, file=here(paste0(filepath,"regionalluminalgenera.RDS")))
 
 ## Query the target vector against all_results.tsv ---
-luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")), delim="\t")
-luminal<-readr::read_delim(here(paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")), delim="\t")
+luminal<-readr::read_delim(here({{path_to_all_results}}), delim="\t")
 #luminal<-read.table("L6-DuodvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
 #luminal<-read.table("L6-DuodvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv", header=TRUE)
 
 luminal_all<-filter(luminal, metadata=="Site")
 #length(luminal_all$value[luminal_all$value=="Duodenum"])
 data<-luminal_all[luminal_all$feature %in% target, ]
+
 
 length(target)
 #make an empty dataframe to store the reference variable 
@@ -86,13 +86,12 @@ y <- data.frame(matrix(NA,nrow=length(target),ncol=9))
 
 site_heatmap<-rbind(data,y)
 
-site_heatmap$feature <- gsub("X","",as.character(site_heatmap$feature))
+#site_heatmap$feature <- gsub("X","",as.character(site_heatmap$feature))
 #write.csv(site_heatmap,"SITE Genus Heatmap.csv")
 
-#construct the heatmap using ggplot
+## Third, wrangle the dataframe into something that can be used for heatma
 library(viridis)
-annotation <- readr::read_delim(here(paste0(filepath,"Genus_Luminal_taxonomy.csv")))
-annotation <- readr::read_delim(here(paste0(filepath,"Genus_Mucosal_taxonomy.csv")))
+annotation <- readr::read_delim(here({{path_to_annotation_file}}))
 
 annotation$Phylum <- gsub(".*\\.p__", "", annotation$feature)
 annotation$Phylum <- gsub("\\.c__.*", "", annotation$Phylum)
@@ -120,50 +119,26 @@ y = tapply(data$coef_d, data$Genus, function(y) mean(y))  # orders the genera by
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
 
 data$Genus= factor(as.character(data$Genus), levels = names(y))
-data$value = revalue(data$value, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
-data$value = factor(data$value, levels=c("Duo", "Jej", "Ile", "Cec", "PC", "DC"))
+data$value = revalue(data$value, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="C","Ileum"="I", "Jejunum"="J", "Duodenum"= "D"))
+data$value = factor(data$value, levels=c("D", "J", "I", "C", "PC", "DC"))
 ggplot_data <- unique(data)
 ggplot_data$Phylum_Genus<-paste(ggplot_data$Phylum,ggplot_data$annotation,sep=" : ")
 
 
 #construct heatmap using heatmap2 with dendrogram
-?pivot_wider
 data_long<-pivot_wider(ggplot_data, id_cols=Phylum_Genus, names_from = value, values_from =coef_d)
 data_long_final<-data_long[,-1]
-data_long_final<-select(data_long_final,Duo,Jej, Ile,Cec,PC,DC)
+data_long_final<-select(data_long_final,D,J, I,C,PC,DC)
 row.names(data_long_final)= data_long$Phylum_Genus
 matrix.data<- as.matrix.data.frame(data_long_final)
 
-#construct heatmap using heatmap2 with hierarchical clustering
-library(dendextend) #Creating a color palette & color breaks
 
-coul=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
-matrix.data
-distance= dist(matrix.data, method ="euclidean")  
-hcluster = hclust(distance, method ="ward.D")
-
-# Luminal Cluster Colors
-cols_branches <- c("purple", "forestgreen", "royalblue", "firebrick") # Set the colors of branches
-# Mucosal Cluster Colors
-cols_branches <- c("firebrick", "royalblue", "forestgreen", "purple") # Set the colors of branches
-
-
-dend1<-as.dendrogram(hcluster)
-dend1 <- color_branches(dend1, k = 4, col = cols_branches)  
-
-
-col_labels <- cols_branches[cutree(dend1, k = 4)] # sync with num clusters
-col_labels <- get_leaves_branches_col(dend1)
-col_labels <- col_labels[order(order.dendrogram(dend1))]
-
-# dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
-nrow(matrix.data)
+#add asterisks for qval <0.05
 
 data_long_qval<-pivot_wider(ggplot_data, id_cols=annotation, names_from = value, values_from =qval)
 data_long_qval<-data_long_qval[,-1]
 
-data_long_qval <- select(data_long_qval,c("Duo","Ile", "Jej","Cec","PC","DC"))
+data_long_qval <- select(data_long_qval,c("D","I", "J","C","PC","DC"))
 
 for(i in 1:ncol(data_long_qval)){       # for-loop over columns
   v<-data_long_qval %>% pull(i)
@@ -197,7 +172,41 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-#row.names(matrix.data) <- c()
+
+newList <- list("matrix" = matrix.data, "dataframe" = ggplot_data,
+                "asterisks"=asterisk_matrix)
+return(newList)
+}
+
+
+## UCLA O. SPF Luminal --
+filepath <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/"
+path_to_significant_results <- paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")
+path_to_annotation_file <- paste0(filepath,"Genus_Luminal_taxonomy.csv")
+path_to_all_results <- paste0(filepath,"L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")
+
+coul=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+results <- generate_matrix_for_heatmap_clustering(path_to_significant_results = path_to_significant_results,
+                                                      path_to_annotation_file = path_to_annotation_file,
+                                                      path_to_all_results = path_to_all_results)
+matrix.data <- results$matrix
+distance= dist(matrix.data, method ="euclidean")  
+hcluster = hclust(distance, method ="ward.D")
+
+cols_branches <- c("purple", "royalblue", "forestgreen", "firebrick") # Set the colors of branches
+
+
+dend1<-as.dendrogram(hcluster)
+dend1 <- color_branches(dend1, k = 4, col = cols_branches)  
+
+
+col_labels <- cols_branches[cutree(dend1, k = 4)] # sync with num clusters
+col_labels <- get_leaves_branches_col(dend1)
+col_labels <- col_labels[order(order.dendrogram(dend1))]
+
+# dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
+
 dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
@@ -215,9 +224,61 @@ heatmap.2(matrix.data,
           col=coul,
           keysize=0.5,
           RowSideColors = col_labels,
-          cellnote=asterisk_matrix,
+          cellnote=results$asterisks,
           notecol="black",
-          labCol = c("Duo", "Jej","Ile","Cec","PC","DC"),
+          labCol = c("D", "J","I","C","PC","DC"),
           colRow=col_labels,
           srtCol=0)
-?heatmap.2
+
+
+## UCLA O. SPF Mucosal --
+filepath <- "Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/"
+path_to_significant_results <- paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")
+path_to_annotation_file <- paste0(filepath,"Genus_Mucosal_taxonomy.csv")
+path_to_all_results <- paste0(filepath,"L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")
+
+coul=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+results <- generate_matrix_for_heatmap_clustering(path_to_significant_results = path_to_significant_results,
+                                                  path_to_annotation_file = path_to_annotation_file,
+                                                  path_to_all_results = path_to_all_results)
+matrix.data <- results$matrix
+distance= dist(matrix.data, method ="euclidean")  
+hcluster = hclust(distance, method ="ward.D")
+
+cols_branches <- c("firebrick", "royalblue", "forestgreen", "purple") # Set the colors of branches
+
+
+dend1<-as.dendrogram(hcluster)
+dend1 <- color_branches(dend1, k = 4, col = cols_branches)  
+
+
+col_labels <- cols_branches[cutree(dend1, k = 4)] # sync with num clusters
+col_labels <- get_leaves_branches_col(dend1)
+col_labels <- col_labels[order(order.dendrogram(dend1))]
+
+# dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
+
+dev.new(width=15, height=10)
+heatmap.2(matrix.data,
+          Colv= FALSE,
+          breaks=bk,
+          Rowv = as.dendrogram(hcluster),
+          symkey=FALSE,
+          dendrogram="none",
+          scale="none",
+          key.xlab="coef",
+          density.info="none",
+          trace="none",
+          cexCol = 1,
+          cexRow = 1,
+          margins=c(5,25),
+          col=coul,
+          keysize=0.5,
+          RowSideColors = col_labels,
+          cellnote=results$asterisks,
+          notecol="black",
+          labCol = c("D", "J","I","C","PC","DC"),
+          colRow=col_labels,
+          srtCol=0)
+

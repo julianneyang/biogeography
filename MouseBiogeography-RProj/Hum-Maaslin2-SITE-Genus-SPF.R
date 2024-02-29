@@ -112,11 +112,11 @@ df <- df %>%
   mutate(annotation = ifelse(Genus!="", Genus,
                              ifelse(Family!=" (f)", Family, Order)))
 
-readr::write_csv(df,here("Humanized-Biogeography-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
+readr::write_csv(df,here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_Genus_Mucosal_taxonomy.csv"))
 
 
 
-annotation <- readr::read_csv(here("Humanized-Biogeography-Analysis/differential_genera_site/Genus_Mucosal_taxonomy.csv"))
+annotation <- readr::read_csv(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_Genus_Mucosal_taxonomy.csv"))
 
 # Query target vectir against all results 
 luminal<-readr::read_delim(here("Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"))

@@ -63,16 +63,28 @@ cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DF
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # UCLA O SPF 
-lumtarget <- find_concordant_features_across_sites("Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_SeqRunLineSexSite-1-MsID/significant_results.tsv")
-print(lumtarget)
 
-cols=c("#440154FF", "#FDE725FF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
-
-ucla_o_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
+result <- generate_interregional_taxa_barplot_SITE(
                                          path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
                                         titlestring="UCLA O. SPF",
                                         colorvector = cols)
+
+df <- result$dataframe 
+phylum_names <- df$Phylum
+
+select_cols <- paletteer::paletteer_d("basetheme::royal",6)
+seecolor::print_color(select_cols)
+names(select_cols) <- unique(phylum_names)
+phylum_colors <- select_cols
+names(select_cols)
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+ucla_o_shotgun_species <- result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))+
+  theme(legend.position = "right")
 dev.new(width=10,height=10)
 ucla_o_shotgun_species
 
@@ -123,16 +135,22 @@ fit_data = Maaslin2(input_data=CS_SPF_ASV,
 ## Barplots --
 
 # CS SPF 
-lumtarget <- find_concordant_features_across_sites("Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
-print(lumtarget)
 
-cs_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
-                                                                   path_to_significant_results_tsv = "Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
-                                                                   titlestring="CS SPF",
-                                                                   colorvector = cols)
+cs_result <- generate_interregional_taxa_barplot_SITE(path_to_significant_results_tsv = "Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                      titlestring="CS SPF",
+                                                      colorvector = cols)
+
+df <- cs_result$dataframe 
+phylum_names <- df$Phylum
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+cs_shotgun_species <- cs_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
 dev.new(width=10,height=10)
 cs_shotgun_species
-
 
 ### Select SPF Gavage ---
 
@@ -183,15 +201,21 @@ cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DF
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # SPF Gavage
-lumtarget <- find_concordant_features_across_sites("Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
-print(lumtarget)
-
-spf_gavage_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
-                                                               path_to_significant_results_tsv = "Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+spf_result <- generate_interregional_taxa_barplot_SITE(path_to_significant_results_tsv = "Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
                                                                titlestring="SPF Gavage",
                                                                colorvector = cols)
+   
+df <- spf_result$dataframe 
+phylum_names <- df$Phylum
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+spf_shotgun_species <- spf_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
 dev.new(width=10,height=10)
-spf_gavage_shotgun_species
+spf_shotgun_species
 
 ### Select Hum Gavage ---
 
@@ -236,18 +260,20 @@ fit_data = Maaslin2(input_data=HUM_Gavage_ASV,
                     reference= c('Site,Distal_Colon'),
                     plot_heatmap = FALSE,plot_scatter = FALSE)
 ?Maaslin2
-## Heatmap ---
 
-cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
-
-# HUM Gavage
-lumtarget <- find_concordant_features_across_sites("Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv")
-print(lumtarget)
-
-hum_gavage_shotgun_species <- generate_interregional_taxa_barplot_SITE(significant_taxa = lumtarget,
-                                                                       path_to_significant_results_tsv = "Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+## HUM Gavage --
+hum_result <- generate_interregional_taxa_barplot_SITE(path_to_significant_results_tsv = "Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
                                                                        titlestring="HUM Gavage",
                                                                        colorvector = cols)
+
+df <- hum_result$dataframe 
+phylum_names <- df$Phylum
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+hum_shotgun_species <- hum_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
 dev.new(width=10,height=10)
-hum_gavage_shotgun_species
+hum_shotgun_species

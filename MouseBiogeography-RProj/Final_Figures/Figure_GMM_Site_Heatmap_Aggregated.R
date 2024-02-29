@@ -5,16 +5,20 @@
 ###### whining ends here ---
 
 library(ggplot2)
-library(vegan)
 library(dplyr)
 library(rlang)
 library(cowplot)
 library(viridis)
-library(Microbiome.Biogeography)
 library(plyr)
 library(gridExtra)
 
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
+#Replace with filepath to package Microbiome.Biogeography
+setwd("/home/julianne/Documents/microbiome.biogeography/")
+devtools::document()
+library("Microbiome.Biogeography")
+setwd("/home/julianne/Documents/biogeography/")
+
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GMM_Site_Heatmap_Aggregated.R")
 
 ### HUM V Gavage ---
 donors_filepath <- "Donors-Analysis/differential_GMM_site/"
@@ -22,8 +26,8 @@ lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-C
 
 muctarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
 
-cols=c("#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
-bk =c(-1.5, -1, -0.5, 0, 0.5, 1)
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
                                                 lumtarget,
                                                 "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
@@ -33,9 +37,13 @@ hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-Colon
                                                 cols,
                                                 bk) +
   theme_cowplot(20) +
-  ggtitle("HUM V. Gavage Luminal") + 
+  ggtitle("HUM V. Gavage Lum") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
+
+cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF")
+bk =c( -1, -0.5, 0, 0.5)
 
 hum_v_map_muc <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
                                                muctarget,
@@ -46,23 +54,12 @@ hum_v_map_muc <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-Colon
                                                cols,
                                                bk) +
   theme_cowplot(20) +
-  ggtitle("HUM V. Gavage Mucosal") + 
+  ggtitle("HUM V. Gavage Muc") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
-lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv"))
-hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"),
-                                               lumtarget,
-                                               "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
-                                               Y=Map,
-                                               "Map",
-                                               "Luminal",
-                                               cols,
-                                               bk) +
-  theme_cowplot(20) +
-  ggtitle("HUM V. Gavage Luminal") + 
-  theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none")
+
 
 ### UCLA. O. SPF ---
 lumtarget <- find_concordant_features_across_sites("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")
@@ -80,9 +77,10 @@ ucla_o_map_lum <- generate_GMM_heat_map_by_site("Regional-Mouse-Biogeography-Ana
                                      cols,
                                      bk) +
   theme_cowplot(20) +
-                  ggtitle("UCLA O. SPF Luminal") + 
+                  ggtitle("UCLA O. SPF Lum") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-                  theme(legend.position = "none")
+                  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
@@ -96,9 +94,10 @@ ucla_o_map_muc <- generate_GMM_heat_map_by_site("Regional-Mouse-Biogeography-Ana
                                      cols,
                                      bk) +
   theme_cowplot(20)+
-                  ggtitle("UCLA O. SPF Mucosal") + 
+                  ggtitle("UCLA O. SPF Muc") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-                  theme(legend.position = "none")
+                  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 
 ### CS SPF ---
@@ -121,10 +120,10 @@ cs_muc_GMM_map <- generate_GMM_heat_map_by_site("CS-Facility-Analysis/OMIXER-RPM
                                              bk) +
   
   theme_cowplot(20) +
-                  ggtitle("CS SPF Mucosal") + 
+                  ggtitle("CS SPF Muc") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-                  theme(legend.position = "none") 
-cs_muc_GMM_map
+                  theme(legend.position = "none") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5)
@@ -137,11 +136,11 @@ cs_lum_GMM_map <- generate_GMM_heat_map_by_site("CS-Facility-Analysis/OMIXER-RPM
                                              cols,
                                              bk) +
   theme_cowplot(20) +
-                  ggtitle("CS SPF Luminal") + 
+                  ggtitle("CS SPF Lum") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-                  theme(legend.position = "none")
+                  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
-cs_lum_GMM_map
 
 ### HUM Gavage ---
 
@@ -163,9 +162,10 @@ hum_lum_GMM_map <- generate_GMM_heat_map_by_site("Humanized-Biogeography-Analysi
                                      cols,
                                      bk) +
   theme_cowplot(20) +
-  ggtitle("HUM Gavage Luminal") + 
+  ggtitle("HUM Gavage Lum") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
  
 
 
@@ -182,9 +182,10 @@ hum_muc_GMM_map<- generate_GMM_heat_map_by_site("Humanized-Biogeography-Analysis
                                     cols,
                                     bk) +
   theme_cowplot(20) +
-  ggtitle("HUM Gavage Mucosal") + 
+  ggtitle("HUM Gavage Muc") + 
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 hum_muc_GMM_map
 
@@ -199,47 +200,50 @@ spf_muc_GMM_map<- generate_GMM_heat_map_by_site("Humanized-Biogeography-Analysis
                                     "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                     Y=Map,
                                     "Map",
-                                    "SPF Gavage Mucosal",
+                                    "SPF Gavage Muc",
                                     cols,
                                     bk)+
   theme_cowplot(20) +
-  ggtitle("SPF Gavage Mucosal") +
+  ggtitle("SPF Gavage Muc") +
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 fig6h <- plot_grid(NULL,spf_muc_GMM_map, ncol=1)
 
 ### UCLA V. SPF ---
-muctarget <- find_concordant_features_across_sites("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
+muctarget <- find_concordant_features_across_sites("UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
 
 ### Query the target vector against all_results.tsv ---
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
-ucla_v_muc_GMM_map <- generate_GMM_heat_map_by_site("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+ucla_v_muc_GMM_map <- generate_GMM_heat_map_by_site("UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                                              targetvector = muctarget, 
                                              path_to_Module_Key = "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                              Y=Map,
                                              ystring= "Map",
-                                             titlestring="UCLA V. SPF Mucosal",
+                                             titlestring="UCLA V. SPF Muc",
                                              colorvector = cols,
                                              breakvector = bk) +
   theme_cowplot(20) +
-  ggtitle("UCLA V. SPF Mucosal") +
+  ggtitle("UCLA V. SPF Muc") +
   theme(plot.title = element_text(hjust = 0.5)) +
-  theme(legend.position = "none") 
+  theme(legend.position = "none") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
-thelegend <- generate_GMM_heat_map_by_site("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+thelegend <- generate_GMM_heat_map_by_site("UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                                            targetvector = muctarget, 
                                            path_to_Module_Key = "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                            Y=Map,
                                            ystring= "Map",
-                                           titlestring="UCLA V. SPF Mucosal",
+                                           titlestring="UCLA V. SPF Muc",
                                            colorvector = cols,
                                            breakvector = bk) +
   theme_cowplot(16) +
-  ggtitle("UCLA V. SPF Mucosal") +
-  theme(legend.position = "top") 
+  ggtitle("UCLA V. SPF Muc") +
+  theme(legend.position = "top") +
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
 legend <- cowplot::get_legend(thelegend)
 grid::grid.newpage()
@@ -247,6 +251,11 @@ grid::grid.draw(legend)
 
 ### Assemble Figure 6 ---
 
-plot_grid(ucla_o_map_lum, cs_lum_GMM_map, hum_lum_GMM_map, nrow=1, labels= c("A", "B", "F"), label_size = 20)
-plot_grid(ucla_o_map_muc, cs_muc_GMM_map, hum_muc_GMM_map, nrow=1, labels= c("C", "D", "G"), label_size = 20)
-plot_grid(ucla_v_muc_GMM_map, NULL, fig6h, nrow=1, labels = c("E", "", "H"), label_size = 20)
+dev.new(width=10,height=10)
+plot_grid(ucla_o_map_lum, cs_lum_GMM_map, hum_lum_GMM_map, nrow=1, labels= c("A", "B", "F"), label_size = 20,greedy = FALSE)
+dev.new(width=10,height=10)
+plot_grid(ucla_o_map_muc, cs_muc_GMM_map, hum_v_map_lum, nrow=1, labels= c("C", "D", "G"), label_size = 20)
+dev.new(width=10,height=10)
+plot_grid(ucla_v_muc_GMM_map, hum_muc_GMM_map, hum_v_map_muc, nrow=1, labels = c("H", "I", "J"), label_size = 20)
+dev.new(width=10,height=10)
+plot_grid(spf_muc_GMM_map, NULL, NULL, nrow=1, labels = c("K", "", "L"), label_size = 20)

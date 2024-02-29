@@ -1,0 +1,17 @@
+Num samples: 2
+Num observations: 104
+Total count: 39,444,913
+Table density (fraction of non-zero values): 0.894
+
+Counts/sample summary:
+ Min: 5,348,116.000
+ Max: 34,096,797.000
+ Median: 19,722,456.500
+ Mean: 19,722,456.500
+ Std. dev.: 14,374,340.500
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+Jejunum: 5,348,116.000
+Distal_Colon: 34,096,797.000

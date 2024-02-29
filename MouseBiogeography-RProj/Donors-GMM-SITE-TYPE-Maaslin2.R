@@ -9,6 +9,14 @@ names(df_input_data)<-gsub("X","",names(df_input_data))
 input_metadata <-read.delim(here("Donors-Analysis/starting_files/Donors_Metadata.tsv"),header=TRUE, row.names=1) #mapping file
 row.names(input_metadata)
 row.names(input_metadata)<-gsub("-",".",row.names(input_metadata))
+input_metadata$SampleID <- row.names(input_metadata)
+
+samples<- input_metadata %>%
+  filter(SampleID %in% names(df_input_data)) %>%
+  filter(Donor_ID!= "A072") %>%
+  pull(SampleID)
+
+df_input_data <- df_input_data[,samples]
 
 target <- colnames(df_input_data)
 input_metadata = input_metadata[match(target, row.names(input_metadata)),]
@@ -79,14 +87,6 @@ fit_data = Maaslin2(input_data=lum_input_data,
                     random_effects = c("MouseID", "Donor_ID"),
                     reference=c("Sequencing_Run,Jan_2017","Site,Distal_Colon"),
                     normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
-df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
-fit_data = Maaslin2(input_data=lum_input_data, 
-                    input_metadata=df_input_metadata, 
-                    output = paste0(filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID"), 
-                    fixed_effects = c("Sequencing_Run","Sex", "Site"), 
-                    random_effects = c("MouseID"),
-                    reference=c("Sequencing_Run,Jan_2017","Site,Distal_Colon"),
-                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Mucosal
 target <- colnames(muc_input_data)
@@ -101,6 +101,7 @@ fit_data = Maaslin2(input_data=muc_input_data,
                     random_effects = c("MouseID", "Donor_ID"),
                     reference=c("Sequencing_Run,Jan_2017","Site_General,Colon"),
                     normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+
 df_input_metadata$Site <- factor(df_input_metadata$Site, levels=c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
 fit_data = Maaslin2(input_data=muc_input_data, 
                     input_metadata=df_input_metadata, 
