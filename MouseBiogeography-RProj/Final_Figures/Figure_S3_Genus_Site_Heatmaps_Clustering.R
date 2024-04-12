@@ -16,6 +16,41 @@ setwd("/home/julianne/Documents/biogeography/")
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_4_Genus_Site_Heatmaps_Clustering.R")
 
+### Upset Plot ---
+
+file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+                "CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
+                "UCLA_V_SPF_Analysis/differential_genera_site/L6-DCvsAll-CLR-Muc-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
+
+cohort_prefixes <- c("UCLA_O_SPF_Mucosal",
+                     "CS_SPF_Mucosal",
+                     "HUM_V_Gavage_Mucosal",
+                     "UCLA_V_SPF_Mucosal",
+                     "HUM_Gavage_Mucosal",
+                     "SPF_Gavage_Mucosal")
+
+all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
+                                           cohort_prefixes = cohort_prefixes)
+
+all_taxa <- all_taxa %>% select(c("feature", "Cohort")) %>% unique()
+
+df_long <- all_taxa %>% 
+  mutate(value = 1)
+
+df_wide <- df_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+df_wide <- as.data.frame(df_wide)
+all_datasets <- names(df_wide)[-1]
+taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
+                                  base_annotations=list(
+                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
+                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
+  theme_cowplot(12)
+
 
 ### Heatmap ---
 

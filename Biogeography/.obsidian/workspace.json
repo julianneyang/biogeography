@@ -222,9 +222,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "50970111132ebe4d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
         ],
-        "currentTab": 17
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -290,7 +300,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Analysis of Donors file.md",
+                "file": "Finding elements which do not overlap between character vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -316,8 +326,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "25711867615e1717",
+  "active": "93a2bf26d5472f2f",
   "lastOpenFiles": [
+    "Untitled",
     "2024 Colonized Command Line.md",
     "2024 CS Facility taxonomy reassignment.md",
     "2024 UCLA Command Line.md",

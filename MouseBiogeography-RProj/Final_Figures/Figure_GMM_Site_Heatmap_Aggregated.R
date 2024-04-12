@@ -20,6 +20,95 @@ setwd("/home/julianne/Documents/biogeography/")
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GMM_Site_Heatmap_Aggregated.R")
 
+### Upset Plot ---
+
+file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+                "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+                "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
+                "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
+                "UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
+
+cohort_prefixes <- c("UCLA_O_SPF","UCLA_O_SPF",
+                     "CS_SPF","CS_SPF",
+                     "HUM_V_Gavage","HUM_V_Gavage",
+                     "UCLA_V_SPF",
+                     "HUM_Gavage","HUM_Gavage",
+                     "SPF_Gavage", "SPF_Gavage")
+
+all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
+                                           cohort_prefixes = cohort_prefixes)
+
+module_key <- read.csv(here("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv"))
+anno <- module_key %>% select(c("feature", "annotation"))
+all_taxa <- merge(all_taxa, anno, by="feature")
+all_taxa <- all_taxa %>% select(c("feature", "Cohort","annotation")) %>% unique()
+
+df_long <- all_taxa %>% 
+  mutate(value = 1)
+
+df_wide <- df_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+df_wide <- as.data.frame(df_wide)
+all_datasets <- names(df_wide)[-(1:2)]
+taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
+                                  base_annotations=list(
+                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
+                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
+  theme_cowplot(12)
+
+print(paletteer::paletteer_packages, n=100)
+cols1 <- paletteer_d("basetheme::brutal",n=10)
+cols2 <- paletteer_d("basetheme::dark",n=10)
+cols3 <- paletteer_d("basetheme::clean",n=10)
+cols4 <- paletteer_d("basetheme::minimal",n=10)
+cols5 <- paletteer_d("basetheme::ink",n=10)
+cols6 <- paletteer_d("basetheme::royal", n=10)
+cols7 <- paletteer_d("basetheme::void", n=10)
+cols9 <- paletteer_d("calecopal::sierra1", n=5)
+cols10 <- paletteer_d("colorBlindness::ModifiedSpectralScheme11Steps", n=11)
+cols11 <- paletteer_d("dichromat::BluetoOrange_12", n=12)
+cols8 <- paletteer_d("dichromat::BluetoDarkOrange_18", n=18)
+fill_color <- c(cols1,cols2,cols3, cols4,cols5,cols6,cols7,cols8,cols9,cols10,cols11)
+fill_color <- unique(fill_color)
+ComplexUpset::upset(df_wide,
+                    all_datasets, width_ratio = 0.1,
+                    annotations = list(
+                      'Metabolic'=(
+                        ggplot(mapping=aes(fill=annotation))
+                        + geom_bar(stat='count', position='fill')
+                        + scale_y_continuous(labels=scales::percent_format())
+                        + scale_fill_manual(values=fill_color)
+                        + ylab('Features')
+                        + theme(legend.position="none")
+                      )
+                    )) 
+
+forthelegend<-ComplexUpset::upset(df_wide,
+                                   all_datasets, width_ratio = 0.1,
+                                   annotations = list(
+                                     'Metabolic'=(
+                                       ggplot(mapping=aes(fill=annotation))
+                                       + geom_bar(stat='count', position='fill')
+                                       + scale_y_continuous(labels=scales::percent_format())
+                                       + scale_fill_manual(values=fill_color)
+                                       + ylab('Features')
+                                       + theme(legend.position="right")
+                                     )
+                                   )) 
+
+legend <- cowplot::get_legend(forthelegend)
+grid.newpage()
+dev.new(width=20, height=5)
+grid.draw(legend)
+                    
+ 
 ### HUM V Gavage ---
 donors_filepath <- "Donors-Analysis/differential_GMM_site/"
 lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
@@ -42,8 +131,9 @@ hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-Colon
   theme(legend.position = "none")+
   theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
-cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF")
-bk =c( -1, -0.5, 0, 0.5)
+cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
+bk =c(-1, -0.5, 0, 0.5, 1, 1.5)
+
 
 hum_v_map_muc <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
                                                muctarget,

@@ -1,6 +1,8 @@
 library(gplots)
 library(dendextend) 
 library(here)
+library(ComplexUpset)
+library(UpSetR)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -10,6 +12,66 @@ setwd("/home/julianne/Documents/biogeography/")
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_4_Genus_Site_Heatmaps_Clustering.R")
 
+### Functions ---
+process_results_for_upset_plot <- function(file_paths, cohort_prefixes) {
+  data_all <- NULL
+  
+  for (i in seq_along(file_paths)) {
+    file_path <- file_paths[i]
+    cohort_prefix <- cohort_prefixes[i]
+    
+    # Read the results file
+    results <- read.table(here(file_path), header = TRUE)
+    
+    # Filter the results for the specified feature
+    data <- filter(results, metadata == "Site" & qval<0.05)
+    
+    # Add a cohort variable
+    cohort <- paste0(cohort_prefix)
+    data <- data %>% mutate(Cohort = cohort)
+    
+    # Append to the combined data frame
+    if (is.null(data_all)) {
+      data_all <- data
+    } else {
+      data_all <- rbind(data_all, data)
+    }
+  }
+  
+  return(data_all)
+}
+### UpSet Plot --
+
+file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+                "CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
+                "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
+
+cohort_prefixes <- c("UCLA_O_SPF_Luminal",
+                     "CS_SPF_Luminal",
+                     "HUM_V_Gavage_Luminal",
+                     "HUM_Gavage_Luminal")
+
+all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
+                                                      cohort_prefixes = cohort_prefixes)
+
+all_taxa <- all_taxa %>% select(c("feature", "Cohort")) %>% unique()
+
+df_long <- all_taxa %>% 
+  mutate(value = 1)
+
+df_wide <- df_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+df_wide <- as.data.frame(df_wide)
+df_wide <- df_wide %>% mutate(SPF_Gavage_Luminal = 0)
+all_datasets <- names(df_wide)[-1]
+taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
+                                  base_annotations=list(
+  'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
+      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
+    theme_cowplot(12)
+UpSetR::upset(df_wide, sets= all_datasets,main.bar.color = "skyblue", order.by = "freq")
 
 ### Heatmap ---
 
