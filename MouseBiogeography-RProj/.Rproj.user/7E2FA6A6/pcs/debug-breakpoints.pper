@@ -90,6 +90,36 @@
                 "type": 1,
                 "is_package_breakpoint": false,
                 "package_name": ""
+            },
+            {
+                "id": 24,
+                "path": "~/Documents/biogeography/MouseBiogeography-RProj/Donors_Taxa_Barplots.R",
+                "line_number": 67,
+                "function_steps": "",
+                "function_name": "generate_L2_human_donor_taxa_barplot",
+                "state": 2,
+                "editor_state": 2,
+                "editor_line_number": 67,
+                "is_pending_debug_completion": false,
+                "needs_updated_steps": true,
+                "type": 0,
+                "is_package_breakpoint": false,
+                "package_name": ""
+            },
+            {
+                "id": 25,
+                "path": "~/Documents/biogeography/MouseBiogeography-RProj/Donors_Taxa_Barplots.R",
+                "line_number": 547,
+                "function_steps": "",
+                "function_name": "toplevel",
+                "state": 1,
+                "editor_state": 1,
+                "editor_line_number": 547,
+                "is_pending_debug_completion": false,
+                "needs_updated_steps": true,
+                "type": 1,
+                "is_package_breakpoint": false,
+                "package_name": ""
             }
         ]
     }

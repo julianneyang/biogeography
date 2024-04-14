@@ -1,16 +1,14 @@
-library(ggplot2)
-library(tidyr)
-library(viridis)
-library(cowplot)
+library(ggplot2) #yes
+library(cowplot) #yes
 library(plyr)
-library(dplyr)
-library(rlang)
-library(funrar)
+library(dplyr) #yes
+library(rlang) #yes
+library(funrar) #yes
 library(sjmisc)
 library(RColorBrewer)
 library(paletteer)
 library(readr)
-library(here)
+library(here) #yes
 library(Microbiome.Biogeography)
 library(devtools)
 
@@ -156,8 +154,8 @@ plot_grid(A017_L2_lum, A017_feces,
 ### Mouse Samples L6 plots ---
 
 generate_L6_taxa_plots_donors <- function(filepath, titlestring,greppattern, fillvector, graphby){
-  
-input_data <- readr::read_csv(here(filepath))
+#input_data <- read.csv(here("Donors-Analysis/taxa_barplots/plot_by_donor/A017_Lum_level-6.csv"))
+input_data <- read.csv(here(filepath))
 input_data<-as.data.frame(input_data)
 row.names(input_data) <- input_data[,1]
 input_data <- input_data[,-1]
@@ -184,6 +182,7 @@ for (i in 1:length(order)) {
 }
 
 order<-as.list(order)
+
 
 i=1
 for (i in 1:length(family)) {
@@ -231,7 +230,7 @@ input_data <- input_data[,!grepl("Chloroplast", colnames(input_data))]
 
 original_string <- filepath
 new_filepath<- sub("\\.csv$", ".RDS", original_string)
-
+print(new_filepath)
 readr::write_rds(input_data, here(new_filepath))
 #write_rds(input_data, "Donors-Analysis/Mucosal_level-6.RDS")
 
@@ -258,8 +257,8 @@ readr::write_rds(input_data, here(new_filepath))
   L2_lum$Value <- L2_lum$Value * 100
   
   if({{graphby}} == "Site"){
-    L2_lum$Site = revalue(L2_lum$Site, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
-    L2_lum$Site = factor(L2_lum$Site, levels=c("Duo", "Jej", "Ile", "Cec", "PC", "DC"))
+    L2_lum$Site = revalue(L2_lum$Site, c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="C","Ileum"="I", "Jejunum"="J", "Duodenum"= "D"))
+    L2_lum$Site = factor(L2_lum$Site, levels=c("D", "J", "I", "C", "PC", "DC"))
   }
   else if ({{graphby}}=="Type"){ 
     L2_lum$Site = revalue(L2_lum$Site, c("Luminal"="Lum", "Mucosal" = "Muc"))
@@ -287,14 +286,23 @@ readr::write_rds(input_data, here(new_filepath))
 
 genera_cols <- readr::read_rds(here("global_genera_cols.RDS"))
 
+
 ## Loop over each donor and make plot of taxa by donor --
+process_donor_data <- function(donor){
+  file_path <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.csv")
+  processed_data <- process_taxonomy_data(file_path)
+  readr::write_rds(processed_data, here(paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.RDS")))
+}
+
+lapply(donors, process_donor_data)
+
 generate_plots <- function(donor) {
-  input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.csv")
-  plot <- generate_L2_taxa_plots(input_data = input_file, 
+  input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.RDS")
+  plot <- generate_L6_taxa_plots(path_to_RDS = input_file, 
                                  titlestring = donor, 
                                  greppattern = ".*g__", 
                                  graphby = "Site",
-                                 fillvector = genera_cols) +
+                                 fillvector = new_genera_legend) +
     theme(plot.margin = margin(r = -2)) +
     theme_cowplot(8)+
     theme(plot.title = element_text(hjust = 0.5))+
@@ -313,85 +321,87 @@ for (donor in donors) {
 
 
 ### Human Feces L6 Plots ---
-generate_L6_human_feces_taxa_plots <- function(donor_id,filepath, titlestring,greppattern, fillvector, graphby){
-  #input_data <- readr::read_csv(here("Donors-Analysis/taxa_barplots/Hoomins_level-6.csv"))
+generate_L6_human_feces_taxa_plots <- function(donor,filepath, titlestring,greppattern, fillvector, graphby){
+ #input_data <- readr::read_csv(here("Donors-Analysis/taxa_barplots/Hoomins_level-6.csv"))
  
  input_data <- readr::read_csv(here(filepath))
- input_data <- input_data %>% filter(Donor_ID==donor_id)
+ input_data <- as.data.frame(input_data)
+ input_data <- input_data %>% filter(Donor_ID==donor)
+ input_data <- input_data[,-c(99:116)]
+
+ row.names(input_data)<- input_data[,1]
+ input_data <- input_data[,-1]
  
-  input_data<-as.data.frame(input_data)
-  row.names(input_data) <- input_data[,1]
-  input_data <- input_data[,-1]
-  
-  #input_data <- read.csv("../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A017_level-6.csv", header=TRUE,row.names=1)
-  taxa<-colnames(input_data)
-  colnames <- strsplit(taxa, ".o__")
-  
-  order=rlang::new_list(length(colnames(input_data)))
-  i=1
-  for (i in 1:length(colnames)) {
-    order[i] <- colnames[[i]][2]
-    i=i+1
-  }
-  
-  order<-unlist(order)
-  order <- strsplit(order, ".f__")
-  
-  family =rlang::new_list(length(colnames(input_data)))
-  i=1
-  for (i in 1:length(order)) {
-    family[i] <- order[[i]][2]
-    i=i+1
-  }
-  
-  order<-as.list(order)
-  
-  i=1
-  for (i in 1:length(family)) {
-    if (isFALSE(family[[i]]==".g__")) {
-      family[[i]] = family[[i]] 
-    }
-    else {
-      family[[i]] <- paste0(order[[i]]," (o)")   
-      family[[i]] <- family[[i]][1]
-    }
-    i=i+1
-  }
-  
-  
-  family<-unlist(family)
-  family <- strsplit(family, ".g__")
-  
-  genus =rlang::new_list(length(colnames(input_data)))
-  i=1
-  for (i in 1:length(family)) {
-    genus[i] <- family[[i]][2]
-    i=i+1
-  }
-  
-  family<-as.list(family)
-  
-  i=1
-  for (i in 1:length(genus)) {
-    if (isFALSE(genus[[i]]=="NA")) {
-      genus[[i]] = genus[[i]] 
-    }
-    else {
-      
-      genus[[i]] <- paste0(family[[i]]," (f)")   
-    }
-    i=i+1
-  }
-  
-  
-  colnames(input_data) <-as.character(genus)
-  
-  input_data <- input_data[,!grepl("Mitochondria", colnames(input_data))] 
-  input_data <- input_data[,!grepl("Chloroplast", colnames(input_data))] 
-  
+ 
+ taxa<-colnames(input_data)
+ taxa <- gsub(";",".",taxa)
+ colnames <- strsplit(taxa, ".o__")
+ 
+ order=new_list(length(colnames(input_data)))
+ i=1
+ for (i in 1:length(colnames)) {
+   order[i] <- colnames[[i]][2]
+   i=i+1
+ }
+ 
+ order<-unlist(order)
+ order <- strsplit(order, ".f__")
+ 
+ family =new_list(length(colnames(input_data)))
+ i=1
+ for (i in 1:length(order)) {
+   family[i] <- order[[i]][2]
+   i=i+1
+ }
+ 
+ order<-as.list(order)
+ 
+ i=1
+ for (i in 1:length(family)) {
+   if (isFALSE(family[[i]]==".g__")) {
+     family[[i]] = family[[i]] 
+   }
+   else {
+     family[[i]] <- paste0(order[[i]]," (o)")   
+     family[[i]] <- family[[i]][1]
+   }
+   i=i+1
+ }
+ 
+ 
+ family<-unlist(family)
+ family <- strsplit(family, ".g__")
+ 
+ genus =new_list(length(colnames(input_data)))
+ i=1
+ for (i in 1:length(family)) {
+   genus[i] <- family[[i]][2]
+   i=i+1
+ }
+ 
+ family<-as.list(family)
+ 
+ i=1
+ for (i in 1:length(genus)) {
+   if (isFALSE(genus[[i]]=="NA")) {
+     genus[[i]] = genus[[i]] 
+   }
+   else {
+     
+     genus[[i]] <- paste0(family[[i]]," (f)")   
+   }
+   i=i+1
+ }
+ 
+ 
+ colnames(input_data) <-as.character(genus)
+ 
+ input_data <- input_data[,!grepl("Mitochondria", colnames(input_data))] 
+ input_data <- input_data[,!grepl("Chloroplast", colnames(input_data))] 
+ 
   original_string <- filepath
-  new_filepath<- sub("\\.csv$", ".RDS", original_string)
-  
+  new_filepath<- sub("\\.csv$", "", original_string)
+  new_filepath <- paste0(new_filepath,donor,".RDS")
   readr::write_rds(input_data, here(new_filepath))
   #write_rds(input_data, "Donors-Analysis/Mucosal_level-6.RDS")
   
@@ -449,22 +459,19 @@ generate_L6_human_feces_taxa_plots <- function(donor_id,filepath, titlestring,gr
 
 
 # Access plots using list indexing
-generate_plots <- function(donor_ids) {
-  plots <- list()
-  for (donor_id in donor_ids) {
-    plots[[donor_id]] <-generate_L6_human_feces_taxa_plots(filepath = "Donors-Analysis/taxa_barplots/Hoomins_level-6.csv",
-                                                           titlestring = "Human Feces",
+plots=list()
+for(donor in human_donors){
+plots[[donor]]<- generate_L6_human_feces_taxa_plots(donor = donor,
+                                                   filepath = "Donors-Analysis/taxa_barplots/Hoomins_level-6.csv",
+                                                           titlestring = "Human",
                                                            greppattern = ".*g__", 
                                                            graphby="Site",
-                                                           fillvector = genera_cols,
-                                                           donor_id = donor_id)
-  }
-  return(plots)
+                                                           fillvector = new_genera_legend)
 }
+
 
 # Call the function to generate plots
 names(plots)
-plots <- generate_plots(donor_ids = human_donors)
 names(plots) <- paste(human_donors, "feces_L6", sep = "_")
 
 # Access plots using list indexing
@@ -501,7 +508,96 @@ plot_grid(A017_L6_lum, A017_feces_L6,
                          1, 0.25,
                          1,0.25))
 
-### Aggregated taxa barplots ---
+### Generate color legend ---
+labels_all <- list()
+for (donor_id in human_donors) {
+  # Generate file path for the RDS file
+  file_path <- paste0("Donors-Analysis/taxa_barplots/Hoomins_level-6", donor_id, ".RDS")
+  
+  # Get genera labels from the RDS file
+  labels <- get_genera_from_plot(file_path)
+  
+  # Store the labels in the list
+  labels_all[[donor_id]] <- labels
+}
+all_hum_labels <- unique(Reduce(union, labels_all))
+
+
+# Loop through each donor ID
+labels_all <- list()
+for (donor_id in human_donors) {
+  # Generate file path for the RDS file
+  file_path <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor_id, "_Lum_level-6.RDS")
+  
+  # Get genera labels from the RDS file
+  labels <- get_genera_from_plot(file_path)
+  
+  # Store the labels in the list
+  labels_all[[donor_id]] <- labels
+}
+
+# Combine labels from all donors
+all_mouse_labels <- unique(Reduce(union, labels_all))
+
+# combine labels from human and mice 
+donors_legend <- unique(union(all_hum_labels,all_mouse_labels))
+names(genera_cols)
+
+
+existingcols <- intersect(donors_legend,names(genera_cols))
+old_legend <- genera_cols[names(genera_cols) %in% existingcols]
+seecolor::print_color(old_legend,type="r")
+missingcols <- setdiff(donors_legend,names(genera_cols))
+
+cols1 <- paletteer_d("colorBlindness::Blue2DarkOrange18Steps", 18)
+cols2 <- paletteer_d("colorBlindness::Green2Magenta16Steps", 11)
+add_cols <- unique(c(cols1,cols2))
+names(add_cols) <- missingcols
+
+new_names <- union(names(old_legend),names(add_cols))
+new_genera_legend<- union(old_legend,add_cols)
+names(new_genera_legend)<- new_names
+
+readr::write_rds(new_genera_legend, here("Donors-Analysis/taxa_barplots/donors_genera_cols.RDS"))
+
+### Draw legend ---
+genera_cols <- readRDS("Donors-Analysis/taxa_barplots/donors_genera_cols.RDS")
+dummyplot<- as.data.frame(genera_cols)
+dummyplot$dummyy <- seq(1,51,1)
+dummyplot$dummyx <- seq(1,102,2)
+dummyplot$Genus <- row.names(dummyplot)
+L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values=new_genera_legend,name="Genus Legend")+
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(ncol=6, byrow=TRUE))+
+  theme_cowplot(12)+
+  theme(legend.spacing.y = unit(0.01, 'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(2, 11, 0, 0)) 
+legend <- cowplot::get_legend(L6_legend)
+grid.newpage()
+dev.new(width=20, height=5)
+grid.draw(legend)
+
+phyla_cols <- readRDS("global_phyla_cols.RDS")
+dummyplot<- as.data.frame(phyla_cols)
+dummyplot$dummyy <- seq(1,8,1)
+dummyplot$dummyx <- seq(1,16,2)
+dummyplot$Genus <- row.names(dummyplot)
+L2_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values=phyla_cols,name="Phylum Legend")+
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(nrow=4, byrow=TRUE))+
+  theme_cowplot(16)+
+  theme(legend.spacing.y = unit(1, 'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=3, linetype="solid"), legend.margin = margin(10, 10, 100, 1)) 
+legend <- cowplot::get_legend(L2_legend)
+grid.newpage()
+dev.new(width=20, height=5)
+grid.draw(legend)
+
+### Make Aggregated taxa barplots for main figure ---
 file_path <- "Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.RDS"))
