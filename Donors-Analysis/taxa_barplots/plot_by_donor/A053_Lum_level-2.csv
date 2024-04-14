@@ -1,0 +1,7 @@
+index,k__Bacteria;p__Firmicutes,k__Bacteria;p__Cyanobacteria,k__Bacteria;p__Bacteroidota,k__Bacteria;p__Proteobacteria,k__Bacteria;p__Actinobacteriota,k__Bacteria;p__Verrucomicrobiota
+Distal_Colon,3190.0,2.0,40493.0,35.0,2.0,3.0
+Proximal_Colon,3124.0,4.0,37740.0,37.0,0.0,3.0
+Cecum,3238.0,2.0,33331.0,7.0,1.0,4.0
+Ileum,6149.0,2507.0,26453.0,5256.0,8.0,3.0
+Jejunum,15728.0,6799.0,12515.0,4647.0,45.0,3.0
+Duodenum,18868.0,3244.0,10039.0,10786.0,37.0,6.0

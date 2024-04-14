@@ -18,72 +18,51 @@ library(devtools)
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
 library("Microbiome.Biogeography")
-
-
+setwd("/home/julianne/Documents/biogeography/")
 here::i_am("MouseBiogeography-RProj/Donors_Taxa_Barplots.R")
-phyla_cols <- readRDS("../Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/Taxa-Barplots/global_phyla_cols.RDS")
 
-mouse_samples = readr::read_csv(here("Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A017_level-2.csv"))
 
-A017_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A017_level-2.csv", 
-                                 titlestring = "A017", 
+## Get names of donors that I need to make plots for
+mouse_ASV <- read.delim(here("Donors-Analysis/starting_files/Donors-Mice-1xPrev0.15-ComBat-ASV.tsv"),row.names=1)
+names(mouse_ASV) <- gsub("X","",names(mouse_ASV))
+metadata <- read.delim(here("Donors-Analysis/starting_files/Donors_Metadata.tsv"))
+metadata$SampleID <- gsub("-",".",metadata$SampleID)
+metadata <- metadata %>%
+  filter(SampleID %in% names(mouse_ASV)) %>%
+  filter(MouseID!= "U2") %>% 
+  filter(Original_Human_Stool=="N")
+metadata$Donor_ID <- factor(metadata$Donor_ID)
+donors <- levels(metadata$Donor_ID)
+
+## Loop over each donor and make plot of taxa by donor --
+generate_plots <- function(donor) {
+  input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-2.csv")
+  plot <- generate_L2_taxa_plots(input_data = input_file, 
+                                 titlestring = donor, 
                                  greppattern = ".*p__", 
                                  graphby = "Site",
                                  fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B") +
-  theme(plot.margin = margin(r = -2))
+    theme(plot.margin = margin(r = -2)) +
+    theme_cowplot(8)+
+    theme(plot.title = element_text(hjust = 0.5))+
+    theme(legend.position = "none")
+  return(plot)
+}
 
-A018_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A018_level-2.csv", 
-                                                               titlestring = "A018", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
+# Generate plots for each item
+plots <- lapply(donors, generate_plots)
+names(plots) <- paste(donors, "L2_lum", sep = "_")
 
-A041_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A041_level-2.csv", 
-                                                               titlestring = "A041", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
-
-A043_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A043_level-2.csv", 
-                                                               titlestring = "A043", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
-
-A045_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A045_level-2.csv", 
-                                                               titlestring = "A045", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
-
-A046_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A046_level-2.csv", 
-                                                               titlestring = "A046", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
-
-A047_L2_lum <- Microbiome.Biogeography::generate_L2_taxa_plots(input_data = "../Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A047_level-2.csv", 
-                                                               titlestring = "A047", 
-                                                               greppattern = ".*p__", 
-                                                               graphby = "Site",
-                                                               fillvector = phyla_cols) +
-  scale_fill_viridis_d(option="B")
-
-
-
-dev.new(width=12, height=10)
-plot_grid(L2_lum, L2_muc, align="hv")
-
+# Access plots using list indexing
+for (donor in donors) {
+  assign(paste0(donor, "_L2_lum"), plots[[paste0(donor, "_L2_lum")]])
+}
 
 ## Donor Feces -- 
 
 feces <- readr::read_csv(here("Donors-Analysis/taxa_barplots/Hoomins_level-2.csv"))
+feces$Donor_ID<-factor(feces$Donor_ID)
+human_donors <- levels(feces$Donor_ID)
 
 generate_L2_human_donor_taxa_barplot <- function(dataframe, donor_id){
   
@@ -107,36 +86,73 @@ generate_L2_human_donor_taxa_barplot <- function(dataframe, donor_id){
   L2_lum$Taxa <-taxa
   L2_lum<- pivot_longer(L2_lum, -c(Taxa), values_to ="Value", names_to ="SampleID")
   L2_lum$Value <- L2_lum$Value * 100
-
+  L2_lum$SampleID <- "F"
 
  plot<- ggplot(data=L2_lum, aes(x=SampleID, y=Value, fill=Taxa)) +
     geom_bar(stat="identity")+
     scale_fill_viridis_d(option="B")+
-    theme(legend.position = "right")+
-    theme_cowplot(12) +
+    theme_cowplot(8) +
     ylab("") +
+    theme(axis.text.y=element_blank()) +
     xlab("")+
     labs(fill="")+
-    ggtitle(paste({{donor_id}},"Human Feces")) +
-    theme(legend.position="top") +
+    ggtitle(paste("Human")) +
+    theme(legend.position="none") +
     theme(plot.title = element_text(hjust = 0.5))+
     guides(fill=guide_legend(nrow=4, byrow=TRUE))
   
     return(plot)
 }
 
-A017 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A017")
-A018 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A018")
-A041 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A041")
-A043 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A043")
-A045 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A045")
-A046 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A046")
-A047 <- generate_human_donor_taxa_barplot(dataframe = feces,donor_id = "A047")
 
-## Combine --
-?align_plots()
-plot_grid( A017_L2_lum, A017, rel_widths = c(1,0.33))
 
+# Access plots using list indexing
+generate_plots <- function(donor_ids, dataframe) {
+  plots <- list()
+  for (donor_id in donor_ids) {
+    plots[[donor_id]] <- generate_L2_human_donor_taxa_barplot(dataframe = dataframe, donor_id = donor_id)
+  }
+  return(plots)
+}
+
+# Call the function to generate plots
+plots <- generate_plots(donor_ids = human_donors, dataframe = feces)
+names(plots) <- paste(human_donors, "feces", sep = "_")
+
+
+# Access plots using list indexing
+for (donor in human_donors) {
+  assign(paste0(donor, "_feces"), plots[[paste0(donor, "_feces")]])
+}
+
+### Make final figure ---
+dev.new()
+plot_grid(A017_L2_lum, A017_feces,
+          A018_L2_lum, A018_feces,
+          A041_L2_lum, A041_feces,
+          A043_L2_lum, A043_feces,
+          A045_L2_lum, A045_feces,
+          A046_L2_lum, A046_feces,
+          A047_L2_lum, A047_feces,
+          A050_L2_lum, A050_feces,
+          A053_L2_lum, A053_feces,
+          A054_L2_lum, A054_feces,
+          A070_L2_lum, A070_feces,
+          A078_L2_lum, A078_feces,
+          A082_L2_lum, A082_feces,
+          rel_widths = c(1,0.25,
+                         1,0.25,
+                         1, 0.25,
+                         1, 0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1, 0.25,
+                         1,0.25))
 ### Mouse Samples L6 plots ---
 
 generate_L6_taxa_plots_donors <- function(filepath, titlestring,greppattern, fillvector, graphby){
@@ -271,12 +287,30 @@ readr::write_rds(input_data, here(new_filepath))
 
 genera_cols <- readr::read_rds(here("global_genera_cols.RDS"))
 
-A017_L6_lum <- generate_L6_taxa_plots_donors(filepath = "Donors-Analysis/taxa_barplots/Mouse_Luminal/mouse_A017_level-6.csv", 
-                                        titlestring = "A017", 
-                                        greppattern = ".*g__", 
-                                        graphby = "Site",
-                                        fillvector = assign_cols) +
-  theme(legend.position = "right")
+## Loop over each donor and make plot of taxa by donor --
+generate_plots <- function(donor) {
+  input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.csv")
+  plot <- generate_L2_taxa_plots(input_data = input_file, 
+                                 titlestring = donor, 
+                                 greppattern = ".*g__", 
+                                 graphby = "Site",
+                                 fillvector = genera_cols) +
+    theme(plot.margin = margin(r = -2)) +
+    theme_cowplot(8)+
+    theme(plot.title = element_text(hjust = 0.5))+
+    theme(legend.position = "none")
+  return(plot)
+}
+
+# Generate plots for each item
+plots <- lapply(donors, generate_plots)
+names(plots) <- paste(donors, "L6_lum", sep = "_")
+
+# Access plots using list indexing
+for (donor in donors) {
+  assign(paste0(donor, "_L6_lum"), plots[[paste0(donor, "_L6_lum")]])
+}
+
 
 ### Human Feces L6 Plots ---
 generate_L6_human_feces_taxa_plots <- function(donor_id,filepath, titlestring,greppattern, fillvector, graphby){
@@ -391,6 +425,7 @@ generate_L6_human_feces_taxa_plots <- function(donor_id,filepath, titlestring,gr
   }
  
   cols <- fillvector
+  L2_lum$Site <- "F"
   ggplot(data=L2_lum, aes(x=Site, y=Value, fill=Taxa)) +
     geom_bar(stat="identity")+
     #scale_fill_paletteer_d(palette="colorBlindness::SteppedSequential5Steps") +
@@ -399,23 +434,72 @@ generate_L6_human_feces_taxa_plots <- function(donor_id,filepath, titlestring,gr
     #scale_fill_paletteer_d("ggsci::category20_d3")+
     scale_fill_manual(values = cols)+
     theme_cowplot(12) +
-    ylab("% Relative Abundance") +
+    ylab("") +
     xlab("")+
     labs(fill="") +
-    ggtitle(paste({{donor_id}},"Human Feces")) +
-    theme(legend.position="right") +
+    ggtitle(paste("Human")) +
+    theme_cowplot(8) +
+    theme(legend.position="none") +
+    theme(axis.text.y=element_blank()) +
     theme(plot.title = element_text(hjust = 0.5))+
     #guides(fill=guide_legend(nrow=8, byrow=TRUE)) +
     theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
   
 }
 
-generate_L6_human_feces_taxa_plots(filepath = "Donors-Analysis/taxa_barplots/Hoomins_level-6.csv",
-                                   titlestring = "Human Feces",
-                                   greppattern = ".*g__", 
-                                   graphby="Site",
-                                   fillvector = fecal_cols,
-                                   donor_id = "A017")
+
+# Access plots using list indexing
+generate_plots <- function(donor_ids) {
+  plots <- list()
+  for (donor_id in donor_ids) {
+    plots[[donor_id]] <-generate_L6_human_feces_taxa_plots(filepath = "Donors-Analysis/taxa_barplots/Hoomins_level-6.csv",
+                                                           titlestring = "Human Feces",
+                                                           greppattern = ".*g__", 
+                                                           graphby="Site",
+                                                           fillvector = genera_cols,
+                                                           donor_id = donor_id)
+  }
+  return(plots)
+}
+
+# Call the function to generate plots
+names(plots)
+plots <- generate_plots(donor_ids = human_donors)
+names(plots) <- paste(human_donors, "feces_L6", sep = "_")
+
+# Access plots using list indexing
+for (donor in human_donors) {
+  assign(paste0(donor, "_feces_L6"), plots[[paste0(donor, "_feces_L6")]])
+}
+
+### Assemble Final Figure ---
+dev.new()
+plot_grid(A017_L6_lum, A017_feces_L6,
+          A018_L6_lum, A018_feces_L6,
+          A041_L6_lum, A041_feces_L6,
+          A043_L6_lum, A043_feces_L6,
+          A045_L6_lum, A045_feces_L6,
+          A046_L6_lum, A046_feces_L6,
+          A047_L6_lum, A047_feces_L6,
+          A050_L6_lum, A050_feces_L6,
+          A053_L6_lum, A053_feces_L6,
+          A054_L6_lum, A054_feces_L6,
+          A070_L6_lum, A070_feces_L6,
+          A078_L6_lum, A078_feces_L6,
+          A082_L6_lum, A082_feces_L6,
+          rel_widths = c(1,0.25,
+                         1,0.25,
+                         1, 0.25,
+                         1, 0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1,0.25,
+                         1, 0.25,
+                         1,0.25))
 
 ### Aggregated taxa barplots ---
 file_path <- "Donors-Analysis/taxa_barplots/aggregated_barplots/Mice_Luminal_level-6.csv"
