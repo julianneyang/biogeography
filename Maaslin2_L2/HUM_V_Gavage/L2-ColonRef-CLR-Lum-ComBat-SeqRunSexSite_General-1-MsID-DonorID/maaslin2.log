@@ -1,0 +1,47 @@
+2024-04-14 17:06:34 INFO::Writing function arguments to log file
+2024-04-14 17:06:34 DEBUG::Function arguments
+2024-04-14 17:06:34 DEBUG::Output folder: /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID
+2024-04-14 17:06:34 DEBUG::Min Abundance: 0.000000
+2024-04-14 17:06:34 DEBUG::Min Prevalence: 0.150000
+2024-04-14 17:06:34 DEBUG::Normalization: CLR
+2024-04-14 17:06:34 DEBUG::Transform: NONE
+2024-04-14 17:06:34 DEBUG::Analysis method: LM
+2024-04-14 17:06:34 DEBUG::Max significance: 0.250000
+2024-04-14 17:06:34 DEBUG::Random effects: MouseID,DonorID
+2024-04-14 17:06:34 DEBUG::Fixed effects: Sequencing_Run,Sex,Site_General
+2024-04-14 17:06:34 DEBUG::Correction method: BH
+2024-04-14 17:06:34 DEBUG::Standardize: TRUE
+2024-04-14 17:06:34 DEBUG::Cores: 1
+2024-04-14 17:06:34 INFO::Verifying options selected are valid
+2024-04-14 17:06:34 INFO::Determining format of input files
+2024-04-14 17:06:34 INFO::Input format is data samples as columns and metadata samples as rows
+2024-04-14 17:06:34 DEBUG::Transformed data so samples are rows
+2024-04-14 17:06:34 DEBUG::A total of 262 samples were found in both the data and metadata
+2024-04-14 17:06:34 DEBUG::Reordering data/metadata to use same sample ordering
+2024-04-14 17:06:34 WARNING::Feature name not found in metadata so not applied to formula as random effect: DonorID
+2024-04-14 17:06:34 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-04-14 17:06:34 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site_General
+2024-04-14 17:06:34 INFO::Filter data based on min abundance and min prevalence
+2024-04-14 17:06:34 INFO::Total samples in data: 262
+2024-04-14 17:06:34 INFO::Min samples required with min abundance for a feature not to be filtered: 39.300000
+2024-04-14 17:06:34 INFO::Total filtered features: 0
+2024-04-14 17:06:34 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-04-14 17:06:34 INFO::Total filtered features with variance filtering: 0
+2024-04-14 17:06:34 INFO::Filtered feature names from variance filtering:
+2024-04-14 17:06:34 INFO::Running selected normalization method: CLR
+2024-04-14 17:06:34 INFO::Applying z-score to standardize continuous metadata
+2024-04-14 17:06:34 INFO::Running selected transform method: NONE
+2024-04-14 17:06:34 INFO::Running selected analysis method: LM
+2024-04-14 17:06:34 INFO::Fitting model to feature number 1, k__Bacteria.p__Firmicutes
+2024-04-14 17:06:35 INFO::Fitting model to feature number 2, k__Bacteria.p__Cyanobacteria
+2024-04-14 17:06:35 INFO::Fitting model to feature number 3, k__Bacteria.p__Bacteroidota
+2024-04-14 17:06:35 INFO::Fitting model to feature number 4, k__Bacteria.p__Proteobacteria
+2024-04-14 17:06:35 INFO::Fitting model to feature number 5, k__Bacteria.p__Actinobacteriota
+2024-04-14 17:06:35 INFO::Fitting model to feature number 6, k__Bacteria.p__Verrucomicrobiota
+2024-04-14 17:06:35 INFO::Fitting model to feature number 7, k__Bacteria.p__Desulfobacterota
+2024-04-14 17:06:35 INFO::Counting total values for each feature
+2024-04-14 17:06:35 INFO::Writing residuals to file /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/residuals.rds
+2024-04-14 17:06:35 INFO::Writing fitted values to file /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/fitted.rds
+2024-04-14 17:06:35 INFO::Writing extracted random effects to file /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/ranef.rds
+2024-04-14 17:06:35 INFO::Writing all results to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/all_results.tsv
+2024-04-14 17:06:35 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv
