@@ -64,12 +64,12 @@ bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # UCLA O SPF 
 
-result <- generate_interregional_taxa_barplot_SITE(
+result <- generate_interregional_taxa_barplot_shotgun(
                                          path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
                                         titlestring="UCLA O. SPF",
                                         colorvector = cols)
 
-df <- result$dataframe 
+df <- result$dataframe
 phylum_names <- df$Phylum
 
 select_cols <- paletteer::paletteer_d("basetheme::royal",6)
@@ -82,7 +82,7 @@ names(select_cols)
 color_mapping <- phylum_colors[phylum_names]
 print(color_mapping)
 
-ucla_o_shotgun_species <- result$plot +
+ucla_o_shotgun_species <- result$plot+
   theme(axis.text.y = element_text(colour = color_mapping))+
   theme(legend.position = "right")
 dev.new(width=10,height=10)

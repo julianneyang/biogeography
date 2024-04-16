@@ -1,11 +1,17 @@
-library(EnhancedVolcano)
 library(dplyr)
 library(Microbiome.Biogeography)
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-here::i_am("MouseBiogeography-RProj/RegionalGBM-SITE-Heatmap.R")
+library(here)
+
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Interregional_Longitudinal_GBM.R")
 
 ### Luminal Barplots: Aggregated by Map (median coef) --- 
 cols <- viridis::viridis(2)
+
+hum_v_GBM_Map_lum <- generate_interregional_GBM_barplot("Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
+                                                         "GBM_Module_Key.csv",
+                                                         titlestring= "Hum V. Gavage Luminal",
+                                                         cols)
+
 
 ucla_o_GBM_Map_lum <- generate_interregional_GBM_barplot("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
@@ -19,22 +25,35 @@ spf_gavage_GBM_Map_lum <- generate_interregional_GBM_barplot("Humanized-Biogeogr
                                                              "GBM_Module_Key.csv",
                                                              titlestring= "SPF Gavage Luminal",
                                                              cols)
-hum_gavage_GBM_Map_lum <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/HUM/OMIXER-RPM/Hum_GBM/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+hum_gavage_GBM_Map_lum <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                              "GBM_Module_Key.csv",
                                                              titlestring= "HUM Gavage Luminal",
                                                              cols)
+dev.new()
 cowplot::plot_grid(ucla_o_GBM_Map_lum, cs_spf_GBM_Map_lum, 
-                   spf_gavage_GBM_Map_lum, hum_gavage_GBM_Map_lum, 
+                   nrow=1, ncol=2,
+                   labels=c("A", "B"),
+                   label_size = 12)
+
+dev.new()
+cowplot::plot_grid(spf_gavage_GBM_Map_lum, hum_gavage_GBM_Map_lum, 
+                   hum_v_GBM_Map_lum,
                    nrow=2, ncol=2,
-                   labels=c("A", "B","C","D"))
+                   labels=c("C","D", "E"),
+                   label_size = 12)
 
 ### Mucosal Barplots: Aggregated by Map (median coef) --- 
 cols <- viridis::viridis(2)
+hum_v_GBM_Map_muc <- generate_interregional_GBM_barplot("Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
+                                                         "GBM_Module_Key.csv",
+                                                         titlestring= "HUM V. Gavage Mucosal",
+                                                         cols)
+
 ucla_o_GBM_Map_muc <- generate_interregional_GBM_barplot("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "UCLA O. SPF Mucosal",
                                                          cols)
-ucla_v_GBM_Map_muc <- generate_interregional_GBM_barplot("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WT_Val_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+ucla_v_GBM_Map_muc <- generate_interregional_GBM_barplot("UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "UCLA V. SPF Mucosal",
                                                          cols)
@@ -46,19 +65,23 @@ spf_gavage_GBM_Map_muc <- generate_interregional_GBM_barplot("Humanized-Biogeogr
                                                              "GBM_Module_Key.csv",
                                                              titlestring= "SPF Gavage Mucosal",
                                                              cols)
-hum_gavage_GBM_Map_muc <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/HUM/OMIXER-RPM/HUM_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+hum_gavage_GBM_Map_muc <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                              "GBM_Module_Key.csv",
-                                                             titlestring= "HUM Gavage Mucosal",
+                                                             titlestring= "HUM Gavage Mucosal", 
+                                                             cols)
 
-                                                                                                                       cols)
+dev.new()
 cowplot::plot_grid(ucla_o_GBM_Map_muc, ucla_v_GBM_Map_muc, 
-                   cs_spf_GBM_Map_muc, NULL, 
-                  labels=c("A","B","C", ""), 
+                   cs_spf_GBM_Map_muc, spf_gavage_GBM_Map_muc,
+                  labels=c("A","B","C", "D"), 
+                  label_size = 16,
                   nrow=2, ncol=2)
 
-cowplot::plot_grid(spf_gavage_GBM_Map_muc, hum_gavage_GBM_Map_muc, 
+dev.new()
+cowplot::plot_grid(hum_gavage_GBM_Map_muc, hum_v_GBM_Map_muc,
                    nrow=1, ncol=2,
-                   labels=c("D", "E"))
+                   labels=c("E", "F"),
+                   label_size = 16)
 
 
 
