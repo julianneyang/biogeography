@@ -137,6 +137,8 @@ bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 results <- generate_matrix_for_heatmap_clustering(path_to_significant_results = path_to_significant_results,
                                                   path_to_annotation_file = path_to_annotation_file,
                                                   path_to_all_results = path_to_all_results)
+
+
 matrix.data <- results$matrix
 distance= dist(matrix.data, method ="euclidean")  
 hcluster = hclust(distance, method ="ward.D")
