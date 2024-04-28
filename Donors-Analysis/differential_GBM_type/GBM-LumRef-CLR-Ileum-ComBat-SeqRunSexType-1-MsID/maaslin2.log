@@ -1,0 +1,82 @@
+2024-04-28 14:46:25 INFO::Writing function arguments to log file
+2024-04-28 14:46:25 DEBUG::Function arguments
+2024-04-28 14:46:25 DEBUG::Output folder: Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID
+2024-04-28 14:46:25 DEBUG::Min Abundance: 0.000000
+2024-04-28 14:46:25 DEBUG::Min Prevalence: 0.100000
+2024-04-28 14:46:25 DEBUG::Normalization: CLR
+2024-04-28 14:46:25 DEBUG::Transform: NONE
+2024-04-28 14:46:25 DEBUG::Analysis method: LM
+2024-04-28 14:46:25 DEBUG::Max significance: 0.250000
+2024-04-28 14:46:25 DEBUG::Random effects: MouseID
+2024-04-28 14:46:25 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
+2024-04-28 14:46:25 DEBUG::Correction method: BH
+2024-04-28 14:46:25 DEBUG::Standardize: TRUE
+2024-04-28 14:46:25 DEBUG::Cores: 1
+2024-04-28 14:46:25 INFO::Verifying options selected are valid
+2024-04-28 14:46:25 INFO::Determining format of input files
+2024-04-28 14:46:25 INFO::Input format is data samples as columns and metadata samples as rows
+2024-04-28 14:46:25 DEBUG::Transformed data so samples are rows
+2024-04-28 14:46:25 DEBUG::A total of 90 samples were found in both the data and metadata
+2024-04-28 14:46:25 DEBUG::Reordering data/metadata to use same sample ordering
+2024-04-28 14:46:25 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-04-28 14:46:25 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
+2024-04-28 14:46:25 INFO::Filter data based on min abundance and min prevalence
+2024-04-28 14:46:25 INFO::Total samples in data: 90
+2024-04-28 14:46:25 INFO::Min samples required with min abundance for a feature not to be filtered: 9.000000
+2024-04-28 14:46:25 INFO::Total filtered features: 0
+2024-04-28 14:46:25 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-04-28 14:46:25 INFO::Total filtered features with variance filtering: 0
+2024-04-28 14:46:25 INFO::Filtered feature names from variance filtering:
+2024-04-28 14:46:25 INFO::Running selected normalization method: CLR
+2024-04-28 14:46:25 INFO::Applying z-score to standardize continuous metadata
+2024-04-28 14:46:25 INFO::Running selected transform method: NONE
+2024-04-28 14:46:25 INFO::Running selected analysis method: LM
+2024-04-28 14:46:25 INFO::Fitting model to feature number 1, MGB015
+2024-04-28 14:46:25 INFO::Fitting model to feature number 2, MGB037
+2024-04-28 14:46:25 INFO::Fitting model to feature number 3, MGB038
+2024-04-28 14:46:25 INFO::Fitting model to feature number 4, MGB016
+2024-04-28 14:46:26 INFO::Fitting model to feature number 5, MGB039
+2024-04-28 14:46:26 INFO::Fitting model to feature number 6, MGB033
+2024-04-28 14:46:26 INFO::Fitting model to feature number 7, MGB055
+2024-04-28 14:46:26 INFO::Fitting model to feature number 8, MGB034
+2024-04-28 14:46:26 INFO::Fitting model to feature number 9, MGB056
+2024-04-28 14:46:26 INFO::Fitting model to feature number 10, MGB035
+2024-04-28 14:46:26 INFO::Fitting model to feature number 11, MGB036
+2024-04-28 14:46:26 INFO::Fitting model to feature number 12, MGB051
+2024-04-28 14:46:26 INFO::Fitting model to feature number 13, MGB052
+2024-04-28 14:46:26 INFO::Fitting model to feature number 14, MGB031
+2024-04-28 14:46:26 INFO::Fitting model to feature number 15, MGB053
+2024-04-28 14:46:26 INFO::Fitting model to feature number 16, MGB010
+2024-04-28 14:46:26 INFO::Fitting model to feature number 17, MGB032
+2024-04-28 14:46:26 INFO::Fitting model to feature number 18, MGB054
+2024-04-28 14:46:26 INFO::Fitting model to feature number 19, MGB050
+2024-04-28 14:46:26 INFO::Fitting model to feature number 20, MGB019
+2024-04-28 14:46:26 INFO::Fitting model to feature number 21, MGB048
+2024-04-28 14:46:27 INFO::Fitting model to feature number 22, MGB004
+2024-04-28 14:46:27 INFO::Fitting model to feature number 23, MGB026
+2024-04-28 14:46:27 INFO::Fitting model to feature number 24, MGB005
+2024-04-28 14:46:27 INFO::Fitting model to feature number 25, MGB027
+2024-04-28 14:46:27 INFO::Fitting model to feature number 26, MGB049
+2024-04-28 14:46:27 INFO::Fitting model to feature number 27, MGB006
+2024-04-28 14:46:27 INFO::Fitting model to feature number 28, MGB028
+2024-04-28 14:46:27 INFO::Fitting model to feature number 29, MGB007
+2024-04-28 14:46:27 INFO::Fitting model to feature number 30, MGB029
+2024-04-28 14:46:27 INFO::Fitting model to feature number 31, MGB022
+2024-04-28 14:46:27 INFO::Fitting model to feature number 32, MGB044
+2024-04-28 14:46:27 INFO::Fitting model to feature number 33, MGB023
+2024-04-28 14:46:27 INFO::Fitting model to feature number 34, MGB045
+2024-04-28 14:46:27 INFO::Fitting model to feature number 35, MGB024
+2024-04-28 14:46:27 INFO::Fitting model to feature number 36, MGB047
+2024-04-28 14:46:27 INFO::Fitting model to feature number 37, MGB025
+2024-04-28 14:46:27 INFO::Fitting model to feature number 38, MGB040
+2024-04-28 14:46:27 INFO::Fitting model to feature number 39, MGB041
+2024-04-28 14:46:28 INFO::Fitting model to feature number 40, MGB020
+2024-04-28 14:46:28 INFO::Fitting model to feature number 41, MGB021
+2024-04-28 14:46:28 INFO::Fitting model to feature number 42, MGB043
+2024-04-28 14:46:28 INFO::Fitting model to feature number 43, MGB009
+2024-04-28 14:46:28 INFO::Counting total values for each feature
+2024-04-28 14:46:28 INFO::Writing residuals to file Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/residuals.rds
+2024-04-28 14:46:28 INFO::Writing fitted values to file Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/fitted.rds
+2024-04-28 14:46:28 INFO::Writing extracted random effects to file Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/ranef.rds
+2024-04-28 14:46:28 INFO::Writing all results to file (ordered by increasing q-values): Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv
+2024-04-28 14:46:28 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Donors-Analysis/differential_GBM_type/GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv

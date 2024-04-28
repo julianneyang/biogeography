@@ -1,33 +1,33 @@
-2024-04-28 13:26:53 INFO::Writing function arguments to log file
-2024-04-28 13:26:53 DEBUG::Function arguments
-2024-04-28 13:26:53 DEBUG::Output folder: Humanized-Biogeography-Analysis/differential_genera_type/SPF_L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID
-2024-04-28 13:26:53 DEBUG::Min Abundance: 0.000000
-2024-04-28 13:26:53 DEBUG::Min Prevalence: 0.100000
-2024-04-28 13:26:53 DEBUG::Normalization: CLR
-2024-04-28 13:26:53 DEBUG::Transform: NONE
-2024-04-28 13:26:53 DEBUG::Analysis method: LM
-2024-04-28 13:26:53 DEBUG::Max significance: 0.250000
-2024-04-28 13:26:53 DEBUG::Random effects: MouseID
-2024-04-28 13:26:53 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
-2024-04-28 13:26:53 DEBUG::Correction method: BH
-2024-04-28 13:26:53 DEBUG::Standardize: TRUE
-2024-04-28 13:26:53 DEBUG::Cores: 1
-2024-04-28 13:26:53 INFO::Verifying options selected are valid
-2024-04-28 13:26:53 INFO::Determining format of input files
-2024-04-28 13:26:53 INFO::Input format is data samples as columns and metadata samples as rows
-2024-04-28 13:26:53 DEBUG::Transformed data so samples are rows
-2024-04-28 13:26:53 DEBUG::A total of 14 samples were found in both the data and metadata
-2024-04-28 13:26:53 DEBUG::Reordering data/metadata to use same sample ordering
-2024-04-28 13:26:53 INFO::Formula for random effects: expr ~ (1 | MouseID)
-2024-04-28 13:26:53 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
-2024-04-28 13:26:53 INFO::Filter data based on min abundance and min prevalence
-2024-04-28 13:26:53 INFO::Total samples in data: 14
-2024-04-28 13:26:53 INFO::Min samples required with min abundance for a feature not to be filtered: 1.400000
-2024-04-28 13:26:53 INFO::Total filtered features: 0
-2024-04-28 13:26:53 INFO::Filtered feature names from abundance and prevalence filtering:
-2024-04-28 13:26:53 INFO::Total filtered features with variance filtering: 0
-2024-04-28 13:26:53 INFO::Filtered feature names from variance filtering:
-2024-04-28 13:26:53 INFO::Running selected normalization method: CLR
-2024-04-28 13:26:53 INFO::Applying z-score to standardize continuous metadata
-2024-04-28 13:26:53 INFO::Running selected transform method: NONE
-2024-04-28 13:26:53 INFO::Running selected analysis method: LM
+2024-04-28 13:53:57 INFO::Writing function arguments to log file
+2024-04-28 13:53:57 DEBUG::Function arguments
+2024-04-28 13:53:57 DEBUG::Output folder: Humanized-Biogeography-Analysis/differential_genera_type/SPF_L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID
+2024-04-28 13:53:57 DEBUG::Min Abundance: 0.000000
+2024-04-28 13:53:57 DEBUG::Min Prevalence: 0.000000
+2024-04-28 13:53:57 DEBUG::Normalization: CLR
+2024-04-28 13:53:57 DEBUG::Transform: NONE
+2024-04-28 13:53:57 DEBUG::Analysis method: LM
+2024-04-28 13:53:57 DEBUG::Max significance: 0.250000
+2024-04-28 13:53:57 DEBUG::Random effects: MouseID
+2024-04-28 13:53:57 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
+2024-04-28 13:53:57 DEBUG::Correction method: BH
+2024-04-28 13:53:57 DEBUG::Standardize: TRUE
+2024-04-28 13:53:57 DEBUG::Cores: 1
+2024-04-28 13:53:57 INFO::Verifying options selected are valid
+2024-04-28 13:53:57 INFO::Determining format of input files
+2024-04-28 13:53:57 INFO::Input format is data samples as columns and metadata samples as rows
+2024-04-28 13:53:57 DEBUG::Transformed data so samples are rows
+2024-04-28 13:53:57 DEBUG::A total of 14 samples were found in both the data and metadata
+2024-04-28 13:53:57 DEBUG::Reordering data/metadata to use same sample ordering
+2024-04-28 13:53:57 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-04-28 13:53:57 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
+2024-04-28 13:53:57 INFO::Filter data based on min abundance and min prevalence
+2024-04-28 13:53:57 INFO::Total samples in data: 14
+2024-04-28 13:53:57 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2024-04-28 13:53:57 INFO::Total filtered features: 0
+2024-04-28 13:53:57 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-04-28 13:53:57 INFO::Total filtered features with variance filtering: 0
+2024-04-28 13:53:57 INFO::Filtered feature names from variance filtering:
+2024-04-28 13:53:57 INFO::Running selected normalization method: CLR
+2024-04-28 13:53:57 INFO::Applying z-score to standardize continuous metadata
+2024-04-28 13:53:57 INFO::Running selected transform method: NONE
+2024-04-28 13:53:57 INFO::Running selected analysis method: LM

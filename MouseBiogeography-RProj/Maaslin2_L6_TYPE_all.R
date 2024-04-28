@@ -23,6 +23,7 @@ run_maaslin2 <- function(input_data, output_path, site, site_fixed_effects, rand
                        random_effects = {{random}},
                        reference = {{set_refs}},
                        normalization = "clr", 
+                       min_prevalence = 0,
                        transform = "none",
                        plot_heatmap = FALSE,
                        plot_scatter = FALSE)

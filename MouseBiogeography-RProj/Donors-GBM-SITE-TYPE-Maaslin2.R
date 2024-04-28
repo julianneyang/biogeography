@@ -112,6 +112,7 @@ fit_data = Maaslin2(input_data=muc_input_data,
 
 
 ## Run Maaslin2 ---
+filepath <- "Donors-Analysis/differential_GBM_type/"
 
 #Distal_Colon 
 target <- colnames(DC_input_data)
@@ -120,10 +121,10 @@ target == row.names(df_input_metadata)
 
 fit_data = Maaslin2(input_data=DC_input_data, 
                     input_metadata=df_input_metadata, 
-                    output = paste0(filepath,"GMM-LumRef-CLR-DistalColon-ComBat-SeqRunSexType-1-MsID-DonorID"), 
-                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
-                    random_effects = c("MouseID", "Donor_ID"),
-                    reference=c("Sequencing_Run,Jan_2017"),
+                    output = paste0(filepath,"GBM-LumRef-CLR-DistalColon-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex","Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017","Type,Luminal"),
                     normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 
@@ -135,9 +136,9 @@ target == row.names(df_input_metadata)
 
 fit_data = Maaslin2(input_data=PC_input_data, 
                     input_metadata=df_input_metadata, 
-                    output = paste0(filepath,"GMM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID-DonorID"), 
-                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
-                    random_effects = c("MouseID", "Donor_ID"),
+                    output = paste0(filepath,"GBM-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex","Type"), 
+                    random_effects = c("MouseID"),
                     reference=c("Sequencing_Run,Jan_2017"),
                     normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
@@ -146,41 +147,77 @@ target <- colnames(cec_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Type"), random_effects = c("MouseID"),normalization="clr", transform ="none", plot_heatmap = FALSE,plot_scatter = FALSE )
+fit_data = Maaslin2(input_data=cec_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Ileum
 target <- colnames(ile_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Type"), random_effects = c("MouseID"),normalization="clr", transform ="none", plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=ile_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Jejunum -lot of overfitting
 target <- colnames(jej_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Type"), random_effects = c("MouseID"),normalization="clr", transform ="none", plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=jej_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Duodenum
 target <- colnames(duo_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Type"), random_effects = c("MouseID"),normalization="clr", transform ="none", plot_heatmap = FALSE,plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=duo_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 
 #Colon
 target <- colnames(col_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site","Type"), random_effects = c("MouseID"),normalization="clr", transform ="none",plot_heatmap = FALSE, plot_scatter = FALSE)
+fit_data = Maaslin2(input_data=col_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex","Site","Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017","Site,Distal_Colon"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
+
 
 #SI
 target <- colnames(si_input_data)
 df_input_metadata = input_metadata[match(target, row.names(input_metadata)),]
 target == row.names(df_input_metadata)
 
-fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata, output = "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID", fixed_effects = c("Sequencing_Run","Sex", "Site","Type"), random_effects = c("MouseID"),normalization="clr", transform ="none", plot_heatmap = FALSE, plot_scatter = FALSE)
-
+fit_data = Maaslin2(input_data=si_input_data, 
+                    input_metadata=df_input_metadata, 
+                    output = paste0(filepath,"GBM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID"), 
+                    fixed_effects = c("Sequencing_Run","Sex", "Site","Type"), 
+                    random_effects = c("MouseID"),
+                    reference=c("Sequencing_Run,Jan_2017","Site,Distal_Colon"),
+                    normalization="clr", transform ="none",plot_heatmap = FALSE,plot_scatter = FALSE)
 

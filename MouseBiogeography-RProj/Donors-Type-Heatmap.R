@@ -195,4 +195,4 @@ dev.new(width=15, height=10)
                  labCol = c("D", "J","I","C","PC","DC"),
                  colRow=col_labels,
                  srtCol=0)
-obj + ggtitle("UCLA O. SPF Transverse")
+
