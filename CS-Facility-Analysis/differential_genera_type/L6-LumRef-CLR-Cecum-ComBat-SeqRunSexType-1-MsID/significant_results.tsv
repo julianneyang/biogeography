@@ -1,0 +1,7 @@
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval
+k__Bacteria.p__Deferribacterota.c__Deferribacteres.o__Deferribacterales.f__Deferribacteraceae.g__Mucispirillum	Type	Mucosal	3.71428469348652	0.323641436257636	18	18	2.52808869786047e-06	0.000553651424831443
+k__Bacteria.p__Actinobacteriota.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__Enterorhabdus	Type	Mucosal	-3.49528045571371	0.482418341864923	18	8	5.67419410875398e-05	0.00621324254908561
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__Bacillus	Type	Mucosal	3.10982882482468	0.751137975580337	18	4	0.00100058021415989	0.073042355633672
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Lachnoclostridium	Type	Mucosal	-0.960973473846848	0.222097815536549	18	18	0.00452470887789959	0.234126478301127
+k__Bacteria.p__Desulfobacterota.c__Desulfovibrionia.o__Desulfovibrionales.f__Desulfovibrionaceae.g__Desulfovibrio	Type	Mucosal	-1.03747273339972	0.315137387324454	18	15	0.00534535338587048	0.234126478301127
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__.Eubacterium..xylanophilum.group	Type	Mucosal	-1.12038219059067	0.292553219716224	18	4	0.00654696503943297	0.238964223939304

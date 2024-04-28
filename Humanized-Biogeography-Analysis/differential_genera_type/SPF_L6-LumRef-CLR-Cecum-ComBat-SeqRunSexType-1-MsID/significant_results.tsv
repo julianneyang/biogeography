@@ -1,0 +1,3 @@
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Oscillospirales.f__Butyricicoccaceae.g__Butyricicoccus	Type	Mucosal	1.71012385088985	0.277331959515275	18	5	0.000460120397476375	0.125152748113574
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Oscillospirales.f__Butyricicoccaceae.g__Butyricicoccus	Sequencing_Run	2014_Sept	-1.70081564426602	0.314464883780421	18	5	0.000999228787908998	0.135895115155624

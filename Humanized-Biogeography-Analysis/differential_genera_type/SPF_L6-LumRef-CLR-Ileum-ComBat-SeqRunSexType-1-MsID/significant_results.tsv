@@ -1,0 +1,17 @@
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Alicyclobacillales.f__Alicyclobacillaceae.g__Tumebacillus	Sequencing_Run	2014_Sept	-4.23070634840042	0.497426775465376	15	5	9.28596392148029e-06	0.00304579616624553
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Alicyclobacillales.f__Alicyclobacillaceae.g__Tumebacillus	Type	Mucosal	4.02148735879381	0.381005894542017	15	5	0.000206148289246962	0.0338083194365017
+k__Bacteria.p__Actinobacteriota.c__Actinobacteria.o__Bifidobacteriales.f__Bifidobacteriaceae.g__Bifidobacterium	Sequencing_Run	2014_Sept	-3.34111171196329	0.428700194377823	15	10	0.000539508994457496	0.0589863167273529
+k__Bacteria.p__Bacteroidota.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides	Type	Mucosal	-2.77179721229707	0.507066114995048	15	15	0.00235711521363317	0.149800243133209
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Hungatella	Sex	Male	-0.91993898085091	0.162425771226659	15	0	0.00274024834999773	0.149800243133209
+k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Enterobacterales.f__Enterobacteriaceae.g__	Type	Mucosal	3.72819650334272	0.896624980763467	15	3	0.00195484493361998	0.149800243133209
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Lachnospiraceae.UCG.001	Type	Mucosal	1.3812014685329	0.303625323392392	15	5	0.00574426086810577	0.164375873047483
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Acetatifactor	Sequencing_Run	2014_Sept	2.45963902089691	0.703932560519508	15	5	0.00578285309594579	0.164375873047483
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Hungatella	Type	Mucosal	0.682614397401639	0.173404910096507	15	0	0.00536998002022359	0.164375873047483
+k__Bacteria.p__Bacteroidota.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__Alistipes	Type	Mucosal	-2.35073270263237	0.572464693058729	15	15	0.00601375145295669	0.164375873047483
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Peptostreptococcales.Tissierellales.f__Anaerovoracaceae.g__.Eubacterium..nodatum.group	Type	Mucosal	-1.7889420858658	0.43001781853673	15	7	0.00537806497584159	0.164375873047483
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Lactobacillaceae.g__Ligilactobacillus	Sequencing_Run	2014_Sept	-3.35476380835272	0.793512819122292	15	15	0.00583520831138163	0.164375873047483
+k__Bacteria.p__Proteobacteria.c__Gammaproteobacteria.o__Enterobacterales.f__Enterobacteriaceae.g__	Sequencing_Run	2014_Sept	-3.56588584467631	1.09813684675164	15	3	0.00876171623124497	0.221064840296027
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Erysipelotrichales.f__Erysipelotrichaceae.g__Faecalibaculum	Type	Mucosal	-1.94462511292292	0.465187379320315	15	6	0.00968304653689735	0.226859947435881
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Erysipelotrichales.f__Erysipelotrichaceae.g__Dielma	Sex	Male	-1.17827360474692	0.295436147959716	15	0	0.0114419833879584	0.234560659453146
+k__Bacteria.p__Actinobacteriota.c__Coriobacteriia.o__Coriobacteriales.f__Eggerthellaceae.g__Enterorhabdus	Sequencing_Run	2014_Sept	-2.87047749360031	0.758058563939857	15	8	0.0113866270976572	0.234560659453146

@@ -14,8 +14,8 @@ target <- find_features_union_for_type_heatmap(duo_filepath = "Donors-Analysis/d
   jej_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
   ile_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
   cec_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  pc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  dc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-DistalColon-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
+  pc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  dc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
 
 #Query the target vector against all_results.tsv for each site
 df <- query_type_features_union(
@@ -24,21 +24,9 @@ df <- query_type_features_union(
   jej_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
   ile_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
   cec_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  pc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-ProximalColon-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  dc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-DistalColon-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
+  pc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  dc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
 
-
-#from here make sure all NA rows are filled with feature name corresponding to NA
-# from here make sure all NA rows are filled with feature name corresponding to NA via copy paste
-write.csv(df, here("Donors-Analysis/type_subsets/L6_type_heatmap.csv"))
-
-heatmap<-df
-discard<- heatmap[is.na(heatmap$metadata), ]
-offtarget<- discard$feature
-offtarget<-unique(offtarget)
-heatmap_final<-subset(heatmap,  !heatmap[,3] %in% offtarget )
-
-write.csv(offtarget, here("Donors-Analysis/type_subsets/L6_omitted_taxa.csv"))
 
 ## Draw heatmap of non-omitted taxa --
 library(viridis)

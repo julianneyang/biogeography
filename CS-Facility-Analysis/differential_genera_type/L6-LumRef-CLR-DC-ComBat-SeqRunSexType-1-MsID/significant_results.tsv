@@ -1,0 +1,7 @@
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Bacillales.f__Bacillaceae.g__Bacillus	Type	Mucosal	4.03312015259784	0.491806794045453	18	4	1.02522906855087e-06	0.000227600853218292
+k__Bacteria.p__Firmicutes.c__Bacilli.o__Lactobacillales.f__Streptococcaceae.g__Lactococcus	Type	Mucosal	1.9481570606783	0.332376660487077	18	0	0.000265550696241298	0.0294761272827841
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Marvinbryantia	Type	Mucosal	-1.15905963356795	0.255293792653114	18	0	0.000462352486087762	0.0342140839704944
+k__Bacteria.p__Verrucomicrobiota.c__Verrucomicrobiae.o__Verrucomicrobiales.f__Akkermansiaceae.g__Akkermansia	Type	Mucosal	2.70606428422737	0.627413000936655	18	6	0.000715260205996803	0.0396969414328226
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Clostridia.UCG.014.f__.g__	Type	Mucosal	-0.781207588267084	0.205361658053064	18	7	0.00486771126586404	0.216126380204363
+k__Bacteria.p__Bacteroidota.c__Bacteroidia.o__Bacteroidales.f__Bacteroidaceae.g__Bacteroides	Type	Mucosal	-0.797037620726752	0.248711732160038	18	18	0.00636125633159507	0.235366484269018

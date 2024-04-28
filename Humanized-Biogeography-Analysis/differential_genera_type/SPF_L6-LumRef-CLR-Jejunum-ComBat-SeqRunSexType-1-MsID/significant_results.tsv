@@ -1,0 +1,5 @@
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Tuzzerella	Type	Mucosal	-2.77233402355629	0.295671729484997	14	11	0.000518417966486078	0.0964884923633939
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Lachnospirales.f__Lachnospiraceae.g__Sellimonas	Sequencing_Run	2015_Sept	3.6303892179204	0.586487796879937	14	2	0.000554531565306862	0.0964884923633939
+k__Bacteria.p__Firmicutes.c__Clostridia.o__Oscillospirales.f__Ruminococcaceae.g__Paludicola	Sequencing_Run	2015_Sept	3.85641514623433	0.835311636221472	14	2	0.00126017573952461	0.109635289338641
+k__Bacteria.p__Bacteroidota.c__Bacteroidia.o__Bacteroidales.f__Rikenellaceae.g__Rikenella	Sequencing_Run	2014_Sept	2.70041468800037	0.579588074227878	14	2	0.00118657347592688	0.109635289338641

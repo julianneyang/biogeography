@@ -1,47 +1,50 @@
-2024-04-25 22:00:12 INFO::Writing function arguments to log file
-2024-04-25 22:00:12 DEBUG::Function arguments
-2024-04-25 22:00:12 DEBUG::Output folder: CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID
-2024-04-25 22:00:12 DEBUG::Min Abundance: 0.000000
-2024-04-25 22:00:12 DEBUG::Min Prevalence: 0.150000
-2024-04-25 22:00:12 DEBUG::Normalization: CLR
-2024-04-25 22:00:12 DEBUG::Transform: NONE
-2024-04-25 22:00:12 DEBUG::Analysis method: LM
-2024-04-25 22:00:12 DEBUG::Max significance: 0.250000
-2024-04-25 22:00:12 DEBUG::Random effects: MouseID
-2024-04-25 22:00:12 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
-2024-04-25 22:00:12 DEBUG::Correction method: BH
-2024-04-25 22:00:12 DEBUG::Standardize: TRUE
-2024-04-25 22:00:12 DEBUG::Cores: 1
-2024-04-25 22:00:12 INFO::Verifying options selected are valid
-2024-04-25 22:00:12 INFO::Determining format of input files
-2024-04-25 22:00:12 INFO::Input format is data samples as columns and metadata samples as rows
-2024-04-25 22:00:12 DEBUG::Transformed data so samples are rows
-2024-04-25 22:00:12 DEBUG::A total of 18 samples were found in both the data and metadata
-2024-04-25 22:00:12 DEBUG::Reordering data/metadata to use same sample ordering
-2024-04-25 22:00:12 INFO::Formula for random effects: expr ~ (1 | MouseID)
-2024-04-25 22:00:12 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
-2024-04-25 22:00:12 INFO::Filter data based on min abundance and min prevalence
-2024-04-25 22:00:12 INFO::Total samples in data: 18
-2024-04-25 22:00:12 INFO::Min samples required with min abundance for a feature not to be filtered: 2.700000
-2024-04-25 22:00:12 INFO::Total filtered features: 0
-2024-04-25 22:00:12 INFO::Filtered feature names from abundance and prevalence filtering:
-2024-04-25 22:00:12 INFO::Total filtered features with variance filtering: 0
-2024-04-25 22:00:12 INFO::Filtered feature names from variance filtering:
-2024-04-25 22:00:12 INFO::Running selected normalization method: CLR
-2024-04-25 22:00:12 INFO::Applying z-score to standardize continuous metadata
-2024-04-25 22:00:12 INFO::Running selected transform method: NONE
-2024-04-25 22:00:12 INFO::Running selected analysis method: LM
-2024-04-25 22:00:12 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidota
-2024-04-25 22:00:12 INFO::Fitting model to feature number 2, k__Bacteria.p__Firmicutes
-2024-04-25 22:00:12 INFO::Fitting model to feature number 3, k__Bacteria.p__Actinobacteriota
-2024-04-25 22:00:12 INFO::Fitting model to feature number 4, k__Bacteria.p__Verrucomicrobiota
-2024-04-25 22:00:13 INFO::Fitting model to feature number 5, k__Bacteria.p__Proteobacteria
-2024-04-25 22:00:13 INFO::Fitting model to feature number 6, k__Bacteria.p__Desulfobacterota
-2024-04-25 22:00:13 INFO::Fitting model to feature number 7, k__Bacteria.p__Cyanobacteria
-2024-04-25 22:00:13 INFO::Fitting model to feature number 8, k__Bacteria.p__Deferribacterota
-2024-04-25 22:00:13 INFO::Counting total values for each feature
-2024-04-25 22:00:13 INFO::Writing residuals to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/residuals.rds
-2024-04-25 22:00:13 INFO::Writing fitted values to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/fitted.rds
-2024-04-25 22:00:13 INFO::Writing extracted random effects to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/ranef.rds
-2024-04-25 22:00:13 INFO::Writing all results to file (ordered by increasing q-values): CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv
-2024-04-25 22:00:13 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv
+2024-04-28 13:24:04 INFO::Writing function arguments to log file
+2024-04-28 13:24:04 DEBUG::Function arguments
+2024-04-28 13:24:04 DEBUG::Output folder: CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID
+2024-04-28 13:24:04 DEBUG::Min Abundance: 0.000000
+2024-04-28 13:24:04 DEBUG::Min Prevalence: 0.100000
+2024-04-28 13:24:04 DEBUG::Normalization: CLR
+2024-04-28 13:24:04 DEBUG::Transform: NONE
+2024-04-28 13:24:04 DEBUG::Analysis method: LM
+2024-04-28 13:24:04 DEBUG::Max significance: 0.250000
+2024-04-28 13:24:04 DEBUG::Random effects: MouseID
+2024-04-28 13:24:04 DEBUG::Fixed effects: Sequencing_Run,Sex,Type
+2024-04-28 13:24:04 DEBUG::Correction method: BH
+2024-04-28 13:24:04 DEBUG::Standardize: TRUE
+2024-04-28 13:24:04 DEBUG::Cores: 1
+2024-04-28 13:24:04 INFO::Verifying options selected are valid
+2024-04-28 13:24:04 INFO::Determining format of input files
+2024-04-28 13:24:04 INFO::Input format is data samples as columns and metadata samples as rows
+2024-04-28 13:24:04 DEBUG::Transformed data so samples are rows
+2024-04-28 13:24:04 DEBUG::A total of 18 samples were found in both the data and metadata
+2024-04-28 13:24:04 DEBUG::Reordering data/metadata to use same sample ordering
+2024-04-28 13:24:04 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-04-28 13:24:04 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Type
+2024-04-28 13:24:04 INFO::Filter data based on min abundance and min prevalence
+2024-04-28 13:24:04 INFO::Total samples in data: 18
+2024-04-28 13:24:04 INFO::Min samples required with min abundance for a feature not to be filtered: 1.800000
+2024-04-28 13:24:04 INFO::Total filtered features: 0
+2024-04-28 13:24:04 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-04-28 13:24:04 INFO::Total filtered features with variance filtering: 0
+2024-04-28 13:24:04 INFO::Filtered feature names from variance filtering:
+2024-04-28 13:24:04 INFO::Running selected normalization method: CLR
+2024-04-28 13:24:04 INFO::Applying z-score to standardize continuous metadata
+2024-04-28 13:24:04 INFO::Running selected transform method: NONE
+2024-04-28 13:24:04 INFO::Running selected analysis method: LM
+2024-04-28 13:24:04 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidota
+2024-04-28 13:24:04 INFO::Fitting model to feature number 2, k__Bacteria.p__Firmicutes
+2024-04-28 13:24:04 INFO::Fitting model to feature number 3, k__Bacteria.p__Actinobacteriota
+2024-04-28 13:24:04 INFO::Fitting model to feature number 4, k__Bacteria.p__Verrucomicrobiota
+2024-04-28 13:24:04 INFO::Fitting model to feature number 5, k__Bacteria.p__Proteobacteria
+2024-04-28 13:24:04 INFO::Fitting model to feature number 6, k__Bacteria.p__Desulfobacterota
+2024-04-28 13:24:04 INFO::Fitting model to feature number 7, k__Bacteria.p__Cyanobacteria
+2024-04-28 13:24:04 INFO::Fitting model to feature number 8, k__Bacteria.p__Deferribacterota
+2024-04-28 13:24:04 INFO::Counting total values for each feature
+2024-04-28 13:24:04 WARNING::Deleting existing residuals file: CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/residuals.rds
+2024-04-28 13:24:04 INFO::Writing residuals to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/residuals.rds
+2024-04-28 13:24:04 WARNING::Deleting existing fitted file: CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/fitted.rds
+2024-04-28 13:24:04 INFO::Writing fitted values to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/fitted.rds
+2024-04-28 13:24:04 WARNING::Deleting existing ranef file: CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/ranef.rds
+2024-04-28 13:24:04 INFO::Writing extracted random effects to file CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/ranef.rds
+2024-04-28 13:24:04 INFO::Writing all results to file (ordered by increasing q-values): CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv
+2024-04-28 13:24:04 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv
