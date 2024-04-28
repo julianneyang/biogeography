@@ -1,135 +1,138 @@
-2024-04-28 14:42:05 INFO::Writing function arguments to log file
-2024-04-28 14:42:05 DEBUG::Function arguments
-2024-04-28 14:42:05 DEBUG::Output folder: Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID
-2024-04-28 14:42:05 DEBUG::Min Abundance: 0.000000
-2024-04-28 14:42:05 DEBUG::Min Prevalence: 0.100000
-2024-04-28 14:42:05 DEBUG::Normalization: CLR
-2024-04-28 14:42:05 DEBUG::Transform: NONE
-2024-04-28 14:42:05 DEBUG::Analysis method: LM
-2024-04-28 14:42:05 DEBUG::Max significance: 0.250000
-2024-04-28 14:42:05 DEBUG::Random effects: MouseID
-2024-04-28 14:42:05 DEBUG::Fixed effects: Sequencing_Run,Sex,Site,Type
-2024-04-28 14:42:05 DEBUG::Correction method: BH
-2024-04-28 14:42:05 DEBUG::Standardize: TRUE
-2024-04-28 14:42:05 DEBUG::Cores: 1
-2024-04-28 14:42:05 INFO::Verifying options selected are valid
-2024-04-28 14:42:05 INFO::Determining format of input files
-2024-04-28 14:42:05 INFO::Input format is data samples as columns and metadata samples as rows
-2024-04-28 14:42:05 DEBUG::Transformed data so samples are rows
-2024-04-28 14:42:05 DEBUG::A total of 270 samples were found in both the data and metadata
-2024-04-28 14:42:05 DEBUG::Reordering data/metadata to use same sample ordering
-2024-04-28 14:42:05 INFO::Formula for random effects: expr ~ (1 | MouseID)
-2024-04-28 14:42:05 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site + Type
-2024-04-28 14:42:05 INFO::Filter data based on min abundance and min prevalence
-2024-04-28 14:42:05 INFO::Total samples in data: 270
-2024-04-28 14:42:05 INFO::Min samples required with min abundance for a feature not to be filtered: 27.000000
-2024-04-28 14:42:05 INFO::Total filtered features: 0
-2024-04-28 14:42:05 INFO::Filtered feature names from abundance and prevalence filtering:
-2024-04-28 14:42:05 INFO::Total filtered features with variance filtering: 0
-2024-04-28 14:42:05 INFO::Filtered feature names from variance filtering:
-2024-04-28 14:42:05 INFO::Running selected normalization method: CLR
-2024-04-28 14:42:05 INFO::Applying z-score to standardize continuous metadata
-2024-04-28 14:42:05 INFO::Running selected transform method: NONE
-2024-04-28 14:42:05 INFO::Running selected analysis method: LM
-2024-04-28 14:42:05 INFO::Fitting model to feature number 1, MF0063
-2024-04-28 14:42:05 INFO::Fitting model to feature number 2, MF0020
-2024-04-28 14:42:05 INFO::Fitting model to feature number 3, MF0061
-2024-04-28 14:42:05 INFO::Fitting model to feature number 4, MF0062
-2024-04-28 14:42:05 INFO::Fitting model to feature number 5, MF0060
-2024-04-28 14:42:05 INFO::Fitting model to feature number 6, MF0027
-2024-04-28 14:42:05 INFO::Fitting model to feature number 7, MF0028
-2024-04-28 14:42:05 INFO::Fitting model to feature number 8, MF0025
-2024-04-28 14:42:05 INFO::Fitting model to feature number 9, MF0069
-2024-04-28 14:42:05 INFO::Fitting model to feature number 10, MF0102
-2024-04-28 14:42:06 INFO::Fitting model to feature number 11, MF0026
-2024-04-28 14:42:06 INFO::Fitting model to feature number 12, MF0103
-2024-04-28 14:42:06 INFO::Fitting model to feature number 13, MF0067
-2024-04-28 14:42:06 INFO::Fitting model to feature number 14, MF0024
-2024-04-28 14:42:06 INFO::Fitting model to feature number 15, MF0068
-2024-04-28 14:42:06 INFO::Fitting model to feature number 16, MF0101
-2024-04-28 14:42:06 INFO::Fitting model to feature number 17, MF0021
-2024-04-28 14:42:07 INFO::Fitting model to feature number 18, MF0065
-2024-04-28 14:42:07 INFO::Fitting model to feature number 19, MF0022
-2024-04-28 14:42:07 INFO::Fitting model to feature number 20, MF0066
-2024-04-28 14:42:07 INFO::Fitting model to feature number 21, MF0018
-2024-04-28 14:42:07 INFO::Fitting model to feature number 22, MF0019
-2024-04-28 14:42:07 INFO::Fitting model to feature number 23, MF0030
-2024-04-28 14:42:07 INFO::Fitting model to feature number 24, MF0074
-2024-04-28 14:42:07 INFO::Fitting model to feature number 25, MF0031
-2024-04-28 14:42:07 INFO::Fitting model to feature number 26, MF0075
-2024-04-28 14:42:07 INFO::Fitting model to feature number 27, MF0072
-2024-04-28 14:42:08 INFO::Fitting model to feature number 28, MF0073
-2024-04-28 14:42:08 INFO::Fitting model to feature number 29, MF0070
-2024-04-28 14:42:08 INFO::Fitting model to feature number 30, MF0071
-2024-04-28 14:42:08 INFO::Fitting model to feature number 31, MF0038
-2024-04-28 14:42:08 INFO::Fitting model to feature number 32, MF0039
-2024-04-28 14:42:08 INFO::Fitting model to feature number 33, MF0036
-2024-04-28 14:42:08 INFO::Fitting model to feature number 34, MF0037
-2024-04-28 14:42:08 INFO::Fitting model to feature number 35, MF0034
-2024-04-28 14:42:08 INFO::Fitting model to feature number 36, MF0078
-2024-04-28 14:42:08 INFO::Fitting model to feature number 37, MF0035
-2024-04-28 14:42:08 INFO::Fitting model to feature number 38, MF0079
-2024-04-28 14:42:08 INFO::Fitting model to feature number 39, MF0032
-2024-04-28 14:42:08 INFO::Fitting model to feature number 40, MF0076
-2024-04-28 14:42:08 INFO::Fitting model to feature number 41, MF0033
-2024-04-28 14:42:09 INFO::Fitting model to feature number 42, MF0077
-2024-04-28 14:42:09 INFO::Fitting model to feature number 43, MF0029
-2024-04-28 14:42:09 INFO::Fitting model to feature number 44, MF0041
-2024-04-28 14:42:09 INFO::Fitting model to feature number 45, MF0085
-2024-04-28 14:42:09 INFO::Fitting model to feature number 46, MF0086
-2024-04-28 14:42:09 INFO::Fitting model to feature number 47, MF0083
-2024-04-28 14:42:09 INFO::Fitting model to feature number 48, MF0040
-2024-04-28 14:42:09 INFO::Fitting model to feature number 49, MF0084
-2024-04-28 14:42:09 INFO::Fitting model to feature number 50, MF0081
-2024-04-28 14:42:09 INFO::Fitting model to feature number 51, MF0082
-2024-04-28 14:42:09 INFO::Fitting model to feature number 52, MF0080
-2024-04-28 14:42:09 INFO::Fitting model to feature number 53, MF0005
-2024-04-28 14:42:09 INFO::Fitting model to feature number 54, MF0049
-2024-04-28 14:42:09 INFO::Fitting model to feature number 55, MF0006
-2024-04-28 14:42:09 INFO::Fitting model to feature number 56, MF0003
-2024-04-28 14:42:09 INFO::Fitting model to feature number 57, MF0047
-2024-04-28 14:42:09 INFO::Fitting model to feature number 58, MF0004
-2024-04-28 14:42:09 INFO::Fitting model to feature number 59, MF0048
-2024-04-28 14:42:09 INFO::Fitting model to feature number 60, MF0001
-2024-04-28 14:42:10 INFO::Fitting model to feature number 61, MF0045
-2024-04-28 14:42:10 INFO::Fitting model to feature number 62, MF0089
-2024-04-28 14:42:10 INFO::Fitting model to feature number 63, MF0002
-2024-04-28 14:42:10 INFO::Fitting model to feature number 64, MF0046
-2024-04-28 14:42:10 INFO::Fitting model to feature number 65, MF0087
-2024-04-28 14:42:10 INFO::Fitting model to feature number 66, MF0043
-2024-04-28 14:42:10 INFO::Fitting model to feature number 67, MF0044
-2024-04-28 14:42:10 INFO::Fitting model to feature number 68, MF0088
-2024-04-28 14:42:10 INFO::Fitting model to feature number 69, MF0052
-2024-04-28 14:42:10 INFO::Fitting model to feature number 70, MF0096
-2024-04-28 14:42:10 INFO::Fitting model to feature number 71, MF0097
-2024-04-28 14:42:10 INFO::Fitting model to feature number 72, MF0050
-2024-04-28 14:42:10 INFO::Fitting model to feature number 73, MF0094
-2024-04-28 14:42:10 INFO::Fitting model to feature number 74, MF0051
-2024-04-28 14:42:10 INFO::Fitting model to feature number 75, MF0095
-2024-04-28 14:42:11 INFO::Fitting model to feature number 76, MF0092
-2024-04-28 14:42:11 INFO::Fitting model to feature number 77, MF0093
-2024-04-28 14:42:11 INFO::Fitting model to feature number 78, MF0090
-2024-04-28 14:42:11 INFO::Fitting model to feature number 79, MF0016
-2024-04-28 14:42:11 INFO::Fitting model to feature number 80, MF0017
-2024-04-28 14:42:11 INFO::Fitting model to feature number 81, MF0014
-2024-04-28 14:42:11 INFO::Fitting model to feature number 82, MF0058
-2024-04-28 14:42:11 INFO::Fitting model to feature number 83, MF0015
-2024-04-28 14:42:11 INFO::Fitting model to feature number 84, MF0059
-2024-04-28 14:42:11 INFO::Fitting model to feature number 85, MF0012
-2024-04-28 14:42:11 INFO::Fitting model to feature number 86, MF0056
-2024-04-28 14:42:11 INFO::Fitting model to feature number 87, MF0057
-2024-04-28 14:42:11 INFO::Fitting model to feature number 88, MF0013
-2024-04-28 14:42:11 INFO::Fitting model to feature number 89, MF0010
-2024-04-28 14:42:11 INFO::Fitting model to feature number 90, MF0054
-2024-04-28 14:42:11 INFO::Fitting model to feature number 91, MF0098
-2024-04-28 14:42:12 INFO::Fitting model to feature number 92, MF0011
-2024-04-28 14:42:12 INFO::Fitting model to feature number 93, MF0055
-2024-04-28 14:42:12 INFO::Fitting model to feature number 94, MF0009
-2024-04-28 14:42:12 INFO::Fitting model to feature number 95, MF0007
-2024-04-28 14:42:12 INFO::Fitting model to feature number 96, MF0008
-2024-04-28 14:42:12 INFO::Counting total values for each feature
-2024-04-28 14:42:12 INFO::Writing residuals to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/residuals.rds
-2024-04-28 14:42:12 INFO::Writing fitted values to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/fitted.rds
-2024-04-28 14:42:12 INFO::Writing extracted random effects to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/ranef.rds
-2024-04-28 14:42:12 INFO::Writing all results to file (ordered by increasing q-values): Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/all_results.tsv
-2024-04-28 14:42:12 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv
+2024-04-28 18:11:37 INFO::Writing function arguments to log file
+2024-04-28 18:11:37 DEBUG::Function arguments
+2024-04-28 18:11:37 DEBUG::Output folder: Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID
+2024-04-28 18:11:37 DEBUG::Min Abundance: 0.000000
+2024-04-28 18:11:37 DEBUG::Min Prevalence: 0.000000
+2024-04-28 18:11:37 DEBUG::Normalization: CLR
+2024-04-28 18:11:37 DEBUG::Transform: NONE
+2024-04-28 18:11:37 DEBUG::Analysis method: LM
+2024-04-28 18:11:37 DEBUG::Max significance: 0.250000
+2024-04-28 18:11:37 DEBUG::Random effects: MouseID
+2024-04-28 18:11:37 DEBUG::Fixed effects: Sequencing_Run,Sex,Site,Type
+2024-04-28 18:11:37 DEBUG::Correction method: BH
+2024-04-28 18:11:37 DEBUG::Standardize: TRUE
+2024-04-28 18:11:37 DEBUG::Cores: 1
+2024-04-28 18:11:37 INFO::Verifying options selected are valid
+2024-04-28 18:11:37 INFO::Determining format of input files
+2024-04-28 18:11:37 INFO::Input format is data samples as columns and metadata samples as rows
+2024-04-28 18:11:37 DEBUG::Transformed data so samples are rows
+2024-04-28 18:11:37 DEBUG::A total of 270 samples were found in both the data and metadata
+2024-04-28 18:11:37 DEBUG::Reordering data/metadata to use same sample ordering
+2024-04-28 18:11:37 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-04-28 18:11:37 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site + Type
+2024-04-28 18:11:37 INFO::Filter data based on min abundance and min prevalence
+2024-04-28 18:11:37 INFO::Total samples in data: 270
+2024-04-28 18:11:37 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2024-04-28 18:11:37 INFO::Total filtered features: 0
+2024-04-28 18:11:37 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-04-28 18:11:37 INFO::Total filtered features with variance filtering: 0
+2024-04-28 18:11:37 INFO::Filtered feature names from variance filtering:
+2024-04-28 18:11:37 INFO::Running selected normalization method: CLR
+2024-04-28 18:11:37 INFO::Applying z-score to standardize continuous metadata
+2024-04-28 18:11:37 INFO::Running selected transform method: NONE
+2024-04-28 18:11:37 INFO::Running selected analysis method: LM
+2024-04-28 18:11:37 INFO::Fitting model to feature number 1, MF0063
+2024-04-28 18:11:37 INFO::Fitting model to feature number 2, MF0020
+2024-04-28 18:11:37 INFO::Fitting model to feature number 3, MF0061
+2024-04-28 18:11:37 INFO::Fitting model to feature number 4, MF0062
+2024-04-28 18:11:37 INFO::Fitting model to feature number 5, MF0060
+2024-04-28 18:11:38 INFO::Fitting model to feature number 6, MF0027
+2024-04-28 18:11:38 INFO::Fitting model to feature number 7, MF0028
+2024-04-28 18:11:38 INFO::Fitting model to feature number 8, MF0025
+2024-04-28 18:11:38 INFO::Fitting model to feature number 9, MF0069
+2024-04-28 18:11:38 INFO::Fitting model to feature number 10, MF0102
+2024-04-28 18:11:38 INFO::Fitting model to feature number 11, MF0026
+2024-04-28 18:11:38 INFO::Fitting model to feature number 12, MF0103
+2024-04-28 18:11:38 INFO::Fitting model to feature number 13, MF0067
+2024-04-28 18:11:38 INFO::Fitting model to feature number 14, MF0024
+2024-04-28 18:11:39 INFO::Fitting model to feature number 15, MF0068
+2024-04-28 18:11:39 INFO::Fitting model to feature number 16, MF0101
+2024-04-28 18:11:39 INFO::Fitting model to feature number 17, MF0021
+2024-04-28 18:11:39 INFO::Fitting model to feature number 18, MF0065
+2024-04-28 18:11:39 INFO::Fitting model to feature number 19, MF0022
+2024-04-28 18:11:39 INFO::Fitting model to feature number 20, MF0066
+2024-04-28 18:11:39 INFO::Fitting model to feature number 21, MF0018
+2024-04-28 18:11:39 INFO::Fitting model to feature number 22, MF0019
+2024-04-28 18:11:39 INFO::Fitting model to feature number 23, MF0030
+2024-04-28 18:11:39 INFO::Fitting model to feature number 24, MF0074
+2024-04-28 18:11:39 INFO::Fitting model to feature number 25, MF0031
+2024-04-28 18:11:40 INFO::Fitting model to feature number 26, MF0075
+2024-04-28 18:11:40 INFO::Fitting model to feature number 27, MF0072
+2024-04-28 18:11:40 INFO::Fitting model to feature number 28, MF0073
+2024-04-28 18:11:40 INFO::Fitting model to feature number 29, MF0070
+2024-04-28 18:11:40 INFO::Fitting model to feature number 30, MF0071
+2024-04-28 18:11:40 INFO::Fitting model to feature number 31, MF0038
+2024-04-28 18:11:40 INFO::Fitting model to feature number 32, MF0039
+2024-04-28 18:11:40 INFO::Fitting model to feature number 33, MF0036
+2024-04-28 18:11:40 INFO::Fitting model to feature number 34, MF0037
+2024-04-28 18:11:40 INFO::Fitting model to feature number 35, MF0034
+2024-04-28 18:11:40 INFO::Fitting model to feature number 36, MF0078
+2024-04-28 18:11:40 INFO::Fitting model to feature number 37, MF0035
+2024-04-28 18:11:40 INFO::Fitting model to feature number 38, MF0079
+2024-04-28 18:11:40 INFO::Fitting model to feature number 39, MF0032
+2024-04-28 18:11:41 INFO::Fitting model to feature number 40, MF0076
+2024-04-28 18:11:41 INFO::Fitting model to feature number 41, MF0033
+2024-04-28 18:11:41 INFO::Fitting model to feature number 42, MF0077
+2024-04-28 18:11:41 INFO::Fitting model to feature number 43, MF0029
+2024-04-28 18:11:41 INFO::Fitting model to feature number 44, MF0041
+2024-04-28 18:11:41 INFO::Fitting model to feature number 45, MF0085
+2024-04-28 18:11:41 INFO::Fitting model to feature number 46, MF0086
+2024-04-28 18:11:41 INFO::Fitting model to feature number 47, MF0083
+2024-04-28 18:11:41 INFO::Fitting model to feature number 48, MF0040
+2024-04-28 18:11:41 INFO::Fitting model to feature number 49, MF0084
+2024-04-28 18:11:41 INFO::Fitting model to feature number 50, MF0081
+2024-04-28 18:11:41 INFO::Fitting model to feature number 51, MF0082
+2024-04-28 18:11:41 INFO::Fitting model to feature number 52, MF0080
+2024-04-28 18:11:41 INFO::Fitting model to feature number 53, MF0005
+2024-04-28 18:11:41 INFO::Fitting model to feature number 54, MF0049
+2024-04-28 18:11:41 INFO::Fitting model to feature number 55, MF0006
+2024-04-28 18:11:42 INFO::Fitting model to feature number 56, MF0003
+2024-04-28 18:11:42 INFO::Fitting model to feature number 57, MF0047
+2024-04-28 18:11:42 INFO::Fitting model to feature number 58, MF0004
+2024-04-28 18:11:42 INFO::Fitting model to feature number 59, MF0048
+2024-04-28 18:11:42 INFO::Fitting model to feature number 60, MF0001
+2024-04-28 18:11:42 INFO::Fitting model to feature number 61, MF0045
+2024-04-28 18:11:42 INFO::Fitting model to feature number 62, MF0089
+2024-04-28 18:11:42 INFO::Fitting model to feature number 63, MF0002
+2024-04-28 18:11:42 INFO::Fitting model to feature number 64, MF0046
+2024-04-28 18:11:42 INFO::Fitting model to feature number 65, MF0087
+2024-04-28 18:11:42 INFO::Fitting model to feature number 66, MF0043
+2024-04-28 18:11:42 INFO::Fitting model to feature number 67, MF0044
+2024-04-28 18:11:42 INFO::Fitting model to feature number 68, MF0088
+2024-04-28 18:11:42 INFO::Fitting model to feature number 69, MF0052
+2024-04-28 18:11:43 INFO::Fitting model to feature number 70, MF0096
+2024-04-28 18:11:43 INFO::Fitting model to feature number 71, MF0097
+2024-04-28 18:11:43 INFO::Fitting model to feature number 72, MF0050
+2024-04-28 18:11:43 INFO::Fitting model to feature number 73, MF0094
+2024-04-28 18:11:43 INFO::Fitting model to feature number 74, MF0051
+2024-04-28 18:11:43 INFO::Fitting model to feature number 75, MF0095
+2024-04-28 18:11:43 INFO::Fitting model to feature number 76, MF0092
+2024-04-28 18:11:43 INFO::Fitting model to feature number 77, MF0093
+2024-04-28 18:11:43 INFO::Fitting model to feature number 78, MF0090
+2024-04-28 18:11:43 INFO::Fitting model to feature number 79, MF0016
+2024-04-28 18:11:43 INFO::Fitting model to feature number 80, MF0017
+2024-04-28 18:11:43 INFO::Fitting model to feature number 81, MF0014
+2024-04-28 18:11:43 INFO::Fitting model to feature number 82, MF0058
+2024-04-28 18:11:43 INFO::Fitting model to feature number 83, MF0015
+2024-04-28 18:11:43 INFO::Fitting model to feature number 84, MF0059
+2024-04-28 18:11:44 INFO::Fitting model to feature number 85, MF0012
+2024-04-28 18:11:44 INFO::Fitting model to feature number 86, MF0056
+2024-04-28 18:11:44 INFO::Fitting model to feature number 87, MF0057
+2024-04-28 18:11:44 INFO::Fitting model to feature number 88, MF0013
+2024-04-28 18:11:44 INFO::Fitting model to feature number 89, MF0010
+2024-04-28 18:11:44 INFO::Fitting model to feature number 90, MF0054
+2024-04-28 18:11:44 INFO::Fitting model to feature number 91, MF0098
+2024-04-28 18:11:44 INFO::Fitting model to feature number 92, MF0011
+2024-04-28 18:11:44 INFO::Fitting model to feature number 93, MF0055
+2024-04-28 18:11:44 INFO::Fitting model to feature number 94, MF0009
+2024-04-28 18:11:44 INFO::Fitting model to feature number 95, MF0007
+2024-04-28 18:11:44 INFO::Fitting model to feature number 96, MF0008
+2024-04-28 18:11:45 INFO::Counting total values for each feature
+2024-04-28 18:11:45 WARNING::Deleting existing residuals file: Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/residuals.rds
+2024-04-28 18:11:45 INFO::Writing residuals to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/residuals.rds
+2024-04-28 18:11:45 WARNING::Deleting existing fitted file: Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/fitted.rds
+2024-04-28 18:11:45 INFO::Writing fitted values to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/fitted.rds
+2024-04-28 18:11:45 WARNING::Deleting existing ranef file: Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/ranef.rds
+2024-04-28 18:11:45 INFO::Writing extracted random effects to file Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/ranef.rds
+2024-04-28 18:11:45 INFO::Writing all results to file (ordered by increasing q-values): Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/all_results.tsv
+2024-04-28 18:11:45 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Donors-Analysis/differential_GMM_type/GMM-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv

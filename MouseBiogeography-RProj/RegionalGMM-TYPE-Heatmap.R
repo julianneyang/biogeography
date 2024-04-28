@@ -19,7 +19,7 @@ devtools::install("Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 #Feed in the significant results and generate a target vector with the union of all features 
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/")
+setwd("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/")
 duodenum<-read.table("GMM-Maaslin2-TYPE/GMM-LumRef-CLR-Duodenum-ComBat-SeqRunLineSexType-1-MsID/significant_results.tsv", header=TRUE)
   duodenum_significant<-filter(duodenum, metadata=="Type" & value=="Mucosal" &qval<0.05)
   a<-duodenum_significant$feature
