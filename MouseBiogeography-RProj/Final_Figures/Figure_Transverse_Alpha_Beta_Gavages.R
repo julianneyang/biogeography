@@ -17,25 +17,40 @@ library(devtools)
 library(roxygen2)
 find_rtools()
 
-version
-writeLines('PATH="${PATH};${RTOOLS40_HOME}\\usr\\bin"', con = "~/.Renviron")
-write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
-Sys.which("make")
-remove.packages("Microbiome.Biogeography")
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Microbiome.Biogeography/")
+setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-devtools::install("Microbiome.Biogeography")
 library("Microbiome.Biogeography")
-Sys.which("make")
+setwd("/home/julianne/Documents/biogeography/")
+
 
 ### Alpha Diversity ---
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Transverse_Alpha_Beta_UCLA_CS.R")
+
+# HUM V Gavage  
+data<-readRDS("Donors-Analysis/alpha_diversity/alpha_diversity.RDS")
+metadata<- read.delim("Donors-Analysis/starting_files/Donors_Metadata.tsv")
+
+hum_v_gavage_otus_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, observed_features, Type, 0, 600)+ 
+  facet_grid(~Site) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ggtitle("HUM V. Gavage")+
+  labs(y="# ASVs", x="")+
+  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+                             method="wilcox",vjust=0.5,
+                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+hum_v_gavage_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, pielou_evenness, Type, 0, 1)+ 
+  facet_grid(~Site) +
+  #theme(plot.title = element_text(hjust = 0.5)) +
+  #ggtitle("UCLA O. SPF")+
+  labs(y="Pielou's evenness", x="")+
+  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+                             method="wilcox",vjust=0.5,
+                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+
 
 # SPF Gavage 
 data<-read.csv("Humanized-Biogeography-Analysis/alpha_diversity_Humanized.csv", header=TRUE, row.names=1)
-metadata<- read.csv("Humanized-Biogeography-Analysis/Humanized Metadata - All-Humanized-Metadata (1).csv")
+metadata<- read.delim("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv")
 intermediate<- metadata %>% select(c("SampleID", "Microbiota"))
 intermediate<- (merge(data, intermediate, by = 'SampleID'))
 data<- intermediate
@@ -62,7 +77,7 @@ spf_gavage_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, m
 
 # HUM Gavage 
 data<-read.csv("Humanized-Biogeography-Analysis/alpha_diversity_Humanized.csv", header=TRUE, row.names=1)
-metadata<- read.csv("Humanized-Biogeography-Analysis/Humanized Metadata - All-Humanized-Metadata (1).csv")
+metadata<- read.delim("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv")
 intermediate<- metadata %>% select(c("SampleID", "Microbiota"))
 intermediate<- (merge(data, intermediate, by = 'SampleID'))
 data<- intermediate
@@ -89,10 +104,97 @@ hum_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata
 ### Beta Diversity ---
 Type_cols<-c("Lum"="#481567FF", "Muc" = "#3CBB75FF")
 
+# HUM V Gavage
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Colon.csv",header=FALSE)
+metadata<- read.delim("Donors-Analysis/starting_files/Donors_Metadata.tsv", header=TRUE)
+
+hum_v_gavage_pcoa_colon <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"SPF Gavage", "Type", Type_cols)+
+  #labs(title="Colon") + 
+  theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site_General)
+#theme(plot.title = element_text(hjust = 0.5)) 
+hum_v_gavage_pcoa_colon
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - SI.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_si <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"SPF Gavage", "Type", Type_cols)+
+  #labs(title="Colon") + 
+  theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site_General)
+#theme(plot.title = element_text(hjust = 0.5)) 
+hum_v_gavage_pcoa_si
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Duodenum.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_duo <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UCLA O. SPF", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+hum_v_gavage_pcoa_duo
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Jejunum.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_jej <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"HUM V. Gavage", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+hum_v_gavage_pcoa_jej
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Ileum.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_ile <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UCLA O. SPF", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+hum_v_gavage_pcoa_ile
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Cecum.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_cec <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UCLA O. SPF", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+hum_v_gavage_pcoa_cec 
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - PC.csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_pc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UCLA O. SPF", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+hum_v_gavage_pcoa_pc
+
+data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - DC .csv",
+               header=FALSE)
+
+hum_v_gavage_pcoa_dc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UCLA O. SPF", "Type", Type_cols)+
+  #labs(title="UCLA O. SPF") + 
+  #theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
+  facet_grid(~Site)+
+  theme(legend.position = "none")
+#theme(plot.title = element_text(hjust = 0.5))
+  hum_v_gavage_pcoa_dc
+
 
 # SPF Gavage 
 data<-read.csv("Humanized-Biogeography-Analysis/Source RPCA/SPF/Type/Source RPCA - SPF - Colon.csv",header=FALSE)
-metadata<- read.delim("Humanized-Biogeography-Analysis/Humanized Metadata.tsv.txt", header=TRUE)
+metadata<- read.delim("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv", header=TRUE)
 
 spf_gavage_pcoa_colon <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"SPF Gavage", "Type", Type_cols)+
   #labs(title="Colon") + 
@@ -180,7 +282,7 @@ spf_gavage_pcoa_dc
 # HUM Gavage
 
 data<-read.csv("Humanized-Biogeography-Analysis/Source RPCA/Hum/Type/Source RPCA -Humanized - Colon.csv",header=FALSE)
-metadata<- read.delim("Humanized-Biogeography-Analysis/Humanized Metadata.tsv.txt", header=TRUE)
+metadata<- read.delim("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv", header=TRUE)
 
 hum_gavage_pcoa_colon <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"HUM Gavage", "Type", Type_cols) +
   #labs(title="CS SPF") + 
@@ -251,12 +353,17 @@ hum_gavage_pcoa_dc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata
 #theme(plot.title = element_text(hjust = 0.5))
 
 ### Figure Assembly ---
-plot_grid(spf_gavage_otus_transverse, hum_otus_transverse, 
-          spf_gavage_pe_transverse, hum_pe_transverse, 
-          ncol=2, labels=c("A", "", "B", ""))
-plot_grid(spf_gavage_pcoa_si, spf_gavage_pcoa_colon, hum_gavage_pcoa_si, hum_gavage_pcoa_colon,
-          spf_gavage_pcoa_duo, spf_gavage_pcoa_cec, hum_gavage_pcoa_duo, hum_gavage_pcoa_cec,
-          spf_gavage_pcoa_jej, spf_gavage_pcoa_pc, hum_gavage_pcoa_jej, hum_gavage_pcoa_pc,
-          spf_gavage_pcoa_ile, spf_gavage_pcoa_dc, hum_gavage_pcoa_ile, hum_gavage_pcoa_dc,
-          nrow=4, ncol=4, labels=c("C", "D", "E", "F", 
-                                   "G", "H", "I", "J"))
+dev.new()
+plot_grid(spf_gavage_otus_transverse, hum_otus_transverse, hum_v_gavage_otus_transverse,
+          spf_gavage_pe_transverse, hum_pe_transverse, hum_v_gavage_pe_transverse,
+          ncol=3, labels=c("A", "", "B", "", "C",""))
+dev.new()
+plot_grid(spf_gavage_pcoa_si, spf_gavage_pcoa_colon, hum_gavage_pcoa_si, hum_gavage_pcoa_colon, hum_v_gavage_pcoa_si, hum_v_gavage_pcoa_colon,
+          spf_gavage_pcoa_duo, spf_gavage_pcoa_cec, hum_gavage_pcoa_duo, hum_gavage_pcoa_cec,hum_v_gavage_pcoa_duo, hum_v_gavage_pcoa_cec,
+          nrow=2, ncol=6, labels=c("D", "E", "F", "G", 
+                                   "H", "I", "J", "K","L","M","N","O"))
+
+dev.new()
+plot_grid(spf_gavage_pcoa_jej, spf_gavage_pcoa_pc, hum_gavage_pcoa_jej, hum_gavage_pcoa_pc,hum_v_gavage_pcoa_jej, hum_v_gavage_pcoa_pc,
+                    spf_gavage_pcoa_ile, spf_gavage_pcoa_dc, hum_gavage_pcoa_ile, hum_gavage_pcoa_dc,hum_v_gavage_pcoa_ile, hum_v_gavage_pcoa_dc,
+                    nrow=2, ncol=6)

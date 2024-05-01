@@ -131,6 +131,23 @@ hum_v_map_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-Colon
   theme(legend.position = "none")+
   theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
 
+?generate_GMM_heat_map_by_site()
+hum_v_mmap_lum <- generate_GMM_heat_map_by_site(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"),
+                                               lumtarget,
+                                               "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
+                                               Y=metabolic_map,
+                                               "metabolic_map",
+                                               "Luminal",
+                                               cols,
+                                               bk) +
+  theme_cowplot(20) +
+  ggtitle("HUM V. Gavage Lum") + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(legend.position = "none")+
+  theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
+
+dev.new()
+hum_v_mmap_lum
 cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
 bk =c(-1, -0.5, 0, 0.5, 1, 1.5)
 

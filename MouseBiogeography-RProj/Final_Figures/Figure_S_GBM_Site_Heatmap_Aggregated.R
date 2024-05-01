@@ -110,14 +110,14 @@ cs_lum_GBM_map <- generate_GBM_heat_map_by_site("CS-Facility-Analysis/OMIXER-RPM
 
 ### UCLA V SPF ---
 # Mucosal - 24 concordant features 
-muctarget <- find_concordant_features_across_sites("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
+muctarget <- find_concordant_features_across_sites("UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
 
 ### Query the target vector against all_results.tsv and make a heatmap---
 
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
-ucla_v_muc_GBM_map <- generate_GBM_heat_map_by_site("ImmDef-Mouse-Biogeography-Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+ucla_v_muc_GBM_map <- generate_GBM_heat_map_by_site("UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                                              targetvector = muctarget, 
                                              path_to_Module_Key = "GBM_Module_Key.csv",
                                              "UCLA V. SPF Mucosal",
@@ -163,17 +163,17 @@ muctarget <- find_concordant_features_across_sites("Humanized-Biogeography-Analy
 
 ### Generate multi-panel figure ---
 
-top <- plot_grid(ucla_o_lum_GBM_map, cs_lum_GBM_map, 
-          nrow=1, ncol=2, labels=c("A","B"))
+top <- plot_grid(ucla_o_lum_GBM_map, ucla_o_muc_GBM_map,cs_lum_GBM_map,cs_muc_GBM_map,
+          nrow=1, ncol=4, labels=c("A","B","C","D"))
 
-middle <- plot_grid(ucla_o_muc_GBM_map, cs_muc_GBM_map, 
-          nrow=1, ncol=2, labels=c("C","D"))
-
+dev.new()
+top
+middle <- plot_grid(ucla_v_muc_GBM_map, hum_v_lum_GBM_map,hum_v_muc_GBM_map,hum_muc_GBM_map,
+          nrow=1, ncol=4, labels=c("E","F","G","H"))
+dev.new()
+middle
 bottom_right <- plot_grid(hum_lum_GBM_map,
                           NULL,NULL,NULL, 
-                          ncol=1,labels=c("G","H","",""))
-bottom <- plot_grid(ucla_v_muc_GBM_map,
-          hum_muc_GBM_map, bottom_right,
-          nrow=1, ncol=3,
-          labels=c("E","F"))
-plot_grid(middle, bottom, nrow=2)
+                          nrow=1,labels=c("I","J","",""))
+dev.new()
+bottom_right
