@@ -1,10 +1,13 @@
 library(ggplot2)
-library(vegan)
 library(dplyr)
 library(rlang)
 library(cowplot)
 library(viridis)
 
+packageurl <- "http://cran.r-project.org/src/contrib/Archive/vegan/vegan_2.6-2.tar.gz"
+install.packages(packageurl, repos=NULL, type="source")
+
+library(vegan)
 
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
 here()
@@ -114,8 +117,8 @@ data.adonis=adonis2(data.dist ~ Sequencing_Run + Sex + Site, data=metadata, perm
 print(data.adonis)
 
 run_repeated_PERMANOVA <- function(path_to_distance_matrix_tsv,path_to_metadata_csv,permute_columns_vector, subject_metadata_vector){
-  #data<-read.table(file ="CS-Facility-Analysis/RPCA/rpca_dm/dm_rpca_SI_CS-Facility-ComBat-Adjusted-ASV.qza.txt/distance-matrix.tsv")
-  #metadata <- read.csv("CS-Facility-Analysis/CS_Facility_Metadata.csv", header=TRUE, row.names=1)
+  data<-read.table(file ="CS-Facility-Analysis/RPCA/rpca_dm/dm_rpca_SI_CS-Facility-ComBat-Adjusted-ASV.qza.txt/distance-matrix.tsv")
+  metadata <- read.delim("CS-Facility-Analysis/starting_files/CS_Facility_Metadata.tsv", header=TRUE, row.names=1)
   
   # Read in files ---
   data<-read.table(path_to_distance_matrix_tsv)
@@ -148,7 +151,7 @@ run_repeated_PERMANOVA <- function(path_to_distance_matrix_tsv,path_to_metadata_
                             blocks= subjectvector, 
                             block_data=metadata_subj,
                             metadata_order=order_vector)
-  print(data.adonis$aov.tab)
+  data.adonis$`Pr(>F)`
 }
 
 
