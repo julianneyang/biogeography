@@ -2,7 +2,9 @@ library(gplots)
 library(dendextend) 
 library(here)
 library(ComplexUpset)
+library(tidyverse)
 library(UpSetR)
+library(cowplot)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -47,10 +49,10 @@ file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Co
                 "Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
 
-cohort_prefixes <- c("UCLA_O_SPF_Luminal",
-                     "CS_SPF_Luminal",
-                     "HUM_V_Gavage_Luminal",
-                     "HUM_Gavage_Luminal")
+cohort_prefixes <- c("UCLA_O_SPF",
+                     "CS_SPF",
+                     "HUM_V_Gavage",
+                     "HUM_Gavage")
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                                       cohort_prefixes = cohort_prefixes)
@@ -64,14 +66,29 @@ df_wide <- df_long %>%
   pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
 
 df_wide <- as.data.frame(df_wide)
-df_wide <- df_wide %>% mutate(SPF_Gavage_Luminal = 0)
+df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 all_datasets <- names(df_wide)[-1]
-taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
+taxa_upset <- ComplexUpset::upset(df_wide, 
+                                  all_datasets,
                                   base_annotations=list(
   'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
-      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
-    theme_cowplot(12)
-UpSetR::upset(df_wide, sets= all_datasets,main.bar.color = "skyblue", order.by = "freq")
+      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
+  themes=list(
+    default=theme(
+      axis.ticks.x=element_blank(),
+      axis.text.x=element_blank(),
+    ),
+    intersections_matrix=theme(
+      axis.ticks.x=element_blank(),
+      axis.text.x=element_blank(),
+    )
+  ))
+
+df_wide$count_ones <- rowSums(df_wide[, c(2:6)])
+df_filtered <- df_wide[df_wide$count_ones >= 3, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+df_filtered$feature
+gsub(".*f__","f__",df_filtered$feature)
 
 ### Heatmap ---
 

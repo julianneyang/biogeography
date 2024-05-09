@@ -25,12 +25,12 @@ file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Co
                 "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/differential_genera_site/SPF_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
 
-cohort_prefixes <- c("UCLA_O_SPF_Mucosal",
-                     "CS_SPF_Mucosal",
-                     "HUM_V_Gavage_Mucosal",
-                     "UCLA_V_SPF_Mucosal",
-                     "HUM_Gavage_Mucosal",
-                     "SPF_Gavage_Mucosal")
+cohort_prefixes <- c("UCLA_O_SPF",
+                     "CS_SPF",
+                     "HUM_V_Gavage",
+                     "UCLA_V_SPF",
+                     "HUM_Gavage",
+                     "SPF_Gavage")
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                            cohort_prefixes = cohort_prefixes)
@@ -43,14 +43,24 @@ df_long <- all_taxa %>%
 df_wide <- df_long %>%
   pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
 
+
+
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-1]
 taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
                                   base_annotations=list(
                                     'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
-                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
-  theme_cowplot(12)
-
+                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
+                                  themes=list(
+                                    default=theme(
+                                      axis.ticks.x=element_blank(),
+                                      axis.text.x=element_blank(),
+                                    ),
+                                    intersections_matrix=theme(
+                                      axis.ticks.x=element_blank(),
+                                      axis.text.x=element_blank(),
+                                    )
+                                  ))
 
 ### Heatmap ---
 

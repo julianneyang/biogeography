@@ -11,6 +11,7 @@ library(cowplot)
 library(viridis)
 library(plyr)
 library(gridExtra)
+library(paletteer)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -63,6 +64,11 @@ taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
                                       scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
   theme_cowplot(12)
 
+df_wide$count_ones <- rowSums(df_wide[, c(3:8)])
+df_filtered <- df_wide[df_wide$count_ones >= 5, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+gmm_of_interest <- df_filtered$feature
+
 print(paletteer::paletteer_packages, n=100)
 cols1 <- paletteer_d("basetheme::brutal",n=10)
 cols2 <- paletteer_d("basetheme::dark",n=10)
@@ -107,7 +113,39 @@ legend <- cowplot::get_legend(forthelegend)
 grid.newpage()
 dev.new(width=20, height=5)
 grid.draw(legend)
-                    
+             
+### Coef Plots ---
+file_paths <- c(
+  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM_DCRef-CLR-MucCol-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
+  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
+  "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"
+)
+
+new_value <- "Distal_Colon"
+new_coef <- 0
+cohort_prefixes <- c("UCLA_O_SPF_Lum", 
+                     "UCLA_O_SPF_Muc",
+                     "CS_SPF_Lum",
+                     "CS_SPF_Muc",
+                     "UCLA_V_SPF_Muc",
+                     "HUM_Gavage_Lum",
+                     "HUM_Gavage_Muc",
+                     "SPF_Gavage_Lum",
+                     "SPF_Gavage_Muc",
+                     "HUM_V_Gavage_Lum",
+                     "HUM_V_Gavage_Muc")
+
+feature_value <- gmm_of_interest[1]
+data_all_GMM1 <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
+GMM1 <- plot_data(data_all_GMM1, "arabinoxylan degradation")
  
 ### HUM V Gavage ---
 donors_filepath <- "Donors-Analysis/differential_GMM_site/"
