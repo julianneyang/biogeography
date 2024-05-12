@@ -58,7 +58,7 @@ df_wide <- df_long %>%
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-(1:2)]
-taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
+gmm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
                                   base_annotations=list(
                                     'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
                                       scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')))+
@@ -68,6 +68,7 @@ df_wide$count_ones <- rowSums(df_wide[, c(3:8)])
 df_filtered <- df_wide[df_wide$count_ones >= 5, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 gmm_of_interest <- df_filtered$feature
+names(gmm_of_interest) <-df_filtered$annotation
 
 print(paletteer::paletteer_packages, n=100)
 cols1 <- paletteer_d("basetheme::brutal",n=10)
@@ -143,10 +144,35 @@ cohort_prefixes <- c("UCLA_O_SPF_Lum",
                      "HUM_V_Gavage_Lum",
                      "HUM_V_Gavage_Muc")
 
-feature_value <- gmm_of_interest[1]
-data_all_GMM1 <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
-GMM1 <- plot_data(data_all_GMM1, "arabinoxylan degradation")
- 
+
+GMM<- list()
+for (i in seq_along(gmm_of_interest)) {
+feature_value <- gmm_of_interest[i]
+data_all <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
+GMM[[feature_value]] <- plot_data(data_all, names(gmm_of_interest[i]))
+}
+
+legend <- GMM[[13]] + theme(legend.position="right")
+legend <- cowplot::get_legend(legend)
+grid::grid.newpage()
+dev.new(width=20, height=5)
+grid::grid.draw(legend)
+
+plot_grid(GMM[[1]], GMM[[2]],GMM[[3]], GMM[[4]],
+          GMM[[5]], GMM[[6]],ncol=3,nrow=2)
+
+plot_grid(GMM[[7]], GMM[[8]],GMM[[9]], GMM[[10]], GMM[[11]], GMM[[12]],
+           GMM[[13]], gmm_upset, nrow=3, ncol=3)
+         
+feature_value <- gmm_of_interest[2]
+names(gmm_of_interest[2])
+data_all_GMM2 <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
+GMM2 <- plot_data(data_all_GMM1, names(gmm_of_interest[2]))
+
+feature_value <- gmm_of_interest[2]
+data_all_GMM2 <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
+GMM2 <- plot_data(data_all_GMM1, "Lactose and Galactose Degradation")
+
 ### HUM V Gavage ---
 donors_filepath <- "Donors-Analysis/differential_GMM_site/"
 lumtarget <- find_concordant_features_across_sites(paste0(donors_filepath,"GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/significant_results.tsv"))
@@ -226,6 +252,9 @@ ucla_o_map_lum <- generate_GMM_heat_map_by_site("Regional-Mouse-Biogeography-Ana
   theme(plot.title = element_text(hjust = 0.5)) +
                   theme(legend.position = "none")+
   theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
+
+par(mar = rep(2, 4))
+ucla_o_map_lum
 
 
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
