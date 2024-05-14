@@ -375,7 +375,7 @@ my_palette <- c(paletteer_d("basetheme::brutal",10), paletteer_d("basetheme::cle
 data_all_2$Cohort <- factor(data_all_2$Cohort)
 names(my_palette) <-levels(data_all_2$Cohort)
 
-plot_data <- function(data, title) {
+plot_data <- function(data, title,color_palette) {
   # Update 'value' column with labels
   data$value <- plyr::revalue(data$value,c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="Cec","Ileum"="Ile", "Jejunum"="Jej", "Duodenum"= "Duo"))
   data$value <- factor(data$value, levels = c("Duo", "Jej", "Ile", "Cec", "PC", "DC"))
@@ -385,7 +385,7 @@ plot_data <- function(data, title) {
     geom_line(size = 2) +
     geom_errorbar(aes(ymin = coef - stderr, ymax = coef + stderr), width = 0.1) +
     labs(x = "Value", y = "Coefficient") +
-    scale_color_manual(values = my_palette, name="") +
+    scale_color_manual(values = color_palette, name="") +
     theme_cowplot(16) +
     ggtitle(title) +
     geom_point(size = 3, shape = 21, fill = "black") +

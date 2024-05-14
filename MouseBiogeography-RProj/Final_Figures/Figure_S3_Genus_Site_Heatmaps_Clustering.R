@@ -93,7 +93,6 @@ col_labels <- col_labels[order(order.dendrogram(dend1))]
 
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
 
-dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
           breaks=bk,
@@ -144,7 +143,6 @@ col_labels <- col_labels[order(order.dendrogram(dend1))]
 
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
 
-dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
           breaks=bk,
@@ -242,7 +240,6 @@ col_labels <- col_labels[order(order.dendrogram(dend1))]
 
 # dendrogram tuning from: https://stackoverflow.com/questions/29265536/how-to-color-the-branches-and-tick-labels-in-the-heatmap-2
 
-dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
           breaks=bk,
@@ -279,12 +276,12 @@ data <- results$dataframe
 data <- data %>% mutate(coef_d= ifelse(coef>2, 2, coef))
 data$coef_d[data$coef_d < (-2)] <- (-2)
 summary(data$coef_d) 
-y = tapply(data$coef_d, data$Phylum_Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
+y = tapply(data$coef_d, data$annotation, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
-data$Phylum_Genus= factor(as.character(data$Phylum_Genus), levels = names(y))
+data$annotation <- factor(as.character(data$annotation), levels = names(y))
 
 dev.new(width=15, height=10)  # can adjust window size of the plot output this way
-ggplot(data,aes(x = value, y=Phylum_Genus)) + 
+ggplot(data,aes(x = value, y=annotation)) + 
   geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
   geom_text(aes(label=asterisk)) +
   scale_fill_stepsn(breaks=bk, values = NULL, colors = coul) +
@@ -309,12 +306,11 @@ data <- results$dataframe
 data <- data %>% mutate(coef_d= ifelse(coef>2, 2, coef))
 data$coef_d[data$coef_d < (-2)] <- (-2)
 summary(data$coef_d) 
-y = tapply(data$coef_d, data$Phylum_Genus, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
+y = tapply(data$coef_d, data$annotation, function(y) mean(y))  # orders the genera by the highest fold change of any ASV in the genus; can change max(y) to mean(y) if you want to order genera by the average log2 fold change
 y = sort(y, FALSE)   #switch to TRUE to reverse direction
-data$Phylum_Genus= factor(as.character(data$Phylum_Genus), levels = names(y))
+data$annotation= factor(as.character(data$annotation), levels = names(y))
 
-dev.new(width=15, height=10)  # can adjust window size of the plot output this way
-ggplot(data,aes(x = value, y=Phylum_Genus)) + 
+ggplot(data,aes(x = value, y=annotation)) + 
   geom_tile(aes(fill = coef_d),colour="white",size=0.25) +
   geom_text(aes(label=asterisk)) +
   scale_fill_stepsn(breaks=bk, values = NULL, colors = coul) +

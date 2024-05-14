@@ -136,10 +136,10 @@ data <- unique(data)
 data <- data %>% select(-c("value", "metadata"))
 data <- unique(data)
 data$coef_d <- as.numeric(data$coef_d)
-data_long<-pivot_wider(data, id_cols=Phylum_Genus, names_from = Site, values_from =coef_d)
+data_long<-pivot_wider(data, id_cols=annotation, names_from = Site, values_from =coef_d)
 data_long_final<-data_long[,-1]
 data_long_final<-select(data_long_final,D,J, I,C,PC,DC)
-row.names(data_long_final)= data_long$Phylum_Genus
+row.names(data_long_final)= data_long$annotation
 matrix.data<- as.matrix.data.frame(data_long_final)
 
 #construct heatmap using heatmap2 with hierarchical clustering
@@ -200,7 +200,6 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
           breaks=bk,
@@ -295,10 +294,10 @@ data <- unique(data)
 data <- data %>% select(-c("value", "metadata"))
 data <- unique(data)
 data$coef_d <- as.numeric(data$coef_d)
-data_long<-pivot_wider(data, id_cols=Phylum_Genus, names_from = Site, values_from =coef_d)
+data_long<-pivot_wider(data, id_cols=annotation, names_from = Site, values_from =coef_d)
 data_long_final<-data_long[,-1]
 data_long_final<-select(data_long_final,D,J, I,C,PC,DC)
-row.names(data_long_final)= data_long$Phylum_Genus
+row.names(data_long_final)= data_long$annotation
 matrix.data<- as.matrix.data.frame(data_long_final)
 
 #construct heatmap using heatmap2 with hierarchical clustering
@@ -359,7 +358,6 @@ for(i in 1:ncol(data_long_qval)){       # for-loop over columns
 }
 
 asterisk_matrix<-as.matrix.data.frame(data_long_qval)
-dev.new(width=15, height=10)
 heatmap.2(matrix.data,
           Colv= FALSE,
           breaks=bk,

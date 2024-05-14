@@ -51,11 +51,20 @@ file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Co
 
 cohort_prefixes <- c("UCLA_O_SPF",
                      "CS_SPF",
-                     "HUM_V_Gavage",
-                     "HUM_Gavage")
+                     "HUM_MD_Gavage",
+                     "HUM_SD_Gavage")
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                                       cohort_prefixes = cohort_prefixes)
+id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
+id_features <- id_features%>% select(c("feature","Cohort","coef_dir")) %>% unique()
+id_f_long <- id_features %>% 
+  mutate(value = 1)
+id_df_wide <- id_f_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+id_df_wide <- as.data.frame(id_df_wide)
+id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
 
 all_taxa <- all_taxa %>% select(c("feature", "Cohort")) %>% unique()
 
@@ -84,11 +93,11 @@ taxa_upset <- ComplexUpset::upset(df_wide,
     )
   ))
 
-df_wide$count_ones <- rowSums(df_wide[, c(2:6)])
-df_filtered <- df_wide[df_wide$count_ones >= 3, ]
+id_df_wide$count_ones <- rowSums(id_df_wide[, c(3:7)])
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+df_filtered$feature<-gsub(".*f__","f__",df_filtered$feature)
 df_filtered$feature
-gsub(".*f__","f__",df_filtered$feature)
 
 ### Heatmap ---
 
@@ -246,6 +255,96 @@ heatmap.2(matrix.data,
           srtCol=0)
 
 
+### Shotgun barplots ---
+
+## UCLA O SPF
+result2 <- generate_interregional_taxa_barplot_shotgun_only_named_species(
+  path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
+  titlestring="UCLA O. SPF",
+  colorvector = cols)
+
+df <- result2$dataframe
+phylum_names <- df$Phylum
+
+select_cols <- c("Firmicutes"="#aa0000ff", "Bacteroidetes"="#800080ff","Actinobacteria"="#008000ff",
+                 "Bacteria_unclassified"="black", "Candidatus_Saccharibacteria"="#808000ff","Proteobacteria"="#00ffffff")
+seecolor::print_color(select_cols)
+phylum_colors <- select_cols
+names(select_cols)
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+ucla_o_shotgun_species <- result2$plot+
+  theme(axis.text.y = element_text(colour = color_mapping))+
+  theme(legend.position = "right")
+ucla_o_shotgun_species
+
+## CS SPF 
+
+cs_result <- generate_interregional_taxa_barplot_shotgun_only_named_species(path_to_significant_results_tsv = "Shotgun/CS_SPF/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                      titlestring="CS SPF",
+                                                      colorvector = cols)
+
+df <- cs_result$dataframe 
+phylum_names <- df$Phylum
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+cs_shotgun_species <- cs_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
+cs_shotgun_species
+
+## SPF Gavage 
+cols=c("#FDE725FF")
+
+spf_result <- generate_interregional_taxa_barplot_shotgun_only_named_species(path_to_significant_results_tsv = "Shotgun/SPF_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                       titlestring="SPF Gavage",
+                                                       colorvector = cols)
+
+df <- spf_result$dataframe 
+phylum_names <- df$Phylum
+
+
+# Create a named vector of colors using the phylum color vector
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+spf_shotgun_species <- spf_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
+spf_shotgun_species
+
+## HUM Gavage --
+cols=c("#440154FF", "#FDE725FF")
+
+hum_result <- generate_interregional_taxa_barplot_shotgun_only_named_species(path_to_significant_results_tsv = "Shotgun/HUM_Gavage/Species_DCvsJej_CLR_SexSite-1-MsID/significant_results.tsv",
+                                                       titlestring="HUM SD Gavage",
+                                                       colorvector = cols)
+
+df <- hum_result$dataframe 
+phylum_names <- df$Phylum
+
+color_mapping <- phylum_colors[phylum_names]
+print(color_mapping)
+
+hum_shotgun_species <- hum_result$plot +
+  theme(axis.text.y = element_text(colour = color_mapping))
+hum_shotgun_species 
+
+### Final Figure bottom half
+ucla_o_shotgun_species<-ucla_o_shotgun_species+theme(legend.position="none")
+plot_grid(taxa_upset, ucla_o_shotgun_species,
+          labels=c("F","G"),
+          label_size = 20)
+plot_grid(cs_shotgun_species, hum_shotgun_species, spf_shotgun_species,
+          labels=c("H","I","J"),nrow=3,ncol=1,
+          rel_heights = c(1,0.8, 0.4),
+          label_size = 20)
+
+### Functions---
 generate_matrix_for_heatmap_clustering <- function(path_to_significant_results,
                                                    path_to_annotation_file,
                                                    path_to_all_results){

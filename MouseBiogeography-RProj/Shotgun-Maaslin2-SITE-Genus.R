@@ -15,13 +15,13 @@ here::i_am("MouseBiogeography-RProj/Shotgun-Maaslin2-SITE-Genus.R")
 
 
 ### Select Luminal UCLA O SPF ---
-input_data <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_ASV.tsv"))
+input_data <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_ASV.tsv"))
 df_input_data <- as.data.frame(input_data)
 rownames(df_input_data)<-input_data$Species
 df_input_data <- df_input_data %>% select(-c("Species"))
 
 # Ensure samples are listed in the same order 
-input_metadata <-readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim = "\t") #mapping file
+input_metadata <-readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim = "\t") #mapping file
 
 df_input_metadata<-input_metadata
 df_input_metadata$MouseID <- factor(df_input_metadata$MouseID)
@@ -64,17 +64,24 @@ bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 # UCLA O SPF 
 
+cols=c("#440154FF", "#FDE725FF")
+
 result <- generate_interregional_taxa_barplot_shotgun(
                                          path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
                                         titlestring="UCLA O. SPF",
                                         colorvector = cols)
 
-df <- result$dataframe
+result2 <- generate_interregional_taxa_barplot_shotgun_only_named_species(
+  path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
+  titlestring="UCLA O. SPF",
+  colorvector = cols)
+
+df <- result2$dataframe
 phylum_names <- df$Phylum
 
-select_cols <- paletteer::paletteer_d("basetheme::royal",6)
+select_cols <- c("Firmicutes"="#aa0000ff", "Bacteroidetes"="#800080ff","Actinobacteria"="#008000ff",
+                 "Bacteria_unclassified"="black", "Candidatus_Saccharibacteria"="#808000ff","Proteobacteria"="#00ffffff")
 seecolor::print_color(select_cols)
-names(select_cols) <- unique(phylum_names)
 phylum_colors <- select_cols
 names(select_cols)
 
@@ -82,10 +89,9 @@ names(select_cols)
 color_mapping <- phylum_colors[phylum_names]
 print(color_mapping)
 
-ucla_o_shotgun_species <- result$plot+
+ucla_o_shotgun_species <- result2$plot+
   theme(axis.text.y = element_text(colour = color_mapping))+
   theme(legend.position = "right")
-dev.new(width=10,height=10)
 ucla_o_shotgun_species
 
 
