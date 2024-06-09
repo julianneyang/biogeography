@@ -1,0 +1,51 @@
+2024-06-09 16:27:26.609876 INFO::Writing function arguments to log file
+2024-06-09 16:27:26.614271 DEBUG::Function arguments
+2024-06-09 16:27:26.6161 DEBUG::Output folder: Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID
+2024-06-09 16:27:26.617813 DEBUG::Min Abundance: 0.000000
+2024-06-09 16:27:26.621488 DEBUG::Min Prevalence: 0.150000
+2024-06-09 16:27:26.622563 DEBUG::Normalization: CLR
+2024-06-09 16:27:26.623694 DEBUG::Transform: NONE
+2024-06-09 16:27:26.624484 DEBUG::Analysis method: LM
+2024-06-09 16:27:26.625054 DEBUG::Max significance: 0.250000
+2024-06-09 16:27:26.625534 DEBUG::Random effects: MouseID
+2024-06-09 16:27:26.626009 DEBUG::Fixed effects: Sequencing_Run,Sex,Site_General
+2024-06-09 16:27:26.626526 DEBUG::Correction method: BH
+2024-06-09 16:27:26.627801 DEBUG::Standardize: TRUE
+2024-06-09 16:27:26.629468 DEBUG::Cores: 1
+2024-06-09 16:27:26.630363 INFO::Verifying options selected are valid
+2024-06-09 16:27:26.632891 INFO::Determining format of input files
+2024-06-09 16:27:26.635313 INFO::Input format is data samples as columns and metadata samples as rows
+2024-06-09 16:27:26.6373 DEBUG::Transformed data so samples are rows
+2024-06-09 16:27:26.63833 DEBUG::A total of 52 samples were found in both the data and metadata
+2024-06-09 16:27:26.639107 DEBUG::Reordering data/metadata to use same sample ordering
+2024-06-09 16:27:26.640695 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-06-09 16:27:26.64243 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site_General
+2024-06-09 16:27:26.643697 INFO::Factor detected for categorial metadata 'Sequencing_Run'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:27:26.645029 INFO::Factor detected for categorial metadata 'Sex'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:27:26.646246 INFO::Factor detected for categorial metadata 'Site_General'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:27:26.647964 INFO::Filter data based on min abundance and min prevalence
+2024-06-09 16:27:26.650339 INFO::Total samples in data: 52
+2024-06-09 16:27:26.651673 INFO::Min samples required with min abundance for a feature not to be filtered: 7.800000
+2024-06-09 16:27:26.65281 INFO::Total filtered features: 0
+2024-06-09 16:27:26.653857 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-06-09 16:27:26.655643 INFO::Total filtered features with variance filtering: 0
+2024-06-09 16:27:26.656664 INFO::Filtered feature names from variance filtering:
+2024-06-09 16:27:26.657639 INFO::Running selected normalization method: CLR
+2024-06-09 16:27:26.659297 INFO::Applying z-score to standardize continuous metadata
+2024-06-09 16:27:26.664093 INFO::Running selected transform method: NONE
+2024-06-09 16:27:26.665483 INFO::Running selected analysis method: LM
+2024-06-09 16:27:26.66696 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidota
+2024-06-09 16:27:26.727006 INFO::Fitting model to feature number 2, k__Bacteria.p__Firmicutes
+2024-06-09 16:27:26.793135 INFO::Fitting model to feature number 3, k__Bacteria.p__Proteobacteria
+2024-06-09 16:27:26.845938 INFO::Fitting model to feature number 4, k__Bacteria.p__Verrucomicrobiota
+2024-06-09 16:27:26.904663 INFO::Fitting model to feature number 5, k__Bacteria.p__Actinobacteriota
+2024-06-09 16:27:26.964107 INFO::Fitting model to feature number 6, k__Bacteria.p__Desulfobacterota
+2024-06-09 16:27:27.027572 INFO::Counting total values for each feature
+2024-06-09 16:27:27.030795 INFO::Writing filtered data to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data.tsv
+2024-06-09 16:27:27.033125 INFO::Writing filtered, normalized data to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data_norm.tsv
+2024-06-09 16:27:27.034916 INFO::Writing filtered, normalized, transformed data to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data_norm_transformed.tsv
+2024-06-09 16:27:27.036481 INFO::Writing residuals to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/fits/residuals.rds
+2024-06-09 16:27:27.037561 INFO::Writing fitted values to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/fits/fitted.rds
+2024-06-09 16:27:27.038737 INFO::Writing extracted random effects to file Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/fits/ranef.rds
+2024-06-09 16:27:27.039963 INFO::Writing all results to file (ordered by increasing q-values): Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv
+2024-06-09 16:27:27.04153 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv

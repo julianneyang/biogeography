@@ -1,39 +1,53 @@
-2022-11-06 10:04:32 INFO::Writing function arguments to log file
-2022-11-06 10:04:32 DEBUG::Function arguments
-2022-11-06 10:04:32 DEBUG::Output folder: Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID
-2022-11-06 10:04:32 DEBUG::Min Abundance: 0.000000
-2022-11-06 10:04:32 DEBUG::Min Prevalence: 0.100000
-2022-11-06 10:04:32 DEBUG::Normalization: CLR
-2022-11-06 10:04:32 DEBUG::Transform: NONE
-2022-11-06 10:04:32 DEBUG::Analysis method: LM
-2022-11-06 10:04:32 DEBUG::Max significance: 0.250000
-2022-11-06 10:04:32 DEBUG::Random effects: MouseID
-2022-11-06 10:04:32 DEBUG::Fixed effects: Sequencing_Run,Sex,Site_General
-2022-11-06 10:04:32 DEBUG::Correction method: BH
-2022-11-06 10:04:32 DEBUG::Standardize: TRUE
-2022-11-06 10:04:32 DEBUG::Cores: 1
-2022-11-06 10:04:32 INFO::Verifying options selected are valid
-2022-11-06 10:04:32 INFO::Determining format of input files
-2022-11-06 10:04:32 INFO::Input format is data samples as columns and metadata samples as rows
-2022-11-06 10:04:32 DEBUG::Transformed data so samples are rows
-2022-11-06 10:04:32 DEBUG::A total of 48 samples were found in both the data and metadata
-2022-11-06 10:04:32 DEBUG::Reordering data/metadata to use same sample ordering
-2022-11-06 10:04:32 INFO::Formula for random effects: expr ~ (1 | MouseID)
-2022-11-06 10:04:32 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site_General
-2022-11-06 10:04:32 INFO::Running selected normalization method: CLR
-2022-11-06 10:04:32 INFO::Filter data based on min abundance and min prevalence
-2022-11-06 10:04:32 INFO::Total samples in data: 48
-2022-11-06 10:04:32 INFO::Min samples required with min abundance for a feature not to be filtered: 4.800000
-2022-11-06 10:04:32 INFO::Total filtered features: 3
-2022-11-06 10:04:32 INFO::Filtered feature names: k__Bacteria.p__Actinobacteria, k__Bacteria.p__Cyanobacteria, k__Bacteria.p__Verrucomicrobia
-2022-11-06 10:04:32 INFO::Applying z-score to standardize continuous metadata
-2022-11-06 10:04:32 INFO::Running selected transform method: NONE
-2022-11-06 10:04:32 INFO::Running selected analysis method: LM
-2022-11-06 10:04:32 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidetes
-2022-11-06 10:04:32 INFO::Fitting model to feature number 2, k__Bacteria.p__Deferribacteres
-2022-11-06 10:04:32 INFO::Fitting model to feature number 3, k__Bacteria.p__Firmicutes
-2022-11-06 10:04:32 INFO::Fitting model to feature number 4, k__Bacteria.p__Proteobacteria
-2022-11-06 10:04:32 INFO::Counting total values for each feature
-2022-11-06 10:04:32 INFO::Writing residuals to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/residuals.rds
-2022-11-06 10:04:32 INFO::Writing all results to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv
-2022-11-06 10:04:32 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv
+2024-06-09 16:20:10.623324 INFO::Writing function arguments to log file
+2024-06-09 16:20:10.624802 DEBUG::Function arguments
+2024-06-09 16:20:10.625177 DEBUG::Output folder: Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID
+2024-06-09 16:20:10.62549 DEBUG::Min Abundance: 0.000000
+2024-06-09 16:20:10.625767 DEBUG::Min Prevalence: 0.150000
+2024-06-09 16:20:10.626088 DEBUG::Normalization: CLR
+2024-06-09 16:20:10.626382 DEBUG::Transform: NONE
+2024-06-09 16:20:10.626643 DEBUG::Analysis method: LM
+2024-06-09 16:20:10.627002 DEBUG::Max significance: 0.250000
+2024-06-09 16:20:10.627571 DEBUG::Random effects: MouseID
+2024-06-09 16:20:10.628092 DEBUG::Fixed effects: Sequencing_Run,Sex,Site_General
+2024-06-09 16:20:10.628423 DEBUG::Correction method: BH
+2024-06-09 16:20:10.628737 DEBUG::Standardize: TRUE
+2024-06-09 16:20:10.629243 DEBUG::Cores: 1
+2024-06-09 16:20:10.62976 INFO::Verifying options selected are valid
+2024-06-09 16:20:10.631219 INFO::Determining format of input files
+2024-06-09 16:20:10.632914 INFO::Input format is data samples as columns and metadata samples as rows
+2024-06-09 16:20:10.634501 DEBUG::Transformed data so samples are rows
+2024-06-09 16:20:10.635034 DEBUG::A total of 48 samples were found in both the data and metadata
+2024-06-09 16:20:10.635537 DEBUG::Reordering data/metadata to use same sample ordering
+2024-06-09 16:20:10.636401 INFO::Formula for random effects: expr ~ (1 | MouseID)
+2024-06-09 16:20:10.637632 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site_General
+2024-06-09 16:20:10.639117 INFO::Factor detected for categorial metadata 'Sequencing_Run'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:20:10.640118 INFO::Factor detected for categorial metadata 'Sex'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:20:10.641037 INFO::Factor detected for categorial metadata 'Site_General'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-06-09 16:20:10.641896 INFO::Filter data based on min abundance and min prevalence
+2024-06-09 16:20:10.642698 INFO::Total samples in data: 48
+2024-06-09 16:20:10.643618 INFO::Min samples required with min abundance for a feature not to be filtered: 7.200000
+2024-06-09 16:20:10.644676 INFO::Total filtered features: 0
+2024-06-09 16:20:10.645883 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-06-09 16:20:10.64797 INFO::Total filtered features with variance filtering: 0
+2024-06-09 16:20:10.649504 INFO::Filtered feature names from variance filtering:
+2024-06-09 16:20:10.650712 INFO::Running selected normalization method: CLR
+2024-06-09 16:20:10.65352 INFO::Applying z-score to standardize continuous metadata
+2024-06-09 16:20:10.658791 INFO::Running selected transform method: NONE
+2024-06-09 16:20:10.659988 INFO::Running selected analysis method: LM
+2024-06-09 16:20:10.662386 INFO::Fitting model to feature number 1, k__Bacteria.p__Bacteroidota
+2024-06-09 16:20:10.718053 INFO::Fitting model to feature number 2, k__Bacteria.p__Firmicutes
+2024-06-09 16:20:10.776843 INFO::Fitting model to feature number 3, k__Bacteria.p__Actinobacteriota
+2024-06-09 16:20:10.830818 INFO::Fitting model to feature number 4, k__Bacteria.p__Verrucomicrobiota
+2024-06-09 16:20:10.88323 INFO::Fitting model to feature number 5, k__Bacteria.p__Proteobacteria
+2024-06-09 16:20:10.936223 INFO::Fitting model to feature number 6, k__Bacteria.p__Desulfobacterota
+2024-06-09 16:20:11.007179 INFO::Fitting model to feature number 7, k__Bacteria.p__Cyanobacteria
+2024-06-09 16:20:11.091267 INFO::Fitting model to feature number 8, k__Bacteria.p__Deferribacterota
+2024-06-09 16:20:11.174271 INFO::Counting total values for each feature
+2024-06-09 16:20:11.17751 INFO::Writing filtered data to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data.tsv
+2024-06-09 16:20:11.179876 INFO::Writing filtered, normalized data to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data_norm.tsv
+2024-06-09 16:20:11.182791 INFO::Writing filtered, normalized, transformed data to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/features/filtered_data_norm_transformed.tsv
+2024-06-09 16:20:11.185885 INFO::Writing residuals to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/fits/residuals.rds
+2024-06-09 16:20:11.187967 INFO::Writing fitted values to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/fits/fitted.rds
+2024-06-09 16:20:11.189868 INFO::Writing extracted random effects to file Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/fits/ranef.rds
+2024-06-09 16:20:11.191437 INFO::Writing all results to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/all_results.tsv
+2024-06-09 16:20:11.193975 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv

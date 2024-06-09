@@ -1,3 +1,1 @@
-metadata	feature	value	coef	stderr	N	N.not.0	pval	qval
-Site	k__Bacteria.p__Bacteroidetes	Jejunum	-2.28128614576384	0.715782718605501	52	51	0.00291487348542206	0.093275951533506
-Site	k__Bacteria.p__Bacteroidetes	Ileum	-1.82301010686065	0.715782718605501	52	51	0.0151506691669669	0.24241070667147
+feature	metadata	value	coef	stderr	N	N.not.0	pval	qval

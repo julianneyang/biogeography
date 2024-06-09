@@ -1,9 +1,6 @@
 ###Purpose: Aggregate all significant results from each of 6 intestinal sites into one vector; then query this vector against "all results" output from each of six sites 
-library(data.table)
-library(funrar)
 library(ggplot2)
 library(tidyr)
-library(gplots)
 library(dplyr)
 library(plyr)
 library(cowplot)
@@ -31,7 +28,7 @@ bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 hum_v_lum_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                                                         lumtarget,
-                                                        "HUM V. Gavage Luminal",
+                                                        "HUM MD Gavage Luminal",
                                                         cols,
                                                         bk)
 
@@ -40,7 +37,7 @@ bk =c(-1.5, -1, -0.5, 0, 0.5, 1)
 
 hum_v_muc_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/HUM_V_Gavage/L2-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                                                         muctarget,
-                                                        "HUM V. Gavage Mucosal",
+                                                        "HUM MD Gavage Mucosal",
                                                         cols,
                                                         bk)
 
@@ -52,8 +49,9 @@ lumtarget <- find_concordant_features_across_sites("Maaslin2_L2/UCLA_O_SPF/L2-DC
 muctarget <- find_concordant_features_across_sites("Maaslin2_L2/UCLA_O_SPF/L2-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/significant_results.tsv")
 
 #Query the target vector against all_results.tsv and generate a heatmap 
-cols=c("#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
-bk =c(-1, -0.5, 0, 0.5, 1)
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
+
 
 ucla_o_lum_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/UCLA_O_SPF/L2-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
                                      lumtarget,
@@ -61,8 +59,8 @@ ucla_o_lum_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/UCLA_O_SPF/
                                      cols,
                                      bk)
 
-cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1)
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5)
 
 ucla_o_muc_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/UCLA_O_SPF/L2-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
                                       muctarget,
@@ -83,8 +81,8 @@ ucla_v_muc_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/UCLA_V_SPF/
 
 ### CS SPF ---
 #Query the target vector against all_results.tsv and generate a heatmap 
-cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5)
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
+bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 lumtarget <- find_concordant_features_across_sites("Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
 
 cs_lum_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/CS_SPF/Site_L2/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
@@ -114,13 +112,13 @@ muctarget <- find_concordant_features_across_sites("Maaslin2_L2/SPF_Gavage/L2-DC
 lumtarget <- find_concordant_features_across_sites("Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
 # No significantly diff abundant phyla in lum
 
-cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF")
-bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5)
+cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF")
+bk =c(-2, -1.5, -1, -0.5, 0)
 muctarget <- find_concordant_features_across_sites("Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv")
 
 hum_muc_L2_heatmap <- generate_taxa_heat_map_by_site("Maaslin2_L2/HUM_Gavage/L2-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                                                     muctarget,
-                                                    "HUM Gavage Mucosal",
+                                                    "HUM SD Gavage Mucosal",
                                                     cols,
                                                     bk)
 
