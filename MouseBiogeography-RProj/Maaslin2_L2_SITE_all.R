@@ -2,6 +2,7 @@ library(Maaslin2)
 library(funrar)
 library(dplyr)
 library(tidyr)
+library(here)
 
 here::i_am("MouseBiogeography-RProj/Maaslin2_L2_SITE_all.R")
 here::here()
@@ -82,7 +83,7 @@ fit_data = Maaslin2(input_data=df_input_data, input_metadata=df_input_metadata,
 
 
 ## UCLA O. SPF --
-input_data <- read.csv(here("Maaslin2_L2/UCLA_O_SPF/Maaslin2 SITE and TYPE L2 - Luminal_L2.csv"), header=TRUE, row.names=1) 
+input_data <- read.delim(here("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/collapsed_taxa/export_L2_UCLA-ComBat-Adjusted-ASV/feature-table.tsv"), header=TRUE, row.names=1) 
 input_data <- read.csv("Maaslin2_L2/UCLA_O_SPF/Maaslin2 SITE and TYPE L2 - Mucosal_L2.csv", header=TRUE, row.names=1) 
 
 df_input_data<-as.data.frame(input_data)

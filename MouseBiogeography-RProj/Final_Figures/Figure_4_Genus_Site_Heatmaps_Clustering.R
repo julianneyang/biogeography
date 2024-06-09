@@ -56,8 +56,13 @@ cohort_prefixes <- c("UCLA_O_SPF",
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                                       cohort_prefixes = cohort_prefixes)
+
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
 id_features <- id_features%>% select(c("feature","Cohort","coef_dir")) %>% unique()
+
+id_features <- all_taxa 
+id_features <- id_features%>% select(c("feature","Cohort")) %>% unique()
+
 id_f_long <- id_features %>% 
   mutate(value = 1)
 id_df_wide <- id_f_long %>%

@@ -3,7 +3,8 @@ library(dplyr)
 library(here)
 library(rlang)
 library(funrar)
-
+library(ggplot2)
+library(cowplot)
 
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
@@ -11,7 +12,7 @@ library(Microbiome.Biogeography)
 setwd("/home/julianne/Documents/biogeography/")
 
 
-here::i_am("MouseBiogeography-RProj/Shotgun_TaxaBarplots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Shotgun_TaxaBarplots.R")
 
 ### Wrangle Genera Names --- 
 
@@ -187,7 +188,7 @@ readr::write_rds(colors, here("Shotgun/taxa_barplots/global_phyla_cols.RDS"))
 
 ## Draw plots --
 phyla_cols<-colors
-hum_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/HUM_Shotgun_L2.csv", "HUM Gavage", ".*p__", phyla_cols, "Site") +
+hum_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/HUM_Shotgun_L2.csv", "HUM SD Gavage", ".*p__", phyla_cols, "Site") +
   theme(legend.position = "none")+
   theme(axis.text.y = element_blank())
 
@@ -203,6 +204,10 @@ spf_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/SPF_Shotgun_L2.cs
   theme(legend.position = "none")+
   theme(axis.text.y = element_blank())
 
+
+shotgun_genera <- readr::read_rds(here("Shotgun/taxa_barplots/global_shotgun_genera_cols.RDS"))
+
+
 ucla_o_shotgun_L6 <- generate_L6_taxa_plots("Shotgun/taxa_barplots/UCLA_O_SPF_Shotgun_level-6.RDS",
                                        "UCLA O. SPF", ".*g__",shotgun_genera, "Site") +
   theme(legend.position = "none")+
@@ -216,7 +221,7 @@ cs_shotgun_L6 <- generate_L6_taxa_plots("Shotgun/taxa_barplots/CS_SPF_Shotgun_le
 cs_shotgun_L6
 
 hum_shotgun_L6 <- generate_L6_taxa_plots("Shotgun/taxa_barplots/HUM_Gavage_Shotgun_level-6.RDS",
-                                        "HUM Gavage", ".*g__",shotgun_genera, "Site") +
+                                        "HUM SD Gavage", ".*g__",shotgun_genera, "Site") +
   theme(legend.position = "none")+
   theme(axis.text.y = element_blank())
 hum_shotgun_L6

@@ -10,10 +10,10 @@ library(cowplot)
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_L2_HEATMAP_Site_all.R")
 
 remove.packages("Microbiome.Biogeography")
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Microbiome.Biogeography/")
+setwd("../microbiome.biogeography/")
 devtools::document()
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-devtools::install("Microbiome.Biogeography")
+setwd("../biogeography/")
+#devtools::install("Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 #Full heatmap colors- modify this according to max and min coef sizes

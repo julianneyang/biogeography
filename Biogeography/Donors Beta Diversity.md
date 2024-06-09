@@ -1,34 +1,69 @@
+## Mucosal 
+```R
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   5     88.21  17.642  31.918 0.15363    0.0451 *  
+Donor_ID        10    329.44  32.944  59.602 0.57376 9.999e-05 ***
+Site_General     1     17.24  17.236  31.184 0.03002 9.999e-05 ***
+Residuals      252    139.29   0.553         0.24259 9.999e-05 ***
+Total          268    574.18                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+## Luminal
+```R
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   5     45.09   9.018  16.652 0.08232    0.2935    
+Donor_ID         9    259.96  28.884  53.335 0.47463 9.999e-05 ***
+Site_General     1    109.43 109.434 202.072 0.19980 9.999e-05 ***
+Residuals      246    133.22   0.542         0.24324 9.999e-05 ***
+Total          261    547.71                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
 ## Mucosal SI
 ```R
-adonis2(formula = D ~ ., data = mtdat[, metadata_order, drop = F], permutations = 0)
-                Df SumOfSqs      R2       F Pr(>F) aov.tab
-Sequencing_Run   5   97.484 0.32693 13.1486      1        
-Sex              1    7.830 0.02626  5.2806      1        
-Site             2    1.589 0.00533  0.5356      1        
-Residual       129  191.282 0.64149                       
-Total          137  298.185 1.00000
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   5    97.484 19.4969 23.3977 0.32693 9.999e-05 ***
+Donor_ID        10    99.654  9.9654 11.9592 0.33420    0.0012 ** 
+Site             2     1.053  0.5265  0.6318 0.00353    0.6649    
+Residuals      120    99.994  0.8333         0.33534 9.999e-05 ***
+Total          137   298.185                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
 ## Mucosal Colon
 ```R
-adonis2(formula = D ~ ., data = mtdat[, metadata_order, drop = F], permutations = 0)
-                Df SumOfSqs      R2      F Pr(>F) aov.tab
-Sequencing_Run   4   39.707 0.14229 5.5069      1        
-Sex              1   16.518 0.05919 9.1633      1        
-Site             2    1.119 0.00401 0.3104      1        
-Residual       123  221.722 0.79451                      
-Total          130  279.066 1.00000 
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   4    39.707  9.9268  48.894 0.14229  0.094291 .  
+Donor_ID        10   214.778 21.4778 105.789 0.76963 9.999e-05 ***
+Site             2     1.436  0.7181   3.537 0.00515  0.006799 ** 
+Residuals      114    23.145  0.2030         0.08294 9.999e-05 ***
+Total          130   279.066                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
 ## Luminal Colon
 ```R
-adonis2(formula = D ~ ., data = mtdat[, metadata_order, drop = F], permutations = 0)
-                Df SumOfSqs      R2       F Pr(>F) aov.tab
-Sequencing_Run   4   28.713 0.10222  3.8071      1        
-Sex              1   21.916 0.07802 11.6235      1        
-Site             2    0.246 0.00088  0.0653      1        
-Residual       122  230.029 0.81889                       
-Total          129  280.905 1.00000  
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   4    28.713  7.1783  80.888 0.10222    0.3610    
+Donor_ID         9   241.950 26.8833 302.934 0.86132 9.999e-05 ***
+Site             2     0.125  0.0626   0.705 0.00045    0.5481    
+Residuals      114    10.117  0.0887         0.03601 9.999e-05 ***
+Total          129   280.905                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
 No repeated measures 
@@ -42,13 +77,16 @@ Residual       122  230.029 0.81889
 ```
 ## Luminal SI
 ```R
-adonis2(formula = D ~ ., data = mtdat[, metadata_order, drop = F], permutations = 0)
-                Df SumOfSqs      R2      F Pr(>F) aov.tab
-Sequencing_Run   5   49.535 0.17847 5.7814      1        
-Sex              1   15.059 0.05425 8.7877      1        
-Site             2    2.192 0.00790 0.6395      1        
-Residual       123  210.772 0.75938                      
-Total          131  277.557 1.00000  
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   5    49.535  9.9070 10.1667 0.17847  0.008799 ** 
+Donor_ID         9   113.768 12.6409 12.9723 0.40989 9.999e-05 ***
+Site             2     2.192  1.0958  1.1245 0.00790  0.267773    
+Residuals      115   112.062  0.9745         0.40374 9.999e-05 ***
+Total          131   277.557                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 ```
 
 ## Luminal

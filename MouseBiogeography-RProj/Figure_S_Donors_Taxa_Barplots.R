@@ -1,10 +1,10 @@
 library(ggplot2) #yes
 library(cowplot) #yes
-library(plyr)
+#library(plyr)
 library(dplyr) #yes
 library(rlang) #yes
 library(funrar) #yes
-library(sjmisc)
+#library(sjmisc)
 library(RColorBrewer)
 library(paletteer)
 library(readr)
@@ -17,8 +17,9 @@ setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
 library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
-here::i_am("MouseBiogeography-RProj/Donors_Taxa_Barplots.R")
+here::i_am("MouseBiogeography-RProj/Figure_S_Donors_Taxa_Barplots.R")
 
+phyla_cols <- readRDS("global_phyla_cols.RDS")
 
 ## Get names of donors that I need to make plots for
 mouse_ASV <- read.delim(here("Donors-Analysis/starting_files/Donors-Mice-1xPrev0.15-ComBat-ASV.tsv"),row.names=1)
@@ -36,7 +37,7 @@ donors <- levels(metadata$Donor_ID)
 generate_plots <- function(donor) {
   input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-2.csv")
   plot <- generate_L2_taxa_plots(input_data = input_file, 
-                                 titlestring = donor, 
+                                 titlestring = paste0("(MD) ",donor), 
                                  greppattern = ".*p__", 
                                  graphby = "Site",
                                  fillvector = phyla_cols) +
@@ -82,7 +83,7 @@ generate_L2_human_donor_taxa_barplot <- function(dataframe, donor_id){
   taxa <- taxa[grep("^k__", taxa)]
   taxa<-gsub(".*p__","",taxa )
   L2_lum$Taxa <-taxa
-  L2_lum<- pivot_longer(L2_lum, -c(Taxa), values_to ="Value", names_to ="SampleID")
+  L2_lum<- tidyr::pivot_longer(L2_lum, -c(Taxa), values_to ="Value", names_to ="SampleID")
   L2_lum$Value <- L2_lum$Value * 100
   L2_lum$SampleID <- "F"
 
@@ -284,8 +285,7 @@ readr::write_rds(input_data, here(new_filepath))
   
 }
 
-genera_cols <- readr::read_rds(here("global_genera_cols.RDS"))
-
+new_genera_legend <- readr::read_rds(here("Donors-Analysis/taxa_barplots/donors_genera_cols.RDS"))
 
 ## Loop over each donor and make plot of taxa by donor --
 process_donor_data <- function(donor){
@@ -299,7 +299,7 @@ lapply(donors, process_donor_data)
 generate_plots <- function(donor) {
   input_file <- paste0("Donors-Analysis/taxa_barplots/plot_by_donor/", donor, "_Lum_level-6.RDS")
   plot <- generate_L6_taxa_plots(path_to_RDS = input_file, 
-                                 titlestring = donor, 
+                                 titlestring = paste0("(MD) ",donor), 
                                  greppattern = ".*g__", 
                                  graphby = "Site",
                                  fillvector = new_genera_legend) +
@@ -427,7 +427,7 @@ generate_L6_human_feces_taxa_plots <- function(donor,filepath, titlestring,grepp
   #taxa<-gsub(".*g__","",taxa )
   
   L2_lum$Taxa <-taxa
-  L2_lum<- pivot_longer(L2_lum, -c(Taxa), values_to ="Value", names_to ="Site")
+  L2_lum<- tidyr::pivot_longer(L2_lum, -c(Taxa), values_to ="Value", names_to ="Site")
   L2_lum$Value <- L2_lum$Value * 100
   
   if({{graphby}} == "Site"){

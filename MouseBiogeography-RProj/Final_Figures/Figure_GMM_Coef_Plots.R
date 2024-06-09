@@ -127,7 +127,19 @@ my_palette <- c(paletteer_d("basetheme::brutal",6))
 names(my_palette) <-c(lum_cohort_prefixes, "UCLA_V_SPF")
 cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
 
+
+L2_legend <-  sugar_acid + 
+  theme(legend.position = "right") +
+  #guides(fill=guide_legend(nrow=8, byrow=TRUE))+
+  theme_cowplot(16)+
+  theme(legend.spacing.y = unit(1, 'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(1, 1, 1, 1)) 
+legend <- cowplot::get_legend(L2_legend)
+grid.newpage()
+grid.draw(legend)
+
 # combine GMM results and append Map annotation
+data_all <- process_results_files(lum_file_paths, feature_value, new_value, new_coef, lum_cohort_prefixes)
 
 final_df <- data_all[FALSE,]
 for (i in seq_along(gmm_of_interest)) {
@@ -143,6 +155,7 @@ unique(map_data_all$Map)
 data <- map_data_all
 data$value <- plyr::revalue(data$value,c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="C","Ileum"="I", "Jejunum"="J", "Duodenum"= "D"))
 data$value <- factor(data$value, levels = c("D", "J", "I", "C", "PC", "DC"))
+data$annotation <- gsub("pentose phosphate pathway \\(oxidative phase\\)", "pentose phosphate pathway", data$annotation)
 
 # Plotting
 create_plot <- function(data, map_value) {
@@ -160,16 +173,17 @@ create_plot <- function(data, map_value) {
 }
 
 # Call the function for both "disaccharides" and "monosaccharides"
-disaccharides <- create_plot(data, "disaccharides") + facet_grid(Map~annotation)
-monosaccharides <- create_plot(data, "monosaccharides")
-polysaccharides <- create_plot(data, "polysaccharides")
+disaccharides <- create_plot(data, "disaccharides") + facet_wrap(Map~annotation)
+monosaccharides <- create_plot(data, "monosaccharides")+ facet_wrap(Map~annotation)
+polysaccharides <- create_plot(data, "polysaccharides")+ facet_wrap(Map~annotation)
 proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_wrap(.~annotation, nrow=1) 
-lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")
-sugar_acid <- create_plot(data, "sugar acid")
-metabolism <- create_plot(data, "central metabolism")
-cross_feeding <- create_plot(data, "cross-feeding")
-butyrate <- create_plot(data, "butyrate")
-nitrate <- create_plot(data, "nitrate reduction")
+create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) 
+lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")+ facet_grid(Map~annotation)
+sugar_acid <- create_plot(data, "sugar acid")+ facet_grid(Map~annotation)
+metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)
+cross_feeding <- create_plot(data, "cross-feeding")+ facet_grid(Map~annotation)
+butyrate <- create_plot(data, "butyrate")+ facet_grid(Map~annotation)
+nitrate <- create_plot(data, "nitrate reduction")+ facet_grid(Map~annotation)
 
 dev.new()
 plot_grid(monosaccharides,disaccharides,polysaccharides,
@@ -188,8 +202,10 @@ plot_grid(cross_feeding,butyrate,
           rel_widths=c(1,0.33),nrow=1,
           labels=c("D"), label_size = 20)
 
-plot_grid(metabolism, gmm_upset,
-          labels=c("E","F"), label_size = 20)
+plot_grid(metabolism, 
+          labels=c("E"), label_size = 20)
+plot_grid(gmm_upset, 
+          labels=c("F"), label_size = 20)
 
 plot_grid(GMM[[1]], GMM[[2]],GMM[[3]], GMM[[4]],
           GMM[[5]], GMM[[6]],ncol=3,nrow=2)

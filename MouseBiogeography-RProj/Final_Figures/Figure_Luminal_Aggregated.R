@@ -44,12 +44,12 @@ luminaldata <- luminaldata %>% select(-Type)
 
 hum_v_otus_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, metadata,Site, observed_features, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("Hum V. Gavage")+
+  ggtitle("HUM MD Gavage")+
   labs(y="# ASVs", x="")
 
 hum_v_pe_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, metadata,Site, pielou_evenness, Site, 0, 1) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  #ggtitle("HUM V. Gavage")+
+  #ggtitle("HUM MD Gavage")+
   labs(y="# ASVs", x="")
 
 
@@ -112,7 +112,7 @@ luminaldata <- luminaldata %>% select(-c(Microbiota,Type))
 
 hum_otus_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, metadata,Site, observed_otus, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("Hum Gavage")+
+  ggtitle("HUM SD Gavage")+
   labs(y="# ASVs", x="")
   #stat_compare_means(comparisons = compare_vector,
                      #method="wilcox", vjust=0.5,label="p.signif",step.increase=0.08, hide.ns = TRUE)
@@ -144,7 +144,7 @@ spf_gavage_pe_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, m
 
 spf_gavage_otus_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, metadata,Site, observed_otus, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("CS SPF Gavage")+
+  ggtitle("SPF Gavage")+
   labs(y="# ASVs", x="")
   #stat_compare_means(comparisons = compare_vector,
                      #method="wilcox", vjust=0.5,label="p.signif",step.increase=0.08, hide.ns = TRUE)

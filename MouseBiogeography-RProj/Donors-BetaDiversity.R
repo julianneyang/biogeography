@@ -6,6 +6,12 @@ library(cowplot)
 library(viridis)
 library(here)
 
+packageurl <- "http://cran.r-project.org/src/contrib/Archive/vegan/vegan_2.6-2.tar.gz"
+install.packages(packageurl, repos=NULL, type="source")
+
+
+library(vegan)
+
 here::i_am("MouseBiogeography-RProj/Donors-BetaDiversity.R")
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
@@ -60,7 +66,7 @@ run_repeated_PERMANOVA_donors <- function(path_to_distance_matrix_tsv,path_to_me
 
 
 permute_within <- c("Site")
-subject_data <- c("Sequencing_Run", "Sex", "MouseID")
+subject_data <- c("Sequencing_Run", "Donor_ID","Sex", "MouseID")
 # Mucosal SI
 run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/site_rpca/dm_rpca_SI_Mucosal_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
                        path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
@@ -76,6 +82,28 @@ run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/sit
                        path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
                        permute_columns_vector = permute_within,
                        subject_metadata_vector=subject_data)
+
+# Luminal Colon
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/site_rpca/dm_rpca_Colon_Luminal_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+permute_within <- c("Site_General")
+subject_data <- c("Sequencing_Run", "Donor_ID","Sex", "MouseID")
+# Luminal
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/site_rpca/dm_rpca_Luminal_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Mucosal
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/site_rpca/dm_rpca_Mucosal_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+
 
 # Luminal Colon
 data<- read.table( "Donors-Analysis/site_rpca/dm_rpca_Colon_Luminal_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv")

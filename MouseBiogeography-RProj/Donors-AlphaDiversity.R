@@ -44,6 +44,18 @@ mucosaldata<-filter(data, Type =="Mucosal")
 colondata<-filter(data, Site_General =="Colon")
 SIdata<-filter(data, Site_General =="SI")
 
+# luminal - Site_General
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site_General, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
+summary(output)
+
+# luminal - Site
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
+summary(output)
+
 
 # luminal - Site_General
 output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
