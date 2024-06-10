@@ -23,7 +23,7 @@ cols <- viridis::viridis(2)
 hum_v_GMM_Map_lum <- generate_interregional_GMM_barplot("Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
                                                          "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                          ystring="Map",
-                                                         titlestring= "HUM V. Gavage",
+                                                         titlestring= "HUM MD Gavage",
                                                          cols)
 
 ucla_o_GMM_Map_lum <- generate_interregional_GMM_barplot("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite_General-1-MsID/significant_results.tsv",
@@ -31,7 +31,7 @@ ucla_o_GMM_Map_lum <- generate_interregional_GMM_barplot("Regional-Mouse-Biogeog
                                    ystring="Map",
                                    titlestring= "UCLA O. SPF",
                                    cols)
-cs_spf_GMM_Map_lum <- generate_interregional_GMM_barplot("CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+cs_spf_GMM_Map_lum <- generate_interregional_GMM_barplot("CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                      "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                      ystring="Map",
                                                      titlestring= "CS SPF",
@@ -44,19 +44,19 @@ spf_gavage_GMM_Map_lum <- generate_interregional_GMM_barplot("Humanized-Biogeogr
 hum_gavage_GMM_Map_lum <- generate_interregional_GMM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                          ystring="Map",
-                                                         titlestring= "HUM Gavage",
+                                                         titlestring= "HUM SD Gavage",
                                                         cols)
 dev.new()
 cowplot::plot_grid(ucla_o_GMM_Map_lum, cs_spf_GMM_Map_lum, 
                    spf_gavage_GMM_Map_lum, hum_gavage_GMM_Map_lum,hum_v_GMM_Map_lum, nrow=2,
-                   labels=c("A","B","C","D","E"), label_size = 12)
+                   labels=c("A","B","C","D","E"), label_size = 16)
 
 ### Mucosal Barplots: Aggregated by Map (median coef) --- 
 cols <- viridis::viridis(2)
 hum_v_GMM_Map_muc <- generate_interregional_GMM_barplot("Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
                                                          "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                          ystring="Map",
-                                                         titlestring= "HUM V. Gavage",
+                                                         titlestring= "HUM MD Gavage",
                                                          cols)
 
 
@@ -70,7 +70,7 @@ ucla_v_GMM_Map_muc <- generate_interregional_GMM_barplot("UCLA_V_SPF_Analysis/OM
                                                          ystring="Map",
                                                          titlestring= "UCLA V. SPF",
                                                          cols)
-cs_spf_GMM_Map_muc <- generate_interregional_GMM_barplot("CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+cs_spf_GMM_Map_muc <- generate_interregional_GMM_barplot("CS_SPF/OMIXER-RPM Results/CS_GMM/GMM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                      "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                      ystring="Map",
                                                      titlestring= "CS SPF",
@@ -83,11 +83,11 @@ spf_gavage_GMM_Map_muc <- generate_interregional_GMM_barplot("Humanized-Biogeogr
 hum_gavage_GMM_Map_muc <- generate_interregional_GMM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                          ystring="Map",
-                                                         titlestring= "HUM Gavage",
+                                                         titlestring= "HUM SD Gavage",
                                                          cols)
 dev.new()
 cowplot::plot_grid(ucla_o_GMM_Map_muc, ucla_v_GMM_Map_muc, cs_spf_GMM_Map_muc, 
-                   spf_gavage_GMM_Map_muc, hum_gavage_GMM_Map_muc, hum_gavage_GMM_Map_muc, 
+                   spf_gavage_GMM_Map_muc, hum_gavage_GMM_Map_muc, hum_v_GMM_Map_muc, 
                    nrow=2, ncol=3,
                    labels=c("A","B","C","D","E","F"),
                    label_size = 12)
