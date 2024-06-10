@@ -9,7 +9,7 @@ cols <- viridis::viridis(2)
 
 hum_v_GBM_Map_lum <- generate_interregional_GBM_barplot("Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
-                                                         titlestring= "Hum V. Gavage Luminal",
+                                                         titlestring= "HUM MD Gavage Luminal",
                                                          cols)
 
 
@@ -17,7 +17,7 @@ ucla_o_GBM_Map_lum <- generate_interregional_GBM_barplot("Regional-Mouse-Biogeog
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "UCLA O. SPF Luminal",
                                                          cols)
-cs_spf_GBM_Map_lum <- generate_interregional_GBM_barplot("CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+cs_spf_GBM_Map_lum <- generate_interregional_GBM_barplot("CS_SPF/OMIXER-RPM Results/CS_GBM/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "CS SPF Luminal",
                                                          cols)
@@ -27,7 +27,7 @@ spf_gavage_GBM_Map_lum <- generate_interregional_GBM_barplot("Humanized-Biogeogr
                                                              cols)
 hum_gavage_GBM_Map_lum <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                              "GBM_Module_Key.csv",
-                                                             titlestring= "HUM Gavage Luminal",
+                                                             titlestring= "HUM SD Gavage Luminal",
                                                              cols)
 dev.new()
 cowplot::plot_grid(ucla_o_GBM_Map_lum, cs_spf_GBM_Map_lum, 
@@ -46,7 +46,7 @@ cowplot::plot_grid(spf_gavage_GBM_Map_lum, hum_gavage_GBM_Map_lum,
 cols <- viridis::viridis(2)
 hum_v_GBM_Map_muc <- generate_interregional_GBM_barplot("Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
-                                                         titlestring= "HUM V. Gavage Mucosal",
+                                                         titlestring= "HUM MD Gavage Mucosal",
                                                          cols)
 
 ucla_o_GBM_Map_muc <- generate_interregional_GBM_barplot("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
@@ -57,7 +57,7 @@ ucla_v_GBM_Map_muc <- generate_interregional_GBM_barplot("UCLA_V_SPF_Analysis/OM
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "UCLA V. SPF Mucosal",
                                                          cols)
-cs_spf_GBM_Map_muc <- generate_interregional_GBM_barplot("CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
+cs_spf_GBM_Map_muc <- generate_interregional_GBM_barplot("CS_SPF/OMIXER-RPM Results/CS_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                          "GBM_Module_Key.csv",
                                                          titlestring= "CS SPF Mucosal",
                                                          cols)
@@ -67,7 +67,7 @@ spf_gavage_GBM_Map_muc <- generate_interregional_GBM_barplot("Humanized-Biogeogr
                                                              cols)
 hum_gavage_GBM_Map_muc <- generate_interregional_GBM_barplot("Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM_ColonRef-CLR-Muc-ComBat-SeqRunSexSite_General-1-MsID/significant_results.tsv",
                                                              "GBM_Module_Key.csv",
-                                                             titlestring= "HUM Gavage Mucosal", 
+                                                             titlestring= "HUM SD Gavage Mucosal", 
                                                              cols)
 
 dev.new()

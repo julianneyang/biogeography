@@ -33,16 +33,17 @@ shotgun_lum_spf <- generate_interregional_GMM_barplot_shotgun("Shotgun/SPF_Gavag
                                                              titlestring= "SPF Gavage Shotgun",
                                                              cols)
 
+cols_hum=c("#FDE725FF")
 shotgun_lum_hum <- generate_interregional_GMM_barplot_shotgun("Shotgun/HUM_Gavage/GMM-DCvsJej-CLR-HUM-ComBat-SeqRunSexSite-1-MsID/significant_results.tsv",
                                                               "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv",
                                                               ystring="metabolic_map",
-                                                              titlestring= "HUM Gavage Shotgun",
-                                                              cols)
+                                                              titlestring= "HUM SD Gavage Shotgun",
+                                                              cols_hum)
 
 ### Final Figure ---
 dev.new()
-plot_grid(shotgun_lum_ucla, shotgun_lum_hum,
-          shotgun_lum_cs, shotgun_lum_spf,
+plot_grid(shotgun_lum_ucla,  shotgun_lum_cs,
+           shotgun_lum_spf,shotgun_lum_hum,
           nrow=2, ncol=2,
           labels=c("A","B","C","D"),
           label_size =16,
