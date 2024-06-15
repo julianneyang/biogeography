@@ -1,6 +1,6 @@
-###### The Big and Tragic Rearrangement of Mouse Biogeography ---
-### Date: 10.20.2022
-### Figure Number: 
+###### The Biggest and Most Tragic Rearrangement of Mouse Biogeography ---
+### Date: 06.15.2024
+### Figure Number: Supp 19
 ### Figure Contents: SPF Gavage and HUM Gavage Transverse alpha and beta diversity 
 ###### whining ends here ---
 
@@ -24,28 +24,30 @@ setwd("/home/julianne/Documents/biogeography/")
 
 
 ### Alpha Diversity ---
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Transverse_Alpha_Beta_UCLA_CS.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Transverse_Alpha_Beta_Gavages.R")
 
 # HUM V Gavage  
 data<-readRDS("Donors-Analysis/alpha_diversity/alpha_diversity.RDS")
 metadata<- read.delim("Donors-Analysis/starting_files/Donors_Metadata.tsv")
 
+data <- data %>% filter(observed_features <= 600)
+
 hum_v_gavage_otus_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, observed_features, Type, 0, 600)+ 
   facet_grid(~Site) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("HUM V. Gavage")+
+  ggtitle("HUM MD Gavage")+
   labs(y="# ASVs", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 hum_v_gavage_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, pielou_evenness, Type, 0, 1)+ 
   facet_grid(~Site) +
   #theme(plot.title = element_text(hjust = 0.5)) +
   #ggtitle("UCLA O. SPF")+
   labs(y="Pielou's evenness", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 
 
 # SPF Gavage 
@@ -62,17 +64,17 @@ spf_gavage_otus_transverse <- Microbiome.Biogeography::generate_adiv_plots(data,
   theme(plot.title = element_text(hjust = 0.5)) +
   ggtitle("SPF Gavage")+
   labs(y="# ASVs", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  ggpubr::stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 spf_gavage_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, pielou_e, Type, 0, 1)+ 
   facet_grid(~Site) +
   #theme(plot.title = element_text(hjust = 0.5)) +
   #ggtitle("UCLA O. SPF")+
   labs(y="Pielou's evenness", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  ggpubr::stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 
 
 # HUM Gavage 
@@ -87,26 +89,26 @@ data <- data %>% filter(Microbiota=="Humanized")
 hum_otus_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, observed_otus, Type, 0, 600)+ 
   facet_grid(~Site) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("HUM Gavage")+
+  ggtitle("HUM SD Gavage")+
   labs(y="# ASVs", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  ggpubr::stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 hum_pe_transverse <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Type, pielou_e, Type, 0, 1)+ 
   facet_grid(~Site) +
   #theme(plot.title = element_text(hjust = 0.5)) +
   #ggtitle("CS SPF")+
   labs(y="Pielou's evenness", x="")+
-  ggpubr::stat_compare_means(comparisons = list(c("Lum", "Muc")),
+  ggpubr::stat_compare_means(comparisons = list(c("L", "M")),
                              method="wilcox",vjust=0.5,
-                             label="p.signif",step.increase=0.08, hide.ns = TRUE)
+                             label="p.signif", hide.ns = TRUE)
 
 ### Beta Diversity ---
-Type_cols<-c("Lum"="#481567FF", "Muc" = "#3CBB75FF")
+Type_cols<-c("L"="#481567FF", "M" = "#3CBB75FF")
 
 # HUM V Gavage
-data<-read.csv("Donors-Analysis/type_rpca/Donors RPCA - Colon.csv",header=FALSE)
-metadata<- read.delim("Donors-Analysis/starting_files/Donors_Metadata.tsv", header=TRUE)
+data<-read.csv(here("Donors-Analysis/type_rpca/Donors RPCA - Colon.csv"),header=FALSE)
+metadata<- read.delim(here("Donors-Analysis/starting_files/Donors_Metadata.tsv"), header=TRUE)
 
 hum_v_gavage_pcoa_colon <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"SPF Gavage", "Type", Type_cols)+
   #labs(title="Colon") + 
@@ -356,7 +358,7 @@ hum_gavage_pcoa_dc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata
 dev.new()
 plot_grid(spf_gavage_otus_transverse, hum_otus_transverse, hum_v_gavage_otus_transverse,
           spf_gavage_pe_transverse, hum_pe_transverse, hum_v_gavage_pe_transverse,
-          ncol=3, labels=c("A", "", "B", "", "C",""))
+          ncol=3, labels=c("A", "B", "C", "", "",""))
 dev.new()
 plot_grid(spf_gavage_pcoa_si, spf_gavage_pcoa_colon, hum_gavage_pcoa_si, hum_gavage_pcoa_colon, hum_v_gavage_pcoa_si, hum_v_gavage_pcoa_colon,
           spf_gavage_pcoa_duo, spf_gavage_pcoa_cec, hum_gavage_pcoa_duo, hum_gavage_pcoa_cec,hum_v_gavage_pcoa_duo, hum_v_gavage_pcoa_cec,

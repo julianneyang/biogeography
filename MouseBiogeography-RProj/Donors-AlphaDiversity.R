@@ -41,21 +41,56 @@ sapply(data,levels)
 
 luminaldata<-filter(data, Type=="Luminal")
 mucosaldata<-filter(data, Type =="Mucosal")
-colondata<-filter(data, Site_General =="Colon")
-SIdata<-filter(data, Site_General =="SI")
+
+duodata<-filter(data, Site=="Duodenum")
+jejdata<-filter(data, Site =="Jejunum")
+iledata<-filter(data, Site =="Ileum")
+cecdata<-filter(data, Site =="Cecum")
+pcdata<-filter(data, Site =="Proximal_Colon")
+dcdata<-filter(data, Site =="Distal_Colon")
 
 # luminal - Site_General
-output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site_General, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+#output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site_General, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+#summary(output)
+#output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
+#summary(output)
+
+ luminal - Site
+#output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+#summary(output)
+#output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
+#summary(output)
+
+# each region - Type
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=duodata)
 summary(output)
-output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=duodata)
 summary(output)
 
-# luminal - Site
-output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site, random = ~1|(Donor_ID/MouseID), data=luminaldata)
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=jejdata)
 summary(output)
-output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=luminaldata)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=jejdata)
 summary(output)
 
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=iledata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=iledata)
+summary(output)
+
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=cecdata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=cecdata)
+summary(output)
+
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=pcdata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=pcdata)
+summary(output)
+
+output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=dcdata)
+summary(output)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(Donor_ID/MouseID), data=dcdata)
+summary(output)
 
 # luminal - Site_General
 output=lme(fixed= observed_features ~ Sequencing_Run + Sex + Site_General, random = ~1|MouseID, data=luminaldata)

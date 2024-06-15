@@ -36,7 +36,7 @@ mucosaldata <- mucosaldata %>% select(-Type)
 
 hum_v_otus_muc <- Microbiome.Biogeography::generate_adiv_plots(mucosaldata, metadata,Site, observed_features, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("Hum V. Gavage")+
+  ggtitle("HUM MD Gavage")+
   labs(y="# ASVs", x="")
 
 hum_v_pe_muc <- Microbiome.Biogeography::generate_adiv_plots(mucosaldata, metadata,Site, pielou_evenness, Site, 0, 1) +
@@ -72,8 +72,8 @@ ucla_o_pe_muc <- Microbiome.Biogeography::generate_adiv_plots(mucosaldata, metad
 ucla_o_pe_muc
 
 # CS SPF 
-data <- readr::read_rds(here("CS-Facility-Analysis/alpha_diversity_CS_Facility.RDS"))
-metadata<- readr::read_csv(here("CS-Facility-Analysis/CS_Facility_Metadata.csv"))
+data <- readr::read_rds(here("CS_SPF/alpha_diversity_CS_Facility.RDS"))
+metadata<- readr::read_csv(here("CS_SPF/CS_Facility_Metadata.csv"))
 type_metadata <- metadata %>% select("Type", "SampleID")
 intermediate<- (merge(data, type_metadata, by = 'SampleID'))
 data<- intermediate
@@ -108,7 +108,7 @@ data <- data %>% select(-c(Microbiota,Type))
 
 hum_otus_muc <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Site, observed_otus, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("Hum Gavage")+
+  ggtitle("HUM SD Gavage")+
   labs(y="# ASVs", x="")
   #stat_compare_means(comparisons = compare_vector,
                      #method="wilcox", vjust=0.5,label="p.signif",step.increase=0.08, hide.ns = TRUE)
@@ -150,7 +150,7 @@ data <- data %>% select(-c(Microbiota,Type))
 
 spf_gavage_otus_muc <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Site, observed_otus, Site, 0, 600) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("CS SPF Gavage")+
+  ggtitle("SPF Gavage")+
   labs(y="# ASVs", x="")
   #stat_compare_means(comparisons = compare_vector,
                      #method="wilcox", vjust=0.5,label="p.signif",step.increase=0.08, hide.ns = TRUE)
@@ -235,9 +235,9 @@ ucla_v_pcoa_msi<- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"UC
 ucla_v_pcoa_msi
 
 # CS SPF
-metadata <- read.csv(here("CS-Facility-Analysis/CS_Facility_Metadata.csv"),
+metadata <- read.csv(here("CS_SPF/CS_Facility_Metadata.csv"),
                      header=TRUE)
-data<-read.csv(here("CS-Facility-Analysis/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal.csv"),
+data<-read.csv(here("CS_SPF/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal.csv"),
                header=FALSE)
 cs_spf_muc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"CS SPF", "Site_General", cols_general) +
   #labs(title="CS SPF") + 
@@ -245,7 +245,7 @@ cs_spf_muc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"CS SPF
   #theme(plot.title = element_text(hjust = 0.5))
 cs_spf_muc
 
-data<-read.csv(here("CS-Facility-Analysis/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal_Colon.csv"),
+data<-read.csv(here("CS_SPF/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal_Colon.csv"),
                header=FALSE)
 cs_spf_mc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"CS SPF", "Site", Colon_cols) +
   #labs(title="CS SPF") + 
@@ -253,7 +253,7 @@ cs_spf_mc <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"CS SPF"
   #theme(plot.title = element_text(hjust = 0.5))
 cs_spf_mc
 
-data<-read.csv(here("CS-Facility-Analysis/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal_SI.csv"),
+data<-read.csv(here("CS_SPF/RPCA/Site_RPCA/CS_Facility_Site_RPCA - Mucosal_SI.csv"),
                header=FALSE)
 cs_spf_msi <- Microbiome.Biogeography::generate_pcoA_plots(data,metadata,"CS SPF", "Site", SI_cols) +
   #labs(title="CS SPF") + 
