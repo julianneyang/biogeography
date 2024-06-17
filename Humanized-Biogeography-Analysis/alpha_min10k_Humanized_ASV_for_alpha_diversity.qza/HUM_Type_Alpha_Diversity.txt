@@ -1,0 +1,360 @@
+Linear mixed-effects model fit by REML
+  Data: hum_duo 
+       AIC      BIC    logLik
+  137.3484 140.1337 -61.67422
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev: 0.002495844 48.89979
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                            Value Std.Error DF   t-value p-value
+(Intercept)             216.88068  23.60166  6  9.189212  0.0001
+Sequencing_Run2014_Sept  -5.31818  36.11489  6 -0.147257  0.8878
+Sequencing_Run2015_Sept  74.42045  39.69901  5  1.874617  0.1197
+SexMale                 -52.69318  26.57984  5 -1.982449  0.1043
+TypeMucosal             -26.21591  30.39521  6 -0.862501  0.4215
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.128                       
+Sequencing_Run2015_Sept -0.029  0.227                
+SexMale                 -0.650  0.113  -0.258        
+TypeMucosal             -0.341 -0.594  -0.135  -0.067
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.1836591 -0.5308863 -0.2793282  0.6414440  1.6526144 
+
+Number of Observations: 16
+Number of Groups: 8 
+Linear mixed-effects model fit by REML
+  Data: hum_duo 
+      AIC      BIC   logLik
+  2.82259 5.607857 5.588705
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept)   Residual
+StdDev:  0.07691349 0.08910273
+
+Fixed effects:  pielou_e ~ Sequencing_Run + Sex + Type 
+                             Value  Std.Error DF   t-value p-value
+(Intercept)              0.5162600 0.06190821  6  8.339119  0.0002
+Sequencing_Run2014_Sept -0.1251098 0.07712741  6 -1.622119  0.1559
+Sequencing_Run2015_Sept  0.0473717 0.11282046  5  0.419886  0.6920
+SexMale                 -0.0216596 0.07620862  5 -0.284215  0.7876
+TypeMucosal              0.1803655 0.05892354  6  3.061009  0.0222
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.104                       
+Sequencing_Run2015_Sept -0.018  0.171                
+SexMale                 -0.707  0.084  -0.273        
+TypeMucosal             -0.204 -0.654  -0.112  -0.055
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.9758897 -0.4584865  0.1676628  0.5825700  0.7371053 
+
+Number of Observations: 16
+Number of Groups: 8 
+Linear mixed-effects model fit by REML
+  Data: hum_jej 
+      AIC      BIC    logLik
+  161.906 165.8607 -73.95301
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev:    17.17172 51.59984
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                            Value Std.Error DF   t-value p-value
+(Intercept)             183.05556  26.26720  7  6.968980  0.0002
+Sequencing_Run2014_Sept -55.29145  39.78380  7 -1.389798  0.2072
+Sequencing_Run2015_Sept -18.44786  36.31152  6 -0.508044  0.6296
+SexMale                  10.39929  30.97697  6  0.335710  0.7485
+TypeMucosal             -12.01396  27.70447  7 -0.433647  0.6776
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept  0.000                       
+Sequencing_Run2015_Sept  0.000  0.274                
+SexMale                 -0.666 -0.107  -0.391        
+TypeMucosal             -0.407 -0.479  -0.131   0.051
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.74192248 -0.21989825 -0.04583709  0.20362036  1.85891754 
+
+Number of Observations: 18
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_jej 
+        AIC      BIC   logLik
+  -1.099413 2.855232 7.549707
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept)   Residual
+StdDev:   0.1124525 0.06722914
+
+Fixed effects:  pielou_e ~ Sequencing_Run + Sex + Type 
+                             Value  Std.Error DF   t-value p-value
+(Intercept)              0.3395219 0.07224667  7  4.699481  0.0022
+Sequencing_Run2014_Sept -0.1069620 0.06334638  7 -1.688526  0.1352
+Sequencing_Run2015_Sept -0.1187222 0.10691065  6 -1.110481  0.3093
+SexMale                  0.1161053 0.09339547  6  1.243158  0.2602
+TypeMucosal              0.2133255 0.03808219  7  5.601714  0.0008
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept  0.000                       
+Sequencing_Run2015_Sept  0.000  0.148                
+SexMale                 -0.736 -0.057  -0.382        
+TypeMucosal             -0.183 -0.554  -0.082   0.031
+
+Standardized Within-Group Residuals:
+         Min           Q1          Med           Q3          Max 
+-1.573971748 -0.441263374 -0.006126544  0.419757414  1.079824389 
+
+Number of Observations: 18
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_ile 
+       AIC      BIC   logLik
+  157.2074 160.6018 -71.6037
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev:  0.01586965 71.19999
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                            Value Std.Error DF   t-value p-value
+(Intercept)             172.87968  34.00870  6  5.083396  0.0023
+Sequencing_Run2014_Sept -76.99318  58.75808  6 -1.310342  0.2380
+Sequencing_Run2015_Sept -35.70942  48.80813  6 -0.731629  0.4920
+SexMale                  19.75028  38.53025  6  0.512592  0.6266
+TypeMucosal              46.23836  37.62353  6  1.228975  0.2651
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.081                       
+Sequencing_Run2015_Sept -0.069  0.102                
+SexMale                 -0.650  0.064  -0.330        
+TypeMucosal             -0.445 -0.375   0.072  -0.024
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.57134407 -0.67246754  0.08261176  0.68989214  1.33261186 
+
+Number of Observations: 17
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_ile 
+     AIC      BIC logLik
+  5.7416 9.135946 4.1292
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept)  Residual
+StdDev:  0.03566935 0.1251649
+
+Fixed effects:  pielou_e ~ Sequencing_Run + Sex + Type 
+                             Value  Std.Error DF   t-value p-value
+(Intercept)              0.3447635 0.06327116  6  5.448984  0.0016
+Sequencing_Run2014_Sept -0.1443471 0.10699748  6 -1.349070  0.2260
+Sequencing_Run2015_Sept -0.1601996 0.09160984  6 -1.748716  0.1309
+SexMale                  0.1670335 0.07301629  6  2.287620  0.0621
+TypeMucosal              0.1668019 0.06662785  6  2.503486  0.0463
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.078                       
+Sequencing_Run2015_Sept -0.064  0.097                
+SexMale                 -0.662  0.061  -0.334        
+TypeMucosal             -0.417 -0.387   0.071  -0.024
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.4766400 -0.4287772 -0.2574836  0.5852729  1.4653186 
+
+Number of Observations: 17
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_cec 
+       AIC      BIC    logLik
+  135.8321 139.7868 -60.91607
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev: 0.001745134 20.42007
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                            Value Std.Error DF   t-value p-value
+(Intercept)             104.21429  9.963976  7 10.459107  0.0000
+Sequencing_Run2014_Sept   6.07143 23.154187  7  0.262217  0.8007
+Sequencing_Run2015_Sept -57.83929 17.041020  6 -3.394121  0.0146
+SexMale                  16.12500 11.028100  6  1.462174  0.1940
+TypeMucosal              -0.50000 20.420073  7 -0.024486  0.9811
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.258                       
+Sequencing_Run2015_Sept -0.175  0.679                
+SexMale                 -0.632  0.000  -0.277        
+TypeMucosal              0.000 -0.882  -0.599   0.000
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.2137916 -0.4451152 -0.1539102  0.3165652  1.7463558 
+
+Number of Observations: 18
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_cec 
+        AIC       BIC   logLik
+  -15.50317 -11.54852 14.75158
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept)   Residual
+StdDev:   0.0634602 0.04000122
+
+Fixed effects:  pielou_e ~ Sequencing_Run + Sex + Type 
+                             Value  Std.Error DF   t-value p-value
+(Intercept)              0.4072701 0.04151355  7  9.810535  0.0000
+Sequencing_Run2014_Sept  0.0580682 0.04535712  7  1.280243  0.2412
+Sequencing_Run2015_Sept  0.0844558 0.06430204  6  1.313424  0.2370
+SexMale                  0.1121776 0.05306499  6  2.113966  0.0789
+TypeMucosal             -0.0210173 0.04000122  7 -0.525417  0.6155
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.121                       
+Sequencing_Run2015_Sept -0.043  0.353                
+SexMale                 -0.730  0.000  -0.354        
+TypeMucosal              0.000 -0.882  -0.311   0.000
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.15503944 -0.54274997 -0.04140344  0.39252980  1.33958838 
+
+Number of Observations: 18
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_pc 
+       AIC     BIC    logLik
+  138.5167 141.911 -62.25835
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev:    28.05398 25.45881
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                            Value Std.Error DF   t-value p-value
+(Intercept)             119.88095  20.41234  6  5.872965  0.0011
+Sequencing_Run2014_Sept  26.05525  36.53943  6  0.713072  0.5026
+Sequencing_Run2015_Sept -55.83929  32.27476  6 -1.730122  0.1343
+SexMale                   3.95833  25.45864  6  0.155481  0.8815
+TypeMucosal             -15.48382  33.91082  6 -0.456604  0.6640
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.124                       
+Sequencing_Run2015_Sept -0.070  0.353                
+SexMale                 -0.713  0.000  -0.338        
+TypeMucosal              0.000 -0.928  -0.296   0.000
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-0.7569715 -0.4178406 -0.1773915  0.1773915  1.7151667 
+
+Number of Observations: 17
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_pc 
+        AIC      BIC   logLik
+  -18.02825 -14.6339 16.01412
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept)   Residual
+StdDev:  0.04849527 0.03406513
+
+Fixed effects:  pielou_e ~ Sequencing_Run + Sex + Type 
+                             Value  Std.Error DF   t-value p-value
+(Intercept)              0.3976997 0.03256108  6 12.213960  0.0000
+Sequencing_Run2014_Sept  0.2734669 0.04960560  6  5.512823  0.0015
+Sequencing_Run2015_Sept  0.0685069 0.05071491  6  1.350824  0.2255
+SexMale                  0.1308731 0.04135623  6  3.164531  0.0195
+TypeMucosal             -0.2110823 0.04614286  6 -4.574538  0.0038
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.103                       
+Sequencing_Run2015_Sept -0.050  0.297                
+SexMale                 -0.726  0.000  -0.349        
+TypeMucosal              0.000 -0.930  -0.248   0.000
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.0373974 -0.4426466 -0.2256136  0.4426466  1.2479155 
+
+Number of Observations: 17
+Number of Groups: 9 
+Linear mixed-effects model fit by REML
+  Data: hum_dc 
+       AIC      BIC    logLik
+  122.5336 125.3189 -54.26682
+
+Random effects:
+ Formula: ~1 | MouseID
+        (Intercept) Residual
+StdDev:  0.00253644 25.38025
+
+Fixed effects:  observed_otus ~ Sequencing_Run + Sex + Type 
+                             Value Std.Error DF   t-value p-value
+(Intercept)              216.25105  24.18393  6  8.941931  0.0001
+Sequencing_Run2014_Sept  -94.03766  21.27902  5 -4.419266  0.0069
+Sequencing_Run2015_Sept -144.12761  30.29393  6 -4.757641  0.0031
+SexMale                   -9.62343  13.73555  6 -0.700622  0.5098
+TypeMucosal               20.56067  14.86634  5  1.383035  0.2252
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.859                       
+Sequencing_Run2015_Sept -0.677  0.715                
+SexMale                 -0.268 -0.065  -0.240        
+TypeMucosal             -0.607  0.409   0.497  -0.026
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-1.8592519 -0.4356334  0.1164299  0.4889645  1.8592519 
+
+Number of Observations: 16
+Number of Groups: 9 
+Linear mixed-effects model fit bLinear mixed-effects model fit by REML
+  Data: spf_duo 
+       AIC      BIC   logLik
+  5.368209 6.748781 4.315895
+
+Random effects:
+ Formula: ~1 | MouseID
+         (Intercept)  Residual
+StdDev: 2.545968e-06 0.1116624
+
+Fixed effects:  pielou_evenness ~ Sequencing_Run + Sex + Type 
+                            Value  Std.Error DF  t-value p-value
+(Intercept)             0.4852813 0.05831380  6 8.321896  0.0002
+Sequencing_Run2014_Sept 0.0184264 0.13466994  3 0.136826  0.8998
+Sequencing_Run2015_Sept 0.0459726 0.07895725  6 0.582247  0.5816
+SexMale                 0.0539797 0.07229587  6 0.746650  0.4835
+TypeMucosal             0.1281828 0.06733497  3 1.903659  0.1531
+ Correlation: 
+                        (Intr) S_R2014 S_R2015 SexMal
+Sequencing_Run2014_Sept -0.289                       
+Sequencing_Run2015_Sept  0.000  0.000                
+SexMale                 -0.717  0.349  -0.364        
+TypeMucosal             -0.289 -0.375   0.000  -0.078
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-1.61356514 -0.36780277 -0.04004589  0.57526223  1.56750005 
+
+Number of Observations: 14
+Number of Groups: 9 

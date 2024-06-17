@@ -183,6 +183,25 @@ dev.new(width=15, height=10)
 plot_grid(shannon, otus, chao1, pielou_e, rows=2, cols=2)
 
 #Linear mixed effects models, full dataset
+data <- readRDS(here("CS_SPF/alpha_min_10000_table/alpha_diversity_CS_Facility.RDS"))
+metadata<- read.delim(here("CS_SPF/starting_files/CS_Facility_Metadata.tsv"))
+intermediate<- (merge(data, metadata, by = 'SampleID'))
+data<- intermediate
+
+names(data)
+data$Sequencing_Run= factor(data$Sequencing_Run)
+data$Type= factor(data$Type, levels=c("Luminal", "Mucosal"))
+data$Site_General = factor(data$Site_General, levels=c("Colon", "SI"))
+data$Site = factor(data$Site, levels= c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
+sapply(data,levels)
+
+duodata<-filter(data, Site=="Duodenum")
+jejdata<-filter(data, Site =="Jejunum")
+iledata<-filter(data, Site =="Ileum")
+cecdata<-filter(data, Site =="Cecum")
+pcdata<-filter(data, Site =="Proximal_Colon")
+dcdata<-filter(data, Site =="Distal_Colon")
+
 names(data)
 data$Sequencing_Run= factor(data$Sequencing_Run)
 data$Type= factor(data$Type, levels=c("Luminal", "Mucosal"))
@@ -235,5 +254,36 @@ summary(output)
 output=lme(fixed= chao1 ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
 summary(output)
 output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Site, random = ~1|MouseID, data=mucosaldata)
+summary(output)
+
+# Sample Type Differences
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex +  Type, random = ~1|(MouseID), data=duodata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=duodata)
+summary(output)
+
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=jejdata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex +  Type, random = ~1|(MouseID), data=jejdata)
+summary(output)
+
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=iledata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex +  Type, random = ~1|(MouseID), data=iledata)
+summary(output)
+
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=cecdata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=cecdata)
+summary(output)
+
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=pcdata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=pcdata)
+summary(output)
+
+output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=dcdata)
+summary(output)
+output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=dcdata)
 summary(output)
 

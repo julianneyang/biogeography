@@ -10,7 +10,7 @@ here::here()
 
 run_maaslin2 <- function(input_data, output_path, site, site_fixed_effects, random, set_refs) {
   # Get target columns from input data
-  target <- colnames(input_data)
+  target <- colnames({{input_data}})
   
   # Subset metadata for matching samples
   df_input_metadata_subset <- input_metadata[match(target, row.names(input_metadata)),]
@@ -18,7 +18,7 @@ run_maaslin2 <- function(input_data, output_path, site, site_fixed_effects, rand
   # Run Maaslin2
   fit_data <- Maaslin2(input_data = input_data, 
                        input_metadata = df_input_metadata_subset, 
-                       output = output_path, 
+                       output = {{output_path}}, 
                        fixed_effects = {{site_fixed_effects}}, 
                        random_effects = {{random}},
                        reference = {{set_refs}},
@@ -280,7 +280,7 @@ df_input_data<-as.data.frame(input_data)
 names(df_input_data)<-gsub("X","",names(df_input_data))
 df_input_data <- df_input_data %>% select(-c(taxonomy))
 rows_to_remove <- grep("Mitochondria|Chloroplast", row.names(df_input_data))
-df_input_data <- df_input_data[-rows_to_remove, ]
+#df_input_data <- df_input_data[-rows_to_remove, ]
 
 input_metadata <-read.delim(here("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv"),header=TRUE, row.names=1) #mapping file
 row.names(input_metadata)
@@ -305,7 +305,7 @@ df_input_metadata$Site <- factor(df_input_metadata$Site)
 df_input_metadata$Type <- factor(df_input_metadata$Type, levels=c("Luminal", "Mucosal"))
 sapply(df_input_metadata,levels)
 
-# List of sites and corresponding file paths
+# HUM SD Gavage -- List of sites and corresponding file paths
 site_paths <- list(
   Jejunum = "Humanized-Biogeography-Analysis/differential_genera_type/HUM_L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID",
   Ileum = "Humanized-Biogeography-Analysis/differential_genera_type/HUM_L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID",
@@ -324,7 +324,7 @@ site_general_paths <- list(
 site_fe <- c("Sequencing_Run", "Sex", "Type")
 duod_fe <- c("Sex","Type")
 ranef <- c("MouseID")
-refs <- c("Sequencing_Run,One","Site,Distal_Colon")
+refs <- c("Sequencing_Run,2014_Nov","Site,Distal_Colon")
 
 for (site in names(site_paths)) {
   # Get sample IDs for the current site
@@ -345,15 +345,20 @@ samples <- df_input_metadata %>%
   filter(Site == "Duodenum", SampleID %in% names(df_input_data)) %>% 
   pull(SampleID)
 
-# Subset input data for the current site
 input_data <- df_input_data[, samples]
 
-# Run Maaslin2 analysis
 output_path <- "Humanized-Biogeography-Analysis/differential_genera_type/HUM_L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID"
 fit_data <- run_maaslin2(input_data, output_path, site, duod_fe,ranef,refs)
 
 
 site_general_fe <- c("Sequencing_Run","Sex", "Site","Type")
+refs<- c("Sequencing_Run,2014_Nov","Site,Distal_Colon")
+
+input_metadata$Sequencing_Run <- factor(input_metadata$Sequencing_Run, levels =c("2014_Sept","2014_Nov", "2015_Sept"))
+input_metadata$Site <- factor(input_metadata$Site, levels =c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
+input_metadata$Type <- factor(input_metadata$Type, levels =c("Luminal", "Mucosal"))
+
+
 for (site in names(site_general_paths)) {
   # Get sample IDs for the current site
   samples <- df_input_metadata %>% 

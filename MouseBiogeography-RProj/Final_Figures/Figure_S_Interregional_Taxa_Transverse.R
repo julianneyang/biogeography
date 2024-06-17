@@ -1,5 +1,7 @@
 library(Microbiome.Biogeography)
 library(dplyr)
+library(ggplot2)
+library(here)
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Interregional_Taxa_Transverse.R")
 
@@ -9,14 +11,14 @@ Type_cols<-c("Luminal"="#481567FF", "Mucosal" = "#3CBB75FF")
 seecolor::print_color(c("#481567FF"))
 
 hum_v_gavage_DAT_colon <- generate_interregional_taxa_barplot_TYPE("Donors-Analysis/differential_genera_type/L6-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
-                                                             "HUM V. Gavage Colon",
+                                                             "HUM MD Gavage Colon",
                                                              Type_cols)
 
 ucla_o_spf_DAT_colon <- generate_interregional_taxa_barplot_TYPE("Regional-Mouse-Biogeography-Analysis/differential_genera_type/L6-LumRef-CLR-Colon-ComBat-SeqRunLineSexSiteType-1-MsID/significant_results.tsv",
                                                                "UCLA O. SPF Colon",
                                                                Type_cols)
 
-cs_DAT_colon <- generate_interregional_taxa_barplot_TYPE("CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
+cs_DAT_colon <- generate_interregional_taxa_barplot_TYPE("CS_SPF/differential_genera_type/L6-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
                                                              "CS SPF Colon",
                                                              Type_cols)
 
@@ -25,7 +27,7 @@ spf_gavage_DAT_colon <- generate_interregional_taxa_barplot_TYPE("Humanized-Biog
                                                           Type_cols)
 
 hum_gavage_DAT_colon <- generate_interregional_taxa_barplot_TYPE("Humanized-Biogeography-Analysis/differential_genera_type/HUM_L6-LumRef-CLR-Colon-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
-                                                          "HUM Gavage Colon",
+                                                          "HUM SD Gavage Colon",
                                                           Type_cols)
 
 dev.new()
@@ -41,14 +43,14 @@ Type_cols<-c("Luminal"="#481567FF", "Mucosal" = "#3CBB75FF")
 seecolor::print_color(c("#481567FF"))
 
 hum_v_gavage_DAT_si <- generate_interregional_taxa_barplot_TYPE("Donors-Analysis/differential_genera_type/L6-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
-                                                                   "HUM V. Gavage SI",
+                                                                   "HUM MD Gavage SI",
                                                                    Type_cols)
 
 ucla_o_spf_DAT_si <- generate_interregional_taxa_barplot_TYPE("Regional-Mouse-Biogeography-Analysis/differential_genera_type/L6-LumRef-CLR-SI-ComBat-SeqRunLineSexSiteType-1-MsID/significant_results.tsv",
                                                                  "UCLA O. SPF SI",
                                                                  Type_cols)
 
-cs_DAT_si <- generate_interregional_taxa_barplot_TYPE("CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
+cs_DAT_si <- generate_interregional_taxa_barplot_TYPE("CS_SPF/differential_genera_type/L6-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
                                                          "CS SPF SI",
                                                          Type_cols)
 
@@ -57,7 +59,7 @@ spf_gavage_DAT_si <- generate_interregional_taxa_barplot_TYPE("Humanized-Biogeog
                                                                  Type_cols)
 
 hum_gavage_DAT_si <- generate_interregional_taxa_barplot_TYPE("Humanized-Biogeography-Analysis/differential_genera_type/HUM_L6-LumRef-CLR-SI-ComBat-SeqRunSexSiteType-1-MsID/significant_results.tsv",
-                                                                 "HUM Gavage SI",
+                                                                 "HUM SD Gavage SI",
                                                                  Type_cols)
 
 dev.new()

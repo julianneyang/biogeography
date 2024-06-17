@@ -63,6 +63,58 @@ run_repeated_PERMANOVA_donors <- function(path_to_distance_matrix_tsv,path_to_me
   data.adonis
 }
 
+permute_within <- c("Type")
+subject_data <- c("Sequencing_Run", "Donor_ID","Sex", "MouseID")
+# Duodenum
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Duodenum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Jejunum
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Jejunum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Ileum
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Ileum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Cecum
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Cecum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Proximal Colon
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Proximal_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# Distal Colon
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Distal_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+permute_within <- c("Type")
+subject_data <- c("Sequencing_Run", "Donor_ID","Sex", "Site","MouseID")
+
+# Colon 
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
+
+# SI 
+run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_SI_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
+                              path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
+                              permute_columns_vector = permute_within,
+                              subject_metadata_vector=subject_data)
 
 
 permute_within <- c("Site")

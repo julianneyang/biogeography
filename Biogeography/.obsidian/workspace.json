@@ -229,7 +229,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Donors Alpha Diversity LMEM Stats.md",
+                "file": "Donors Beta Diversity.md",
                 "mode": "source",
                 "source": false
               }
@@ -286,7 +286,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "3f5fb4f26535282e",
@@ -302,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Donors Alpha Diversity LMEM Stats.md",
+                "file": "Donors Beta Diversity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -330,8 +330,10 @@
   },
   "active": "93a2bf26d5472f2f",
   "lastOpenFiles": [
-    "Donors Beta Diversity.md",
+    "2023 CS SPF LMEM Results.md",
+    "2023 UCLA O SPF LMEM results.md",
     "Donors Alpha Diversity LMEM Stats.md",
+    "Donors Beta Diversity.md",
     "2024 UCLA V SPF.md",
     "Finding elements which do not overlap between character vectors.md",
     "Untitled",
@@ -346,10 +348,8 @@
     "CS_Facility Betadiv Adonis Stats.md",
     "2024 Shotgun Results.md",
     "2023 UCLA V SPF LMEM results.md",
-    "2023 UCLA O SPF LMEM results.md",
     "2023 SPF Gavage LMEM results.md",
     "2023 HUM Gavage LMEM results.md",
-    "2023 CS SPF LMEM Results.md",
     "Regional AlphaDiv LMEM stats.md",
     "github.md",
     "Mucosal Colonic Intraregional.md",

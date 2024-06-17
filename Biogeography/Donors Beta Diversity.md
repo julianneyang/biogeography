@@ -135,3 +135,181 @@ Site_General     1    14.46 0.02518 27.338 9.999e-05 ***
 Residual       251   132.73 0.23117                     
 Total          268   574.18 1.00000            
 ```
+
+##  Duodenum - Type
+```R
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  5    44.126  8.8253  6.7985 0.22584  0.000500 ***
+Donor_ID       10    50.861  5.0861  3.9180 0.26031  0.019198 *  
+Type            1     6.937  6.9372  5.3440 0.03550  0.005499 ** 
+Residuals      72    93.465  1.2981         0.47835 9.999e-05 ***
+Total          88   195.390                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Jejunum
+```R
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Jejunum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  5    19.660  3.9320  3.3244 0.09897    0.2911    
+Donor_ID       10    78.625  7.8625  6.6476 0.39579 9.999e-05 ***
+Type            1    12.845 12.8453 10.8605 0.06466 9.999e-05 ***
+Residuals      74    87.524  1.1828         0.44058 9.999e-05 ***
+Total          90   198.654                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Ileum
+```R
+> # Ileum
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Ileum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  5    35.017  7.0033  7.7231 0.18131  0.009099 ** 
+Donor_ID       10    90.742  9.0742 10.0068 0.46984 9.999e-05 ***
+Type            1     1.178  1.1775  1.2985 0.00610  0.359364    
+Residuals      73    66.197  0.9068         0.34275 9.999e-05 ***
+Total          89   193.133                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Cecum
+```R
+> # Cecum
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Cecum_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  4    10.807  2.7017   7.055 0.05651    0.6624    
+Donor_ID       10   137.498 13.7498  35.906 0.71899 9.999e-05 ***
+Type            1    15.362 15.3619  40.116 0.08033 9.999e-05 ***
+Residuals      72    27.572  0.3829         0.14417 9.999e-05 ***
+Total          87   191.238                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Proximal Colon
+```R
+> # Proximal Colon
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Proximal_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  4     7.002  1.7506   5.803 0.03824     0.893    
+Donor_ID       10   137.326 13.7326  45.522 0.74997 9.999e-05 ***
+Type            1    17.964 17.9645  59.550 0.09811 9.999e-05 ***
+Residuals      69    20.815  0.3017         0.11368 9.999e-05 ***
+Total          84   183.108                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Distal Colon
+```R
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Distal_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+               Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run  4    11.215  2.8037   5.291 0.05933    0.5054    
+Donor_ID       10   112.058 11.2058  21.148 0.59287 9.999e-05 ***
+Type            1    27.584 27.5844  52.057 0.14594 9.999e-05 ***
+Residuals      72    38.152  0.5299         0.20185 9.999e-05 ***
+Total          87   189.008                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## Colon
+```R
+> # Colon 
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_Colon_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   4     20.70   5.174  15.005 0.03754    0.8660    
+Donor_ID        10    393.14  39.314 114.009 0.71305 9.999e-05 ***
+Site             2      0.16   0.082   0.238 0.00030    0.9999    
+Type             1     53.55  53.552 155.299 0.09713 9.999e-05 ***
+Residuals      243     83.79   0.345         0.15198 9.999e-05 ***
+Total          260    551.35                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+## SI
+```R
+> run_repeated_PERMANOVA_donors(path_to_distance_matrix_tsv = "Donors-Analysis/type_rpca/dm_rpca_SI_Donors-Mice-1xPrev0.15-ComBat-ASV.qza.txt/distance-matrix.tsv",
++ path_to_metadata_csv = "Donors-Analysis/starting_files/Donors_Metadata.tsv",
++ permute_columns_vector = permute_within,
++ subject_metadata_vector=subject_data)
+$aov.tab
+Permutation: free
+Number of permutations: 0
+
+Terms added sequentially (first to last)
+
+                Df SumsOfSqs MeanSqs F.Model      R2    Pr(>F)    
+Sequencing_Run   5     47.95  9.5906  7.9133 0.08436    0.1502    
+Donor_ID        10    189.81 18.9808 15.6613 0.33391 9.999e-05 ***
+Site             2      5.41  2.7044  2.2314 0.00952    0.8220    
+Type             1     21.06 21.0617 17.3783 0.03705 9.999e-05 ***
+Residuals      251    304.20  1.2120         0.53516 9.999e-05 ***
+Total          269    568.43                 1.00000              
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
