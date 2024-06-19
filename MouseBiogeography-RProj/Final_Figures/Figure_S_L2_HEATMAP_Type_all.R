@@ -47,21 +47,21 @@ ucla_o_type_L2_heatmap <- generate_taxa_heat_map_by_type(df,
 
 ### CS SPF ---
 target <- find_features_union_for_type_heatmap(
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
   
 df <- query_type_features_union(
   target,
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L2-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L2-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
 
 #draw heatmap
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
@@ -112,7 +112,7 @@ df <- query_type_features_union(
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
 bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 hum_v_gavage_type_L2_heatmap <- generate_taxa_heat_map_by_type(df,
-                                                             "HUM V. Gavage",
+                                                             "HUM MD Gavage",
                                                              cols,
                                                              bk)
 

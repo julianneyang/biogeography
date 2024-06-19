@@ -1,0 +1,16 @@
+Num samples: 1
+Num observations: 29
+Total count: 19,813
+Table density (fraction of non-zero values): 1.000
+
+Counts/sample summary:
+ Min: 19,813.000
+ Max: 19,813.000
+ Median: 19,813.000
+ Mean: 19,813.000
+ Std. dev.: 0.000
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+A001: 19,813.000

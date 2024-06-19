@@ -8,8 +8,9 @@ library(funrar)
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
 library(Microbiome.Biogeography)
+setwd("/home/julianne/Documents/biogeography/")
 
-here::i_am("MouseBiogeography-RProj/Hum-TaxaBarplots-SPF.R")
+here::i_am("MouseBiogeography-RProj/Hum-TaxaBarplots-Hum.R")
 
 ### Wrangle Genera Names --- 
 
@@ -21,6 +22,10 @@ readr::write_rds(processed_data, here("Humanized-Biogeography-Analysis/taxa_barp
 file_path <- "Humanized-Biogeography-Analysis/taxa_barplots/Humanized_Mucosal_level-6.csv"
 processed_data <- process_taxonomy_data(file_path)
 readr::write_rds(processed_data, here("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Mucosal_level-6.RDS"))
+
+file_path <- "Humanized-Biogeography-Analysis/SD_Donor/taxa_barplots/HUM_SD_Donor_level-6.csv"
+processed_data <- process_taxonomy_data(file_path)
+readr::write_rds(processed_data, here("Humanized-Biogeography-Analysis/SD_Donor/taxa_barplots/HUM_SD_Donor_level-6.RDS"))
 
 ## Generate a color key using paletteer colors --
 labels_lum <- get_genera_from_plot("Humanized-Biogeography-Analysis/taxa_barplots/HUM_Gavage_Luminal_level-6.RDS")
