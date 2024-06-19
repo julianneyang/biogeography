@@ -771,8 +771,8 @@ readr::write_rds(new_genera_legend, here("Donors-Analysis/taxa_barplots/donors_g
 ### Draw legend ---
 genera_cols <- readRDS("Donors-Analysis/taxa_barplots/donors_genera_cols.RDS")
 dummyplot<- as.data.frame(genera_cols)
-dummyplot$dummyy <- seq(1,52,1)
-dummyplot$dummyx <- seq(1,104,2)
+dummyplot$dummyy <- seq(1,55,1)
+dummyplot$dummyx <- seq(1,110,2)
 dummyplot$Genus <- row.names(dummyplot)
 L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
