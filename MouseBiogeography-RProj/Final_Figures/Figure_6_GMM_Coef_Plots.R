@@ -5,14 +5,15 @@
 ###### whining ends here ---
 
 library(ggplot2)
-library(dplyr)
-library(rlang)
+library(tidyverse)
+#library(rlang)
 library(cowplot)
 library(viridis)
-library(plyr)
+#library(plyr)
 library(gridExtra)
 library(paletteer)
 library(ComplexUpset)
+library(here)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -20,12 +21,12 @@ devtools::document()
 library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GMM_Site_Heatmap_Aggregated.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GMM_Coef_Plots.R")
 
 ### Upset Plot ---
 
 lum_file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
@@ -38,8 +39,8 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
 
 muc_file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
                     "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                    "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                    "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                    "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                     "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                     "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                     "UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
@@ -108,7 +109,7 @@ names(gmm_of_interest) <-df_filtered$annotation
 ### Coef Plots ---
 
 lum_file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                    "CS-Facility-Analysis/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                    "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                     "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                     "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                     "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
@@ -128,6 +129,7 @@ names(my_palette) <-c(lum_cohort_prefixes, "UCLA_V_SPF")
 cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
 
 
+### Draw legend ---
 L2_legend <-  sugar_acid + 
   theme(legend.position = "right") +
   #guides(fill=guide_legend(nrow=8, byrow=TRUE))+
@@ -162,6 +164,7 @@ create_plot <- function(data, map_value) {
   ggplot(data %>% filter(Map == map_value),
          aes(x = value, y = coef, group = Cohort, color = Cohort)) +
     geom_line(size = 2) +
+    geom_hline(yintercept=0, linetype='dotted', col = 'black',linewidth = 2)+
     geom_errorbar(aes(ymin = coef - stderr, ymax = coef + stderr), width = 0.1) +
     labs(x = "", y = "") +
     scale_color_manual(values = cols, name = "") +
@@ -173,39 +176,48 @@ create_plot <- function(data, map_value) {
 }
 
 # Call the function for both "disaccharides" and "monosaccharides"
-disaccharides <- create_plot(data, "disaccharides") + facet_wrap(Map~annotation)
-monosaccharides <- create_plot(data, "monosaccharides")+ facet_wrap(Map~annotation)
-polysaccharides <- create_plot(data, "polysaccharides")+ facet_wrap(Map~annotation)
-proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_wrap(.~annotation, nrow=1) 
+disaccharides <- create_plot(data, "disaccharides") + facet_grid(Map~annotation)
+monosaccharides <- create_plot(data, "monosaccharides")+ facet_grid(Map~annotation)
+polysaccharides <- create_plot(data, "polysaccharides")+ facet_grid(Map~annotation)
+proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +theme_cowplot(14) + theme(legend.position = "none")
 create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) 
 lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")+ facet_grid(Map~annotation)
 sugar_acid <- create_plot(data, "sugar acid")+ facet_grid(Map~annotation)
-metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)
+metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)  +theme_cowplot(12) + theme(legend.position = "none")
 cross_feeding <- create_plot(data, "cross-feeding")+ facet_grid(Map~annotation)
 butyrate <- create_plot(data, "butyrate")+ facet_grid(Map~annotation)
 nitrate <- create_plot(data, "nitrate reduction")+ facet_grid(Map~annotation)
 
-dev.new()
-plot_grid(monosaccharides,disaccharides,polysaccharides,
+
+carbs <- plot_grid(monosaccharides,disaccharides,polysaccharides,
           rel_widths=c(0.5,0.5,1),nrow=1,
           labels=c("A"), label_size = 20)
-dev.new()
-plot_grid(proteolytic_fermentation,nrow=1,
+proteins <- plot_grid(proteolytic_fermentation,nrow=1,
           labels=c("B"), label_size = 20)
 
-plot_grid(lipolytic_fermentation,sugar_acid,nitrate,
+dev.new()
+plot_grid(carbs, proteins, rel_heights=c(0.75,1),nrow=2)
+
+fats <- plot_grid(lipolytic_fermentation,sugar_acid,nitrate,
           rel_widths=c(1,0.5,0.5),nrow=1,
           labels=c("C"), label_size = 20)
 
 
-plot_grid(cross_feeding,butyrate,
+cross_feeding <- plot_grid(cross_feeding,butyrate,
           rel_widths=c(1,0.33),nrow=1,
           labels=c("D"), label_size = 20)
 
-plot_grid(metabolism, 
+dev.new()
+plot_grid(fats, cross_feeding, rel_heights=c(1,1),nrow=2)
+
+
+fig6E <- plot_grid(metabolism, 
           labels=c("E"), label_size = 20)
-plot_grid(gmm_upset, 
+fig6F <- plot_grid(gmm_upset, 
           labels=c("F"), label_size = 20)
+
+dev.new()
+plot_grid(fig6E, fig6F, rel_widths= c(0.75, 1),ncol=2)
 
 plot_grid(GMM[[1]], GMM[[2]],GMM[[3]], GMM[[4]],
           GMM[[5]], GMM[[6]],ncol=3,nrow=2)
@@ -229,9 +241,9 @@ shotgun_fp <- c("Shotgun/CS_SPF/GMM-DCvsJej-CLR-CS-ComBat-SeqRunSexSite-1-MsID/a
                 "Shotgun/SPF_Gavage/GMM-DCvsJej-CLR-SPF-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Shotgun/UCLA_O_SPF/GMM-DCvsJej-CLR-UCLA-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv")
 shotgun_prefix <- c("CS SPF",
-                    "UCLA O. SPF",
+                    "HUM SD Gavage",
                     "SPF Gavage",
-                    "HUM SD Gavage")
+                    "UCLA O. SPF")
 
 
 feature_value <- gmm_of_interest[1]
@@ -261,6 +273,9 @@ res_plot$Annotation= factor(as.character(res_plot$Annotation), levels = names(y)
 names(my_palette) <-levels(res_plot$Cohort)
 cols=c("#440154FF", "#FDE725FF")
 
+res_plot$Cohort <- factor(res_plot$Cohort, levels=c("HUM SD Gavage","SPF Gavage","CS SPF", "UCLA O. SPF"))
+res_plot$Annotation  <- gsub("(oxidative phase)","", c(res_plot$Annotation))
+
 res_plot %>%
   arrange(Annotation) %>%
   # filter(qval < 0.05, abs(coef) > 0) %>%
@@ -268,7 +283,7 @@ res_plot %>%
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")+  
   geom_bar(stat = "identity") +
   cowplot::theme_cowplot(12) +
-  theme(axis.text.y = element_text(face = "italic")) +
+  theme(axis.text.y = element_text(face = "bold")) +
   scale_fill_manual(values = cols) +
   labs(x = "Effect size (Jejunum/Distal_Colon)",
        y = "",
