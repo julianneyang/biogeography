@@ -125,7 +125,7 @@ process_gbm_files_shotgun <- function(file_paths, feature_value, cohort_prefixes
 
 lum_file_paths <- c(
   "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "CS_SPF/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
   "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
   "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
   "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
@@ -142,6 +142,8 @@ all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
 module_key <- read.csv(here("GBM_Module_Key.csv"))
 anno <- module_key %>% select(c("feature", "annotation"))
 all_taxa <- merge(all_taxa, anno, by="feature")
+
+### List GBM of interest ---
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
 id_features <- id_features%>% select(c("feature","annotation","Cohort","coef_dir")) %>% unique()
 id_f_long <- id_features %>% 
@@ -152,7 +154,16 @@ id_df_wide <- id_f_long %>%
 id_df_wide <- as.data.frame(id_df_wide)
 id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
 
-all_taxa <- all_taxa %>% select(c("feature", "Cohort","annotation")) %>% unique()
+id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+gbm_of_interest <- df_filtered$feature
+names(gbm_of_interest) <-df_filtered$annotation
+
+
+### Make Upset Plot
+all_taxa<- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
+all_taxa <- all_taxa %>% select(c("feature","annotation","Cohort")) %>% unique()
 
 df_long <- all_taxa %>% 
   mutate(value = 1)
@@ -164,7 +175,7 @@ df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-(1:2)]
-gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
+gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1, name="",
                                  base_annotations=list(
                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
@@ -176,15 +187,12 @@ gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
                                    intersections_matrix=theme(
                                      axis.ticks.x=element_blank(),
                                      axis.text.x=element_blank(),
-                                   )
+                                   ),
+                                   set_sizes=(ylab('Region-specific genera'))
                                  ))
 
 
-id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
-df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
-df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
-gbm_of_interest <- df_filtered$feature
-names(gbm_of_interest) <-df_filtered$annotation
+### Make GBM Coef plots ---
 
 
 new_value <- "Distal_Colon"
@@ -198,6 +206,11 @@ for (i in seq_along(gbm_of_interest)) {
 }
 
 # color legend for coef plots 
+lum_cohort_prefixes <- c("UCLA_O_SPF",
+                         "CS_SPF",
+                         "HUM_MD_Gavage",
+                         "HUM_SD_Gavage",
+                         "SPF_Gavage")
 my_palette <- c(paletteer_d("basetheme::brutal",6))
 names(my_palette) <-c(lum_cohort_prefixes, "UCLA_V_SPF")
 cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
@@ -213,7 +226,8 @@ data$value <- factor(data$value, levels = c("D", "J", "I", "C", "PC", "DC"))
 create_plot <- function(data, anno) {
   ggplot(data %>% filter(annotation == anno),
          aes(x = value, y = coef, group = Cohort, color = Cohort)) +
-    geom_line(size = 2) +
+    geom_line(linewidth = 2) +
+    geom_hline(yintercept=0, linetype='dotted', col = 'black',linewidth = 1)+
     geom_errorbar(aes(ymin = coef - stderr, ymax = coef + stderr), width = 0.1) +
     labs(x = "", y = "") +
     scale_color_manual(values = cols, name = "") +
@@ -226,10 +240,7 @@ create_plot <- function(data, anno) {
 
 gbm <- unique(data$annotation)
 
-gaba <- create_plot(data, gbm[1]) + facet_wrap(~annotation)+ 
-  theme(legend.position="right")+
-  theme(legend.background = element_rect(fill="lightblue", linewidth =c(0.25,0.25,0.25,0.25), linetype="solid")) 
-
+gaba <- create_plot(data, gbm[1]) + facet_wrap(~annotation)
 estradiol <- create_plot(data,gbm[2])+ facet_wrap(~annotation)
 acetate <- create_plot(data,gbm[3])+ facet_wrap(~annotation)
 trp <- create_plot(data,gbm[4])+ facet_wrap(~annotation)
@@ -282,7 +293,7 @@ gbm_shotgun_plot <- res_plot %>%
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")+  
   geom_bar(stat = "identity") +
   cowplot::theme_cowplot(12) +
-  theme(axis.text.y = element_text(face = "italic")) +
+  theme(axis.text.y = element_text(face = "bold")) +
   scale_fill_manual(values = cols) +
   labs(x = "Effect size (Jejunum/Distal_Colon)",
        y = "",
@@ -293,7 +304,7 @@ gbm_shotgun_plot <- res_plot %>%
   facet_wrap(~Annotation)
 
 plot_grid(butsyn,trp, acetate, labels=c("A","B","C"),nrow=1)
-plot_grid(estradiol,gaba,rel_widths=c(0.65,1),labels=c("D","E"))
+plot_grid(estradiol,gaba,labels=c("D","E"))
 plot_grid(gbm_upset, gbm_shotgun_plot, labels=c("F","G"),label_size = 20)
 
 ### Upset Plots ---

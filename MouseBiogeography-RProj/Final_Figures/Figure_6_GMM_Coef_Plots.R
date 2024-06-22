@@ -37,25 +37,6 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
                      "HUM_SD_Gavage",
                      "SPF_Gavage")
 
-muc_file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                    "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                    "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "CS_SPF/OMIXER-RPM Results/CS_GMM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
-                    "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
-                    "UCLA_V_SPF_Analysis/OMIXER-RPM/WTCohort_GMM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-                    "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
-
-muc_cohort_prefixes <- c("UCLA_O_SPF","UCLA_O_SPF",
-                         "CS_SPF","CS_SPF",
-                         "HUM_MD_Gavage","HUM_MD_Gavage",
-                         "UCLA_V_SPF",
-                         "HUM_SD_Gavage","HUM_SD_Gavage",
-                         "SPF_Gavage", "SPF_Gavage")
-
 
 all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
                                            cohort_prefixes = lum_cohort_prefixes)
