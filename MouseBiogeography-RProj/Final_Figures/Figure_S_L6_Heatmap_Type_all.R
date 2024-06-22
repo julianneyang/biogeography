@@ -22,21 +22,24 @@ bk =c(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2)
 
 ### CS SPF ---
 target <- find_features_union_for_type_heatmap(
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/significant_results.tsv")
 
 df <- query_type_features_union(
   target,
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Duodenum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Jejunum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Ileum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-Cecum-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
+  "CS_SPF/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
+
+cs_type_genera <- df
+cs_type_genera$Cohort <- "CS_SPF"
 
 #draw heatmap
 cols=c("#440154FF","#46337EFF", "#365C8DFF" ,"#277F8EFF", "#1FA187FF", "#4AC16DFF", "#9FDA3AFF", "#FDE725FF")
@@ -81,7 +84,9 @@ df <- query_type_features_union(
   pc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunSexType-1-MsID/all_results.tsv",
   dc_filepath = "Donors-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunSexType-1-MsID/all_results.tsv")
 
-
+hum_md_type_genera <- df 
+hum_md_type_genera$Cohort <- "HUM_MD_Gavage"
+  
 df$Phylum <- gsub(".*\\.p__", "", df$feature)
 df$Phylum <- gsub("\\.c__.*", "", df$Phylum)
 df$Order <- gsub(".*\\.o__", "", df$feature)
@@ -240,6 +245,9 @@ df <- query_type_features_union(
   "Regional-Mouse-Biogeography-Analysis/differential_genera_type/L6-LumRef-CLR-PC-ComBat-SeqRunLineSexType-1-MsID/all_results.tsv",
   "Regional-Mouse-Biogeography-Analysis/differential_genera_type/L6-LumRef-CLR-DC-ComBat-SeqRunLineSexType-1-MsID/all_results.tsv")
 
+ucla_o_spf_type_genera <- df
+ucla_o_spf_type_genera$Cohort <- "UCLA_O_SPF"
+
 df$Phylum <- gsub(".*\\.p__", "", df$feature)
 df$Phylum <- gsub("\\.c__.*", "", df$Phylum)
 df$Order <- gsub(".*\\.o__", "", df$feature)
@@ -379,6 +387,60 @@ heatmap.2(matrix.data,
           labCol = c("D", "J","I","C","PC","DC"),
           colRow=col_labels,
           srtCol=0)
+
+### Upset Plot ---
+all_taxa <- rbind(cs_type_genera,hum_md_type_genera,ucla_o_spf_type_genera)
+
+
+id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
+id_features <- id_features%>% select(c("feature","Cohort","coef_dir")) %>% unique()
+
+id_f_long <- id_features %>% 
+  mutate(value = 1)
+id_df_wide <- id_f_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+id_df_wide <- as.data.frame(id_df_wide)
+id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
+id_df_wide <- id_df_wide %>% mutate(HUM_SD_Gavage = 0)
+
+id_df_wide$count_ones <- rowSums(id_df_wide[, c(3:7)])
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 2, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+df_filtered$feature<-gsub(".*f__","f__",df_filtered$feature)
+df_filtered$feature
+
+
+all_taxa <- all_taxa %>% select(c("feature", "Cohort")) %>% unique()
+
+df_long <- all_taxa %>% 
+  mutate(value = 1)
+
+df_wide <- df_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+
+df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
+df_wide <- df_wide %>% mutate(HUM_SD_Gavage = 0)
+
+df_wide <- as.data.frame(df_wide)
+all_datasets <- names(df_wide)[-1]
+taxa_upset <- ComplexUpset::upset(df_wide, all_datasets, name="",
+                                  base_annotations=list(
+                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
+                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
+                                  themes=list(
+                                    default=theme(
+                                      axis.ticks.x=element_blank(),
+                                      axis.text.x=element_blank(),
+                                    ),
+                                    intersections_matrix=theme(
+                                      axis.ticks.x=element_blank(),
+                                      axis.text.x=element_blank(),
+                                    )
+                                  ))
+
+plot_grid(taxa_upset,labels = "E", label_size = 20)
 
 ### Plot the figure ---
 
