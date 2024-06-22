@@ -51,7 +51,7 @@ id_df_wide <- as.data.frame(id_df_wide)
 #id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
 
 id_df_wide$count_ones <- rowSums(id_df_wide[, c(3:8)])
-df_filtered <- id_df_wide[id_df_wide$count_ones >= 4, ]
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 df_filtered$feature<-gsub(".*f__","f__",df_filtered$feature)
 df_filtered$feature

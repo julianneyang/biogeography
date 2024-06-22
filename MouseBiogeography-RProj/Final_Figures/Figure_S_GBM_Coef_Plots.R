@@ -167,8 +167,7 @@ gbm_of_interest <- df_filtered$feature
 names(gbm_of_interest) <-df_filtered$annotation
 
 ### Draw upset plot ---
-all_taxa <-  all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
-all_taxa <- id_features%>% select(c("feature","annotation","Cohort","coef_dir")) %>% unique()
+all_taxa <- all_taxa%>% select(c("feature","annotation","Cohort")) %>% unique()
 
 df_long <- all_taxa %>% 
   mutate(value = 1)
@@ -179,8 +178,8 @@ df_wide <- as.data.frame(df_wide)
 df_wide <- df_wide %>% mutate(HUM_SD_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
-all_datasets <- names(df_wide)[-(1:3)]
-gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
+all_datasets <- names(df_wide)[-(1:2)]
+gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,name="",
                                  base_annotations=list(
                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
@@ -268,10 +267,7 @@ vitamin_cofactor <- plot_grid(gbm_11, gbm_13, nrow=1, label_size = 20, labels="D
 dev.new()
 plot_grid(oa_synthesis,vitamin_cofactor, nrow=1,
           rel_widths = c(1,0.5))
-plot_grid(gbm_1,gbm_2,gbm_3,gbm_4,gbm_5,nrow=1)
-plot_grid(gbm_6,gbm_7,gbm_8,gbm_9,gbm_10,nrow=1)
-plot_grid(gbm_11,gbm_12,gbm_13,gbm_14,gbm_15,nrow=1)
-plot_grid(gbm_16,gbm_17,gbm_18,nrow=1)
+plot_grid(gbm_upset,labels = "D", label_size = 20)
 
 # Define the file paths, cohort prefixes, and other parameters
 shotgun_fp <- c("Shotgun/CS_SPF/GBM-DCvsJej-CLR-CS-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",

@@ -66,7 +66,7 @@ names(gmm_of_interest) <-df_filtered$annotation
 ### Generate upset plot ---
 
 all_taxa <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
-all_taxa <- all_taxa %>% select(c("feature", "Cohort","annotation","coef_dir")) %>% unique()
+all_taxa <- all_taxa %>% select(c("feature", "Cohort","annotation")) %>% unique()
 
 df_long <- all_taxa %>% 
   mutate(value = 1)
@@ -77,7 +77,7 @@ df_wide <- as.data.frame(df_wide)
 #df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
-all_datasets <- names(df_wide)[-(1:3)]
+all_datasets <- names(df_wide)[-(1:2)]
 gmm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1, name="",
                                  base_annotations=list(
                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
@@ -212,6 +212,7 @@ fig2_secondrow<- plot_grid(cross_feeding,butyrate,propionate, nrow=1,
 fig2_thirdrow<- plot_grid(sugar_acid,nitrate,hydrogen, nrow=1,
                            labels=c("G", "H", "I"), label_size = 20)
 
+fig2_last <- plot_grid(gmm_upset, labels = "J", label_size = 20)
 
 dev.new()
 plot_grid(fig2_toprow,
