@@ -123,25 +123,33 @@ process_gbm_files_shotgun <- function(file_paths, feature_value, cohort_prefixes
 ### Upset Plot ---
 
 
-lum_file_paths <- c(
-  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
+muc_file_paths <- c(
+  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "CS_SPF/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+  "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"
+)
 
-lum_cohort_prefixes <- c("UCLA_O_SPF",
-                         "CS_SPF",
-                         "HUM_MD_Gavage",
-                         "HUM_SD_Gavage",
-                         "SPF_Gavage")
+new_value <- "Distal_Colon"
+new_coef <- 0
+cohort_prefixes <- c("UCLA_O_SPF",
+                     "CS_SPF",
+                     "UCLA_V_SPF",
+                     "HUM_SD_Gavage",
+                     "SPF_Gavage",
+                     "HUM_MD_Gavage")
 
-all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
-                                           cohort_prefixes = lum_cohort_prefixes)
+
+all_taxa <- process_results_for_upset_plot(file_paths = muc_file_paths,
+                                           cohort_prefixes = muc_cohort_prefixes)
 
 module_key <- read.csv(here("GBM_Module_Key.csv"))
 anno <- module_key %>% select(c("feature", "annotation"))
 all_taxa <- merge(all_taxa, anno, by="feature")
+
+### Identify number of features ---
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
 id_features <- id_features%>% select(c("feature","annotation","Cohort","coef_dir")) %>% unique()
 id_f_long <- id_features %>% 
@@ -150,9 +158,17 @@ id_df_wide <- id_f_long %>%
   pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
 
 id_df_wide <- as.data.frame(id_df_wide)
-id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
+id_df_wide <- id_df_wide %>% mutate(HUM_SD_Gavage = 0)
 
-all_taxa <- all_taxa %>% select(c("feature", "Cohort","annotation")) %>% unique()
+id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:9)])
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+gbm_of_interest <- df_filtered$feature
+names(gbm_of_interest) <-df_filtered$annotation
+
+### Draw upset plot ---
+all_taxa <-  all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
+all_taxa <- id_features%>% select(c("feature","annotation","Cohort","coef_dir")) %>% unique()
 
 df_long <- all_taxa %>% 
   mutate(value = 1)
@@ -160,10 +176,10 @@ df_long <- all_taxa %>%
 df_wide <- df_long %>%
   pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
 df_wide <- as.data.frame(df_wide)
-df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
+df_wide <- df_wide %>% mutate(HUM_SD_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
-all_datasets <- names(df_wide)[-(1:2)]
+all_datasets <- names(df_wide)[-(1:3)]
 gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
                                  base_annotations=list(
                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
@@ -179,70 +195,83 @@ gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
                                    )
                                  ))
 
-id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
-df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
-df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
-gmm_of_interest <- df_filtered$feature
-names(gmm_of_interest) <-df_filtered$annotation
 
-muc_file_paths <- c(
-  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"
-)
 
+### Draw coef line plots --
+
+feature_value <- gbm_of_interest[1]
 new_value <- "Distal_Colon"
 new_coef <- 0
-cohort_prefixes <- c("UCLA_O_SPF_Lum", 
-                     "UCLA_O_SPF_Muc",
-                     "CS_SPF_Muc",
-                     "CS_SPF_Lum",
-                     "UCLA_V_SPF_Muc",
-                     "HUM_Gavage_Muc",
-                     "HUM_Gavage_Lum",
-                     "SPF_Gavage_Lum",
-                     "SPF_Gavage_Muc",
-                     "HUM_V_Gavage_Lum",
-                     "HUM_V_Gavage_Muc")
-
-file_paths_3 <- c(
-  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/Hum_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/SPF_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
-  "Donors-Analysis/differential_GBM_site/GBM-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv"
-)
-
-new_value <- "Distal_Colon"
-new_coef <- 0
-cohort_prefixes_3 <- c("HUM_Gavage_Muc",
-                       "HUM_Gavage_Lum",
-                       "SPF_Gavage_Lum",
-                       "SPF_Gavage_Muc",
-                       "HUM_V_Gavage_Lum",
-                       "HUM_V_Gavage_Muc")
 
 
-file_paths_2 <- c(
-  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GBM-Maaslin2-SITE/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "CS-Facility-Analysis/OMIXER-RPM Results/CS_GBM/GBM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
-  "UCLA_V_SPF_Analysis/OMIXER-RPM/WT_Val_GBM/GBM-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv"
-)
-new_value <- "Distal_Colon"
-new_coef <- 0
-cohort_prefixes_2 <- c("UCLA_O_SPF_Lum", 
-                       "UCLA_O_SPF_Muc",
-                       "CS_SPF_Muc",
-                       "CS_SPF_Lum",
-                       "UCLA_V_SPF_Muc")
+data_all <- process_results_files(muc_file_paths, feature_value, new_value, new_coef, muc_cohort_prefixes)
 
-# Process the results files --
+final_df <- data_all[FALSE,]
+for (i in seq_along(gbm_of_interest)) {
+  feature_value <- gbm_of_interest[i]
+  data_all <- process_results_files(muc_file_paths, feature_value, new_value, new_coef, muc_cohort_prefixes)
+  final_df <- rbind(final_df,data_all)
+}
+
+map <- module_key %>% select(c("feature", "annotation"))
+map_data_all <- merge(final_df,map,by="feature")
+unique(map_data_all$annotation)
+
+data <- map_data_all
+data$value <- plyr::revalue(data$value,c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="C","Ileum"="I", "Jejunum"="J", "Duodenum"= "D"))
+data$value <- factor(data$value, levels = c("D", "J", "I", "C", "PC", "DC"))
+#data$annotation <- gsub("pentose phosphate pathway \\(oxidative phase\\)", "pentose phosphate pathway", data$annotation)
+gbm_of_interest[1]
+
+# Plotting
+create_plot <- function(anno) {
+  ggplot(data %>% filter(annotation == anno),
+         aes(x = value, y = coef, group = Cohort, color = Cohort)) +
+    geom_line(size = 2) +
+    geom_hline(yintercept=0, linetype='dotted', col = 'black',linewidth = 1)+
+    geom_errorbar(aes(ymin = coef - stderr, ymax = coef + stderr), width = 0.1) +
+    labs(x = "", y = "") +
+    scale_color_manual(values = cols, name = "") +
+    theme_cowplot(12) +
+    ggtitle("") +
+    geom_point(size = 3, shape = 21, fill = "black") +
+    theme(legend.position = "none") +
+    facet_wrap(~annotation)
+    
+}
+
+
+# Generate plots for each item
+plots <- lapply(gbm, create_plot)
+names(plots) <- paste(gbm)
+gbm
+
+# Access plots using list indexing
+for (i in c(1:18)) {
+  assign(paste0("gbm_",i), plots[[i]])
+}
+
+gbm_6 <-  gbm_6  +theme(strip.text.x = element_text(size = 8))
+degradation <- plot_grid( gbm_15, gbm_4, gbm_12, gbm_7,gbm_6,gbm_14, nrow=1,label_size = 20, labels="A")
+
+
+
+degradation <- plot_grid( gbm_15, gbm_4, gbm_12, gbm_7,gbm_6,gbm_14, nrow=1,label_size = 20, labels="A")
+aa_synthesis <- plot_grid(gbm_1, gbm_2, gbm_5, gbm_8, gbm_9,gbm_10, nrow=1,label_size = 20, labels="B")
+
+dev.new()
+plot_grid(degradation, aa_synthesis, nrow=2)
+
+oa_synthesis <- plot_grid(gbm_16, gbm_17, gbm_18, gbm_3, nrow=1,label_size = 20, labels="C")
+vitamin_cofactor <- plot_grid(gbm_11, gbm_13, nrow=1, label_size = 20, labels="D")
+
+dev.new()
+plot_grid(oa_synthesis,vitamin_cofactor, nrow=1,
+          rel_widths = c(1,0.5))
+plot_grid(gbm_1,gbm_2,gbm_3,gbm_4,gbm_5,nrow=1)
+plot_grid(gbm_6,gbm_7,gbm_8,gbm_9,gbm_10,nrow=1)
+plot_grid(gbm_11,gbm_12,gbm_13,gbm_14,gbm_15,nrow=1)
+plot_grid(gbm_16,gbm_17,gbm_18,nrow=1)
 
 # Define the file paths, cohort prefixes, and other parameters
 shotgun_fp <- c("Shotgun/CS_SPF/GBM-DCvsJej-CLR-CS-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",

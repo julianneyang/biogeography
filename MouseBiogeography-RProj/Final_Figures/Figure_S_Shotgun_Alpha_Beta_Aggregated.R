@@ -6,7 +6,7 @@
 
 library(cowplot)
 library(ggplot2)
-library(plyr)
+#library(plyr)
 library(ggpubr)
 library(dplyr)
 library(nlme)
@@ -21,10 +21,9 @@ setwd("/home/julianne/Documents/biogeography/")
 
 
 ### Alpha Diversity ---
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-here::i_am("MouseBiogeography-RProj/Figure_S_Shotgun_Alpha_Beta_Aggregated.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Shotgun_Alpha_Beta_Aggregated.R")
 
-compare_vector <- c("DC", "Jej")
+compare_vector <- c("DC", "J")
 
 # UCLA Original
 chao<- "Shotgun/alpha_diversity/alpha_min_1000000_UCLA_O_SPF_BioGeo_Shotgun_ASV/chao1_dir/alpha-diversity.tsv"
@@ -68,7 +67,7 @@ ucla_o_pe_lum <- generate_adiv_plots_shotgun(chao1_filepath = chao,
                                              X=Site, Y=pielou_evenness, 
                                              fillvariable = Site, 0, 1) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("UCLA O. SPF")+
+  ggtitle("")+
   labs(y="Pielou's evenness", x="")+
   stat_compare_means(comparisons = compare_vector,
                      method="wilcox", vjust=0.5,label="p.signif", hide.ns = TRUE)
@@ -104,7 +103,7 @@ cs_pe_lum <- generate_adiv_plots_shotgun(chao1_filepath = chao,
                                            X=Site, Y=pielou_evenness, 
                                            fillvariable = Site, 0, 1) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("CS SPF")+
+  ggtitle("")+
   labs(y="Pielou's evenness", x="")+
   stat_compare_means(comparisons = compare_vector,
                      method="wilcox", vjust=0.5,label="p.signif", hide.ns = TRUE)
@@ -136,7 +135,7 @@ hum_gavage_otus_lum <- generate_adiv_plots_shotgun(chao1_filepath = chao,
                                            X=Site, Y=observed_features, 
                                            fillvariable = Site, 0, 300) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("HUM Gavage")+
+  ggtitle("HUM SD Gavage")+
   labs(y="# Species", x="")+
   stat_compare_means(comparisons = compare_vector,
                      method="wilcox", vjust=0.5,label="p.signif", hide.ns = TRUE)
@@ -150,7 +149,7 @@ hum_gavage_pe_lum <- generate_adiv_plots_shotgun(chao1_filepath = chao,
                                          X=Site, Y=pielou_evenness, 
                                          fillvariable = Site, 0, 1) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("HUM Gavage")+
+  ggtitle("")+
   labs(y="Pielou's evenness", x="")+
   stat_compare_means(comparisons = compare_vector,
                      method="wilcox", vjust=0.5,label="p.signif", hide.ns = TRUE)
@@ -196,7 +195,7 @@ spf_gavage_pe_lum <- generate_adiv_plots_shotgun(chao1_filepath = chao,
                                                  X=Site, Y=pielou_evenness, 
                                                  fillvariable = Site, 0, 1) +
   theme(plot.title = element_text(hjust = 0.5)) +
-  ggtitle("SPF Gavage")+
+  ggtitle("")+
   labs(y="Pielou's evenness", x="")+
   stat_compare_means(comparisons = compare_vector,
                      method="wilcox", vjust=0.5,label="p.signif", hide.ns = TRUE)
@@ -219,16 +218,16 @@ alpha_diversity_lum <- plot_grid(ucla_o_otus_lum, cs_otus_lum, spf_gavage_otus_l
 alpha_diversity_pe_lum <- plot_grid(ucla_o_pe_lum, cs_pe_lum, spf_gavage_pe_lum, hum_gavage_pe_lum, nrow=1)
 ### Beta Diversity ---
 cols_general <- c("SI" = "#F8766D","Colon" ="#00BFC4")
-Site_cols <- c("Jej"="gold", "DC" = "magenta")
+Site_cols <- c("J"="gold", "DC" = "magenta")
 
 
 # UCLA Original SPF
 data<-readr::read_csv(here("Shotgun/Site_RPCA/rpca/BioGeo_RPCA - UCLA_O_SPF_ordination.csv"))
 data <- rbind(names(data), data)
-metadata <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
+metadata <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
 
 ucla_o_pcoa_lum <- generate_pcoA_plots_shotgun(data,metadata,"UCLA O. SPF", "Site", Site_cols)+
-  labs(title="UCLA O. SPF") + 
+  #labs(title="UCLA O. SPF") + 
   theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
   theme(plot.title = element_text(hjust = 0.5))
 ucla_o_pcoa_lum
@@ -260,10 +259,10 @@ data.adonis$aov.tab
 # CS SPF
 data<-readr::read_csv(here("Shotgun/Site_RPCA/rpca/BioGeo_RPCA - CS_SPF_ordination.csv"))
 data <- rbind(names(data), data)
-metadata <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
+metadata <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
 
 cs_spf_lum <- generate_pcoA_plots_shotgun(data,metadata,"CS SPF", "Site", Site_cols) +
-  labs(title="CS SPF") + 
+  #labs(title="CS SPF") + 
   theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) +
   theme(plot.title = element_text(hjust = 0.5))
 
@@ -294,10 +293,10 @@ data.adonis$aov.tab
 # SPF Gavage
 data<-readr::read_csv(here("Shotgun/Site_RPCA/rpca/BioGeo_RPCA - SPF_Gavage_ordination.csv"))
 data <- rbind(names(data), data)
-metadata <- readr::read_delim(here("Shotgun/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
+metadata <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
 
 spf_pcoa_lum <- generate_pcoA_plots_shotgun(data,metadata,"CS SPF Gavage", "Site", Site_cols) +
-  labs(title="SPF Gavage") + 
+  #labs(title="SPF Gavage") + 
   theme(plot.title = element_text(hjust = 0.5))+
   theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) 
 
@@ -330,7 +329,7 @@ data <- rbind(names(data), data)
 metadata <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"),delim="\t")
 
 hum_pcoa_lum <- generate_pcoA_plots_shotgun(data,metadata,"Hum Gavage", "Site", Site_cols) +
-  labs(title="HUM Gavage") + 
+  #labs(title="HUM Gavage") + 
   theme(plot.title = element_text(hjust = 0.5))+
   theme(legend.background = element_rect(fill="lightblue", size=0.5, linetype="solid")) 
 
@@ -363,8 +362,11 @@ fig_luminal_top <- plot_grid(alpha_diversity_lum, alpha_diversity_pe_lum,
                              labels=c("A","B"))
 
 fig_luminal_bottom <- plot_grid(ucla_o_pcoa_lum,cs_spf_lum,spf_pcoa_lum,hum_pcoa_lum, 
-                                ncol=4, 
-                                labels=c("C","","",""))
+                                ncol=4)
 dev.new(width=15, height=10)
-fig_luminal
+plot_grid(alpha_diversity_lum, 
+          alpha_diversity_pe_lum,
+          fig_luminal_bottom,
+          labels=c("A","B","C"),
+          nrow=3)
 

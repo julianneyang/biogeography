@@ -45,7 +45,7 @@ process_results_for_upset_plot <- function(file_paths, cohort_prefixes) {
 ### UpSet Plot --
 
 file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                "CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "CS_SPF/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
 
@@ -57,11 +57,32 @@ cohort_prefixes <- c("UCLA_O_SPF",
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                                       cohort_prefixes = cohort_prefixes)
 
+ucla_o_spf_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "UCLA_O_SPF") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+cs_spf_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "CS_SPF") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+hum_md_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "HUM_MD_Gavage") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+union(ucla_o_spf_genera$feature, cs_spf_genera$feature)
+22/82
+
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
 id_features <- id_features%>% select(c("feature","Cohort","coef_dir")) %>% unique()
 
-id_features <- all_taxa 
-id_features <- id_features%>% select(c("feature","Cohort")) %>% unique()
+#id_features <- all_taxa 
+#id_features <- id_features%>% select(c("feature","Cohort")) %>% unique()
 
 id_f_long <- id_features %>% 
   mutate(value = 1)

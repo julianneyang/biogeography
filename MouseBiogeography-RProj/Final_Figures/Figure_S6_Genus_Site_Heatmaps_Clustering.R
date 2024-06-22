@@ -19,7 +19,7 @@ here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_4_Genus_Site_Heatmaps_C
 ### Upset Plot ---
 
 file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunLineSexSite-1-MsID/all_results.tsv",
-                "CS-Facility-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
+                "CS_SPF/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Muc-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                 "UCLA_V_SPF_Analysis/differential_genera_site/L6-DCvsAll-CLR-Muc-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/differential_genera_site/HUM_L6-DCvsAll-CLR-Muc-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
@@ -34,8 +34,32 @@ cohort_prefixes <- c("UCLA_O_SPF",
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                            cohort_prefixes = cohort_prefixes)
+ucla_o_spf_genera <- all_taxa %>% 
+                      select(c("feature", "Cohort")) %>% 
+                      filter(Cohort == "UCLA_O_SPF") %>% unique()
+
+### Find overlapping features ---
+id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
+id_features <- id_features%>% select(c("feature","Cohort","coef_dir")) %>% unique()
+
+id_f_long <- id_features %>% 
+  mutate(value = 1)
+id_df_wide <- id_f_long %>%
+  pivot_wider(names_from = Cohort, values_from = value, values_fill = 0)
+
+id_df_wide <- as.data.frame(id_df_wide)
+#id_df_wide <- id_df_wide %>% mutate(SPF_Gavage = 0)
+
+id_df_wide$count_ones <- rowSums(id_df_wide[, c(3:8)])
+df_filtered <- id_df_wide[id_df_wide$count_ones >= 4, ]
+df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
+df_filtered$feature<-gsub(".*f__","f__",df_filtered$feature)
+df_filtered$feature
+
 
 all_taxa <- all_taxa %>% select(c("feature", "Cohort")) %>% unique()
+
+
 
 df_long <- all_taxa %>% 
   mutate(value = 1)
