@@ -122,6 +122,7 @@ grid.newpage()
 grid.draw(legend)
 
 # combine GMM results and append Map annotation
+feature_value <- gmm_of_interest[1]
 data_all <- process_results_files(lum_file_paths, feature_value, new_value, new_coef, lum_cohort_prefixes)
 
 final_df <- data_all[FALSE,]

@@ -7,7 +7,7 @@
 library(cowplot)
 library(ggplot2)
 library(RColorBrewer)
-library(plyr)
+#library(plyr)
 library(ggpubr)
 library(tidyr)
 library(dplyr)
@@ -18,7 +18,7 @@ library(here)
 library(ComplexUpset)
 
 setwd("/home/julianne/Documents/biogeography/")
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GBM_Coef_Plots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_7_GBM_Coef_Plots.R")
 
 ### Wrangle GBM data for target features ---
 
@@ -158,6 +158,7 @@ id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
 df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 gbm_of_interest <- df_filtered$feature
+readr::write_rds(gbm_of_interest, "Highlighted_Luminal_GBM.RDS")
 names(gbm_of_interest) <-df_filtered$annotation
 
 
@@ -300,12 +301,16 @@ gbm_shotgun_plot <- res_plot %>%
        fill = "") +
   ggtitle("Shotgun Data") +
   theme(plot.title = element_text(hjust = 0.5),
-        legend.position = "top")+
+        legend.position = "top",
+        legend.justification = "center")+
   facet_wrap(~Annotation)
 
 plot_grid(butsyn,trp, acetate, labels=c("A","B","C"),nrow=1)
 plot_grid(estradiol,gaba,labels=c("D","E"))
-plot_grid(gbm_upset, gbm_shotgun_plot, labels=c("F","G"),label_size = 20)
+dev.new()
+plot_grid(gbm_upset, label_size = 20, labels="F")
+plot_grid(gbm_shotgun_plot, label_size = 20, labels="G")
+plot_grid(gbm_upset, gbm_shotgun_plot, labels=c("F","G"),label_size = 20,rel_widths = c(1.25,1))
 
 ### Upset Plots ---
 

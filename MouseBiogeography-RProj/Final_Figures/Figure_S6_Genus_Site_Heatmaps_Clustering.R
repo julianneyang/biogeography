@@ -7,6 +7,7 @@ library(gplots)
 library(dendextend)
 library(ggplot2)
 library(cowplot)
+library(ComplexUpset)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -27,16 +28,52 @@ file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Co
 
 cohort_prefixes <- c("UCLA_O_SPF",
                      "CS_SPF",
-                     "HUM_V_Gavage",
+                     "HUM_MD_Gavage",
                      "UCLA_V_SPF",
-                     "HUM_Gavage",
+                     "HUM_SD_Gavage",
                      "SPF_Gavage")
 
 all_taxa <- process_results_for_upset_plot(file_paths = file_paths,
                                            cohort_prefixes = cohort_prefixes)
 ucla_o_spf_genera <- all_taxa %>% 
-                      select(c("feature", "Cohort")) %>% 
-                      filter(Cohort == "UCLA_O_SPF") %>% unique()
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "UCLA_O_SPF") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+cs_spf_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "CS_SPF") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+hum_md_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "HUM_MD_Gavage") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+hum_sd_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "HUM_SD_Gavage") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+ucla_v_genera <- all_taxa %>% 
+  select(c("feature", "Cohort")) %>% 
+  filter(Cohort == "UCLA_V_SPF") %>% 
+  filter(!grepl("Mitochondria", feature) & !grepl("Chloroplast", feature)) %>%
+  unique()
+
+
+union(ucla_o_spf_genera$feature, ucla_v_genera$feature)
+intersect(ucla_o_spf_genera$feature, ucla_v_genera$feature)
+
+union(ucla_o_spf_genera$feature, cs_spf_genera$feature)
+intersect(ucla_o_spf_genera$feature, cs_spf_genera$feature)
+
+union(ucla_o_spf_genera$feature, hum_md_genera$feature)
+intersect(ucla_o_spf_genera$feature, hum_md_genera$feature)
 
 ### Find overlapping features ---
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
@@ -71,7 +108,7 @@ df_wide <- df_long %>%
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-1]
-taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
+taxa_upset <- ComplexUpset::upset(df_wide, all_datasets, name="",
                                   base_annotations=list(
                                     'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
                                       scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
@@ -85,6 +122,8 @@ taxa_upset <- ComplexUpset::upset(df_wide, all_datasets,
                                       axis.text.x=element_blank(),
                                     )
                                   ))
+
+plot_grid(taxa_upset, labels=c("G"), label_size = 20)
 
 ### Heatmap ---
 

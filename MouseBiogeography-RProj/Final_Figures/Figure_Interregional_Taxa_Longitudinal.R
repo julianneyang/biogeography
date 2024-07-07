@@ -99,6 +99,13 @@ cols <- cols_general
 ucla_o_DAT_lum <- generate_interregional_taxa_barplot_SITE("Regional-Mouse-Biogeography-Analysis/2021-8-Microbiome-Batch-Correction-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite_General-1-MsID/significant_results.tsv",
                                     "UCLA O. SPF Luminal",
                                     cols)
+
+region_specific_GBM <- ucla_o_spf_result$dataframe
+region_specific_GBM <- region_specific_GBM$annotation
+reordered_vector <- highlight_genera(genera_to_highlight = shared_genera,specific_genera = region_specific_GBM)
+
+ucla_o_DAT_lum <- ucla_o_spf_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
+
 hum_v_DAT_lum <- generate_interregional_taxa_barplot_SITE("Donors-Analysis/differential_genera_site/L6-ColonRef-CLR-Lum-ComBat-SeqRunSexSite_General-1-MsID-DonorID/significant_results.tsv",
                                                       "HUM MD Gavage Luminal",
                                                       cols)
