@@ -136,7 +136,7 @@ hum_v_GBM_Map_result <- generate_interregional_GBM_barplot("Donors-Analysis/diff
 
 region_specific_GBM <- hum_v_GBM_Map_result$dataframe
 region_specific_GBM <- region_specific_GBM$annotation
-reordered_vector <- highlight_GBM(genera_to_highlight = shared_GBMs,specific_genera = region_specific_GBM)
+reordered_vector <- highlight_GBM(genera_to_highlight = shared_luminal_GBMs,specific_genera = region_specific_GBM)
 
 hum_v_GBM_Map_lum <- hum_v_GBM_Map_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
 
@@ -147,7 +147,7 @@ ucla_o_GBM_Map_result <- generate_interregional_GBM_barplot("Regional-Mouse-Biog
                                                          cols)
 region_specific_GBM <- ucla_o_GBM_Map_result$dataframe
 region_specific_GBM <- region_specific_GBM$annotation
-reordered_vector <- highlight_GBM(genera_to_highlight = shared_GBMs,specific_genera = region_specific_GBM)
+reordered_vector <- highlight_GBM(genera_to_highlight = shared_luminal_GBMs,specific_genera = region_specific_GBM)
 
 ucla_o_GBM_Map_DAT_lum <- ucla_o_GBM_Map_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
 
@@ -158,7 +158,7 @@ cs_spf_GBM_Map_result <- generate_interregional_GBM_barplot("CS_SPF/OMIXER-RPM R
 
 region_specific_GBM <- cs_spf_GBM_Map_result$dataframe
 region_specific_GBM <- region_specific_GBM$annotation
-reordered_vector <- highlight_GBM(genera_to_highlight = shared_GBMs,specific_genera = region_specific_GBM)
+reordered_vector <- highlight_GBM(genera_to_highlight = shared_luminal_GBMs,specific_genera = region_specific_GBM)
 
 cs_spf_GBM_Map_lum <- cs_spf_GBM_Map_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
 
@@ -169,7 +169,7 @@ spf_gavage_GBM_Map_result <- generate_interregional_GBM_barplot("Humanized-Bioge
 
 region_specific_GBM <- spf_gavage_GBM_Map_result$dataframe
 region_specific_GBM <- region_specific_GBM$annotation
-reordered_vector <- highlight_GBM(genera_to_highlight = shared_GBMs,specific_genera = region_specific_GBM)
+reordered_vector <- highlight_GBM(genera_to_highlight = shared_luminal_GBMs,specific_genera = region_specific_GBM)
 
 spf_gavage_GBM_Map_lum <- spf_gavage_GBM_Map_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
 
@@ -179,7 +179,7 @@ hum_gavage_GBM_Map_result <- generate_interregional_GBM_barplot("Humanized-Bioge
                                                              cols)
 region_specific_GBM <- hum_gavage_GBM_Map_result$dataframe
 region_specific_GBM <- region_specific_GBM$annotation
-reordered_vector <- highlight_GBM(genera_to_highlight = shared_GBMs,specific_genera = region_specific_GBM)
+reordered_vector <- highlight_GBM(genera_to_highlight = shared_luminal_GBMs,specific_genera = region_specific_GBM)
 
 hum_gavage_GBM_Map_lum <- hum_gavage_GBM_Map_result$plot + theme(axis.text.y = element_text(colour = reordered_vector))
 

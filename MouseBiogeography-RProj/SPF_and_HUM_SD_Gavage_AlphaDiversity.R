@@ -280,18 +280,18 @@ summary(output)
 
 output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_jej)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_jej)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_jej)
 summary(output)
 
 
 output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_ile)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_ile)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_ile)
 summary(output)
 
 output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_cec)
 summary(output)
-output=lme(fixed= pielou_e ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_cec)
+output=lme(fixed= pielou_evenness ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_cec)
 summary(output)
 
 output=lme(fixed= observed_otus ~ Sequencing_Run + Sex + Type, random = ~1|(MouseID), data=spf_pc)

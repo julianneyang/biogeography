@@ -116,13 +116,13 @@ for (site in names(site_general_paths)) {
 }
 
 ## CS SPF --
-input_data <- read.delim(here("CS-Facility-Analysis/starting_files/export_L6_CS-Facility-ComBat-Adjusted-ASV/feature-table.tsv"), header=TRUE,row.names=1) 
+input_data <- read.delim(here("CS_SPF/starting_files/export_L6_CS-Facility-ComBat-Adjusted-ASV/feature-table.tsv"), header=TRUE,row.names=1) 
 df_input_data<-as.data.frame(input_data)
 names(df_input_data)<-gsub("X","",names(df_input_data))
 df_input_data <- df_input_data %>% select(-c(taxonomy))
 rows_to_remove <- grep("Mitochondria|Chloroplast", row.names(df_input_data))
 df_input_data <- df_input_data[-rows_to_remove, ]
-input_metadata <-read.delim(here("CS-Facility-Analysis/starting_files/CS_Facility_Metadata.tsv"),header=TRUE, row.names=1) #mapping file
+input_metadata <-read.delim(here("CS_SPF/starting_files/CS_Facility_Metadata.tsv"),header=TRUE, row.names=1) #mapping file
 row.names(input_metadata)
 row.names(input_metadata)<-gsub("-",".",row.names(input_metadata))
 input_metadata$SampleID <- row.names(input_metadata)
@@ -197,10 +197,7 @@ for (site in names(site_general_paths)) {
 ## SPF Gavage --
 input_data <- read.delim(here("Humanized-Biogeography-Analysis/starting_files/export_L6_min10000_Cedars_SPF_Colonized-ComBat-Adjusted-ASV/feature-table.tsv"), header=TRUE,row.names=1) 
 df_input_data<-as.data.frame(input_data)
-names(df_input_data)<-gsub("X","",names(df_input_data))
 df_input_data <- df_input_data %>% select(-c(taxonomy))
-rows_to_remove <- grep("Mitochondria|Chloroplast", row.names(df_input_data))
-df_input_data <- df_input_data[-rows_to_remove, ]
 input_metadata <-read.delim(here("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv"),header=TRUE, row.names=1) #mapping file
 row.names(input_metadata)
 row.names(input_metadata)<-gsub("-",".",row.names(input_metadata))
@@ -242,7 +239,7 @@ site_general_paths <- list(
 # Iterate over each site
 site_fe <- c("Sequencing_Run", "Sex", "Type")
 ranef <- c("MouseID")
-refs <- c("Sequencing_Run,One","Site,Distal_Colon")
+refs <- c("Sequencing_Run,2014_Nov","Site,Distal_Colon")
 
 for (site in names(site_paths)) {
   # Get sample IDs for the current site
@@ -259,8 +256,12 @@ for (site in names(site_paths)) {
 }
 
 site_general_fe <- c("Sequencing_Run","Sex", "Site","Type")
+input_metadata$Sequencing_Run <- factor(input_metadata$Sequencing_Run, levels =c("2014_Sept","2014_Nov", "2015_Sept"))
+input_metadata$Site <- factor(input_metadata$Site, levels =c("Distal_Colon", "Proximal_Colon", "Cecum", "Ileum", "Jejunum", "Duodenum"))
+input_metadata$Type <- factor(input_metadata$Type, levels =c("Luminal", "Mucosal"))
+
+
 for (site in names(site_general_paths)) {
-  # Get sample IDs for the current site
   samples <- df_input_metadata %>% 
     filter(Site_General == site, SampleID %in% names(df_input_data)) %>% 
     pull(SampleID)

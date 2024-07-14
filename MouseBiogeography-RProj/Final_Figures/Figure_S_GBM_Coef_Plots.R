@@ -142,6 +142,17 @@ cohort_prefixes <- c("UCLA_O_SPF",
                      "HUM_MD_Gavage")
 
 
+data_all <- data.frame(metadata=character(),
+                       feature=character(), 
+                       value=character(), 
+                       coef=character(),
+                       stderr=character(),
+                       N=character(),
+                       N.not.0=character(),
+                       pval=character(),
+                       qval=character(),
+                       Cohort=character(),
+                       stringsAsFactors=FALSE) 
 all_taxa <- process_results_for_upset_plot(file_paths = muc_file_paths,
                                            cohort_prefixes = muc_cohort_prefixes)
 
