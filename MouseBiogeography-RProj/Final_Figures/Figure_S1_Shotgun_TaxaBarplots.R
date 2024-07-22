@@ -12,7 +12,7 @@ library(Microbiome.Biogeography)
 setwd("/home/julianne/Documents/biogeography/")
 
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Shotgun_TaxaBarplots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S1_Shotgun_TaxaBarplots.R")
 
 ### Wrangle Genera Names --- 
 
@@ -193,8 +193,8 @@ hum_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/HUM_Shotgun_L2.cs
   theme(axis.text.y = element_blank())
 
 ucla_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/UCLA_Shotgun_L2.csv", "UCLA O. SPF", ".*p__", phyla_cols, "Site") +
-  theme(legend.position = "none")+
-  theme(axis.text.y = element_blank())
+  theme(legend.position = "none")
+  #theme(axis.text.y = element_blank())
 
 cs_shotgun_L2 <-generate_L2_taxa_plots("Shotgun/taxa_barplots/CS_Shotgun_L2.csv", "CS SPF", ".*p__", phyla_cols, "Site") +
   theme(legend.position = "none")+
@@ -210,8 +210,8 @@ shotgun_genera <- readr::read_rds(here("Shotgun/taxa_barplots/global_shotgun_gen
 
 ucla_o_shotgun_L6 <- generate_L6_taxa_plots("Shotgun/taxa_barplots/UCLA_O_SPF_Shotgun_level-6.RDS",
                                        "UCLA O. SPF", ".*g__",shotgun_genera, "Site") +
-  theme(legend.position = "none")+
-  theme(axis.text.y = element_blank())
+  theme(legend.position = "none")
+ # theme(axis.text.y = element_blank())
 ucla_o_shotgun_L6
 
 cs_shotgun_L6 <- generate_L6_taxa_plots("Shotgun/taxa_barplots/CS_SPF_Shotgun_level-6.RDS",
@@ -246,10 +246,12 @@ L2_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
   scale_fill_manual(values=phyla_cols,name="Phylum Legend")+
   theme(legend.position = "right") +
-  guides(fill=guide_legend(nrow=2, byrow=TRUE))+
+  guides(fill=guide_legend(nrow=2))+
   theme_cowplot(12)+
-  theme(legend.spacing.y = unit(0.02, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=3, linetype="solid"), legend.margin = margin(10, 10, 100, 1)) 
+  theme(legend.text = element_text(
+    margin = margin(r = 20, unit = "pt")))+
+  #theme(legend.spacing.y = unit(0.2, 'cm'),legend.spacing.x = unit(0.2,'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=3, linetype="solid"), legend.margin = margin(10, 10, 10, 10)) 
 legend <- cowplot::get_legend(L2_legend)
 grid.newpage()
 dev.new(width=20, height=5)
@@ -264,10 +266,11 @@ L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
   scale_fill_manual(values=genera_cols,name="Genus Legend")+
   theme(legend.position = "right") +
-  guides(fill=guide_legend(ncol=6, byrow=TRUE))+
+  guides(fill=guide_legend(ncol=5, byrow=TRUE))+
   theme_cowplot(12)+
-  theme(legend.spacing.y = unit(0.01, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(2, 11, 0, 0)) 
+  theme(legend.text = element_text(
+    margin = margin(r = 20, unit = "pt")))+
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(10, 10, 10, 10)) 
 legend <- cowplot::get_legend(L6_legend)
 grid.newpage()
 dev.new(width=20, height=5)

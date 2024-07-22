@@ -24,7 +24,7 @@ library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
 
 ### Taxa Barplots ---
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Taxa_Barplots_Aggregated.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_2_Taxa_Barplots_Aggregated.R")
 
 compare_vector <- list(c("DC", "PC"),
                        c("DC", "Cec"),
@@ -312,8 +312,9 @@ L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   theme(legend.position = "right") +
   guides(fill=guide_legend(ncol=6, byrow=TRUE))+
   theme_cowplot(12)+
-  theme(legend.spacing.y = unit(0.01, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(2, 11, 0, 0)) 
+  theme(legend.text = element_text(
+    margin = margin(r = 10, unit = "pt")))+
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(10, 10, 10, 10)) 
 legend <- cowplot::get_legend(L6_legend)
 grid.newpage()
 dev.new(width=20, height=5)

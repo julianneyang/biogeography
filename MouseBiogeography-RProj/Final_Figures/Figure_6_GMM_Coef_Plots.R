@@ -21,7 +21,7 @@ devtools::document()
 library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GMM_Coef_Plots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_6_GMM_Coef_Plots.R")
 
 ### Upset Plot ---
 
@@ -30,6 +30,7 @@ lum_file_paths <- c("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-C
                 "Donors-Analysis/differential_GMM_site/GMM-ColonRef-CLR-Lum-ComBat-SeqRunSexSite-1-MsID-DonorID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/Source RPCA/Hum/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
                 "Humanized-Biogeography-Analysis/Source RPCA/SPF/OMIXER-RPM/GMM-DCvsAll-CLR-Lum-ComBat-SeqRunSexSite-1-MsID/all_results.tsv")
+
 
 lum_cohort_prefixes <- c("UCLA_O_SPF",
                      "CS_SPF",
@@ -66,7 +67,7 @@ df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-(1:2)]
-gmm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1,
+gmm_upset <- upset(df_wide, all_datasets,width_ratio=0.1,
                                   base_annotations=list(
                                     'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
                                       scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
@@ -109,17 +110,6 @@ my_palette <- c(paletteer_d("basetheme::brutal",6))
 names(my_palette) <-c(lum_cohort_prefixes, "UCLA_V_SPF")
 cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
 
-
-### Draw legend ---
-L2_legend <-  sugar_acid + 
-  theme(legend.position = "right") +
-  #guides(fill=guide_legend(nrow=8, byrow=TRUE))+
-  theme_cowplot(16)+
-  theme(legend.spacing.y = unit(1, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(1, 1, 1, 1)) 
-legend <- cowplot::get_legend(L2_legend)
-grid.newpage()
-grid.draw(legend)
 
 # combine GMM results and append Map annotation
 feature_value <- gmm_of_interest[1]
@@ -215,6 +205,17 @@ GMM2 <- plot_data(data_all_GMM1, names(gmm_of_interest[2]))
 feature_value <- gmm_of_interest[2]
 data_all_GMM2 <- process_results_files(file_paths, feature_value, new_value, new_coef, cohort_prefixes)
 GMM2 <- plot_data(data_all_GMM1, "Lactose and Galactose Degradation")
+
+### Draw legend ---
+L2_legend <-  sugar_acid + 
+  theme(legend.position = "right") +
+  #guides(fill=guide_legend(nrow=8, byrow=TRUE))+
+  theme_cowplot(16)+
+  theme(legend.spacing.y = unit(1, 'cm')) +
+  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(1, 1, 1, 1)) 
+legend <- cowplot::get_legend(L2_legend)
+grid.newpage()
+grid.draw(legend)
 
 ### Shotgun GMM ---
 # Define the file paths, cohort prefixes, and other parameters
