@@ -1,0 +1,144 @@
+Num samples: 129
+Num observations: 4,979
+Total count: 5
+Table density (fraction of non-zero values): 0.287
+
+Counts/sample summary:
+ Min: 0.004
+ Max: 0.172
+ Median: 0.037
+ Mean: 0.042
+ Std. dev.: 0.028
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+"BioGeo.Mouse1A_FP01": 0.004
+"BioGeo.Mouse8A_FP85": 0.007
+"BioGeo.SLCFP109": 0.007
+"BioGeo.Vil1.08B.FP92.REP1_S41": 0.010
+"BioGeo.SLCFP113": 0.010
+"BioGeo.TL1A_FP_673.REP1_S20": 0.010
+"BioGeo.Itg.04.FP419.S19": 0.011
+"BioGeo.Lyz2.02B.FP219.S67": 0.011
+"BioGeo.Itg.20.FP503.S6": 0.012
+"BioGeo.Itg.06.FP431.S32": 0.012
+"BioGeo.TL1a_FP_85": 0.013
+"BioGeo.TL1a_FP_127": 0.013
+"BioGeo.Mouse9A_FP101": 0.013
+"BioGeo.Itg.02.FP407.S7": 0.014
+"BioGeo.Itg.16.FP479.S81.Rep1_S86": 0.014
+"BioGeo.Mouse9A_FP97": 0.015
+"BioGeo.Mouse6A_FP31": 0.015
+"BioGeo.Lyz2.06B.FP267.S64": 0.015
+"BioGeo.TL1A_FP_677.REP1_S21": 0.015
+"BioGeo.Vil1.08B.FP94.REP1_S42": 0.016
+"BioGeo.Mouse10A_FP113": 0.016
+"BioGeo.LYZFP303": 0.017
+"BioGeo.Itg.12.FP467.S69": 0.017
+"BioGeo.Lyz2.01B.FP207.S55": 0.017
+"BioGeo.SLCFP127": 0.017
+"BioGeo.TL1a_FP_229.REP1_S12": 0.018
+"BioGeo.Vil1.14B.FP164": 0.018
+"BioGeo.Mouse8A_FP89": 0.019
+"BioGeo.SLCFP091.REP1_S29": 0.020
+"BioGeo.Itg.26.FP539.S43": 0.021
+"BioGeo.Mouse10A_FP109": 0.022
+"BioGeo.Itg.20.FP507.S10": 0.022
+"BioGeo.SLCFP001": 0.023
+"BioGeo.Mouse3A_FP17": 0.024
+"BioGeo.Itg.24.FP527.S30": 0.025
+"BioGeo.Lyz2.08B.FP291.S89": 0.025
+"BioGeo.TL1a_FP_143": 0.026
+"BioGeo.Itg.04.FP423.S23.Rep1_S87": 0.027
+"BioGeo.Itg.18.FP491.S94": 0.027
+"BioGeo.Itg.22.FP515.S18": 0.028
+"BioGeo.Lyz2.08B.FP295.S93": 0.028
+"BioGeo.LYZFP351.Rep1_S106": 0.028
+"BioGeo.Vil1.05B.FP59.REP1_S37": 0.028
+"BioGeo.Vil1.09B.FP104": 0.029
+"BioGeo.SLCFP077": 0.029
+"BioGeo.LYZFP307": 0.030
+"BioGeo.SLCFP131.REP1_S33": 0.031
+"BioGeo.SLCFP071.REP1_S27": 0.031
+"BioGeo.TL1A_FP_641": 0.031
+"BioGeo.Vil1.01B.FP07.Rep1_S107": 0.031
+"BioGeo.Lyz2.03B.FP231.S79": 0.033
+"BioGeo.SLCFP019a": 0.033
+"BioGeo.Mouse5A_FP29.REP1_S53": 0.034
+"BioGeo.Itg.22.FP519.S22": 0.036
+"BioGeo.Itg.16.FP483.S86": 0.036
+"BioGeo.TL1a_FP_193.Rep1_S85": 0.036
+"BioGeo.Mouse4A_FP23.Rep1_S92": 0.036
+"BioGeo.LYZFP315": 0.036
+"BioGeo.TL1a_FP_205": 0.037
+"BioGeo.Mouse7A_FP41.REP1_S54": 0.037
+"BioGeo.TL1A_FP_625.REP1_S16": 0.037
+"BioGeo.Itg.08.FP443.S44": 0.037
+"BioGeo.Mouse1A_FP05": 0.037
+"BioGeo.Vil1.06B.FP67": 0.037
+"BioGeo.Vil1.02B.FP19": 0.037
+"BioGeo.Itg.10.FP459.S61": 0.037
+"BioGeo.Itg.06.FP435.S36": 0.037
+"BioGeo.Itg.10.FP455.S57": 0.037
+"BioGeo.TL1A_FP_685": 0.038
+"BioGeo.Vil1.13B.FP154.REP1_S47": 0.038
+"BioGeo.TL1A_FP_637": 0.038
+"BioGeo.TL1A_FP_689.Rep1_S104": 0.039
+"BioGeo.TL1A_FP_685.REP1_S22": 0.039
+"BioGeo.Vil1.01B.FP11": 0.039
+"BioGeo.Mouse2A_FP07": 0.040
+"BioGeo.Mouse3A_FP13": 0.040
+"BioGeo.TL1a_FP_61": 0.041
+"BioGeo.Itg.12.FP471.S73": 0.041
+"BioGeo.Lyz2.07B.FP279.S77": 0.042
+"BioGeo.Vil1.03B.FP31": 0.042
+"BioGeo.Mouse5A_FP25": 0.043
+"BioGeo.Mouse6A_FP35.Rep1_S93": 0.043
+"BioGeo.Vil1.10B.FP116.REP1_S44": 0.043
+"BioGeo.Mouse2A_FP11.REP1_S55": 0.043
+"BioGeo.TL1a_FP_139": 0.043
+"BioGeo.Lyz2.04B.FP243.S92": 0.043
+"BioGeo.Mouse7A_FP37": 0.044
+"BioGeo.TL1a_FP_209.REP1_S11": 0.045
+"BioGeo.Vil1.06B.FP71": 0.046
+"BioGeo.TL1a_FP_73.REP1_S3": 0.047
+"BioGeo.Vil1.07B.FP79": 0.047
+"BioGeo.LYZFP327.Rep1_S105": 0.048
+"BioGeo.Lyz2.01B.FP211.S59": 0.048
+"BioGeo.TL1a_FP_101.REP1_S6": 0.049
+"BioGeo.LYZFP319": 0.049
+"BioGeo.TL1a_FP_197.REP1_S10": 0.050
+"BioGeo.Lyz2.02B.FP223.S71": 0.051
+"BioGeo.Lyz2.03B.FP235.S83": 0.053
+"BioGeo.TL1a_FP_241": 0.053
+"BioGeo.Itg.02.FP411.S11": 0.054
+"BioGeo.Vil1.04B.FP43.Rep1_S88": 0.054
+"BioGeo.TL1A_FP_629": 0.056
+"BioGeo.Vil1.03B.FP35.REP1_S38": 0.057
+"BioGeo.Vil1.13B.FP152": 0.057
+"BioGeo.Itg.08.FP447.S48": 0.058
+"BioGeo.Lyz2.06B.FP271.S69": 0.060
+"BioGeo.Lyz2.05B.FP255.S52": 0.061
+"BioGeo.Itg.24.FP531.S34": 0.064
+"BioGeo.LYZFP339": 0.065
+"BioGeo.SLCFP005.REP1_S24": 0.065
+"BioGeo.Itg.26.FP543.S47": 0.065
+"BioGeo.Vil1.02B.FP23": 0.066
+"BioGeo.TL1a_FP_77.REP1_S4": 0.067
+"BioGeo.TL1a_FP_65": 0.068
+"BioGeo.SLCFP095": 0.073
+"BioGeo.TL1a_FP_77": 0.074
+"BioGeo.Vil1.05B.FP55": 0.078
+"BioGeo.SLCFP023.REP1_S26": 0.083
+"BioGeo.LYZFP355": 0.087
+"BioGeo.TL1a_FP_131": 0.087
+"BioGeo.Lyz2.07B.FP283.S81": 0.090
+"BioGeo.TL1a_FP_233.REP1_S13": 0.093
+"BioGeo.Vil1.07B.FP83": 0.094
+"BioGeo.Lyz2.04B.FP247.S44": 0.099
+"BioGeo.Vil1.14B.FP166": 0.110
+"BioGeo.Lyz2.05B.FP259.S56": 0.110
+"BioGeo.Vil1.04B.FP47": 0.129
+"BioGeo.Vil1.10B.FP118.REP1_S45": 0.165
+"BioGeo.Vil1.09B.FP106": 0.172

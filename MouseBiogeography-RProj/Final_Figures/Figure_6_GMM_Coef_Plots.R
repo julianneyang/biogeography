@@ -257,7 +257,7 @@ names(my_palette) <-levels(res_plot$Cohort)
 cols=c("#440154FF", "#FDE725FF")
 
 res_plot$Cohort <- factor(res_plot$Cohort, levels=c("HUM SD Gavage","SPF Gavage","CS SPF", "UCLA O. SPF"))
-res_plot$Annotation  <- gsub("(oxidative phase)","", c(res_plot$Annotation))
+res_plot$Annotation  <- gsub("pentose phosphate pathway \\(oxidative phase\\)", "pentose phosphate pathway", res_plot$Annotation)
 
 res_plot %>%
   arrange(Annotation) %>%

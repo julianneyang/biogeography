@@ -1,0 +1,144 @@
+Num samples: 129
+Num observations: 4,981
+Total count: 3,562,713,515
+Table density (fraction of non-zero values): 0.288
+
+Counts/sample summary:
+ Min: 20,425.616
+ Max: 264,490,288.339
+ Median: 16,609,362.958
+ Mean: 27,617,934.229
+ Std. dev.: 39,829,773.606
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: None provided
+
+Counts/sample detail:
+"merged_BioGeo-Itg-10-FP455-S57_merged__kneaddata_paired_Abundance-RPKs": 20,425.616
+"merged_BioGeo-Itg-02-FP407-S7_merged__kneaddata_paired_Abundance-RPKs": 25,129.652
+"merged_BioGeo-Itg-26-FP539-S43_merged__kneaddata_paired_Abundance-RPKs": 26,734.749
+"merged_BioGeo-Itg-08-FP443-S44_merged__kneaddata_paired_Abundance-RPKs": 28,610.954
+"merged_BioGeo-Itg-12-FP471-S73_merged__kneaddata_paired_Abundance-RPKs": 31,662.056
+"merged_BioGeo-Itg-24-FP527-S30_merged__kneaddata_paired_Abundance-RPKs": 32,529.649
+"merged_BioGeo-Itg-22-FP515-S18_merged__kneaddata_paired_Abundance-RPKs": 39,672.361
+"merged_BioGeo-Itg-24-FP531-S34_merged__kneaddata_paired_Abundance-RPKs": 40,240.509
+"merged_BioGeo-Itg-26-FP543-S47_merged__kneaddata_paired_Abundance-RPKs": 40,806.125
+"merged_BioGeo-Itg-22-FP519-S22_merged__kneaddata_paired_Abundance-RPKs": 55,127.151
+"merged_BioGeo-Itg-08-FP447-S48_merged__kneaddata_paired_Abundance-RPKs": 62,240.437
+"merged_BioGeo-Itg-10-FP459-S61_merged__kneaddata_paired_Abundance-RPKs": 67,913.611
+"merged_BioGeo-Itg-16-FP483-S86_merged__kneaddata_paired_Abundance-RPKs": 72,318.224
+"merged_BioGeo-Itg-20-FP503-S6_merged__kneaddata_paired_Abundance-RPKs": 73,108.124
+"merged_BioGeo-SLCFP113_merged__kneaddata_paired_Abundance-RPKs": 76,811.219
+"merged_BioGeo-Itg-04-FP419-S19_merged__kneaddata_paired_Abundance-RPKs": 79,037.877
+"merged_BioGeo-Itg-12-FP467-S69_merged__kneaddata_paired_Abundance-RPKs": 85,332.152
+"merged_BioGeo-Itg-20-FP507-S10_merged__kneaddata_paired_Abundance-RPKs": 96,108.498
+"merged_BioGeo-Itg-02-FP411-S11_merged__kneaddata_paired_Abundance-RPKs": 103,701.290
+"merged_BioGeo-Itg-06-FP431-S32_merged__kneaddata_paired_Abundance-RPKs": 115,223.253
+"merged_BioGeo-Itg-18-FP491-S94_merged__kneaddata_paired_Abundance-RPKs": 115,376.640
+"merged_BioGeo-Itg-06-FP435-S36_merged__kneaddata_paired_Abundance-RPKs": 135,643.319
+"merged_BioGeo-Itg-04-FP423-S23-Rep1_S87__kneaddata_paired_Abundance-RPKs": 208,974.606
+"merged_BioGeo-SLCFP109_merged__kneaddata_paired_Abundance-RPKs": 273,851.385
+"merged_BioGeo-TL1a_FP_143_merged__kneaddata_paired_Abundance-RPKs": 319,353.841
+"merged_BioGeo-Itg-16-FP479-S81-Rep1_S86__kneaddata_paired_Abundance-RPKs": 424,545.194
+"merged_BioGeo-Lyz2-04B-FP247-S44_merged__kneaddata_paired_Abundance-RPKs": 594,895.902
+"merged_BioGeo-Vil1-06B-FP71_merged__kneaddata_paired_Abundance-RPKs": 651,075.304
+"merged_BioGeo-TL1a_FP_101-REP1_S6__kneaddata_paired_Abundance-RPKs": 854,355.942
+"merged_BioGeo-SLCFP127_merged__kneaddata_paired_Abundance-RPKs": 1,222,715.637
+"merged_BioGeo-Mouse1A_FP01_merged__kneaddata_paired_Abundance-RPKs": 2,772,406.124
+"merged_BioGeo-TL1A_FP_689-Rep1_S104__kneaddata_paired_Abundance-RPKs": 2,839,864.737
+"merged_BioGeo-TL1a_FP_131_merged__kneaddata_paired_Abundance-RPKs": 3,891,658.818
+"merged_BioGeo-TL1a_FP_197-REP1_S10__kneaddata_paired_Abundance-RPKs": 3,956,228.369
+"merged_BioGeo-Mouse7A_FP41-REP1_S54__kneaddata_paired_Abundance-RPKs": 4,784,427.461
+"merged_BioGeo-Mouse6A_FP35-Rep1_S93__kneaddata_paired_Abundance-RPKs": 4,874,558.563
+"merged_BioGeo-Vil1-08B-FP94-REP1_S42__kneaddata_paired_Abundance-RPKs": 5,143,862.979
+"merged_BioGeo-Mouse1A_FP05_merged__kneaddata_paired_Abundance-RPKs": 5,207,178.025
+"merged_BioGeo-TL1a_FP_77_merged__kneaddata_paired_Abundance-RPKs": 5,722,458.969
+"merged_BioGeo-LYZFP351-Rep1_S106__kneaddata_paired_Abundance-RPKs": 6,776,081.792
+"merged_BioGeo-Lyz2-01B-FP211-S59_merged__kneaddata_paired_Abundance-RPKs": 7,202,219.863
+"merged_BioGeo-TL1A_FP_677-REP1_S21__kneaddata_paired_Abundance-RPKs": 8,498,735.188
+"merged_BioGeo-Mouse9A_FP101_merged__kneaddata_paired_Abundance-RPKs": 9,216,723.485
+"merged_BioGeo-Mouse3A_FP13_merged__kneaddata_paired_Abundance-RPKs": 9,708,896.592
+"merged_BioGeo-Lyz2-08B-FP295-S93_merged__kneaddata_paired_Abundance-RPKs": 10,860,521.768
+"merged_BioGeo-Mouse10A_FP109_merged__kneaddata_paired_Abundance-RPKs": 11,057,338.459
+"merged_BioGeo-Mouse9A_FP97_merged__kneaddata_paired_Abundance-RPKs": 11,136,349.415
+"merged_BioGeo-LYZFP355_merged__kneaddata_paired_Abundance-RPKs": 12,415,741.331
+"merged_BioGeo-Lyz2-02B-FP223-S71_merged__kneaddata_paired_Abundance-RPKs": 12,532,291.935
+"merged_BioGeo-LYZFP339_merged__kneaddata_paired_Abundance-RPKs": 12,702,197.728
+"merged_BioGeo-Lyz2-04B-FP243-S92_merged__kneaddata_paired_Abundance-RPKs": 12,769,288.747
+"merged_BioGeo-Vil1-03B-FP31_merged__kneaddata_paired_Abundance-RPKs": 14,097,018.276
+"merged_BioGeo-SLCFP071-REP1_S27__kneaddata_paired_Abundance-RPKs": 14,195,739.580
+"merged_BioGeo-Lyz2-06B-FP271-S69_merged__kneaddata_paired_Abundance-RPKs": 14,247,218.058
+"merged_BioGeo-Vil1-02B-FP19_merged__kneaddata_paired_Abundance-RPKs": 14,959,062.050
+"merged_BioGeo-TL1a_FP_77-REP1_S4__kneaddata_paired_Abundance-RPKs": 15,379,832.250
+"merged_BioGeo-Lyz2-03B-FP235-S83_merged__kneaddata_paired_Abundance-RPKs": 15,429,595.684
+"merged_BioGeo-TL1a_FP_205_merged__kneaddata_paired_Abundance-RPKs": 15,459,526.939
+"merged_BioGeo-Lyz2-02B-FP219-S67_merged__kneaddata_paired_Abundance-RPKs": 15,613,955.985
+"merged_BioGeo-Vil1-07B-FP83_merged__kneaddata_paired_Abundance-RPKs": 15,875,003.560
+"merged_BioGeo-Lyz2-07B-FP279-S77_merged__kneaddata_paired_Abundance-RPKs": 15,982,469.742
+"merged_BioGeo-Mouse3A_FP17_merged__kneaddata_paired_Abundance-RPKs": 15,989,845.420
+"merged_BioGeo-TL1A_FP_641_merged__kneaddata_paired_Abundance-RPKs": 16,482,967.099
+"merged_BioGeo-LYZFP327-Rep1_S105__kneaddata_paired_Abundance-RPKs": 16,522,250.826
+"merged_BioGeo-Mouse6A_FP31_merged__kneaddata_paired_Abundance-RPKs": 16,609,362.958
+"merged_BioGeo-Lyz2-08B-FP291-S89_merged__kneaddata_paired_Abundance-RPKs": 16,801,539.146
+"merged_BioGeo-Vil1-07B-FP79_merged__kneaddata_paired_Abundance-RPKs": 17,109,655.292
+"merged_BioGeo-Vil1-02B-FP23_merged__kneaddata_paired_Abundance-RPKs": 17,242,534.015
+"merged_BioGeo-TL1A_FP_625-REP1_S16__kneaddata_paired_Abundance-RPKs": 17,253,507.111
+"merged_BioGeo-Mouse2A_FP07_merged__kneaddata_paired_Abundance-RPKs": 18,003,078.132
+"merged_BioGeo-Vil1-01B-FP11_merged__kneaddata_paired_Abundance-RPKs": 18,047,102.029
+"merged_BioGeo-Lyz2-01B-FP207-S55_merged__kneaddata_paired_Abundance-RPKs": 18,487,737.079
+"merged_BioGeo-TL1a_FP_139_merged__kneaddata_paired_Abundance-RPKs": 19,507,975.144
+"merged_BioGeo-Vil1-05B-FP55_merged__kneaddata_paired_Abundance-RPKs": 19,612,824.477
+"merged_BioGeo-Mouse8A_FP85_merged__kneaddata_paired_Abundance-RPKs": 19,862,268.488
+"merged_BioGeo-LYZFP303_merged__kneaddata_paired_Abundance-RPKs": 20,427,488.890
+"merged_BioGeo-TL1A_FP_629_merged__kneaddata_paired_Abundance-RPKs": 20,467,170.462
+"merged_BioGeo-Vil1-06B-FP67_merged__kneaddata_paired_Abundance-RPKs": 20,576,773.468
+"merged_BioGeo-TL1a_FP_233-REP1_S13__kneaddata_paired_Abundance-RPKs": 20,886,901.447
+"merged_BioGeo-Lyz2-05B-FP259-S56_merged__kneaddata_paired_Abundance-RPKs": 21,014,214.039
+"merged_BioGeo-Mouse7A_FP37_merged__kneaddata_paired_Abundance-RPKs": 21,265,015.923
+"merged_BioGeo-Vil1-09B-FP104_merged__kneaddata_paired_Abundance-RPKs": 21,273,005.070
+"merged_BioGeo-LYZFP319_merged__kneaddata_paired_Abundance-RPKs": 22,235,739.217
+"merged_BioGeo-TL1a_FP_85_merged__kneaddata_paired_Abundance-RPKs": 23,407,415.088
+"merged_BioGeo-Lyz2-05B-FP255-S52_merged__kneaddata_paired_Abundance-RPKs": 24,363,634.644
+"merged_BioGeo-Lyz2-06B-FP267-S64_merged__kneaddata_paired_Abundance-RPKs": 24,516,531.168
+"merged_BioGeo-Lyz2-03B-FP231-S79_merged__kneaddata_paired_Abundance-RPKs": 27,602,694.913
+"merged_BioGeo-LYZFP315_merged__kneaddata_paired_Abundance-RPKs": 27,716,360.975
+"merged_BioGeo-TL1a_FP_193-Rep1_S85__kneaddata_paired_Abundance-RPKs": 28,693,840.777
+"merged_BioGeo-Lyz2-07B-FP283-S81_merged__kneaddata_paired_Abundance-RPKs": 29,053,451.358
+"merged_BioGeo-SLCFP091-REP1_S29__kneaddata_paired_Abundance-RPKs": 30,985,338.071
+"merged_BioGeo-SLCFP131-REP1_S33__kneaddata_paired_Abundance-RPKs": 31,097,806.930
+"merged_BioGeo-Vil1-10B-FP118-REP1_S45__kneaddata_paired_Abundance-RPKs": 31,931,335.623
+"merged_BioGeo-LYZFP307_merged__kneaddata_paired_Abundance-RPKs": 32,100,286.721
+"merged_BioGeo-Vil1-14B-FP166_merged__kneaddata_paired_Abundance-RPKs": 32,984,502.325
+"merged_BioGeo-Vil1-10B-FP116-REP1_S44__kneaddata_paired_Abundance-RPKs": 33,962,301.815
+"merged_BioGeo-TL1a_FP_65_merged__kneaddata_paired_Abundance-RPKs": 34,872,031.327
+"merged_BioGeo-Vil1-13B-FP152_merged__kneaddata_paired_Abundance-RPKs": 35,071,800.541
+"merged_BioGeo-Vil1-09B-FP106_merged__kneaddata_paired_Abundance-RPKs": 35,441,140.582
+"merged_BioGeo-TL1A_FP_673-REP1_S20__kneaddata_paired_Abundance-RPKs": 35,447,389.714
+"merged_BioGeo-SLCFP095_merged__kneaddata_paired_Abundance-RPKs": 35,723,286.831
+"merged_BioGeo-Vil1-04B-FP47_merged__kneaddata_paired_Abundance-RPKs": 36,470,289.908
+"merged_BioGeo-SLCFP001_merged__kneaddata_paired_Abundance-RPKs": 36,945,198.046
+"merged_BioGeo-TL1a_FP_229-REP1_S12__kneaddata_paired_Abundance-RPKs": 37,006,256.405
+"merged_BioGeo-Mouse5A_FP25_merged__kneaddata_paired_Abundance-RPKs": 38,620,974.095
+"merged_BioGeo-Vil1-08B-FP92-REP1_S41__kneaddata_paired_Abundance-RPKs": 40,690,371.174
+"merged_BioGeo-SLCFP077_merged__kneaddata_paired_Abundance-RPKs": 42,265,996.167
+"merged_BioGeo-Vil1-14B-FP164_merged__kneaddata_paired_Abundance-RPKs": 42,942,985.688
+"merged_BioGeo-TL1a_FP_127_merged__kneaddata_paired_Abundance-RPKs": 42,950,214.754
+"merged_BioGeo-Mouse10A_FP113_merged__kneaddata_paired_Abundance-RPKs": 45,371,750.264
+"merged_BioGeo-Mouse8A_FP89_merged__kneaddata_paired_Abundance-RPKs": 51,534,675.231
+"merged_BioGeo-Vil1-01B-FP07-Rep1_S107__kneaddata_paired_Abundance-RPKs": 52,274,889.425
+"merged_BioGeo-SLCFP019a_merged__kneaddata_paired_Abundance-RPKs": 52,387,784.906
+"merged_BioGeo-Vil1-05B-FP59-REP1_S37__kneaddata_paired_Abundance-RPKs": 57,279,273.805
+"merged_BioGeo-TL1A_FP_637_merged__kneaddata_paired_Abundance-RPKs": 59,949,477.852
+"merged_BioGeo-TL1a_FP_241_merged__kneaddata_paired_Abundance-RPKs": 61,063,718.762
+"merged_BioGeo-TL1A_FP_685_merged__kneaddata_paired_Abundance-RPKs": 68,598,202.827
+"merged_BioGeo-TL1a_FP_209-REP1_S11__kneaddata_paired_Abundance-RPKs": 68,622,781.104
+"merged_BioGeo-SLCFP005-REP1_S24__kneaddata_paired_Abundance-RPKs": 70,248,775.385
+"merged_BioGeo-TL1a_FP_61_merged__kneaddata_paired_Abundance-RPKs": 75,598,815.659
+"merged_BioGeo-Mouse2A_FP11-REP1_S55__kneaddata_paired_Abundance-RPKs": 82,022,953.609
+"merged_BioGeo-TL1A_FP_685-REP1_S22__kneaddata_paired_Abundance-RPKs": 85,524,298.626
+"merged_BioGeo-SLCFP023-REP1_S26__kneaddata_paired_Abundance-RPKs": 100,239,764.591
+"merged_BioGeo-Mouse4A_FP23-Rep1_S92__kneaddata_paired_Abundance-RPKs": 110,660,884.292
+"merged_BioGeo-Vil1-04B-FP43-Rep1_S88__kneaddata_paired_Abundance-RPKs": 117,547,466.465
+"merged_BioGeo-Vil1-13B-FP154-REP1_S47__kneaddata_paired_Abundance-RPKs": 118,993,224.508
+"merged_BioGeo-Vil1-03B-FP35-REP1_S38__kneaddata_paired_Abundance-RPKs": 175,006,798.109
+"merged_BioGeo-Mouse5A_FP29-REP1_S53__kneaddata_paired_Abundance-RPKs": 235,473,326.624
+"merged_BioGeo-TL1a_FP_73-REP1_S3__kneaddata_paired_Abundance-RPKs": 264,490,288.339
