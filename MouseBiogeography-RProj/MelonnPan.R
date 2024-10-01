@@ -1,11 +1,21 @@
-
+renv::restore()
 library(GenABEL.data)
 library(GenABEL)
 library(melonnpan)
 library(ggplot2)
+library(rtools)
 
+library(renv)
+renv::install("rtools")
+
+getOption("repos")
 ###Installation of MelonnPan####
+install.packages("gert", repos = c(
+  ropensci = 'https://ropensci.r-universe.dev',
+  CRAN = 'https://cloud.r-project.org'))
+library(devtools)
 
+renv::install("devtools")
 #first, need Rtools
 devtools::install_version("Rtools",repos = "http://cran.us.r-project.org")
 
