@@ -1,7 +1,7 @@
 {
     "installOptions": {
         "installFromRepository": true,
-        "libraryPath": "/home/julianne/R/x86_64-pc-linux-gnu-library/4.4",
+        "libraryPath": "/home/julianne/Documents/biogeography/MouseBiogeography-RProj/renv/library/linux-ubuntu-focal/R-4.4/x86_64-pc-linux-gnu",
         "installDependencies": true
     }
 }
