@@ -3,7 +3,8 @@
 ### Figure Number: 
 ### Figure Contents: UCLA O SPF and CS SPF Transverse alpha and beta diversity 
 ###### whining ends here ---
-
+library(renv)
+renv::snapshot()
 library(cowplot)
 library(ggplot2)
 library(RColorBrewer)
