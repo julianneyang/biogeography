@@ -37,21 +37,30 @@ target == row.names(input_metadata)
 
 # Save output files for fishtaco
 duo_dc <- input_metadata %>% 
+  filter(Type =="Mucosal") %>%
   filter(Site =="Duodenum" | Site == "Distal_Colon", SampleID %in% names(dat)) %>% pull(SampleID)
 duo_dc_ko <- relative_abundances[, duo_dc]
-duo_dc_ko <- duo_dc_ko %>% 
-  rownames_to_column(var="Function") 
+duo_dc_ko <- duo_dc_ko %>%  
+  rownames_to_column(var="Function")  
+
+#min_samples <- ceiling(ncol(duo_dc_ko) * 0.10)
+#duo_dc_ko <- duo_dc_ko %>%  
+  #filter(rowSums(. > 0) >= min_samples) %>%
+  #rownames_to_column(var="Function")  
+
+
 readr::write_delim(duo_dc_ko, here("Donors-Analysis/fish_taco/duo_dc_ko_relab.tsv"),delim="\t")
 
 duo_dc_tax <- tax_rel_abun[, duo_dc]
 duo_dc_tax <- duo_dc_tax %>% 
   rownames_to_column(var="Taxa")
-write.table(duo_dc_tax, here("Donors-Analysis/fish_taco/duo_dc_ko_tax.tsv"))
+readr::write_delim(duo_dc_tax, here("Donors-Analysis/fish_taco/duo_dc_ko_tax.tsv"),delim="\t")
 
 duo_dc_labels <- input_metadata %>% 
+  filter(Type =="Mucosal") %>%
   filter(Site =="Duodenum" | Site == "Distal_Colon", SampleID %in% names(dat)) %>% 
   mutate(Label = ifelse(Site == "Duodenum", 1, 0)) %>% 
   select("Label")
 duo_dc_labels <- duo_dc_labels %>% 
   rownames_to_column(var = "Sample")
-write.table(duo_dc_labels, here("Donors-Analysis/fish_taco/duo_dc_labels.tsv"))
+readr::write_delim(duo_dc_labels, here("Donors-Analysis/fish_taco/duo_dc_labels.tsv"),delim="\t")
