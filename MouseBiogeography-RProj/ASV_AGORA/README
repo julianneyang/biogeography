@@ -1,0 +1,3 @@
+9/15/2019
+-agora_NCBI_16S.udb is a vsearch indexed database file of ribosomal sequences of AGORA-linked genomes downloaded from NCBI.
+-AGORA_full_genome_info.txt and the files in the RxnNetworks directory are modified versions of the AGORA version 1.0.2 collection of metabolic reconstructions, by Magnusdottir, Thiele et al (see doi:10.1038/nbt.3703), obtained from the Virtual Metabolic Human database (www.vmh.life). The original versions are licensed under Creative Commons CC-NC-BY 2.0 (http://creativecommons.org/licenses/nc-by/2.0/).

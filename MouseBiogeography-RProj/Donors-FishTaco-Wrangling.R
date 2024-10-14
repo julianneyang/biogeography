@@ -15,6 +15,15 @@ column_sums <- colSums(dat)
 relative_abundances <- sweep(dat, 2, column_sums, FUN = "/")
 colSums(relative_abundances)
 
+# Wrangle GMM data into relabun values 
+gmm <- read.delim(here("Donors-Analysis/omixer_output/Donors_GMM_modules.tsv"), header=T, sep="\t", row.names=1)
+gmm <- gmm %>% mutate_all(as.numeric)
+names(gmm)<-gsub("X","",names(gmm))
+
+column_sums <- colSums(gmm)
+gmm_relab <- sweep(gmm, 2, column_sums, FUN = "/")
+colSums(gmm_relab)
+
 # Wrangle Taxon data into relabun values 
 tax <- read.delim(here("Donors-Analysis/starting_files/Donors-Mice-1xPrev0.15-ComBat-ASV.tsv"), header=T, sep="\t", row.names=1)
 tax <- tax %>% mutate_all(as.numeric)
@@ -50,6 +59,18 @@ duo_dc_ko <- duo_dc_ko %>%
 
 
 readr::write_delim(duo_dc_ko, here("Donors-Analysis/fish_taco/duo_dc_ko_relab.tsv"),delim="\t")
+
+duo_dc_gmm <- gmm_relab[, duo_dc]
+duo_dc_gmm <- duo_dc_gmm %>%  
+  rownames_to_column(var="Function")  
+
+#min_samples <- ceiling(ncol(duo_dc_ko) * 0.10)
+#duo_dc_ko <- duo_dc_ko %>%  
+#filter(rowSums(. > 0) >= min_samples) %>%
+#rownames_to_column(var="Function")  
+
+
+readr::write_delim(duo_dc_gmm, here("Donors-Analysis/fish_taco/duo_dc_gmm_relab.tsv"),delim="\t")
 
 duo_dc_tax <- tax_rel_abun[, duo_dc]
 duo_dc_tax <- duo_dc_tax %>% 
