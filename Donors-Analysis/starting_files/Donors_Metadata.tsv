@@ -1,609 +1,609 @@
 SampleID	Sequencing_Run	Original_Human_Stool	Site	Site_General	Type	Subset	MouseID	Sex	Stool_ID	Family	Donor_ID	IBD_Status	Enterotype	Metabotype	Donor_Calprotectin	SequenceDepth	Description
-806rcbc423-S424	April_2017	N	Duodenum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc426-S427	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
-806rcbc427-S428	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
-806rcbc429-S430	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
-806rcbc431-S432	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6		
-806rcbc432-S433	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6		
-806rcbc444-S445	April_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc445-S446	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc446-S447	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc447-S448	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc449-S450	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc450-S451	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc453-S454	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-806rcbc454-S455	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
-GnotobioticExp-FP-301.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	71972	
-GnotobioticExp-FP-302.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80959	
-GnotobioticExp-FP-303.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	84694	
-GnotobioticExp-FP-304.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	118585	
-GnotobioticExp-FP-305.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	123367	
-GnotobioticExp-FP-306.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	65314	
-GnotobioticExp-FP-307.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	89941	
-GnotobioticExp-FP-308.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	87441	
-GnotobioticExp-FP-309.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	90739	
-GnotobioticExp-FP-310.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	115125	
-GnotobioticExp-FP-311.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	137785	
-GnotobioticExp-FP-312.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	120032	
-GnotobioticExp-FP-313.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80395	
-GnotobioticExp-FP-314.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	60963	
-GnotobioticExp-FP-315.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	82311	
-GnotobioticExp-FP-316.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	54948	
-GnotobioticExp-FP-317.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	113654	
-GnotobioticExp-FP-318.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	53376	
-GnotobioticExp-FP-319.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	77282	
-GnotobioticExp-FP-320.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	97369	
-GnotobioticExp-FP-321.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	80040	
-GnotobioticExp-FP-322.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	110571	
-GnotobioticExp-FP-323.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	174832	
-GnotobioticExp-FP-324.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	39587	
-GnotobioticExp-FP-361.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	79145	
-GnotobioticExp-FP-362.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	102316	
-GnotobioticExp-FP-363.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	91272	
-GnotobioticExp-FP-364.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	140053	
-GnotobioticExp-FP-365.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	63419	
-GnotobioticExp-FP-366.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	71621	
-GnotobioticExp-FP-367.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	100466	
-GnotobioticExp-FP-368.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	110921	
-GnotobioticExp-FP-369.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	94737	
-GnotobioticExp-FP-370.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	120049	
-GnotobioticExp-FP-371.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	51837	
-GnotobioticExp-FP-372.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	37710	
-GnotobioticExp-FP-373.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	104528	
-GnotobioticExp-FP-374.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	110168	
-GnotobioticExp-FP-375.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	84598	
-GnotobioticExp-FP-376.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	108025	
-GnotobioticExp-DTT-302.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	100155	
-GnotobioticExp-DTT-303.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	121221	
-GnotobioticExp-DTT-304.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	108949	
-GnotobioticExp-DTT-305.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	66918	
-GnotobioticExp-DTT-306.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	83158	
-GnotobioticExp-DTT-307.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	73897	
-GnotobioticExp-DTT-308.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	81741	
-GnotobioticExp-DTT-309.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	99396	
-GnotobioticExp-DTT-310.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	72342	
-GnotobioticExp-DTT-311.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	25878	
-GnotobioticExp-DTT-312.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	32022	
-GnotobioticExp-DTT-313.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	87398	
-GnotobioticExp-DTT-314.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	116371	
-GnotobioticExp-DTT-315.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	119336	
-GnotobioticExp-DTT-316.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	53984	
-GnotobioticExp-DTT-317.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80401	
-GnotobioticExp-DTT-318.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	28623	
-GnotobioticExp-DTT-319.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	39788	
-GnotobioticExp-DTT-320.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	85769	
-GnotobioticExp-DTT-321.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	102348	
-GnotobioticExp-DTT-322.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	71389	
-GnotobioticExp-DTT-323.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	29215	
-GnotobioticExp-DTT-324.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	14233	
-GnotobioticExp-DTT-325.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	47872	
-GnotobioticExp-DTT-362.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	109299	
-GnotobioticExp-DTT-363.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	87297	
-GnotobioticExp-DTT-364.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	64755	
-GnotobioticExp-DTT-365.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	3925	
-GnotobioticExp-DTT-366.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	4314	
-GnotobioticExp-DTT-367.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	59352	
-GnotobioticExp-DTT-368.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	83985	
-GnotobioticExp-DTT-369.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	97078	
-GnotobioticExp-DTT-370.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	25171	
-GnotobioticExp-DTT-371.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	18572	
-GnotobioticExp-DTT-372.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	11784	
-GnotobioticExp-DTT-373.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	54891	
-GnotobioticExp-DTT-374.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	112468	
-GnotobioticExp-DTT-375.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	105279	
-GnotobioticExp-DTT-376.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	25411	
-GnotobioticExp-FP-377.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	64287	
-GnotobioticExp-FP-378.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	24677	
-GnotobioticExp-FP-379.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	104899	
-GnotobioticExp-FP-380.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	114816	
-GnotobioticExp-FP-381.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	94227	
-GnotobioticExp-FP-382.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	77682	
-GnotobioticExp-FP-383.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	56911	
-GnotobioticExp-FP-384.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	84483	
-GnotobioticExp-FP-385.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	119764	
-GnotobioticExp-FP-386.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	119685	
-GnotobioticExp-FP-387.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	106523	
-GnotobioticExp-FP-388.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	71771	
-GnotobioticExp-FP-389.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	38520	
-GnotobioticExp-FP-390.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	17884	
-GnotobioticExp-FP-391.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	96992	
-GnotobioticExp-FP-392.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	125201	
-GnotobioticExp-FP-393.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	105537	
-GnotobioticExp-FP-394.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	53078	
-GnotobioticExp-FP-395.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	43980	
-GnotobioticExp-FP-396.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	64083	
-GnotobioticExp-DTT-377.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	13988	
-GnotobioticExp-DTT-378.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	12656	
-GnotobioticExp-DTT-379.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	69240	
-GnotobioticExp-DTT-380.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	77844	
-GnotobioticExp-DTT-381.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	98176	
-GnotobioticExp-DTT-382.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	70352	
-GnotobioticExp-DTT-383.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	61966	
-GnotobioticExp-DTT-384.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	64366	
-BSD-4241B.fastq	Dec_2017	Y	Feces	Colon	Luminal	Luminal_Colon	NA	NA	BSD4241B	BSD4241	A066	Normal	One	Two	15.6	122537	
-BSD-4346B.fastq	Dec_2017	Y	Feces	Colon	Luminal	Luminal_Colon	NA	NA	BSD4346B	BSD4346	A084	Normal	One	One	15.6	78350	
-GnotobioticExp-DTT-179.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6		
-GnotoExpt-DTT529-S140	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT530-S141	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT531-S142	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT532-S143	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT533-S144	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT534-S145	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT535-S146	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT536-S147	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT537-S148	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT538-S149	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT539-S150	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT540-S151	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT541-S152	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT542-S153	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT543-S154	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT544-S155	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT545-S156	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT546-S157	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT547-S158	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT548-S159	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT549-S160	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT550-S161	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT551-S162	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT552-S163	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-DTT553-S164	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT554-S165	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT555-S167	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT556-S168	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT557-S169	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT558-S170	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT559-S171	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT560-S172	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT561-S173	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT562-S174	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT563-S175	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT564-S176	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT565-S177	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT566-S178	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT567-S179	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT568-S180	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT569-S181	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT570-S182	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-DTT595-S330	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT596-S331	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT597-S332	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT598-S333	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT599-S334	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT600-S335	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT601-S336	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT602-S337	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT603-S338	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT604-S339	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT605-S340	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT606-S341	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT607-S342	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT608-S343	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT609-S344	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT610-S345	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT611-S346	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT612-S347	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT613-S348	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT614-S349	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT615-S350	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT616-S351	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT617-S352	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-DTT618-S353	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP529-S44	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP530-S45	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP531-S46	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP532-S47	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP533-S48	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP534-S49	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP535-S50	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP536-S51	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP537-S52	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP538-S53	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP539-S54	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP540-S55	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP541-S56	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP542-S57	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP543-S58	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP544-S59	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP545-S60	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP546-S61	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP547-S62	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP548-S63	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP549-S64	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP550-S65	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP551-S66	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP552-S67	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
-GnotoExpt-FP553-S68	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP554-S69	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP555-S71	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP556-S72	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP557-S73	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP558-S74	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP559-S75	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP560-S76	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP561-S77	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP562-S78	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP563-S79	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP564-S80	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP565-S81	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP566-S82	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP567-S83	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP568-S84	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP569-S85	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP570-S86	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
-GnotoExpt-FP595-S291	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP596-S292	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP597-S293	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP598-S294	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP599-S295	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP600-S296	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP601-S297	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP602-S298	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP603-S299	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP604-S300	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP605-S301	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP606-S302	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP607-S303	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP608-S304	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP609-S305	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP610-S306	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP611-S307	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP612-S308	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP613-S309	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP614-S310	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP615-S311	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP616-S312	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP617-S313	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-GnotoExpt-FP618-S314	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-806rcbc488-S393	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	144566	4257C
-806rcbc489-S394	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	149652	N
-806rcbc490-S395	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160419	N
-806rcbc491-S396	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	327056	N
-806rcbc492-S397	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	129353	N
-806rcbc493-S398	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	156224	N
-806rcbc494-S399	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139278	4257C
-806rcbc495-S400	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	144606	N
-806rcbc496-S401	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	132591	N
-806rcbc497-S402	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	126426	N
-806rcbc498-S403	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	97262	N
-806rcbc499-S404	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	125562	N
-806rcbc519-S424	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	121450	4257C
-806rcbc520-S425	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	131503	N
-806rcbc521-S426	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139594	N
-806rcbc522-S427	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	78843	N
-806rcbc523-S428	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	140256	N
-806rcbc524-S429	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	71882	N
-806rcbc525-S430	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	150308	4257C
-806rcbc526-S431	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160228	N
-806rcbc527-S432	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	275393	N
-806rcbc528-S433	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	165589	N
-806rcbc529-S434	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	73407	N
-806rcbc530-S435	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	103974	N
-806rcbc531-S436	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160467	4257C
-806rcbc532-S437	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	150984	N
-806rcbc533-S438	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	116754	N
-806rcbc534-S439	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(41666, 69878)	(N, GnotobioticExpt-DTT64)
-806rcbc535-S440	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(7416, 108996)	(N, GnotobioticExpt-DTT65)
-806rcbc536-S441	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(19680, 18901)	(N, GnotobioticExpt-DTT66)
-806rcbc550-S455	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	149818	4257A (fresh)
-806rcbc551-S456	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	156924	N
-806rcbc552-S457	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	210135	N
-806rcbc553-S458	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	(44284, 20131)	(N, GnotobioticExpt-DTT82)
-806rcbc554-S459	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	142779	N
-806rcbc555-S460	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	(44470, 40563)	(N, GnotobioticExpt-DTT84)
-806rcbc556-S461	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	142429	4257A (fresh)
-806rcbc557-S462	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	134012	N
-806rcbc558-S463	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	127546	N
-806rcbc559-S464	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	113171	N
-806rcbc560-S465	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	99569	N
-806rcbc561-S466	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	123864	N
-806rcbc562-S467	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	179626	4257A (fresh)
-806rcbc563-S468	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	222715	N
-806rcbc564-S469	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	205340	N
-806rcbc565-S470	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	214920	N
-806rcbc566-S471	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	178731	N
-806rcbc567-S472	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	152493	N
-806rcbc362-S497	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(47078, 164324)	(BSD4031D, GnotobioticExpt-DTT121)
-806rcbc363-S498	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	82502	N
-806rcbc364-S499	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	70122	N
-806rcbc365-S500	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(22063, 55352)	(N, GnotobioticExpt-DTT124)
-806rcbc368-S501	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(22836, 32020)	(N, GnotobioticExpt-DTT125)
-806rcbc369-S502	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(4997, 15492, 11990)	(N, GnotobioticExpt-DTT126, GnotobioticExpt-DTT126)
-806rcbc370-S503	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	74241	BSD4031D
-806rcbc371-S504	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	125504	N
-806rcbc372-S505	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	130531	N
-806rcbc373-S506	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	86578	N
-806rcbc374-S508	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(15055, 39728)	(N, GnotobioticExpt-DTT131)
-806rcbc375-S509	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(7927, 34233, 23856)	(BSD4031D, GnotobioticExpt-DTT132, GnotobioticExpt-DTT132)
-806rcbc376-S510	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	81820	N
-806rcbc377-S511	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	80672	N
-806rcbc378-S512	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	187420	N
-806rcbc379-S513	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	73070	N
-806rcbc380-S514	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(25110, 101269)	(N, GnotobioticExpt-DTT137)
-806rcbc381-S515	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(31677, 71861)	(N, GnotobioticExpt-DTT138)
-806rcbc168-S265	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	167653	4257C
-806rcbc169-S266	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	178666	N
-806rcbc170-S267	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	173182	N
-806rcbc171-S268	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	454277	N
-806rcbc172-S269	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	174417	N
-806rcbc173-S270	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	147701	N
-806rcbc174-S271	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	140417	4257C
-806rcbc175-S272	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	162697	N
-806rcbc176-S273	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	148763	N
-806rcbc177-S274	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	212368	N
-806rcbc178-S275	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	238642	N
-806rcbc179-S276	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	279613	N
-806rcbc390-S295	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	121392	4257C
-806rcbc391-S296	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	143798	N
-806rcbc392-S297	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	131724	N
-806rcbc393-S298	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	134063	N
-806rcbc394-S299	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	200708	N
-806rcbc395-S300	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	180140	N
-806rcbc396-S301	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	143014	4257C
-806rcbc397-S302	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	155184	N
-806rcbc398-S303	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	134269	N
-806rcbc399-S304	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	109985	N
-806rcbc400-S305	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	164791	N
-806rcbc401-S306	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	174231	N
-806rcbc402-S307	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	114963	4257C
-806rcbc403-S308	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139739	N
-806rcbc404-S309	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	145075	N
-806rcbc405-S310	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	136464	N
-806rcbc406-S311	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	189730	N
-806rcbc407-S312	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	224913	N
-806rcbc421-S326	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	175950	4257A (fresh)
-806rcbc422-S327	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	215183	N
-806rcbc423-S328	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	164910	N
-806rcbc424-S329	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	143879	N
-806rcbc425-S330	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	213380	N
-806rcbc426-S331	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	191033	N
-806rcbc427-S332	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	170973	4257A (fresh)
-806rcbc428-S333	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	155786	N
-806rcbc429-S334	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	153667	N
-806rcbc430-S335	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	203319	N
-806rcbc431-S336	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	202322	N
-806rcbc432-S337	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	173130	N
-806rcbc433-S338	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	182663	4257A (fresh)
-806rcbc434-S339	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	199818	N
-806rcbc435-S340	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	209553	N
-806rcbc436-S341	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	148057	N
-806rcbc437-S342	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	153653	N
-806rcbc438-S343	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	168011	N
-806rcbc464-S369	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	129754	BSD4031D
-806rcbc465-S370	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	141940	N
-806rcbc466-S371	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	138361	N
-806rcbc467-S372	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	69863	N
-806rcbc468-S373	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	147265	N
-806rcbc469-S374	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	146672	N
-806rcbc470-S375	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	151630	BSD4031D
-806rcbc471-S376	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	197589	N
-806rcbc472-S377	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	133963	N
-806rcbc473-S378	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	150219	N
-806rcbc474-S379	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	289208	N
-806rcbc475-S380	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(0, 48613, 45128)	(N, GnotobioticExpt-FP132, GnotobioticExpt-FP132)
-806rcbc476-S381	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	210793	BSD4031D
-806rcbc477-S382	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	209840	N
-806rcbc478-S383	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	134462	N
-806rcbc479-S384	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	140742	N
-806rcbc480-S385	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	209617	N
-806rcbc481-S386	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	117708	N
-806rcbc160-S257	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
-2F7-S163	June_2016	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	166368	GFpedDTT007
-2F8-S164	June_2016	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	163478	GFpedDTT008
-2F9-S165	June_2016	N	Cecum	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	106799	GFpedDTT009
-2F10-S166	June_2016	N	Ileum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	62540	GFpedDTT010
-2F11-S167	June_2016	N	Jejunum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	146112	GFpedDTT011
-2F12-S168	June_2016	N	Duodenum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	(26818, 119219)	GFpedDTT012
-2E7-S151	June_2016	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	146348	GFpedFP007
-2E8-S152	June_2016	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	174584	GFpedFP008
-2E9-S153	June_2016	N	Cecum	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	143229	GFpedFP009
-2E10-S154	June_2016	N	Ileum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	121384	GFpedFP010
-2E11-S155	June_2016	N	Jejunum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	151040	GFpedFP011
-2E12-S156	June_2016	N	Duodenum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	77757	GFpedFP012
-GnotoExpt-DTT385-S531	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT386-S532	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT387-S533	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT388-S534	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT389-S535	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT390-S536	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT391-S537	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT392-S538	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT393-S539	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT394-S540	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT395-S541	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT396-S542	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
-GnotoExpt-DTT451-S599	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT452-S600	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT453-S601	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT454-S602	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT455-S603	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT456-S604	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT457-S605	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT458-S606	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT459-S607	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT460-S608	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT461-S609	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT462-S610	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT463-S611	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT464-S612	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT465-S613	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT466-S614	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT467-S615	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT468-S616	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-DTT469-S617	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT470-S618	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT471-S619	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT472-S620	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT473-S621	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT474-S622	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT475-S623	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT476-S624	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT477-S625	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT478-S626	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT479-S627	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT480-S628	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT481-S629	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT482-S630	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT483-S631	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT484-S632	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT485-S633	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-DTT486-S634	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP451-S672	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP452-S673	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP453-S674	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP454-S675	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP455-S676	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP456-S677	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP457-S678	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP458-S679	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP459-S680	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP460-S681	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP461-S682	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP462-S683	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP463-S684	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP464-S685	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP465-S686	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP466-S687	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP467-S688	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP468-S689	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
-GnotoExpt-FP469-S690	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP470-S691	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP471-S692	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP472-S693	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP473-S694	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP474-S695	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP475-S696	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP477-S698	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP478-S699	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP479-S700	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP480-S701	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP481-S702	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP482-S703	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP483-S704	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP484-S706	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP485-S707	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotoExpt-FP486-S708	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
-GnotobioticExp-FP-175-S37	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	132476	
-GnotobioticExp-FP-176-S38	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	207758	
-GnotobioticExp-FP-177-S39	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	112819	
-GnotobioticExp-FP-178-S40	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	68754	
-GnotobioticExp-FP-179-S41	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	64908	
-GnotobioticExp-FP-180-S43	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	30425	
-GnotobioticExp-FP-181-S44	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	88100	
-GnotobioticExp-FP-182-S45	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	196490	
-GnotobioticExp-FP-183-S46	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	97523	
-GnotobioticExp-FP-184-S47	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	100606	
-GnotobioticExp-FP-185-S48	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	101057	
-GnotobioticExp-FP-186-S49	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	50969	
-GnotobioticExp-FP-187-S50	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	311476	
-GnotobioticExp-FP-188-S51	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	142766	
-GnotobioticExp-FP-189-S52	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	128864	
-GnotobioticExp-FP-190-S53	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	26880	
-GnotobioticExp-FP-191-S54	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	32017	
-GnotobioticExp-FP-192-S55	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	14923	
-GnotobioticExp-FP-193-S57	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	127275	
-GnotobioticExp-FP-194-S58	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	94469	
-GnotobioticExp-FP-195-S59	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	114086	
-GnotobioticExp-FP-196-S60	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	32111	
-GnotobioticExp-FP-197-S61	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	105062	
-GnotobioticExp-FP-198-S62	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	41484	
-GnotobioticExp-FP-199-S63	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	161067	
-GnotobioticExp-FP-200-S64	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	164923	
-GnotobioticExp-FP-201-S65	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	48595	
-GnotobioticExp-FP-202-S66	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	44069	
-GnotobioticExp-FP-203-S67	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	82237	
-GnotobioticExp-FP-204-S68	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	35006	
-GnotobioticExp-FP-205-S69	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	83089	
-GnotobioticExp-FP-206-S70	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	78273	
-GnotobioticExp-FP-207-S71	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	63679	
-GnotobioticExp-FP-208-S72	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	54648	
-GnotobioticExp-FP-209-S73	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	182252	
-GnotobioticExp-FP-210-S74	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	68277	
-GnotobioticExp-DTT-175-S185	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	326085	
-GnotobioticExp-DTT-176-S186	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	70304	
-GnotobioticExp-DTT-177-S187	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	381306	
-GnotobioticExp-DTT-178-S188	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	69385	
-GnotobioticExp-DTT-179-S189	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	59179	
-GnotobioticExp-DTT-180-S190	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	49348	
-GnotobioticExp-DTT-181-S191	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	200934	
-GnotobioticExp-DTT-182-S192	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	103742	
-GnotobioticExp-DTT-183-S193	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	110969	
-GnotobioticExp-DTT-184-S194	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	69581	
-GnotobioticExp-DTT-185-S195	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	63157	
-GnotobioticExp-DTT-186-S196	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	48198	
-GnotobioticExp-DTT-187-S197	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	71268	
-GnotobioticExp-DTT-188-S198	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	90458	
-GnotobioticExp-DTT-189-S199	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	84869	
-GnotobioticExp-DTT-190-S200	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	89200	
-GnotobioticExp-DTT-191-S201	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	41145	
-GnotobioticExp-DTT-192-S202	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	26089	
-GnotobioticExp-DTT-193-S203	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	90968	
-GnotobioticExp-DTT-194-S204	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	99894	
-GnotobioticExp-DTT-195-S205	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	101948	
-GnotobioticExp-DTT-196-S206	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	69877	
-GnotobioticExp-DTT-197-S207	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	54284	
-GnotobioticExp-DTT-198-S208	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	38641	
-GnotobioticExp-DTT-199-S209	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	81841	
-GnotobioticExp-DTT-200-S210	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	91680	
-GnotobioticExp-DTT-201-S211	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	103570	
-GnotobioticExp-DTT-202-S212	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	72627	
-GnotobioticExp-DTT-203-S213	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	76279	
-GnotobioticExp-DTT-204-S214	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	55146	
-GnotobioticExp-DTT-205-S215	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	93098	
-GnotobioticExp-DTT-206-S216	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	109761	
-GnotobioticExp-DTT-207-S217	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	92357	
-GnotobioticExp-DTT-208-S218	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	70419	
-GnotobioticExp-DTT-209-S219	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	37407	
-GnotobioticExp-DTT-210-S220	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	24069	
-2205-C-S397	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2205C	BSD2205	A053	Normal	One	One	25.9	123505	
-2205-D-S459	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2205D	BSD2205	A054	Normal	One	One	55	96569	
-2780-D-S421	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2780D	BSD2780	A012	Normal	One	One	15.6	96786	
-3178-A-S442	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178A	BSD3178	A010	Normal	One	One	55.8	82114	
-3178-C-S457	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178C	BSD3178	A009	Normal	Two	Two	15.6	83074	
-3178-E-S395	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178E	BSD3178	A008	Normal	One	Two	15.6	69361	
-3205-B-S439	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3205B	BSD3205	A051	Normal	One	Two	286.1	98888	
-3205-D-S455	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	84503	
-3448-A-S394	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6	78602	
-3448-B-S403	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	103364	
-3448-D-S422	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6	114963	
-3486-A-S427	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3486A	BSD3486	A025	Normal	One	One	15.6	76608	
-3486-B-S436	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3486B	BSD3486	A027	Normal	One	One	18.3	95275	
-3590-C-S474	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3590C	BSD3590	A038	Normal	One	One	65.5	86279	
-3590-D-S475	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3590D	BSD3590	A039	Normal	One	Two	15.6	67824	
-3724-A-S451	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724A	BSD3724	A023	Normal	One	One	36.5	100347	
-3724-B-S458	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724B	BSD3724	A021	Normal	One	One	15.6	37762	
-3724-C-S387	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724C	BSD3724	A022	Normal	One	One	49.6	77147	
-3803-A-S467	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3803A	BSD3803	A058	Normal	One	One	15.6	85545	
-3803-B-S466	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3803B	BSD3803	A057	Normal	One	Two	15.6	54986	
-3888-A-S418	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888A	BSD3888	A035	Normal	One	One	25.4	92738	
-3888-B-S390	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888B	BSD3888	A034	Normal	One	One	96.6	85023	
-3888-C-S399	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888C	BSD3888	A033	Normal	One	One	15.6	88989	
-3905-A-S463	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905A	BSD3905	A005	Normal	One	One	15.6	90478	
-3905-B-S392	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905B	BSD3905	A003	Normal	One	Two	15.6	69088	
-3905-C-S401	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905C	BSD3905	A004	Normal	One	One	15.6	3	
-4031-A-S460	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4031A	BSD4031	A043	Normal	One	One	51.4	192907	
-4031-D-S407	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	90534	
-4241-C-S426	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241C	BSD4241	A067	Normal	One	Two	15.6	67229	
-4241-D-S452	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241D	BSD4241	A068	Normal	One	One	15.6	83185	
-4241-E-S417	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241E	BSD4241	A065	Normal	One	One	15.6	84861	
-4257-A-S405	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	106558	
-4257-B-S415	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257B	BSD4257	A019	Normal	Two	Two	343.9	85336	
-4257-C-S424	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257C	BSD4257	A017	Normal	One	One	40.2	176128	
-4287-A-S468	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4287A	BSD4287	A075	Normal	One	Two	15.6	94882	
-4287-D-S471	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4287D	BSD4287	A076	Normal	One	One	15.6	106867	
-4343-A2-S441	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343A	BSD4343	A062	Normal	One	One	15.6	99615	
-4343-B-S425	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343B	BSD4343	A061	Normal	Two	One	15.6	172497	
-4343-D-S443	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343D	BSD4343	A063	Normal	One	One	136.9	97643	
-4346-B-S449	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4346B	BSD4346	A084	Normal	One	One	15.6	1	
-4346-C-S456	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4346C	BSD4346	A085	Normal	One	One	15.6	91659	
-4352-C-S404	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4352C	BSD4352	A030	Normal	One	One	15.6	76490	
-4352-O-S423	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4352G	BSD4352	A031	Normal	One	One	94.5	119594	
-4362-B-S409	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362B	BSD4362	A080	Normal	One	One	64.5	76057	
-4362-D-S400	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362D	BSD4362	A081	Normal	One	One	173.9	470444	
-4362-E-S462	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362E	BSD4362	A078	Normal	One	One	31.4	73720	
-4362-F-S428	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362F	BSD4362	A082	Normal	Two	One	39	90351	
-4382-C-S419	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362C	BSD4362	A079	Normal	One	One	55	85977	
-5304-B-S446	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5304B	BSD5304	A070	Normal	One	One	16.9	103260	
-5502-A-S454	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502A	BSD5502	A088	Normal	One	One	15.6	61937	
-5502-B-S447	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502B	BSD5502	A089	Normal	One	One	43.9	95820	
-5502-C-S438	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502C	BSD5502	A090	Normal	One	One	15.6	69011	
+806rcbc423.S424	April_2017	N	Duodenum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc426.S427	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
+806rcbc427.S428	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
+806rcbc429.S430	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2		
+806rcbc431.S432	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6		
+806rcbc432.S433	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6		
+806rcbc444.S445	April_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc445.S446	April_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc446.S447	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc447.S448	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc449.S450	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc450.S451	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc453.S454	April_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+806rcbc454.S455	April_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8		
+GnotobioticExp.FP.301.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	71972	
+GnotobioticExp.FP.302.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80959	
+GnotobioticExp.FP.303.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	84694	
+GnotobioticExp.FP.304.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	118585	
+GnotobioticExp.FP.305.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	123367	
+GnotobioticExp.FP.306.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	65314	
+GnotobioticExp.FP.307.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	89941	
+GnotobioticExp.FP.308.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	87441	
+GnotobioticExp.FP.309.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	90739	
+GnotobioticExp.FP.310.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	115125	
+GnotobioticExp.FP.311.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	137785	
+GnotobioticExp.FP.312.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	120032	
+GnotobioticExp.FP.313.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80395	
+GnotobioticExp.FP.314.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	60963	
+GnotobioticExp.FP.315.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	82311	
+GnotobioticExp.FP.316.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	54948	
+GnotobioticExp.FP.317.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	113654	
+GnotobioticExp.FP.318.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	53376	
+GnotobioticExp.FP.319.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	77282	
+GnotobioticExp.FP.320.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	97369	
+GnotobioticExp.FP.321.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	80040	
+GnotobioticExp.FP.322.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	110571	
+GnotobioticExp.FP.323.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	174832	
+GnotobioticExp.FP.324.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	39587	
+GnotobioticExp.FP.361.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	79145	
+GnotobioticExp.FP.362.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	102316	
+GnotobioticExp.FP.363.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	91272	
+GnotobioticExp.FP.364.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	140053	
+GnotobioticExp.FP.365.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	63419	
+GnotobioticExp.FP.366.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	71621	
+GnotobioticExp.FP.367.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	100466	
+GnotobioticExp.FP.368.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	110921	
+GnotobioticExp.FP.369.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	94737	
+GnotobioticExp.FP.370.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	120049	
+GnotobioticExp.FP.371.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	51837	
+GnotobioticExp.FP.372.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	37710	
+GnotobioticExp.FP.373.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	104528	
+GnotobioticExp.FP.374.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	110168	
+GnotobioticExp.FP.375.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	84598	
+GnotobioticExp.FP.376.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	108025	
+GnotobioticExp.DTT.302.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	100155	
+GnotobioticExp.DTT.303.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	121221	
+GnotobioticExp.DTT.304.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	108949	
+GnotobioticExp.DTT.305.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	66918	
+GnotobioticExp.DTT.306.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	83158	
+GnotobioticExp.DTT.307.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U51	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	73897	
+GnotobioticExp.DTT.308.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	81741	
+GnotobioticExp.DTT.309.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	99396	
+GnotobioticExp.DTT.310.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	72342	
+GnotobioticExp.DTT.311.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	25878	
+GnotobioticExp.DTT.312.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	32022	
+GnotobioticExp.DTT.313.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U52	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	87398	
+GnotobioticExp.DTT.314.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	116371	
+GnotobioticExp.DTT.315.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	119336	
+GnotobioticExp.DTT.316.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	53984	
+GnotobioticExp.DTT.317.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	80401	
+GnotobioticExp.DTT.318.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	28623	
+GnotobioticExp.DTT.319.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U53	Female	BSD5304B	BSD5304	A070	Normal	One	One	16.9	39788	
+GnotobioticExp.DTT.320.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	85769	
+GnotobioticExp.DTT.321.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	102348	
+GnotobioticExp.DTT.322.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	71389	
+GnotobioticExp.DTT.323.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	29215	
+GnotobioticExp.DTT.324.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	14233	
+GnotobioticExp.DTT.325.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U54	Male	BSD5304D	BSD5304	A072	Normal	Two	Two	116.8	47872	
+GnotobioticExp.DTT.362.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	109299	
+GnotobioticExp.DTT.363.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	87297	
+GnotobioticExp.DTT.364.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	64755	
+GnotobioticExp.DTT.365.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	3925	
+GnotobioticExp.DTT.366.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	4314	
+GnotobioticExp.DTT.367.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U61	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	59352	
+GnotobioticExp.DTT.368.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	83985	
+GnotobioticExp.DTT.369.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	97078	
+GnotobioticExp.DTT.370.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	25171	
+GnotobioticExp.DTT.371.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	18572	
+GnotobioticExp.DTT.372.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	11784	
+GnotobioticExp.DTT.373.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U62	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	54891	
+GnotobioticExp.DTT.374.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	112468	
+GnotobioticExp.DTT.375.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	105279	
+GnotobioticExp.DTT.376.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	25411	
+GnotobioticExp.FP.377.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	64287	
+GnotobioticExp.FP.378.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	24677	
+GnotobioticExp.FP.379.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	104899	
+GnotobioticExp.FP.380.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	114816	
+GnotobioticExp.FP.381.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	94227	
+GnotobioticExp.FP.382.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	77682	
+GnotobioticExp.FP.383.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	56911	
+GnotobioticExp.FP.384.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	84483	
+GnotobioticExp.FP.385.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	119764	
+GnotobioticExp.FP.386.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	119685	
+GnotobioticExp.FP.387.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	106523	
+GnotobioticExp.FP.388.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	71771	
+GnotobioticExp.FP.389.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	38520	
+GnotobioticExp.FP.390.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	17884	
+GnotobioticExp.FP.391.fastq	Dec_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	96992	
+GnotobioticExp.FP.392.fastq	Dec_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	125201	
+GnotobioticExp.FP.393.fastq	Dec_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	105537	
+GnotobioticExp.FP.394.fastq	Dec_2017	N	Ileum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	53078	
+GnotobioticExp.FP.395.fastq	Dec_2017	N	Jejunum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	43980	
+GnotobioticExp.FP.396.fastq	Dec_2017	N	Duodenum	SI	Luminal	Luminal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	64083	
+GnotobioticExp.DTT.377.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	13988	
+GnotobioticExp.DTT.378.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	12656	
+GnotobioticExp.DTT.379.fastq	Dec_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U63	Male	BSD4362E	BSD4362	A078	Normal	One	One	31.4	69240	
+GnotobioticExp.DTT.380.fastq	Dec_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	77844	
+GnotobioticExp.DTT.381.fastq	Dec_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	98176	
+GnotobioticExp.DTT.382.fastq	Dec_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	70352	
+GnotobioticExp.DTT.383.fastq	Dec_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	61966	
+GnotobioticExp.DTT.384.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U64	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39	64366	
+BSD.4241B.fastq	Dec_2017	Y	Feces	Colon	Luminal	Luminal_Colon	NA	NA	BSD4241B	BSD4241	A066	Normal	One	Two	15.6	122537	
+BSD.4346B.fastq	Dec_2017	Y	Feces	Colon	Luminal	Luminal_Colon	NA	NA	BSD4346B	BSD4346	A084	Normal	One	One	15.6	78350	
+GnotobioticExp.DTT.179.fastq	Dec_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6		
+GnotoExpt.DTT529.S140	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT530.S141	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT531.S142	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT532.S143	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT533.S144	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT534.S145	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT535.S146	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT536.S147	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT537.S148	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT538.S149	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT539.S150	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT540.S151	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT541.S152	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT542.S153	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT543.S154	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT544.S155	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT545.S156	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT546.S157	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT547.S158	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT548.S159	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT549.S160	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT550.S161	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT551.S162	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT552.S163	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.DTT553.S164	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT554.S165	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT555.S167	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT556.S168	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT557.S169	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT558.S170	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT559.S171	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT560.S172	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT561.S173	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT562.S174	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT563.S175	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT564.S176	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT565.S177	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT566.S178	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT567.S179	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT568.S180	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT569.S181	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT570.S182	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.DTT595.S330	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT596.S331	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT597.S332	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT598.S333	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT599.S334	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT600.S335	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT601.S336	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT602.S337	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT603.S338	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT604.S339	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT605.S340	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT606.S341	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT607.S342	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT608.S343	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT609.S344	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT610.S345	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT611.S346	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT612.S347	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT613.S348	Dec_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT614.S349	Dec_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT615.S350	Dec_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT616.S351	Dec_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT617.S352	Dec_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.DTT618.S353	Dec_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP529.S44	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP530.S45	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP531.S46	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP532.S47	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP533.S48	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP534.S49	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U89	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP535.S50	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP536.S51	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP537.S52	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP538.S53	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP539.S54	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP540.S55	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U90	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP541.S56	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP542.S57	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP543.S58	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP544.S59	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP545.S60	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP546.S61	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U91	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP547.S62	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP548.S63	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP549.S64	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP550.S65	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP551.S66	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP552.S67	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U92	Male	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6		
+GnotoExpt.FP553.S68	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP554.S69	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP555.S71	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP556.S72	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP557.S73	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP558.S74	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U93	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP559.S75	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP560.S76	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP561.S77	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP562.S78	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP563.S79	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP564.S80	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U94	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP565.S81	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP566.S82	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP567.S83	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP568.S84	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP569.S85	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP570.S86	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U95	Male	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6		
+GnotoExpt.FP595.S291	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP596.S292	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP597.S293	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP598.S294	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP599.S295	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP600.S296	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U100	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP601.S297	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP602.S298	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP603.S299	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP604.S300	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP605.S301	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP606.S302	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U101	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP607.S303	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP608.S304	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP609.S305	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP610.S306	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP611.S307	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP612.S308	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U102	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP613.S309	Dec_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP614.S310	Dec_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP615.S311	Dec_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP616.S312	Dec_2018	N	Ileum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP617.S313	Dec_2018	N	Jejunum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+GnotoExpt.FP618.S314	Dec_2018	N	Duodenum	SI	Luminal	Luminal_SI	U103	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+806rcbc488.S393	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	144566	4257C
+806rcbc489.S394	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	149652	N
+806rcbc490.S395	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160419	N
+806rcbc491.S396	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	327056	N
+806rcbc492.S397	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	129353	N
+806rcbc493.S398	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	156224	N
+806rcbc494.S399	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139278	4257C
+806rcbc495.S400	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	144606	N
+806rcbc496.S401	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	132591	N
+806rcbc497.S402	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	126426	N
+806rcbc498.S403	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	97262	N
+806rcbc499.S404	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	125562	N
+806rcbc519.S424	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	121450	4257C
+806rcbc520.S425	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	131503	N
+806rcbc521.S426	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139594	N
+806rcbc522.S427	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	78843	N
+806rcbc523.S428	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	140256	N
+806rcbc524.S429	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	71882	N
+806rcbc525.S430	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	150308	4257C
+806rcbc526.S431	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160228	N
+806rcbc527.S432	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	275393	N
+806rcbc528.S433	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	165589	N
+806rcbc529.S434	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	73407	N
+806rcbc530.S435	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	103974	N
+806rcbc531.S436	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	160467	4257C
+806rcbc532.S437	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	150984	N
+806rcbc533.S438	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	116754	N
+806rcbc534.S439	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(41666, 69878)	(N, GnotobioticExpt-DTT64)
+806rcbc535.S440	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(7416, 108996)	(N, GnotobioticExpt-DTT65)
+806rcbc536.S441	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	(19680, 18901)	(N, GnotobioticExpt-DTT66)
+806rcbc550.S455	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	149818	4257A (fresh)
+806rcbc551.S456	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	156924	N
+806rcbc552.S457	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	210135	N
+806rcbc553.S458	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	(44284, 20131)	(N, GnotobioticExpt-DTT82)
+806rcbc554.S459	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	142779	N
+806rcbc555.S460	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	(44470, 40563)	(N, GnotobioticExpt-DTT84)
+806rcbc556.S461	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	142429	4257A (fresh)
+806rcbc557.S462	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	134012	N
+806rcbc558.S463	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	127546	N
+806rcbc559.S464	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	113171	N
+806rcbc560.S465	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	99569	N
+806rcbc561.S466	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	123864	N
+806rcbc562.S467	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	179626	4257A (fresh)
+806rcbc563.S468	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	222715	N
+806rcbc564.S469	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	205340	N
+806rcbc565.S470	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	214920	N
+806rcbc566.S471	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	178731	N
+806rcbc567.S472	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	152493	N
+806rcbc362.S497	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(47078, 164324)	(BSD4031D, GnotobioticExpt-DTT121)
+806rcbc363.S498	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	82502	N
+806rcbc364.S499	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	70122	N
+806rcbc365.S500	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(22063, 55352)	(N, GnotobioticExpt-DTT124)
+806rcbc368.S501	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(22836, 32020)	(N, GnotobioticExpt-DTT125)
+806rcbc369.S502	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(4997, 15492, 11990)	(N, GnotobioticExpt-DTT126, GnotobioticExpt-DTT126)
+806rcbc370.S503	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	74241	BSD4031D
+806rcbc371.S504	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	125504	N
+806rcbc372.S505	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	130531	N
+806rcbc373.S506	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	86578	N
+806rcbc374.S508	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(15055, 39728)	(N, GnotobioticExpt-DTT131)
+806rcbc375.S509	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(7927, 34233, 23856)	(BSD4031D, GnotobioticExpt-DTT132, GnotobioticExpt-DTT132)
+806rcbc376.S510	Jan_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	81820	N
+806rcbc377.S511	Jan_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	80672	N
+806rcbc378.S512	Jan_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	187420	N
+806rcbc379.S513	Jan_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	73070	N
+806rcbc380.S514	Jan_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(25110, 101269)	(N, GnotobioticExpt-DTT137)
+806rcbc381.S515	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(31677, 71861)	(N, GnotobioticExpt-DTT138)
+806rcbc168.S265	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	167653	4257C
+806rcbc169.S266	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	178666	N
+806rcbc170.S267	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	173182	N
+806rcbc171.S268	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	454277	N
+806rcbc172.S269	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	174417	N
+806rcbc173.S270	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U4	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	147701	N
+806rcbc174.S271	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	140417	4257C
+806rcbc175.S272	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	162697	N
+806rcbc176.S273	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	148763	N
+806rcbc177.S274	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	212368	N
+806rcbc178.S275	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	238642	N
+806rcbc179.S276	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U5	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	279613	N
+806rcbc390.S295	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	121392	4257C
+806rcbc391.S296	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	143798	N
+806rcbc392.S297	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	131724	N
+806rcbc393.S298	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	134063	N
+806rcbc394.S299	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	200708	N
+806rcbc395.S300	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U9	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	180140	N
+806rcbc396.S301	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	143014	4257C
+806rcbc397.S302	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	155184	N
+806rcbc398.S303	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	134269	N
+806rcbc399.S304	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	109985	N
+806rcbc400.S305	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	164791	N
+806rcbc401.S306	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U10	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	174231	N
+806rcbc402.S307	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	114963	4257C
+806rcbc403.S308	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	139739	N
+806rcbc404.S309	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	145075	N
+806rcbc405.S310	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	136464	N
+806rcbc406.S311	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	189730	N
+806rcbc407.S312	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U11	Male	BSD4257C	BSD4257	A017	Normal	One	One	40.2	224913	N
+806rcbc421.S326	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	175950	4257A (fresh)
+806rcbc422.S327	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	215183	N
+806rcbc423.S328	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	164910	N
+806rcbc424.S329	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	143879	N
+806rcbc425.S330	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	213380	N
+806rcbc426.S331	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U14	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	191033	N
+806rcbc427.S332	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	170973	4257A (fresh)
+806rcbc428.S333	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	155786	N
+806rcbc429.S334	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	153667	N
+806rcbc430.S335	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	203319	N
+806rcbc431.S336	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	202322	N
+806rcbc432.S337	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U15	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	173130	N
+806rcbc433.S338	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	182663	4257A (fresh)
+806rcbc434.S339	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	199818	N
+806rcbc435.S340	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	209553	N
+806rcbc436.S341	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	148057	N
+806rcbc437.S342	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	153653	N
+806rcbc438.S343	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U16	Female	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	168011	N
+806rcbc464.S369	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	129754	BSD4031D
+806rcbc465.S370	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	141940	N
+806rcbc466.S371	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	138361	N
+806rcbc467.S372	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	69863	N
+806rcbc468.S373	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	147265	N
+806rcbc469.S374	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U21	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	146672	N
+806rcbc470.S375	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	151630	BSD4031D
+806rcbc471.S376	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	197589	N
+806rcbc472.S377	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	133963	N
+806rcbc473.S378	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	150219	N
+806rcbc474.S379	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	289208	N
+806rcbc475.S380	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U22	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	(0, 48613, 45128)	(N, GnotobioticExpt-FP132, GnotobioticExpt-FP132)
+806rcbc476.S381	Jan_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	210793	BSD4031D
+806rcbc477.S382	Jan_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	209840	N
+806rcbc478.S383	Jan_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	134462	N
+806rcbc479.S384	Jan_2017	N	Ileum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	140742	N
+806rcbc480.S385	Jan_2017	N	Jejunum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	209617	N
+806rcbc481.S386	Jan_2017	N	Duodenum	SI	Luminal	Luminal_SI	U23	Female	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	117708	N
+806rcbc160.S257	Jan_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4		
+2F7.S163	June_2016	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	166368	GFpedDTT007
+2F8.S164	June_2016	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	163478	GFpedDTT008
+2F9.S165	June_2016	N	Cecum	Colon	Mucosal	Mucosal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	106799	GFpedDTT009
+2F10.S166	June_2016	N	Ileum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	62540	GFpedDTT010
+2F11.S167	June_2016	N	Jejunum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	146112	GFpedDTT011
+2F12.S168	June_2016	N	Duodenum	SI	Mucosal	Mucosal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	(26818, 119219)	GFpedDTT012
+2E7.S151	June_2016	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	146348	GFpedFP007
+2E8.S152	June_2016	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	174584	GFpedFP008
+2E9.S153	June_2016	N	Cecum	Colon	Luminal	Luminal_Colon	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	143229	GFpedFP009
+2E10.S154	June_2016	N	Ileum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	121384	GFpedFP010
+2E11.S155	June_2016	N	Jejunum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	151040	GFpedFP011
+2E12.S156	June_2016	N	Duodenum	SI	Luminal	Luminal_SI	U2	Male	BSD4031A	BSD4031	A043	Normal	One	One	51.4	77757	GFpedFP012
+GnotoExpt.DTT385.S531	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT386.S532	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT387.S533	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT388.S534	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT389.S535	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT390.S536	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U65	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT391.S537	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT392.S538	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT393.S539	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT394.S540	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT395.S541	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT396.S542	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U66	Female	BSD4362F	BSD4362	A082	Normal	Two	One	39		
+GnotoExpt.DTT451.S599	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT452.S600	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT453.S601	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT454.S602	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT455.S603	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT456.S604	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT457.S605	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT458.S606	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT459.S607	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT460.S608	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT461.S609	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT462.S610	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT463.S611	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT464.S612	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT465.S613	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT466.S614	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT467.S615	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT468.S616	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.DTT469.S617	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT470.S618	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT471.S619	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT472.S620	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT473.S621	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT474.S622	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT475.S623	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT476.S624	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT477.S625	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT478.S626	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT479.S627	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT480.S628	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT481.S629	May_2018	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT482.S630	May_2018	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT483.S631	May_2018	N	Cecum	Colon	Mucosal	Mucosal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT484.S632	May_2018	N	Ileum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT485.S633	May_2018	N	Jejunum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.DTT486.S634	May_2018	N	Duodenum	SI	Mucosal	Mucosal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP451.S672	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP452.S673	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP453.S674	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP454.S675	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP455.S676	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP456.S677	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U76	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP457.S678	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP458.S679	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP459.S680	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP460.S681	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP461.S682	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP462.S683	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U77	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP463.S684	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP464.S685	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP465.S686	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP466.S687	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP467.S688	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP468.S689	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U78	Male	BSD2205C	BSD2205	A053	Normal	One	One	25.9		
+GnotoExpt.FP469.S690	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP470.S691	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP471.S692	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP472.S693	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP473.S694	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP474.S695	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U79	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP475.S696	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP477.S698	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP478.S699	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP479.S700	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP480.S701	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U80	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP481.S702	May_2018	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP482.S703	May_2018	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP483.S704	May_2018	N	Cecum	Colon	Luminal	Luminal_Colon	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP484.S706	May_2018	N	Ileum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP485.S707	May_2018	N	Jejunum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotoExpt.FP486.S708	May_2018	N	Duodenum	SI	Luminal	Luminal_SI	U81	Male	BSD2205D	BSD2205	A054	Normal	One	One	55		
+GnotobioticExp.FP.175.S37	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	132476	
+GnotobioticExp.FP.176.S38	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	207758	
+GnotobioticExp.FP.177.S39	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	112819	
+GnotobioticExp.FP.178.S40	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	68754	
+GnotobioticExp.FP.179.S41	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	64908	
+GnotobioticExp.FP.180.S43	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	30425	
+GnotobioticExp.FP.181.S44	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	88100	
+GnotobioticExp.FP.182.S45	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	196490	
+GnotobioticExp.FP.183.S46	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	97523	
+GnotobioticExp.FP.184.S47	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	100606	
+GnotobioticExp.FP.185.S48	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	101057	
+GnotobioticExp.FP.186.S49	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	50969	
+GnotobioticExp.FP.187.S50	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	311476	
+GnotobioticExp.FP.188.S51	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	142766	
+GnotobioticExp.FP.189.S52	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	128864	
+GnotobioticExp.FP.190.S53	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	26880	
+GnotobioticExp.FP.191.S54	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	32017	
+GnotobioticExp.FP.192.S55	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	14923	
+GnotobioticExp.FP.193.S57	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	127275	
+GnotobioticExp.FP.194.S58	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	94469	
+GnotobioticExp.FP.195.S59	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	114086	
+GnotobioticExp.FP.196.S60	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	32111	
+GnotobioticExp.FP.197.S61	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	105062	
+GnotobioticExp.FP.198.S62	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	41484	
+GnotobioticExp.FP.199.S63	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	161067	
+GnotobioticExp.FP.200.S64	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	164923	
+GnotobioticExp.FP.201.S65	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	48595	
+GnotobioticExp.FP.202.S66	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	44069	
+GnotobioticExp.FP.203.S67	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	82237	
+GnotobioticExp.FP.204.S68	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	35006	
+GnotobioticExp.FP.205.S69	Oct_2017	N	Distal_Colon	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	83089	
+GnotobioticExp.FP.206.S70	Oct_2017	N	Proximal_Colon	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	78273	
+GnotobioticExp.FP.207.S71	Oct_2017	N	Cecum	Colon	Luminal	Luminal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	63679	
+GnotobioticExp.FP.208.S72	Oct_2017	N	Ileum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	54648	
+GnotobioticExp.FP.209.S73	Oct_2017	N	Jejunum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	182252	
+GnotobioticExp.FP.210.S74	Oct_2017	N	Duodenum	SI	Luminal	Luminal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	68277	
+GnotobioticExp.DTT.175.S185	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	326085	
+GnotobioticExp.DTT.176.S186	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	70304	
+GnotobioticExp.DTT.177.S187	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	381306	
+GnotobioticExp.DTT.178.S188	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	69385	
+GnotobioticExp.DTT.179.S189	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	59179	
+GnotobioticExp.DTT.180.S190	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U30	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	49348	
+GnotobioticExp.DTT.181.S191	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	200934	
+GnotobioticExp.DTT.182.S192	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	103742	
+GnotobioticExp.DTT.183.S193	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	110969	
+GnotobioticExp.DTT.184.S194	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	69581	
+GnotobioticExp.DTT.185.S195	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	63157	
+GnotobioticExp.DTT.186.S196	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U31	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	48198	
+GnotobioticExp.DTT.187.S197	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	71268	
+GnotobioticExp.DTT.188.S198	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	90458	
+GnotobioticExp.DTT.189.S199	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	84869	
+GnotobioticExp.DTT.190.S200	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	89200	
+GnotobioticExp.DTT.191.S201	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	41145	
+GnotobioticExp.DTT.192.S202	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U32	Female	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	26089	
+GnotobioticExp.DTT.193.S203	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	90968	
+GnotobioticExp.DTT.194.S204	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	99894	
+GnotobioticExp.DTT.195.S205	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	101948	
+GnotobioticExp.DTT.196.S206	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	69877	
+GnotobioticExp.DTT.197.S207	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	54284	
+GnotobioticExp.DTT.198.S208	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U33	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	38641	
+GnotobioticExp.DTT.199.S209	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	81841	
+GnotobioticExp.DTT.200.S210	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	91680	
+GnotobioticExp.DTT.201.S211	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	103570	
+GnotobioticExp.DTT.202.S212	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	72627	
+GnotobioticExp.DTT.203.S213	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	76279	
+GnotobioticExp.DTT.204.S214	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U34	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	55146	
+GnotobioticExp.DTT.205.S215	Oct_2017	N	Distal_Colon	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	93098	
+GnotobioticExp.DTT.206.S216	Oct_2017	N	Proximal_Colon	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	109761	
+GnotobioticExp.DTT.207.S217	Oct_2017	N	Cecum	Colon	Mucosal	Mucosal_Colon	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	92357	
+GnotobioticExp.DTT.208.S218	Oct_2017	N	Ileum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	70419	
+GnotobioticExp.DTT.209.S219	Oct_2017	N	Jejunum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	37407	
+GnotobioticExp.DTT.210.S220	Oct_2017	N	Duodenum	SI	Mucosal	Mucosal_SI	U35	Female	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	24069	
+2205.C.S397	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2205C	BSD2205	A053	Normal	One	One	25.9	123505	
+2205.D.S459	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2205D	BSD2205	A054	Normal	One	One	55	96569	
+2780.D.S421	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD2780D	BSD2780	A012	Normal	One	One	15.6	96786	
+3178.A.S442	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178A	BSD3178	A010	Normal	One	One	55.8	82114	
+3178.C.S457	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178C	BSD3178	A009	Normal	Two	Two	15.6	83074	
+3178.E.S395	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3178E	BSD3178	A008	Normal	One	Two	15.6	69361	
+3205.B.S439	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3205B	BSD3205	A051	Normal	One	Two	286.1	98888	
+3205.D.S455	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3205D	BSD3205	A050	Normal	One	Two	15.6	84503	
+3448.A.S394	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448A	BSD3448	A046	Normal	Two	Two	15.6	78602	
+3448.B.S403	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448B	BSD3448	A047	Normal	Two	Two	15.6	103364	
+3448.D.S422	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3448D	BSD3448	A045	Normal	Two	Two	15.6	114963	
+3486.A.S427	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3486A	BSD3486	A025	Normal	One	One	15.6	76608	
+3486.B.S436	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3486B	BSD3486	A027	Normal	One	One	18.3	95275	
+3590.C.S474	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3590C	BSD3590	A038	Normal	One	One	65.5	86279	
+3590.D.S475	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3590D	BSD3590	A039	Normal	One	Two	15.6	67824	
+3724.A.S451	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724A	BSD3724	A023	Normal	One	One	36.5	100347	
+3724.B.S458	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724B	BSD3724	A021	Normal	One	One	15.6	37762	
+3724.C.S387	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3724C	BSD3724	A022	Normal	One	One	49.6	77147	
+3803.A.S467	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3803A	BSD3803	A058	Normal	One	One	15.6	85545	
+3803.B.S466	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3803B	BSD3803	A057	Normal	One	Two	15.6	54986	
+3888.A.S418	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888A	BSD3888	A035	Normal	One	One	25.4	92738	
+3888.B.S390	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888B	BSD3888	A034	Normal	One	One	96.6	85023	
+3888.C.S399	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3888C	BSD3888	A033	Normal	One	One	15.6	88989	
+3905.A.S463	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905A	BSD3905	A005	Normal	One	One	15.6	90478	
+3905.B.S392	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905B	BSD3905	A003	Normal	One	Two	15.6	69088	
+3905.C.S401	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD3905C	BSD3905	A004	Normal	One	One	15.6	3	
+4031.A.S460	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4031A	BSD4031	A043	Normal	One	One	51.4	192907	
+4031.D.S407	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4031D	BSD4031	A041	Normal	Two	One	245.8	90534	
+4241.C.S426	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241C	BSD4241	A067	Normal	One	Two	15.6	67229	
+4241.D.S452	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241D	BSD4241	A068	Normal	One	One	15.6	83185	
+4241.E.S417	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4241E	BSD4241	A065	Normal	One	One	15.6	84861	
+4257.A.S405	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257A	BSD4257	A018	Normal	Two	Two	15.6	106558	
+4257.B.S415	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257B	BSD4257	A019	Normal	Two	Two	343.9	85336	
+4257.C.S424	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4257C	BSD4257	A017	Normal	One	One	40.2	176128	
+4287.A.S468	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4287A	BSD4287	A075	Normal	One	Two	15.6	94882	
+4287.D.S471	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4287D	BSD4287	A076	Normal	One	One	15.6	106867	
+4343.A2.S441	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343A	BSD4343	A062	Normal	One	One	15.6	99615	
+4343.B.S425	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343B	BSD4343	A061	Normal	Two	One	15.6	172497	
+4343.D.S443	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4343D	BSD4343	A063	Normal	One	One	136.9	97643	
+4346.B.S449	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4346B	BSD4346	A084	Normal	One	One	15.6	1	
+4346.C.S456	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4346C	BSD4346	A085	Normal	One	One	15.6	91659	
+4352.C.S404	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4352C	BSD4352	A030	Normal	One	One	15.6	76490	
+4352.O.S423	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4352G	BSD4352	A031	Normal	One	One	94.5	119594	
+4362.B.S409	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362B	BSD4362	A080	Normal	One	One	64.5	76057	
+4362.D.S400	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362D	BSD4362	A081	Normal	One	One	173.9	470444	
+4362.E.S462	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362E	BSD4362	A078	Normal	One	One	31.4	73720	
+4362.F.S428	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362F	BSD4362	A082	Normal	Two	One	39	90351	
+4382.C.S419	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD4362C	BSD4362	A079	Normal	One	One	55	85977	
+5304.B.S446	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5304B	BSD5304	A070	Normal	One	One	16.9	103260	
+5502.A.S454	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502A	BSD5502	A088	Normal	One	One	15.6	61937	
+5502.B.S447	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502B	BSD5502	A089	Normal	One	One	43.9	95820	
+5502.C.S438	Oct_2017	Y	Feces	NA	Luminal	NA	NA	NA	BSD5502C	BSD5502	A090	Normal	One	One	15.6	69011	

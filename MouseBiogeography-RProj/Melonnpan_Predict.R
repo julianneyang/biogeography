@@ -47,13 +47,73 @@ microbiome_train <- readRDS("../melonnpan_data/microbiome_training_data.RDS")
 ?melonnpan.predict()
 
 ### Shotgun Data ---
-shotgun_result <- predict_metabolites(
-  df_input = here("Shotgun/relab_normalized/merged_humann_genefamilies_relab_normalized_unstratified_ko.tsv"),
-  weights_path = here("Shotgun/melonnpan/MelonnPan_Trained_Weights.txt"),
-  output_dir = here("Shotgun/melonnpan/IL10_TL1A_model/"),
-  train_metag = microbiome_train
+# Define a reusable function for processing each dataset
+process_dataset <- function(dataset_name, ko, input_metadata, output_dir) {
+  # Filter metadata for the specified dataset
+  metadata <- input_metadata %>%
+    filter(Dataset == dataset_name)
+  
+  # Select samples that exist in both metadata and KO data
+  samples <- metadata %>%
+    filter(humann_sampleid %in% names(ko)) %>%
+    pull(humann_sampleid)
+  
+  # Subset the KO data for the selected samples
+  dataset_ASV <- ko[, samples]
+  
+  # Match metadata with KO data
+  metadata <- metadata[match(colnames(dataset_ASV), metadata$humann_sampleid),]
+  
+  # Predict metabolites using the MelonnPan model
+  predict_metabolites(
+    df_input = dataset_ASV,
+    weights_path = here("melonnpan_model/MelonnPan_Trained_Weights.txt"),
+    output_dir = here(output_dir),
+    train_metag = microbiome_train
+  )
+}
+
+# Load KO data and metadata
+ko <- read.delim(here("Shotgun/relab_normalized/ko_final.tsv"), row.names=1) %>%
+  select(-KO)  # Drop the KO column
+
+input_metadata <- readr::read_delim(here("Shotgun/starting_files/BioGeo_Shotgun_Metadata.tsv"), delim = "\t")
+
+# Convert specific columns in metadata to factors
+df_input_metadata <- input_metadata %>%
+  mutate(across(c(MouseID, Sex, Type), factor))
+
+# Process the UCLA_O_SPF dataset
+process_dataset(
+  dataset_name = "UCLA_O_SPF",
+  ko = ko,
+  input_metadata = df_input_metadata,
+  output_dir = "Shotgun/melonnpan/UCLA_O_SPF/"
 )
-shotgun_result$RTSI
+
+# Process the CS_SPF dataset
+process_dataset(
+  dataset_name = "CS_SPF",
+  ko = ko,
+  input_metadata = df_input_metadata,
+  output_dir = "Shotgun/melonnpan/CS_SPF/"
+)
+
+# Process the SPF_Gavage dataset
+process_dataset(
+  dataset_name = "SPF_Gavage",
+  ko = ko,
+  input_metadata = df_input_metadata,
+  output_dir = "Shotgun/melonnpan/SPF_Gavage/"
+)
+
+# Process the HUM_SD_Gavage dataset
+process_dataset(
+  dataset_name = "HUM_Gavage",
+  ko = ko,
+  input_metadata = df_input_metadata,
+  output_dir = "Shotgun/melonnpan/HUM_SD_Gavage/"
+)
 
 ### UCLA O. SPF ---
 microbiome <- read.delim(here("Regional-Mouse-Biogeography-Analysis/picrust_output/UCLA_O_SPF_KO_counts.tsv"), row.names=1)
@@ -82,12 +142,12 @@ samples <- df_input_metadata %>%
 
 df_input_data <- microbiome[,samples]
 
-#df_input_data <- filter_features(df_input_data)
+#df_input_data <- filter_features(df_input_data) #2102
 
 # Predict Metabolite Compostion - 
 ucla_o_spf_result <- predict_metabolites(
   df_input = df_input_data,
-  weights_path = here("Shotgun/melonnpan/MelonnPan_Trained_Weights.txt"),
+  weights_path = here("melonnpan_model/MelonnPan_Trained_Weights.txt"),
   output_dir = here("Regional-Mouse-Biogeography-Analysis/melonnpan/"),
   train_metag = microbiome_train
 )
@@ -118,12 +178,12 @@ samples <- df_input_metadata %>%
 
 df_input_data <- ko[,samples]
 
-#df_input_data <- filter_features(df_input_data)
+#df_input_data <- filter_features(df_input_data) #2326
 
 # Predict Metabolite Compostion after feature filtering - 
 cs_spf_result <- predict_metabolites(
   df_input = df_input_data,
-  weights_path = here("Shotgun/melonnpan/MelonnPan_Trained_Weights.txt"),
+  weights_path = here("melonnpan_model/MelonnPan_Trained_Weights.txt"),
   output_dir = here("CS_SPF/melonnpan/"),
   train_metag = microbiome_train
 )
@@ -154,7 +214,7 @@ samples <- df_input_metadata %>%
 
 df_input_data <- ko[,samples]
 
-#df_input_data <- filter_features(df_input_data)
+#df_input_data <- filter_features(df_input_data) #2138
 
 # Predict Metabolite Compostion after feature filtering - 
 hum_sd_result <- predict_metabolites(
@@ -188,9 +248,9 @@ samples <- df_input_metadata %>%
   filter(Type=="Luminal") %>%
   pull(SampleID)
 
-df_input_data <- ko[,samples]
+df_input_data <- ko[,samples] 
 
-#df_input_data <- filter_features(df_input_data)
+#df_input_data <- filter_features(df_input_data)#2122 features 
 
 # Predict Metabolite Compostion after feature filtering - 
 spf_gavage_result <- predict_metabolites(
@@ -230,7 +290,7 @@ samples <- df_input_metadata %>%
 
 df_input_data <- ko[,samples]
 
-#df_input_data <- filter_features(df_input_data)
+#df_input_data <- filter_features(df_input_data) #3620
 
 # Predict Metabolite Compostion after feature filtering - 
 hum_md_result <- predict_metabolites(

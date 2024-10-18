@@ -22,7 +22,7 @@ here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_GBM_Coef_Plots.R")
 
 ### Wrangle GBM data for target features ---
 
-process_results_for_upset_plot <- function(file_paths, cohort_prefixes) {
+process_results_for_upset_plot <- function(file_paths, cohort_prefixes, filter_by) {
   data_all <- NULL
   
   for (i in seq_along(file_paths)) {
@@ -33,7 +33,7 @@ process_results_for_upset_plot <- function(file_paths, cohort_prefixes) {
     results <- read.table(here(file_path), header = TRUE)
     
     # Filter the results for the specified feature
-    data <- filter(results, metadata == "Site" & qval<0.05)
+    data <- filter(results, metadata == {{filter_by}} & qval<0.05)
     
     # Add a cohort variable
     cohort <- paste0(cohort_prefix)

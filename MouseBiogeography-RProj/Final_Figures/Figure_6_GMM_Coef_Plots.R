@@ -40,7 +40,8 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
 
 
 all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
-                                           cohort_prefixes = lum_cohort_prefixes)
+                                           cohort_prefixes = lum_cohort_prefixes,
+                                           filter_by = "Site")
 
 module_key <- read.csv(here("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv"))
 anno <- module_key %>% select(c("feature", "annotation"))
@@ -87,6 +88,7 @@ df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 gmm_of_interest <- df_filtered$feature
 names(gmm_of_interest) <-df_filtered$annotation
+write_rds(gmm_of_interest, "Highlighted_GMM_Fig_6.RDS")
 
 ### Coef Plots ---
 

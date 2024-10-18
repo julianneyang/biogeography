@@ -137,7 +137,8 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
                          "SPF_Gavage")
 
 all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
-                                           cohort_prefixes = lum_cohort_prefixes)
+                                           cohort_prefixes = lum_cohort_prefixes,
+                                           filter_by = "Site")
 
 module_key <- read.csv(here("GBM_Module_Key.csv"))
 anno <- module_key %>% select(c("feature", "annotation"))
@@ -158,9 +159,9 @@ id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
 df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 gbm_of_interest <- df_filtered$feature
-readr::write_rds(gbm_of_interest, "Highlighted_Luminal_GBM.RDS")
-names(gbm_of_interest) <-df_filtered$annotation
 
+names(gbm_of_interest) <-df_filtered$annotation
+readr::write_rds(gbm_of_interest, "Highlighted_Luminal_GBM.RDS")
 
 ### Make Upset Plot
 all_taxa<- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
