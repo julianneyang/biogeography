@@ -293,41 +293,7 @@ melonnpan.train(metab = metabolome,
                 output = here("Shotgun/melonnpan/"))
 
 ### Run Melonnpan using pretrained model ---
-predict_metabolites <- function(df_input, weights_path, output_dir, train_metag, threshold = 0.01/100, sample_fraction = 0.10) {
-  
-  # Check if df_input is a file path or a dataframe
-  if (is.character(df_input)) {
-    # If it's a file path, read the file
-    df <- read.delim(df_input, row.names = 1)
-  } else if (is.data.frame(df_input)) {
-    # If it's already a dataframe, use it directly
-    df <- df_input
-  } else {
-    stop("df_input must be either a file path or a dataframe")
-  }
-  # Read in the normalized data and transpose it
-  shotgun_dat <- as.data.frame(t(df))
-  shotgun_dat <- shotgun_dat[,-1]
-  
-  # Read in the trained weights
-  weights <- read.delim(weights_path)
-  
-  # Find overlapping IDs
-  overlap <- intersect(names(shotgun_dat), weights$ID)
-  
-  # Filter data based on abundance threshold and prevalence across samples
-  binary_abundance <- shotgun_dat > threshold
-  proportion_samples <- colMeans(binary_abundance)
-  filtered_data <- shotgun_dat[, proportion_samples >= sample_fraction]
-  
-  # Predict metabolites using MelonnPan
-  metabolites <- melonnpan::melonnpan.predict(metag = filtered_data,
-                                              output = output_dir,
-                                              weight.matrix = weights_path,
-                                              train.metag = train_metag)
-  
-  return(metabolites)
-}
+
 
 
 microbiome_train <- readRDS(here("../melonnpan_data/microbiome_training_data.RDS"))
