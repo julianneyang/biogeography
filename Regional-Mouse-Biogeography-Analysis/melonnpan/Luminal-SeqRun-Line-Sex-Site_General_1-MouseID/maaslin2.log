@@ -1,0 +1,736 @@
+2024-10-17 18:44:19.560126 INFO::Writing function arguments to log file
+2024-10-17 18:44:19.576791 DEBUG::Function arguments
+2024-10-17 18:44:19.583743 DEBUG::Output folder: /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID
+2024-10-17 18:44:19.584061 DEBUG::Min Abundance: 0.000000
+2024-10-17 18:44:19.584357 DEBUG::Min Prevalence: 0.150000
+2024-10-17 18:44:19.584584 DEBUG::Normalization: NONE
+2024-10-17 18:44:19.584843 DEBUG::Transform: LOG
+2024-10-17 18:44:19.585082 DEBUG::Analysis method: LM
+2024-10-17 18:44:19.585316 DEBUG::Max significance: 0.250000
+2024-10-17 18:44:19.585545 DEBUG::Random effects: MouseID_Line
+2024-10-17 18:44:19.585794 DEBUG::Fixed effects: Sequencing_Run,Line,Sex,Site_General
+2024-10-17 18:44:19.586028 DEBUG::Correction method: BH
+2024-10-17 18:44:19.586259 DEBUG::Standardize: TRUE
+2024-10-17 18:44:19.586484 DEBUG::Cores: 1
+2024-10-17 18:44:19.586712 INFO::Verifying options selected are valid
+2024-10-17 18:44:19.607706 INFO::Determining format of input files
+2024-10-17 18:44:19.608746 INFO::Input format is data samples as columns and metadata samples as rows
+2024-10-17 18:44:19.615099 DEBUG::Transformed data so samples are rows
+2024-10-17 18:44:19.616404 DEBUG::A total of 278 samples were found in both the data and metadata
+2024-10-17 18:44:19.616853 DEBUG::Reordering data/metadata to use same sample ordering
+2024-10-17 18:44:19.621762 INFO::Formula for random effects: expr ~ (1 | MouseID_Line)
+2024-10-17 18:44:19.622973 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Line + Sex + Site_General
+2024-10-17 18:44:19.624292 INFO::Factor detected for categorial metadata 'Sex'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-10-17 18:44:19.625128 INFO::Factor detected for categorial metadata 'Site_General'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-10-17 18:44:19.625895 INFO::Filter data based on min abundance and min prevalence
+2024-10-17 18:44:19.626652 INFO::Total samples in data: 278
+2024-10-17 18:44:19.627366 INFO::Min samples required with min abundance for a feature not to be filtered: 41.700000
+2024-10-17 18:44:19.635839 INFO::Total filtered features: 0
+2024-10-17 18:44:19.636835 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-10-17 18:44:19.648205 INFO::Total filtered features with variance filtering: 0
+2024-10-17 18:44:19.649126 INFO::Filtered feature names from variance filtering:
+2024-10-17 18:44:19.649768 INFO::Running selected normalization method: NONE
+2024-10-17 18:44:19.650394 INFO::Applying z-score to standardize continuous metadata
+2024-10-17 18:44:19.655822 INFO::Running selected transform method: LOG
+2024-10-17 18:44:19.677118 INFO::Running selected analysis method: LM
+2024-10-17 18:44:19.834511 INFO::Fitting model to feature number 1, X13.HODE....1
+2024-10-17 18:44:19.920609 INFO::Fitting model to feature number 2, X13.KODE
+2024-10-17 18:44:19.963834 INFO::Fitting model to feature number 3, X3.hydroxymyristic.acid
+2024-10-17 18:44:20.002559 INFO::Fitting model to feature number 4, X4.HDoHE
+2024-10-17 18:44:20.042264 INFO::Fitting model to feature number 5, CAR.14.1
+2024-10-17 18:44:20.082675 INFO::Fitting model to feature number 6, CAR.18.2.Isomer.B
+2024-10-17 18:44:20.123042 INFO::Fitting model to feature number 7, Cer.17.0.3O.24.0..2OH.
+2024-10-17 18:44:20.182478 INFO::Fitting model to feature number 8, Cer.17.1.2O.24.1
+2024-10-17 18:44:20.221611 INFO::Fitting model to feature number 9, Cer.18.1.2O.23.0..2OH.
+2024-10-17 18:44:20.260898 INFO::Fitting model to feature number 10, Cer.18.1.2O_22.0..2OH.
+2024-10-17 18:44:20.301432 INFO::Fitting model to feature number 11, Cer.19.1.2O.24.1
+2024-10-17 18:44:20.316555 WARNING::Fitting problem for feature 11 a warning was issued
+2024-10-17 18:44:20.357188 INFO::Fitting model to feature number 12, Cer.20.0.2O.26.0
+2024-10-17 18:44:20.398705 INFO::Fitting model to feature number 13, Cer.33.0.O3.Cer.17.0.O2.16.0.3OH.
+2024-10-17 18:44:20.440962 INFO::Fitting model to feature number 14, Cer.33.0.O3.Cer.17.0.O2.16.0.O
+2024-10-17 18:44:20.480844 INFO::Fitting model to feature number 15, Cer.34.0.O3.Cer.17.0.O2.17.0.3OH.
+2024-10-17 18:44:20.536836 INFO::Fitting model to feature number 16, Cer.34.1.O3.Cer.18.1.O2.16.0.O
+2024-10-17 18:44:20.57745 INFO::Fitting model to feature number 17, Cer.35.0.O3.Cer.18.0.O2.17.0.3OH.
+2024-10-17 18:44:20.61688 INFO::Fitting model to feature number 18, Cer.35.1.O3.Cer.18.0.O2.17.1.3OH.
+2024-10-17 18:44:20.656989 INFO::Fitting model to feature number 19, Cer.35.1.O3.Cer.19.0.O2.16.1.O
+2024-10-17 18:44:20.697201 INFO::Fitting model to feature number 20, Cer.36.0.O3.Cer.19.0.O2.17.0.3OH.
+2024-10-17 18:44:20.737196 INFO::Fitting model to feature number 21, Cer.36.0.O3.Cer.19.0.O2.17.0.O
+2024-10-17 18:44:20.777368 INFO::Fitting model to feature number 22, Cer.36.1.O2.Cer.18.0.O2.18.1
+2024-10-17 18:44:20.817747 INFO::Fitting model to feature number 23, Cer.36.1.O3.Cer.18.0.O2.18.1.O
+2024-10-17 18:44:20.871771 INFO::Fitting model to feature number 24, Cer.36.1.O3.Cer.18.1.O2.18.0.O
+2024-10-17 18:44:20.911347 INFO::Fitting model to feature number 25, Cer.36.2.O2.Cer.18.1.O2.18.1
+2024-10-17 18:44:20.951091 INFO::Fitting model to feature number 26, Cer.38.0.O2.Cer.20.0.O2.18.0
+2024-10-17 18:44:20.965823 WARNING::Fitting problem for feature 26 a warning was issued
+2024-10-17 18:44:21.007044 INFO::Fitting model to feature number 27, Cer.38.0.O4.Cer.18.0.O3.20.0.2OH.
+2024-10-17 18:44:21.047903 INFO::Fitting model to feature number 28, Cer.38.2.O2.Cer.18.1.O2.20.1
+2024-10-17 18:44:21.088862 INFO::Fitting model to feature number 29, Cer.38.5.O3.Cer.18.1.O2.20.4.O
+2024-10-17 18:44:21.129217 INFO::Fitting model to feature number 30, Cer.40.0.O3.Cer.18.0.O2.22.0.O
+2024-10-17 18:44:21.182006 INFO::Fitting model to feature number 31, Cer.40.2.O2.Cer.18.1.O2.22.1
+2024-10-17 18:44:21.223269 INFO::Fitting model to feature number 32, Cer.41.0.O2.Cer.18.0.O2.23.0
+2024-10-17 18:44:21.255599 WARNING::Fitting problem for feature 32 a warning was issued
+2024-10-17 18:44:21.299222 INFO::Fitting model to feature number 33, Cer.41.0.O4.Cer.18.0.O3.23.0.2OH.
+2024-10-17 18:44:21.339606 INFO::Fitting model to feature number 34, Cer.41.1.O3.Cer.21.0.O2.20.1.O
+2024-10-17 18:44:21.380511 INFO::Fitting model to feature number 35, Cer.41.2.3O.Cer.22.2.O2.19.0.O
+2024-10-17 18:44:21.42166 INFO::Fitting model to feature number 36, Cer.42.0.O3.Cer.20.0.O2.22.0.O
+2024-10-17 18:44:21.46229 INFO::Fitting model to feature number 37, Cer.42.1.O3.Cer.18.1.O2.24.0.2OH.
+2024-10-17 18:44:21.512949 INFO::Fitting model to feature number 38, Cer.42.1.O4.Cer.18.0.O3.24.1.2OH.
+2024-10-17 18:44:21.556231 INFO::Fitting model to feature number 39, Cer.42.2.O2.Cer.18.1.O2.24.1
+2024-10-17 18:44:21.59577 INFO::Fitting model to feature number 40, Cer.42.2.O4.Cer.18.1.O3.24.1.2OH.
+2024-10-17 18:44:21.634755 INFO::Fitting model to feature number 41, Cer.42.3.O2.Cer.22.0.O2.20.3
+2024-10-17 18:44:21.674419 INFO::Fitting model to feature number 42, Cer.43.0.O4.Cer.18.0.O3.25.0.2OH.
+2024-10-17 18:44:21.71455 INFO::Fitting model to feature number 43, Cer.43.3.O3.Cer.22.2.O2.21.1.O
+2024-10-17 18:44:21.754971 INFO::Fitting model to feature number 44, Cer.44.0.O3.Cer.20.0.O2.24.0.O
+2024-10-17 18:44:21.794697 INFO::Fitting model to feature number 45, Cer.50.1.O4.Cer.18.0.O2.17.0.3OH..FA.15.0.
+2024-10-17 18:44:21.845577 INFO::Fitting model to feature number 46, Cer.50.1.O4.Cer.35.0.O3.FA.15.0.
+2024-10-17 18:44:21.860783 WARNING::Fitting problem for feature 46 a warning was issued
+2024-10-17 18:44:21.900845 INFO::Fitting model to feature number 47, Cer.d33.1
+2024-10-17 18:44:21.942184 INFO::Fitting model to feature number 48, Cer.d34.2.Isomer.A
+2024-10-17 18:44:21.982547 INFO::Fitting model to feature number 49, Cer.d34.2.Isomer.B
+2024-10-17 18:44:22.023298 INFO::Fitting model to feature number 50, Cer.d35.1
+2024-10-17 18:44:22.06327 INFO::Fitting model to feature number 51, Cer.d36.1
+2024-10-17 18:44:22.102041 INFO::Fitting model to feature number 52, Cer.d36.2
+2024-10-17 18:44:22.155761 INFO::Fitting model to feature number 53, Cer.d37.1
+2024-10-17 18:44:22.19468 INFO::Fitting model to feature number 54, Cer.d39.1
+2024-10-17 18:44:22.209204 WARNING::Fitting problem for feature 54 a warning was issued
+2024-10-17 18:44:22.247643 INFO::Fitting model to feature number 55, Cer.d40.0
+2024-10-17 18:44:22.288273 INFO::Fitting model to feature number 56, Cer.d40.1
+2024-10-17 18:44:22.327852 INFO::Fitting model to feature number 57, Cer.d40.2
+2024-10-17 18:44:22.36697 INFO::Fitting model to feature number 58, Cer.d41.1
+2024-10-17 18:44:22.406924 INFO::Fitting model to feature number 59, Cer.d42.0
+2024-10-17 18:44:22.421705 WARNING::Fitting problem for feature 59 a warning was issued
+2024-10-17 18:44:22.474233 INFO::Fitting model to feature number 60, Cer.d44.2
+2024-10-17 18:44:22.512617 INFO::Fitting model to feature number 61, Cer.ADS.d34.0
+2024-10-17 18:44:22.55215 INFO::Fitting model to feature number 62, Cer.ADS.d40.0
+2024-10-17 18:44:22.591757 INFO::Fitting model to feature number 63, Cer.AS.d34.1
+2024-10-17 18:44:22.632092 INFO::Fitting model to feature number 64, Cer.NDS.d36.0
+2024-10-17 18:44:22.672886 INFO::Fitting model to feature number 65, Cer.NDS.d39.0
+2024-10-17 18:44:22.713604 INFO::Fitting model to feature number 66, Cer.NDS.d40.0
+2024-10-17 18:44:22.753987 INFO::Fitting model to feature number 67, Cer.NDS.d41.0
+2024-10-17 18:44:22.805981 INFO::Fitting model to feature number 68, Cer.NP.t40.0
+2024-10-17 18:44:22.844117 INFO::Fitting model to feature number 69, Cer.NP.t42.0
+2024-10-17 18:44:22.887217 INFO::Fitting model to feature number 70, cholesterol.3.sulfate....125
+2024-10-17 18:44:22.930012 INFO::Fitting model to feature number 71, DG.34.0
+2024-10-17 18:44:22.970259 INFO::Fitting model to feature number 72, DG.36.0
+2024-10-17 18:44:23.009986 INFO::Fitting model to feature number 73, FA.15.2
+2024-10-17 18:44:23.050458 INFO::Fitting model to feature number 74, FA.17.1
+2024-10-17 18:44:23.091823 INFO::Fitting model to feature number 75, FA.18.3..linolenic.acid.
+2024-10-17 18:44:23.143017 INFO::Fitting model to feature number 76, FA.18.4
+2024-10-17 18:44:23.182494 INFO::Fitting model to feature number 77, FA.20.0..arachidic.acid.
+2024-10-17 18:44:23.222137 INFO::Fitting model to feature number 78, FA.20.3..eicosatrienoic.acid.
+2024-10-17 18:44:23.261505 INFO::Fitting model to feature number 79, FA.20.3..homo.gamma.linolenic.acid.
+2024-10-17 18:44:23.301261 INFO::Fitting model to feature number 80, FA.21.0
+2024-10-17 18:44:23.341679 INFO::Fitting model to feature number 81, FA.22.0
+2024-10-17 18:44:23.381266 INFO::Fitting model to feature number 82, FA.22.1..erucic.acid.
+2024-10-17 18:44:23.42166 INFO::Fitting model to feature number 83, FA.22.5
+2024-10-17 18:44:23.473064 INFO::Fitting model to feature number 84, FA.22.6..docosahexaenoic.acid.
+2024-10-17 18:44:23.511719 INFO::Fitting model to feature number 85, FA.23.0
+2024-10-17 18:44:23.551876 INFO::Fitting model to feature number 86, FA.24.0
+2024-10-17 18:44:23.591205 INFO::Fitting model to feature number 87, FA.24.2
+2024-10-17 18:44:23.631932 INFO::Fitting model to feature number 88, FA.24.6
+2024-10-17 18:44:23.671013 INFO::Fitting model to feature number 89, FA.25.0
+2024-10-17 18:44:23.710268 INFO::Fitting model to feature number 90, FA.26.0
+2024-10-17 18:44:23.762738 INFO::Fitting model to feature number 91, FA.28.0
+2024-10-17 18:44:23.802889 INFO::Fitting model to feature number 92, FA.28.1
+2024-10-17 18:44:23.843166 INFO::Fitting model to feature number 93, FA.29.0
+2024-10-17 18:44:23.882121 INFO::Fitting model to feature number 94, FA.29.1
+2024-10-17 18:44:23.921793 INFO::Fitting model to feature number 95, FA.30.0
+2024-10-17 18:44:23.962538 INFO::Fitting model to feature number 96, FA.30.1
+2024-10-17 18:44:24.00253 INFO::Fitting model to feature number 97, FA.31.0
+2024-10-17 18:44:24.041817 INFO::Fitting model to feature number 98, FA.31.1
+2024-10-17 18:44:24.094714 INFO::Fitting model to feature number 99, FA.32.0
+2024-10-17 18:44:24.133313 INFO::Fitting model to feature number 100, FA.32.1
+2024-10-17 18:44:24.172974 INFO::Fitting model to feature number 101, FA.32.2
+2024-10-17 18:44:24.212905 INFO::Fitting model to feature number 102, FA.33.0
+2024-10-17 18:44:24.253562 INFO::Fitting model to feature number 103, FA.33.1
+2024-10-17 18:44:24.293323 INFO::Fitting model to feature number 104, FA.34.0
+2024-10-17 18:44:24.3324 INFO::Fitting model to feature number 105, FA.34.1
+2024-10-17 18:44:24.373042 INFO::Fitting model to feature number 106, FA.34.2
+2024-10-17 18:44:24.425939 INFO::Fitting model to feature number 107, FA.35.1
+2024-10-17 18:44:24.463372 INFO::Fitting model to feature number 108, FA.36.1
+2024-10-17 18:44:24.502838 INFO::Fitting model to feature number 109, FA.36.2
+2024-10-17 18:44:24.542545 INFO::Fitting model to feature number 110, FA.37.1
+2024-10-17 18:44:24.583047 INFO::Fitting model to feature number 111, FA.38.1
+2024-10-17 18:44:24.623703 INFO::Fitting model to feature number 112, FA.39.1
+2024-10-17 18:44:24.664394 INFO::Fitting model to feature number 113, FA.40.1
+2024-10-17 18:44:24.717484 INFO::Fitting model to feature number 114, FA.41.1
+2024-10-17 18:44:24.756898 INFO::Fitting model to feature number 115, FA.42.1
+2024-10-17 18:44:24.795826 INFO::Fitting model to feature number 116, FAHFA.38.6
+2024-10-17 18:44:24.836163 INFO::Fitting model to feature number 117, FAHFA.42.2
+2024-10-17 18:44:24.875142 INFO::Fitting model to feature number 118, GalCer.18.1_24.1
+2024-10-17 18:44:24.918571 INFO::Fitting model to feature number 119, Gal.Gal.Cer.d18.1.16.0.or.Lactosylceramide.d18.1.16.0
+2024-10-17 18:44:24.960842 INFO::Fitting model to feature number 120, GlcCer.d34.1
+2024-10-17 18:44:25.002772 INFO::Fitting model to feature number 121, GlcCer.d38.1
+2024-10-17 18:44:25.055505 INFO::Fitting model to feature number 122, GlcCer.d40.1
+2024-10-17 18:44:25.094475 INFO::Fitting model to feature number 123, GlcCer.d41.1
+2024-10-17 18:44:25.134351 INFO::Fitting model to feature number 124, GlcCer.d42.1
+2024-10-17 18:44:25.174997 INFO::Fitting model to feature number 125, GlcCer.d42.2
+2024-10-17 18:44:25.215221 INFO::Fitting model to feature number 126, GlcCerd14.14E.20.02OH
+2024-10-17 18:44:25.255526 INFO::Fitting model to feature number 127, HexCer.34.0.O4.HexCer.18.0.O3.16.0.2OH.
+2024-10-17 18:44:25.296181 INFO::Fitting model to feature number 128, HexCer.34.1.O2.HexCer.18.1.O2.16.0
+2024-10-17 18:44:25.336673 INFO::Fitting model to feature number 129, HexCer.34.1.O3.HexCer.18.1.O2.16.0.O
+2024-10-17 18:44:25.388213 INFO::Fitting model to feature number 130, HexCer.38.0.O4.HexCer.18.0.O3.20.0.2OH.
+2024-10-17 18:44:25.427323 INFO::Fitting model to feature number 131, HexCer.38.1.O3.HexCer.18.1.O2.20.0.O
+2024-10-17 18:44:25.466081 INFO::Fitting model to feature number 132, HexCer.40.0.O4.HexCer.18.0.O3.22.0.2OH.
+2024-10-17 18:44:25.505397 INFO::Fitting model to feature number 133, HexCer.40.1.O3.HexCer.18.1.O2.22.0.O
+2024-10-17 18:44:25.547038 INFO::Fitting model to feature number 134, HexCer.41.0.O4.HexCer.18.0.O3.23.0.2OH.
+2024-10-17 18:44:25.588012 INFO::Fitting model to feature number 135, HexCer.42.0.O4.HexCer.18.0.O3.24.0.2OH.
+2024-10-17 18:44:25.628184 INFO::Fitting model to feature number 136, HexCer.42.1.O3
+2024-10-17 18:44:25.667232 INFO::Fitting model to feature number 137, HexCer.42.1.O3.HexCer.18.1.O2.24.0.O
+2024-10-17 18:44:25.720285 INFO::Fitting model to feature number 138, HexCer.42.1.O4.HexCer.18.0.O3.24.1.2OH.
+2024-10-17 18:44:25.75982 INFO::Fitting model to feature number 139, HexCer.42.2.O4.HexCer.18.1.O3.24.1.2OH.
+2024-10-17 18:44:25.799974 INFO::Fitting model to feature number 140, HexCer.43.0.O4.HexCer.19.0.O3.24.0.2OH.
+2024-10-17 18:44:25.840809 INFO::Fitting model to feature number 141, HexCer.44.0.O4.HexCer.20.0.O3.24.0.2OH.
+2024-10-17 18:44:25.88056 INFO::Fitting model to feature number 142, Hexosyl.LPE.16.0
+2024-10-17 18:44:25.92035 INFO::Fitting model to feature number 143, lactosylceramide.d18.1.24.1.15Z
+2024-10-17 18:44:25.960512 INFO::Fitting model to feature number 144, LNAPE.20.4_N.19.1
+2024-10-17 18:44:26.01384 INFO::Fitting model to feature number 145, LPC.17.0
+2024-10-17 18:44:26.052109 INFO::Fitting model to feature number 146, LPC.18.2
+2024-10-17 18:44:26.091009 INFO::Fitting model to feature number 147, LPC.18.3
+2024-10-17 18:44:26.130933 INFO::Fitting model to feature number 148, LPC.19.0
+2024-10-17 18:44:26.171598 INFO::Fitting model to feature number 149, LPC.20.0
+2024-10-17 18:44:26.186352 WARNING::Fitting problem for feature 149 a warning was issued
+2024-10-17 18:44:26.227412 INFO::Fitting model to feature number 150, LPC.20.1
+2024-10-17 18:44:26.268511 INFO::Fitting model to feature number 151, LPC.24.0.SN1
+2024-10-17 18:44:26.308722 INFO::Fitting model to feature number 152, LPC.O.16.0
+2024-10-17 18:44:26.361599 INFO::Fitting model to feature number 153, LPC.O.18.0
+2024-10-17 18:44:26.400586 INFO::Fitting model to feature number 154, LPC.O.18.1
+2024-10-17 18:44:26.438572 INFO::Fitting model to feature number 155, LPC.P.18.0.or.LPC.O.18.1
+2024-10-17 18:44:26.478063 INFO::Fitting model to feature number 156, LPE.15.0
+2024-10-17 18:44:26.519229 INFO::Fitting model to feature number 157, LPE.18.0
+2024-10-17 18:44:26.559068 INFO::Fitting model to feature number 158, LPE.18.2
+2024-10-17 18:44:26.599288 INFO::Fitting model to feature number 159, LPE.N..FA.34.1.LPE.N..FA.18.1.16.0
+2024-10-17 18:44:26.824458 INFO::Fitting model to feature number 160, LPE.N..FA.34.2.LPE.N..FA.18.2.16.0
+2024-10-17 18:44:26.8629 INFO::Fitting model to feature number 161, LPE.N..FA.36.3.LPE.N..FA.18.2.18.1
+2024-10-17 18:44:26.900615 INFO::Fitting model to feature number 162, LPE.N..FA.36.4.LPE.N..FA.18.2.18.2
+2024-10-17 18:44:26.939758 INFO::Fitting model to feature number 163, LPG.16.0
+2024-10-17 18:44:26.980041 INFO::Fitting model to feature number 164, LPS.18.0
+2024-10-17 18:44:27.021545 INFO::Fitting model to feature number 165, NAGly.29.1.O2.NAGly.16.0.O.FA.13.0.
+2024-10-17 18:44:27.062001 INFO::Fitting model to feature number 166, NAGly.30.1.O2.NAGly.16.0.O.FA.14.0.
+2024-10-17 18:44:27.100435 INFO::Fitting model to feature number 167, NAGly.31.1.O2.NAGly.16.0.O.FA.15.0.
+2024-10-17 18:44:27.156748 INFO::Fitting model to feature number 168, NAGly.32.1.O2.NAGly.17.0.O.FA.15.0.
+2024-10-17 18:44:27.198478 INFO::Fitting model to feature number 169, NAGly.33.1.O2.NAGly.18.0.O.FA.15.0.
+2024-10-17 18:44:27.238172 INFO::Fitting model to feature number 170, NAGlySer.30.1.O2.NAGlySer.15.0.O.FA.15.0.
+2024-10-17 18:44:27.2772 INFO::Fitting model to feature number 171, NAGlySer.31.1.O2.NAGlySer.16.0.O.FA.15.0.
+2024-10-17 18:44:27.31709 INFO::Fitting model to feature number 172, NAGlySer.32.1.O2.NAGlySer.17.0.O.FA.15.0.
+2024-10-17 18:44:27.357673 INFO::Fitting model to feature number 173, NAGlySer.33.1.O2.NAGlySer.17.0.O.FA.16.0.
+2024-10-17 18:44:27.396501 INFO::Fitting model to feature number 174, NAGlySer.34.1.O2.NAGlySer.17.0.O.FA.17.0.
+2024-10-17 18:44:27.434293 INFO::Fitting model to feature number 175, NAPhe.18.1
+2024-10-17 18:44:27.448489 WARNING::Fitting problem for feature 175 a warning was issued
+2024-10-17 18:44:27.50076 INFO::Fitting model to feature number 176, NAPhe.18.2
+2024-10-17 18:44:27.538517 INFO::Fitting model to feature number 177, palmitamide
+2024-10-17 18:44:27.577231 INFO::Fitting model to feature number 178, palmitoyl.ethanolamide
+2024-10-17 18:44:27.617653 INFO::Fitting model to feature number 179, PC.16.0.9.0.CHO
+2024-10-17 18:44:27.657518 INFO::Fitting model to feature number 180, PC.16.0_14.0
+2024-10-17 18:44:27.672506 WARNING::Fitting problem for feature 180 a warning was issued
+2024-10-17 18:44:27.713223 INFO::Fitting model to feature number 181, PC.18.0_18.1
+2024-10-17 18:44:27.752759 INFO::Fitting model to feature number 182, PC.18.1_18.2
+2024-10-17 18:44:27.805335 INFO::Fitting model to feature number 183, PC.30.0
+2024-10-17 18:44:27.843287 INFO::Fitting model to feature number 184, PC.32.1
+2024-10-17 18:44:27.882332 INFO::Fitting model to feature number 185, PC.34.3
+2024-10-17 18:44:27.897402 WARNING::Fitting problem for feature 185 a warning was issued
+2024-10-17 18:44:27.937458 INFO::Fitting model to feature number 186, PC.34.3.Isomer.B
+2024-10-17 18:44:27.977165 INFO::Fitting model to feature number 187, PC.35.4
+2024-10-17 18:44:28.0164 INFO::Fitting model to feature number 188, PC.36.1
+2024-10-17 18:44:28.056648 INFO::Fitting model to feature number 189, PC.36.4.Isomer.A
+2024-10-17 18:44:28.096437 INFO::Fitting model to feature number 190, PC.36.5.Isomer.A
+2024-10-17 18:44:28.149091 INFO::Fitting model to feature number 191, PC.36.5.Isomer.B
+2024-10-17 18:44:28.187739 INFO::Fitting model to feature number 192, PC.36.6
+2024-10-17 18:44:28.226602 INFO::Fitting model to feature number 193, PC.38.4.Isomer.B
+2024-10-17 18:44:28.26453 INFO::Fitting model to feature number 194, PC.38.5.Isomer.A
+2024-10-17 18:44:28.304259 INFO::Fitting model to feature number 195, PC.38.5.Isomer.B
+2024-10-17 18:44:28.344186 INFO::Fitting model to feature number 196, PC.38.6.Isomer.A
+2024-10-17 18:44:28.384774 INFO::Fitting model to feature number 197, PC.40.3
+2024-10-17 18:44:28.424603 INFO::Fitting model to feature number 198, PC.42.4
+2024-10-17 18:44:28.476845 INFO::Fitting model to feature number 199, PC.42.5
+2024-10-17 18:44:28.515832 INFO::Fitting model to feature number 200, PC.O.20.0_20.4
+2024-10-17 18:44:28.55598 INFO::Fitting model to feature number 201, PC.O.30.0
+2024-10-17 18:44:28.595803 INFO::Fitting model to feature number 202, PC.O.31.7
+2024-10-17 18:44:28.61041 WARNING::Fitting problem for feature 202 a warning was issued
+2024-10-17 18:44:28.649086 INFO::Fitting model to feature number 203, PC.O.32.0
+2024-10-17 18:44:28.688895 INFO::Fitting model to feature number 204, PC.O.36.4
+2024-10-17 18:44:28.728645 INFO::Fitting model to feature number 205, PC.P.32.1.or.PC.O.32.2
+2024-10-17 18:44:28.780688 INFO::Fitting model to feature number 206, PC.P.34.0.or.PC.O.34.1
+2024-10-17 18:44:28.818812 INFO::Fitting model to feature number 207, PC.P.38.3.or.PC.O.38.4.Isomer.B
+2024-10-17 18:44:28.857311 INFO::Fitting model to feature number 208, PC.P.38.4.or.PC.O.38.5.Isomer.A
+2024-10-17 18:44:28.871918 WARNING::Fitting problem for feature 208 a warning was issued
+2024-10-17 18:44:28.912706 INFO::Fitting model to feature number 209, PC.P.38.4.or.PC.O.38.5.Isomer.B
+2024-10-17 18:44:28.954026 INFO::Fitting model to feature number 210, PC.P.40.3.or.PC.O.40.4
+2024-10-17 18:44:28.99594 INFO::Fitting model to feature number 211, PE.16.0_16..1
+2024-10-17 18:44:29.035158 INFO::Fitting model to feature number 212, PE.16.1_18.1
+2024-10-17 18:44:29.075175 INFO::Fitting model to feature number 213, PE.29.0.PE.14.0_15.0
+2024-10-17 18:44:29.12705 INFO::Fitting model to feature number 214, PE.30.0.PE.15.0_15.0
+2024-10-17 18:44:29.169378 INFO::Fitting model to feature number 215, PE.32.1.PE.16.0_16.1
+2024-10-17 18:44:29.210247 INFO::Fitting model to feature number 216, PE.32.2
+2024-10-17 18:44:29.250236 INFO::Fitting model to feature number 217, PE.33.1.PE.15.0_18.1
+2024-10-17 18:44:29.289474 INFO::Fitting model to feature number 218, PE.33.2.PE.15.0_18.2
+2024-10-17 18:44:29.32903 INFO::Fitting model to feature number 219, PE.34.1
+2024-10-17 18:44:29.36909 INFO::Fitting model to feature number 220, PE.34.1.1
+2024-10-17 18:44:29.421134 INFO::Fitting model to feature number 221, PE.36.1
+2024-10-17 18:44:29.459743 INFO::Fitting model to feature number 222, PE.36.2
+2024-10-17 18:44:29.499031 INFO::Fitting model to feature number 223, PE.36.3
+2024-10-17 18:44:29.536672 INFO::Fitting model to feature number 224, PE.36.4
+2024-10-17 18:44:29.576363 INFO::Fitting model to feature number 225, PE.O.16.1_18.1
+2024-10-17 18:44:29.616195 INFO::Fitting model to feature number 226, PE.O.16.1_18.2
+2024-10-17 18:44:29.656453 INFO::Fitting model to feature number 227, PE.O.22.6_16.1
+2024-10-17 18:44:29.696649 INFO::Fitting model to feature number 228, PE.O.36.3
+2024-10-17 18:44:29.74727 INFO::Fitting model to feature number 229, PE.O.36.4
+2024-10-17 18:44:29.786185 INFO::Fitting model to feature number 230, PE.P.34.1.or.PE.O.34.2
+2024-10-17 18:44:29.82578 INFO::Fitting model to feature number 231, PE.P.36.1.or.PE.O.36.2
+2024-10-17 18:44:29.863452 INFO::Fitting model to feature number 232, PEtOH.38.4
+2024-10-17 18:44:29.90332 INFO::Fitting model to feature number 233, PG.16.0_16.0
+2024-10-17 18:44:29.943171 INFO::Fitting model to feature number 234, PG.30.0.PG.15.0_15.0
+2024-10-17 18:44:29.982996 INFO::Fitting model to feature number 235, PG.O.34.2.PG.O.18.2_16.0
+2024-10-17 18:44:30.023022 INFO::Fitting model to feature number 236, Phosphatidylethanolamine.alkenyl.16.0.20.4
+2024-10-17 18:44:30.074761 INFO::Fitting model to feature number 237, PI.34.1.Isomer.A
+2024-10-17 18:44:30.112373 INFO::Fitting model to feature number 238, PI.34.2.Isomer.A
+2024-10-17 18:44:30.151802 INFO::Fitting model to feature number 239, PI.36.1.Isomer.A
+2024-10-17 18:44:30.191473 INFO::Fitting model to feature number 240, PI.36.3.Isomer.B
+2024-10-17 18:44:30.231479 INFO::Fitting model to feature number 241, PI.36.4
+2024-10-17 18:44:30.269882 INFO::Fitting model to feature number 242, PI.38.3
+2024-10-17 18:44:30.310605 INFO::Fitting model to feature number 243, PI.Cer.33.0.O3
+2024-10-17 18:44:30.351305 INFO::Fitting model to feature number 244, PI.Cer.34.0.O3
+2024-10-17 18:44:30.404392 INFO::Fitting model to feature number 245, PI.Cer.35.0.O3
+2024-10-17 18:44:30.442295 INFO::Fitting model to feature number 246, PI.Cer.36.0.O3
+2024-10-17 18:44:30.481802 INFO::Fitting model to feature number 247, PS.16.0_22.4
+2024-10-17 18:44:30.521818 INFO::Fitting model to feature number 248, SHexCer.d34.1
+2024-10-17 18:44:30.562364 INFO::Fitting model to feature number 249, SL.32.0.O.SL.17.0.O.15.0
+2024-10-17 18:44:30.603056 INFO::Fitting model to feature number 250, SL.33.0.O.SL.17.0.O.16.0
+2024-10-17 18:44:30.641542 INFO::Fitting model to feature number 251, SL.34.1.O2.SL.17.0.O.17.1.O
+2024-10-17 18:44:30.680793 INFO::Fitting model to feature number 252, SL.35.1.O2.SL.18.0.O.17.1.O
+2024-10-17 18:44:30.732761 INFO::Fitting model to feature number 253, SM.18.0.2O.22.0
+2024-10-17 18:44:30.771208 INFO::Fitting model to feature number 254, SM.29.2.2O.8.0
+2024-10-17 18:44:30.810475 INFO::Fitting model to feature number 255, SM.30.2.2O..FA.14.1.
+2024-10-17 18:44:30.825505 WARNING::Fitting problem for feature 255 a warning was issued
+2024-10-17 18:44:30.86511 INFO::Fitting model to feature number 256, SM.36.4.3O
+2024-10-17 18:44:30.904238 INFO::Fitting model to feature number 257, SM.42.1.3O
+2024-10-17 18:44:30.943061 INFO::Fitting model to feature number 258, SM.43.3.2O
+2024-10-17 18:44:30.983208 INFO::Fitting model to feature number 259, SM.d38.0
+2024-10-17 18:44:31.03612 INFO::Fitting model to feature number 260, SM.d43.2
+2024-10-17 18:44:31.075352 INFO::Fitting model to feature number 261, SM.d44.3
+2024-10-17 18:44:31.113558 INFO::Fitting model to feature number 262, SPB.18.1.O2
+2024-10-17 18:44:31.153452 INFO::Fitting model to feature number 263, SPB.20.0.2O
+2024-10-17 18:44:31.194394 INFO::Fitting model to feature number 264, TG.22.0
+2024-10-17 18:44:31.210293 WARNING::Fitting problem for feature 264 a warning was issued
+2024-10-17 18:44:31.252913 INFO::Fitting model to feature number 265, TG.34.0
+2024-10-17 18:44:31.29328 INFO::Fitting model to feature number 266, TG.44.1
+2024-10-17 18:44:31.333728 INFO::Fitting model to feature number 267, TG.54.5.O2.TG.18.1_18.2_18.2.O2
+2024-10-17 18:44:31.383661 INFO::Fitting model to feature number 268, TG.8.0_18.2_18.2
+2024-10-17 18:44:31.398205 WARNING::Fitting problem for feature 268 a warning was issued
+2024-10-17 18:44:31.437483 INFO::Fitting model to feature number 269, xylose
+2024-10-17 18:44:31.476706 INFO::Fitting model to feature number 270, tyrosol
+2024-10-17 18:44:31.516717 INFO::Fitting model to feature number 271, tryptophan
+2024-10-17 18:44:31.556345 INFO::Fitting model to feature number 272, thymidine.5.phosphate
+2024-10-17 18:44:31.595538 INFO::Fitting model to feature number 273, succinic.acid
+2024-10-17 18:44:31.636174 INFO::Fitting model to feature number 274, spermidine
+2024-10-17 18:44:31.650642 WARNING::Fitting problem for feature 274 a warning was issued
+2024-10-17 18:44:31.701236 INFO::Fitting model to feature number 275, sophorose
+2024-10-17 18:44:31.715708 WARNING::Fitting problem for feature 275 a warning was issued
+2024-10-17 18:44:31.754275 INFO::Fitting model to feature number 276, ribitol
+2024-10-17 18:44:31.768484 WARNING::Fitting problem for feature 276 a warning was issued
+2024-10-17 18:44:31.807958 INFO::Fitting model to feature number 277, piperidone
+2024-10-17 18:44:31.823054 WARNING::Fitting problem for feature 277 a warning was issued
+2024-10-17 18:44:31.864939 INFO::Fitting model to feature number 278, pinitol
+2024-10-17 18:44:31.905433 INFO::Fitting model to feature number 279, phosphoinositol
+2024-10-17 18:44:31.919859 WARNING::Fitting problem for feature 279 a warning was issued
+2024-10-17 18:44:31.959226 INFO::Fitting model to feature number 280, phosphate
+2024-10-17 18:44:32.009259 INFO::Fitting model to feature number 281, phenylethylamine
+2024-10-17 18:44:32.040591 WARNING::Fitting problem for feature 281 a warning was issued
+2024-10-17 18:44:32.080534 INFO::Fitting model to feature number 282, phenylacetic.acid
+2024-10-17 18:44:32.121182 INFO::Fitting model to feature number 283, palmitic.acid
+2024-10-17 18:44:32.152376 WARNING::Fitting problem for feature 283 a warning was issued
+2024-10-17 18:44:32.195008 INFO::Fitting model to feature number 284, oxoproline
+2024-10-17 18:44:32.236717 INFO::Fitting model to feature number 285, myristic.acid
+2024-10-17 18:44:32.251089 WARNING::Fitting problem for feature 285 a warning was issued
+2024-10-17 18:44:32.291561 INFO::Fitting model to feature number 286, methanolphosphate
+2024-10-17 18:44:32.343786 INFO::Fitting model to feature number 287, lactose
+2024-10-17 18:44:32.382255 INFO::Fitting model to feature number 288, lactitol
+2024-10-17 18:44:32.421472 INFO::Fitting model to feature number 289, isorhamnose
+2024-10-17 18:44:32.43558 WARNING::Fitting problem for feature 289 a warning was issued
+2024-10-17 18:44:32.475299 INFO::Fitting model to feature number 290, isoferulic.acid
+2024-10-17 18:44:32.516244 INFO::Fitting model to feature number 291, inositol.4.monophosphate
+2024-10-17 18:44:32.55573 INFO::Fitting model to feature number 292, indole.3.acetate
+2024-10-17 18:44:32.595094 INFO::Fitting model to feature number 293, guanosine
+2024-10-17 18:44:32.645427 INFO::Fitting model to feature number 294, glycerol.3.galactoside
+2024-10-17 18:44:32.685042 INFO::Fitting model to feature number 295, glycerol
+2024-10-17 18:44:32.72446 INFO::Fitting model to feature number 296, glyceric.acid
+2024-10-17 18:44:32.763833 INFO::Fitting model to feature number 297, glutamine
+2024-10-17 18:44:32.803868 INFO::Fitting model to feature number 298, glucose.1.phosphate
+2024-10-17 18:44:32.843321 INFO::Fitting model to feature number 299, glucose
+2024-10-17 18:44:32.883568 INFO::Fitting model to feature number 300, galacturonic.acid
+2024-10-17 18:44:32.924189 INFO::Fitting model to feature number 301, fructose
+2024-10-17 18:44:32.976924 INFO::Fitting model to feature number 302, ethanolamine
+2024-10-17 18:44:33.015013 INFO::Fitting model to feature number 303, dihydro.3.coumaric.acid
+2024-10-17 18:44:33.053787 INFO::Fitting model to feature number 304, deoxycholic.acid
+2024-10-17 18:44:33.09318 INFO::Fitting model to feature number 305, conduritol.beta.epoxide
+2024-10-17 18:44:33.133394 INFO::Fitting model to feature number 306, cadaverine
+2024-10-17 18:44:33.172734 INFO::Fitting model to feature number 307, beta.glutamic.acid
+2024-10-17 18:44:33.213081 INFO::Fitting model to feature number 308, beta.alanine
+2024-10-17 18:44:33.256101 INFO::Fitting model to feature number 309, adenosine
+2024-10-17 18:44:33.31268 INFO::Fitting model to feature number 310, X4.hydroxybutyric.acid
+2024-10-17 18:44:33.351097 INFO::Fitting model to feature number 311, X3..4.hydroxyphenyl.propionic.acid
+2024-10-17 18:44:33.390114 INFO::Fitting model to feature number 312, X3..3.hydroxyphenyl.propionic.acid
+2024-10-17 18:44:33.428972 INFO::Fitting model to feature number 313, X2.hydroxyisocaproic.acid
+2024-10-17 18:44:33.467683 INFO::Fitting model to feature number 314, X2..deoxyguanosine
+2024-10-17 18:44:33.508111 INFO::Fitting model to feature number 315, X2.3.diaminopropionic.acid
+2024-10-17 18:44:33.52324 WARNING::Fitting problem for feature 315 a warning was issued
+2024-10-17 18:44:33.563537 INFO::Fitting model to feature number 316, X.15.3..Anacardic.acid
+2024-10-17 18:44:33.617299 INFO::Fitting model to feature number 317, X.9Z.12R..12.Hydroxyoctadec.9.enoic.acid
+2024-10-17 18:44:33.656057 INFO::Fitting model to feature number 318, X.R..Butyrylcarnitine
+2024-10-17 18:44:33.695442 INFO::Fitting model to feature number 319, X.sulfanylsulfonyl.methane
+2024-10-17 18:44:33.734172 INFO::Fitting model to feature number 320, X.Z..5.8.11.trihydroxyoctadec.9.enoic.acid
+2024-10-17 18:44:33.772599 INFO::Fitting model to feature number 321, X.4..Methylamino.phenyl.acetic.acid
+2024-10-17 18:44:33.812232 INFO::Fitting model to feature number 322, X1..1Z.Octadecenyl..sn.glycero.3.phosphocholine
+2024-10-17 18:44:33.851729 INFO::Fitting model to feature number 323, X1..9Z.12Z.Octadecadienoyl.2.hydroxy.sn.glycero.3.phosphocholine
+2024-10-17 18:44:33.89087 INFO::Fitting model to feature number 324, X1.2.Cyclohexanedione
+2024-10-17 18:44:33.943275 INFO::Fitting model to feature number 325, X1.7.Dimethyluric.acid
+2024-10-17 18:44:33.981512 INFO::Fitting model to feature number 326, X13.HODE....904
+2024-10-17 18:44:34.020465 INFO::Fitting model to feature number 327, X1.Hexadecyl.sn.glycero.3.phosphocholine
+2024-10-17 18:44:34.059093 INFO::Fitting model to feature number 328, X1.Methylnicotinamide
+2024-10-17 18:44:34.098497 INFO::Fitting model to feature number 329, X1.Methylpseudouridine
+2024-10-17 18:44:34.139073 INFO::Fitting model to feature number 330, X1.Palmitoyl.2.hydroxy.sn.glycero.3.phospho..1..rac.glycerol.
+2024-10-17 18:44:34.17825 INFO::Fitting model to feature number 331, X1.Palmitoyl.sn.glycero.3.phosphocholine
+2024-10-17 18:44:34.218953 INFO::Fitting model to feature number 332, X1.Stearoyl.2.hydroxy.sn.glycero.3.phosphocholine
+2024-10-17 18:44:34.271417 INFO::Fitting model to feature number 333, X1.Stearoyl.2.hydroxy.sn.glycero.3.phosphoethanolamine
+2024-10-17 18:44:34.310512 INFO::Fitting model to feature number 334, X2..1.Methyl.1H.imidazol.5.yl.acetic.acid
+2024-10-17 18:44:34.350651 INFO::Fitting model to feature number 335, X2..2.6.dimethylmorpholin.4.yl.ethanol
+2024-10-17 18:44:34.389382 INFO::Fitting model to feature number 336, X2..n.ethyl.n.m.toluidino.ethanol
+2024-10-17 18:44:34.430064 INFO::Fitting model to feature number 337, X2.6.dihydroxybenzoic.acid
+2024-10-17 18:44:34.468461 INFO::Fitting model to feature number 338, X2.acetylpyrazine
+2024-10-17 18:44:34.507615 INFO::Fitting model to feature number 339, X2.Amino.1.phenylethanol
+2024-10-17 18:44:34.547232 INFO::Fitting model to feature number 340, X2.Amino.3.methoxybenzoic.acid
+2024-10-17 18:44:34.6003 INFO::Fitting model to feature number 341, X2..Deoxycytidine
+2024-10-17 18:44:34.638444 INFO::Fitting model to feature number 342, X2..Deoxyinosine
+2024-10-17 18:44:34.677366 INFO::Fitting model to feature number 343, X2.Hydroxy.4.methylpentanoic.acid
+2024-10-17 18:44:34.717189 INFO::Fitting model to feature number 344, X2.hydroxybutyric.acid
+2024-10-17 18:44:34.756532 INFO::Fitting model to feature number 345, X2.Hydroxyphenethyl.alcohol
+2024-10-17 18:44:34.795882 INFO::Fitting model to feature number 346, X2.Isopropylmalic.acid
+2024-10-17 18:44:34.834587 INFO::Fitting model to feature number 347, X2.phenylmalonaldehyde
+2024-10-17 18:44:34.875428 INFO::Fitting model to feature number 348, X2.Pyridone
+2024-10-17 18:44:34.928767 INFO::Fitting model to feature number 349, X3..1.Methyl.1H.pyrazol.5.yl.propanoic.acid
+2024-10-17 18:44:34.969013 INFO::Fitting model to feature number 350, X3..1.Pyrazolyl..alanine
+2024-10-17 18:44:35.00718 INFO::Fitting model to feature number 351, X3..3.Hydroxyphenyl.propionic.acid
+2024-10-17 18:44:35.046884 INFO::Fitting model to feature number 352, X3..5..2.Methylpropyl..3.6.dioxopiperazin.2.yl.propanoic.acid
+2024-10-17 18:44:35.087827 INFO::Fitting model to feature number 353, X3.beta.allopregnanolone.sulfate
+2024-10-17 18:44:35.126936 INFO::Fitting model to feature number 354, X3.cyanocoumarin
+2024-10-17 18:44:35.166875 INFO::Fitting model to feature number 355, X3.Deoxyuridine
+2024-10-17 18:44:35.218532 INFO::Fitting model to feature number 356, X3.hydroxybutyrylcarnitine
+2024-10-17 18:44:35.257698 INFO::Fitting model to feature number 357, X3.Hydroxyvaleric.acid
+2024-10-17 18:44:35.298746 INFO::Fitting model to feature number 358, X3.oxocholic.acid
+2024-10-17 18:44:35.34121 INFO::Fitting model to feature number 359, X4.Acetamidobutyric.acid
+2024-10-17 18:44:35.382842 INFO::Fitting model to feature number 360, X4.Amino.2.methyl.5.pyrimidinemethanol
+2024-10-17 18:44:35.424193 INFO::Fitting model to feature number 361, X4.Hydroxymandelonitrile
+2024-10-17 18:44:35.464147 INFO::Fitting model to feature number 362, X4.Pentylaniline
+2024-10-17 18:44:35.503864 INFO::Fitting model to feature number 363, X4.Trimethylammoniobutanoic.acid
+2024-10-17 18:44:35.557388 INFO::Fitting model to feature number 364, X5.hydroxyindoleacetate
+2024-10-17 18:44:35.596706 INFO::Fitting model to feature number 365, X5.Methylcytidine
+2024-10-17 18:44:35.635389 INFO::Fitting model to feature number 366, X5..Methylthioadenosine
+2024-10-17 18:44:35.674453 INFO::Fitting model to feature number 367, X6.7.Dihydroxycoumarin
+2024-10-17 18:44:35.714762 INFO::Fitting model to feature number 368, X6H.2.Benzopyran.6.one..5.chloro.3..3.4.dihydroxy.3.5.dimethyl.1.hepten.1.yl..7.8.dihydro.7.8.dihydroxy.7.methyl.
+2024-10-17 18:44:35.755694 INFO::Fitting model to feature number 369, X7.Keto.3alpha.12.alpha.dihydroxycholanic.acid
+2024-10-17 18:44:35.795412 INFO::Fitting model to feature number 370, X7.Methylguanine
+2024-10-17 18:44:35.83445 INFO::Fitting model to feature number 371, X8.Oxo.2.deoxyadenosine
+2024-10-17 18:44:35.887985 INFO::Fitting model to feature number 372, X9.10.dihydroxystearic.acid
+2024-10-17 18:44:35.926688 INFO::Fitting model to feature number 373, X9.oxo.10e.12z.octadecadienoic.acid
+2024-10-17 18:44:35.966716 INFO::Fitting model to feature number 374, Acetaminophen.sulfate
+2024-10-17 18:44:35.981809 WARNING::Fitting problem for feature 374 a warning was issued
+2024-10-17 18:44:36.020301 INFO::Fitting model to feature number 375, Acetylcarnitine
+2024-10-17 18:44:36.06057 INFO::Fitting model to feature number 376, Adenine
+2024-10-17 18:44:36.098771 INFO::Fitting model to feature number 377, adenosine.1
+2024-10-17 18:44:36.138237 INFO::Fitting model to feature number 378, Agmatine
+2024-10-17 18:44:36.178054 INFO::Fitting model to feature number 379, Ala.Ala
+2024-10-17 18:44:36.230948 INFO::Fitting model to feature number 380, Ala.Ala.Lys
+2024-10-17 18:44:36.268917 INFO::Fitting model to feature number 381, Ala.Arg
+2024-10-17 18:44:36.308454 INFO::Fitting model to feature number 382, Ala.Asp
+2024-10-17 18:44:36.348172 INFO::Fitting model to feature number 383, Ala.Gln
+2024-10-17 18:44:36.388614 INFO::Fitting model to feature number 384, Ala.His
+2024-10-17 18:44:36.428264 INFO::Fitting model to feature number 385, Ala.Ile.Arg
+2024-10-17 18:44:36.466794 INFO::Fitting model to feature number 386, Ala.Lys
+2024-10-17 18:44:36.519808 INFO::Fitting model to feature number 387, Alanine
+2024-10-17 18:44:36.558629 INFO::Fitting model to feature number 388, ala.pro
+2024-10-17 18:44:36.596107 INFO::Fitting model to feature number 389, Ala.Thr
+2024-10-17 18:44:36.63455 INFO::Fitting model to feature number 390, Ala.Trp
+2024-10-17 18:44:36.674971 INFO::Fitting model to feature number 391, Ala.Val.Lys
+2024-10-17 18:44:36.715482 INFO::Fitting model to feature number 392, alpha.Galactosamine.1.phosphate
+2024-10-17 18:44:36.756305 INFO::Fitting model to feature number 393, aminocarnitine
+2024-10-17 18:44:36.797542 INFO::Fitting model to feature number 394, Arg.Gly
+2024-10-17 18:44:36.84918 INFO::Fitting model to feature number 395, Arginine
+2024-10-17 18:44:36.887851 INFO::Fitting model to feature number 396, arg.pro
+2024-10-17 18:44:36.927239 INFO::Fitting model to feature number 397, Arg.Thr
+2024-10-17 18:44:36.966614 INFO::Fitting model to feature number 398, Arg.Trp
+2024-10-17 18:44:36.980459 WARNING::Fitting problem for feature 398 a warning was issued
+2024-10-17 18:44:37.021904 INFO::Fitting model to feature number 399, Asn.Arg
+2024-10-17 18:44:37.061549 INFO::Fitting model to feature number 400, Asn.Glu
+2024-10-17 18:44:37.100443 INFO::Fitting model to feature number 401, Asn.Tyr
+2024-10-17 18:44:37.140608 INFO::Fitting model to feature number 402, Aspartic.acid
+2024-10-17 18:44:37.192475 INFO::Fitting model to feature number 403, Asp.Gly
+2024-10-17 18:44:37.233998 INFO::Fitting model to feature number 404, Asp.Leu.Lys
+2024-10-17 18:44:37.275449 INFO::Fitting model to feature number 405, Asp.Lys
+2024-10-17 18:44:37.315258 INFO::Fitting model to feature number 406, Asp.Phe
+2024-10-17 18:44:37.356097 INFO::Fitting model to feature number 407, Asp.Tyr
+2024-10-17 18:44:37.39566 INFO::Fitting model to feature number 408, Betaine
+2024-10-17 18:44:37.434074 INFO::Fitting model to feature number 409, Blood.Group.A.Tetrasaccharide
+2024-10-17 18:44:37.487708 INFO::Fitting model to feature number 410, cadaverine.1
+2024-10-17 18:44:37.526397 INFO::Fitting model to feature number 411, Caffeic.acid
+2024-10-17 18:44:37.564053 INFO::Fitting model to feature number 412, cAMP
+2024-10-17 18:44:37.603469 INFO::Fitting model to feature number 413, carnitine
+2024-10-17 18:44:37.643054 INFO::Fitting model to feature number 414, carnosine
+2024-10-17 18:44:37.683326 INFO::Fitting model to feature number 415, Catechol
+2024-10-17 18:44:37.69872 WARNING::Fitting problem for feature 415 a warning was issued
+2024-10-17 18:44:37.73949 INFO::Fitting model to feature number 416, cholesterol.3.sulfate....1046
+2024-10-17 18:44:37.754933 WARNING::Fitting problem for feature 416 a warning was issued
+2024-10-17 18:44:37.795444 INFO::Fitting model to feature number 417, Choline
+2024-10-17 18:44:37.847002 INFO::Fitting model to feature number 418, citrulline
+2024-10-17 18:44:37.88613 INFO::Fitting model to feature number 419, Cortisone
+2024-10-17 18:44:37.924941 INFO::Fitting model to feature number 420, Creatinine
+2024-10-17 18:44:37.963542 INFO::Fitting model to feature number 421, Cysteic.Acid
+2024-10-17 18:44:38.00399 INFO::Fitting model to feature number 422, cysteine.S.sulfate
+2024-10-17 18:44:38.043827 INFO::Fitting model to feature number 423, Cytidine
+2024-10-17 18:44:38.08344 INFO::Fitting model to feature number 424, Daidzein
+2024-10-17 18:44:38.135637 INFO::Fitting model to feature number 425, decanedioic.acid
+2024-10-17 18:44:38.174189 INFO::Fitting model to feature number 426, dehydroepiandrosterone.sulfate
+2024-10-17 18:44:38.212434 INFO::Fitting model to feature number 427, deoxycarnitine
+2024-10-17 18:44:38.251875 INFO::Fitting model to feature number 428, deprenyl
+2024-10-17 18:44:38.291413 INFO::Fitting model to feature number 429, D.erythro.N.stearoylsphingosine
+2024-10-17 18:44:38.332917 INFO::Fitting model to feature number 430, dibenzylamine
+2024-10-17 18:44:38.373904 INFO::Fitting model to feature number 431, Dihydrosphingosine
+2024-10-17 18:44:38.413058 INFO::Fitting model to feature number 432, DL.Octopamine
+2024-10-17 18:44:38.466415 INFO::Fitting model to feature number 433, docosahexaenoic.acid
+2024-10-17 18:44:38.505063 INFO::Fitting model to feature number 434, Docosatetraenoic.acid
+2024-10-17 18:44:38.544203 INFO::Fitting model to feature number 435, D.Pyroglutamic.acid
+2024-10-17 18:44:38.583739 INFO::Fitting model to feature number 436, Eicosenoic.acid
+2024-10-17 18:44:38.623386 INFO::Fitting model to feature number 437, E.N.Deoxyfructosyllysine
+2024-10-17 18:44:38.663768 INFO::Fitting model to feature number 438, ethanolamine.1
+2024-10-17 18:44:38.703151 INFO::Fitting model to feature number 439, FA.18.2.2O
+2024-10-17 18:44:38.74359 INFO::Fitting model to feature number 440, Ferulic.acid
+2024-10-17 18:44:38.796011 INFO::Fitting model to feature number 441, Galacto.N.biose
+2024-10-17 18:44:38.834267 INFO::Fitting model to feature number 442, gamma.aminobutyric.acid
+2024-10-17 18:44:38.872398 INFO::Fitting model to feature number 443, gamma.Glutamylmethionine
+2024-10-17 18:44:38.886669 WARNING::Fitting problem for feature 443 a warning was issued
+2024-10-17 18:44:38.926667 INFO::Fitting model to feature number 444, gamma.linolenic.acid
+2024-10-17 18:44:38.966202 INFO::Fitting model to feature number 445, Gentisinic.acid
+2024-10-17 18:44:39.006307 INFO::Fitting model to feature number 446, Gln.Ala
+2024-10-17 18:44:39.045712 INFO::Fitting model to feature number 447, Gln.Arg
+2024-10-17 18:44:39.099319 INFO::Fitting model to feature number 448, Gln.Glu
+2024-10-17 18:44:39.137441 INFO::Fitting model to feature number 449, Gln.Leu.Lys
+2024-10-17 18:44:39.176355 INFO::Fitting model to feature number 450, Gln.Met
+2024-10-17 18:44:39.21897 INFO::Fitting model to feature number 451, Gln.Phe
+2024-10-17 18:44:39.261578 INFO::Fitting model to feature number 452, Gln.Pro
+2024-10-17 18:44:39.302245 INFO::Fitting model to feature number 453, Glu.Ala
+2024-10-17 18:44:39.316727 WARNING::Fitting problem for feature 453 a warning was issued
+2024-10-17 18:44:39.357155 INFO::Fitting model to feature number 454, Glucosamine.6.phosphate
+2024-10-17 18:44:39.397502 INFO::Fitting model to feature number 455, Glu.Ile.Lys
+2024-10-17 18:44:39.449715 INFO::Fitting model to feature number 456, glutamic.acid
+2024-10-17 18:44:39.487821 INFO::Fitting model to feature number 457, Glutamine
+2024-10-17 18:44:39.526181 INFO::Fitting model to feature number 458, Gly.Asn
+2024-10-17 18:44:39.565101 INFO::Fitting model to feature number 459, glycerophosphocholine
+2024-10-17 18:44:39.60479 INFO::Fitting model to feature number 460, glycine
+2024-10-17 18:44:39.644095 INFO::Fitting model to feature number 461, Glycitein
+2024-10-17 18:44:39.683985 INFO::Fitting model to feature number 462, Gly.His
+2024-10-17 18:44:39.738194 INFO::Fitting model to feature number 463, Gly.Ile
+2024-10-17 18:44:39.777118 INFO::Fitting model to feature number 464, Gly.Ile.Lys
+2024-10-17 18:44:39.815251 INFO::Fitting model to feature number 465, Gly.Met
+2024-10-17 18:44:39.854382 INFO::Fitting model to feature number 466, Gly.Pro
+2024-10-17 18:44:39.893611 INFO::Fitting model to feature number 467, Gly.Val.Lys
+2024-10-17 18:44:39.933437 INFO::Fitting model to feature number 468, guanidinosuccinate
+2024-10-17 18:44:39.948215 WARNING::Fitting problem for feature 468 a warning was issued
+2024-10-17 18:44:39.986998 INFO::Fitting model to feature number 469, Guanosine
+2024-10-17 18:44:40.02809 INFO::Fitting model to feature number 470, His.Ala
+2024-10-17 18:44:40.078934 INFO::Fitting model to feature number 471, his.ile
+2024-10-17 18:44:40.119084 INFO::Fitting model to feature number 472, His.Leu
+2024-10-17 18:44:40.157677 INFO::Fitting model to feature number 473, His.Ser
+2024-10-17 18:44:40.196814 INFO::Fitting model to feature number 474, Histamine
+2024-10-17 18:44:40.235955 INFO::Fitting model to feature number 475, His.Thr
+2024-10-17 18:44:40.275719 INFO::Fitting model to feature number 476, histidine
+2024-10-17 18:44:40.316956 INFO::Fitting model to feature number 477, histidinol
+2024-10-17 18:44:40.357131 INFO::Fitting model to feature number 478, His.Tyr
+2024-10-17 18:44:40.422393 INFO::Fitting model to feature number 479, His.Val
+2024-10-17 18:44:40.460402 INFO::Fitting model to feature number 480, Homarine
+2024-10-17 18:44:40.474935 WARNING::Fitting problem for feature 480 a warning was issued
+2024-10-17 18:44:40.515419 INFO::Fitting model to feature number 481, Ile.Ala
+2024-10-17 18:44:40.556195 INFO::Fitting model to feature number 482, Ile.Arg
+2024-10-17 18:44:40.597002 INFO::Fitting model to feature number 483, Ile.Gln
+2024-10-17 18:44:40.636739 INFO::Fitting model to feature number 484, Ile.Glu
+2024-10-17 18:44:40.677648 INFO::Fitting model to feature number 485, Ile.Pro
+2024-10-17 18:44:40.731048 INFO::Fitting model to feature number 486, Ile.Ser
+2024-10-17 18:44:40.7687 INFO::Fitting model to feature number 487, Ile.Thr
+2024-10-17 18:44:40.807178 INFO::Fitting model to feature number 488, Ile.Val
+2024-10-17 18:44:40.846433 INFO::Fitting model to feature number 489, Ile.Val.Arg
+2024-10-17 18:44:40.887097 INFO::Fitting model to feature number 490, Indole.3.carboxaldehyde
+2024-10-17 18:44:40.927445 INFO::Fitting model to feature number 491, isethionate
+2024-10-17 18:44:40.968555 INFO::Fitting model to feature number 492, Isoleucine
+2024-10-17 18:44:41.007489 INFO::Fitting model to feature number 493, Kynurenic.acid
+2024-10-17 18:44:41.059975 INFO::Fitting model to feature number 494, L.Arginine..methyl.ester
+2024-10-17 18:44:41.099021 INFO::Fitting model to feature number 495, Lauroyl.L.carnitine
+2024-10-17 18:44:41.137068 INFO::Fitting model to feature number 496, Leu.Asn
+2024-10-17 18:44:41.17619 INFO::Fitting model to feature number 497, Leucine
+2024-10-17 18:44:41.216151 INFO::Fitting model to feature number 498, Leu.His
+2024-10-17 18:44:41.260357 INFO::Fitting model to feature number 499, Leu.Met
+2024-10-17 18:44:41.303635 INFO::Fitting model to feature number 500, Leu.Thr
+2024-10-17 18:44:41.343372 INFO::Fitting model to feature number 501, Leu.Trp
+2024-10-17 18:44:41.396298 INFO::Fitting model to feature number 502, Leu.Val.Lys
+2024-10-17 18:44:41.436351 INFO::Fitting model to feature number 503, Linoleoyl.ethanolamide
+2024-10-17 18:44:41.474547 INFO::Fitting model to feature number 504, LPA.16.0
+2024-10-17 18:44:41.513687 INFO::Fitting model to feature number 505, LPC.12.0
+2024-10-17 18:44:41.553505 INFO::Fitting model to feature number 506, LPC.15.0
+2024-10-17 18:44:41.592789 INFO::Fitting model to feature number 507, LPC.16.0
+2024-10-17 18:44:41.63078 INFO::Fitting model to feature number 508, LPC.18.0....1185
+2024-10-17 18:44:41.670264 INFO::Fitting model to feature number 509, LPC.18.1.Isomer.B
+2024-10-17 18:44:41.724767 INFO::Fitting model to feature number 510, LPC.O.16.1....1188
+2024-10-17 18:44:41.763492 INFO::Fitting model to feature number 511, LPE.16.0....1189
+2024-10-17 18:44:41.801294 INFO::Fitting model to feature number 512, LPE.O.16.1
+2024-10-17 18:44:41.84084 INFO::Fitting model to feature number 513, LPI.18.0
+2024-10-17 18:44:41.880805 INFO::Fitting model to feature number 514, L.Saccharopine
+2024-10-17 18:44:41.921291 INFO::Fitting model to feature number 515, Lys.Asp
+2024-10-17 18:44:41.960997 INFO::Fitting model to feature number 516, Lys.Gly
+2024-10-17 18:44:42.013236 INFO::Fitting model to feature number 517, lysine
+2024-10-17 18:44:42.053302 INFO::Fitting model to feature number 518, Lys.Phe
+2024-10-17 18:44:42.093262 INFO::Fitting model to feature number 519, Lys.Pro
+2024-10-17 18:44:42.132716 INFO::Fitting model to feature number 520, Lys.Ser
+2024-10-17 18:44:42.170821 INFO::Fitting model to feature number 521, Lys.Val
+2024-10-17 18:44:42.210328 INFO::Fitting model to feature number 522, Malonic.acid
+2024-10-17 18:44:42.250116 INFO::Fitting model to feature number 523, Maltose
+2024-10-17 18:44:42.290066 INFO::Fitting model to feature number 524, maltotriose.1
+2024-10-17 18:44:42.34457 INFO::Fitting model to feature number 525, Mandelic.acid
+2024-10-17 18:44:42.383855 INFO::Fitting model to feature number 526, Mannitol
+2024-10-17 18:44:42.422869 INFO::Fitting model to feature number 527, Melatonin
+2024-10-17 18:44:42.462858 INFO::Fitting model to feature number 528, Met.Ala
+2024-10-17 18:44:42.502362 INFO::Fitting model to feature number 529, Met.Arg
+2024-10-17 18:44:42.542295 INFO::Fitting model to feature number 530, Met.Asp
+2024-10-17 18:44:42.582654 INFO::Fitting model to feature number 531, Met.Glu
+2024-10-17 18:44:42.622897 INFO::Fitting model to feature number 532, Methacholine
+2024-10-17 18:44:42.676512 INFO::Fitting model to feature number 533, Methionine
+2024-10-17 18:44:42.715395 INFO::Fitting model to feature number 534, methionine.sulfoxide
+2024-10-17 18:44:42.755284 INFO::Fitting model to feature number 535, Met.His
+2024-10-17 18:44:42.795272 INFO::Fitting model to feature number 536, Methohexital
+2024-10-17 18:44:42.836048 INFO::Fitting model to feature number 537, Methyl.beta.galactopyranoside
+2024-10-17 18:44:42.875419 INFO::Fitting model to feature number 538, methylglyoxal.derived.hydroimidazolone
+2024-10-17 18:44:42.915008 INFO::Fitting model to feature number 539, Met.Lys
+2024-10-17 18:44:42.956782 INFO::Fitting model to feature number 540, Met.Thr
+2024-10-17 18:44:43.011759 INFO::Fitting model to feature number 541, Met.Val
+2024-10-17 18:44:43.049938 INFO::Fitting model to feature number 542, myo.inositol
+2024-10-17 18:44:43.088894 INFO::Fitting model to feature number 543, Myristoyl.L.carnitine
+2024-10-17 18:44:43.128683 INFO::Fitting model to feature number 544, N..5.acetamidopentyl.acetamide
+2024-10-17 18:44:43.16928 INFO::Fitting model to feature number 545, N.N.epsiloN.dimethyl.lysine
+2024-10-17 18:44:43.207848 INFO::Fitting model to feature number 546, N2.acetyl.histidine
+2024-10-17 18:44:43.248144 INFO::Fitting model to feature number 547, N8.acetylspermidine
+2024-10-17 18:44:43.291348 INFO::Fitting model to feature number 548, N.acetylarginine
+2024-10-17 18:44:43.34742 INFO::Fitting model to feature number 549, N.Acetyl.D.proline
+2024-10-17 18:44:43.386387 INFO::Fitting model to feature number 550, N.Acetylphenylalanine
+2024-10-17 18:44:43.426819 INFO::Fitting model to feature number 551, N.Acetylputrescine
+2024-10-17 18:44:43.46514 INFO::Fitting model to feature number 552, N.Acetylserine
+2024-10-17 18:44:43.506706 INFO::Fitting model to feature number 553, N.alpha.methylhistamine
+2024-10-17 18:44:43.546765 INFO::Fitting model to feature number 554, N.Carboxyethyl.gamma.aminobutyric.acid
+2024-10-17 18:44:43.587118 INFO::Fitting model to feature number 555, N.fructosyl.isoleucine
+2024-10-17 18:44:43.639802 INFO::Fitting model to feature number 556, Nicotinamide.riboside
+2024-10-17 18:44:43.678002 INFO::Fitting model to feature number 557, N.Isobutyrylglycine
+2024-10-17 18:44:43.718061 INFO::Fitting model to feature number 558, N.Methylanthranilic.acid
+2024-10-17 18:44:43.756974 INFO::Fitting model to feature number 559, N.Methylglutamic.acid
+2024-10-17 18:44:43.79677 INFO::Fitting model to feature number 560, N.nitroimidazolidi.N.2.imine
+2024-10-17 18:44:43.835785 INFO::Fitting model to feature number 561, N.omega.Acetylhistamine
+2024-10-17 18:44:43.875457 INFO::Fitting model to feature number 562, Octadecanedioic.acid
+2024-10-17 18:44:43.914777 INFO::Fitting model to feature number 563, Octopine
+2024-10-17 18:44:43.967818 INFO::Fitting model to feature number 564, Oleoyl.L.carnitine
+2024-10-17 18:44:44.007035 INFO::Fitting model to feature number 565, ornithine....1268
+2024-10-17 18:44:44.04512 INFO::Fitting model to feature number 566, Palmitoylcarnitine
+2024-10-17 18:44:44.08502 INFO::Fitting model to feature number 567, Pantothenic.acid
+2024-10-17 18:44:44.116715 WARNING::Fitting problem for feature 567 a warning was issued
+2024-10-17 18:44:44.158273 INFO::Fitting model to feature number 568, p.coumaric.acid
+2024-10-17 18:44:44.199424 INFO::Fitting model to feature number 569, Phe.Ala
+2024-10-17 18:44:44.238882 INFO::Fitting model to feature number 570, phe.arg
+2024-10-17 18:44:44.292416 INFO::Fitting model to feature number 571, Phe.Asn
+2024-10-17 18:44:44.33048 INFO::Fitting model to feature number 572, Phe.Glu
+2024-10-17 18:44:44.370177 INFO::Fitting model to feature number 573, Phe.His
+2024-10-17 18:44:44.409368 INFO::Fitting model to feature number 574, Phe.Lys
+2024-10-17 18:44:44.450043 INFO::Fitting model to feature number 575, Phe.Met
+2024-10-17 18:44:44.46506 WARNING::Fitting problem for feature 575 a warning was issued
+2024-10-17 18:44:44.506741 INFO::Fitting model to feature number 576, phenylacetylglycine
+2024-10-17 18:44:44.546569 INFO::Fitting model to feature number 577, Phenylalanine
+2024-10-17 18:44:44.586072 INFO::Fitting model to feature number 578, Phe.Thr
+2024-10-17 18:44:44.638453 INFO::Fitting model to feature number 579, Phe.Val
+2024-10-17 18:44:44.677378 INFO::Fitting model to feature number 580, Pipecolic.acid
+2024-10-17 18:44:44.716191 INFO::Fitting model to feature number 581, Pro.Asp
+2024-10-17 18:44:44.756503 INFO::Fitting model to feature number 582, pro.gly
+2024-10-17 18:44:44.796275 INFO::Fitting model to feature number 583, Pro.Ile
+2024-10-17 18:44:44.83745 INFO::Fitting model to feature number 584, Proline
+2024-10-17 18:44:44.877805 INFO::Fitting model to feature number 585, Pro.Phe
+2024-10-17 18:44:44.932186 INFO::Fitting model to feature number 586, Pro.Pro
+2024-10-17 18:44:44.971774 INFO::Fitting model to feature number 587, Pro.Ser
+2024-10-17 18:44:45.011244 INFO::Fitting model to feature number 588, Pro.Thr
+2024-10-17 18:44:45.050565 INFO::Fitting model to feature number 589, Pyridoxamine
+2024-10-17 18:44:45.0909 INFO::Fitting model to feature number 590, pyrrolidine
+2024-10-17 18:44:45.130404 INFO::Fitting model to feature number 591, quinaldic.acid
+2024-10-17 18:44:45.170614 INFO::Fitting model to feature number 592, resveratrol.3.O.sulfate
+2024-10-17 18:44:45.211323 INFO::Fitting model to feature number 593, riboflavin
+2024-10-17 18:44:45.264777 INFO::Fitting model to feature number 594, S.Adenosyl.L.methionine
+2024-10-17 18:44:45.307346 INFO::Fitting model to feature number 595, salicylamide
+2024-10-17 18:44:45.34748 INFO::Fitting model to feature number 596, SDMA
+2024-10-17 18:44:45.386752 INFO::Fitting model to feature number 597, sedoheptulose
+2024-10-17 18:44:45.427911 INFO::Fitting model to feature number 598, serine....1320
+2024-10-17 18:44:45.4674 INFO::Fitting model to feature number 599, Ser.Lys
+2024-10-17 18:44:45.507928 INFO::Fitting model to feature number 600, ser.pro
+2024-10-17 18:44:45.548775 INFO::Fitting model to feature number 601, Ser.Thr
+2024-10-17 18:44:45.602675 INFO::Fitting model to feature number 602, Ser.Val
+2024-10-17 18:44:45.642173 INFO::Fitting model to feature number 603, SM.22.1.2O.12.0
+2024-10-17 18:44:45.68074 INFO::Fitting model to feature number 604, Stercobilin
+2024-10-17 18:44:45.720282 INFO::Fitting model to feature number 605, sulfochenodeoxycholic.acid
+2024-10-17 18:44:45.760323 INFO::Fitting model to feature number 606, Tagatose
+2024-10-17 18:44:45.800081 INFO::Fitting model to feature number 607, Taurine
+2024-10-17 18:44:45.839866 INFO::Fitting model to feature number 608, Taurocholic.acid
+2024-10-17 18:44:45.880468 INFO::Fitting model to feature number 609, Thr.Ala
+2024-10-17 18:44:45.932164 INFO::Fitting model to feature number 610, Thr.Asp
+2024-10-17 18:44:45.971083 INFO::Fitting model to feature number 611, threonine
+2024-10-17 18:44:46.00984 INFO::Fitting model to feature number 612, Thr.Glu
+2024-10-17 18:44:46.049761 INFO::Fitting model to feature number 613, Thr.His
+2024-10-17 18:44:46.090028 INFO::Fitting model to feature number 614, Thr.Ile.Lys
+2024-10-17 18:44:46.129899 INFO::Fitting model to feature number 615, Thr.Lys
+2024-10-17 18:44:46.17 INFO::Fitting model to feature number 616, Thr.Thr
+2024-10-17 18:44:46.223903 INFO::Fitting model to feature number 617, Thr.Val
+2024-10-17 18:44:46.263695 INFO::Fitting model to feature number 618, TMAO
+2024-10-17 18:44:46.301642 INFO::Fitting model to feature number 619, trans.Zeatin
+2024-10-17 18:44:46.340429 INFO::Fitting model to feature number 620, Trihydroxycholestanoic.acid
+2024-10-17 18:44:46.380685 INFO::Fitting model to feature number 621, TRIMETHYLAMINE
+2024-10-17 18:44:46.421142 INFO::Fitting model to feature number 622, Trp.Ser
+2024-10-17 18:44:46.460643 INFO::Fitting model to feature number 623, Trp.Val
+2024-10-17 18:44:46.501316 INFO::Fitting model to feature number 624, Tryptamine
+2024-10-17 18:44:46.553865 INFO::Fitting model to feature number 625, Tryptoline
+2024-10-17 18:44:46.593336 INFO::Fitting model to feature number 626, Tryptophan
+2024-10-17 18:44:46.632587 INFO::Fitting model to feature number 627, Tyr.Ala
+2024-10-17 18:44:46.671992 INFO::Fitting model to feature number 628, tyr.arg
+2024-10-17 18:44:46.711272 INFO::Fitting model to feature number 629, Tyr.Asn
+2024-10-17 18:44:46.751618 INFO::Fitting model to feature number 630, Tyr.Lys
+2024-10-17 18:44:46.791561 INFO::Fitting model to feature number 631, tyrosine
+2024-10-17 18:44:46.832191 INFO::Fitting model to feature number 632, Tyr.Thr
+2024-10-17 18:44:46.884618 INFO::Fitting model to feature number 633, Tyr.Tyr.Tyr
+2024-10-17 18:44:46.923914 INFO::Fitting model to feature number 634, Tyr.Val
+2024-10-17 18:44:46.963203 INFO::Fitting model to feature number 635, Uridine
+2024-10-17 18:44:47.003259 INFO::Fitting model to feature number 636, urobilin
+2024-10-17 18:44:47.042645 INFO::Fitting model to feature number 637, Urocanic.acid
+2024-10-17 18:44:47.084097 INFO::Fitting model to feature number 638, Ursocholic.acid
+2024-10-17 18:44:47.124732 INFO::Fitting model to feature number 639, Vaccenic.acid
+2024-10-17 18:44:47.18625 INFO::Fitting model to feature number 640, Val.Arg
+2024-10-17 18:44:47.22794 INFO::Fitting model to feature number 641, Val.Asp
+2024-10-17 18:44:47.267282 INFO::Fitting model to feature number 642, valeryl.carnitine
+2024-10-17 18:44:47.307036 INFO::Fitting model to feature number 643, Val.Gly
+2024-10-17 18:44:47.347301 INFO::Fitting model to feature number 644, Val.His
+2024-10-17 18:44:47.387521 INFO::Fitting model to feature number 645, Valine
+2024-10-17 18:44:47.427948 INFO::Fitting model to feature number 646, Val.Met
+2024-10-17 18:44:47.467159 INFO::Fitting model to feature number 647, Val.Phe.Lys
+2024-10-17 18:44:47.522346 INFO::Fitting model to feature number 648, Val.Pro
+2024-10-17 18:44:47.561928 INFO::Fitting model to feature number 649, Val.Ser
+2024-10-17 18:44:47.600953 INFO::Fitting model to feature number 650, Val.Thr
+2024-10-17 18:44:47.640327 INFO::Fitting model to feature number 651, Val.Tyr
+2024-10-17 18:44:47.680062 INFO::Fitting model to feature number 652, Val.Val
+2024-10-17 18:44:47.719503 INFO::Fitting model to feature number 653, Val.Val.Lys
+2024-10-17 18:44:47.759986 INFO::Fitting model to feature number 654, Xanthurenic.acid
+2024-10-17 18:44:47.955203 INFO::Counting total values for each feature
+2024-10-17 18:44:48.085145 INFO::Writing filtered data to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/features/filtered_data.tsv
+2024-10-17 18:44:48.191453 INFO::Writing filtered, normalized data to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/features/filtered_data_norm.tsv
+2024-10-17 18:44:48.291441 INFO::Writing filtered, normalized, transformed data to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/features/filtered_data_norm_transformed.tsv
+2024-10-17 18:44:48.440589 WARNING::Deleting existing residuals file: /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/residuals.rds
+2024-10-17 18:44:48.441814 INFO::Writing residuals to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/residuals.rds
+2024-10-17 18:44:48.5488 WARNING::Deleting existing fitted file: /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/fitted.rds
+2024-10-17 18:44:48.549959 INFO::Writing fitted values to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/fitted.rds
+2024-10-17 18:44:48.601626 WARNING::Deleting existing ranef file: /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/ranef.rds
+2024-10-17 18:44:48.602729 INFO::Writing extracted random effects to file /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/fits/ranef.rds
+2024-10-17 18:44:48.611182 INFO::Writing all results to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/all_results.tsv
+2024-10-17 18:44:48.627084 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): /home/julianne/Documents/biogeography/Regional-Mouse-Biogeography-Analysis/melonnpan/Luminal-SeqRun-Line-Sex-Site_General_1-MouseID/significant_results.tsv

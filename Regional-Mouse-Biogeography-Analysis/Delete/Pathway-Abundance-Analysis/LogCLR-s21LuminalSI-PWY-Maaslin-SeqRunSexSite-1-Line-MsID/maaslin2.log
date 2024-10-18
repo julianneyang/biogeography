@@ -1,0 +1,612 @@
+2021-07-09 07:18:28 INFO::Writing function arguments to log file
+2021-07-09 07:18:28 DEBUG::Function arguments
+2021-07-09 07:18:28 DEBUG::Output folder: LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID
+2021-07-09 07:18:28 DEBUG::Min Abundance: 0.000000
+2021-07-09 07:18:28 DEBUG::Min Prevalence: 0.100000
+2021-07-09 07:18:28 DEBUG::Normalization: CLR
+2021-07-09 07:18:28 DEBUG::Transform: LOG
+2021-07-09 07:18:28 DEBUG::Analysis method: LM
+2021-07-09 07:18:28 DEBUG::Max significance: 0.250000
+2021-07-09 07:18:28 DEBUG::Random effects: Line,MouseID_Line
+2021-07-09 07:18:28 DEBUG::Fixed effects: Sequencing_Run,Sex,Site
+2021-07-09 07:18:28 DEBUG::Correction method: BH
+2021-07-09 07:18:28 DEBUG::Standardize: TRUE
+2021-07-09 07:18:28 DEBUG::Cores: 1
+2021-07-09 07:18:28 INFO::Verifying options selected are valid
+2021-07-09 07:18:28 INFO::Determining format of input files
+2021-07-09 07:18:28 INFO::Input format is data samples as columns and metadata samples as rows
+2021-07-09 07:18:28 DEBUG::Transformed data so samples are rows
+2021-07-09 07:18:28 DEBUG::A total of 137 samples were found in both the data and metadata
+2021-07-09 07:18:28 DEBUG::Reordering data/metadata to use same sample ordering
+2021-07-09 07:18:28 INFO::Formula for random effects: expr ~ (1 | Line) + (1 | MouseID_Line)
+2021-07-09 07:18:28 INFO::Formula for fixed effects: expr ~  Sequencing_Run + Sex + Site
+2021-07-09 07:18:28 INFO::Running selected normalization method: CLR
+2021-07-09 07:18:28 INFO::Filter data based on min abundance and min prevalence
+2021-07-09 07:18:28 INFO::Total samples in data: 137
+2021-07-09 07:18:28 INFO::Min samples required with min abundance for a feature not to be filtered: 13.700000
+2021-07-09 07:18:28 INFO::Total filtered features: 112
+2021-07-09 07:18:28 INFO::Filtered feature names: X3.HYDROXYPHENYLACETATE.DEGRADATION.PWY, ALL.CHORISMATE.PWY, ARGDEG.PWY, AST.PWY, BIOTIN.BIOSYNTHESIS.PWY, CATECHOL.ORTHO.CLEAVAGE.PWY, CENTFERM.PWY, DENITRIFICATION.PWY, ECASYN.PWY, ENTBACSYN.PWY, FAO.PWY, FASYN.INITIAL.PWY, GALACTARDEG.PWY, GLUCARDEG.PWY, GLUCARGALACTSUPER.PWY, GLUCOSE1PMETAB.PWY, GLYCOL.GLYOXDEG.PWY, HCAMHPDEG.PWY, KDO.NAGLIPASYN.PWY, KETOGLUCONMET.PWY, LEU.DEG2.PWY, LPSSYN.PWY, METH.ACETATE.PWY, METHGLYUT.PWY, ORNARGDEG.PWY, ORNDEG.PWY, P105.PWY, P125.PWY, P162.PWY, P163.PWY, P221.PWY, P281.PWY, PPGPPMET.PWY, PROTOCATECHUATE.ORTHO.CLEAVAGE.PWY, PWY.1622, PWY.181, PWY.4361, PWY.5005, PWY.5028, PWY.5088, PWY.5177, PWY.5178, PWY.5180, PWY.5181, PWY.5182, PWY.5415, PWY.5417, PWY.5431, PWY.5507, PWY.5531, PWY.5532, PWY.5676, PWY.5677, PWY.5705, PWY.5741, PWY.5747, PWY.5837, PWY.5845, PWY.5850, PWY.5855, PWY.5856, PWY.5857, PWY.5860, PWY.5862, PWY.5863, PWY.5896, PWY.5920, PWY.5971, PWY.5989, PWY.6071, PWY.6165, PWY.6182, PWY.6185, PWY.6282, PWY.6383, PWY.6397, PWY.6519, PWY.6562, PWY.6572, PWY.6590, PWY.6629, PWY.6690, PWY.6708, PWY.6728, PWY.6749, PWY.6876, PWY.6891, PWY.6906, PWY.7090, PWY.7094, PWY.7159, PWY.7198, PWY.7210, PWY.7254, PWY.7431, PWY.7446, PWY.7527, PWY.7664, PWY0.1277, PWY0.1338, PWY0.1415, PWY0.1533, PWY0.321, PWY0.41, PWY0.42, PWY1G.0, PWYG.321, REDCITCYC, TCA.GLYOX.BYPASS, THREOCAT.PWY, TYRFUMCAT.PWY, UBISYN.PWY
+2021-07-09 07:18:28 INFO::Applying z-score to standardize continuous metadata
+2021-07-09 07:18:28 INFO::Running selected transform method: LOG
+2021-07-09 07:18:28 INFO::Running selected analysis method: LM
+2021-07-09 07:18:28 INFO::Fitting model to feature number 1, X1CMET2.PWY
+2021-07-09 07:18:28 INFO::Fitting model to feature number 2, ANAEROFRUCAT.PWY
+2021-07-09 07:18:28 INFO::Fitting model to feature number 3, ANAGLYCOLYSIS.PWY
+2021-07-09 07:18:28 INFO::Fitting model to feature number 4, ARG.POLYAMINE.SYN
+2021-07-09 07:18:28 INFO::Fitting model to feature number 5, ARGORNPROST.PWY
+2021-07-09 07:18:28 INFO::Fitting model to feature number 6, ARGSYN.PWY
+2021-07-09 07:18:28 INFO::Fitting model to feature number 7, ARGSYNBSUB.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 8, ARO.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 9, ASPASN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 10, BRANCHED.CHAIN.AA.SYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 11, CALVIN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 12, COA.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 13, COBALSYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 14, CODH.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 15, COLANSYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 16, COMPLETE.ARO.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 17, DAPLYSINESYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 18, DENOVOPURINE2.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 19, DTDPRHAMSYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 20, FASYN.ELONG.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 21, FERMENTATION.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 22, FOLSYN.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 23, FUC.RHAMCAT.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 24, FUCCAT.PWY
+2021-07-09 07:18:29 INFO::Fitting model to feature number 25, GALACT.GLUCUROCAT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 26, GALACTUROCAT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 27, GLCMANNANAUT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 28, GLUCONEO.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 29, GLUCUROCAT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 30, GLUTORN.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 31, GLYCOCAT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 32, GLYCOGENSYNTH.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 33, GLYCOLYSIS
+2021-07-09 07:18:30 INFO::Fitting model to feature number 34, GLYCOLYSIS.E.D
+2021-07-09 07:18:30 INFO::Fitting model to feature number 35, GLYCOLYSIS.TCA.GLYOX.BYPASS
+2021-07-09 07:18:30 INFO::Fitting model to feature number 36, GLYOXYLATE.BYPASS
+2021-07-09 07:18:30 INFO::Fitting model to feature number 37, GOLPDLCAT.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 38, HEME.BIOSYNTHESIS.II
+2021-07-09 07:18:30 INFO::Fitting model to feature number 39, HEMESYN2.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 40, HEXITOLDEGSUPER.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 41, HISDEG.PWY
+2021-07-09 07:18:30 INFO::Fitting model to feature number 42, HISTSYN.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 43, HOMOSER.METSYN.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 44, HSERMETANA.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 45, ILEUSYN.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 46, LACTOSECAT.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 47, MET.SAM.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 48, NAD.BIOSYNTHESIS.II
+2021-07-09 07:18:31 INFO::Fitting model to feature number 49, NAGLIPASYN.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 50, NONMEVIPP.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 51, NONOXIPENT.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 52, OANTIGEN.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 53, P108.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 54, P122.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 55, P124.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 56, P161.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 57, P164.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 58, P23.PWY
+2021-07-09 07:18:31 INFO::Fitting model to feature number 59, P341.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 60, P4.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 61, P42.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 62, P441.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 63, P461.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 64, P562.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 65, PANTO.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 66, PANTOSYN.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 67, PENTOSE.P.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 68, PEPTIDOGLYCANSYN.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 69, PHOSLIPSYN.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 70, POLYAMINSYN3.PWY
+2021-07-09 07:18:32 WARNING::Fitting problem for feature 70 returning NA
+2021-07-09 07:18:32 INFO::Fitting model to feature number 71, POLYAMSYN.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 72, POLYISOPRENSYN.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 73, PRPP.PWY
+2021-07-09 07:18:32 INFO::Fitting model to feature number 74, PWY.1269
+2021-07-09 07:18:32 INFO::Fitting model to feature number 75, PWY.1861
+2021-07-09 07:18:32 INFO::Fitting model to feature number 76, PWY.2941
+2021-07-09 07:18:32 INFO::Fitting model to feature number 77, PWY.2942
+2021-07-09 07:18:33 INFO::Fitting model to feature number 78, PWY.3001
+2021-07-09 07:18:33 INFO::Fitting model to feature number 79, PWY.3781
+2021-07-09 07:18:33 INFO::Fitting model to feature number 80, PWY.4984
+2021-07-09 07:18:33 INFO::Fitting model to feature number 81, PWY.5022
+2021-07-09 07:18:33 INFO::Fitting model to feature number 82, PWY.5097
+2021-07-09 07:18:33 INFO::Fitting model to feature number 83, PWY.5100
+2021-07-09 07:18:33 INFO::Fitting model to feature number 84, PWY.5101
+2021-07-09 07:18:33 INFO::Fitting model to feature number 85, PWY.5103
+2021-07-09 07:18:33 INFO::Fitting model to feature number 86, PWY.5104
+2021-07-09 07:18:33 INFO::Fitting model to feature number 87, PWY.5121
+2021-07-09 07:18:33 INFO::Fitting model to feature number 88, PWY.5154
+2021-07-09 07:18:33 INFO::Fitting model to feature number 89, PWY.5188
+2021-07-09 07:18:33 INFO::Fitting model to feature number 90, PWY.5189
+2021-07-09 07:18:33 INFO::Fitting model to feature number 91, PWY.5265
+2021-07-09 07:18:33 INFO::Fitting model to feature number 92, PWY.5304
+2021-07-09 07:18:33 INFO::Fitting model to feature number 93, PWY.5345
+2021-07-09 07:18:33 INFO::Fitting model to feature number 94, PWY.5347
+2021-07-09 07:18:33 INFO::Fitting model to feature number 95, PWY.5384
+2021-07-09 07:18:34 INFO::Fitting model to feature number 96, PWY.5484
+2021-07-09 07:18:34 INFO::Fitting model to feature number 97, PWY.5505
+2021-07-09 07:18:34 INFO::Fitting model to feature number 98, PWY.5509
+2021-07-09 07:18:34 INFO::Fitting model to feature number 99, PWY.5659
+2021-07-09 07:18:34 INFO::Fitting model to feature number 100, PWY.5667
+2021-07-09 07:18:34 INFO::Fitting model to feature number 101, PWY.5686
+2021-07-09 07:18:34 INFO::Fitting model to feature number 102, PWY.5695
+2021-07-09 07:18:34 INFO::Fitting model to feature number 103, PWY.5838
+2021-07-09 07:18:34 INFO::Fitting model to feature number 104, PWY.5840
+2021-07-09 07:18:34 INFO::Fitting model to feature number 105, PWY.5861
+2021-07-09 07:18:34 INFO::Fitting model to feature number 106, PWY.5897
+2021-07-09 07:18:34 INFO::Fitting model to feature number 107, PWY.5898
+2021-07-09 07:18:34 INFO::Fitting model to feature number 108, PWY.5899
+2021-07-09 07:18:34 INFO::Fitting model to feature number 109, PWY.5910
+2021-07-09 07:18:34 INFO::Fitting model to feature number 110, PWY.5913
+2021-07-09 07:18:34 INFO::Fitting model to feature number 111, PWY.5918
+2021-07-09 07:18:34 INFO::Fitting model to feature number 112, PWY.5973
+2021-07-09 07:18:35 INFO::Fitting model to feature number 113, PWY.6121
+2021-07-09 07:18:35 INFO::Fitting model to feature number 114, PWY.6122
+2021-07-09 07:18:35 INFO::Fitting model to feature number 115, PWY.6123
+2021-07-09 07:18:35 INFO::Fitting model to feature number 116, PWY.6125
+2021-07-09 07:18:35 INFO::Fitting model to feature number 117, PWY.6126
+2021-07-09 07:18:35 INFO::Fitting model to feature number 118, PWY.6147
+2021-07-09 07:18:35 INFO::Fitting model to feature number 119, PWY.6151
+2021-07-09 07:18:35 INFO::Fitting model to feature number 120, PWY.6163
+2021-07-09 07:18:35 INFO::Fitting model to feature number 121, PWY.621
+2021-07-09 07:18:35 INFO::Fitting model to feature number 122, PWY.6263
+2021-07-09 07:18:35 INFO::Fitting model to feature number 123, PWY.6269
+2021-07-09 07:18:35 INFO::Fitting model to feature number 124, PWY.6277
+2021-07-09 07:18:35 INFO::Fitting model to feature number 125, PWY.6317
+2021-07-09 07:18:35 INFO::Fitting model to feature number 126, PWY.6353
+2021-07-09 07:18:35 INFO::Fitting model to feature number 127, PWY.6385
+2021-07-09 07:18:35 INFO::Fitting model to feature number 128, PWY.6386
+2021-07-09 07:18:35 INFO::Fitting model to feature number 129, PWY.6387
+2021-07-09 07:18:36 INFO::Fitting model to feature number 130, PWY.6396
+2021-07-09 07:18:36 INFO::Fitting model to feature number 131, PWY.6467
+2021-07-09 07:18:36 INFO::Fitting model to feature number 132, PWY.6470
+2021-07-09 07:18:36 INFO::Fitting model to feature number 133, PWY.6471
+2021-07-09 07:18:36 INFO::Fitting model to feature number 134, PWY.6478
+2021-07-09 07:18:36 INFO::Fitting model to feature number 135, PWY.6507
+2021-07-09 07:18:36 INFO::Fitting model to feature number 136, PWY.6545
+2021-07-09 07:18:36 INFO::Fitting model to feature number 137, PWY.6588
+2021-07-09 07:18:36 INFO::Fitting model to feature number 138, PWY.6608
+2021-07-09 07:18:36 INFO::Fitting model to feature number 139, PWY.6609
+2021-07-09 07:18:36 INFO::Fitting model to feature number 140, PWY.6612
+2021-07-09 07:18:36 INFO::Fitting model to feature number 141, PWY.6628
+2021-07-09 07:18:36 INFO::Fitting model to feature number 142, PWY.6630
+2021-07-09 07:18:36 INFO::Fitting model to feature number 143, PWY.6700
+2021-07-09 07:18:36 INFO::Fitting model to feature number 144, PWY.6703
+2021-07-09 07:18:36 INFO::Fitting model to feature number 145, PWY.6737
+2021-07-09 07:18:36 INFO::Fitting model to feature number 146, PWY.6892
+2021-07-09 07:18:36 INFO::Fitting model to feature number 147, PWY.6895
+2021-07-09 07:18:37 INFO::Fitting model to feature number 148, PWY.6897
+2021-07-09 07:18:37 INFO::Fitting model to feature number 149, PWY.6901
+2021-07-09 07:18:37 INFO::Fitting model to feature number 150, PWY.6969
+2021-07-09 07:18:37 INFO::Fitting model to feature number 151, PWY.7003
+2021-07-09 07:18:37 INFO::Fitting model to feature number 152, PWY.7013
+2021-07-09 07:18:37 INFO::Fitting model to feature number 153, PWY.7111
+2021-07-09 07:18:37 INFO::Fitting model to feature number 154, PWY.7184
+2021-07-09 07:18:37 INFO::Fitting model to feature number 155, PWY.7187
+2021-07-09 07:18:37 INFO::Fitting model to feature number 156, PWY.7196
+2021-07-09 07:18:37 INFO::Fitting model to feature number 157, PWY.7197
+2021-07-09 07:18:37 INFO::Fitting model to feature number 158, PWY.7199
+2021-07-09 07:18:37 INFO::Fitting model to feature number 159, PWY.7200
+2021-07-09 07:18:37 INFO::Fitting model to feature number 160, PWY.7208
+2021-07-09 07:18:37 INFO::Fitting model to feature number 161, PWY.7211
+2021-07-09 07:18:37 INFO::Fitting model to feature number 162, PWY.7219
+2021-07-09 07:18:37 INFO::Fitting model to feature number 163, PWY.7220
+2021-07-09 07:18:37 INFO::Fitting model to feature number 164, PWY.7221
+2021-07-09 07:18:38 INFO::Fitting model to feature number 165, PWY.7222
+2021-07-09 07:18:38 INFO::Fitting model to feature number 166, PWY.7228
+2021-07-09 07:18:38 INFO::Fitting model to feature number 167, PWY.7229
+2021-07-09 07:18:38 INFO::Fitting model to feature number 168, PWY.7234
+2021-07-09 07:18:38 INFO::Fitting model to feature number 169, PWY.7237
+2021-07-09 07:18:38 INFO::Fitting model to feature number 170, PWY.7242
+2021-07-09 07:18:38 INFO::Fitting model to feature number 171, PWY.7315
+2021-07-09 07:18:38 INFO::Fitting model to feature number 172, PWY.7323
+2021-07-09 07:18:38 INFO::Fitting model to feature number 173, PWY.7328
+2021-07-09 07:18:38 INFO::Fitting model to feature number 174, PWY.7332
+2021-07-09 07:18:38 INFO::Fitting model to feature number 175, PWY.7371
+2021-07-09 07:18:38 INFO::Fitting model to feature number 176, PWY.7374
+2021-07-09 07:18:38 INFO::Fitting model to feature number 177, PWY.7377
+2021-07-09 07:18:38 INFO::Fitting model to feature number 178, PWY.7392
+2021-07-09 07:18:38 INFO::Fitting model to feature number 179, PWY.7400
+2021-07-09 07:18:38 INFO::Fitting model to feature number 180, PWY.7456
+2021-07-09 07:18:38 INFO::Fitting model to feature number 181, PWY.7539
+2021-07-09 07:18:39 INFO::Fitting model to feature number 182, PWY.7560
+2021-07-09 07:18:39 INFO::Fitting model to feature number 183, PWY.7663
+2021-07-09 07:18:39 INFO::Fitting model to feature number 184, PWY.841
+2021-07-09 07:18:39 INFO::Fitting model to feature number 185, PWY.922
+2021-07-09 07:18:39 INFO::Fitting model to feature number 186, PWY0.1061
+2021-07-09 07:18:39 INFO::Fitting model to feature number 187, PWY0.1241
+2021-07-09 07:18:39 INFO::Fitting model to feature number 188, PWY0.1261
+2021-07-09 07:18:39 INFO::Fitting model to feature number 189, PWY0.1296
+2021-07-09 07:18:39 INFO::Fitting model to feature number 190, PWY0.1297
+2021-07-09 07:18:39 INFO::Fitting model to feature number 191, PWY0.1298
+2021-07-09 07:18:39 INFO::Fitting model to feature number 192, PWY0.1319
+2021-07-09 07:18:39 INFO::Fitting model to feature number 193, PWY0.1479
+2021-07-09 07:18:39 INFO::Fitting model to feature number 194, PWY0.1586
+2021-07-09 07:18:39 INFO::Fitting model to feature number 195, PWY0.162
+2021-07-09 07:18:39 INFO::Fitting model to feature number 196, PWY0.166
+2021-07-09 07:18:39 INFO::Fitting model to feature number 197, PWY0.781
+2021-07-09 07:18:39 INFO::Fitting model to feature number 198, PWY0.845
+2021-07-09 07:18:39 INFO::Fitting model to feature number 199, PWY0.862
+2021-07-09 07:18:40 INFO::Fitting model to feature number 200, PWY490.3
+2021-07-09 07:18:40 INFO::Fitting model to feature number 201, PWY4FS.7
+2021-07-09 07:18:40 INFO::Fitting model to feature number 202, PWY4FS.8
+2021-07-09 07:18:40 INFO::Fitting model to feature number 203, PYRIDNUCSAL.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 204, PYRIDNUCSYN.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 205, PYRIDOXSYN.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 206, RHAMCAT.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 207, RIBOSYN2.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 208, RUMP.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 209, SALVADEHYPOX.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 210, SER.GLYSYN.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 211, SO4ASSIM.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 212, SULFATE.CYS.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 213, TCA
+2021-07-09 07:18:40 INFO::Fitting model to feature number 214, TEICHOICACID.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 215, THISYN.PWY
+2021-07-09 07:18:40 INFO::Fitting model to feature number 216, THRESYN.PWY
+2021-07-09 07:18:41 INFO::Fitting model to feature number 217, TRNA.CHARGING.PWY
+2021-07-09 07:18:41 INFO::Fitting model to feature number 218, TRPSYN.PWY
+2021-07-09 07:18:41 INFO::Fitting model to feature number 219, UDPNAGSYN.PWY
+2021-07-09 07:18:41 INFO::Fitting model to feature number 220, VALSYN.PWY
+2021-07-09 07:18:41 INFO::Counting total values for each feature
+2021-07-09 07:18:41 WARNING::Deleting existing residuals file: LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID/residuals.rds
+2021-07-09 07:18:41 INFO::Writing residuals to file LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID/residuals.rds
+2021-07-09 07:18:41 INFO::Writing all results to file (ordered by increasing q-values): LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID/all_results.tsv
+2021-07-09 07:18:41 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID/significant_results.tsv
+2021-07-09 07:18:41 INFO::Writing heatmap of significant results to file: LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID/heatmap.pdf
+2021-07-09 07:18:41 INFO::Writing association plots (one for each significant association) to output folder: LogCLR-s21LuminalSI-PWY-Maaslin-SeqRunSexSite-1-Line-MsID
+2021-07-09 07:18:41 INFO::Plotting associations from most to least significant, grouped by metadata
+2021-07-09 07:18:41 INFO::Plotting data for metadata number 1, Site
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs LACTOSECAT.PWY
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs GLYCOGENSYNTH.PWY
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs LACTOSECAT.PWY
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs PWY0.1586
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs PWY.621
+2021-07-09 07:18:41 INFO::Creating boxplot for categorical data, Site vs ANAGLYCOLYSIS.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs COA.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs GLCMANNANAUT.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PEPTIDOGLYCANSYN.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PHOSLIPSYN.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs POLYISOPRENSYN.PWY
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PWY.5100
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PWY.5667
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PWY.5686
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PWY.6151
+2021-07-09 07:18:42 INFO::Creating boxplot for categorical data, Site vs PWY.6317
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY.6387
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY.7219
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY.7221
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY0.1297
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY0.1319
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY0.1586
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY4FS.7
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY4FS.8
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs UDPNAGSYN.PWY
+2021-07-09 07:18:43 INFO::Creating boxplot for categorical data, Site vs PWY.922
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.6386
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.2942
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.5097
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.621
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.6385
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.7208
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY0.1296
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs THRESYN.PWY
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.6609
+2021-07-09 07:18:44 INFO::Creating boxplot for categorical data, Site vs PWY.6123
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY.7229
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY0.166
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY.6126
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY.7187
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs POLYISOPRENSYN.PWY
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs P161.PWY
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs UDPNAGSYN.PWY
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs GLCMANNANAUT.PWY
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY.6122
+2021-07-09 07:18:45 INFO::Creating boxplot for categorical data, Site vs PWY.6277
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY4FS.7
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY4FS.8
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY.6471
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY.922
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs P161.PWY
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY.841
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY0.162
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY0.1298
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs PWY.6471
+2021-07-09 07:18:46 INFO::Creating boxplot for categorical data, Site vs DENOVOPURINE2.PWY
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PHOSLIPSYN.PWY
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.7196
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY0.166
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.6121
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.7187
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.6125
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.7221
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs ANAGLYCOLYSIS.PWY
+2021-07-09 07:18:47 INFO::Creating boxplot for categorical data, Site vs PWY.5973
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.5686
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs COA.PWY
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.5100
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.5667
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.7220
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.7222
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.7228
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY0.1319
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY0.162
+2021-07-09 07:18:48 INFO::Creating boxplot for categorical data, Site vs PWY.7229
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.6125
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7208
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7184
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.6126
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7228
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs FASYN.ELONG.PWY
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7197
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7663
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7220
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7222
+2021-07-09 07:18:49 INFO::Creating boxplot for categorical data, Site vs PWY.7184
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.7219
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.7197
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PEPTIDOGLYCANSYN.PWY
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs TRNA.CHARGING.PWY
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.6387
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.6385
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.6386
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs GLYCOGENSYNTH.PWY
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.841
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY.2942
+2021-07-09 07:18:50 INFO::Creating boxplot for categorical data, Site vs PWY0.1297
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs PWY.5097
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs PWY.6317
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs DENOVOPURINE2.PWY
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs P4.PWY
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs PWY.7211
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs PWY.7234
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs NONOXIPENT.PWY
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs PWY0.781
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs P124.PWY
+2021-07-09 07:18:51 INFO::Creating boxplot for categorical data, Site vs P122.PWY
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY0.1261
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY.3001
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY.6151
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY.2941
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs NAGLIPASYN.PWY
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs THRESYN.PWY
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PRPP.PWY
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY.7196
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs FASYN.ELONG.PWY
+2021-07-09 07:18:52 INFO::Creating boxplot for categorical data, Site vs PWY.7200
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs P124.PWY
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.6123
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.2941
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.6467
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.5484
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs HSERMETANA.PWY
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs P122.PWY
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.6122
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs PWY.6277
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs GLYCOLYSIS
+2021-07-09 07:18:53 INFO::Creating boxplot for categorical data, Site vs ARGSYN.PWY
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.7663
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.5910
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.6121
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.7234
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs SER.GLYSYN.PWY
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.5347
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY0.1296
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs PWY.7400
+2021-07-09 07:18:54 INFO::Creating boxplot for categorical data, Site vs GLUCONEO.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs PWY0.1298
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs ARGSYNBSUB.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs PWY.5973
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs TEICHOICACID.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs PWY.1861
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs FOLSYN.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs P341.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs PWY.6609
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs ANAEROFRUCAT.PWY
+2021-07-09 07:18:55 INFO::Creating boxplot for categorical data, Site vs PWY0.1261
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs OANTIGEN.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs ARGSYNBSUB.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs ARG.POLYAMINE.SYN
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs P4.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs RUMP.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs PRPP.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs PWY.7211
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs DAPLYSINESYN.PWY
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs PWY.6612
+2021-07-09 07:18:56 INFO::Creating boxplot for categorical data, Site vs PWY.5121
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs ARGSYN.PWY
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs GLYCOLYSIS
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs PWY.5484
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs PWY.7323
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs PWY.7392
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs PWY.5022
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs OANTIGEN.PWY
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs GLYCOCAT.PWY
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs PWY.7400
+2021-07-09 07:18:57 INFO::Creating boxplot for categorical data, Site vs DAPLYSINESYN.PWY
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs MET.SAM.PWY
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs PWY.5345
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs PWY0.781
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs HEME.BIOSYNTHESIS.II
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs PWY.5154
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs PWY490.3
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs PWY.3001
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs CALVIN.PWY
+2021-07-09 07:18:58 INFO::Creating boxplot for categorical data, Site vs SO4ASSIM.PWY
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs PWY.1861
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs FUCCAT.PWY
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs PWY.5154
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs PWY.6901
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs P164.PWY
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs PWY0.1479
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs PWY.6147
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs NAGLIPASYN.PWY
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs P441.PWY
+2021-07-09 07:18:59 INFO::Creating boxplot for categorical data, Site vs RUMP.PWY
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs COMPLETE.ARO.PWY
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs NONMEVIPP.PWY
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs PWY.7560
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs PWY.5659
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs PWY.7200
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs PWY.7242
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs PWY.7539
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs TEICHOICACID.PWY
+2021-07-09 07:19:00 INFO::Creating boxplot for categorical data, Site vs ARG.POLYAMINE.SYN
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs TRNA.CHARGING.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs FUCCAT.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs SER.GLYSYN.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs HOMOSER.METSYN.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs PWY.6507
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs P341.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs PWY.6737
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs PWY.6969
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs NONOXIPENT.PWY
+2021-07-09 07:19:01 INFO::Creating boxplot for categorical data, Site vs PWY0.1061
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs PWY.5910
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs PWY.1269
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs GLUCONEO.PWY
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs GLYOXYLATE.BYPASS
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs PWY.6895
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs COLANSYN.PWY
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs ILEUSYN.PWY
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs PWY.5505
+2021-07-09 07:19:02 INFO::Creating boxplot for categorical data, Site vs VALSYN.PWY
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PWY.7328
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PWY.6507
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PANTO.PWY
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs ILEUSYN.PWY
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs TCA
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs VALSYN.PWY
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PWY.5897
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PWY.5898
+2021-07-09 07:19:03 INFO::Creating boxplot for categorical data, Site vs PWY.5899
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs ARO.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs HEME.BIOSYNTHESIS.II
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs BRANCHED.CHAIN.AA.SYN.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs ANAEROFRUCAT.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs THISYN.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs PWY490.3
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs TRPSYN.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs HSERMETANA.PWY
+2021-07-09 07:19:04 INFO::Creating boxplot for categorical data, Site vs PWY.5104
+2021-07-09 07:19:05 INFO::Creating boxplot for categorical data, Site vs GLYCOCAT.PWY
+2021-07-09 07:19:05 INFO::Creating boxplot for categorical data, Site vs PWY.6703
+2021-07-09 07:19:05 INFO::Plotting data for metadata number 2, Sex
+2021-07-09 07:19:05 INFO::Creating boxplot for categorical data, Sex vs PWY.922
+2021-07-09 07:19:05 INFO::Creating boxplot for categorical data, Sex vs PWY.5384
+2021-07-09 07:19:05 INFO::Creating boxplot for categorical data, Sex vs PWY.5910
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs PWY.7013
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs CODH.PWY
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs PWY.1861
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs PWY.5505
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs PWY.5695
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs GOLPDLCAT.PWY
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs ILEUSYN.PWY
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs VALSYN.PWY
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs SO4ASSIM.PWY
+2021-07-09 07:19:06 INFO::Creating boxplot for categorical data, Sex vs PWY.5101
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.7220
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.7222
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs BRANCHED.CHAIN.AA.SYN.PWY
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs P122.PWY
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.5103
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs P124.PWY
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.5104
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.5189
+2021-07-09 07:19:07 INFO::Creating boxplot for categorical data, Sex vs PWY.5188
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs PWY.7328
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs PWY.5913
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs FERMENTATION.PWY
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs P441.PWY
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs GLYCOLYSIS.E.D
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs PWY.6471
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs HSERMETANA.PWY
+2021-07-09 07:19:08 INFO::Creating boxplot for categorical data, Sex vs PWY.5484
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs P341.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs PWY.7111
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs RUMP.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs NAD.BIOSYNTHESIS.II
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs TEICHOICACID.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs ANAEROFRUCAT.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs SER.GLYSYN.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs PWY.5840
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs POLYISOPRENSYN.PWY
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs PWY0.862
+2021-07-09 07:19:09 INFO::Creating boxplot for categorical data, Sex vs LACTOSECAT.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs PWY.7237
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs GLUCONEO.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs OANTIGEN.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs TRPSYN.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs P161.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs PWY0.166
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs PWY.7539
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs P164.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs GLYCOCAT.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs PWY.6737
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs HISTSYN.PWY
+2021-07-09 07:19:10 INFO::Creating boxplot for categorical data, Sex vs PWY.7187
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY.7184
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs GLYCOLYSIS
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs GLUTORN.PWY
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY0.1586
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs GALACTUROCAT.PWY
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY.6125
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs COMPLETE.ARO.PWY
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs UDPNAGSYN.PWY
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY.5838
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY.7228
+2021-07-09 07:19:11 INFO::Creating boxplot for categorical data, Sex vs PWY.7197
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY.7377
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs P108.PWY
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs NAGLIPASYN.PWY
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY.2941
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY0.162
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs ARO.PWY
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY.6126
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY.7456
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PWY.7229
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs P461.PWY
+2021-07-09 07:19:12 INFO::Creating boxplot for categorical data, Sex vs PYRIDNUCSAL.PWY
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.3001
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.6163
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs P42.PWY
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.5100
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.5509
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs ARG.POLYAMINE.SYN
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.7323
+2021-07-09 07:19:13 INFO::Creating boxplot for categorical data, Sex vs PWY.6269
+2021-07-09 07:19:14 INFO::Plotting data for metadata number 3, Sequencing_Run
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5918
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.7328
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs P164.PWY
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs SO4ASSIM.PWY
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5265
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs RHAMCAT.PWY
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5022
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs P108.PWY
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs ILEUSYN.PWY
+2021-07-09 07:19:14 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY0.1261
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs VALSYN.PWY
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs TEICHOICACID.PWY
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs GLUCUROCAT.PWY
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY490.3
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY0.1061
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5505
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.7456
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs POLYAMSYN.PWY
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5101
+2021-07-09 07:19:15 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5918
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs RHAMCAT.PWY
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.6609
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.1861
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs PYRIDOXSYN.PWY
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs RUMP.PWY
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs SER.GLYSYN.PWY
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs BRANCHED.CHAIN.AA.SYN.PWY
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.7111
+2021-07-09 07:19:16 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5022
+2021-07-09 07:19:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.7392
+2021-07-09 07:19:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs PWY.5910
+2021-07-09 07:19:17 INFO::Creating boxplot for categorical data, Sequencing_Run vs OANTIGEN.PWY
