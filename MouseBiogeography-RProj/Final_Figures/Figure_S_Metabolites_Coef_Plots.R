@@ -15,11 +15,11 @@ library(gridExtra)
 library(ComplexUpset)
 library(here)
 
-#Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
 library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
+
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Metabolites_Coef_Plots.R")
 
@@ -256,8 +256,8 @@ names(spf_mets) <- c(
     "Lipids"                     # "TG.58.6"
   )
 
-spf_mets <- readRDS(here("SPF_only_metabolites.RDS"))
-names(spf_mets) <- c(
+spf_metab <- readRDS(here("SPF_only_metabolites.RDS"))
+names(spf_metab) <- c(
   "Small Organic Compounds",   # "Isorhamnetin.3.O.rutinoside"    
   "Amino Acids",               # "Glu.Ala.Lys"
   "Amino Acids",               # "Lys.Ser"
@@ -453,7 +453,13 @@ names(gavage_mets) <-c(
   "Amino Acids"                   # 130 Gly.Gln
 )
 
+cols <- viridis::viridis(4)
+names(cols) <- c("16S_Colon", "Shotgun_DC",
+                 "Shotgun_Jej", "16S_SI")
+#######################################################
 ### Do this for Metabolites concordant across all 5 ---
+#######################################################
+
 # Load all the tsv files, add Cohort column, and merge them
 all_data <- lapply(1:length(file_paths), function(i) {
   df <- read_tsv(file_paths[i])
@@ -468,7 +474,7 @@ filtered_data <- all_data %>% filter(feature %in% mets)%>%
   filter(qval<0.05)
 
 # Create new column "Site" based on "coef"
-filtered_data <- filtered_data %>% mutate(Site = ifelse(coef < 0, "Colon", "SI"))
+filtered_data <- filtered_data %>% mutate(Site = ifelse(coef < 0, "16S_Colon", "16S_SI"))
 filtered_data <- filtered_data %>% 
   mutate(data_type = "16S")
 
@@ -500,7 +506,7 @@ all_shotgun_data <- lapply(1:length(shotgun_fp), function(i) {
 filtered_shotgun_data <- all_shotgun_data %>% filter(feature %in% mets)%>% 
   filter(metadata == "Site") 
 
-filtered_shotgun_data <- filtered_shotgun_data %>% mutate(Site = ifelse(coef < 0, "Distal_Colon", "Jejunum"))
+filtered_shotgun_data <- filtered_shotgun_data %>% mutate(Site = ifelse(coef < 0, "Shotgun_DC", "Shotgun_Jej"))
 filtered_shotgun_data <-filtered_shotgun_data %>% 
   mutate(data_type = "Shotgun")
 # Bind the dataframe together
@@ -516,9 +522,7 @@ full_df$Cohort <- factor(full_df$Cohort,
 aa <- full_df %>% filter(annotation=="Amino Acids")
 lipids <- full_df %>% filter(annotation=="Lipids")
 org <- full_df %>% filter(annotation=="Small Organic Compounds")
-cols <- viridis::viridis(4)
-names(cols) <- c("Colon", "Distal_Colon",
-                 "Jejunum", "SI")
+
 aa_plot <- ggplot(aa, aes(x = reorder(feature, coef), y = coef, fill = Site)) +
   geom_bar(stat = "identity",position = "dodge") +
   geom_hline(yintercept = 0, linetype="dashed")+
@@ -570,7 +574,7 @@ top <- plot_grid(mets_upset,
                  label_size = 20)
 
 dev.new(width=10,height=10)
-top
+bottom
 
 write_rds(top, here("MouseBiogeography-RProj/Final_Figures/Figure_S_Metabolites_Top.RDS"))
 write_rds(bottom, here("MouseBiogeography-RProj/Final_Figures/Figure_S_Metabolites_Bottom.RDS"))
@@ -626,6 +630,8 @@ classification <- sapply(spf_mets, classify_metabolite)
 names(spf_mets) <- classification
 
 spf_mets <- spf_relaxed_mets
+#spf_mets <- spf_metab
+
 all_data <- lapply(1:length(file_paths), function(i) {
   df <- read_tsv(file_paths[i])
   df <- df %>% mutate(Cohort = cohort_prefixes[i])
@@ -636,8 +642,8 @@ all_data <- lapply(1:length(file_paths), function(i) {
 # Filter the dataframe based on values in "feature" column matching `mets`
 filtered_data <- all_data %>% filter(feature %in% spf_mets)%>% 
   filter(metadata == "Site_General") %>% 
-  filter(qval < 0.05) #%>%
-  #filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
+  filter(qval < 0.05) %>%
+  filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
 
 # Create new column "Site" based on "coef"
 filtered_data <- filtered_data %>% mutate(Site = ifelse(coef < 0, "16S_Colon", "16S_SI"))
@@ -666,14 +672,15 @@ all_shotgun_data <- lapply(1:length(shotgun_fp), function(i) {
 
 # Filter the dataframe based on values in "feature" column matching `mets`
 filtered_shotgun_data <- all_shotgun_data %>% filter(feature %in% spf_mets)%>% 
-  filter(metadata == "Site") #%>% 
-  #filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
+  filter(metadata == "Site") %>% 
+  filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
 filtered_shotgun_data <- filtered_shotgun_data %>% mutate(Site = ifelse(coef < 0, "Shotgun_DC", "Shotgun_Jej"))
 filtered_shotgun_data <-filtered_shotgun_data %>% 
   mutate(data_type = "Shotgun")
 # Bind the dataframe together
 full_df <- rbind(filtered_shotgun_data, filtered_data)
 full_df$annotation <- names(spf_mets)[match(full_df$feature, spf_mets)]
+full_df <- full_df %>% filter(feature!="Guanosine") #duplicate entry
 full_df$feature <- gsub("X","", full_df$feature)
 full_df$feature <- gsub("\\.","-", full_df$feature)
 full_df$Cohort <- factor(full_df$Cohort, 
@@ -695,9 +702,11 @@ plot_metabolites <- function(data, title) {
     labs(x = "", y = "Effect size (SI/Colon)", title = title) +
     theme_cowplot(12) +
     theme(legend.position = "top", legend.justification = "center") +
-    theme(legend.background = element_rect(fill = "lightblue", size = 0.5, linetype = "solid")) +
+    #theme(legend.background = element_rect(fill = "lightblue", size = 2, linetype = "solid")) +
     scale_fill_manual(values = cols) +
-    theme(plot.title = element_text(hjust = 0.5))
+    theme(plot.title = element_text(hjust = 0.5))+
+    scale_y_continuous(labels=scales::label_number(accuracy = 0.1)) 
+
 }
 
 # Define the different categories
@@ -710,29 +719,58 @@ for (cat in categories) {
   plots[[cat]] <- plot_metabolites(data, title)
 }
 
+dev.new(width=10,height=10)
+plot_grid(plots[[3]], plots[[1]],
+          labels=c("A","B"),
+          label_size = 20)
+dev.new(width=10,height=10)
+plot_grid(plots[[2]],
+          labels=c("C"),
+          label_size = 20)
 # Access individual plots
-aa <- full_df %>% filter(annotation=="Amino Acids and Derivatives")
-unique(aa$feature)
-phospholipid <- plots[[1]]
+phospholipid <- plots[[1]] 
 soc <- plots[[2]]
 pep <- plots[[3]]
 
 sphingo <- plots[[4]]
-aa <- plots[[5]]
+aa <- plots[[5]] 
 fa <- plots[[6]]
 tg <- plots[[7]]
-plot_grid(phospholipid, sphingo)
-plot_grid(aa, fa)
-plot_grid(aa, pep, soc, nrow=1)
-
-plot_grid(aa_plot,soc,
-         labels=c("A","B"),
-         label_size = 20)
+oa<-plots[[8]]
 
 dev.new(width=10,height=10)
-plot_grid(lipids_plot,
-          labels=c("C"),
-          label_size = 20)
+plot_grid(phospholipid, sphingo,
+         labels=c("A","B"),
+         label_size = 20,
+         rel_widths = c(0.9,1))
+
+dev.new(width=10,height=10)
+tg_whitespace <- plot_grid(NULL,tg,
+                           rel_widths = c(0.24,1))
+fa_tg <- plot_grid(fa,tg_whitespace,
+          labels=c("D","E"),
+          label_size = 20,
+          rel_heights = c(2,1),
+          rel_widths = c(1,0.5),
+          nrow=2)
+
+
+dev.new(width=10,height=10)
+plot_grid(aa,fa_tg,
+          labels=c("C",""),
+          label_size = 20,
+          rel_widths = c(0.8,1))
+
+dev.new(width=10,height=10)
+plot_grid( pep, soc,
+          labels=c("A","B"),
+          label_size = 20,
+          rel_widths = c(1,1))
+
+dev.new(width=10,height=10)
+plot_grid(oa,
+           labels=c("C"),
+           label_size = 20)
 
 
 #########################################
