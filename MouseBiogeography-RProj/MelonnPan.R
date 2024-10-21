@@ -301,7 +301,7 @@ melonnpan.train(metab = df_clean,
                 cores =4, 
                 seed= 1234)
 
-
+?melonnpan.train()
 
 
 

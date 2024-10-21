@@ -80,7 +80,7 @@ readr::write_delim(duo_dc_tax, here("Donors-Analysis/fish_taco/duo_dc_ko_tax.tsv
 duo_dc_labels <- input_metadata %>% 
   filter(Type =="Mucosal") %>%
   filter(Site =="Duodenum" | Site == "Distal_Colon", SampleID %in% names(dat)) %>% 
-  mutate(Label = ifelse(Site == "Duodenum", 1, 0)) %>% 
+  mutate(Label = ifelse(Site == "Duodenum", 0, 1)) %>% 
   select("Label")
 duo_dc_labels <- duo_dc_labels %>% 
   rownames_to_column(var = "Sample")
