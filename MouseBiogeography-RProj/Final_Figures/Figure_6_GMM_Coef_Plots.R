@@ -210,12 +210,12 @@ GMM2 <- plot_data(data_all_GMM1, "Lactose and Galactose Degradation")
 
 ### Draw legend ---
 L2_legend <-  sugar_acid + 
-  theme(legend.position = "right") +
   #guides(fill=guide_legend(nrow=8, byrow=TRUE))+
   theme_cowplot(16)+
-  theme(legend.spacing.y = unit(1, 'cm')) +
-  theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(1, 1, 1, 1)) 
-legend <- cowplot::get_legend(L2_legend)
+  theme(legend.position = "top") +
+  theme(legend.spacing.y = unit(1, 'cm')) 
+  #theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(1, 1, 1, 1)) 
+legend <- get_legend(L2_legend)
 grid.newpage()
 grid.draw(legend)
 

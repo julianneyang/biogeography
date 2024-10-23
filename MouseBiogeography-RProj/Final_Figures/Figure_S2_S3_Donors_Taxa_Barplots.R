@@ -17,7 +17,7 @@ setwd("/home/julianne/Documents/microbiome.biogeography/")
 devtools::document()
 library("Microbiome.Biogeography")
 setwd("/home/julianne/Documents/biogeography/")
-here::i_am("MouseBiogeography-RProj/Figure_S_Donors_Taxa_Barplots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S2_S3_Donors_Taxa_Barplots.R")
 
 ## Make Donors taxa barplots -- 
 phyla_cols <- readRDS("global_phyla_cols.RDS")
@@ -627,7 +627,7 @@ generate_L6_SD_human_feces_taxa_plots <- function(filepath, titlestring,greppatt
     #scale_fill_paletteer_d(palette="dutchmasters::milkmaid") +
     #scale_fill_paletteer_d("tvthemes::rickAndMorty")+
     #scale_fill_paletteer_d("ggsci::category20_d3")+
-    scale_fill_manual(values = genera_cols)+
+    scale_fill_manual(values = {{fillvector}})+
     ylab("") +
     xlab("")+
     labs(fill="") +
