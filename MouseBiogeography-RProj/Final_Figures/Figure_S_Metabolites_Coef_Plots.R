@@ -642,8 +642,8 @@ all_data <- lapply(1:length(file_paths), function(i) {
 # Filter the dataframe based on values in "feature" column matching `mets`
 filtered_data <- all_data %>% filter(feature %in% spf_mets)%>% 
   filter(metadata == "Site_General") %>% 
-  filter(qval < 0.05) %>%
-  filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
+  filter(qval < 0.05) #%>%
+  #filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
 
 # Create new column "Site" based on "coef"
 filtered_data <- filtered_data %>% mutate(Site = ifelse(coef < 0, "16S_Colon", "16S_SI"))
@@ -672,8 +672,8 @@ all_shotgun_data <- lapply(1:length(shotgun_fp), function(i) {
 
 # Filter the dataframe based on values in "feature" column matching `mets`
 filtered_shotgun_data <- all_shotgun_data %>% filter(feature %in% spf_mets)%>% 
-  filter(metadata == "Site") %>% 
-  filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
+  filter(metadata == "Site") #%>% 
+  #filter(Cohort=="UCLA_O_SPF" | Cohort =="CS_SPF")
 filtered_shotgun_data <- filtered_shotgun_data %>% mutate(Site = ifelse(coef < 0, "Shotgun_DC", "Shotgun_Jej"))
 filtered_shotgun_data <-filtered_shotgun_data %>% 
   mutate(data_type = "Shotgun")
