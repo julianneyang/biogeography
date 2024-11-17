@@ -26,9 +26,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showguides="false"
-     inkscape:zoom="2.1873822"
-     inkscape:cx="397.27854"
-     inkscape:cy="608.48991"
+     inkscape:zoom="4.3747644"
+     inkscape:cx="507.68448"
+     inkscape:cy="989.08184"
      inkscape:window-width="1848"
      inkscape:window-height="1136"
      inkscape:window-x="72"
@@ -3859,6 +3859,10 @@
        d="m 317.95,698.44297 h 75 V 688.4 h -75 z m 0,0"
        id="path545-9-32" />
     <path
+       style="fill:#ffeeaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.41039"
+       d="m 351.00001,703.79299 h 75 v -10.04297 h -75 z m 0,0"
+       id="path545-9-32-4" />
+    <path
        style="fill:#ffeeaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.44523"
        d="m 319.12501,538.04298 h 78.75 v -10.04297 h -78.75 z m 0,0"
        id="path545-9-9" />
@@ -6043,6 +6047,73 @@
          y="746.424805"
          id="use932"
          style="fill:#aa0000" />
+      <use
+         xlink:href="#glyph0-2"
+         x="96.109375"
+         y="482.3584"
+         id="use789"
+         style="fill:#000000;fill-opacity:1"
+         transform="translate(102.04572,334.78585)" />
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g789-1"
+         transform="translate(102.07969,334.49086)">
+        <use
+           xlink:href="#glyph0-1"
+           x="71.15625"
+           y="482.8584"
+           id="use788" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g791-9"
+         transform="translate(103.76002,334.95555)">
+        <use
+           xlink:href="#glyph0-3"
+           x="121.0625"
+           y="482.8584"
+           id="use790" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g792-4"
+         transform="translate(108.01297,334.60095)">
+        <use
+           xlink:href="#glyph0-4"
+           x="140.01562"
+           y="482.3584"
+           id="use791" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g793-7"
+         transform="translate(112.20131,334.63392)">
+        <use
+           xlink:href="#glyph0-5"
+           x="157.96875"
+           y="482.3584"
+           id="use792" />
+        <use
+           xlink:href="#glyph0-4"
+           x="162.96875"
+           y="482.3584"
+           id="use793" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g795-8"
+         transform="translate(115.14817,334.91844)">
+        <use
+           xlink:href="#glyph0-1"
+           x="179.92188"
+           y="482.3584"
+           id="use794" />
+        <use
+           xlink:href="#glyph0-4"
+           x="185.92188"
+           y="482.3584"
+           id="use795" />
+      </g>
     </g>
     <g
        style="fill:#aa0000;fill-opacity:1"
