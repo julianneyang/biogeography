@@ -40,8 +40,7 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
 
 
 all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
-                                           cohort_prefixes = lum_cohort_prefixes,
-                                           filter_by = "Site")
+                                           cohort_prefixes = lum_cohort_prefixes)
 
 module_key <- read.csv(here("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv"))
 anno <- module_key %>% select(c("feature", "annotation"))
@@ -68,27 +67,21 @@ df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-(1:2)]
-gmm_upset <- upset(df_wide, all_datasets,width_ratio=0.1,
-                                  base_annotations=list(
-                                    'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
-                                      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
-                                 themes=list(
-                                   default=theme(
-                                     axis.ticks.x=element_blank(),
-                                     axis.text.x=element_blank(),
-                                   ),
-                                   intersections_matrix=theme(
-                                     axis.ticks.x=element_blank(),
-                                     axis.text.x=element_blank(),
-                                   )
-                                 ))
+gmm_upset <- upset(df_wide, all_datasets,
+                   themes=upset_default_themes(axis.title = element_text(color = 'black'),
+                                               axis.text=element_text(color='black'),
+                                               axis.ticks = element_line(color = 'black')),
+                   base_annotations=list(
+                     'Intersection size'=intersection_size(counts=TRUE,
+                                                           mapping=aes(fill='bars_color')) + 
+                       scale_fill_manual(values=c('bars_color'='skyblue'), guide='none'))) 
 
 id_df_wide$count_ones <- rowSums(id_df_wide[, c(4:8)])
 df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
 df_filtered <- df_filtered[, -which(names(df_filtered) == "count_ones")]
 gmm_of_interest <- df_filtered$feature
 names(gmm_of_interest) <-df_filtered$annotation
-write_rds(gmm_of_interest, "Highlighted_GMM_Fig_6.RDS")
+#write_rds(gmm_of_interest, "Highlighted_GMM_Fig_6.RDS")
 
 ### Coef Plots ---
 
@@ -150,17 +143,28 @@ create_plot <- function(data, map_value) {
 }
 
 # Call the function for both "disaccharides" and "monosaccharides"
-disaccharides <- create_plot(data, "disaccharides") + facet_grid(Map~annotation)
-monosaccharides <- create_plot(data, "monosaccharides")+ facet_grid(Map~annotation)
-polysaccharides <- create_plot(data, "polysaccharides")+ facet_grid(Map~annotation)
-proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +theme_cowplot(14) + theme(legend.position = "none")
-create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) 
-lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")+ facet_grid(Map~annotation)
-sugar_acid <- create_plot(data, "sugar acid")+ facet_grid(Map~annotation)
-metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)  +theme_cowplot(12) + theme(legend.position = "none")
-cross_feeding <- create_plot(data, "cross-feeding")+ facet_grid(Map~annotation)
-butyrate <- create_plot(data, "butyrate")+ facet_grid(Map~annotation)
-nitrate <- create_plot(data, "nitrate reduction")+ facet_grid(Map~annotation)
+disaccharides <- create_plot(data, "disaccharides") + facet_grid(Map~annotation) +
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+monosaccharides <- create_plot(data, "monosaccharides")+ facet_grid(Map~annotation) +labs(y="Effect size")+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+polysaccharides <- create_plot(data, "polysaccharides")+ facet_grid(Map~annotation) +
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +theme_cowplot(14) + 
+  theme(legend.position = "none")+ labs(y="Effect size") +  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")+ facet_grid(Map~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white")) + labs(y="Effect size")
+sugar_acid <- create_plot(data, "sugar acid")+ facet_grid(Map~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)  +theme_cowplot(12) + 
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+ labs(y="Effect size")
+cross_feeding <- create_plot(data, "cross-feeding")+ facet_grid(Map~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+ labs(y="Effect size")
+butyrate <- create_plot(data, "butyrate")+ facet_grid(Map~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+nitrate <- create_plot(data, "nitrate reduction")+ facet_grid(Map~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
 
 
 carbs <- plot_grid(monosaccharides,disaccharides,polysaccharides,

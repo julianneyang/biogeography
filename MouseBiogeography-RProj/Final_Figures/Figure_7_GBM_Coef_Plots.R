@@ -177,21 +177,14 @@ df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 
 df_wide <- as.data.frame(df_wide)
 all_datasets <- names(df_wide)[-(1:2)]
-gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,width_ratio=0.1, name="",
+gbm_upset <- ComplexUpset::upset(df_wide, all_datasets,themes=upset_default_themes(axis.title = element_text(color = 'black'),
+                                                                                   axis.text=element_text(color='black'),
+                                                                                   axis.ticks = element_line(color = 'black')),
                                  base_annotations=list(
-                                   'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
-                                     scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
-                                 themes=list(
-                                   default=theme(
-                                     axis.ticks.x=element_blank(),
-                                     axis.text.x=element_blank(),
-                                   ),
-                                   intersections_matrix=theme(
-                                     axis.ticks.x=element_blank(),
-                                     axis.text.x=element_blank(),
-                                   ),
-                                   set_sizes=(ylab('Region-specific genera'))
-                                 ))
+                                   'Intersection size'=intersection_size(counts=TRUE,
+                                                                         mapping=aes(fill='bars_color')) + 
+                                     scale_fill_manual(values=c('bars_color'='skyblue'), guide='none'))) 
+
 
 
 ### Make GBM Coef plots ---
@@ -216,6 +209,7 @@ lum_cohort_prefixes <- c("UCLA_O_SPF",
 my_palette <- c(paletteer_d("basetheme::brutal",6))
 names(my_palette) <-c(lum_cohort_prefixes, "UCLA_V_SPF")
 cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
+
 
 map <- module_key %>% select(c("feature", "annotation"))
 map_data_all <- merge(final_df,map,by="feature")
@@ -242,11 +236,18 @@ create_plot <- function(data, anno) {
 
 gbm <- unique(data$annotation)
 
-gaba <- create_plot(data, gbm[1]) + facet_wrap(~annotation)
-estradiol <- create_plot(data,gbm[2])+ facet_wrap(~annotation)
-acetate <- create_plot(data,gbm[3])+ facet_wrap(~annotation)
-trp <- create_plot(data,gbm[4])+ facet_wrap(~annotation)
-butsyn <- create_plot(data,gbm[5])+ facet_wrap(~annotation) 
+gaba <- create_plot(data, gbm[1]) + facet_wrap(~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+estradiol <- create_plot(data,gbm[2])+ facet_wrap(~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+
+  labs(y="Effect size")
+acetate <- create_plot(data,gbm[3])+ facet_wrap(~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+trp <- create_plot(data,gbm[4])+ facet_wrap(~annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+butsyn <- create_plot(data,gbm[5])+ facet_wrap(~annotation) +
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+
+  labs(y="Effect size")
   
 
 # Process the results files --
@@ -295,7 +296,7 @@ gbm_shotgun_plot <- res_plot %>%
   geom_vline(xintercept = 0, linetype = "dashed", color = "black")+  
   geom_bar(stat = "identity") +
   cowplot::theme_cowplot(12) +
-  theme(axis.text.y = element_text(face = "bold")) +
+  theme(plot.title = element_text(face = "plain")) +
   scale_fill_manual(values = cols) +
   labs(x = "Effect size (Jejunum/Distal_Colon)",
        y = "",
@@ -304,13 +305,16 @@ gbm_shotgun_plot <- res_plot %>%
   theme(plot.title = element_text(hjust = 0.5),
         legend.position = "top",
         legend.justification = "center")+
-  facet_wrap(~Annotation)
+  facet_wrap(~Annotation)+
+  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
+  
 
 plot_grid(butsyn,trp, acetate, labels=c("A","B","C"),nrow=1)
 plot_grid(estradiol,gaba,labels=c("D","E"))
 dev.new()
 plot_grid(gbm_upset, label_size = 20, labels="F")
 plot_grid(gbm_shotgun_plot, label_size = 20, labels="G")
+
 plot_grid(gbm_upset, gbm_shotgun_plot, labels=c("F","G"),label_size = 20,rel_widths = c(1.25,1))
 
 ### Upset Plots ---
