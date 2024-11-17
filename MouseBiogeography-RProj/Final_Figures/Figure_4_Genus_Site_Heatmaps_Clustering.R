@@ -103,21 +103,17 @@ df_wide <- df_long %>%
 df_wide <- as.data.frame(df_wide)
 df_wide <- df_wide %>% mutate(SPF_Gavage = 0)
 all_datasets <- names(df_wide)[-1]
+
 taxa_upset <- ComplexUpset::upset(df_wide, 
                                   all_datasets,
+                                  themes=upset_default_themes(axis.title = element_text(color = 'black'),
+                                                              axis.text=element_text(color='black'),
+                                                              axis.ticks = element_line(color = 'black')),
                                   base_annotations=list(
-  'Intersection size'=intersection_size(counts=TRUE,mapping=aes(fill='bars_color')) + 
-      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none')),
-  themes=list(
-    default=theme(
-      axis.ticks.x=element_blank(),
-      axis.text.x=element_blank(),
-    ),
-    intersections_matrix=theme(
-      axis.ticks.x=element_blank(),
-      axis.text.x=element_blank(),
-    )
-  ))
+  'Intersection size'=intersection_size(counts=TRUE,
+                                        mapping=aes(fill='bars_color')) + 
+      scale_fill_manual(values=c('bars_color'='skyblue'), guide='none'))) 
+taxa_upset
 
 id_df_wide$count_ones <- rowSums(id_df_wide[, c(3:7)])
 df_filtered <- id_df_wide[id_df_wide$count_ones >= 3, ]
@@ -282,7 +278,7 @@ heatmap.2(matrix.data,
 
 
 ### Shotgun barplots ---
-
+cols=c("#440154FF", "#FDE725FF")
 ## UCLA O SPF
 result2 <- generate_interregional_taxa_barplot_shotgun_only_named_species(
   path_to_significant_results_tsv = "Shotgun/UCLA_O_SPF/Species_DCvsJej_CLR_LineSexSite-1-MsID/significant_results.tsv",
@@ -369,6 +365,27 @@ plot_grid(cs_shotgun_species, hum_shotgun_species, spf_shotgun_species,
           labels=c("H","I","J"),nrow=3,ncol=1,
           rel_heights = c(1,0.8, 0.4),
           label_size = 20)
+
+### Phylum Color Legend ---
+phyla <- c("")
+dummyplot<- as.data.frame(genera_cols)
+dummyplot$dummyy <- seq(1,45,1)
+dummyplot$dummyx <- seq(1,90,2)
+dummyplot$Genus <- row.names(dummyplot)
+L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
+  geom_bar(stat = "identity")+
+  scale_fill_manual(values=genera_cols,name="Genus")+
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(ncol=6, byrow=TRUE))+
+  #theme(legend.text = element_text(
+  #margin = margin(r = 10, unit = "pt")))
+  theme_cowplot(14)+
+  theme(legend.spacing.x = unit(1, 'cm')) 
+#theme(legend.background = element_rect(fill="lightblue", size=1, linetype="solid"), legend.margin = margin(10, 10, 10, 10)) 
+legend <- cowplot::get_legend(L6_legend)
+grid.newpage()
+dev.new(width=20, height=5)
+grid.draw(legend)
 
 ### Functions---
 generate_matrix_for_heatmap_clustering <- function(path_to_significant_results,
