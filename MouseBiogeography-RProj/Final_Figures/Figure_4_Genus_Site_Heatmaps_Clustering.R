@@ -3,8 +3,9 @@ library(dendextend)
 library(here)
 library(ComplexUpset)
 library(tidyverse)
-library(UpSetR)
 library(cowplot)
+library(gridExtra)
+library(grid)
 
 #Replace with filepath to package Microbiome.Biogeography
 setwd("/home/julianne/Documents/microbiome.biogeography/")
@@ -367,16 +368,19 @@ plot_grid(cs_shotgun_species, hum_shotgun_species, spf_shotgun_species,
           label_size = 20)
 
 ### Phylum Color Legend ---
-phyla <- c("")
-dummyplot<- as.data.frame(genera_cols)
-dummyplot$dummyy <- seq(1,45,1)
-dummyplot$dummyx <- seq(1,90,2)
+phyla <-c("Firmicutes"="#aa0000ff", "Proteobacteria"="#00FFFF",
+          "Actinobacteria"="#008000ff","Verrucomicrobiota"="#D45500",
+          "Deferribacterota"="#000080", "Bacteroidota"="#800080ff",
+          "Cyanobacteria" = "#FF00FF", "Desulfobacterota"="#008080")
+dummyplot<- as.data.frame(phyla)
+dummyplot$dummyy <- seq(1,8,1)
+dummyplot$dummyx <- seq(1,16,2)
 dummyplot$Genus <- row.names(dummyplot)
 L6_legend <-  ggplot(dummyplot, aes(x=dummyx,y=Genus,fill=Genus))+
   geom_bar(stat = "identity")+
-  scale_fill_manual(values=genera_cols,name="Genus")+
+  scale_fill_manual(values=phyla,name="Phylum")+
   theme(legend.position = "right") +
-  guides(fill=guide_legend(ncol=6, byrow=TRUE))+
+  guides(fill=guide_legend(ncol=2, byrow=TRUE))+
   #theme(legend.text = element_text(
   #margin = margin(r = 10, unit = "pt")))
   theme_cowplot(14)+
