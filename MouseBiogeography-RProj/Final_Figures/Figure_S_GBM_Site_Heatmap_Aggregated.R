@@ -46,9 +46,11 @@ hum_v_lum_GBM_map <- generate_GBM_heat_map_by_site(paste0(donors_filepath,"GBM-C
                                                    path_to_Module_Key = "GBM_Module_Key.csv",
                                                    "HUM V Gavage Luminal",
                                                    cols,
-                                                   bk)
+                                                   bk)+
+  theme(legend.position = "top")#+
+  #guides(fill = guide_legend(title = "Effect size (*q<0.05)")) 
 
-
+hum_v_lum_GBM_map
 
 ### UCLA O SPF ---
 # Luminal - 20 concordant features 
