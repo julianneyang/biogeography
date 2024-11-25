@@ -8,3 +8,14 @@ To clone this repository:
 ```bash
 git clone https://github.com/julianneyang/biogeography
 ```
+
+To reproduce the figures in this repository: 
+
+- Navigate to `MouseBiogeography-RProj/Final_Figures`
+- - Each of the following scripts corresponds to the main figures:
+  - - Figure 2: Figure_2_Taxa_Barplots_Aggregated.R
+    - Figure 3: Figure_3_Luminal_Alpha_Beta_Diversity.R
+    - Figure 4: Figure_4_Genus_Site_Heatmaps_Clustering.R
+        - 
+    - Figure 7: Figure_6_GMM_Coef_Plots.R
+    - Figure 7: Figure_7_GBM_Coef_Plots.R
