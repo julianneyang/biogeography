@@ -15,11 +15,11 @@ library(paletteer)
 library(ComplexUpset)
 library(here)
 
-#devtools::install_github("julianneyang/Microbiome.Biogeography")
+#devtools::install_github("jacobslabucla/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_6_GMM_Coef_Plots.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_6_and_S14_GMM_Coef_Plots.R")
 
 ### Upset Plot ---
 
@@ -105,6 +105,7 @@ cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
 
 
 # combine GMM results and append Map annotation
+gmm_of_interest <- readRDS(here("Highlighted_GMM_Fig_6.RDS"))
 feature_value <- gmm_of_interest[1]
 data_all <- process_results_files(lum_file_paths, feature_value, new_value, new_coef, lum_cohort_prefixes)
 

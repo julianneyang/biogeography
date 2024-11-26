@@ -2,12 +2,10 @@ library(dplyr)
 library(here)
 
 
-# 
-
 library("Microbiome.Biogeography")
 
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Interregional_Longitudinal_GBM.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S19_S20_Interregional_Longitudinal_GBM.R")
 
 ### Find shared GBMs ---
 lum_file_paths <- c(

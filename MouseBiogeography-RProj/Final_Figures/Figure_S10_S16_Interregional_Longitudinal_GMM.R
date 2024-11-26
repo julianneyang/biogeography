@@ -1,22 +1,8 @@
-library(EnhancedVolcano)
 library(dplyr)
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-here::i_am("MouseBiogeography-RProj/RegionalGBM-SITE-Heatmap.R")
+library(here)
 
-### UCLA O. SPF --- 
-res <- read.delim("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/GMM-Maaslin2-SITE/GMM-ColonRef-CLR-Lum-ComBat-SeqRunLineSexSite_General-1-MsID/significant_results.tsv")
-res <- res %>% filter(metadata=="Site_General" & qval<0.05)
-
-
-annotation <- read.csv("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv", header=TRUE)
-
-res<- (merge(res, annotation, by = 'feature'))
-
-#volcano plot
-EnhancedVolcano(res,
-                lab = rownames(res),
-                x = 'coef',
-                y = 'qval')
+library("Microbiome.Biogeography")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S10_S16_Interregional_Longitudinal_GMM.R")
 
 ### Luminal Barplots: Aggregated by Map (median coef) --- 
 cols <- viridis::viridis(2)

@@ -90,35 +90,7 @@ process_results_files <- function(file_paths, feature_value, new_value, new_coef
   return(data_all)
 }
 
-process_gbm_files_shotgun <- function(file_paths, feature_value, cohort_prefixes,feature_annotation) {
-  data_all <- NULL
-  
-  for (i in seq_along(file_paths)) {
-    file_path <- file_paths[i]
-    cohort_prefix <- cohort_prefixes[i]
-    
-    # Read the results file
-    results <- read.table(here(file_path), header = TRUE)
-    
-    # Filter the results for the specified feature
-    data <- filter(results, metadata == "Site" & feature == feature_value)
-    
-    # Add a cohort variable
-    cohort <- paste0(cohort_prefix)
-    annotation <- feature_annotation
-    data <- data %>% mutate(Cohort = cohort)
-    data <- data %>% mutate(Annotation=annotation)
-    
-    # Append to the combined data frame
-    if (is.null(data_all)) {
-      data_all <- data
-    } else {
-      data_all <- rbind(data_all, data)
-    }
-  }
-  
-  return(data_all)
-}
+
 
 ### Upset Plot ---
 
@@ -279,6 +251,7 @@ dev.new()
 plot_grid(oa_synthesis,vitamin_cofactor, nrow=1,
           rel_widths = c(1,0.5))
 plot_grid(gbm_upset,labels = "D", label_size = 20)
+
 
 # Define the file paths, cohort prefixes, and other parameters
 shotgun_fp <- c("Shotgun/CS_SPF/GBM-DCvsJej-CLR-CS-ComBat-SeqRunSexSite-1-MsID/all_results.tsv",
