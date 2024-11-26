@@ -15,10 +15,8 @@ Repository layout:
 - `UCLA_V_SPF_Analysis` : UCLA V. SPF dataset files
 - `melonnpan_model` : Trained model used for predicting metabolites from KO microbiome data 
 -  Miscellaneous files    
-	- `global_phyla_cols.RDS` corresponds to the named color vector used for all phyla stacked column charts in this manuscript.
-	- `global_genera_cols.RDS` corresponds to the named color vector used for all genera stacked column charts in this manuscript.
-
-
+	- Are utilized in the figures scripts
+ 
 To clone this repository: 
 ```bash
 git clone https://github.com/julianneyang/biogeography
@@ -35,3 +33,4 @@ To reproduce the figures in this repository:
       - Note that the final versions of these heatmaps can be found in `Figure_4_Heatmaps` as cosmetic changes were made in Inkscape or Adobe Illustrator
     - Figure 6: Figure_6_GMM_Coef_Plots.R
     - Figure 7: Figure_7_GBM_Coef_Plots.R
+- All other supplementary figures can be reproduced in the same manner
