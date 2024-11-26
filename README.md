@@ -4,6 +4,12 @@ Scripts used in  "Biogeographical distribution of gut microbiome composition and
 
 Raw data can be found in the NCBI database: http://www.ncbi.nlm.nih.gov/bioproject/944800.
 
+Repository layout:
+- 
+- `global_phyla_cols.RDS` corresponds to the named color vector used for all phyla stacked column charts in this manuscript.
+- `global_genera_cols.RDS` corresponds to the named color vector used for all genera stacked column charts in this manuscript.
+
+
 To clone this repository: 
 ```bash
 git clone https://github.com/julianneyang/biogeography
