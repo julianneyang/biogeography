@@ -24,7 +24,8 @@ git clone https://github.com/julianneyang/biogeography
 
 To reproduce the figures in this repository: 
 
-- Navigate to `MouseBiogeography-RProj/Final_Figures`
+- Navigate to `MouseBiogeography-RProj/Final_Figures` and run each script to produce the corresponding figure.
+  - Note that filepaths are built to the top level of the repo.
   - Each of the following scripts corresponds to the main figures:
     - Figure 2: Figure_2_Taxa_Barplots_Aggregated.R
     - Figure 3: Figure_3_Luminal_Alpha_Beta_Diversity.R
