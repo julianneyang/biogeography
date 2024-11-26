@@ -12,14 +12,11 @@ library(ggpubr)
 library(tidyr)
 library(dplyr)
 library(gridExtra)
-library(Microbiome.Biogeography)
 library(here)
 
-remove.packages("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/microbiome.biogeography/")
-devtools::document()
+#devtools::install_github("julianneyang/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/biogeography/")
+
 
 
 ### Alpha Diversity ---
@@ -127,7 +124,7 @@ cs_pe_lum <- Microbiome.Biogeography::generate_adiv_plots(luminaldata, metadata,
 
 
 #HUM SD Gavage
-data<-read.csv(here("Humanized-Biogeography-Analysis/alpha_diversity_Humanized.csv"), header=TRUE, row.names=1)
+data<-read.csv(here("Humanized-Biogeography-Analysis/alpha_diversity/alpha_diversity_Humanized.csv"), header=TRUE, row.names=1)
 metadata<- readr::read_delim(here("Humanized-Biogeography-Analysis/starting_files/Humanized-Metadata.tsv"),delim="\t")
 source_metadata <- metadata %>% select(c("SampleID","Type", "Microbiota"))
 intermediate<- (merge(data, source_metadata, by = 'SampleID'))

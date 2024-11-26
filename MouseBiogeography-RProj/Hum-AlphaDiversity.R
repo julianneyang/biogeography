@@ -20,7 +20,7 @@ temp2<- merge(pielou,shannon, by="X")
 data<-merge(temp1,temp2,by="X")
 data$SampleID <- data$X
 
-write.csv(data, "alpha_diversity_Humanized.csv")
+write.csv(data, here("Humanized-Biogeography-Analysis/alpha_diversity/alpha_diversity_Humanized.csv"))
 
 generate_adiv_plots <- function(input_data, X, Y, facetvariable){
   data<-as.data.frame(input_data)
