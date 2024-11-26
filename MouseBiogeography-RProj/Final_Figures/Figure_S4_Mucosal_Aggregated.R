@@ -16,7 +16,7 @@ library(Microbiome.Biogeography)
 
 ### Alpha Diversity ---
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Mucosal_Aggregated.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S4_Mucosal_Aggregated.R")
 
 compare_vector <- list(c("DC", "PC"),
                        c("DC", "Cec"),
@@ -123,7 +123,7 @@ hum_pe_muc <- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Site, 
 hum_pe_muc 
 
 #UCLA V. SPF 
-data<- read.csv(here("UCLA_V_SPF_Analysis/alpha_diversity_WTCohort.csv"), header=TRUE, row.names=1)
+data<- read.csv(here("UCLA_V_SPF_Analysis/alpha_diversity/alpha_diversity_WTCohort.csv"), header=TRUE, row.names=1)
 metadata<- readr::read_delim(here("UCLA_V_SPF_Analysis/starting_files/UCLA_V_SPF_Metadata.tsv"),delim="\t")
 
 ucla_v_otus_muc<- Microbiome.Biogeography::generate_adiv_plots(data, metadata,Site, observed_otus, Site, 0, 600) +

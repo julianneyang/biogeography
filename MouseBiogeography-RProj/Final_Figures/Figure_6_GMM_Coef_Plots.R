@@ -15,11 +15,9 @@ library(paletteer)
 library(ComplexUpset)
 library(here)
 
-#Replace with filepath to package Microbiome.Biogeography
-setwd("/home/julianne/Documents/microbiome.biogeography/")
-devtools::document()
+#devtools::install_github("julianneyang/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/biogeography/")
+
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_6_GMM_Coef_Plots.R")
 

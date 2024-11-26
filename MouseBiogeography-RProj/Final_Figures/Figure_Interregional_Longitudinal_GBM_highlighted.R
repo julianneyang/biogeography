@@ -1,13 +1,11 @@
 library(dplyr)
-library(Microbiome.Biogeography)
 library(here)
 
 
-# Set working env
-setwd("/home/julianne/Documents/microbiome.biogeography/")
-devtools::document()
+# 
+
 library("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/biogeography/")
+
 
 here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_Interregional_Longitudinal_GBM.R")
 

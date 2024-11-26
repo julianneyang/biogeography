@@ -11,17 +11,12 @@ library(ggpubr)
 library(dplyr)
 library(nlme)
 library(here)
+
+devtools::install_github("jacobslabucla/microbiome.biogeography")
 library(Microbiome.Biogeography)
 
-
-setwd("/home/julianne/Documents/microbiome.biogeography/")
-devtools::document()
-library("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/biogeography/")
-
-
 ### Alpha Diversity ---
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Shotgun_Alpha_Beta_Aggregated.R")
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S5_Shotgun_Alpha_Beta_Aggregated.R")
 
 compare_vector <- c("DC", "J")
 

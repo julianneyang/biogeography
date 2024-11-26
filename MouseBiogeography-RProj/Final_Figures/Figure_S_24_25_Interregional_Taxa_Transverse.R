@@ -1,13 +1,11 @@
-library(Microbiome.Biogeography)
 library(dplyr)
 library(ggplot2)
 library(here)
 
-here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_Interregional_Taxa_Transverse.R")
-setwd("/home/julianne/Documents/microbiome.biogeography/")
-devtools::document()
-library("Microbiome.Biogeography")
-setwd("/home/julianne/Documents/biogeography/")
+devtools::install_github("jacobslabucla/microbiome.biogeography")
+library(Microbiome.Biogeography)
+
+here::i_am("MouseBiogeography-RProj/Final_Figures/Figure_S_24_25_Interregional_Taxa_Transverse.R")
 
 ### Colon --- 
 
