@@ -5,9 +5,16 @@ Scripts used in  "Biogeographical distribution of gut microbiome composition and
 Raw data can be found in the NCBI database: http://www.ncbi.nlm.nih.gov/bioproject/944800.
 
 Repository layout:
-- 
-- `global_phyla_cols.RDS` corresponds to the named color vector used for all phyla stacked column charts in this manuscript.
-- `global_genera_cols.RDS` corresponds to the named color vector used for all genera stacked column charts in this manuscript.
+- `CS_SPF` : Cedars-Sinai SPF dataset files 
+- `Donors_Analysis` : HUM MD Gavage dataset files
+- `Humanized-Biogeography-Analysis` : HUM SD Gavage and SPF Gavage dataset files
+- `Regional-Mouse-Biogeography-Analysis` : UCLA O. SPF Dataset files
+- `Shotgun` : shotgun metagenomics for 4 datsets
+- `UCLA_V_SPF_Analysis` : UCLA V. SPF dataset files
+- `melonnpan_model` : Trained model used for predicting metabolites from KO microbiome data 
+-  Miscellaneous files    
+	- `global_phyla_cols.RDS` corresponds to the named color vector used for all phyla stacked column charts in this manuscript.
+	- `global_genera_cols.RDS` corresponds to the named color vector used for all genera stacked column charts in this manuscript.
 
 
 To clone this repository: 
