@@ -13,7 +13,7 @@ library(dplyr)
 library(gridExtra)
 library(here)
 
-#devtools::install_github("jacobslabucla/Microbiome.Biogeography")
+devtools::install_github("jacobslabucla/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 
@@ -445,7 +445,7 @@ f_spf_pcoa_lc <- ggdraw(add_sub(spf_pcoa_lc,
                                          italic("P"),"=0.082"))))
 
 f_hum_pcoa_lc <- ggdraw(add_sub(hum_pcoa_lc, 
-                              bquote(paste(~italic(R)^2,"=4.0 E-3  ", 
+                              bquote(paste(~italic(R)^2,"=3.6 E-3  ", 
                                            italic("P"),"=0.939"))))
 
 f_hum_v_pcoa_lc <- ggdraw(add_sub(hum_v_pcoa_lc, 
@@ -469,7 +469,7 @@ f_hum_pcoa_lsi <- ggdraw(add_sub(hum_pcoa_lsi,
                                            italic("P"),"=0.565"))))
 
 f_hum_v_pcoa_lsi <- ggdraw(add_sub(hum_v_pcoa_lsi, 
-                                bquote(paste(~italic(R)^2,"=0.01  ", 
+                                bquote(paste(~italic(R)^2,"=7.9 E-3  ", 
                                              italic("P"),"=0.268"))))
 
 interregional_lum <- plot_grid(f_ucla_o_pcoa_lum, f_cs_spf_lum, f_spf_pcoa_lum, f_hum_pcoa_lum,f_hum_v_pcoa_lum,nrow=1)
@@ -486,6 +486,7 @@ fig_luminal_top
 
 fig_luminal_bottom <- plot_grid(interregional_lum,
                          interregional_lc, interregional_lsi, ncol=1, nrow=3,
-                         labels=c("C","D","E"))
+                         labels=c("C","D","E"),
+                         label_size = 14)
 dev.new(width=15, height=10)
 fig_luminal_bottom
