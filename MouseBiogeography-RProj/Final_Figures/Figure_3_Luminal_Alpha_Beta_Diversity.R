@@ -8,13 +8,12 @@ library(cowplot)
 library(ggplot2)
 library(RColorBrewer)
 library(plyr)
-library(ggpubr)
 library(tidyr)
 library(dplyr)
 library(gridExtra)
 library(here)
 
-#devtools::install_github("julianneyang/Microbiome.Biogeography")
+#devtools::install_github("jacobslabucla/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 
@@ -417,60 +416,60 @@ hum_v_pcoa_lsi
 
 ### Add R^2 and p-values to beta diversity figures ---
 f_ucla_o_pcoa_lum <- ggdraw(add_sub(ucla_o_pcoa_lum, 
-                                  bquote(paste(~italic(R)^2,"=0.261  ", 
+                                  bquote(paste(~italic(R)^2,"=0.26  ", 
                                                italic("P"),"<9.99 E-5"))))
 f_cs_spf_lum <- ggdraw(add_sub(cs_spf_lum, 
-                                  bquote(paste(~italic(R)^2,"=0.366  ", 
+                                  bquote(paste(~italic(R)^2,"=0.37  ", 
                                                italic("P"),"<9.99 E-5"))))
 
 f_spf_pcoa_lum<- ggdraw(add_sub(spf_pcoa_lum, 
-                             bquote(paste(~italic(R)^2,"=0.230  ", 
+                             bquote(paste(~italic(R)^2,"=0.23  ", 
                                           italic("P"),"<9.99 E-5"))))
 
 f_hum_pcoa_lum<- ggdraw(add_sub(hum_pcoa_lum, 
-                              bquote(paste(~italic(R)^2,"=0.206  ", 
+                              bquote(paste(~italic(R)^2,"=0.21  ", 
                                            italic("P"),"<9.99 E-5"))))
 f_hum_v_pcoa_lum<- ggdraw(add_sub(hum_v_pcoa_lum, 
-                              bquote(paste(~italic(R)^2,"=0.200  ", 
+                              bquote(paste(~italic(R)^2,"=0.20  ", 
                                            italic("P"),"<9.99 E-5"))))
 f_ucla_o_pcoa_lc <- ggdraw(add_sub(ucla_o_pcoa_lc, 
-                            bquote(paste(~italic(R)^2,"=0.028  ", 
+                            bquote(paste(~italic(R)^2,"=0.03  ", 
                                          italic("P"),"<9.99 E-5"))))
 
 f_cs_spf_lc <- ggdraw(add_sub(cs_spf_lc, 
-                            bquote(paste(~italic(R)^2,"=0.034  ", 
+                            bquote(paste(~italic(R)^2,"=0.03  ", 
                                          italic("P"),"=0.078"))))
 
 f_spf_pcoa_lc <- ggdraw(add_sub(spf_pcoa_lc, 
-                            bquote(paste(~italic(R)^2,"=0.031  ", 
+                            bquote(paste(~italic(R)^2,"=0.03  ", 
                                          italic("P"),"=0.082"))))
 
 f_hum_pcoa_lc <- ggdraw(add_sub(hum_pcoa_lc, 
-                              bquote(paste(~italic(R)^2,"=0.004  ", 
+                              bquote(paste(~italic(R)^2,"=4.0 E-3  ", 
                                            italic("P"),"=0.939"))))
 
 f_hum_v_pcoa_lc <- ggdraw(add_sub(hum_v_pcoa_lc, 
-                              bquote(paste(~italic(R)^2,"=4.50 E-4  ", 
+                              bquote(paste(~italic(R)^2,"=4.5 E-4  ", 
                                            italic("P"),"=0.548"))))
 
 f_ucla_o_pcoa_lsi <- ggdraw(add_sub(ucla_o_pcoa_lsi, 
-                                 bquote(paste(~italic(R)^2,"=0.017  ", 
+                                 bquote(paste(~italic(R)^2,"=0.02  ", 
                                               italic("P"),"<5.79 E-3"))))
 
 f_cs_spf_lsi <- ggdraw(add_sub(cs_spf_lsi, 
-                            bquote(paste(~italic(R)^2,"=0.218  ", 
+                            bquote(paste(~italic(R)^2,"=0.22  ", 
                                          italic("P"),"=0.444"))))
 
 f_spf_pcoa_lsi <- ggdraw(add_sub(spf_pcoa_lsi, 
-                              bquote(paste(~italic(R)^2,"=0.097  ", 
+                              bquote(paste(~italic(R)^2,"=0.10  ", 
                                            italic("P"),"=0.230"))))
 
 f_hum_pcoa_lsi <- ggdraw(add_sub(hum_pcoa_lsi, 
-                              bquote(paste(~italic(R)^2,"=0.026  ", 
+                              bquote(paste(~italic(R)^2,"=0.03  ", 
                                            italic("P"),"=0.565"))))
 
 f_hum_v_pcoa_lsi <- ggdraw(add_sub(hum_v_pcoa_lsi, 
-                                bquote(paste(~italic(R)^2,"=0.008  ", 
+                                bquote(paste(~italic(R)^2,"=0.01  ", 
                                              italic("P"),"=0.268"))))
 
 interregional_lum <- plot_grid(f_ucla_o_pcoa_lum, f_cs_spf_lum, f_spf_pcoa_lum, f_hum_pcoa_lum,f_hum_v_pcoa_lum,nrow=1)

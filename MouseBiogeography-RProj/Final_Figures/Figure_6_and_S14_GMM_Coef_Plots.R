@@ -50,6 +50,8 @@ module_key$annotation <- gsub("\\ i","\\ I",module_key$annotation)
 module_key$annotation <- gsub("\\ v","\\ V",module_key$annotation)
 module_key$annotation <- gsub("\\ Iv","\\ IV",module_key$annotation)
 module_key$annotation <- gsub("4-a","4-A",module_key$annotation)
+module_key$annotation <- gsub("-coa","-coA",module_key$annotation)
+
 
 module_key$annotation
 module_key$Map <- stringr::str_to_sentence(module_key$Map)
