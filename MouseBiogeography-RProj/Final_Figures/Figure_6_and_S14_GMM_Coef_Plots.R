@@ -15,7 +15,9 @@ library(paletteer)
 library(ComplexUpset)
 library(here)
 
-#devtools::install_github("jacobslabucla/Microbiome.Biogeography")
+
+remove.packages("Microbiome.Biogeography")
+devtools::install_github("jacobslabucla/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 
@@ -41,6 +43,19 @@ all_taxa <- process_results_for_upset_plot(file_paths = lum_file_paths,
                                            cohort_prefixes = lum_cohort_prefixes)
 
 module_key <- read.csv(here("Regional-Mouse-Biogeography-Analysis/2021-8-Pathway-Batch-Correction/GOMIXER/Revised_Module_Key.csv"))
+module_key$annotation <- stringr::str_to_sentence(module_key$annotation)
+module_key$annotation <- gsub("\\ iii","\\ III",module_key$annotation)
+module_key$annotation <- gsub("\\ ii","\\ II",module_key$annotation)
+module_key$annotation <- gsub("\\ i","\\ I",module_key$annotation)
+module_key$annotation <- gsub("\\ v","\\ V",module_key$annotation)
+module_key$annotation <- gsub("\\ Iv","\\ IV",module_key$annotation)
+module_key$annotation <- gsub("4-a","4-A",module_key$annotation)
+
+module_key$annotation
+module_key$Map <- stringr::str_to_sentence(module_key$Map)
+module_key$Map2_ammonia <- stringr::str_to_sentence(module_key$Map2_ammonia)
+module_key$Map3_carbon_dioxide<- stringr::str_to_sentence(module_key$Map3_carbon_dioxide)
+
 anno <- module_key %>% select(c("feature", "annotation"))
 all_taxa <- merge(all_taxa, anno, by="feature")
 id_features <- all_taxa %>% mutate(coef_dir = ifelse(coef > 0, "POS", "NEG"))
@@ -107,7 +122,7 @@ cols <- my_palette[names(my_palette) %in% lum_cohort_prefixes]
 # combine GMM results and append Map annotation
 gmm_of_interest <- readRDS(here("Highlighted_GMM_Fig_6.RDS"))
 feature_value <- gmm_of_interest[1]
-data_all <- process_results_files(lum_file_paths, feature_value, new_value, new_coef, lum_cohort_prefixes)
+data_all <- Microbiome.Biogeography::process_results_files(lum_file_paths, feature_value, new_value, new_coef, lum_cohort_prefixes)
 
 final_df <- data_all[FALSE,]
 for (i in seq_along(gmm_of_interest)) {
@@ -123,7 +138,7 @@ unique(map_data_all$Map)
 data <- map_data_all
 data$value <- plyr::revalue(data$value,c("Distal_Colon"="DC", "Proximal_Colon" = "PC", "Cecum" ="C","Ileum"="I", "Jejunum"="J", "Duodenum"= "D"))
 data$value <- factor(data$value, levels = c("D", "J", "I", "C", "PC", "DC"))
-data$annotation <- gsub("pentose phosphate pathway \\(oxidative phase\\)", "pentose phosphate pathway", data$annotation)
+data$annotation <- gsub("Pentose phosphate pathway \\(oxidative phase\\)", "Pentose phosphate pathway", data$annotation)
 
 # Plotting
 create_plot <- function(data, map_value) {
@@ -142,35 +157,35 @@ create_plot <- function(data, map_value) {
 }
 
 # Call the function for both "disaccharides" and "monosaccharides"
-disaccharides <- create_plot(data, "disaccharides") + facet_grid(Map~annotation) +
+disaccharides <- create_plot(data, "Disaccharides") + facet_grid(Map~annotation) +
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-monosaccharides <- create_plot(data, "monosaccharides")+ facet_grid(Map~annotation) +labs(y="Effect size")+
+monosaccharides <- create_plot(data, "Monosaccharides")+ facet_grid(Map~annotation) +labs(y="Effect size")+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-polysaccharides <- create_plot(data, "polysaccharides")+ facet_grid(Map~annotation) +
+polysaccharides <- create_plot(data, "Polysaccharides")+ facet_grid(Map~annotation) +
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-proteolytic_fermentation <- create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +theme_cowplot(14) + 
-  theme(legend.position = "none")+ labs(y="Effect size") +  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-create_plot(data, "proteolytic fermentation") + facet_grid(Map~annotation) +
+proteolytic_fermentation <- create_plot(data, "Proteolytic fermentation") + facet_grid(Map~annotation) +theme_cowplot(14) + 
+  labs(y="Effect size") +  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"),axis.title.y = element_text(size=16))
+create_plot(data, "Proteolytic fermentation") + facet_grid(Map~annotation) +
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-lipolytic_fermentation <- create_plot(data, "lipolytic fermentation")+ facet_grid(Map~annotation)+
+lipolytic_fermentation <- create_plot(data, "Lipolytic fermentation")+ facet_grid(Map~annotation)+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white")) + labs(y="Effect size")
-sugar_acid <- create_plot(data, "sugar acid")+ facet_grid(Map~annotation)+
+sugar_acid <- create_plot(data, "Sugar acid")+ facet_grid(Map~annotation)+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-metabolism <- create_plot(data, "central metabolism")+ facet_grid(Map~annotation)  +theme_cowplot(12) + 
+metabolism <- create_plot(data, "Central metabolism")+ facet_grid(Map~annotation)  +theme_cowplot(12) + 
+  labs(y="Effect size")+theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"),axis.title.y = element_text(size=16))
+cross_feeding <- create_plot(data, "Cross-feeding")+ facet_grid(Map~annotation)+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+ labs(y="Effect size")
-cross_feeding <- create_plot(data, "cross-feeding")+ facet_grid(Map~annotation)+
-  theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))+ labs(y="Effect size")
-butyrate <- create_plot(data, "butyrate")+ facet_grid(Map~annotation)+
+butyrate <- create_plot(data, "Butyrate")+ facet_grid(Map~annotation)+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
-nitrate <- create_plot(data, "nitrate reduction")+ facet_grid(Map~annotation)+
+nitrate <- create_plot(data, "Nitrate reduction")+ facet_grid(Map~annotation)+
   theme(legend.position="none",strip.background=element_rect(colour="black",fill="white"))
 
 
 carbs <- plot_grid(monosaccharides,disaccharides,polysaccharides,
           rel_widths=c(0.5,0.5,1),nrow=1,
-          labels=c("A"), label_size = 20)
+          labels=c("A"), label_size = 20) + theme(axis.title.y = element_text(size = 14))
 proteins <- plot_grid(proteolytic_fermentation,nrow=1,
-          labels=c("B"), label_size = 20)
+          labels=c("B"), label_size = 20) + theme(axis.title.y = element_text(size = 16))
 
 dev.new()
 plot_grid(carbs, proteins, rel_heights=c(0.75,1),nrow=2)

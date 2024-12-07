@@ -9,10 +9,10 @@ library(dplyr)
 library(gridExtra)
 
 remove.packages("Microbiome.Biogeography")
-setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/Microbiome.Biogeography/")
+setwd("../../../microbiome.biogeography/")
 devtools::document()
 setwd("C:/Users/Jacobs Laboratory/Desktop/Mouse_Biogeography_Julianne/")
-devtools::install("Microbiome.Biogeography")
+devtools::install("jacobslabucla/Microbiome.Biogeography")
 library("Microbiome.Biogeography")
 
 ### Alpha Diversity ---
